@@ -1,0 +1,2342 @@
+[
+  {
+    "slug": "cottage-cheese-baked-penne",
+    "name": "Cottage Cheese Baked Penne",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "vegetarian",
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 45,
+    "batch_friendly": true,
+    "description": "Penne baked with marinara, spinach and a creamy cottage cheese layer under melted mozzarella.",
+    "steps": [
+      "Heat the oven to 400°F and boil the penne 2 minutes short of the package time, then drain.",
+      "Squeeze the thawed spinach dry and stir it into the cottage cheese with the egg, garlic, Italian seasoning, salt, pepper and half the mozzarella.",
+      "Toss the penne with the marinara and spread half in a 9x13 baking dish.",
+      "Spoon the cottage cheese mixture over the pasta and cover with the rest of the penne.",
+      "Top with the remaining mozzarella and the parmesan.",
+      "Bake 20 to 25 minutes until bubbling and golden, then rest 5 minutes before serving."
+    ],
+    "ingredients": [
+      {
+        "id": "pasta_penne",
+        "qty": 12
+      },
+      {
+        "id": "marinara",
+        "qty": 3
+      },
+      {
+        "id": "cottage_cheese",
+        "qty": 2
+      },
+      {
+        "id": "mozzarella",
+        "qty": 2
+      },
+      {
+        "id": "parmesan",
+        "qty": 0.25
+      },
+      {
+        "id": "eggs",
+        "qty": 1
+      },
+      {
+        "id": "spinach_frozen",
+        "qty": 1,
+        "note": "thawed and squeezed dry"
+      },
+      {
+        "id": "garlic",
+        "qty": 2,
+        "note": "minced"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1522784081430-8ac6a122cbc8",
+    "photo_credit": {
+      "name": "Jonathan Pielmayer",
+      "url": "https://unsplash.com/photos/bake-mac-on-brown-ceramic-bowl-beside-fork-and-knife-RKJElwIyCQw"
+    }
+  },
+  {
+    "slug": "tofu-scramble-black-bean-burritos",
+    "name": "Tofu Scramble Black Bean Burritos",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "vegetarian",
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 20,
+    "batch_friendly": false,
+    "description": "Spiced scrambled tofu, black beans, peppers and cheddar rolled into warm flour tortillas.",
+    "steps": [
+      "Drain the tofu, pat it dry and crumble it with your hands.",
+      "Cook the onion and bell pepper in the oil over medium-high heat for 4 minutes.",
+      "Add the tofu, cumin, chili powder, turmeric and salt and cook 6 minutes, stirring, until dry and lightly browned.",
+      "Stir in the drained beans and heat through.",
+      "Warm the tortillas, fill with the scramble, cheddar and salsa, and roll up."
+    ],
+    "ingredients": [
+      {
+        "id": "tofu",
+        "qty": 2,
+        "note": "firm, drained and crumbled"
+      },
+      {
+        "id": "black_beans",
+        "qty": 1,
+        "note": "drained and rinsed"
+      },
+      {
+        "id": "tortilla_flour",
+        "qty": 8
+      },
+      {
+        "id": "cheddar",
+        "qty": 1
+      },
+      {
+        "id": "salsa",
+        "qty": 1
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "note": "diced"
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 0.5,
+        "note": "diced"
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 1
+      },
+      {
+        "id": "cumin",
+        "qty": 1
+      },
+      {
+        "id": "chili_powder",
+        "qty": 1
+      },
+      {
+        "id": "turmeric",
+        "qty": 0.5
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1566740933430-b5e70b06d2d5",
+    "photo_credit": {
+      "name": "Creative Headline",
+      "url": "https://unsplash.com/photos/cooked-food-F10nTHkCiW8"
+    }
+  },
+  {
+    "slug": "curried-lentil-dal-with-rice",
+    "name": "Curried Lentil Dal with Rice",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "vegetarian",
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 40,
+    "batch_friendly": true,
+    "description": "Lentils simmered soft with tomatoes, ginger and curry spices, served over rice with cool yogurt.",
+    "steps": [
+      "Cook the onion in the oil over medium heat for 5 minutes, then stir in the garlic, ginger, curry powder, cumin and turmeric for 1 minute.",
+      "Add the rinsed lentils, tomatoes, broth, 3 cups of water and the salt.",
+      "Simmer partly covered for 25 to 30 minutes, stirring now and then, until the lentils are soft and thick.",
+      "Meanwhile cook the rice in 3 cups of water, covered, for 18 minutes.",
+      "Mash some of the lentils against the pot to thicken the dal.",
+      "Serve over rice with a spoonful of yogurt and chopped cilantro."
+    ],
+    "ingredients": [
+      {
+        "id": "lentils",
+        "qty": 2,
+        "note": "rinsed"
+      },
+      {
+        "id": "rice_white",
+        "qty": 1.5
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced"
+      },
+      {
+        "id": "garlic",
+        "qty": 4,
+        "note": "minced"
+      },
+      {
+        "id": "ginger",
+        "qty": 1,
+        "note": "grated"
+      },
+      {
+        "id": "diced_tomatoes",
+        "qty": 1
+      },
+      {
+        "id": "vegetable_broth",
+        "qty": 2
+      },
+      {
+        "id": "curry_powder",
+        "qty": 3
+      },
+      {
+        "id": "cumin",
+        "qty": 1
+      },
+      {
+        "id": "turmeric",
+        "qty": 0.5
+      },
+      {
+        "id": "greek_yogurt",
+        "qty": 1
+      },
+      {
+        "id": "cilantro",
+        "qty": 0.5,
+        "note": "chopped"
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 2
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1714062105923-5cb2a3a07499",
+    "photo_credit": {
+      "name": "Joanna Stołowicz",
+      "url": "https://unsplash.com/photos/a-table-topped-with-bowls-filled-with-different-types-of-food-QfuQ2qGMDmI"
+    }
+  },
+  {
+    "slug": "spinach-feta-oven-frittata",
+    "name": "Spinach and Feta Oven Frittata",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "vegetarian",
+      "keto",
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 30,
+    "batch_friendly": false,
+    "description": "A thick baked egg frittata packed with spinach, cottage cheese, feta and cheddar.",
+    "steps": [
+      "Heat the oven to 400°F.",
+      "Cook the onion in the butter and oil in a 12-inch oven-safe skillet for 4 minutes, then add the garlic and spinach and stir until wilted.",
+      "Whisk the eggs with the cottage cheese, cheddar, salt and pepper.",
+      "Pour the eggs over the spinach, stir once and scatter the feta on top.",
+      "Cook 2 minutes on the stove, then bake 14 to 16 minutes until set and puffed.",
+      "Rest 5 minutes and cut into wedges."
+    ],
+    "ingredients": [
+      {
+        "id": "eggs",
+        "qty": 10
+      },
+      {
+        "id": "cottage_cheese",
+        "qty": 1
+      },
+      {
+        "id": "feta",
+        "qty": 4,
+        "note": "crumbled"
+      },
+      {
+        "id": "cheddar",
+        "qty": 1
+      },
+      {
+        "id": "spinach",
+        "qty": 8
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 0.5,
+        "note": "diced"
+      },
+      {
+        "id": "garlic",
+        "qty": 2,
+        "note": "minced"
+      },
+      {
+        "id": "butter",
+        "qty": 1
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1607877200978-3cab430e00cd",
+    "photo_credit": {
+      "name": "Carlos Perales",
+      "url": "https://unsplash.com/photos/sliced-pizza-with-red-sauce-on-white-ceramic-plate-aIfV9vtoHn4"
+    }
+  },
+  {
+    "slug": "peanut-tofu-broccoli-rice-bowls",
+    "name": "Peanut Tofu and Broccoli Rice Bowls",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "vegetarian",
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 30,
+    "batch_friendly": false,
+    "description": "Crisp pan-fried tofu and broccoli over rice with a quick peanut-soy sauce.",
+    "steps": [
+      "Cook the rice in 3 cups of water, covered, for 18 minutes.",
+      "Press the tofu dry, cut it into cubes and toss with the cornstarch.",
+      "Fry the tofu in the oil over medium-high heat for 8 to 10 minutes, turning, until golden, then set aside.",
+      "Add the broccoli florets and a splash of water to the pan, cover and steam 4 minutes.",
+      "Whisk the peanut butter, soy sauce, honey, vinegar, sriracha, garlic, ginger and 1/4 cup hot water until smooth.",
+      "Return the tofu to the pan, pour in the sauce and toss for 1 minute.",
+      "Serve over rice topped with chopped peanuts and green onion."
+    ],
+    "ingredients": [
+      {
+        "id": "tofu",
+        "qty": 2,
+        "note": "extra firm, pressed and cubed"
+      },
+      {
+        "id": "broccoli",
+        "qty": 2,
+        "note": "cut into florets"
+      },
+      {
+        "id": "rice_white",
+        "qty": 1.5
+      },
+      {
+        "id": "peanut_butter",
+        "qty": 4
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 3
+      },
+      {
+        "id": "honey",
+        "qty": 1
+      },
+      {
+        "id": "vinegar_rice",
+        "qty": 1
+      },
+      {
+        "id": "sriracha",
+        "qty": 1
+      },
+      {
+        "id": "garlic",
+        "qty": 2,
+        "note": "minced"
+      },
+      {
+        "id": "ginger",
+        "qty": 1,
+        "note": "grated"
+      },
+      {
+        "id": "cornstarch",
+        "qty": 2
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 2
+      },
+      {
+        "id": "peanuts",
+        "qty": 0.25,
+        "note": "chopped"
+      },
+      {
+        "id": "green_onion",
+        "qty": 0.5,
+        "note": "sliced"
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1631255325918-1ca2886508a5",
+    "photo_credit": {
+      "name": "Bakd&Raw by Karolin Baitinger",
+      "url": "https://unsplash.com/photos/cooked-food-on-white-ceramic-plate-LBJZDJvStJc"
+    }
+  },
+  {
+    "slug": "black-bean-cheddar-enchiladas",
+    "name": "Black Bean and Cheddar Enchiladas",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "vegetarian",
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 40,
+    "batch_friendly": true,
+    "description": "Corn tortillas rolled around black beans, corn and cheddar, baked under red enchilada sauce.",
+    "steps": [
+      "Heat the oven to 400°F.",
+      "Roughly mash the drained beans with the corn, onion, cumin, chili powder and half the cheddar.",
+      "Warm the tortillas in the microwave under a damp towel so they bend without cracking.",
+      "Spread a little sauce in a 9x13 dish, fill and roll the tortillas and set them seam side down.",
+      "Pour the remaining sauce over the top and cover with the rest of the cheddar.",
+      "Bake 20 minutes until bubbling, then top with yogurt and cilantro."
+    ],
+    "ingredients": [
+      {
+        "id": "tortilla_corn",
+        "qty": 12
+      },
+      {
+        "id": "black_beans",
+        "qty": 2,
+        "note": "drained and rinsed"
+      },
+      {
+        "id": "cheddar",
+        "qty": 2
+      },
+      {
+        "id": "enchilada_sauce",
+        "qty": 2
+      },
+      {
+        "id": "corn_frozen",
+        "qty": 1
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 0.5,
+        "note": "finely diced"
+      },
+      {
+        "id": "cumin",
+        "qty": 1
+      },
+      {
+        "id": "chili_powder",
+        "qty": 1
+      },
+      {
+        "id": "greek_yogurt",
+        "qty": 0.5
+      },
+      {
+        "id": "cilantro",
+        "qty": 0.5,
+        "note": "chopped"
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1674135529596-cb1f707d231d",
+    "photo_credit": {
+      "name": "Aleksandra Gencheva",
+      "url": "https://unsplash.com/photos/a-person-holding-a-dish-of-food-on-a-table-4vB9GNWnmbM"
+    }
+  },
+  {
+    "slug": "lentil-bolognese-spaghetti",
+    "name": "Lentil Bolognese with Spaghetti",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "vegetarian",
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 45,
+    "batch_friendly": true,
+    "description": "A thick tomato and lentil ragu with carrot and celery, tossed with spaghetti and parmesan.",
+    "steps": [
+      "Cook the onion, carrot and celery in the oil over medium heat for 6 minutes.",
+      "Stir in the garlic, tomato paste and Italian seasoning for 1 minute.",
+      "Add the lentils, crushed tomatoes, broth, salt and pepper and simmer covered for 30 minutes until the lentils are tender.",
+      "Boil the spaghetti until al dente and drain, saving a cup of the water.",
+      "Toss the spaghetti with the sauce, loosening with pasta water as needed.",
+      "Serve with parmesan."
+    ],
+    "ingredients": [
+      {
+        "id": "lentils",
+        "qty": 1.25,
+        "note": "rinsed"
+      },
+      {
+        "id": "pasta_spaghetti",
+        "qty": 12
+      },
+      {
+        "id": "crushed_tomatoes",
+        "qty": 1
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "finely diced"
+      },
+      {
+        "id": "carrot",
+        "qty": 0.5,
+        "note": "finely diced"
+      },
+      {
+        "id": "celery",
+        "qty": 2,
+        "note": "finely diced"
+      },
+      {
+        "id": "garlic",
+        "qty": 4,
+        "note": "minced"
+      },
+      {
+        "id": "tomato_paste",
+        "qty": 2
+      },
+      {
+        "id": "vegetable_broth",
+        "qty": 2
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 2
+      },
+      {
+        "id": "parmesan",
+        "qty": 0.5
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.5
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1562370345-d64b69d8f824",
+    "photo_credit": {
+      "name": "Paula Hayes",
+      "url": "https://unsplash.com/photos/cooked-pasta-SbLAg_zzDuI"
+    }
+  },
+  {
+    "slug": "zucchini-cottage-cheese-lasagna",
+    "name": "Zucchini and Cottage Cheese Lasagna",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "vegetarian",
+      "keto",
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 60,
+    "batch_friendly": true,
+    "description": "Roasted zucchini planks stand in for noodles, layered with cottage cheese, marinara and mozzarella.",
+    "steps": [
+      "Heat the oven to 425°F, slice the zucchini lengthwise into 1/4-inch planks, salt them and roast on two sheet pans for 12 minutes.",
+      "Blot the zucchini dry with paper towels and lower the oven to 375°F.",
+      "Mix the cottage cheese with the egg, garlic, Italian seasoning, half the parmesan and half the mozzarella.",
+      "Layer a little marinara, zucchini, cottage cheese mixture and more marinara in an 8x8 dish, repeating twice.",
+      "Top with the remaining mozzarella and parmesan.",
+      "Bake 30 minutes until browned, then rest 10 minutes before slicing."
+    ],
+    "ingredients": [
+      {
+        "id": "zucchini",
+        "qty": 4,
+        "note": "sliced lengthwise into planks"
+      },
+      {
+        "id": "cottage_cheese",
+        "qty": 1.5
+      },
+      {
+        "id": "mozzarella",
+        "qty": 2
+      },
+      {
+        "id": "marinara",
+        "qty": 1.25
+      },
+      {
+        "id": "parmesan",
+        "qty": 0.5
+      },
+      {
+        "id": "eggs",
+        "qty": 1
+      },
+      {
+        "id": "garlic",
+        "qty": 2,
+        "note": "minced"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1632229095740-8c75082087c5",
+    "photo_credit": {
+      "name": "Moira Nazzari",
+      "url": "https://unsplash.com/photos/a-dish-of-food-on-a-wooden-table-Y9iaZNbUHtQ"
+    }
+  },
+  {
+    "slug": "greek-yogurt-alfredo-penne-peas",
+    "name": "Greek Yogurt Alfredo Penne with Peas",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "vegetarian",
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 20,
+    "batch_friendly": false,
+    "description": "Penne and peas in a creamy garlic parmesan sauce made with Greek yogurt instead of cream.",
+    "steps": [
+      "Boil the penne until al dente, adding the peas for the last 2 minutes.",
+      "Save a cup of the pasta water, then drain.",
+      "Melt the butter in the empty pot over low heat and cook the garlic for 1 minute.",
+      "Take the pot off the heat and whisk in the yogurt, milk, parmesan, salt and pepper.",
+      "Add the pasta and peas and toss, loosening with pasta water until the sauce coats the penne."
+    ],
+    "ingredients": [
+      {
+        "id": "pasta_penne",
+        "qty": 12
+      },
+      {
+        "id": "greek_yogurt",
+        "qty": 1.5
+      },
+      {
+        "id": "parmesan",
+        "qty": 1
+      },
+      {
+        "id": "peas_frozen",
+        "qty": 2
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced"
+      },
+      {
+        "id": "butter",
+        "qty": 2
+      },
+      {
+        "id": "milk",
+        "qty": 0.5
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.5
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1625128726788-3fee36746aaa",
+    "photo_credit": {
+      "name": "Bakd&Raw by Karolin Baitinger",
+      "url": "https://unsplash.com/photos/sliced-cucumber-on-white-ceramic-plate-4MX7xLAiWBc"
+    }
+  },
+  {
+    "slug": "skillet-shakshuka-with-feta",
+    "name": "Skillet Shakshuka with Feta",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "vegetarian",
+      "keto"
+    ],
+    "servings": 4,
+    "prep_minutes": 25,
+    "batch_friendly": false,
+    "description": "Eggs poached in a smoky tomato and pepper sauce, finished with crumbled feta.",
+    "steps": [
+      "Cook the onion and bell pepper in the oil in a large skillet over medium heat for 6 minutes.",
+      "Stir in the garlic, tomato paste, cumin, smoked paprika and pepper flakes for 1 minute.",
+      "Add the tomatoes and salt and simmer 8 minutes until slightly thickened.",
+      "Make 8 wells in the sauce and crack an egg into each.",
+      "Cover and cook 5 to 7 minutes until the whites are set.",
+      "Top with feta and cilantro."
+    ],
+    "ingredients": [
+      {
+        "id": "eggs",
+        "qty": 8
+      },
+      {
+        "id": "diced_tomatoes",
+        "qty": 2
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "note": "diced"
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced"
+      },
+      {
+        "id": "tomato_paste",
+        "qty": 1
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2
+      },
+      {
+        "id": "cumin",
+        "qty": 1
+      },
+      {
+        "id": "smoked_paprika",
+        "qty": 1
+      },
+      {
+        "id": "red_pepper_flakes",
+        "qty": 0.25
+      },
+      {
+        "id": "feta",
+        "qty": 3,
+        "note": "crumbled"
+      },
+      {
+        "id": "cilantro",
+        "qty": 0.25,
+        "note": "chopped"
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1582492710145-d723e0a219f8",
+    "photo_credit": {
+      "name": "amirali mirhashemian",
+      "url": "https://unsplash.com/photos/stainless-steel-bowl-with-food-K9oKpOebg84"
+    }
+  },
+  {
+    "slug": "tofu-egg-roll-bowls",
+    "name": "Tofu Egg Roll in a Bowl",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "vegetarian",
+      "keto"
+    ],
+    "servings": 4,
+    "prep_minutes": 20,
+    "batch_friendly": false,
+    "description": "Crumbled tofu, cabbage and scrambled egg stir-fried with ginger, garlic and soy sauce.",
+    "steps": [
+      "Press the tofu dry and crumble it into bite-size pieces.",
+      "Brown the tofu in the vegetable oil over high heat for 6 minutes, then push it to one side.",
+      "Scramble the eggs in the empty side of the pan and break them up.",
+      "Add the garlic, ginger and coleslaw mix and stir-fry 3 to 4 minutes until the cabbage just wilts.",
+      "Stir in the soy sauce, vinegar and sesame oil.",
+      "Serve topped with green onion and a drizzle of sriracha."
+    ],
+    "ingredients": [
+      {
+        "id": "tofu",
+        "qty": 2,
+        "note": "extra firm, pressed and crumbled"
+      },
+      {
+        "id": "coleslaw_mix",
+        "qty": 1
+      },
+      {
+        "id": "eggs",
+        "qty": 4
+      },
+      {
+        "id": "green_onion",
+        "qty": 1,
+        "note": "sliced"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced"
+      },
+      {
+        "id": "ginger",
+        "qty": 1,
+        "note": "grated"
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 3
+      },
+      {
+        "id": "sesame_oil",
+        "qty": 1
+      },
+      {
+        "id": "vinegar_rice",
+        "qty": 1
+      },
+      {
+        "id": "sriracha",
+        "qty": 1
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 1
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1788536442033-abf6a485fef7",
+    "photo_credit": {
+      "name": "Zoshua Colah",
+      "url": "https://unsplash.com/photos/tofu-salad-bowl-for-lunch-vAQ8bEmdKTk"
+    }
+  },
+  {
+    "slug": "cauliflower-egg-fried-rice",
+    "name": "Cauliflower Egg Fried Rice",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "vegetarian",
+      "keto"
+    ],
+    "servings": 4,
+    "prep_minutes": 20,
+    "batch_friendly": false,
+    "description": "Riced cauliflower stir-fried with scrambled eggs, mushrooms, carrot and green onion.",
+    "steps": [
+      "Scramble the eggs in 1 tablespoon of the oil in a large skillet, then set them aside.",
+      "Cook the mushrooms and carrot in the remaining oil over high heat for 5 minutes.",
+      "Add the garlic, ginger and frozen cauliflower rice and stir-fry 5 to 6 minutes until dry and tender.",
+      "Return the eggs to the pan with the soy sauce and sesame oil and toss.",
+      "Top with green onion."
+    ],
+    "ingredients": [
+      {
+        "id": "cauliflower_rice",
+        "qty": 6
+      },
+      {
+        "id": "eggs",
+        "qty": 8
+      },
+      {
+        "id": "mushroom",
+        "qty": 8,
+        "note": "sliced"
+      },
+      {
+        "id": "carrot",
+        "qty": 0.25,
+        "note": "finely diced"
+      },
+      {
+        "id": "green_onion",
+        "qty": 1,
+        "note": "sliced"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced"
+      },
+      {
+        "id": "ginger",
+        "qty": 1,
+        "note": "grated"
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 3
+      },
+      {
+        "id": "sesame_oil",
+        "qty": 1
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 2
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1716551828295-566b835db769",
+    "photo_credit": {
+      "name": "Sarabjeet Singh",
+      "url": "https://unsplash.com/photos/a-bowl-of-rice-and-chopsticks-on-a-white-table-skVf2YPxrco"
+    }
+  },
+  {
+    "slug": "broccoli-cheddar-cream-soup",
+    "name": "Broccoli Cheddar Soup",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "vegetarian",
+      "keto"
+    ],
+    "servings": 4,
+    "prep_minutes": 30,
+    "batch_friendly": true,
+    "description": "A thick, creamy broccoli soup finished with plenty of sharp cheddar.",
+    "steps": [
+      "Cook the onion in the butter over medium heat for 5 minutes, then add the garlic for 1 minute.",
+      "Add the chopped broccoli, broth, salt and pepper and simmer covered for 12 minutes until very tender.",
+      "Mash or blend about half the soup, leaving some broccoli pieces.",
+      "Stir in the cream and cream cheese over low heat until smooth.",
+      "Add the cheddar a handful at a time, stirring until melted, and serve."
+    ],
+    "ingredients": [
+      {
+        "id": "broccoli",
+        "qty": 2,
+        "note": "chopped, stems included"
+      },
+      {
+        "id": "cheddar",
+        "qty": 2
+      },
+      {
+        "id": "heavy_cream",
+        "qty": 1
+      },
+      {
+        "id": "cream_cheese",
+        "qty": 2
+      },
+      {
+        "id": "vegetable_broth",
+        "qty": 3
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 0.5,
+        "note": "diced"
+      },
+      {
+        "id": "garlic",
+        "qty": 2,
+        "note": "minced"
+      },
+      {
+        "id": "butter",
+        "qty": 2
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.5
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1578859318509-62790b079366",
+    "photo_credit": {
+      "name": "Samee Anderson",
+      "url": "https://unsplash.com/photos/bowl-of-vegetable-soup-x4l4U-pHF9s"
+    }
+  },
+  {
+    "slug": "cauliflower-mac-and-cheese-bake",
+    "name": "Cauliflower Mac and Cheese Bake",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "vegetarian",
+      "keto"
+    ],
+    "servings": 4,
+    "prep_minutes": 35,
+    "batch_friendly": false,
+    "description": "Tender cauliflower florets baked in a rich cheddar cream sauce with a golden parmesan top.",
+    "steps": [
+      "Heat the oven to 425°F and boil the cauliflower florets in salted water for 5 minutes, then drain very well.",
+      "Warm the cream and cream cheese in a saucepan over low heat, whisking until smooth.",
+      "Whisk in the mustard, garlic powder, salt, pepper and three quarters of the cheddar until melted.",
+      "Fold the cauliflower into the sauce and spread in a baking dish.",
+      "Top with the remaining cheddar, the parmesan and paprika.",
+      "Bake 15 minutes until bubbling and browned."
+    ],
+    "ingredients": [
+      {
+        "id": "cauliflower",
+        "qty": 1,
+        "note": "large, cut into small florets"
+      },
+      {
+        "id": "cheddar",
+        "qty": 2
+      },
+      {
+        "id": "heavy_cream",
+        "qty": 0.75
+      },
+      {
+        "id": "cream_cheese",
+        "qty": 4
+      },
+      {
+        "id": "parmesan",
+        "qty": 0.25
+      },
+      {
+        "id": "mustard",
+        "qty": 0.5
+      },
+      {
+        "id": "garlic_powder",
+        "qty": 0.5
+      },
+      {
+        "id": "paprika",
+        "qty": 0.5
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1586032340622-a86b847e8bdb",
+    "photo_credit": {
+      "name": "micheile henderson",
+      "url": "https://unsplash.com/photos/cooked-food-on-black-ceramic-plate-ECAkA9M4Rwo"
+    }
+  },
+  {
+    "slug": "black-bean-sweet-potato-tacos",
+    "name": "Black Bean and Sweet Potato Tacos",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 4,
+    "prep_minutes": 35,
+    "batch_friendly": false,
+    "description": "Chili-roasted sweet potatoes and black beans in corn tortillas with avocado and lime.",
+    "steps": [
+      "Heat the oven to 425°F.",
+      "Toss the diced sweet potatoes with the oil, cumin, chili powder, smoked paprika and salt and roast 22 minutes, turning once.",
+      "Add the drained beans to the pan for the last 5 minutes to warm through.",
+      "Char the tortillas in a dry skillet or over a gas flame.",
+      "Fill with sweet potatoes and beans and top with red onion, avocado, feta, salsa and cilantro.",
+      "Serve with lime wedges."
+    ],
+    "ingredients": [
+      {
+        "id": "sweet_potato",
+        "qty": 1.5,
+        "note": "peeled, 1/2-inch dice"
+      },
+      {
+        "id": "black_beans",
+        "qty": 1,
+        "note": "drained and rinsed"
+      },
+      {
+        "id": "tortilla_corn",
+        "qty": 12
+      },
+      {
+        "id": "avocado",
+        "qty": 1,
+        "note": "sliced"
+      },
+      {
+        "id": "onion_red",
+        "qty": 0.5,
+        "note": "thinly sliced"
+      },
+      {
+        "id": "feta",
+        "qty": 2,
+        "note": "crumbled"
+      },
+      {
+        "id": "salsa",
+        "qty": 0.5
+      },
+      {
+        "id": "cilantro",
+        "qty": 0.5,
+        "note": "chopped"
+      },
+      {
+        "id": "lime",
+        "qty": 1
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2
+      },
+      {
+        "id": "cumin",
+        "qty": 1
+      },
+      {
+        "id": "chili_powder",
+        "qty": 1
+      },
+      {
+        "id": "smoked_paprika",
+        "qty": 0.5
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47",
+    "photo_credit": {
+      "name": "Chad Montano",
+      "url": "https://unsplash.com/photos/cooked-tacos-lP5MCM6nZ5A"
+    }
+  },
+  {
+    "slug": "chickpea-spinach-coconut-curry",
+    "name": "Chickpea Spinach Coconut Curry",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 4,
+    "prep_minutes": 25,
+    "batch_friendly": false,
+    "description": "Chickpeas and spinach in a mild coconut tomato curry, spooned over white rice.",
+    "steps": [
+      "Start the rice in 3 cups of water, covered, for 18 minutes.",
+      "Cook the onion in the oil over medium heat for 4 minutes, then add the garlic, ginger and curry powder for 1 minute.",
+      "Add the tomatoes, coconut milk, drained chickpeas and salt and simmer 10 minutes.",
+      "Stir in the spinach until wilted.",
+      "Serve the curry over the rice."
+    ],
+    "ingredients": [
+      {
+        "id": "chickpeas",
+        "qty": 2,
+        "note": "drained and rinsed"
+      },
+      {
+        "id": "coconut_milk",
+        "qty": 1
+      },
+      {
+        "id": "diced_tomatoes",
+        "qty": 1
+      },
+      {
+        "id": "spinach",
+        "qty": 5
+      },
+      {
+        "id": "rice_white",
+        "qty": 1.5
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced"
+      },
+      {
+        "id": "ginger",
+        "qty": 1,
+        "note": "grated"
+      },
+      {
+        "id": "curry_powder",
+        "qty": 3
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1609595781576-1580ff3ee291",
+    "photo_credit": {
+      "name": "Álvaro Bernal",
+      "url": "https://unsplash.com/photos/cooked-food-on-white-ceramic-plate-ReySmTMcKEQ"
+    }
+  },
+  {
+    "slug": "vegetable-egg-fried-rice",
+    "name": "Vegetable Egg Fried Rice",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 4,
+    "prep_minutes": 25,
+    "batch_friendly": false,
+    "description": "Rice stir-fried with scrambled eggs, frozen mixed vegetables, garlic and soy sauce.",
+    "steps": [
+      "Cook the rice in 2 3/4 cups of water, covered, for 16 minutes, then spread it on a tray to steam dry (or use leftover rice).",
+      "Scramble the eggs in half the vegetable oil in a large skillet or wok and set aside.",
+      "Stir-fry the frozen vegetables and garlic in the remaining oil over high heat for 3 minutes.",
+      "Add the rice and fry 4 minutes, pressing out any clumps.",
+      "Stir in the eggs, soy sauce, sesame oil and green onion and serve."
+    ],
+    "ingredients": [
+      {
+        "id": "rice_white",
+        "qty": 1.5
+      },
+      {
+        "id": "eggs",
+        "qty": 6
+      },
+      {
+        "id": "mixed_veg_frozen",
+        "qty": 2.5
+      },
+      {
+        "id": "green_onion",
+        "qty": 1,
+        "note": "sliced"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced"
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 3
+      },
+      {
+        "id": "sesame_oil",
+        "qty": 1
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 2
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1788603907381-018a23c26c81",
+    "photo_credit": {
+      "name": "Zoshua Colah",
+      "url": "https://unsplash.com/photos/fried-rice-with-vegetables-Mrr4elxhksk"
+    }
+  },
+  {
+    "slug": "two-bean-minestrone-soup",
+    "name": "Two-Bean Minestrone Soup",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 4,
+    "prep_minutes": 45,
+    "batch_friendly": true,
+    "description": "A big pot of vegetable soup with cabbage, zucchini, beans and elbow pasta in tomato broth.",
+    "steps": [
+      "Cook the onion, carrot and celery in the oil over medium heat for 6 minutes.",
+      "Add the garlic and Italian seasoning for 1 minute.",
+      "Add the tomatoes, broth, cabbage, zucchini and salt and simmer 15 minutes.",
+      "Stir in the drained beans and the pasta and cook 8 to 10 minutes until the pasta is tender.",
+      "Thin with a little water if needed and serve with parmesan."
+    ],
+    "ingredients": [
+      {
+        "id": "pasta_elbow",
+        "qty": 6
+      },
+      {
+        "id": "kidney_beans",
+        "qty": 1,
+        "note": "drained and rinsed"
+      },
+      {
+        "id": "white_beans",
+        "qty": 1,
+        "note": "drained and rinsed"
+      },
+      {
+        "id": "diced_tomatoes",
+        "qty": 1
+      },
+      {
+        "id": "vegetable_broth",
+        "qty": 6
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced"
+      },
+      {
+        "id": "carrot",
+        "qty": 0.5,
+        "note": "diced"
+      },
+      {
+        "id": "celery",
+        "qty": 2,
+        "note": "diced"
+      },
+      {
+        "id": "zucchini",
+        "qty": 1,
+        "note": "diced"
+      },
+      {
+        "id": "cabbage",
+        "qty": 0.25,
+        "note": "shredded"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 2
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2
+      },
+      {
+        "id": "parmesan",
+        "qty": 0.25
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1603105037880-880cd4edfb0d",
+    "photo_credit": {
+      "name": "Victoria Shes",
+      "url": "https://unsplash.com/photos/stainless-steel-spoon-on-white-ceramic-bowl-90Z4qIxWc8Y"
+    }
+  },
+  {
+    "slug": "three-bean-vegetarian-chili",
+    "name": "Three-Bean Vegetarian Chili",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 4,
+    "prep_minutes": 50,
+    "batch_friendly": true,
+    "description": "A thick meatless chili with black, kidney and pinto beans, corn and peppers, topped with cheddar.",
+    "steps": [
+      "Cook the onion and bell pepper in the oil over medium heat for 6 minutes.",
+      "Stir in the garlic, chili powder, cumin and smoked paprika for 1 minute.",
+      "Add the crushed and diced tomatoes, the drained beans, broth and salt.",
+      "Simmer partly covered for 30 minutes, stirring now and then.",
+      "Stir in the corn and cook 5 minutes more.",
+      "Serve topped with cheddar."
+    ],
+    "ingredients": [
+      {
+        "id": "black_beans",
+        "qty": 1,
+        "note": "drained and rinsed"
+      },
+      {
+        "id": "kidney_beans",
+        "qty": 1,
+        "note": "drained and rinsed"
+      },
+      {
+        "id": "pinto_beans",
+        "qty": 1,
+        "note": "drained and rinsed"
+      },
+      {
+        "id": "crushed_tomatoes",
+        "qty": 1
+      },
+      {
+        "id": "diced_tomatoes",
+        "qty": 1
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "note": "diced"
+      },
+      {
+        "id": "garlic",
+        "qty": 4,
+        "note": "minced"
+      },
+      {
+        "id": "corn_frozen",
+        "qty": 1
+      },
+      {
+        "id": "vegetable_broth",
+        "qty": 1
+      },
+      {
+        "id": "chili_powder",
+        "qty": 6
+      },
+      {
+        "id": "cumin",
+        "qty": 2
+      },
+      {
+        "id": "smoked_paprika",
+        "qty": 1
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 1
+      },
+      {
+        "id": "cheddar",
+        "qty": 1
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1729450412050-6c00ec592e34",
+    "photo_credit": {
+      "name": "Maria Klichik",
+      "url": "https://unsplash.com/photos/a-bowl-of-chili-next-to-other-bowls-of-food-72oTVZs_730"
+    }
+  },
+  {
+    "slug": "refried-bean-corn-quesadillas",
+    "name": "Refried Bean and Corn Quesadillas",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 4,
+    "prep_minutes": 20,
+    "batch_friendly": false,
+    "description": "Crisp flour tortillas filled with refried beans, corn, green chiles and melted cheddar.",
+    "steps": [
+      "Stir the cumin, drained corn and green chiles into the refried beans.",
+      "Spread the bean mixture over half of each tortilla, top with cheddar and fold.",
+      "Cook in a lightly oiled skillet over medium heat for 2 to 3 minutes per side until crisp and melted.",
+      "Cut into wedges and serve with salsa and sour cream."
+    ],
+    "ingredients": [
+      {
+        "id": "tortilla_flour",
+        "qty": 8
+      },
+      {
+        "id": "refried_beans",
+        "qty": 1
+      },
+      {
+        "id": "corn_canned",
+        "qty": 1,
+        "note": "drained"
+      },
+      {
+        "id": "cheddar",
+        "qty": 2
+      },
+      {
+        "id": "green_chiles",
+        "qty": 1
+      },
+      {
+        "id": "salsa",
+        "qty": 1
+      },
+      {
+        "id": "sour_cream",
+        "qty": 0.5
+      },
+      {
+        "id": "cumin",
+        "qty": 0.5
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 1
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1618040996337-56904b7850b9",
+    "photo_credit": {
+      "name": "Lottie Griffiths",
+      "url": "https://unsplash.com/photos/sliced-pizza-on-brown-wooden-table-pvTgyioFSTY"
+    }
+  },
+  {
+    "slug": "creamy-tomato-tortellini-soup",
+    "name": "Creamy Tomato Tortellini Soup",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 4,
+    "prep_minutes": 25,
+    "batch_friendly": false,
+    "description": "Cheese tortellini and spinach in a creamy tomato broth, ready in one pot.",
+    "steps": [
+      "Cook the onion in the oil over medium heat for 4 minutes, then add the garlic and Italian seasoning for 1 minute.",
+      "Add the crushed tomatoes and broth and bring to a simmer.",
+      "Add the tortellini and cook 5 to 7 minutes until tender.",
+      "Stir in the cream and spinach until the spinach wilts.",
+      "Serve with parmesan."
+    ],
+    "ingredients": [
+      {
+        "id": "tortellini",
+        "qty": 20
+      },
+      {
+        "id": "crushed_tomatoes",
+        "qty": 1
+      },
+      {
+        "id": "vegetable_broth",
+        "qty": 3
+      },
+      {
+        "id": "heavy_cream",
+        "qty": 0.5
+      },
+      {
+        "id": "spinach",
+        "qty": 4
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 0.5,
+        "note": "diced"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1
+      },
+      {
+        "id": "parmesan",
+        "qty": 0.25
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1746632794965-cf4b75fd5f92",
+    "photo_credit": {
+      "name": "Carlos Davila Cepeda",
+      "url": "https://unsplash.com/photos/a-bowl-of-soup-is-topped-with-cheese-C2iYbHL9PRQ"
+    }
+  },
+  {
+    "slug": "sheet-pan-chickpeas-vegetables-feta",
+    "name": "Sheet-Pan Chickpeas and Vegetables",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 4,
+    "prep_minutes": 40,
+    "batch_friendly": true,
+    "description": "Chickpeas, sweet potato, broccoli and peppers roasted on one pan and finished with feta and lemon.",
+    "steps": [
+      "Heat the oven to 425°F.",
+      "Toss the sweet potato, bell pepper, red onion, zucchini and drained chickpeas with the oil, smoked paprika, garlic powder, oregano and salt.",
+      "Spread over two sheet pans and roast 15 minutes.",
+      "Add the broccoli, toss and roast 12 to 15 minutes more until browned.",
+      "Squeeze the lemon over the pans and top with feta."
+    ],
+    "ingredients": [
+      {
+        "id": "chickpeas",
+        "qty": 2,
+        "note": "drained and patted dry"
+      },
+      {
+        "id": "sweet_potato",
+        "qty": 1,
+        "note": "3/4-inch dice"
+      },
+      {
+        "id": "broccoli",
+        "qty": 1,
+        "note": "cut into florets"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "note": "cut into chunks"
+      },
+      {
+        "id": "onion_red",
+        "qty": 1,
+        "note": "cut into wedges"
+      },
+      {
+        "id": "zucchini",
+        "qty": 1,
+        "note": "sliced"
+      },
+      {
+        "id": "feta",
+        "qty": 4,
+        "note": "crumbled"
+      },
+      {
+        "id": "lemon",
+        "qty": 1
+      },
+      {
+        "id": "olive_oil",
+        "qty": 3
+      },
+      {
+        "id": "smoked_paprika",
+        "qty": 1
+      },
+      {
+        "id": "garlic_powder",
+        "qty": 1
+      },
+      {
+        "id": "oregano",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1578071768923-b3d68573028e",
+    "photo_credit": {
+      "name": "Louis Hansel",
+      "url": "https://unsplash.com/photos/broccoli-and-carrots-on-white-plate-bPNvATD1cvc"
+    }
+  },
+  {
+    "slug": "pinto-bean-taco-salad",
+    "name": "Crunchy Pinto Bean Taco Salad",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 4,
+    "prep_minutes": 15,
+    "batch_friendly": false,
+    "description": "Romaine piled with seasoned pinto beans, corn, tomato, cheddar, avocado and crushed tortilla chips.",
+    "steps": [
+      "Warm the drained beans with the taco seasoning and a splash of water for 3 minutes.",
+      "Stir the salsa, sour cream and lime juice together for the dressing.",
+      "Divide the chopped romaine among 4 bowls.",
+      "Top with the beans, corn, tomato, cheddar and avocado.",
+      "Spoon over the dressing and finish with crushed tortilla chips."
+    ],
+    "ingredients": [
+      {
+        "id": "romaine",
+        "qty": 2,
+        "note": "chopped"
+      },
+      {
+        "id": "pinto_beans",
+        "qty": 2,
+        "note": "drained and rinsed"
+      },
+      {
+        "id": "corn_canned",
+        "qty": 1,
+        "note": "drained"
+      },
+      {
+        "id": "tomato",
+        "qty": 2,
+        "note": "diced"
+      },
+      {
+        "id": "cheddar",
+        "qty": 1
+      },
+      {
+        "id": "avocado",
+        "qty": 1,
+        "note": "diced"
+      },
+      {
+        "id": "tortilla_chips",
+        "qty": 4
+      },
+      {
+        "id": "salsa",
+        "qty": 1
+      },
+      {
+        "id": "sour_cream",
+        "qty": 0.5
+      },
+      {
+        "id": "taco_seasoning",
+        "qty": 1
+      },
+      {
+        "id": "lime",
+        "qty": 1
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1543339127-b02a6d983980",
+    "photo_credit": {
+      "name": "Hermes Rivera",
+      "url": "https://unsplash.com/photos/fruit-dish-on-plate-dZuHkZwryyI"
+    }
+  },
+  {
+    "slug": "mushroom-stroganoff-egg-noodles",
+    "name": "Mushroom Stroganoff with Egg Noodles",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 4,
+    "prep_minutes": 30,
+    "batch_friendly": false,
+    "description": "Browned mushrooms in a creamy sour cream sauce over buttered egg noodles.",
+    "steps": [
+      "Boil the egg noodles until tender and drain.",
+      "Brown the mushrooms in the butter over medium-high heat for 8 minutes, then add the onion and cook 4 minutes.",
+      "Stir in the garlic, paprika and thyme for 1 minute, then the flour.",
+      "Add the broth, soy sauce and mustard and simmer 5 minutes until thickened.",
+      "Take off the heat and stir in the sour cream, salt and pepper.",
+      "Serve over the noodles with parsley."
+    ],
+    "ingredients": [
+      {
+        "id": "egg_noodles",
+        "qty": 12
+      },
+      {
+        "id": "mushroom",
+        "qty": 16,
+        "note": "sliced"
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced"
+      },
+      {
+        "id": "butter",
+        "qty": 2
+      },
+      {
+        "id": "flour",
+        "qty": 0.125
+      },
+      {
+        "id": "vegetable_broth",
+        "qty": 1.5
+      },
+      {
+        "id": "sour_cream",
+        "qty": 1
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 1
+      },
+      {
+        "id": "mustard",
+        "qty": 1
+      },
+      {
+        "id": "paprika",
+        "qty": 1
+      },
+      {
+        "id": "thyme",
+        "qty": 0.5
+      },
+      {
+        "id": "parsley",
+        "qty": 0.25,
+        "note": "chopped"
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.5
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1611608927216-ca294fa86bee",
+    "photo_credit": {
+      "name": "Vladimir Gladkov",
+      "url": "https://unsplash.com/photos/pasta-dish-on-white-ceramic-plate-ioXOnu-furc"
+    }
+  },
+  {
+    "slug": "veggie-ramen-stir-fry-eggs",
+    "name": "Veggie Ramen Stir-Fry with Eggs",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 4,
+    "prep_minutes": 15,
+    "batch_friendly": false,
+    "description": "Ramen noodles tossed with stir-fry vegetables, scrambled eggs and a garlic soy sauce.",
+    "steps": [
+      "Boil the ramen noodles for 2 minutes (leave out the seasoning packets) and drain.",
+      "Scramble the eggs in half the vegetable oil in a large skillet and set aside.",
+      "Stir-fry the frozen vegetables, garlic and ginger in the remaining oil over high heat for 5 minutes.",
+      "Mix the soy sauce, brown sugar, sriracha and sesame oil.",
+      "Add the noodles, eggs and sauce to the pan and toss 1 to 2 minutes.",
+      "Top with green onion."
+    ],
+    "ingredients": [
+      {
+        "id": "ramen",
+        "qty": 4,
+        "note": "noodles only"
+      },
+      {
+        "id": "stir_fry_veg_frozen",
+        "qty": 5
+      },
+      {
+        "id": "eggs",
+        "qty": 4
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 3
+      },
+      {
+        "id": "sesame_oil",
+        "qty": 1
+      },
+      {
+        "id": "brown_sugar",
+        "qty": 0.0625
+      },
+      {
+        "id": "sriracha",
+        "qty": 1
+      },
+      {
+        "id": "garlic",
+        "qty": 2,
+        "note": "minced"
+      },
+      {
+        "id": "ginger",
+        "qty": 1,
+        "note": "grated"
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 2
+      },
+      {
+        "id": "green_onion",
+        "qty": 0.5,
+        "note": "sliced"
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1553621043-f607bfbf6640",
+    "photo_credit": {
+      "name": "Riccardo Bergamini",
+      "url": "https://unsplash.com/photos/pasta-on-plate-Xe14NrSK9io"
+    }
+  },
+  {
+    "slug": "greek-chickpea-salad-pitas",
+    "name": "Greek Chickpea Salad with Warm Pita",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 4,
+    "prep_minutes": 15,
+    "batch_friendly": false,
+    "description": "Chickpeas, cucumber, tomatoes and feta in a lemon oregano dressing over romaine with warm pita.",
+    "steps": [
+      "Whisk the oil, lemon juice, oregano, salt and pepper in a large bowl.",
+      "Add the drained chickpeas, cucumber, halved tomatoes and red onion and toss.",
+      "Fold in the feta.",
+      "Warm the pitas in a dry skillet or toaster and cut into wedges.",
+      "Serve the salad over chopped romaine with the pita."
+    ],
+    "ingredients": [
+      {
+        "id": "chickpeas",
+        "qty": 2,
+        "note": "drained and rinsed"
+      },
+      {
+        "id": "cucumber",
+        "qty": 1,
+        "note": "diced"
+      },
+      {
+        "id": "cherry_tomato",
+        "qty": 1,
+        "note": "halved"
+      },
+      {
+        "id": "onion_red",
+        "qty": 0.5,
+        "note": "thinly sliced"
+      },
+      {
+        "id": "feta",
+        "qty": 4,
+        "note": "crumbled"
+      },
+      {
+        "id": "romaine",
+        "qty": 1,
+        "note": "chopped"
+      },
+      {
+        "id": "pita",
+        "qty": 4
+      },
+      {
+        "id": "olive_oil",
+        "qty": 3
+      },
+      {
+        "id": "lemon",
+        "qty": 1
+      },
+      {
+        "id": "oregano",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1568803776598-57e3cf2f90fc",
+    "photo_credit": {
+      "name": "dimitri.photography",
+      "url": "https://unsplash.com/photos/sliced-vegetable-dish-JDP_yzauSYg"
+    }
+  },
+  {
+    "slug": "southwest-quinoa-black-bean-salad",
+    "name": "Southwest Quinoa and Black Bean Salad",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 4,
+    "prep_minutes": 30,
+    "batch_friendly": true,
+    "description": "Quinoa tossed with black beans, corn, peppers and avocado in a cumin lime dressing.",
+    "steps": [
+      "Rinse the quinoa and simmer it in 2 cups of water, covered, for 15 minutes, then spread on a plate to cool.",
+      "Whisk the lime juice, oil, cumin, chili powder and salt in a large bowl.",
+      "Add the drained beans and corn, bell pepper, tomato and green onion.",
+      "Fold in the quinoa and cilantro.",
+      "Top with avocado just before serving."
+    ],
+    "ingredients": [
+      {
+        "id": "quinoa",
+        "qty": 1
+      },
+      {
+        "id": "black_beans",
+        "qty": 2,
+        "note": "drained and rinsed"
+      },
+      {
+        "id": "corn_canned",
+        "qty": 1,
+        "note": "drained"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "note": "diced"
+      },
+      {
+        "id": "tomato",
+        "qty": 2,
+        "note": "diced"
+      },
+      {
+        "id": "avocado",
+        "qty": 1,
+        "note": "diced"
+      },
+      {
+        "id": "green_onion",
+        "qty": 0.5,
+        "note": "sliced"
+      },
+      {
+        "id": "cilantro",
+        "qty": 0.5,
+        "note": "chopped"
+      },
+      {
+        "id": "lime",
+        "qty": 2
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2
+      },
+      {
+        "id": "cumin",
+        "qty": 1
+      },
+      {
+        "id": "chili_powder",
+        "qty": 0.5
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1505576633757-0ac1084af824",
+    "photo_credit": {
+      "name": "Mariana Medvedeva",
+      "url": "https://unsplash.com/photos/plate-full-of-salad-with-spice-on-top-of-brown-board-fk6IiypMWss"
+    }
+  },
+  {
+    "slug": "peanut-noodles-cabbage-carrots",
+    "name": "Peanut Noodles with Cabbage and Carrots",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 4,
+    "prep_minutes": 20,
+    "batch_friendly": false,
+    "description": "Spaghetti tossed with crunchy cabbage and carrots in a creamy peanut, soy and lime sauce.",
+    "steps": [
+      "Boil the spaghetti until tender, adding the coleslaw mix for the last minute, then drain.",
+      "Whisk the peanut butter, soy sauce, vinegar, honey, sesame oil, sriracha, garlic, ginger and 1/3 cup hot water until smooth.",
+      "Toss the noodles and cabbage with the sauce.",
+      "Top with green onion and chopped peanuts and serve with lime wedges."
+    ],
+    "ingredients": [
+      {
+        "id": "pasta_spaghetti",
+        "qty": 12
+      },
+      {
+        "id": "coleslaw_mix",
+        "qty": 1
+      },
+      {
+        "id": "peanut_butter",
+        "qty": 6
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 4
+      },
+      {
+        "id": "vinegar_rice",
+        "qty": 2
+      },
+      {
+        "id": "honey",
+        "qty": 1
+      },
+      {
+        "id": "sesame_oil",
+        "qty": 1
+      },
+      {
+        "id": "sriracha",
+        "qty": 1
+      },
+      {
+        "id": "garlic",
+        "qty": 2,
+        "note": "minced"
+      },
+      {
+        "id": "ginger",
+        "qty": 1,
+        "note": "grated"
+      },
+      {
+        "id": "green_onion",
+        "qty": 1,
+        "note": "sliced"
+      },
+      {
+        "id": "peanuts",
+        "qty": 0.25,
+        "note": "chopped"
+      },
+      {
+        "id": "lime",
+        "qty": 1
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1609690963718-0b55905aef78",
+    "photo_credit": {
+      "name": "Melissia Ohol",
+      "url": "https://unsplash.com/photos/sliced-vegetables-in-white-ceramic-bowl-o77dNRrgcn0"
+    }
+  },
+  {
+    "slug": "pinto-bean-huevos-rancheros",
+    "name": "Pinto Bean Huevos Rancheros",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 4,
+    "prep_minutes": 20,
+    "batch_friendly": false,
+    "description": "Fried eggs on crisp corn tortillas with mashed pinto beans, warm salsa, cheddar and avocado.",
+    "steps": [
+      "Mash the drained beans in a small pot with the cumin and a splash of water and keep warm.",
+      "Warm the salsa in a small saucepan.",
+      "Fry the tortillas in a little oil for 30 seconds per side until just crisp.",
+      "Fry the eggs in the remaining oil to your liking.",
+      "Spread beans on each tortilla and top with an egg, salsa, cheddar, avocado and cilantro."
+    ],
+    "ingredients": [
+      {
+        "id": "tortilla_corn",
+        "qty": 8
+      },
+      {
+        "id": "eggs",
+        "qty": 8
+      },
+      {
+        "id": "pinto_beans",
+        "qty": 2,
+        "note": "drained and rinsed"
+      },
+      {
+        "id": "salsa",
+        "qty": 1.5
+      },
+      {
+        "id": "cheddar",
+        "qty": 1
+      },
+      {
+        "id": "avocado",
+        "qty": 1,
+        "note": "sliced"
+      },
+      {
+        "id": "cilantro",
+        "qty": 0.25,
+        "note": "chopped"
+      },
+      {
+        "id": "cumin",
+        "qty": 0.5
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 2
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1650330151304-5db3ca9b3b6c",
+    "photo_credit": {
+      "name": "Alexandra Mendívil",
+      "url": "https://unsplash.com/photos/a-bowl-of-food-with-an-egg-avocado-and-rice-rNriCVGMVgQ"
+    }
+  },
+  {
+    "slug": "potato-pea-curry-with-naan",
+    "name": "Potato and Pea Curry with Naan",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 4,
+    "prep_minutes": 40,
+    "batch_friendly": false,
+    "description": "Potatoes and peas simmered in a spiced tomato sauce and scooped up with warm naan.",
+    "steps": [
+      "Cook the onion in the oil over medium heat for 5 minutes, then stir in the garlic, ginger, curry powder, cumin and turmeric for 1 minute.",
+      "Add the potatoes, tomatoes, broth and salt.",
+      "Cover and simmer 20 minutes until the potatoes are tender.",
+      "Stir in the peas and cook 3 minutes, mashing a few potatoes to thicken the sauce.",
+      "Warm the naan and serve with the curry and cilantro."
+    ],
+    "ingredients": [
+      {
+        "id": "potato_russet",
+        "qty": 1.5,
+        "note": "peeled, 3/4-inch cubes"
+      },
+      {
+        "id": "peas_frozen",
+        "qty": 1.5
+      },
+      {
+        "id": "diced_tomatoes",
+        "qty": 1
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced"
+      },
+      {
+        "id": "ginger",
+        "qty": 1,
+        "note": "grated"
+      },
+      {
+        "id": "curry_powder",
+        "qty": 3
+      },
+      {
+        "id": "cumin",
+        "qty": 1
+      },
+      {
+        "id": "turmeric",
+        "qty": 0.5
+      },
+      {
+        "id": "vegetable_broth",
+        "qty": 1
+      },
+      {
+        "id": "naan",
+        "qty": 4
+      },
+      {
+        "id": "cilantro",
+        "qty": 0.5,
+        "note": "chopped"
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 2
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1789990642036-e10c2df4fc81",
+    "photo_credit": {
+      "name": "Zoshua Colah",
+      "url": "https://unsplash.com/photos/poori-and-potato-curry-breakfast-LBknd0DOoRk"
+    }
+  }
+]
