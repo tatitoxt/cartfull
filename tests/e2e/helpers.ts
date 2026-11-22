@@ -24,7 +24,7 @@ export async function signInCode(email: string): Promise<string> {
 /** Completes the email sign-in form with the emailed code. */
 export async function signIn(page: Page, email: string) {
   await page.getByLabel("Email").fill(email);
-  await page.getByRole("button", { name: /email me a link/i }).click();
+  await page.getByRole("button", { name: /email me a sign-in link/i }).click();
   await page.getByLabel(/code/i).fill(await signInCode(email));
   await page.getByRole("button", { name: /^sign in$/i }).click();
 }
