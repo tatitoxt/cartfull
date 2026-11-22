@@ -1,6 +1,7 @@
 import "server-only";
 import type Stripe from "stripe";
 import type { SupabaseClient } from "@supabase/supabase-js";
+import { replacesStored } from "./plans";
 import { intervalForPrice } from "./stripe";
 
 const iso = (seconds: number | null | undefined) => (seconds ? new Date(seconds * 1000).toISOString() : null);
@@ -22,6 +23,13 @@ export async function syncSubscription(admin: SupabaseClient, subscription: Stri
     userId = data?.user_id ?? null;
   }
   if (!userId) throw new Error(`Subscription ${subscription.id} is not linked to a user`);
+
+  const { data: stored } = await admin
+    .from("subscriptions")
+    .select("stripe_subscription_id")
+    .eq("user_id", userId)
+    .maybeSingle();
+  if (!replacesStored(stored?.stripe_subscription_id, subscription)) return;
 
   const item = subscription.items.data[0];
   const price = item?.price.id ?? null;
