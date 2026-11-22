@@ -153,8 +153,19 @@ describe("formatting and redirects", () => {
   it("only allows same-site paths after sign-in", () => {
     expect(safeNext("/app/list")).toBe("/app/list");
     expect(safeNext("/start?finish=1")).toBe("/start?finish=1");
-    for (const bad of [null, undefined, "", "https://evil.example", "//evil.example", "/\\evil.example", "javascript:alert(1)"]) {
-      expect(safeNext(bad)).toBe("/app");
-    }
+    const bad = [
+      null,
+      undefined,
+      "",
+      "https://evil.example",
+      "//evil.example",
+      "/\\evil.example",
+      "javascript:alert(1)",
+      "/\t/evil.example",
+      "/\n/evil.example",
+      "/\r/evil.example",
+    ];
+    for (const value of bad) expect(safeNext(value)).toBe("/app");
+    expect(safeNext("/app/../../start")).toBe("/start");
   });
 });
