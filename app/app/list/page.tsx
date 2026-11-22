@@ -2,25 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { loadAppState } from "@/lib/app/current";
 import { weekIsOver, weekLabel } from "@/lib/app/week";
-import { AISLES, type Aisle } from "@/lib/catalog/types";
+import { AISLE_LABELS } from "@/lib/catalog/aisles";
+import { AISLES } from "@/lib/catalog/types";
 import { packagesFor, soldByWeight } from "@/lib/planner/cart";
 import { quantity, unitLabel } from "@/lib/format";
 import { GroceryList, type ListLine } from "./grocery-list";
 
 export const metadata: Metadata = { title: "Grocery list" };
-
-export const AISLE_LABELS: Record<Aisle, string> = {
-  produce: "Produce",
-  meat: "Meat",
-  seafood: "Seafood",
-  dairy: "Dairy and eggs",
-  bakery: "Bakery",
-  pantry: "Dry goods",
-  canned: "Cans and jars",
-  frozen: "Frozen",
-  condiments: "Oils and sauces",
-  spices: "Spices",
-};
 
 export default async function ListPage() {
   const { current } = await loadAppState("/app/list");
