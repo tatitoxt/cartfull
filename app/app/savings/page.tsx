@@ -54,7 +54,7 @@ export default async function SavingsPage() {
 
       {summary.confirmedWeeks < summary.weeks.length && (
         <p className="mt-4 text-sm text-ink-soft">
-          Weeks without a receipt use the estimated cart. Add what you really spent to make the number yours.
+          Weeks without a receipt count as if you spent your whole budget. Add what you really spent to make the number yours.
         </p>
       )}
 
@@ -71,7 +71,7 @@ export default async function SavingsPage() {
             <dl className="tnum mt-4 space-y-2 text-sm">
               {[
                 { label: week.usualIsEstimate ? "Typical week" : "Your usual", cents: week.usualCents, bar: "bg-line" },
-                { label: week.spentIsActual ? "You spent" : "Estimated cart", cents: week.spentCents, bar: "bg-green" },
+                { label: week.spentIsActual ? "You spent" : "Your budget", cents: week.spentCents, bar: "bg-green" },
               ].map((row) => (
                 <div key={row.label} className="grid grid-cols-[7.5rem_1fr_4.5rem] items-center gap-3">
                   <dt className="text-ink-soft">{row.label}</dt>
