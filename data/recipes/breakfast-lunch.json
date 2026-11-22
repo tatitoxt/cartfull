@@ -1,0 +1,1789 @@
+[
+  {
+    "slug": "peanut-butter-banana-oatmeal",
+    "name": "Peanut Butter Banana Oatmeal",
+    "meal_type": "breakfast",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 2,
+    "prep_minutes": 10,
+    "batch_friendly": false,
+    "description": "Creamy stovetop oats cooked in milk, topped with sliced banana and a spoonful of peanut butter.",
+    "steps": [
+      "Bring the milk, 1 cup of water and the salt to a simmer in a small pot.",
+      "Stir in the oats and cinnamon and cook 5 minutes, stirring often, until thick and creamy.",
+      "Divide between two bowls.",
+      "Top with sliced banana and a spoonful of peanut butter."
+    ],
+    "ingredients": [
+      {
+        "id": "oats",
+        "qty": 1
+      },
+      {
+        "id": "milk",
+        "qty": 1
+      },
+      {
+        "id": "banana",
+        "qty": 2,
+        "note": "sliced"
+      },
+      {
+        "id": "peanut_butter",
+        "qty": 2
+      },
+      {
+        "id": "cinnamon",
+        "qty": 0.5
+      },
+      {
+        "id": "salt",
+        "qty": 0.25
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1599450307683-16b29464da5c",
+    "photo_credit": {
+      "name": "Lucie Rangel",
+      "url": "https://unsplash.com/photos/red-strawberries-on-white-ceramic-plate-vdvzWVw6YKw"
+    }
+  },
+  {
+    "slug": "apple-cinnamon-overnight-oats",
+    "name": "Apple Cinnamon Overnight Oats",
+    "meal_type": "breakfast",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 4,
+    "prep_minutes": 10,
+    "batch_friendly": true,
+    "description": "Oats soaked overnight with milk, yogurt, diced apple and cinnamon for four grab-and-go breakfasts.",
+    "steps": [
+      "Stir the oats, milk, yogurt, maple syrup, cinnamon and salt together in a bowl.",
+      "Fold in most of the diced apple.",
+      "Divide among four jars or containers and top with the remaining apple.",
+      "Cover and refrigerate overnight, or up to 4 days.",
+      "Eat cold, or microwave 1 minute to warm through."
+    ],
+    "ingredients": [
+      {
+        "id": "oats",
+        "qty": 2
+      },
+      {
+        "id": "milk",
+        "qty": 2
+      },
+      {
+        "id": "greek_yogurt",
+        "qty": 1
+      },
+      {
+        "id": "apple",
+        "qty": 2,
+        "note": "diced"
+      },
+      {
+        "id": "maple_syrup",
+        "qty": 2
+      },
+      {
+        "id": "cinnamon",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 0.25
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1548427049-97fe7f296a1c",
+    "photo_credit": {
+      "name": "Naghme Kn",
+      "url": "https://unsplash.com/photos/chocolate-in-clear-glass-jar-near-apple-slices-hyWqGawZ0zI"
+    }
+  },
+  {
+    "slug": "berry-yogurt-granola-parfaits",
+    "name": "Berry Yogurt Granola Parfaits",
+    "meal_type": "breakfast",
+    "diet_tags": [
+      "vegetarian",
+      "high_protein"
+    ],
+    "servings": 2,
+    "prep_minutes": 5,
+    "batch_friendly": false,
+    "description": "Thick Greek yogurt layered with mixed berries, crunchy granola, almonds and a drizzle of honey.",
+    "steps": [
+      "Thaw the berries in the microwave for 1 minute, or overnight in the fridge.",
+      "Spoon half of the yogurt into two glasses or bowls.",
+      "Layer on half of the berries and granola, then repeat with the rest.",
+      "Top with the almonds and drizzle with honey."
+    ],
+    "ingredients": [
+      {
+        "id": "greek_yogurt",
+        "qty": 2
+      },
+      {
+        "id": "berries_frozen",
+        "qty": 1
+      },
+      {
+        "id": "granola",
+        "qty": 0.5
+      },
+      {
+        "id": "almonds",
+        "qty": 0.25,
+        "note": "roughly chopped"
+      },
+      {
+        "id": "honey",
+        "qty": 1
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1571230389215-b34a89739ef1",
+    "photo_credit": {
+      "name": "Tanaphong Toochinda",
+      "url": "https://unsplash.com/photos/shallow-focus-photo-of-clear-drinking-glass-GbCEo-Nwyj4"
+    }
+  },
+  {
+    "slug": "berry-banana-yogurt-smoothies",
+    "name": "Berry Banana Yogurt Smoothies",
+    "meal_type": "breakfast",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 2,
+    "prep_minutes": 5,
+    "batch_friendly": false,
+    "description": "Frozen berries and banana blended with yogurt and milk into a thick, filling smoothie.",
+    "steps": [
+      "Add the milk and yogurt to a blender first.",
+      "Add the bananas, frozen berries and honey.",
+      "Blend on high for 1 minute until completely smooth.",
+      "Pour into two glasses and serve right away."
+    ],
+    "ingredients": [
+      {
+        "id": "berries_frozen",
+        "qty": 1.5
+      },
+      {
+        "id": "banana",
+        "qty": 2
+      },
+      {
+        "id": "greek_yogurt",
+        "qty": 1
+      },
+      {
+        "id": "milk",
+        "qty": 1
+      },
+      {
+        "id": "honey",
+        "qty": 1
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1570696516188-ade861b84a49",
+    "photo_credit": {
+      "name": "Denis",
+      "url": "https://unsplash.com/photos/pink-smoothie-hsTwPUzFegQ"
+    }
+  },
+  {
+    "slug": "fluffy-pancakes-with-maple-syrup",
+    "name": "Fluffy Pancakes with Maple Syrup",
+    "meal_type": "breakfast",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 4,
+    "prep_minutes": 20,
+    "batch_friendly": true,
+    "description": "Tall from-scratch pancakes made with pantry staples; extras freeze well for toaster mornings.",
+    "steps": [
+      "Whisk the flour, baking powder, sugar and salt together in a large bowl.",
+      "Melt the butter. Whisk the milk, egg and 2 tablespoons of the melted butter together.",
+      "Stir the wet mixture into the dry until just combined; a few lumps are fine.",
+      "Heat a skillet over medium heat and brush it with some of the remaining butter.",
+      "Pour in 1/4 cup of batter per pancake and cook 2 minutes, until bubbles pop on top.",
+      "Flip and cook 1 to 2 minutes more, until golden.",
+      "Serve stacked with maple syrup."
+    ],
+    "ingredients": [
+      {
+        "id": "flour",
+        "qty": 1.5
+      },
+      {
+        "id": "baking_powder",
+        "qty": 3
+      },
+      {
+        "id": "sugar",
+        "qty": 0.0625,
+        "note": "1 tablespoon"
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      },
+      {
+        "id": "milk",
+        "qty": 1.25
+      },
+      {
+        "id": "eggs",
+        "qty": 1
+      },
+      {
+        "id": "butter",
+        "qty": 3
+      },
+      {
+        "id": "maple_syrup",
+        "qty": 4
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1620108091863-55147620ddaf",
+    "photo_credit": {
+      "name": "Anna Zaro",
+      "url": "https://unsplash.com/photos/brown-cookies-on-white-ceramic-plate-9qpXI_mujpk"
+    }
+  },
+  {
+    "slug": "avocado-toast-with-fried-eggs",
+    "name": "Avocado Toast with Fried Eggs",
+    "meal_type": "breakfast",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 2,
+    "prep_minutes": 10,
+    "batch_friendly": false,
+    "description": "Toasted whole wheat bread piled with lemony mashed avocado and a fried egg on each slice.",
+    "steps": [
+      "Toast the bread.",
+      "Mash the avocados with the lemon juice and salt.",
+      "Melt the butter in a skillet over medium heat and fry the eggs 3 minutes, until the whites are set.",
+      "Spread the avocado on the toast and top each slice with an egg.",
+      "Finish with black pepper and red pepper flakes."
+    ],
+    "ingredients": [
+      {
+        "id": "bread",
+        "qty": 4
+      },
+      {
+        "id": "avocado",
+        "qty": 2
+      },
+      {
+        "id": "eggs",
+        "qty": 4
+      },
+      {
+        "id": "lemon",
+        "qty": 0.5,
+        "note": "juiced"
+      },
+      {
+        "id": "butter",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 0.25
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      },
+      {
+        "id": "red_pepper_flakes",
+        "qty": 0.25
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1525351484163-7529414344d8",
+    "photo_credit": {
+      "name": "Ben Kolde",
+      "url": "https://unsplash.com/photos/bread-with-sunny-side-up-egg-served-on-white-ceramic-plate-FFqNATH27EM"
+    }
+  },
+  {
+    "slug": "strawberry-cottage-cheese-granola-bowls",
+    "name": "Strawberry Cottage Cheese Granola Bowls",
+    "meal_type": "breakfast",
+    "diet_tags": [
+      "vegetarian",
+      "high_protein"
+    ],
+    "servings": 2,
+    "prep_minutes": 5,
+    "batch_friendly": false,
+    "description": "Protein-packed cottage cheese topped with sliced strawberries, crunchy granola and a drizzle of honey.",
+    "steps": [
+      "Hull and slice the strawberries.",
+      "Divide the cottage cheese between two bowls.",
+      "Top with the strawberries and granola and drizzle with the honey."
+    ],
+    "ingredients": [
+      {
+        "id": "cottage_cheese",
+        "qty": 2
+      },
+      {
+        "id": "strawberry",
+        "qty": 0.5,
+        "note": "sliced"
+      },
+      {
+        "id": "granola",
+        "qty": 0.5
+      },
+      {
+        "id": "honey",
+        "qty": 1
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1614630536994-a6b781d56e15",
+    "photo_credit": {
+      "name": "Olena Bohovyk",
+      "url": "https://unsplash.com/photos/strawberry-and-blackberry-on-white-ceramic-bowl-odLdpSRRZtQ"
+    }
+  },
+  {
+    "slug": "mushroom-spinach-cheddar-omelets",
+    "name": "Mushroom Spinach Cheddar Omelets",
+    "meal_type": "breakfast",
+    "diet_tags": [
+      "vegetarian",
+      "keto",
+      "high_protein"
+    ],
+    "servings": 2,
+    "prep_minutes": 15,
+    "batch_friendly": false,
+    "description": "Three-egg omelets folded around sauteed mushrooms, wilted spinach and melted cheddar.",
+    "steps": [
+      "Melt half of the butter in a nonstick skillet over medium-high heat and cook the mushrooms 4 minutes, until browned.",
+      "Add the spinach and stir until wilted, then move the vegetables to a plate.",
+      "Beat the eggs with the salt and pepper.",
+      "Melt half of the remaining butter over medium heat, pour in half of the eggs and cook 2 minutes, lifting the edges, until just set.",
+      "Fill with half of the vegetables and cheddar, fold over and slide onto a plate.",
+      "Repeat for the second omelet."
+    ],
+    "ingredients": [
+      {
+        "id": "eggs",
+        "qty": 6
+      },
+      {
+        "id": "mushroom",
+        "qty": 4,
+        "note": "sliced"
+      },
+      {
+        "id": "spinach",
+        "qty": 2
+      },
+      {
+        "id": "cheddar",
+        "qty": 0.5
+      },
+      {
+        "id": "butter",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 0.25
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1677844592730-ce9c936d8f1a",
+    "photo_credit": {
+      "name": "Bakd&Raw by Karolin Baitinger",
+      "url": "https://unsplash.com/photos/a-white-plate-topped-with-an-omelet-and-greens-SCZP5rvZINk"
+    }
+  },
+  {
+    "slug": "crustless-spinach-feta-quiche",
+    "name": "Crustless Spinach Feta Quiche",
+    "meal_type": "breakfast",
+    "diet_tags": [
+      "vegetarian",
+      "keto",
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 45,
+    "batch_friendly": true,
+    "description": "An easy no-crust quiche with spinach, feta and mozzarella that slices and reheats well all week.",
+    "steps": [
+      "Heat the oven to 375°F and butter a 9-inch pie dish.",
+      "Thaw the spinach and squeeze it very dry in a clean towel.",
+      "Whisk the eggs, cream, salt and pepper together in a large bowl.",
+      "Stir in the spinach, diced onion, feta and mozzarella.",
+      "Pour into the dish and bake 30 to 35 minutes, until set in the center and golden.",
+      "Cool 5 minutes, then cut into wedges."
+    ],
+    "ingredients": [
+      {
+        "id": "eggs",
+        "qty": 8
+      },
+      {
+        "id": "spinach_frozen",
+        "qty": 1
+      },
+      {
+        "id": "feta",
+        "qty": 4
+      },
+      {
+        "id": "mozzarella",
+        "qty": 1
+      },
+      {
+        "id": "heavy_cream",
+        "qty": 0.5
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 0.5,
+        "note": "finely diced"
+      },
+      {
+        "id": "butter",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1636044990861-a540e33f9c5f",
+    "photo_credit": {
+      "name": "nrd",
+      "url": "https://unsplash.com/photos/a-white-plate-topped-with-a-quiche-next-to-a-cup-of-coffee-RVPjkE7gKZo"
+    }
+  },
+  {
+    "slug": "potato-pepper-breakfast-hash-with-eggs",
+    "name": "Potato Pepper Breakfast Hash with Eggs",
+    "meal_type": "breakfast",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 4,
+    "prep_minutes": 30,
+    "batch_friendly": false,
+    "description": "Crispy skillet potatoes with bell pepper and onion, finished with eggs cooked right in the pan.",
+    "steps": [
+      "Dice the potatoes into 1/2-inch cubes; dice the pepper and onion.",
+      "Heat the oil in a large skillet over medium-high heat and cook the potatoes 12 minutes, stirring now and then, until golden.",
+      "Add the pepper, onion, smoked paprika, garlic powder, salt and pepper and cook 5 minutes.",
+      "Make four wells in the hash and crack an egg into each.",
+      "Cover and cook over medium-low heat 4 to 5 minutes, until the whites are set."
+    ],
+    "ingredients": [
+      {
+        "id": "potato_russet",
+        "qty": 1.5
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1
+      },
+      {
+        "id": "eggs",
+        "qty": 4
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 2
+      },
+      {
+        "id": "smoked_paprika",
+        "qty": 1
+      },
+      {
+        "id": "garlic_powder",
+        "qty": 0.5
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1601579112521-5d6badb0bf3c",
+    "photo_credit": {
+      "name": "Megan Bucknall",
+      "url": "https://unsplash.com/photos/black-round-plate-with-cooked-food-hzxxLzqaEjU"
+    }
+  },
+  {
+    "slug": "sausage-egg-cheese-breakfast-burritos",
+    "name": "Sausage Egg and Cheese Breakfast Burritos",
+    "meal_type": "breakfast",
+    "diet_tags": [
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 25,
+    "batch_friendly": true,
+    "description": "Freezer-friendly burritos stuffed with sausage, hash browns, scrambled eggs, cheddar and salsa.",
+    "steps": [
+      "Brown the sausage in a large skillet over medium-high heat 5 minutes, breaking it up.",
+      "Add the hash browns and cook 5 minutes, until crisp at the edges.",
+      "Beat the eggs, pour them in and stir 2 minutes, until just set.",
+      "Warm the tortillas and divide the filling, cheddar and salsa among them.",
+      "Fold in the sides and roll up tightly.",
+      "Eat now, or wrap in foil and freeze; reheat unwrapped in the microwave 2 minutes."
+    ],
+    "ingredients": [
+      {
+        "id": "sausage_breakfast",
+        "qty": 0.5
+      },
+      {
+        "id": "eggs",
+        "qty": 6
+      },
+      {
+        "id": "hash_browns",
+        "qty": 1
+      },
+      {
+        "id": "cheddar",
+        "qty": 1
+      },
+      {
+        "id": "tortilla_flour",
+        "qty": 4
+      },
+      {
+        "id": "salsa",
+        "qty": 0.5
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1662478839359-751ffc3cbbd8",
+    "photo_credit": {
+      "name": "Mikey Frost",
+      "url": "https://unsplash.com/photos/a-plate-of-food-bmXDqfPf4Vo"
+    }
+  },
+  {
+    "slug": "ham-cheddar-egg-muffin-cups",
+    "name": "Ham and Cheddar Egg Muffin Cups",
+    "meal_type": "breakfast",
+    "diet_tags": [
+      "keto",
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 30,
+    "batch_friendly": true,
+    "description": "Baked egg cups with ham, cheddar and bell pepper: twelve from one muffin tin for the week.",
+    "steps": [
+      "Heat the oven to 375°F and grease a 12-cup muffin tin with the butter.",
+      "Dice the ham and bell pepper and slice the green onions; divide among the cups with the cheddar.",
+      "Beat the eggs with the salt and pepper and pour evenly into the cups.",
+      "Bake 18 to 20 minutes, until puffed and set.",
+      "Cool 5 minutes and lift out. Refrigerate up to 4 days and reheat 30 seconds in the microwave."
+    ],
+    "ingredients": [
+      {
+        "id": "eggs",
+        "qty": 10
+      },
+      {
+        "id": "ham_deli",
+        "qty": 4
+      },
+      {
+        "id": "cheddar",
+        "qty": 1
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1
+      },
+      {
+        "id": "green_onion",
+        "qty": 0.5
+      },
+      {
+        "id": "butter",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 0.25
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1518310532637-f5225f94f3c3",
+    "photo_credit": {
+      "name": "Kaitlyn Chow",
+      "url": "https://unsplash.com/photos/grilled-patties-with-tomato-toppings-tIElrLKqdjo"
+    }
+  },
+  {
+    "slug": "bacon-eggs-and-avocado-plates",
+    "name": "Bacon, Eggs and Avocado Plates",
+    "meal_type": "breakfast",
+    "diet_tags": [
+      "keto",
+      "high_protein"
+    ],
+    "servings": 2,
+    "prep_minutes": 15,
+    "batch_friendly": false,
+    "description": "A classic low-carb plate of crisp bacon, eggs fried in butter and sliced avocado.",
+    "steps": [
+      "Lay the bacon in a cold skillet and cook over medium heat 8 minutes, turning, until crisp; drain on paper towels.",
+      "Pour off most of the fat, add the butter and fry the eggs 3 minutes, until the whites are set.",
+      "Slice the avocado.",
+      "Plate the eggs with the bacon and avocado and season with salt and pepper."
+    ],
+    "ingredients": [
+      {
+        "id": "bacon",
+        "qty": 4
+      },
+      {
+        "id": "eggs",
+        "qty": 6
+      },
+      {
+        "id": "avocado",
+        "qty": 1
+      },
+      {
+        "id": "butter",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 0.25
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1608475861994-cf7af0f0c1be",
+    "photo_credit": {
+      "name": "James Kern",
+      "url": "https://unsplash.com/photos/fried-egg-on-black-pan-aLDW0oQ0NtU"
+    }
+  },
+  {
+    "slug": "cinnamon-french-toast",
+    "name": "Cinnamon French Toast",
+    "meal_type": "breakfast",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 4,
+    "prep_minutes": 15,
+    "batch_friendly": false,
+    "description": "Bread soaked in cinnamon-vanilla custard, griddled golden in butter and served with maple syrup.",
+    "steps": [
+      "Whisk the eggs, milk, cinnamon and vanilla together in a shallow dish.",
+      "Melt half of the butter in a large skillet over medium heat.",
+      "Dip four slices of bread in the custard, letting each side soak a few seconds.",
+      "Cook 2 to 3 minutes per side, until golden brown.",
+      "Repeat with the remaining butter and bread.",
+      "Serve with maple syrup."
+    ],
+    "ingredients": [
+      {
+        "id": "bread",
+        "qty": 8
+      },
+      {
+        "id": "eggs",
+        "qty": 4
+      },
+      {
+        "id": "milk",
+        "qty": 0.75
+      },
+      {
+        "id": "cinnamon",
+        "qty": 1
+      },
+      {
+        "id": "vanilla",
+        "qty": 1
+      },
+      {
+        "id": "butter",
+        "qty": 2
+      },
+      {
+        "id": "maple_syrup",
+        "qty": 4
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1631707928780-153b053e09aa",
+    "photo_credit": {
+      "name": "montatip lilitsanong",
+      "url": "https://unsplash.com/photos/a-grilled-cheese-sandwich-on-a-plate-with-a-fork-4NQrFtFBIaI"
+    }
+  },
+  {
+    "slug": "sausage-pepper-egg-scramble",
+    "name": "Sausage and Pepper Egg Scramble",
+    "meal_type": "breakfast",
+    "diet_tags": [
+      "keto",
+      "high_protein"
+    ],
+    "servings": 2,
+    "prep_minutes": 15,
+    "batch_friendly": false,
+    "description": "Breakfast sausage and bell pepper scrambled with eggs and finished with melted cheddar.",
+    "steps": [
+      "Brown the sausage in a skillet over medium-high heat 5 minutes, breaking it into crumbles.",
+      "Add the diced bell pepper and cook 3 minutes, until softened.",
+      "Beat the eggs with the salt and pepper, pour them in and stir gently 2 minutes, until just set.",
+      "Sprinkle with the cheddar, cover 1 minute to melt and serve."
+    ],
+    "ingredients": [
+      {
+        "id": "sausage_breakfast",
+        "qty": 0.5
+      },
+      {
+        "id": "eggs",
+        "qty": 4
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "note": "diced"
+      },
+      {
+        "id": "cheddar",
+        "qty": 0.5
+      },
+      {
+        "id": "salt",
+        "qty": 0.25
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1662751331020-8a30ce0c78f6",
+    "photo_credit": {
+      "name": "Andrijana Bozic",
+      "url": "https://unsplash.com/photos/a-plate-of-food-SBc3QKmqwpg"
+    }
+  },
+  {
+    "slug": "classic-tuna-salad-sandwiches",
+    "name": "Classic Tuna Salad Sandwiches",
+    "meal_type": "lunch",
+    "diet_tags": [
+      "high_protein"
+    ],
+    "servings": 2,
+    "prep_minutes": 10,
+    "batch_friendly": false,
+    "description": "Creamy tuna salad with crunchy celery and lemon on whole wheat bread with crisp lettuce.",
+    "steps": [
+      "Drain the tuna well and flake it into a bowl.",
+      "Stir in the mayonnaise, finely diced celery, lemon juice, salt and pepper.",
+      "Pile onto two slices of bread and top with lettuce leaves.",
+      "Close the sandwiches and cut in half."
+    ],
+    "ingredients": [
+      {
+        "id": "tuna_canned",
+        "qty": 2
+      },
+      {
+        "id": "mayo",
+        "qty": 3
+      },
+      {
+        "id": "celery",
+        "qty": 2,
+        "note": "finely diced"
+      },
+      {
+        "id": "lemon",
+        "qty": 0.5,
+        "note": "juiced"
+      },
+      {
+        "id": "bread",
+        "qty": 4
+      },
+      {
+        "id": "romaine",
+        "qty": 0.5
+      },
+      {
+        "id": "salt",
+        "qty": 0.25
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1558985250-27a406d64cb3",
+    "photo_credit": {
+      "name": "Youjeen Cho",
+      "url": "https://unsplash.com/photos/sandwich-on-table-sBKLiRiunK0"
+    }
+  },
+  {
+    "slug": "deli-style-egg-salad-sandwiches",
+    "name": "Deli-Style Egg Salad Sandwiches",
+    "meal_type": "lunch",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 4,
+    "prep_minutes": 20,
+    "batch_friendly": false,
+    "description": "Chopped hard-boiled eggs in a creamy mustard dressing with celery, on whole wheat bread.",
+    "steps": [
+      "Cover the eggs with water in a pot, bring to a boil, then cover, turn off the heat and let stand 11 minutes.",
+      "Cool the eggs under cold water, peel and chop.",
+      "Mix with the mayonnaise, mustard, diced celery, sliced green onions, paprika, salt and pepper.",
+      "Spread onto four slices of bread, add lettuce and top with the remaining bread."
+    ],
+    "ingredients": [
+      {
+        "id": "eggs",
+        "qty": 8
+      },
+      {
+        "id": "mayo",
+        "qty": 4
+      },
+      {
+        "id": "mustard",
+        "qty": 1
+      },
+      {
+        "id": "celery",
+        "qty": 2,
+        "note": "finely diced"
+      },
+      {
+        "id": "green_onion",
+        "qty": 0.5
+      },
+      {
+        "id": "bread",
+        "qty": 8
+      },
+      {
+        "id": "romaine",
+        "qty": 1
+      },
+      {
+        "id": "paprika",
+        "qty": 0.25
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1733105658196-44b3c597bb41",
+    "photo_credit": {
+      "name": "Tadahiro Higuchi",
+      "url": "https://unsplash.com/photos/a-white-plate-topped-with-a-slice-of-cake-next-to-a-bowl-of-salad-TYvO1gGKyYQ"
+    }
+  },
+  {
+    "slug": "rotisserie-chicken-salad-lettuce-cups",
+    "name": "Rotisserie Chicken Salad Lettuce Cups",
+    "meal_type": "lunch",
+    "diet_tags": [
+      "keto",
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 15,
+    "batch_friendly": true,
+    "description": "Shredded rotisserie chicken in a creamy lemon-mustard dressing, scooped into crisp romaine leaves.",
+    "steps": [
+      "Pull the meat from the chicken, discard the skin and bones, and chop or shred it.",
+      "Stir the mayonnaise, mustard, lemon juice, salt and pepper together in a large bowl.",
+      "Fold in the chicken, diced celery and sliced green onions.",
+      "Separate the romaine leaves and spoon the chicken salad into them.",
+      "Keep leftover chicken salad in the fridge up to 4 days and fill the leaves just before eating."
+    ],
+    "ingredients": [
+      {
+        "id": "rotisserie_chicken",
+        "qty": 1
+      },
+      {
+        "id": "mayo",
+        "qty": 6
+      },
+      {
+        "id": "mustard",
+        "qty": 1
+      },
+      {
+        "id": "lemon",
+        "qty": 0.5,
+        "note": "juiced"
+      },
+      {
+        "id": "celery",
+        "qty": 3,
+        "note": "diced"
+      },
+      {
+        "id": "green_onion",
+        "qty": 0.5
+      },
+      {
+        "id": "romaine",
+        "qty": 2
+      },
+      {
+        "id": "salt",
+        "qty": 0.25
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1612949060306-4c298ad7f34c",
+    "photo_credit": {
+      "name": "Christine Isakzhanova",
+      "url": "https://unsplash.com/photos/vegetable-salad-on-white-ceramic-plate-xWcExN_8nTk"
+    }
+  },
+  {
+    "slug": "black-bean-corn-quesadillas",
+    "name": "Black Bean and Corn Quesadillas",
+    "meal_type": "lunch",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 4,
+    "prep_minutes": 20,
+    "batch_friendly": false,
+    "description": "Crispy folded tortillas filled with melted cheddar, black beans and corn, with salsa for dipping.",
+    "steps": [
+      "Drain and rinse the beans, then mix them with the corn and cumin.",
+      "Cover half of each tortilla with cheddar and the bean mixture, then fold over.",
+      "Heat a little of the oil in a skillet over medium heat.",
+      "Cook the quesadillas two at a time, 2 to 3 minutes per side, until crisp and melted.",
+      "Cut into wedges and serve with the salsa."
+    ],
+    "ingredients": [
+      {
+        "id": "tortilla_flour",
+        "qty": 4
+      },
+      {
+        "id": "cheddar",
+        "qty": 1.5
+      },
+      {
+        "id": "black_beans",
+        "qty": 1
+      },
+      {
+        "id": "corn_frozen",
+        "qty": 1
+      },
+      {
+        "id": "cumin",
+        "qty": 1
+      },
+      {
+        "id": "salsa",
+        "qty": 0.5
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 1
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1584398572810-43c36faba2ad",
+    "photo_credit": {
+      "name": "David Holifield",
+      "url": "https://unsplash.com/photos/brown-and-white-dish-on-white-ceramic-plate-hsLYgXwJQW0"
+    }
+  },
+  {
+    "slug": "meal-prep-chicken-burrito-bowls",
+    "name": "Meal-Prep Chicken Burrito Bowls",
+    "meal_type": "lunch",
+    "diet_tags": [
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 30,
+    "batch_friendly": true,
+    "description": "Taco-seasoned chicken thighs over rice with black beans, corn, salsa and cheddar, packed for four lunches.",
+    "steps": [
+      "Cook the rice according to the package directions.",
+      "Cut the chicken into bite-size pieces and toss with the taco seasoning.",
+      "Heat the oil in a large skillet over medium-high heat and cook the chicken 8 minutes, until browned and cooked through.",
+      "Warm the drained beans and the corn together in the microwave 2 minutes.",
+      "Divide the rice among four containers and top with the chicken, beans, corn, salsa and cheddar.",
+      "Squeeze lime over the top. Refrigerate up to 4 days."
+    ],
+    "ingredients": [
+      {
+        "id": "chicken_thigh",
+        "qty": 1.25
+      },
+      {
+        "id": "taco_seasoning",
+        "qty": 2
+      },
+      {
+        "id": "rice_white",
+        "qty": 1
+      },
+      {
+        "id": "black_beans",
+        "qty": 1
+      },
+      {
+        "id": "corn_frozen",
+        "qty": 1
+      },
+      {
+        "id": "salsa",
+        "qty": 1
+      },
+      {
+        "id": "cheddar",
+        "qty": 0.5
+      },
+      {
+        "id": "lime",
+        "qty": 1
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 1
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1668665771757-4d42737d295a",
+    "photo_credit": {
+      "name": "Andrew Relf",
+      "url": "https://unsplash.com/photos/a-plate-of-food-iku1zhSNRU8"
+    }
+  },
+  {
+    "slug": "greek-chickpea-salad",
+    "name": "Greek Chickpea Salad",
+    "meal_type": "lunch",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 4,
+    "prep_minutes": 15,
+    "batch_friendly": true,
+    "description": "Chickpeas tossed with cucumber, tomato, red onion and feta in a lemon-oregano dressing.",
+    "steps": [
+      "Drain and rinse the chickpeas.",
+      "Dice the cucumber and tomatoes and thinly slice the red onion.",
+      "Whisk the olive oil, lemon juice, oregano, salt and pepper together in a large bowl.",
+      "Add the chickpeas, vegetables and feta and toss well.",
+      "Serve now, or refrigerate up to 4 days."
+    ],
+    "ingredients": [
+      {
+        "id": "chickpeas",
+        "qty": 2
+      },
+      {
+        "id": "cucumber",
+        "qty": 1
+      },
+      {
+        "id": "tomato",
+        "qty": 3
+      },
+      {
+        "id": "onion_red",
+        "qty": 0.5
+      },
+      {
+        "id": "feta",
+        "qty": 4
+      },
+      {
+        "id": "olive_oil",
+        "qty": 3
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "note": "juiced"
+      },
+      {
+        "id": "oregano",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1688923130941-889a41f4439c",
+    "photo_credit": {
+      "name": "Imad 786",
+      "url": "https://unsplash.com/photos/a-bowl-of-food-with-a-spoon-in-it-nFkC9zJv0pk"
+    }
+  },
+  {
+    "slug": "lemony-lentil-vegetable-soup",
+    "name": "Lemony Lentil Vegetable Soup",
+    "meal_type": "lunch",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 4,
+    "prep_minutes": 40,
+    "batch_friendly": true,
+    "description": "A thick lentil soup with carrots, celery and tomatoes, brightened with lemon; reheats well all week.",
+    "steps": [
+      "Dice the onion, carrots and celery and mince the garlic.",
+      "Heat the olive oil in a large pot over medium heat and cook the vegetables 6 minutes, until softened.",
+      "Stir in the garlic and cumin for 30 seconds.",
+      "Add the lentils, tomatoes, broth, 2 cups of water, salt and pepper and bring to a boil.",
+      "Simmer partly covered 25 minutes, until the lentils are tender.",
+      "Stir in the lemon juice and serve."
+    ],
+    "ingredients": [
+      {
+        "id": "lentils",
+        "qty": 1.25
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1
+      },
+      {
+        "id": "carrot",
+        "qty": 0.5
+      },
+      {
+        "id": "celery",
+        "qty": 2
+      },
+      {
+        "id": "garlic",
+        "qty": 3
+      },
+      {
+        "id": "diced_tomatoes",
+        "qty": 1
+      },
+      {
+        "id": "vegetable_broth",
+        "qty": 4
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2
+      },
+      {
+        "id": "cumin",
+        "qty": 1
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "note": "juiced"
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1552298013-de2af4b94854",
+    "photo_credit": {
+      "name": "Steve Tsang",
+      "url": "https://unsplash.com/photos/soup-in-maroon-ceramic-pot-MP_A0OK_O60"
+    }
+  },
+  {
+    "slug": "turkey-cheddar-lettuce-roll-ups",
+    "name": "Turkey and Cheddar Lettuce Roll-Ups",
+    "meal_type": "lunch",
+    "diet_tags": [
+      "keto",
+      "high_protein"
+    ],
+    "servings": 2,
+    "prep_minutes": 10,
+    "batch_friendly": false,
+    "description": "No-cook, no-bread roll-ups of deli turkey and cheese in romaine leaves, with cucumber sticks.",
+    "steps": [
+      "Separate the romaine into eight large leaves.",
+      "Stir the mayonnaise and mustard together and spread a little down each leaf.",
+      "Layer on the turkey and half a slice of cheese, then roll up tightly.",
+      "Cut the cucumber into sticks and pack alongside."
+    ],
+    "ingredients": [
+      {
+        "id": "turkey_deli",
+        "qty": 8
+      },
+      {
+        "id": "cheese_slices",
+        "qty": 4
+      },
+      {
+        "id": "romaine",
+        "qty": 1
+      },
+      {
+        "id": "mayo",
+        "qty": 2
+      },
+      {
+        "id": "mustard",
+        "qty": 1
+      },
+      {
+        "id": "cucumber",
+        "qty": 0.5
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1622620283268-5cf46da1df39",
+    "photo_credit": {
+      "name": "Alexandra Tran",
+      "url": "https://unsplash.com/photos/green-vegetable-on-red-ceramic-bowl-sVl2DJ4P9G8"
+    }
+  },
+  {
+    "slug": "tuna-egg-salad-stuffed-avocados",
+    "name": "Tuna Egg Salad Stuffed Avocados",
+    "meal_type": "lunch",
+    "diet_tags": [
+      "keto",
+      "high_protein"
+    ],
+    "servings": 2,
+    "prep_minutes": 20,
+    "batch_friendly": false,
+    "description": "Avocado halves filled with a lemony tuna and hard-boiled egg salad.",
+    "steps": [
+      "Cover the eggs with water in a small pot, bring to a boil, then cover, turn off the heat and let stand 11 minutes.",
+      "Cool the eggs under cold water, peel and chop.",
+      "Drain the tuna and mix with the eggs, mayonnaise, diced celery, lemon juice, salt and pepper.",
+      "Halve and pit the avocados.",
+      "Spoon the salad into and over the avocado halves."
+    ],
+    "ingredients": [
+      {
+        "id": "tuna_canned",
+        "qty": 2
+      },
+      {
+        "id": "eggs",
+        "qty": 2
+      },
+      {
+        "id": "avocado",
+        "qty": 2
+      },
+      {
+        "id": "mayo",
+        "qty": 2
+      },
+      {
+        "id": "celery",
+        "qty": 1,
+        "note": "finely diced"
+      },
+      {
+        "id": "lemon",
+        "qty": 0.5,
+        "note": "juiced"
+      },
+      {
+        "id": "salt",
+        "qty": 0.25
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1715611935696-a59ebf388252",
+    "photo_credit": {
+      "name": "Elena Leya",
+      "url": "https://unsplash.com/photos/a-white-plate-topped-with-two-stuffed-avocados-O7p7LgVC5KA"
+    }
+  },
+  {
+    "slug": "ground-turkey-egg-roll-bowls",
+    "name": "Ground Turkey Egg Roll Bowls",
+    "meal_type": "lunch",
+    "diet_tags": [
+      "keto",
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 20,
+    "batch_friendly": true,
+    "description": "All the flavor of an egg roll without the wrapper: turkey and cabbage stir-fried with ginger, garlic and soy.",
+    "steps": [
+      "Heat the vegetable oil in a large skillet over medium-high heat and brown the turkey 6 minutes, breaking it up.",
+      "Stir in the minced garlic and ginger for 1 minute.",
+      "Add the coleslaw mix and soy sauce and cook 4 minutes, tossing, until the cabbage is tender-crisp.",
+      "Stir in the sesame oil and most of the sliced green onions.",
+      "Divide among four containers, top with the remaining green onions and a drizzle of sriracha."
+    ],
+    "ingredients": [
+      {
+        "id": "ground_turkey",
+        "qty": 1.5
+      },
+      {
+        "id": "coleslaw_mix",
+        "qty": 1
+      },
+      {
+        "id": "garlic",
+        "qty": 3
+      },
+      {
+        "id": "ginger",
+        "qty": 1,
+        "note": "minced"
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 3
+      },
+      {
+        "id": "sesame_oil",
+        "qty": 1
+      },
+      {
+        "id": "green_onion",
+        "qty": 1
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 1
+      },
+      {
+        "id": "sriracha",
+        "qty": 1
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1630409350018-0e06ea178b92",
+    "photo_credit": {
+      "name": "Mario Raj",
+      "url": "https://unsplash.com/photos/vegetable-salad-on-white-ceramic-plate-UhwdAcjk_zo"
+    }
+  },
+  {
+    "slug": "creamy-broccoli-cheddar-soup",
+    "name": "Creamy Broccoli Cheddar Soup",
+    "meal_type": "lunch",
+    "diet_tags": [
+      "vegetarian",
+      "keto"
+    ],
+    "servings": 4,
+    "prep_minutes": 25,
+    "batch_friendly": true,
+    "description": "A thick, cheesy broccoli soup made with frozen florets and no flour; reheats well for lunches.",
+    "steps": [
+      "Melt the butter in a large pot over medium heat and cook the diced onion 4 minutes.",
+      "Add the minced garlic for 30 seconds, then the broth and broccoli.",
+      "Bring to a boil and simmer 8 minutes, until the broccoli is very tender.",
+      "Mash with a potato masher, or blend briefly, leaving some texture.",
+      "Stir in the cream, then the cheddar a handful at a time over low heat until melted.",
+      "Season with the salt and pepper."
+    ],
+    "ingredients": [
+      {
+        "id": "broccoli_frozen",
+        "qty": 6
+      },
+      {
+        "id": "cheddar",
+        "qty": 2
+      },
+      {
+        "id": "heavy_cream",
+        "qty": 1
+      },
+      {
+        "id": "vegetable_broth",
+        "qty": 3
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 0.5,
+        "note": "diced"
+      },
+      {
+        "id": "garlic",
+        "qty": 2
+      },
+      {
+        "id": "butter",
+        "qty": 2
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1578859318509-62790b079366",
+    "photo_credit": {
+      "name": "Samee Anderson",
+      "url": "https://unsplash.com/photos/bowl-of-vegetable-soup-x4l4U-pHF9s"
+    }
+  },
+  {
+    "slug": "hummus-veggie-pita-pockets",
+    "name": "Hummus Veggie Pita Pockets",
+    "meal_type": "lunch",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 2,
+    "prep_minutes": 10,
+    "batch_friendly": false,
+    "description": "Warm pita halves spread with hummus and stuffed with spinach, cucumber, tomato, carrot and feta.",
+    "steps": [
+      "Cut the pitas in half and open the pockets.",
+      "Spread hummus inside each half.",
+      "Slice the cucumber and tomato and shred the carrot.",
+      "Stuff the pockets with the spinach, vegetables and feta."
+    ],
+    "ingredients": [
+      {
+        "id": "pita",
+        "qty": 2
+      },
+      {
+        "id": "hummus",
+        "qty": 0.5
+      },
+      {
+        "id": "cucumber",
+        "qty": 0.5
+      },
+      {
+        "id": "tomato",
+        "qty": 1
+      },
+      {
+        "id": "carrot",
+        "qty": 0.25,
+        "note": "shredded"
+      },
+      {
+        "id": "spinach",
+        "qty": 2
+      },
+      {
+        "id": "feta",
+        "qty": 2
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1534352211968-8d25dbe0e951",
+    "photo_credit": {
+      "name": "Alexandra Golovac",
+      "url": "https://unsplash.com/photos/vegetable-sandwich-MAbhhj3QCXQ"
+    }
+  },
+  {
+    "slug": "grilled-cheese-with-tomato-soup",
+    "name": "Grilled Cheese with Tomato Soup",
+    "meal_type": "lunch",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 4,
+    "prep_minutes": 25,
+    "batch_friendly": false,
+    "description": "Buttery griddled cheese sandwiches with a quick creamy tomato soup for dunking.",
+    "steps": [
+      "Heat the olive oil in a pot over medium heat and cook the diced onion 4 minutes; add the minced garlic for 30 seconds.",
+      "Add the crushed tomatoes, broth, Italian seasoning, salt and pepper and simmer 10 minutes.",
+      "Blend the soup until smooth and stir in the cream.",
+      "Butter one side of each bread slice and sandwich two slices of cheese between each pair, butter side out.",
+      "Cook the sandwiches in a skillet over medium-low heat 3 minutes per side, until golden and melted.",
+      "Cut in half and serve with the soup."
+    ],
+    "ingredients": [
+      {
+        "id": "bread",
+        "qty": 8
+      },
+      {
+        "id": "cheese_slices",
+        "qty": 8
+      },
+      {
+        "id": "butter",
+        "qty": 4
+      },
+      {
+        "id": "crushed_tomatoes",
+        "qty": 1
+      },
+      {
+        "id": "vegetable_broth",
+        "qty": 2
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 0.5,
+        "note": "diced"
+      },
+      {
+        "id": "garlic",
+        "qty": 2
+      },
+      {
+        "id": "heavy_cream",
+        "qty": 0.25
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1762647420988-5080acf33988",
+    "photo_credit": {
+      "name": "David Trinks",
+      "url": "https://unsplash.com/photos/tomato-soup-with-grilled-cheese-sandwich-kF2DHADo9Bo"
+    }
+  },
+  {
+    "slug": "italian-veggie-pasta-salad",
+    "name": "Italian Veggie Pasta Salad",
+    "meal_type": "lunch",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 4,
+    "prep_minutes": 20,
+    "batch_friendly": true,
+    "description": "Penne tossed with tomatoes, cucumber, bell pepper and mozzarella in a tangy Italian vinaigrette.",
+    "steps": [
+      "Cook the penne in salted boiling water according to the package directions.",
+      "Drain and rinse under cold water until cool.",
+      "Whisk the olive oil, vinegar, Italian seasoning, garlic powder, salt and pepper together in a large bowl.",
+      "Halve the tomatoes, dice the cucumber and bell pepper and thinly slice the red onion.",
+      "Toss the pasta, vegetables, mozzarella and parmesan with the dressing.",
+      "Serve now, or refrigerate up to 4 days."
+    ],
+    "ingredients": [
+      {
+        "id": "pasta_penne",
+        "qty": 12
+      },
+      {
+        "id": "cherry_tomato",
+        "qty": 1
+      },
+      {
+        "id": "cucumber",
+        "qty": 1
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1
+      },
+      {
+        "id": "onion_red",
+        "qty": 0.25
+      },
+      {
+        "id": "mozzarella",
+        "qty": 1
+      },
+      {
+        "id": "parmesan",
+        "qty": 0.25
+      },
+      {
+        "id": "olive_oil",
+        "qty": 4
+      },
+      {
+        "id": "vinegar_cider",
+        "qty": 2
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 2
+      },
+      {
+        "id": "garlic_powder",
+        "qty": 0.5
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1630492782892-74f99406dc59",
+    "photo_credit": {
+      "name": "engin akyurt",
+      "url": "https://unsplash.com/photos/pasta-dish-on-white-ceramic-bowl-X4QCAodTlh0"
+    }
+  },
+  {
+    "slug": "chicken-caesar-salad-no-croutons",
+    "name": "Chicken Caesar Salad, No Croutons",
+    "meal_type": "lunch",
+    "diet_tags": [
+      "keto",
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 20,
+    "batch_friendly": false,
+    "description": "Seared sliced chicken over crisp romaine with parmesan and a quick creamy Caesar dressing.",
+    "steps": [
+      "Season the chicken with the garlic powder, salt and pepper.",
+      "Heat the olive oil in a skillet over medium-high heat and cook the chicken 6 minutes per side, until cooked through; rest 5 minutes and slice.",
+      "Whisk the mayonnaise, lemon juice, grated garlic, mustard, Worcestershire and half of the parmesan into a dressing.",
+      "Chop the romaine and toss it with the dressing.",
+      "Top with the chicken and the remaining parmesan.",
+      "To pack ahead, keep the dressing separate."
+    ],
+    "ingredients": [
+      {
+        "id": "chicken_breast",
+        "qty": 1.25
+      },
+      {
+        "id": "romaine",
+        "qty": 3
+      },
+      {
+        "id": "parmesan",
+        "qty": 0.5
+      },
+      {
+        "id": "mayo",
+        "qty": 4
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "note": "juiced"
+      },
+      {
+        "id": "garlic",
+        "qty": 1
+      },
+      {
+        "id": "mustard",
+        "qty": 0.5
+      },
+      {
+        "id": "worcestershire",
+        "qty": 0.5
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1
+      },
+      {
+        "id": "garlic_powder",
+        "qty": 0.5
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1676300186659-030de568e39a",
+    "photo_credit": {
+      "name": "Orkun Orcan",
+      "url": "https://unsplash.com/photos/a-white-bowl-filled-with-lettuce-and-chicken-x-YS_Z_YPns"
+    }
+  }
+]
