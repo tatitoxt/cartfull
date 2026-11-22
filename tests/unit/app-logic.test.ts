@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import { answersSchema, typicalSpendCents } from "@/lib/app/profile";
 import { summarizeSavings, weekSavings } from "@/lib/app/savings";
 import { addDays, targetWeekStart, today, weekIsOver, weekLabel, weekday } from "@/lib/app/week";
-import { ANNUAL_SAVING_PERCENT, hasAccess, PRICING, TRIAL_DAYS } from "@/lib/billing/plans";
+import { ANNUAL_SAVING_PERCENT, hasAccess, hasEnded, PRICING, replacesStored, TRIAL_DAYS } from "@/lib/billing/plans";
 import { money, moneyExact, moneyRound, quantity } from "@/lib/format";
 import { fill } from "@/lib/i18n/landing";
 import { safeNext } from "@/lib/safe-next";
@@ -90,6 +90,21 @@ describe("billing constants", () => {
     for (const status of ["past_due", "canceled", "unpaid", "incomplete", "incomplete_expired", "paused", "none", "", null, undefined]) {
       expect(hasAccess(status)).toBe(false);
     }
+  });
+
+  it("treats only canceled and expired subscriptions as over", () => {
+    for (const status of ["canceled", "incomplete_expired", null, undefined]) expect(hasEnded(status)).toBe(true);
+    for (const status of ["past_due", "unpaid", "incomplete", "paused", "active", "trialing"]) {
+      expect(hasEnded(status)).toBe(false);
+    }
+  });
+
+  it("ignores late news about an old subscription once a new one is stored", () => {
+    expect(replacesStored(null, { id: "sub_a", status: "trialing" })).toBe(true);
+    expect(replacesStored("sub_a", { id: "sub_a", status: "canceled" })).toBe(true);
+    expect(replacesStored("sub_a", { id: "sub_b", status: "active" })).toBe(true);
+    expect(replacesStored("sub_b", { id: "sub_a", status: "canceled" })).toBe(false);
+    expect(replacesStored("sub_b", { id: "sub_a", status: "incomplete_expired" })).toBe(false);
   });
 });
 
