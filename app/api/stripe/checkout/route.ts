@@ -1,6 +1,6 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { siteUrl } from "@/lib/env";
-import { TRIAL_DAYS, hasAccess, type BillingInterval } from "@/lib/billing/plans";
+import { TRIAL_DAYS, hasAccess, hasEnded, type BillingInterval } from "@/lib/billing/plans";
 import { getStripe, priceId } from "@/lib/billing/stripe";
 import { createAdminClient, createClient } from "@/lib/supabase/server";
 
@@ -25,6 +25,15 @@ export async function POST(request: NextRequest) {
 
   const stripe = getStripe();
   let customerId = existing?.stripe_customer_id ?? null;
+  if (customerId && existing?.stripe_subscription_id && !hasEnded(existing.status)) {
+    // Stripe can still collect on this subscription (a failed renewal, for example).
+    // Fixing the card there avoids selling a second one that would also be charged.
+    const portal = await stripe.billingPortal.sessions.create({
+      customer: customerId,
+      return_url: `${siteUrl}/app/account`,
+    });
+    return NextResponse.redirect(portal.url, 303);
+  }
   if (!customerId) {
     const customer = await stripe.customers.create({
       email: user.email ?? undefined,
