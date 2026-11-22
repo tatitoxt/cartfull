@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { DocumentLang } from "@/components/landing/document-lang";
 import { Landing } from "@/components/landing/landing";
 import { LANDING } from "@/lib/i18n/landing";
 
@@ -9,5 +10,10 @@ export const metadata: Metadata = {
 };
 
 export default function HomeEs() {
-  return <Landing locale="es" />;
+  return (
+    <>
+      <DocumentLang lang="es" />
+      <Landing locale="es" />
+    </>
+  );
 }

@@ -42,3 +42,29 @@ export async function onboard(page: Page, email: string, options: { budget?: num
   await page.waitForURL(/\/app\/plan/, { timeout: 30_000 });
   await expect(page.getByTestId("plan-day")).toHaveCount(7);
 }
+
+const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "http://127.0.0.1:54321";
+
+/** Calls the local database's admin API. Only used to move test data through time. */
+async function admin(path: string, init: RequestInit = {}) {
+  const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
+  if (!key) throw new Error("SUPABASE_SERVICE_ROLE_KEY is needed for the end-to-end tests");
+  const response = await fetch(`${SUPABASE_URL}${path}`, {
+    ...init,
+    headers: { apikey: key, authorization: `Bearer ${key}`, "content-type": "application/json", prefer: "return=representation", ...init.headers },
+  });
+  if (!response.ok) throw new Error(`${path} -> ${response.status} ${await response.text()}`);
+  return response.json();
+}
+
+/** Moves a shopper's plans back in time so their free first week is over. */
+export async function ageWeeks(email: string, weeks = 1) {
+  const profiles = await admin(`/rest/v1/profiles?select=id&email=eq.${encodeURIComponent(email)}`);
+  const userId = profiles[0]?.id;
+  if (!userId) throw new Error(`No profile for ${email}`);
+  const plans: { id: string; week_start: string }[] = await admin(`/rest/v1/plans?select=id,week_start&user_id=eq.${userId}`);
+  for (const plan of plans) {
+    const start = new Date(Date.parse(`${plan.week_start}T00:00:00Z`) - weeks * 7 * 86_400_000).toISOString().slice(0, 10);
+    await admin(`/rest/v1/plans?id=eq.${plan.id}`, { method: "PATCH", body: JSON.stringify({ week_start: start }) });
+  }
+}
