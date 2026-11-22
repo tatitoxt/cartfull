@@ -308,13 +308,13 @@ function BudgetLine({ budget, typical, minimum }: { budget: number; typical: num
   const left = budget - need;
   return (
     <span>
-      <span className="text-ink-soft">This week needs about </span>
+      <span className="text-ink-soft">These meals need about </span>
       <span className="tnum font-semibold">${Math.round(need / 100)}</span>
       {left >= 100 ? (
         <>
           <span className="text-ink-soft">. That leaves </span>
           <span className="tnum font-semibold text-tomato-deep">${Math.round(left / 100)}</span>
-          <span className="text-ink-soft"> in your pocket.</span>
+          <span className="text-ink-soft"> for everything else.</span>
         </>
       ) : (
         <span className="text-ink-soft">. It fits, with little to spare.</span>

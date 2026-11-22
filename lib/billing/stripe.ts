@@ -9,8 +9,8 @@ export function getStripe(): Stripe {
   const key = process.env.STRIPE_SECRET_KEY;
   if (!key) throw new Error("Missing environment variable STRIPE_SECRET_KEY");
   const base = process.env.STRIPE_API_BASE;
-  if (base) {
-    // Test-only: talk to the local stand-in instead of api.stripe.com.
+  if (base && key.startsWith("sk_test_")) {
+    // Test-only: talk to the local stand-in instead of api.stripe.com. Ignored with a live key.
     const url = new URL(base);
     client = new Stripe(key, {
       host: url.hostname,

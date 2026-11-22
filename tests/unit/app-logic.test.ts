@@ -19,8 +19,12 @@ const plan = (over = {}) => ({
 });
 
 describe("savings", () => {
-  it("compares the planned cart with the usual spend until a receipt is entered", () => {
-    expect(weekSavings(plan())).toMatchObject({ savedCents: 8800, spentCents: 9200, spentIsActual: false, underBudget: true });
+  it("counts a week at its full budget until a receipt is entered", () => {
+    expect(weekSavings(plan())).toMatchObject({ savedCents: 8000, spentCents: 10000, spentIsActual: false, underBudget: true });
+  });
+
+  it("never counts less than the cart when pantry changes push it over budget", () => {
+    expect(weekSavings(plan({ total_cents: 10700 }))).toMatchObject({ savedCents: 7300, spentCents: 10700, underBudget: false });
   });
 
   it("uses the receipt total once entered, even when it is zero", () => {
@@ -40,10 +44,10 @@ describe("savings", () => {
 
   it("totals weeks and projects a yearly pace from the average", () => {
     const summary = summarizeSavings([plan({ id: "a", spent_cents: 9000 }), plan({ id: "b" }), plan({ id: "c", spent_cents: 20000 })]);
-    expect(summary.totalSavedCents).toBe(9000 + 8800 - 2000);
+    expect(summary.totalSavedCents).toBe(9000 + 8000 - 2000);
     expect(summary.confirmedWeeks).toBe(2);
     expect(summary.confirmedSavedCents).toBe(7000);
-    expect(summary.averageSavedCents).toBe(Math.round(15800 / 3));
+    expect(summary.averageSavedCents).toBe(Math.round(15000 / 3));
     expect(summary.yearlyPaceCents).toBe(summary.averageSavedCents * 52);
     expect(summarizeSavings([])).toMatchObject({ totalSavedCents: 0, averageSavedCents: 0, yearlyPaceCents: 0 });
   });

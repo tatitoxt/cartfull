@@ -16,7 +16,11 @@ export interface WeekSavings {
   /** What the shopper says a normal week costs, or a household-size estimate. */
   usualCents: number;
   usualIsEstimate: boolean;
-  /** Receipt total when entered, otherwise the planned cart. */
+  /**
+   * Receipt total when entered. Until then the week is counted at the full
+   * budget: the planned meals fit inside it and the rest covers everything the
+   * plan does not, so the saving is never overstated.
+   */
   spentCents: number;
   spentIsActual: boolean;
   /** Positive when the week cost less than usual. Never clamped: an expensive week shows as negative. */
@@ -40,7 +44,7 @@ export function weekSavings(plan: SavingsInput): WeekSavings {
   const usualIsEstimate = plan.usual_spend_cents === null;
   const usualCents = plan.usual_spend_cents ?? typicalSpendCents(plan.household_size);
   const spentIsActual = plan.spent_cents !== null;
-  const spentCents = plan.spent_cents ?? plan.total_cents;
+  const spentCents = plan.spent_cents ?? Math.max(plan.budget_cents, plan.total_cents);
   return {
     id: plan.id,
     weekStart: plan.week_start,
