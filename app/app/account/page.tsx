@@ -9,6 +9,7 @@ import { PRICING, TRIAL_DAYS } from "@/lib/billing/plans";
 import { moneyExact } from "@/lib/format";
 import { DISLIKE_OPTIONS } from "@/lib/planner/dislikes";
 import { ThemePicker } from "@/components/theme-picker";
+import { DeleteAccount } from "./delete-account";
 import { SettingsForm } from "./settings-form";
 import { MESSAGES } from "@/lib/i18n/messages";
 
@@ -103,6 +104,13 @@ export default async function AccountPage({ searchParams }: { searchParams: Prom
       />
 
       <ThemePicker />
+
+      <section className="mt-10 border-t border-line pt-6" aria-labelledby="danger-title">
+        <h2 id="danger-title" className="text-2xl">{m.account.deleteTitle}</h2>
+        <div className="mt-4">
+          <DeleteAccount />
+        </div>
+      </section>
 
       <section className="mt-10 border-t border-line pt-6">
         <form action="/auth/signout" method="post">

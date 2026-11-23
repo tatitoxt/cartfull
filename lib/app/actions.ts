@@ -24,6 +24,7 @@ import { answersSchema, typicalSpendCents, type Answers } from "./profile";
 import { addDays, targetWeekStart, weekIsOver } from "./week";
 import { MESSAGES, fill } from "../i18n/messages";
 import { getLocale } from "../i18n/server";
+import { createAdminClient } from "../supabase/server";
 import type { Lang } from "../catalog/localize";
 
 export type ActionResult =
@@ -488,5 +489,19 @@ export async function saveSettings(input: unknown): Promise<ActionResult> {
   const error = await saveAnswers(session, parsed.data, false);
   if (error) return fail("failed", MESSAGES[parsed.data.lang].actions.saveSettings);
   revalidatePath("/app", "layout");
+  return { ok: true };
+}
+
+export async function deleteAccount(): Promise<ActionResult> {
+  const session = await requireSession("/app/account");
+  const locale = await getLocale();
+  const m = MESSAGES[locale.lang];
+  try {
+    const admin = createAdminClient();
+    const { error } = await admin.auth.admin.deleteUser(session.userId);
+    if (error) return fail("failed", m.account.deleteError);
+  } catch {
+    return fail("failed", m.account.deleteError);
+  }
   return { ok: true };
 }
