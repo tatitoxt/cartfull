@@ -44,7 +44,7 @@ function StepTimer({ seconds, resetKey }: { seconds: number; resetKey: number })
   // with the right remaining time instead of a timer that finished late.
   useEffect(() => {
     if (!running) return;
-    const id = setInterval(() => setLeft(Math.max(0, Math.round((endAt.current - Date.now()) / 1000))), 250);
+    const id = setInterval(() => setLeft(Math.max(0, Math.ceil((endAt.current - Date.now()) / 1000))), 250);
     return () => clearInterval(id);
   }, [running]);
 
