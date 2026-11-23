@@ -2306,7 +2306,6 @@
     "diet_tags": [
       "dairy_free",
       "pescatarian",
-      "vegan",
       "vegetarian"
     ],
     "servings": 4,
@@ -2921,9 +2920,7 @@
     "name": "Potato and Pea Curry with Naan",
     "meal_type": "dinner",
     "diet_tags": [
-      "dairy_free",
       "pescatarian",
-      "vegan",
       "vegetarian"
     ],
     "servings": 4,
