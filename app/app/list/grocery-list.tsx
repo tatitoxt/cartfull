@@ -208,7 +208,7 @@ export function GroceryList({
             <section key={aisle} aria-labelledby={`aisle-${aisle}`} data-testid="aisle">
               <h2 id={`aisle-${aisle}`} className="flex items-baseline justify-between gap-3 border-b border-fg pb-2 text-xl">
                 {label}
-                <span className="tnum font-sans text-sm font-semibold text-fg-soft">{moneyExact(subtotal, lang)}</span>
+                <span className="tnum font-sans text-sm font-semibold text-budget">{moneyExact(subtotal, lang)}</span>
               </h2>
               <ul className="mt-2 space-y-2">
                 {group.map((line) => (
@@ -239,7 +239,7 @@ export function GroceryList({
                           <path d="M2 6.5 4.8 9.2 10 3" />
                         </svg>
                       </span>
-                      <span className={`min-w-0 flex-1 ${line.checked ? "text-fg-faint line-through" : ""}`}>
+                      <span className={`min-w-0 flex-1 ${line.checked ? "text-fg-soft line-through decoration-accent decoration-2" : ""}`}>
                         <span className="block font-semibold leading-tight">{line.name}</span>
                         <span className="tnum block text-sm text-fg-soft">
                           {fill(m.list.needBuy, { need: line.need, buy: line.buy })}
