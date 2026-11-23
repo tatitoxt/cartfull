@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Logo } from "@/components/logo";
 import { AppNav } from "@/components/app-nav";
+import { TrialBanner } from "@/components/trial-banner";
 import { Identify } from "@/components/identify";
 import { getEntitlement, getProfile, requireSession } from "@/lib/app/data";
 import { MESSAGES } from "@/lib/i18n/messages";
@@ -27,21 +28,18 @@ export default async function AppLayout({ children }: { children: React.ReactNod
         <AppNav />
       </header>
       {trialEnding && (
-        <Link
-          href="/app/upgrade"
-          className="mt-5 flex items-center justify-between gap-3 rounded-full border border-violet-400/40 bg-violet-400/10 px-4 py-2.5 text-sm transition-colors hover:border-violet-300/70"
-        >
-          <span className="text-foreground">
-            {m.common.trialEndsSoon.replace(
-              "{date}",
-              new Date(entitlement.trialEnd as string).toLocaleDateString(
-                profile.lang === "es" ? "es-ES" : "en-US",
-                { month: "long", day: "numeric" },
-              ),
-            )}
-          </span>
-          <span className="shrink-0 font-semibold text-violet-300">{m.common.trialEndsSoonCta} →</span>
-        </Link>
+        <TrialBanner
+          trialEnd={entitlement.trialEnd as string}
+          endsLabel={m.common.trialEndsSoon.replace(
+            "{date}",
+            new Date(entitlement.trialEnd as string).toLocaleDateString(
+              profile.lang === "es" ? "es-ES" : "en-US",
+              { month: "long", day: "numeric" },
+            ),
+          )}
+          ctaLabel={m.common.trialEndsSoonCta}
+          closeLabel={m.common.close}
+        />
       )}
       <main id="main" className="mt-7">
         {children}
