@@ -5,7 +5,8 @@
     "meal_type": "dinner",
     "diet_tags": [
       "vegetarian",
-      "high_protein"
+      "high_protein",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 50,
@@ -102,7 +103,8 @@
     "meal_type": "dinner",
     "diet_tags": [
       "vegetarian",
-      "high_protein"
+      "high_protein",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 25,
@@ -202,7 +204,8 @@
     "meal_type": "dinner",
     "diet_tags": [
       "vegetarian",
-      "high_protein"
+      "high_protein",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 45,
@@ -315,7 +318,8 @@
     "diet_tags": [
       "vegetarian",
       "keto",
-      "high_protein"
+      "high_protein",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 35,
@@ -414,7 +418,8 @@
     "meal_type": "dinner",
     "diet_tags": [
       "vegetarian",
-      "high_protein"
+      "high_protein",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 30,
@@ -528,7 +533,8 @@
     "meal_type": "dinner",
     "diet_tags": [
       "vegetarian",
-      "high_protein"
+      "high_protein",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 45,
@@ -620,7 +626,8 @@
     "meal_type": "dinner",
     "diet_tags": [
       "vegetarian",
-      "high_protein"
+      "high_protein",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 50,
@@ -735,7 +742,8 @@
     "diet_tags": [
       "vegetarian",
       "keto",
-      "high_protein"
+      "high_protein",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 70,
@@ -827,7 +835,8 @@
     "meal_type": "dinner",
     "diet_tags": [
       "vegetarian",
-      "high_protein"
+      "high_protein",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 25,
@@ -909,7 +918,8 @@
     "meal_type": "dinner",
     "diet_tags": [
       "vegetarian",
-      "keto"
+      "keto",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 25,
@@ -1015,7 +1025,8 @@
     "meal_type": "dinner",
     "diet_tags": [
       "vegetarian",
-      "keto"
+      "keto",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 20,
@@ -1111,7 +1122,8 @@
     "meal_type": "dinner",
     "diet_tags": [
       "vegetarian",
-      "keto"
+      "keto",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 20,
@@ -1203,7 +1215,8 @@
     "meal_type": "dinner",
     "diet_tags": [
       "vegetarian",
-      "keto"
+      "keto",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 35,
@@ -1295,7 +1308,8 @@
     "meal_type": "dinner",
     "diet_tags": [
       "vegetarian",
-      "keto"
+      "keto",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 35,
@@ -1383,7 +1397,8 @@
     "name": "Black Bean and Sweet Potato Tacos",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian"
+      "vegetarian",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 35,
@@ -1494,7 +1509,8 @@
     "name": "Chickpea Spinach Coconut Curry",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian"
+      "vegetarian",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 25,
@@ -1589,7 +1605,8 @@
     "name": "Vegetable Egg Fried Rice",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian"
+      "vegetarian",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 30,
@@ -1668,7 +1685,8 @@
     "name": "Two-Bean Minestrone Soup",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian"
+      "vegetarian",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 50,
@@ -1789,7 +1807,8 @@
     "name": "Three-Bean Vegetarian Chili",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian"
+      "vegetarian",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 50,
@@ -1904,7 +1923,8 @@
     "name": "Refried Bean and Corn Quesadillas",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian"
+      "vegetarian",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 25,
@@ -1983,7 +2003,8 @@
     "name": "Creamy Tomato Tortellini Soup",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian"
+      "vegetarian",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 25,
@@ -2070,7 +2091,8 @@
     "name": "Sheet-Pan Chickpeas and Vegetables",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian"
+      "vegetarian",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 40,
@@ -2179,7 +2201,8 @@
     "name": "Crunchy Pinto Bean Taco Salad",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian"
+      "vegetarian",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 15,
@@ -2274,7 +2297,8 @@
     "name": "Mushroom Stroganoff with Egg Noodles",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian"
+      "vegetarian",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 30,
@@ -2387,7 +2411,8 @@
     "name": "Veggie Ramen Stir-Fry with Eggs",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian"
+      "vegetarian",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 20,
@@ -2482,7 +2507,8 @@
     "name": "Greek Chickpea Salad with Warm Pita",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian"
+      "vegetarian",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 15,
@@ -2583,7 +2609,8 @@
     "name": "Southwest Quinoa and Black Bean Salad",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian"
+      "vegetarian",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 30,
@@ -2692,7 +2719,8 @@
     "name": "Peanut Noodles with Cabbage and Carrots",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian"
+      "vegetarian",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 20,
@@ -2793,7 +2821,8 @@
     "name": "Pinto Bean Huevos Rancheros",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian"
+      "vegetarian",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 20,
@@ -2876,7 +2905,8 @@
     "name": "Potato and Pea Curry with Naan",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian"
+      "vegetarian",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 40,

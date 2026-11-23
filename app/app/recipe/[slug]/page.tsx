@@ -50,10 +50,15 @@ export default async function RecipePage({ params }: { params: Promise<{ slug: s
       {(() => {
         const nutrition = nutritionPerServing(recipe);
         return nutrition ? (
-          <p className="tnum mt-3 text-sm text-fg-soft">
-            {fill(m.recipe.nutrition, { kcal: nutrition.kcal, protein: nutrition.protein, carbs: nutrition.carbs, fat: nutrition.fat })}
-            <span className="mt-0.5 block text-xs text-fg-faint">{m.recipe.nutritionNote}</span>
-          </p>
+          <div className="mt-3">
+            <ul className="tnum flex flex-wrap gap-2 text-sm" aria-label={m.recipe.nutritionLabel}>
+              <li className="rounded-full bg-accent-soft px-3 py-1 font-semibold text-accent-deep">{fill(m.recipe.nutritionKcal, { kcal: nutrition.kcal })}</li>
+              <li className="rounded-full bg-budget-soft px-3 py-1 font-semibold text-budget">{fill(m.recipe.nutritionProtein, { protein: nutrition.protein })}</li>
+              <li className="rounded-full bg-spend-soft px-3 py-1 font-semibold text-spend">{fill(m.recipe.nutritionCarbs, { carbs: nutrition.carbs })}</li>
+              <li className="rounded-full bg-over-soft px-3 py-1 font-semibold text-over">{fill(m.recipe.nutritionFat, { fat: nutrition.fat })}</li>
+            </ul>
+            <p className="mt-1.5 text-xs text-fg-faint">{m.recipe.nutritionNote}</p>
+          </div>
         ) : null;
       })()}
       <RecipeFeedback slug={slug} initialFavorite={feedback.favorites.has(slug)} initialRating={feedback.ratings.get(slug) ?? null} />

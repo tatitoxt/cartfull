@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { COUNTRIES, countryByCode } from "@/lib/i18n/countries";
 import type { Answers } from "@/lib/app/profile";
 import type { Lang, Units } from "@/lib/catalog/localize";
@@ -7,17 +8,29 @@ import { useMessages } from "@/lib/i18n/locale-provider";
 
 export function CountryPreferences({ answers, set }: { answers: Answers; set: (patch: Partial<Answers>) => void }) {
   const m = useMessages();
+  const [query, setQuery] = useState("");
   const changeCountry = (code: string) => {
     const next = countryByCode(code);
     set({ country: next.code, lang: next.lang, units: next.units });
   };
+  const needle = query.trim().toLowerCase();
+  const countries = needle
+    ? COUNTRIES.filter((c) => c.name.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").includes(needle) || c.name.toLowerCase().includes(needle))
+    : COUNTRIES;
 
   return (
     <div className="space-y-5">
       <fieldset>
         <legend className="font-medium">{m.onboarding.countryTitle}</legend>
+        <input
+          type="search"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          placeholder={m.onboarding.countrySearch}
+          className="mt-3 w-full rounded-full bg-surface px-4 py-2.5 text-sm shadow-[inset_0_0_0_1.5px_var(--color-line)] outline-none placeholder:text-fg-faint focus-visible:shadow-[inset_0_0_0_2px_var(--color-accent)]"
+        />
         <div className="mt-3 grid gap-2 sm:grid-cols-2">
-          {COUNTRIES.map((option) => {
+          {countries.map((option) => {
             const selected = option.code === answers.country;
             return (
               <label

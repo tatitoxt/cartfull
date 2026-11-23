@@ -17,15 +17,48 @@
       "Fill each tortilla with beef, slaw, cheddar and salsa and serve right away."
     ],
     "ingredients": [
-      { "id": "ground_beef", "qty": 1 },
-      { "id": "taco_seasoning", "qty": 2 },
-      { "id": "tortilla_corn", "qty": 12 },
-      { "id": "cabbage", "qty": 0.25, "note": "finely shredded", "note_es": "rallado fino" },
-      { "id": "lime", "qty": 1, "note": "juiced", "note_es": "el jugo" },
-      { "id": "cilantro", "qty": 0.25, "note": "chopped", "note_es": "picado" },
-      { "id": "cheddar", "qty": 0.5 },
-      { "id": "salsa", "qty": 0.5 },
-      { "id": "salt", "qty": 0.25 }
+      {
+        "id": "ground_beef",
+        "qty": 1
+      },
+      {
+        "id": "taco_seasoning",
+        "qty": 2
+      },
+      {
+        "id": "tortilla_corn",
+        "qty": 12
+      },
+      {
+        "id": "cabbage",
+        "qty": 0.25,
+        "note": "finely shredded",
+        "note_es": "rallado fino"
+      },
+      {
+        "id": "lime",
+        "qty": 1,
+        "note": "juiced",
+        "note_es": "el jugo"
+      },
+      {
+        "id": "cilantro",
+        "qty": 0.25,
+        "note": "chopped",
+        "note_es": "picado"
+      },
+      {
+        "id": "cheddar",
+        "qty": 0.5
+      },
+      {
+        "id": "salsa",
+        "qty": 0.5
+      },
+      {
+        "id": "salt",
+        "qty": 0.25
+      }
     ],
     "name_es": "Tacos de carne molida con ensalada de repollo y lima",
     "description_es": "Carne molida sazonada en tortillas de maíz tibias, con ensalada crujiente de repollo y lima, queso cheddar y salsa.",
@@ -37,18 +70,25 @@
       "Mientras la carne se cocina, calienta las tortillas de a pocas en otra sartén seca a fuego medio-alto, unos 20 segundos por lado, hasta que estén blandas y apenas tostadas; mantenlas envueltas en un paño limpio.",
       "Rellena cada tortilla con carne, ensalada de repollo, queso cheddar y salsa, y sirve enseguida."
     ],
-    "equipment": ["stovetop"],
+    "equipment": [
+      "stovetop"
+    ],
     "active_minutes": 18,
     "tip": "Leftover beef keeps 3 days in the fridge; reheat it in a skillet with a splash of water and use it over rice or in quesadillas.",
     "tip_es": "La carne que sobra dura 3 días en el refrigerador; recaliéntala en sartén con un chorrito de agua y úsala sobre arroz o en quesadillas.",
     "photo_url": "https://images.unsplash.com/photo-1690874684451-92358e91b14c",
-    "photo_credit": { "name": "Max Griss", "url": "https://unsplash.com/photos/three-tacos-on-a-plate-with-limes-and-cilantro-ZAW0C46XvSo" }
+    "photo_credit": {
+      "name": "Max Griss",
+      "url": "https://unsplash.com/photos/three-tacos-on-a-plate-with-limes-and-cilantro-ZAW0C46XvSo"
+    }
   },
   {
     "slug": "weeknight-spaghetti-with-meat-sauce",
     "name": "Weeknight Spaghetti with Meat Sauce",
     "meal_type": "dinner",
-    "diet_tags": ["high_protein"],
+    "diet_tags": [
+      "high_protein"
+    ],
     "servings": 4,
     "prep_minutes": 25,
     "batch_friendly": false,
@@ -62,15 +102,48 @@
       "Toss the spaghetti with the sauce in the skillet for 1 minute and serve topped with the parmesan."
     ],
     "ingredients": [
-      { "id": "ground_beef", "qty": 1 },
-      { "id": "pasta_spaghetti", "qty": 12 },
-      { "id": "marinara", "qty": 3 },
-      { "id": "onion_yellow", "qty": 1, "note": "diced", "note_es": "en cubitos" },
-      { "id": "garlic", "qty": 3, "note": "minced", "note_es": "picado fino" },
-      { "id": "italian_seasoning", "qty": 1 },
-      { "id": "parmesan", "qty": 0.25 },
-      { "id": "olive_oil", "qty": 1 },
-      { "id": "salt", "qty": 1, "note": "for the pasta water", "note_es": "para el agua de la pasta" }
+      {
+        "id": "ground_beef",
+        "qty": 1
+      },
+      {
+        "id": "pasta_spaghetti",
+        "qty": 12
+      },
+      {
+        "id": "marinara",
+        "qty": 3
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced",
+        "note_es": "picado fino"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1
+      },
+      {
+        "id": "parmesan",
+        "qty": 0.25
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "note": "for the pasta water",
+        "note_es": "para el agua de la pasta"
+      }
     ],
     "name_es": "Espaguetis con salsa rápida de carne",
     "description_es": "Espaguetis con una salsa rápida de carne molida y marinara, con cebolla, ajo y queso parmesano.",
@@ -82,12 +155,17 @@
       "Mientras la salsa se cocina, hierve los espaguetis el tiempo que indica el paquete, normalmente de 9 a 11 minutos, hasta que estén tiernos pero firmes al morder, y escúrrelos.",
       "Mezcla los espaguetis con la salsa en la sartén durante 1 minuto y sirve con el queso parmesano por encima."
     ],
-    "equipment": ["stovetop"],
+    "equipment": [
+      "stovetop"
+    ],
     "active_minutes": 15,
     "tip": "The sauce freezes well for 3 months; make a double batch and thaw it overnight in the fridge.",
     "tip_es": "La salsa se congela bien hasta 3 meses; prepara el doble y descongélala de un día para otro en el refrigerador.",
     "photo_url": "https://images.unsplash.com/photo-1622973536968-3ead9e780960",
-    "photo_credit": { "name": "Homescreenify", "url": "https://unsplash.com/photos/spaghetti-on-white-ceramic-plate-sA3wymYqyaI" }
+    "photo_credit": {
+      "name": "Homescreenify",
+      "url": "https://unsplash.com/photos/spaghetti-on-white-ceramic-plate-sA3wymYqyaI"
+    }
   },
   {
     "slug": "smoked-sausage-cabbage-potato-skillet",
@@ -107,17 +185,60 @@
       "Cook 1 more minute, scraping up the browned bits from the bottom, and serve hot."
     ],
     "ingredients": [
-      { "id": "sausage_smoked", "qty": 1, "note": "sliced into coins", "note_es": "en rodajas" },
-      { "id": "cabbage", "qty": 0.5, "note": "chopped", "note_es": "picado" },
-      { "id": "potato_russet", "qty": 1.25, "note": "1/2-inch dice", "note_es": "en cubos de 1 cm" },
-      { "id": "onion_yellow", "qty": 1, "note": "sliced", "note_es": "en tiras finas" },
-      { "id": "garlic", "qty": 2, "note": "minced", "note_es": "picado fino" },
-      { "id": "butter", "qty": 1 },
-      { "id": "vegetable_oil", "qty": 1 },
-      { "id": "mustard", "qty": 1 },
-      { "id": "vinegar_cider", "qty": 1 },
-      { "id": "salt", "qty": 0.5 },
-      { "id": "black_pepper", "qty": 0.5 }
+      {
+        "id": "sausage_smoked",
+        "qty": 1,
+        "note": "sliced into coins",
+        "note_es": "en rodajas"
+      },
+      {
+        "id": "cabbage",
+        "qty": 0.5,
+        "note": "chopped",
+        "note_es": "picado"
+      },
+      {
+        "id": "potato_russet",
+        "qty": 1.25,
+        "note": "1/2-inch dice",
+        "note_es": "en cubos de 1 cm"
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "sliced",
+        "note_es": "en tiras finas"
+      },
+      {
+        "id": "garlic",
+        "qty": 2,
+        "note": "minced",
+        "note_es": "picado fino"
+      },
+      {
+        "id": "butter",
+        "qty": 1
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 1
+      },
+      {
+        "id": "mustard",
+        "qty": 1
+      },
+      {
+        "id": "vinegar_cider",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.5
+      }
     ],
     "name_es": "Sartén de salchicha ahumada, repollo y papas",
     "description_es": "Salchicha ahumada dorada con repollo tierno, papas en cubos y cebolla, todo en una sola sartén.",
@@ -129,12 +250,17 @@
       "Regresa la salchicha a la sartén y agrega la mostaza y el vinagre.",
       "Cocina 1 minuto más, raspando lo dorado del fondo, y sirve caliente."
     ],
-    "equipment": ["stovetop"],
+    "equipment": [
+      "stovetop"
+    ],
     "active_minutes": 20,
     "tip": "Any potato works here. Leftovers keep 3 days in the fridge and reheat best in a skillet over medium heat.",
     "tip_es": "Sirve cualquier tipo de papa. Lo que sobra dura 3 días en el refrigerador y se recalienta mejor en sartén a fuego medio.",
     "photo_url": "https://images.unsplash.com/photo-1592259695987-4aa79c3c34a6",
-    "photo_credit": { "name": "Amr Taha™", "url": "https://unsplash.com/photos/sliced-vegetables-on-brown-wooden-chopping-board-KtbmX7bBR-U" }
+    "photo_credit": {
+      "name": "Amr Taha™",
+      "url": "https://unsplash.com/photos/sliced-vegetables-on-brown-wooden-chopping-board-KtbmX7bBR-U"
+    }
   },
   {
     "slug": "pork-egg-roll-bowls-with-rice",
@@ -154,17 +280,58 @@
       "Fluff the rice with a fork, spoon the pork over it and top with the remaining green onions and sriracha to taste."
     ],
     "ingredients": [
-      { "id": "ground_pork", "qty": 1 },
-      { "id": "coleslaw_mix", "qty": 1 },
-      { "id": "rice_white", "qty": 1.5 },
-      { "id": "green_onion", "qty": 0.5, "note": "sliced", "note_es": "en rodajas" },
-      { "id": "garlic", "qty": 3, "note": "minced", "note_es": "picado fino" },
-      { "id": "ginger", "qty": 1, "note": "grated", "note_es": "rallado" },
-      { "id": "soy_sauce", "qty": 3 },
-      { "id": "vinegar_rice", "qty": 1 },
-      { "id": "sesame_oil", "qty": 1 },
-      { "id": "vegetable_oil", "qty": 1 },
-      { "id": "sriracha", "qty": 1, "note": "optional, to serve", "note_es": "opcional, para servir" }
+      {
+        "id": "ground_pork",
+        "qty": 1
+      },
+      {
+        "id": "coleslaw_mix",
+        "qty": 1
+      },
+      {
+        "id": "rice_white",
+        "qty": 1.5
+      },
+      {
+        "id": "green_onion",
+        "qty": 0.5,
+        "note": "sliced",
+        "note_es": "en rodajas"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced",
+        "note_es": "picado fino"
+      },
+      {
+        "id": "ginger",
+        "qty": 1,
+        "note": "grated",
+        "note_es": "rallado"
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 3
+      },
+      {
+        "id": "vinegar_rice",
+        "qty": 1
+      },
+      {
+        "id": "sesame_oil",
+        "qty": 1
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 1
+      },
+      {
+        "id": "sriracha",
+        "qty": 1,
+        "note": "optional, to serve",
+        "note_es": "opcional, para servir"
+      }
     ],
     "name_es": "Tazones de cerdo estilo rollo primavera con arroz",
     "description_es": "Cerdo molido salteado con repollo, ajo, jengibre y salsa de soya, servido sobre arroz blanco.",
@@ -176,18 +343,25 @@
       "Retira la sartén del fuego y agrega el aceite de sésamo y la mitad de la cebolla verde.",
       "Separa el arroz con un tenedor, sirve el cerdo encima y termina con el resto de la cebolla verde y sriracha al gusto."
     ],
-    "equipment": ["stovetop"],
+    "equipment": [
+      "stovetop"
+    ],
     "active_minutes": 15,
     "tip": "For a lighter bowl, skip the rice and serve the pork and cabbage on their own. Keeps 3 days in the fridge.",
     "tip_es": "Para un plato más liviano, omite el arroz y sirve el cerdo con el repollo solos. Dura 3 días en el refrigerador.",
     "photo_url": "https://images.unsplash.com/photo-1745123129024-d97c4b71ed4d",
-    "photo_credit": { "name": "Kouji Tsuru", "url": "https://unsplash.com/photos/meat-and-vegetables-served-with-rice-EgIB9a8B6UU" }
+    "photo_credit": {
+      "name": "Kouji Tsuru",
+      "url": "https://unsplash.com/photos/meat-and-vegetables-served-with-rice-EgIB9a8B6UU"
+    }
   },
   {
     "slug": "chicken-vegetable-stir-fry-with-rice",
     "name": "Chicken and Vegetable Stir-Fry with Rice",
     "meal_type": "dinner",
-    "diet_tags": ["high_protein"],
+    "diet_tags": [
+      "high_protein"
+    ],
     "servings": 4,
     "prep_minutes": 25,
     "batch_friendly": false,
@@ -201,16 +375,52 @@
       "Cook 2 minutes, stirring, until the sauce bubbles and turns glossy, then stir in the sesame oil and serve over the fluffed rice."
     ],
     "ingredients": [
-      { "id": "chicken_breast", "qty": 1.25, "note": "thinly sliced", "note_es": "en tiras finas" },
-      { "id": "stir_fry_veg_frozen", "qty": 5 },
-      { "id": "rice_white", "qty": 1.5 },
-      { "id": "soy_sauce", "qty": 4 },
-      { "id": "honey", "qty": 1 },
-      { "id": "cornstarch", "qty": 1 },
-      { "id": "garlic", "qty": 3, "note": "minced", "note_es": "picado fino" },
-      { "id": "ginger", "qty": 1, "note": "grated", "note_es": "rallado" },
-      { "id": "vegetable_oil", "qty": 2 },
-      { "id": "sesame_oil", "qty": 0.5 }
+      {
+        "id": "chicken_breast",
+        "qty": 1.25,
+        "note": "thinly sliced",
+        "note_es": "en tiras finas"
+      },
+      {
+        "id": "stir_fry_veg_frozen",
+        "qty": 5
+      },
+      {
+        "id": "rice_white",
+        "qty": 1.5
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 4
+      },
+      {
+        "id": "honey",
+        "qty": 1
+      },
+      {
+        "id": "cornstarch",
+        "qty": 1
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced",
+        "note_es": "picado fino"
+      },
+      {
+        "id": "ginger",
+        "qty": 1,
+        "note": "grated",
+        "note_es": "rallado"
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 2
+      },
+      {
+        "id": "sesame_oil",
+        "qty": 0.5
+      }
     ],
     "name_es": "Salteado de pollo y verduras con arroz",
     "description_es": "Pechuga de pollo en tiras y verduras congeladas en un glaseado de soya, ajo y jengibre, sobre arroz.",
@@ -222,12 +432,17 @@
       "Agrega el ajo y el jengibre y revuelve 30 segundos; luego regresa el pollo y vierte la salsa.",
       "Cocina 2 minutos, revolviendo, hasta que la salsa burbujee y brille; agrega el aceite de sésamo y sirve sobre el arroz separado con un tenedor."
     ],
-    "equipment": ["stovetop"],
+    "equipment": [
+      "stovetop"
+    ],
     "active_minutes": 15,
     "tip": "Any frozen vegetable blend works. Slice the chicken while it is still slightly frozen for thinner, more even strips.",
     "tip_es": "Sirve cualquier mezcla de verduras congeladas. Corta el pollo cuando aún esté un poco congelado para lograr tiras más finas y parejas.",
     "photo_url": "https://images.unsplash.com/photo-1783196736260-dd788dff4132",
-    "photo_credit": { "name": "Alexandra Dobrin", "url": "https://unsplash.com/photos/delicious-stir-fried-chicken-and-vegetables-with-rice-HU64ydv7xhA" }
+    "photo_credit": {
+      "name": "Alexandra Dobrin",
+      "url": "https://unsplash.com/photos/delicious-stir-fried-chicken-and-vegetables-with-rice-HU64ydv7xhA"
+    }
   },
   {
     "slug": "beef-and-broccoli-ramen-stir-fry",
@@ -247,16 +462,54 @@
       "Add the noodles, sesame oil and green onions and toss 1 minute until the noodles are hot and coated."
     ],
     "ingredients": [
-      { "id": "ground_beef", "qty": 1 },
-      { "id": "ramen", "qty": 3, "note": "noodles only", "note_es": "solo los fideos" },
-      { "id": "broccoli_frozen", "qty": 4 },
-      { "id": "soy_sauce", "qty": 4 },
-      { "id": "brown_sugar", "qty": 0.125, "note": "2 tablespoons", "note_es": "2 cucharadas" },
-      { "id": "garlic", "qty": 3, "note": "minced", "note_es": "picado fino" },
-      { "id": "ginger_ground", "qty": 0.5 },
-      { "id": "cornstarch", "qty": 1 },
-      { "id": "green_onion", "qty": 0.5, "note": "sliced", "note_es": "en rodajas" },
-      { "id": "sesame_oil", "qty": 1 }
+      {
+        "id": "ground_beef",
+        "qty": 1
+      },
+      {
+        "id": "ramen",
+        "qty": 3,
+        "note": "noodles only",
+        "note_es": "solo los fideos"
+      },
+      {
+        "id": "broccoli_frozen",
+        "qty": 4
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 4
+      },
+      {
+        "id": "brown_sugar",
+        "qty": 0.125,
+        "note": "2 tablespoons",
+        "note_es": "2 cucharadas"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced",
+        "note_es": "picado fino"
+      },
+      {
+        "id": "ginger_ground",
+        "qty": 0.5
+      },
+      {
+        "id": "cornstarch",
+        "qty": 1
+      },
+      {
+        "id": "green_onion",
+        "qty": 0.5,
+        "note": "sliced",
+        "note_es": "en rodajas"
+      },
+      {
+        "id": "sesame_oil",
+        "qty": 1
+      }
     ],
     "name_es": "Salteado de ramen con carne y brócoli",
     "description_es": "Carne molida, brócoli y fideos ramen en una salsa dulce de soya y ajo.",
@@ -268,18 +521,25 @@
       "Vierte la salsa y cocina 2 minutos, revolviendo, hasta que espese y cubra la carne.",
       "Agrega los fideos, el aceite de sésamo y la cebolla verde y mezcla 1 minuto hasta que los fideos estén calientes y bien cubiertos."
     ],
-    "equipment": ["stovetop"],
+    "equipment": [
+      "stovetop"
+    ],
     "active_minutes": 15,
     "tip": "Save the seasoning packets to flavor rice or broth another day. Fresh broccoli works too; add a splash of water when you cover the pan.",
     "tip_es": "Guarda los sobres de condimento para darle sabor a un arroz o un caldo otro día. También sirve brócoli fresco; agrega un chorrito de agua al tapar la sartén.",
     "photo_url": "https://images.unsplash.com/photo-1666613710166-91a0cb67fad9",
-    "photo_credit": { "name": "Batkhuyag Enkhtuvshin", "url": "https://unsplash.com/photos/a-plate-of-food-gdDzQXTyqcE" }
+    "photo_credit": {
+      "name": "Batkhuyag Enkhtuvshin",
+      "url": "https://unsplash.com/photos/a-plate-of-food-gdDzQXTyqcE"
+    }
   },
   {
     "slug": "rotisserie-chicken-black-bean-quesadillas",
     "name": "Rotisserie Chicken and Black Bean Quesadillas",
     "meal_type": "dinner",
-    "diet_tags": ["high_protein"],
+    "diet_tags": [
+      "high_protein"
+    ],
     "servings": 4,
     "prep_minutes": 25,
     "batch_friendly": false,
@@ -292,14 +552,42 @@
       "Rest them 1 minute, cut into wedges and serve with the salsa and sour cream."
     ],
     "ingredients": [
-      { "id": "rotisserie_chicken", "qty": 0.5, "note": "about 2 cups shredded", "note_es": "unas 2 tazas, desmenuzado" },
-      { "id": "tortilla_flour", "qty": 8 },
-      { "id": "cheddar", "qty": 2 },
-      { "id": "black_beans", "qty": 1, "note": "drained and rinsed", "note_es": "escurridos y enjuagados" },
-      { "id": "salsa", "qty": 1 },
-      { "id": "sour_cream", "qty": 0.5 },
-      { "id": "cumin", "qty": 0.5 },
-      { "id": "vegetable_oil", "qty": 1 }
+      {
+        "id": "rotisserie_chicken",
+        "qty": 0.5,
+        "note": "about 2 cups shredded",
+        "note_es": "unas 2 tazas, desmenuzado"
+      },
+      {
+        "id": "tortilla_flour",
+        "qty": 8
+      },
+      {
+        "id": "cheddar",
+        "qty": 2
+      },
+      {
+        "id": "black_beans",
+        "qty": 1,
+        "note": "drained and rinsed",
+        "note_es": "escurridos y enjuagados"
+      },
+      {
+        "id": "salsa",
+        "qty": 1
+      },
+      {
+        "id": "sour_cream",
+        "qty": 0.5
+      },
+      {
+        "id": "cumin",
+        "qty": 0.5
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 1
+      }
     ],
     "name_es": "Quesadillas de pollo rostizado y frijoles negros",
     "description_es": "Tortillas de harina crujientes rellenas de pollo rostizado desmenuzado, frijoles negros y queso cheddar derretido.",
@@ -310,18 +598,25 @@
       "Cocina las quesadillas de dos en dos, de 2 a 3 minutos por lado, presionando suavemente con una espátula, hasta que estén doradas y crujientes y el queso se haya derretido; unta más aceite entre tandas.",
       "Déjalas reposar 1 minuto, córtalas en triángulos y sirve con la salsa y la crema agria."
     ],
-    "equipment": ["stovetop"],
+    "equipment": [
+      "stovetop"
+    ],
     "active_minutes": 22,
     "tip": "Use the rest of the rotisserie chicken for soup or enchiladas later in the week. Leftover quesadillas reheat best in a dry skillet.",
     "tip_es": "Usa el resto del pollo rostizado para una sopa o enchiladas esa misma semana. Las quesadillas que sobren se recalientan mejor en sartén seca.",
     "photo_url": "https://images.unsplash.com/photo-1618040996337-56904b7850b9",
-    "photo_credit": { "name": "Lottie Griffiths", "url": "https://unsplash.com/photos/sliced-pizza-on-brown-wooden-table-pvTgyioFSTY" }
+    "photo_credit": {
+      "name": "Lottie Griffiths",
+      "url": "https://unsplash.com/photos/sliced-pizza-on-brown-wooden-table-pvTgyioFSTY"
+    }
   },
   {
     "slug": "skillet-pork-chops-green-beans-potatoes",
     "name": "Skillet Pork Chops with Green Beans and Potatoes",
     "meal_type": "dinner",
-    "diet_tags": ["high_protein"],
+    "diet_tags": [
+      "high_protein"
+    ],
     "servings": 4,
     "prep_minutes": 30,
     "batch_friendly": false,
@@ -335,16 +630,54 @@
       "Add the potatoes and green beans, toss 1 to 2 minutes until coated in the garlic butter, and serve with the chops."
     ],
     "ingredients": [
-      { "id": "pork_chop", "qty": 1.5, "note": "4 chops", "note_es": "4 chuletas" },
-      { "id": "green_beans", "qty": 1, "note": "trimmed", "note_es": "sin las puntas" },
-      { "id": "potato_baby", "qty": 1.5, "note": "halved", "note_es": "cortadas a la mitad" },
-      { "id": "butter", "qty": 2 },
-      { "id": "garlic", "qty": 3, "note": "minced", "note_es": "picado fino" },
-      { "id": "paprika", "qty": 1 },
-      { "id": "garlic_powder", "qty": 1 },
-      { "id": "olive_oil", "qty": 1 },
-      { "id": "salt", "qty": 1 },
-      { "id": "black_pepper", "qty": 0.5 }
+      {
+        "id": "pork_chop",
+        "qty": 1.5,
+        "note": "4 chops",
+        "note_es": "4 chuletas"
+      },
+      {
+        "id": "green_beans",
+        "qty": 1,
+        "note": "trimmed",
+        "note_es": "sin las puntas"
+      },
+      {
+        "id": "potato_baby",
+        "qty": 1.5,
+        "note": "halved",
+        "note_es": "cortadas a la mitad"
+      },
+      {
+        "id": "butter",
+        "qty": 2
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced",
+        "note_es": "picado fino"
+      },
+      {
+        "id": "paprika",
+        "qty": 1
+      },
+      {
+        "id": "garlic_powder",
+        "qty": 1
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.5
+      }
     ],
     "name_es": "Chuletas de cerdo a la sartén con ejotes y papas",
     "description_es": "Chuletas de cerdo sazonadas y doradas a la sartén, con ejotes en mantequilla de ajo y papas pequeñas tiernas.",
@@ -356,12 +689,17 @@
       "Pasa las chuletas a un plato para que reposen, baja a fuego medio-bajo y derrite la mantequilla en la misma sartén con el ajo durante 30 segundos, hasta que suelte su aroma.",
       "Agrega las papas y los ejotes, mezcla de 1 a 2 minutos hasta que se cubran con la mantequilla de ajo y sirve con las chuletas."
     ],
-    "equipment": ["stovetop"],
+    "equipment": [
+      "stovetop"
+    ],
     "active_minutes": 15,
     "tip": "Thin chops cook faster: start checking after 3 minutes per side. Frozen green beans work; add them for the last 3 minutes.",
     "tip_es": "Las chuletas finas se cocinan más rápido: revísalas a los 3 minutos por lado. También sirven ejotes congelados; agrégalos los últimos 3 minutos.",
     "photo_url": "https://images.unsplash.com/photo-1703219342022-e3eb5c216c61",
-    "photo_credit": { "name": "Hybrid Storytellers", "url": "https://unsplash.com/photos/a-close-up-of-a-plate-of-food-on-a-table-WlELSb2TEfU" }
+    "photo_credit": {
+      "name": "Hybrid Storytellers",
+      "url": "https://unsplash.com/photos/a-close-up-of-a-plate-of-food-on-a-table-WlELSb2TEfU"
+    }
   },
   {
     "slug": "italian-sausage-and-pepper-penne",
@@ -381,16 +719,56 @@
       "Add the penne and a splash of the pasta water, toss 1 minute until the sauce clings to the pasta, and serve topped with the parmesan."
     ],
     "ingredients": [
-      { "id": "sausage_italian", "qty": 1, "note": "casings removed", "note_es": "sin la tripa" },
-      { "id": "pasta_penne", "qty": 12 },
-      { "id": "bell_pepper", "qty": 2, "note": "sliced", "note_es": "en tiras" },
-      { "id": "onion_yellow", "qty": 1, "note": "sliced", "note_es": "en tiras finas" },
-      { "id": "garlic", "qty": 3, "note": "minced", "note_es": "picado fino" },
-      { "id": "diced_tomatoes", "qty": 1 },
-      { "id": "italian_seasoning", "qty": 1 },
-      { "id": "parmesan", "qty": 0.25 },
-      { "id": "olive_oil", "qty": 1 },
-      { "id": "salt", "qty": 1, "note": "for the pasta water", "note_es": "para el agua de la pasta" }
+      {
+        "id": "sausage_italian",
+        "qty": 1,
+        "note": "casings removed",
+        "note_es": "sin la tripa"
+      },
+      {
+        "id": "pasta_penne",
+        "qty": 12
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 2,
+        "note": "sliced",
+        "note_es": "en tiras"
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "sliced",
+        "note_es": "en tiras finas"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced",
+        "note_es": "picado fino"
+      },
+      {
+        "id": "diced_tomatoes",
+        "qty": 1
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1
+      },
+      {
+        "id": "parmesan",
+        "qty": 0.25
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "note": "for the pasta water",
+        "note_es": "para el agua de la pasta"
+      }
     ],
     "name_es": "Penne con salchicha italiana y pimientos",
     "description_es": "Penne con salchicha italiana dorada, pimientos dulces y cebolla en una salsa de tomate con ajo.",
@@ -402,12 +780,17 @@
       "Agrega el ajo, el condimento italiano y los tomates en cubos con su jugo, baja a fuego medio y cocina 5 minutos hasta que espese un poco.",
       "Agrega el penne y un chorrito del agua de cocción, mezcla 1 minuto hasta que la salsa se pegue a la pasta y sirve con el queso parmesano por encima."
     ],
-    "equipment": ["stovetop"],
+    "equipment": [
+      "stovetop"
+    ],
     "active_minutes": 15,
     "tip": "Hot or mild sausage both work. Leftovers keep 3 days; reheat with a spoonful of water so the pasta does not dry out.",
     "tip_es": "Sirve salchicha picante o suave. Lo que sobra dura 3 días; recaliéntalo con una cucharada de agua para que la pasta no se seque.",
     "photo_url": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9",
-    "photo_credit": { "name": "Ben Lei", "url": "https://unsplash.com/photos/penne-pasta-with-meat-sauce-flFd8L7_B3g" }
+    "photo_credit": {
+      "name": "Ben Lei",
+      "url": "https://unsplash.com/photos/penne-pasta-with-meat-sauce-flFd8L7_B3g"
+    }
   },
   {
     "slug": "sloppy-joes-with-quick-coleslaw",
@@ -427,19 +810,64 @@
       "Pile the beef onto the buns and serve with the coleslaw on the side or on top."
     ],
     "ingredients": [
-      { "id": "ground_beef", "qty": 1 },
-      { "id": "buns", "qty": 4 },
-      { "id": "onion_yellow", "qty": 0.5, "note": "diced", "note_es": "en cubitos" },
-      { "id": "bell_pepper", "qty": 0.5, "note": "diced", "note_es": "en cubitos" },
-      { "id": "tomato_sauce", "qty": 1 },
-      { "id": "ketchup", "qty": 3 },
-      { "id": "brown_sugar", "qty": 0.0625, "note": "1 tablespoon", "note_es": "1 cucharada" },
-      { "id": "worcestershire", "qty": 1 },
-      { "id": "mustard", "qty": 1 },
-      { "id": "coleslaw_mix", "qty": 0.5 },
-      { "id": "mayo", "qty": 3 },
-      { "id": "vinegar_cider", "qty": 1 },
-      { "id": "salt", "qty": 0.5 }
+      {
+        "id": "ground_beef",
+        "qty": 1
+      },
+      {
+        "id": "buns",
+        "qty": 4
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 0.5,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 0.5,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "tomato_sauce",
+        "qty": 1
+      },
+      {
+        "id": "ketchup",
+        "qty": 3
+      },
+      {
+        "id": "brown_sugar",
+        "qty": 0.0625,
+        "note": "1 tablespoon",
+        "note_es": "1 cucharada"
+      },
+      {
+        "id": "worcestershire",
+        "qty": 1
+      },
+      {
+        "id": "mustard",
+        "qty": 1
+      },
+      {
+        "id": "coleslaw_mix",
+        "qty": 0.5
+      },
+      {
+        "id": "mayo",
+        "qty": 3
+      },
+      {
+        "id": "vinegar_cider",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      }
     ],
     "name_es": "Sloppy joes con ensalada rápida de repollo",
     "description_es": "Carne molida en salsa agridulce servida en panes tostados, con una ensalada cremosa de repollo lista en minutos.",
@@ -451,18 +879,25 @@
       "Abre los panes y tuéstalos con el lado cortado hacia abajo en una sartén seca a fuego medio, de 1 a 2 minutos, hasta que se doren.",
       "Reparte la carne sobre los panes y sirve con la ensalada de repollo al lado o encima."
     ],
-    "equipment": ["stovetop"],
+    "equipment": [
+      "stovetop"
+    ],
     "active_minutes": 18,
     "tip": "The beef mixture freezes well for 3 months. Use the other half of the onion and pepper in eggs or rice the next day.",
     "tip_es": "La carne se congela bien hasta 3 meses. Usa la otra mitad de la cebolla y del pimiento en unos huevos o un arroz al día siguiente.",
     "photo_url": "https://images.unsplash.com/photo-1432752641289-a25fc853fceb",
-    "photo_credit": { "name": "Brandon Morgan", "url": "https://unsplash.com/photos/burger-and-fries-on-bowl-fGYeKt1E6hc" }
+    "photo_credit": {
+      "name": "Brandon Morgan",
+      "url": "https://unsplash.com/photos/burger-and-fries-on-bowl-fGYeKt1E6hc"
+    }
   },
   {
     "slug": "honey-garlic-chicken-thighs-with-rice",
     "name": "Honey Garlic Chicken Thighs with Rice",
     "meal_type": "dinner",
-    "diet_tags": ["high_protein"],
+    "diet_tags": [
+      "high_protein"
+    ],
     "servings": 4,
     "prep_minutes": 25,
     "batch_friendly": false,
@@ -477,16 +912,48 @@
       "Serve the chicken over the fluffed rice with the broccoli and spoon the extra glaze on top."
     ],
     "ingredients": [
-      { "id": "chicken_thigh", "qty": 1.5 },
-      { "id": "honey", "qty": 3 },
-      { "id": "soy_sauce", "qty": 3 },
-      { "id": "garlic", "qty": 4, "note": "minced", "note_es": "picado fino" },
-      { "id": "vinegar_rice", "qty": 1 },
-      { "id": "rice_white", "qty": 1.5 },
-      { "id": "broccoli_frozen", "qty": 4 },
-      { "id": "vegetable_oil", "qty": 1 },
-      { "id": "salt", "qty": 0.5 },
-      { "id": "black_pepper", "qty": 0.5 }
+      {
+        "id": "chicken_thigh",
+        "qty": 1.5
+      },
+      {
+        "id": "honey",
+        "qty": 3
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 3
+      },
+      {
+        "id": "garlic",
+        "qty": 4,
+        "note": "minced",
+        "note_es": "picado fino"
+      },
+      {
+        "id": "vinegar_rice",
+        "qty": 1
+      },
+      {
+        "id": "rice_white",
+        "qty": 1.5
+      },
+      {
+        "id": "broccoli_frozen",
+        "qty": 4
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.5
+      }
     ],
     "name_es": "Muslos de pollo con miel y ajo, con arroz",
     "description_es": "Muslos de pollo dorados y glaseados con miel, ajo y salsa de soya, servidos con arroz y brócoli al vapor.",
@@ -499,12 +966,17 @@
       "Mientras tanto, pon el brócoli en una olla pequeña con un chorrito de agua, tapa y cocina al vapor a fuego medio de 4 a 5 minutos hasta que esté caliente y de color verde intenso; escúrrelo.",
       "Sirve el pollo sobre el arroz separado con un tenedor, con el brócoli al lado y el resto del glaseado por encima."
     ],
-    "equipment": ["stovetop"],
+    "equipment": [
+      "stovetop"
+    ],
     "active_minutes": 15,
     "tip": "Honey burns quickly, so lower the heat before the glaze goes in. Leftover chicken is good cold in a wrap the next day.",
     "tip_es": "La miel se quema rápido: baja el fuego antes de agregar el glaseado. El pollo que sobre queda bien frío en un wrap al día siguiente.",
     "photo_url": "https://images.unsplash.com/photo-1583579366395-c0a857d2182a",
-    "photo_credit": { "name": "Markus Winkler", "url": "https://unsplash.com/photos/cooked-food-on-white-ceramic-plate-8U3MxqPEmJI" }
+    "photo_credit": {
+      "name": "Markus Winkler",
+      "url": "https://unsplash.com/photos/cooked-food-on-white-ceramic-plate-8U3MxqPEmJI"
+    }
   },
   {
     "slug": "bacon-and-egg-spaghetti-with-peas",
@@ -524,14 +996,44 @@
       "Take the pan off the heat, pour in the egg mixture and toss constantly 1 to 2 minutes, adding pasta water a splash at a time, until the sauce is creamy and coats the pasta without scrambling."
     ],
     "ingredients": [
-      { "id": "bacon", "qty": 6, "note": "chopped", "note_es": "picado" },
-      { "id": "pasta_spaghetti", "qty": 12 },
-      { "id": "eggs", "qty": 3 },
-      { "id": "parmesan", "qty": 0.75 },
-      { "id": "peas_frozen", "qty": 1.5 },
-      { "id": "garlic", "qty": 2, "note": "minced", "note_es": "picado fino" },
-      { "id": "black_pepper", "qty": 1 },
-      { "id": "salt", "qty": 1, "note": "for the pasta water", "note_es": "para el agua de la pasta" }
+      {
+        "id": "bacon",
+        "qty": 6,
+        "note": "chopped",
+        "note_es": "picado"
+      },
+      {
+        "id": "pasta_spaghetti",
+        "qty": 12
+      },
+      {
+        "id": "eggs",
+        "qty": 3
+      },
+      {
+        "id": "parmesan",
+        "qty": 0.75
+      },
+      {
+        "id": "peas_frozen",
+        "qty": 1.5
+      },
+      {
+        "id": "garlic",
+        "qty": 2,
+        "note": "minced",
+        "note_es": "picado fino"
+      },
+      {
+        "id": "black_pepper",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 1,
+        "note": "for the pasta water",
+        "note_es": "para el agua de la pasta"
+      }
     ],
     "name_es": "Espaguetis con tocino, huevo y arvejas",
     "description_es": "Espaguetis en una salsa sedosa de huevo y parmesano con tocino crujiente, ajo y arvejas.",
@@ -543,18 +1045,25 @@
       "Pasa la pasta a la sartén con el tocino y mezcla a fuego bajo 30 segundos para que se cubra con la grasa.",
       "Retira la sartén del fuego, vierte la mezcla de huevo y revuelve sin parar de 1 a 2 minutos, agregando el agua de cocción de a chorritos, hasta que la salsa quede cremosa y cubra la pasta sin que el huevo se cuaje."
     ],
-    "equipment": ["stovetop"],
+    "equipment": [
+      "stovetop"
+    ],
     "active_minutes": 15,
     "tip": "Add the eggs off the heat: the hot pasta cooks them into a sauce, while direct heat scrambles them.",
     "tip_es": "Agrega los huevos fuera del fuego: la pasta caliente los convierte en salsa; con fuego directo se hacen revueltos.",
     "photo_url": "https://images.unsplash.com/photo-1612548041504-659189a63246",
-    "photo_credit": { "name": "logan jeffrey", "url": "https://unsplash.com/photos/pasta-dish-on-white-ceramic-plate-Ky12Qu8fKzM" }
+    "photo_credit": {
+      "name": "logan jeffrey",
+      "url": "https://unsplash.com/photos/pasta-dish-on-white-ceramic-plate-Ky12Qu8fKzM"
+    }
   },
   {
     "slug": "ground-turkey-teriyaki-rice-bowls",
     "name": "Ground Turkey Teriyaki Rice Bowls",
     "meal_type": "dinner",
-    "diet_tags": ["high_protein"],
+    "diet_tags": [
+      "high_protein"
+    ],
     "servings": 4,
     "prep_minutes": 25,
     "batch_friendly": false,
@@ -568,18 +1077,60 @@
       "Spoon over the fluffed rice and top with the green onions."
     ],
     "ingredients": [
-      { "id": "ground_turkey", "qty": 1.25 },
-      { "id": "rice_white", "qty": 1.5 },
-      { "id": "broccoli_frozen", "qty": 3 },
-      { "id": "carrot", "qty": 0.5, "note": "thinly sliced", "note_es": "en rodajas finas" },
-      { "id": "soy_sauce", "qty": 4 },
-      { "id": "honey", "qty": 2 },
-      { "id": "vinegar_rice", "qty": 1 },
-      { "id": "garlic", "qty": 3, "note": "minced", "note_es": "picado fino" },
-      { "id": "ginger_ground", "qty": 0.5 },
-      { "id": "cornstarch", "qty": 1 },
-      { "id": "green_onion", "qty": 0.5, "note": "sliced", "note_es": "en rodajas" },
-      { "id": "vegetable_oil", "qty": 1 }
+      {
+        "id": "ground_turkey",
+        "qty": 1.25
+      },
+      {
+        "id": "rice_white",
+        "qty": 1.5
+      },
+      {
+        "id": "broccoli_frozen",
+        "qty": 3
+      },
+      {
+        "id": "carrot",
+        "qty": 0.5,
+        "note": "thinly sliced",
+        "note_es": "en rodajas finas"
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 4
+      },
+      {
+        "id": "honey",
+        "qty": 2
+      },
+      {
+        "id": "vinegar_rice",
+        "qty": 1
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced",
+        "note_es": "picado fino"
+      },
+      {
+        "id": "ginger_ground",
+        "qty": 0.5
+      },
+      {
+        "id": "cornstarch",
+        "qty": 1
+      },
+      {
+        "id": "green_onion",
+        "qty": 0.5,
+        "note": "sliced",
+        "note_es": "en rodajas"
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 1
+      }
     ],
     "name_es": "Tazones de arroz con pavo molido teriyaki",
     "description_es": "Pavo molido, brócoli y zanahoria en una salsa teriyaki casera de miel y soya, sobre arroz.",
@@ -591,18 +1142,25 @@
       "Vierte la salsa y cocina 2 minutos, revolviendo, hasta que esté espesa y brillante.",
       "Sirve sobre el arroz separado con un tenedor y termina con la cebolla verde."
     ],
-    "equipment": ["stovetop"],
+    "equipment": [
+      "stovetop"
+    ],
     "active_minutes": 15,
     "tip": "Good for packed lunches: store the rice and turkey together up to 4 days in the fridge and reheat until steaming.",
     "tip_es": "Ideal para llevar de almuerzo: guarda el arroz y el pavo juntos hasta 4 días en el refrigerador y recalienta hasta que humee.",
     "photo_url": "https://images.unsplash.com/photo-1791386804677-815379da3e2e",
-    "photo_credit": { "name": "Travis Palma", "url": "https://unsplash.com/photos/teriyaki-chicken-bowl-with-rice-vtTqQJ0hfZc" }
+    "photo_credit": {
+      "name": "Travis Palma",
+      "url": "https://unsplash.com/photos/teriyaki-chicken-bowl-with-rice-vtTqQJ0hfZc"
+    }
   },
   {
     "slug": "sheet-pan-drumsticks-potatoes-carrots",
     "name": "Sheet-Pan Drumsticks with Potatoes and Carrots",
     "meal_type": "dinner",
-    "diet_tags": ["high_protein"],
+    "diet_tags": [
+      "high_protein"
+    ],
     "servings": 4,
     "prep_minutes": 45,
     "batch_friendly": false,
@@ -616,15 +1174,48 @@
       "Spoon the pan juices over the chicken and vegetables and serve."
     ],
     "ingredients": [
-      { "id": "chicken_drumstick", "qty": 3, "note": "about 10", "note_es": "unas 10" },
-      { "id": "potato_russet", "qty": 1.5, "note": "1-inch chunks", "note_es": "en trozos de 2,5 cm" },
-      { "id": "carrot", "qty": 1, "note": "cut into sticks", "note_es": "en bastones" },
-      { "id": "olive_oil", "qty": 2 },
-      { "id": "paprika", "qty": 2 },
-      { "id": "garlic_powder", "qty": 1 },
-      { "id": "onion_powder", "qty": 1 },
-      { "id": "salt", "qty": 1.5 },
-      { "id": "black_pepper", "qty": 0.5 }
+      {
+        "id": "chicken_drumstick",
+        "qty": 3,
+        "note": "about 10",
+        "note_es": "unas 10"
+      },
+      {
+        "id": "potato_russet",
+        "qty": 1.5,
+        "note": "1-inch chunks",
+        "note_es": "en trozos de 2,5 cm"
+      },
+      {
+        "id": "carrot",
+        "qty": 1,
+        "note": "cut into sticks",
+        "note_es": "en bastones"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2
+      },
+      {
+        "id": "paprika",
+        "qty": 2
+      },
+      {
+        "id": "garlic_powder",
+        "qty": 1
+      },
+      {
+        "id": "onion_powder",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 1.5
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.5
+      }
     ],
     "name_es": "Piernas de pollo al horno con papas y zanahorias",
     "description_es": "Piernas de pollo con paprika asadas en una sola bandeja con papas crujientes y zanahorias dulces.",
@@ -636,18 +1227,25 @@
       "Hornea de 35 a 40 minutos, dando vuelta el pollo y revolviendo las verduras a la mitad, hasta que la piel esté crujiente, el pollo llegue a {175F} junto al hueso y las papas estén doradas.",
       "Baña el pollo y las verduras con los jugos de la bandeja y sirve."
     ],
-    "equipment": ["oven"],
+    "equipment": [
+      "oven"
+    ],
     "active_minutes": 10,
     "tip": "Bone-in thighs work the same way. Leftover chicken pulls off the bone easily for sandwiches or soup.",
     "tip_es": "Con muslos con hueso se prepara igual. El pollo que sobre se separa fácil del hueso para sándwiches o sopa.",
     "photo_url": "https://images.unsplash.com/photo-1599161146640-8d60bd2888e3",
-    "photo_credit": { "name": "Branimir Petakov", "url": "https://unsplash.com/photos/brown-bread-with-yellow-fruits-HB0IbmJyyI8" }
+    "photo_credit": {
+      "name": "Branimir Petakov",
+      "url": "https://unsplash.com/photos/brown-bread-with-yellow-fruits-HB0IbmJyyI8"
+    }
   },
   {
     "slug": "one-pot-turkey-taco-rice",
     "name": "One-Pot Turkey Taco Rice",
     "meal_type": "dinner",
-    "diet_tags": ["high_protein"],
+    "diet_tags": [
+      "high_protein"
+    ],
     "servings": 4,
     "prep_minutes": 30,
     "batch_friendly": false,
@@ -660,15 +1258,46 @@
       "Sprinkle the cheddar over the top, cover 2 minutes until melted, and serve."
     ],
     "ingredients": [
-      { "id": "ground_turkey", "qty": 1 },
-      { "id": "rice_white", "qty": 1 },
-      { "id": "black_beans", "qty": 1, "note": "drained and rinsed", "note_es": "escurridos y enjuagados" },
-      { "id": "salsa", "qty": 1 },
-      { "id": "corn_frozen", "qty": 1 },
-      { "id": "taco_seasoning", "qty": 2 },
-      { "id": "chicken_broth", "qty": 2 },
-      { "id": "cheddar", "qty": 1 },
-      { "id": "onion_yellow", "qty": 0.5, "note": "diced", "note_es": "en cubitos" }
+      {
+        "id": "ground_turkey",
+        "qty": 1
+      },
+      {
+        "id": "rice_white",
+        "qty": 1
+      },
+      {
+        "id": "black_beans",
+        "qty": 1,
+        "note": "drained and rinsed",
+        "note_es": "escurridos y enjuagados"
+      },
+      {
+        "id": "salsa",
+        "qty": 1
+      },
+      {
+        "id": "corn_frozen",
+        "qty": 1
+      },
+      {
+        "id": "taco_seasoning",
+        "qty": 2
+      },
+      {
+        "id": "chicken_broth",
+        "qty": 2
+      },
+      {
+        "id": "cheddar",
+        "qty": 1
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 0.5,
+        "note": "diced",
+        "note_es": "en cubitos"
+      }
     ],
     "name_es": "Arroz con pavo estilo taco en una sola olla",
     "description_es": "Pavo molido, arroz, frijoles negros y maíz cocidos en salsa y sazonador para tacos, con queso cheddar derretido encima.",
@@ -679,18 +1308,25 @@
       "Tapa, baja a fuego bajo y cocina 18 minutos sin levantar la tapa, hasta que el arroz esté tierno y el líquido se haya absorbido.",
       "Reparte el queso cheddar por encima, tapa 2 minutos hasta que se derrita y sirve."
     ],
-    "equipment": ["stovetop"],
+    "equipment": [
+      "stovetop"
+    ],
     "active_minutes": 10,
     "tip": "Leftovers make a good burrito filling. Keeps 4 days in the fridge or 3 months in the freezer.",
     "tip_es": "Lo que sobra sirve de relleno para burritos. Dura 4 días en el refrigerador o 3 meses en el congelador.",
     "photo_url": "https://images.unsplash.com/photo-1512058533999-106ee01bf777",
-    "photo_credit": { "name": "Annie Spratt", "url": "https://unsplash.com/photos/black-frying-pan-with-food-on-top-x-R8jcm2ors" }
+    "photo_credit": {
+      "name": "Annie Spratt",
+      "url": "https://unsplash.com/photos/black-frying-pan-with-food-on-top-x-R8jcm2ors"
+    }
   },
   {
     "slug": "baked-chicken-parmesan-with-spaghetti",
     "name": "Baked Chicken Parmesan with Spaghetti",
     "meal_type": "dinner",
-    "diet_tags": ["high_protein"],
+    "diet_tags": [
+      "high_protein"
+    ],
     "servings": 4,
     "prep_minutes": 40,
     "batch_friendly": false,
@@ -705,16 +1341,48 @@
       "Warm the remaining marinara in the pasta pot over medium heat 2 minutes, toss in the spaghetti and serve with the chicken on top."
     ],
     "ingredients": [
-      { "id": "chicken_breast", "qty": 1.5 },
-      { "id": "breadcrumbs", "qty": 1 },
-      { "id": "eggs", "qty": 1, "note": "beaten", "note_es": "batido" },
-      { "id": "parmesan", "qty": 0.5 },
-      { "id": "mozzarella", "qty": 1 },
-      { "id": "marinara", "qty": 2 },
-      { "id": "pasta_spaghetti", "qty": 8 },
-      { "id": "italian_seasoning", "qty": 1 },
-      { "id": "olive_oil", "qty": 2 },
-      { "id": "salt", "qty": 0.5 }
+      {
+        "id": "chicken_breast",
+        "qty": 1.5
+      },
+      {
+        "id": "breadcrumbs",
+        "qty": 1
+      },
+      {
+        "id": "eggs",
+        "qty": 1,
+        "note": "beaten",
+        "note_es": "batido"
+      },
+      {
+        "id": "parmesan",
+        "qty": 0.5
+      },
+      {
+        "id": "mozzarella",
+        "qty": 1
+      },
+      {
+        "id": "marinara",
+        "qty": 2
+      },
+      {
+        "id": "pasta_spaghetti",
+        "qty": 8
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      }
     ],
     "name_es": "Pollo a la parmesana al horno con espaguetis",
     "description_es": "Pollo empanizado y crujiente al horno, cubierto con marinara y mozzarella derretida, sobre espaguetis.",
@@ -727,18 +1395,26 @@
       "Pon un poco de marinara sobre cada filete, cubre con la mozzarella y hornea 5 minutos más hasta que el queso se derrita y burbujee.",
       "Calienta el resto de la marinara en la olla de la pasta a fuego medio 2 minutos, mezcla con los espaguetis y sirve con el pollo encima."
     ],
-    "equipment": ["oven", "stovetop"],
+    "equipment": [
+      "oven",
+      "stovetop"
+    ],
     "active_minutes": 20,
     "tip": "Leftover cutlets make great sandwiches on a bun with a little extra marinara.",
     "tip_es": "Los filetes que sobren quedan muy bien en un sándwich con un poco más de marinara.",
     "photo_url": "https://images.unsplash.com/photo-1632778149955-e80f8ceca2e8",
-    "photo_credit": { "name": "Clark Douglas", "url": "https://unsplash.com/photos/a-plate-of-food-with-meat-and-broccoli-HhEfe0DeMiA" }
+    "photo_credit": {
+      "name": "Clark Douglas",
+      "url": "https://unsplash.com/photos/a-plate-of-food-with-meat-and-broccoli-HhEfe0DeMiA"
+    }
   },
   {
     "slug": "chicken-tortilla-soup-with-black-beans",
     "name": "Chicken Tortilla Soup with Black Beans",
     "meal_type": "dinner",
-    "diet_tags": ["high_protein"],
+    "diet_tags": [
+      "high_protein"
+    ],
     "servings": 4,
     "prep_minutes": 35,
     "batch_friendly": true,
@@ -752,20 +1428,74 @@
       "Take the pot off the heat, stir in the lime juice and serve topped with the crushed tortilla chips and cilantro."
     ],
     "ingredients": [
-      { "id": "chicken_breast", "qty": 1 },
-      { "id": "black_beans", "qty": 1, "note": "drained and rinsed", "note_es": "escurridos y enjuagados" },
-      { "id": "corn_frozen", "qty": 1 },
-      { "id": "diced_tomatoes", "qty": 1 },
-      { "id": "chicken_broth", "qty": 4 },
-      { "id": "onion_yellow", "qty": 1, "note": "diced", "note_es": "en cubitos" },
-      { "id": "garlic", "qty": 3, "note": "minced", "note_es": "picado fino" },
-      { "id": "cumin", "qty": 2 },
-      { "id": "chili_powder", "qty": 2 },
-      { "id": "tortilla_chips", "qty": 3, "note": "crushed", "note_es": "triturados" },
-      { "id": "lime", "qty": 1, "note": "juiced", "note_es": "el jugo" },
-      { "id": "cilantro", "qty": 0.25, "note": "chopped", "note_es": "picado" },
-      { "id": "vegetable_oil", "qty": 1 },
-      { "id": "salt", "qty": 1 }
+      {
+        "id": "chicken_breast",
+        "qty": 1
+      },
+      {
+        "id": "black_beans",
+        "qty": 1,
+        "note": "drained and rinsed",
+        "note_es": "escurridos y enjuagados"
+      },
+      {
+        "id": "corn_frozen",
+        "qty": 1
+      },
+      {
+        "id": "diced_tomatoes",
+        "qty": 1
+      },
+      {
+        "id": "chicken_broth",
+        "qty": 4
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced",
+        "note_es": "picado fino"
+      },
+      {
+        "id": "cumin",
+        "qty": 2
+      },
+      {
+        "id": "chili_powder",
+        "qty": 2
+      },
+      {
+        "id": "tortilla_chips",
+        "qty": 3,
+        "note": "crushed",
+        "note_es": "triturados"
+      },
+      {
+        "id": "lime",
+        "qty": 1,
+        "note": "juiced",
+        "note_es": "el jugo"
+      },
+      {
+        "id": "cilantro",
+        "qty": 0.25,
+        "note": "chopped",
+        "note_es": "picado"
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      }
     ],
     "name_es": "Sopa de tortilla con pollo y frijoles negros",
     "description_es": "Sopa caldosa de tomate y chile con pollo desmenuzado, frijoles negros y maíz, cubierta con chips de tortilla triturados.",
@@ -777,18 +1507,25 @@
       "Agrega los frijoles negros, el maíz y la sal y cocina 5 minutos a fuego medio hasta que todo esté caliente.",
       "Retira la olla del fuego, agrega el jugo de lima y sirve con los chips de tortilla triturados y el cilantro por encima."
     ],
-    "equipment": ["stovetop"],
+    "equipment": [
+      "stovetop"
+    ],
     "active_minutes": 15,
     "tip": "Keeps 4 days in the fridge or 3 months in the freezer; add the chips and cilantro only when serving so they stay crisp and fresh.",
     "tip_es": "Dura 4 días en el refrigerador o 3 meses en el congelador; agrega los chips y el cilantro recién al servir para que sigan crujientes y frescos.",
     "photo_url": "https://images.unsplash.com/photo-1730409261374-6f8a89051fd2",
-    "photo_credit": { "name": "Jason Leung", "url": "https://unsplash.com/photos/a-bowl-of-soup-on-a-table-next-to-a-glass-of-water-7uGYxSRguGQ" }
+    "photo_credit": {
+      "name": "Jason Leung",
+      "url": "https://unsplash.com/photos/a-bowl-of-soup-on-a-table-next-to-a-glass-of-water-7uGYxSRguGQ"
+    }
   },
   {
     "slug": "rotisserie-chicken-enchiladas",
     "name": "Rotisserie Chicken Enchiladas",
     "meal_type": "dinner",
-    "diet_tags": ["high_protein"],
+    "diet_tags": [
+      "high_protein"
+    ],
     "servings": 4,
     "prep_minutes": 40,
     "batch_friendly": true,
@@ -803,14 +1540,42 @@
       "Rest 5 minutes before serving."
     ],
     "ingredients": [
-      { "id": "rotisserie_chicken", "qty": 0.5, "note": "about 2 cups shredded", "note_es": "unas 2 tazas, desmenuzado" },
-      { "id": "tortilla_flour", "qty": 8 },
-      { "id": "enchilada_sauce", "qty": 2 },
-      { "id": "cheddar", "qty": 1.5 },
-      { "id": "onion_yellow", "qty": 0.5, "note": "finely diced", "note_es": "picada fina" },
-      { "id": "green_chiles", "qty": 1 },
-      { "id": "sour_cream", "qty": 0.5 },
-      { "id": "cumin", "qty": 1 }
+      {
+        "id": "rotisserie_chicken",
+        "qty": 0.5,
+        "note": "about 2 cups shredded",
+        "note_es": "unas 2 tazas, desmenuzado"
+      },
+      {
+        "id": "tortilla_flour",
+        "qty": 8
+      },
+      {
+        "id": "enchilada_sauce",
+        "qty": 2
+      },
+      {
+        "id": "cheddar",
+        "qty": 1.5
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 0.5,
+        "note": "finely diced",
+        "note_es": "picada fina"
+      },
+      {
+        "id": "green_chiles",
+        "qty": 1
+      },
+      {
+        "id": "sour_cream",
+        "qty": 0.5
+      },
+      {
+        "id": "cumin",
+        "qty": 1
+      }
     ],
     "name_es": "Enchiladas de pollo rostizado",
     "description_es": "Tortillas de harina rellenas de pollo desmenuzado, chiles verdes y queso cheddar, horneadas en salsa roja para enchiladas.",
@@ -823,18 +1588,25 @@
       "Hornea 20 minutos hasta que la salsa burbujee en los bordes y el queso esté derretido y empiece a dorarse.",
       "Deja reposar 5 minutos antes de servir."
     ],
-    "equipment": ["oven"],
+    "equipment": [
+      "oven"
+    ],
     "active_minutes": 15,
     "tip": "Assemble up to a day ahead, cover and refrigerate; add 10 minutes to the baking time. Baked enchiladas freeze well for 2 months.",
     "tip_es": "Puedes armarlas hasta un día antes, taparlas y refrigerarlas; suma 10 minutos de horno. Ya horneadas se congelan bien hasta 2 meses.",
     "photo_url": "https://images.unsplash.com/photo-1674135529596-cb1f707d231d",
-    "photo_credit": { "name": "Aleksandra Gencheva", "url": "https://unsplash.com/photos/a-person-holding-a-dish-of-food-on-a-table-4vB9GNWnmbM" }
+    "photo_credit": {
+      "name": "Aleksandra Gencheva",
+      "url": "https://unsplash.com/photos/a-person-holding-a-dish-of-food-on-a-table-4vB9GNWnmbM"
+    }
   },
   {
     "slug": "one-pan-chicken-thighs-and-rice-with-peas",
     "name": "One-Pan Chicken Thighs and Rice with Peas",
     "meal_type": "dinner",
-    "diet_tags": ["high_protein"],
+    "diet_tags": [
+      "high_protein"
+    ],
     "servings": 4,
     "prep_minutes": 40,
     "batch_friendly": false,
@@ -849,18 +1621,58 @@
       "Scatter the peas over the top, cover 3 minutes until they are hot and bright green, then fluff the rice and serve."
     ],
     "ingredients": [
-      { "id": "chicken_thigh", "qty": 1.5 },
-      { "id": "rice_white", "qty": 1.5 },
-      { "id": "chicken_broth", "qty": 3 },
-      { "id": "onion_yellow", "qty": 1, "note": "diced", "note_es": "en cubitos" },
-      { "id": "garlic", "qty": 3, "note": "minced", "note_es": "picado fino" },
-      { "id": "peas_frozen", "qty": 1 },
-      { "id": "paprika", "qty": 1 },
-      { "id": "thyme", "qty": 1 },
-      { "id": "butter", "qty": 1 },
-      { "id": "olive_oil", "qty": 1 },
-      { "id": "salt", "qty": 1 },
-      { "id": "black_pepper", "qty": 0.5 }
+      {
+        "id": "chicken_thigh",
+        "qty": 1.5
+      },
+      {
+        "id": "rice_white",
+        "qty": 1.5
+      },
+      {
+        "id": "chicken_broth",
+        "qty": 3
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced",
+        "note_es": "picado fino"
+      },
+      {
+        "id": "peas_frozen",
+        "qty": 1
+      },
+      {
+        "id": "paprika",
+        "qty": 1
+      },
+      {
+        "id": "thyme",
+        "qty": 1
+      },
+      {
+        "id": "butter",
+        "qty": 1
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.5
+      }
     ],
     "name_es": "Muslos de pollo con arroz y arvejas en una sartén",
     "description_es": "Muslos de pollo con paprika cocidos sobre arroz con ajo en una sola sartén, con arvejas al final.",
@@ -873,18 +1685,25 @@
       "Acomoda el pollo encima, tapa, baja a fuego bajo y cocina de 18 a 20 minutos hasta que el arroz esté tierno, el líquido se haya absorbido y el pollo llegue a {165F}.",
       "Reparte las arvejas por encima, tapa 3 minutos hasta que estén calientes y de color verde intenso, separa el arroz con un tenedor y sirve."
     ],
-    "equipment": ["stovetop"],
+    "equipment": [
+      "stovetop"
+    ],
     "active_minutes": 15,
     "tip": "Do not lift the lid while the rice cooks or it loses steam and stays firm. Leftovers reheat well with a spoonful of water.",
     "tip_es": "No levantes la tapa mientras se cocina el arroz: pierde vapor y queda duro. Lo que sobra se recalienta bien con una cucharada de agua.",
     "photo_url": "https://images.unsplash.com/photo-1577110633798-8d4439305952",
-    "photo_credit": { "name": "Faris Mohammed", "url": "https://unsplash.com/photos/frying-pan-of-chicken-O8OZsmNWSsg" }
+    "photo_credit": {
+      "name": "Faris Mohammed",
+      "url": "https://unsplash.com/photos/frying-pan-of-chicken-O8OZsmNWSsg"
+    }
   },
   {
     "slug": "sheet-pan-pork-tenderloin-sweet-potatoes",
     "name": "Sheet-Pan Pork Tenderloin with Sweet Potatoes",
     "meal_type": "dinner",
-    "diet_tags": ["high_protein"],
+    "diet_tags": [
+      "high_protein"
+    ],
     "servings": 4,
     "prep_minutes": 45,
     "batch_friendly": false,
@@ -899,16 +1718,50 @@
       "Rest the pork 5 minutes on a board, slice it into rounds and serve with the vegetables."
     ],
     "ingredients": [
-      { "id": "pork_tenderloin", "qty": 1.25 },
-      { "id": "sweet_potato", "qty": 1.5, "note": "3/4-inch cubes", "note_es": "en cubos de 2 cm" },
-      { "id": "green_beans", "qty": 0.75, "note": "trimmed", "note_es": "sin las puntas" },
-      { "id": "olive_oil", "qty": 2 },
-      { "id": "mustard", "qty": 1 },
-      { "id": "honey", "qty": 1 },
-      { "id": "garlic_powder", "qty": 1 },
-      { "id": "smoked_paprika", "qty": 1 },
-      { "id": "salt", "qty": 1 },
-      { "id": "black_pepper", "qty": 0.5 }
+      {
+        "id": "pork_tenderloin",
+        "qty": 1.25
+      },
+      {
+        "id": "sweet_potato",
+        "qty": 1.5,
+        "note": "3/4-inch cubes",
+        "note_es": "en cubos de 2 cm"
+      },
+      {
+        "id": "green_beans",
+        "qty": 0.75,
+        "note": "trimmed",
+        "note_es": "sin las puntas"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2
+      },
+      {
+        "id": "mustard",
+        "qty": 1
+      },
+      {
+        "id": "honey",
+        "qty": 1
+      },
+      {
+        "id": "garlic_powder",
+        "qty": 1
+      },
+      {
+        "id": "smoked_paprika",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.5
+      }
     ],
     "name_es": "Lomo de cerdo en bandeja con camotes y ejotes",
     "description_es": "Lomo de cerdo con miel y mostaza asado en una sola bandeja con camotes y ejotes.",
@@ -921,12 +1774,17 @@
       "Hornea unos 20 minutos hasta que el cerdo llegue a {145F} en la parte más gruesa y los camotes estén tiernos y dorados en los bordes.",
       "Deja reposar el cerdo 5 minutos sobre una tabla, córtalo en rodajas y sirve con las verduras."
     ],
-    "equipment": ["oven"],
+    "equipment": [
+      "oven"
+    ],
     "active_minutes": 15,
     "tip": "A blush of pink in the center is normal for pork tenderloin. Slice leftovers thin for sandwiches.",
     "tip_es": "Es normal que el lomo de cerdo quede apenas rosado en el centro. Corta lo que sobre en láminas finas para sándwiches.",
     "photo_url": "https://images.unsplash.com/photo-1606258868842-79eb9eff76af",
-    "photo_credit": { "name": "Samuel Regan-Asante", "url": "https://unsplash.com/photos/sliced-bread-on-blue-and-white-ceramic-plate-e3AA8nJMwTI" }
+    "photo_credit": {
+      "name": "Samuel Regan-Asante",
+      "url": "https://unsplash.com/photos/sliced-bread-on-blue-and-white-ceramic-plate-e3AA8nJMwTI"
+    }
   },
   {
     "slug": "homestyle-chicken-noodle-soup",
@@ -946,18 +1804,64 @@
       "Season with the salt and pepper, stir in the parsley and serve."
     ],
     "ingredients": [
-      { "id": "chicken_thigh", "qty": 1 },
-      { "id": "egg_noodles", "qty": 6 },
-      { "id": "carrot", "qty": 0.75, "note": "sliced", "note_es": "en rodajas" },
-      { "id": "celery", "qty": 3, "note": "sliced", "note_es": "en rodajas" },
-      { "id": "onion_yellow", "qty": 1, "note": "diced", "note_es": "en cubitos" },
-      { "id": "garlic", "qty": 2, "note": "minced", "note_es": "picado fino" },
-      { "id": "chicken_broth", "qty": 8 },
-      { "id": "thyme", "qty": 1 },
-      { "id": "parsley", "qty": 0.25, "note": "chopped", "note_es": "picado" },
-      { "id": "butter", "qty": 1 },
-      { "id": "salt", "qty": 1 },
-      { "id": "black_pepper", "qty": 0.5 }
+      {
+        "id": "chicken_thigh",
+        "qty": 1
+      },
+      {
+        "id": "egg_noodles",
+        "qty": 6
+      },
+      {
+        "id": "carrot",
+        "qty": 0.75,
+        "note": "sliced",
+        "note_es": "en rodajas"
+      },
+      {
+        "id": "celery",
+        "qty": 3,
+        "note": "sliced",
+        "note_es": "en rodajas"
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "garlic",
+        "qty": 2,
+        "note": "minced",
+        "note_es": "picado fino"
+      },
+      {
+        "id": "chicken_broth",
+        "qty": 8
+      },
+      {
+        "id": "thyme",
+        "qty": 1
+      },
+      {
+        "id": "parsley",
+        "qty": 0.25,
+        "note": "chopped",
+        "note_es": "picado"
+      },
+      {
+        "id": "butter",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.5
+      }
     ],
     "name_es": "Sopa casera de pollo con fideos",
     "description_es": "Muslos de pollo cocidos en caldo con zanahoria, apio y cebolla, con fideos de huevo y perejil.",
@@ -969,12 +1873,17 @@
       "Sube a fuego medio-alto, agrega los fideos de huevo y cocina de 6 a 8 minutos hasta que estén tiernos.",
       "Sazona con la sal y la pimienta, agrega el perejil y sirve."
     ],
-    "equipment": ["stovetop"],
+    "equipment": [
+      "stovetop"
+    ],
     "active_minutes": 15,
     "tip": "The noodles soak up broth as the soup sits; add a splash of water when reheating. For freezing, leave the noodles out.",
     "tip_es": "Los fideos absorben caldo con el reposo; agrega un chorrito de agua al recalentar. Si la vas a congelar, hazlo sin los fideos.",
     "photo_url": "https://images.unsplash.com/photo-1612966948332-81d747414a8f",
-    "photo_credit": { "name": "Karolina Kołodziejczak", "url": "https://unsplash.com/photos/soup-in-white-ceramic-bowl--m0du_taY4g" }
+    "photo_credit": {
+      "name": "Karolina Kołodziejczak",
+      "url": "https://unsplash.com/photos/soup-in-white-ceramic-bowl--m0du_taY4g"
+    }
   },
   {
     "slug": "red-beans-and-rice-with-smoked-sausage",
@@ -995,19 +1904,70 @@
       "Fluff the rice with a fork and serve the beans spooned over it."
     ],
     "ingredients": [
-      { "id": "sausage_smoked", "qty": 1, "note": "sliced into coins", "note_es": "en rodajas" },
-      { "id": "kidney_beans", "qty": 2, "note": "undrained", "note_es": "sin escurrir" },
-      { "id": "rice_white", "qty": 1.5 },
-      { "id": "onion_yellow", "qty": 1, "note": "diced", "note_es": "en cubitos" },
-      { "id": "bell_pepper", "qty": 1, "note": "diced", "note_es": "en cubitos" },
-      { "id": "celery", "qty": 2, "note": "diced", "note_es": "en cubitos" },
-      { "id": "garlic", "qty": 3, "note": "minced", "note_es": "picado fino" },
-      { "id": "chicken_broth", "qty": 1.5 },
-      { "id": "smoked_paprika", "qty": 1 },
-      { "id": "thyme", "qty": 1 },
-      { "id": "cayenne", "qty": 0.25 },
-      { "id": "vegetable_oil", "qty": 1 },
-      { "id": "salt", "qty": 0.5 }
+      {
+        "id": "sausage_smoked",
+        "qty": 1,
+        "note": "sliced into coins",
+        "note_es": "en rodajas"
+      },
+      {
+        "id": "kidney_beans",
+        "qty": 2,
+        "note": "undrained",
+        "note_es": "sin escurrir"
+      },
+      {
+        "id": "rice_white",
+        "qty": 1.5
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "celery",
+        "qty": 2,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced",
+        "note_es": "picado fino"
+      },
+      {
+        "id": "chicken_broth",
+        "qty": 1.5
+      },
+      {
+        "id": "smoked_paprika",
+        "qty": 1
+      },
+      {
+        "id": "thyme",
+        "qty": 1
+      },
+      {
+        "id": "cayenne",
+        "qty": 0.25
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      }
     ],
     "name_es": "Frijoles rojos con arroz y salchicha ahumada",
     "description_es": "Frijoles rojos cremosos cocidos con salchicha ahumada, cebolla, pimiento y apio, servidos sobre arroz blanco.",
@@ -1020,18 +1980,25 @@
       "Mientras se cocinan los frijoles, pon el arroz en una olla mediana con el doble de su volumen de agua, lleva a hervor a fuego alto, luego tapa y cocina a fuego bajo 15 minutos hasta que el agua se absorba.",
       "Separa el arroz con un tenedor y sirve los frijoles encima."
     ],
-    "equipment": ["stovetop"],
+    "equipment": [
+      "stovetop"
+    ],
     "active_minutes": 15,
     "tip": "Even better the next day. Keeps 4 days in the fridge or 3 months in the freezer; thin with a little water when reheating.",
     "tip_es": "Queda todavía mejor al día siguiente. Dura 4 días en el refrigerador o 3 meses en el congelador; agrega un poco de agua al recalentar.",
     "photo_url": "https://images.unsplash.com/photo-1686699782036-e101b4f5a02e",
-    "photo_credit": { "name": "Ronald Vargas", "url": "https://unsplash.com/photos/a-bowl-of-food-on-a-wooden-table-4NxCbpyh8AY" }
+    "photo_credit": {
+      "name": "Ronald Vargas",
+      "url": "https://unsplash.com/photos/a-bowl-of-food-on-a-wooden-table-4NxCbpyh8AY"
+    }
   },
   {
     "slug": "cheesy-chicken-broccoli-penne-bake",
     "name": "Cheesy Chicken and Broccoli Penne Bake",
     "meal_type": "dinner",
-    "diet_tags": ["high_protein"],
+    "diet_tags": [
+      "high_protein"
+    ],
     "servings": 4,
     "prep_minutes": 45,
     "batch_friendly": true,
@@ -1046,17 +2013,56 @@
       "Top with the remaining cheddar and the breadcrumbs (move everything to a baking dish first if your skillet is not oven-safe) and bake 15 minutes until golden and bubbling at the edges."
     ],
     "ingredients": [
-      { "id": "chicken_breast", "qty": 1, "note": "1-inch dice", "note_es": "en cubos de 2,5 cm" },
-      { "id": "pasta_penne", "qty": 8 },
-      { "id": "broccoli_frozen", "qty": 3 },
-      { "id": "milk", "qty": 2 },
-      { "id": "butter", "qty": 2 },
-      { "id": "flour", "qty": 0.125, "note": "2 tablespoons", "note_es": "2 cucharadas" },
-      { "id": "cheddar", "qty": 1.5 },
-      { "id": "garlic", "qty": 2, "note": "minced", "note_es": "picado fino" },
-      { "id": "breadcrumbs", "qty": 0.5 },
-      { "id": "salt", "qty": 1 },
-      { "id": "black_pepper", "qty": 0.5 }
+      {
+        "id": "chicken_breast",
+        "qty": 1,
+        "note": "1-inch dice",
+        "note_es": "en cubos de 2,5 cm"
+      },
+      {
+        "id": "pasta_penne",
+        "qty": 8
+      },
+      {
+        "id": "broccoli_frozen",
+        "qty": 3
+      },
+      {
+        "id": "milk",
+        "qty": 2
+      },
+      {
+        "id": "butter",
+        "qty": 2
+      },
+      {
+        "id": "flour",
+        "qty": 0.125,
+        "note": "2 tablespoons",
+        "note_es": "2 cucharadas"
+      },
+      {
+        "id": "cheddar",
+        "qty": 1.5
+      },
+      {
+        "id": "garlic",
+        "qty": 2,
+        "note": "minced",
+        "note_es": "picado fino"
+      },
+      {
+        "id": "breadcrumbs",
+        "qty": 0.5
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.5
+      }
     ],
     "name_es": "Penne gratinado con pollo, brócoli y queso",
     "description_es": "Penne, pollo y brócoli horneados en una salsa casera de queso cheddar bajo una capa crujiente de pan rallado.",
@@ -1069,18 +2075,27 @@
       "Retira la sartén del fuego y agrega casi todo el queso cheddar, la pimienta y el resto de la sal, revolviendo hasta que se derrita; luego incorpora la pasta, el brócoli y el pollo.",
       "Cubre con el resto del queso cheddar y el pan rallado (si tu sartén no es apta para horno, pasa todo antes a una fuente) y hornea 15 minutos hasta que esté dorado y burbujee en los bordes."
     ],
-    "equipment": ["stovetop", "oven"],
+    "equipment": [
+      "stovetop",
+      "oven"
+    ],
     "active_minutes": 20,
     "tip": "Assemble ahead and refrigerate up to a day; add 10 minutes in the oven. Reheat leftovers covered with foil so they stay creamy.",
     "tip_es": "Puedes armarlo antes y refrigerarlo hasta un día; suma 10 minutos de horno. Recalienta lo que sobre tapado con papel aluminio para que siga cremoso.",
     "photo_url": "https://images.unsplash.com/photo-1584359246645-de78f6f10850",
-    "photo_credit": { "name": "Louis Hansel", "url": "https://unsplash.com/photos/person-in-white-and-red-plaid-shirt-standing-beside-stainless-steel-tray-DSld8czZ0Ns" }
+    "photo_credit": {
+      "name": "Louis Hansel",
+      "url": "https://unsplash.com/photos/person-in-white-and-red-plaid-shirt-standing-beside-stainless-steel-tray-DSld8czZ0Ns"
+    }
   },
   {
     "slug": "tuna-noodle-casserole-with-peas",
     "name": "Tuna Noodle Casserole with Peas",
     "meal_type": "dinner",
-    "diet_tags": ["high_protein"],
+    "diet_tags": [
+      "high_protein",
+      "pescatarian"
+    ],
     "servings": 4,
     "prep_minutes": 40,
     "batch_friendly": true,
@@ -1095,17 +2110,54 @@
       "Bake 18 minutes until bubbling at the edges and golden on top."
     ],
     "ingredients": [
-      { "id": "egg_noodles", "qty": 8 },
-      { "id": "tuna_canned", "qty": 3, "note": "drained", "note_es": "escurrido" },
-      { "id": "peas_frozen", "qty": 1.5 },
-      { "id": "milk", "qty": 2.5 },
-      { "id": "butter", "qty": 4 },
-      { "id": "flour", "qty": 0.25 },
-      { "id": "cheddar", "qty": 1 },
-      { "id": "onion_yellow", "qty": 0.5, "note": "diced", "note_es": "en cubitos" },
-      { "id": "breadcrumbs", "qty": 0.5 },
-      { "id": "salt", "qty": 1 },
-      { "id": "black_pepper", "qty": 0.5 }
+      {
+        "id": "egg_noodles",
+        "qty": 8
+      },
+      {
+        "id": "tuna_canned",
+        "qty": 3,
+        "note": "drained",
+        "note_es": "escurrido"
+      },
+      {
+        "id": "peas_frozen",
+        "qty": 1.5
+      },
+      {
+        "id": "milk",
+        "qty": 2.5
+      },
+      {
+        "id": "butter",
+        "qty": 4
+      },
+      {
+        "id": "flour",
+        "qty": 0.25
+      },
+      {
+        "id": "cheddar",
+        "qty": 1
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 0.5,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "breadcrumbs",
+        "qty": 0.5
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.5
+      }
     ],
     "name_es": "Cazuela de fideos con atún y arvejas",
     "description_es": "Fideos de huevo, atún en lata y arvejas en una salsa cremosa de queso cheddar, horneados con pan rallado crujiente.",
@@ -1118,18 +2170,26 @@
       "Pasa la mezcla a una fuente mediana para horno y reparte el pan rallado por encima.",
       "Hornea 18 minutos hasta que burbujee en los bordes y esté dorado por arriba."
     ],
-    "equipment": ["stovetop", "oven"],
+    "equipment": [
+      "stovetop",
+      "oven"
+    ],
     "active_minutes": 20,
     "tip": "Leftover shredded chicken can replace the tuna. Keeps 3 days in the fridge; reheat covered so it stays creamy.",
     "tip_es": "Puedes cambiar el atún por pollo desmenuzado que te haya sobrado. Dura 3 días en el refrigerador; recalienta tapado para que siga cremoso.",
     "photo_url": "https://images.unsplash.com/photo-1611098876665-5384d4e39a1e",
-    "photo_credit": { "name": "Brigitta Baranyi", "url": "https://unsplash.com/photos/rice-with-sliced-tomato-and-green-vegetable-in-clear-plastic-container-bCO7CphRIpM" }
+    "photo_credit": {
+      "name": "Brigitta Baranyi",
+      "url": "https://unsplash.com/photos/rice-with-sliced-tomato-and-green-vegetable-in-clear-plastic-container-bCO7CphRIpM"
+    }
   },
   {
     "slug": "classic-beef-and-bean-chili",
     "name": "Classic Beef and Bean Chili",
     "meal_type": "dinner",
-    "diet_tags": ["high_protein"],
+    "diet_tags": [
+      "high_protein"
+    ],
     "servings": 4,
     "prep_minutes": 60,
     "batch_friendly": true,
@@ -1143,20 +2203,76 @@
       "Ladle into bowls and serve topped with the cheddar."
     ],
     "ingredients": [
-      { "id": "ground_beef", "qty": 1 },
-      { "id": "kidney_beans", "qty": 1, "note": "drained and rinsed", "note_es": "escurridos y enjuagados" },
-      { "id": "pinto_beans", "qty": 1, "note": "drained and rinsed", "note_es": "escurridos y enjuagados" },
-      { "id": "diced_tomatoes", "qty": 1 },
-      { "id": "tomato_sauce", "qty": 1 },
-      { "id": "onion_yellow", "qty": 1, "note": "diced", "note_es": "en cubitos" },
-      { "id": "bell_pepper", "qty": 1, "note": "diced", "note_es": "en cubitos" },
-      { "id": "garlic", "qty": 3, "note": "minced", "note_es": "picado fino" },
-      { "id": "chili_powder", "qty": 6, "note": "2 tablespoons", "note_es": "2 cucharadas" },
-      { "id": "cumin", "qty": 2 },
-      { "id": "oregano", "qty": 1 },
-      { "id": "beef_broth", "qty": 1 },
-      { "id": "salt", "qty": 1 },
-      { "id": "cheddar", "qty": 0.5, "note": "to serve", "note_es": "para servir" }
+      {
+        "id": "ground_beef",
+        "qty": 1
+      },
+      {
+        "id": "kidney_beans",
+        "qty": 1,
+        "note": "drained and rinsed",
+        "note_es": "escurridos y enjuagados"
+      },
+      {
+        "id": "pinto_beans",
+        "qty": 1,
+        "note": "drained and rinsed",
+        "note_es": "escurridos y enjuagados"
+      },
+      {
+        "id": "diced_tomatoes",
+        "qty": 1
+      },
+      {
+        "id": "tomato_sauce",
+        "qty": 1
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced",
+        "note_es": "picado fino"
+      },
+      {
+        "id": "chili_powder",
+        "qty": 6,
+        "note": "2 tablespoons",
+        "note_es": "2 cucharadas"
+      },
+      {
+        "id": "cumin",
+        "qty": 2
+      },
+      {
+        "id": "oregano",
+        "qty": 1
+      },
+      {
+        "id": "beef_broth",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      },
+      {
+        "id": "cheddar",
+        "qty": 0.5,
+        "note": "to serve",
+        "note_es": "para servir"
+      }
     ],
     "name_es": "Chili clásico de carne y frijoles",
     "description_es": "Chili espeso de carne molida con frijoles rojos y pintos, tomate y especias, servido con queso cheddar.",
@@ -1168,18 +2284,25 @@
       "Baja a fuego bajo, tapa dejando la tapa apenas abierta y cocina 40 minutos, revolviendo de vez en cuando, hasta que espese.",
       "Sirve en tazones con el queso cheddar por encima."
     ],
-    "equipment": ["stovetop"],
+    "equipment": [
+      "stovetop"
+    ],
     "active_minutes": 15,
     "tip": "Tastes better the next day. Keeps 4 days in the fridge or 3 months in the freezer; serve leftovers over rice or baked potatoes.",
     "tip_es": "Sabe mejor al día siguiente. Dura 4 días en el refrigerador o 3 meses en el congelador; sirve lo que sobre con arroz o papas al horno.",
     "photo_url": "https://images.unsplash.com/photo-1729450412050-6c00ec592e34",
-    "photo_credit": { "name": "Maria Klichik", "url": "https://unsplash.com/photos/a-bowl-of-chili-next-to-other-bowls-of-food-72oTVZs_730" }
+    "photo_credit": {
+      "name": "Maria Klichik",
+      "url": "https://unsplash.com/photos/a-bowl-of-chili-next-to-other-bowls-of-food-72oTVZs_730"
+    }
   },
   {
     "slug": "slow-cooker-pulled-pork-sandwiches",
     "name": "Slow Cooker Pulled Pork Sandwiches",
     "meal_type": "dinner",
-    "diet_tags": ["high_protein"],
+    "diet_tags": [
+      "high_protein"
+    ],
     "servings": 4,
     "prep_minutes": 450,
     "batch_friendly": true,
@@ -1194,17 +2317,54 @@
       "Pile the pork and coleslaw onto the buns and serve."
     ],
     "ingredients": [
-      { "id": "pork_shoulder", "qty": 2 },
-      { "id": "bbq_sauce", "qty": 1 },
-      { "id": "onion_yellow", "qty": 1, "note": "sliced", "note_es": "en tiras finas" },
-      { "id": "brown_sugar", "qty": 0.125, "note": "2 tablespoons", "note_es": "2 cucharadas" },
-      { "id": "smoked_paprika", "qty": 2 },
-      { "id": "garlic_powder", "qty": 1 },
-      { "id": "vinegar_cider", "qty": 2 },
-      { "id": "buns", "qty": 4 },
-      { "id": "coleslaw_mix", "qty": 0.5 },
-      { "id": "mayo", "qty": 2 },
-      { "id": "salt", "qty": 1.5 }
+      {
+        "id": "pork_shoulder",
+        "qty": 2
+      },
+      {
+        "id": "bbq_sauce",
+        "qty": 1
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "sliced",
+        "note_es": "en tiras finas"
+      },
+      {
+        "id": "brown_sugar",
+        "qty": 0.125,
+        "note": "2 tablespoons",
+        "note_es": "2 cucharadas"
+      },
+      {
+        "id": "smoked_paprika",
+        "qty": 2
+      },
+      {
+        "id": "garlic_powder",
+        "qty": 1
+      },
+      {
+        "id": "vinegar_cider",
+        "qty": 2
+      },
+      {
+        "id": "buns",
+        "qty": 4
+      },
+      {
+        "id": "coleslaw_mix",
+        "qty": 0.5
+      },
+      {
+        "id": "mayo",
+        "qty": 2
+      },
+      {
+        "id": "salt",
+        "qty": 1.5
+      }
     ],
     "name_es": "Sándwiches de cerdo desmenuzado en olla lenta",
     "description_es": "Paleta de cerdo cocida lentamente hasta desmenuzarse, mezclada con salsa barbacoa y servida en panes con ensalada cremosa de repollo.",
@@ -1217,18 +2377,25 @@
       "Mezcla el repollo para ensalada con la mayonesa, el resto del vinagre y el resto de la sal.",
       "Reparte el cerdo y la ensalada de repollo sobre los panes y sirve."
     ],
-    "equipment": ["slow_cooker"],
+    "equipment": [
+      "slow_cooker"
+    ],
     "active_minutes": 20,
     "tip": "This makes more pork than four buns need; freeze the rest in its sauce up to 3 months and use it in tacos or over rice.",
     "tip_es": "Rinde más cerdo del que entra en cuatro panes; congela el resto con su salsa hasta 3 meses y úsalo en tacos o sobre arroz.",
     "photo_url": "https://images.unsplash.com/photo-1680404971036-33eaa1d2d840",
-    "photo_credit": { "name": "Thomas Wavid Johns", "url": "https://unsplash.com/photos/a-pulled-pork-sandwich-with-a-side-of-tater-tots-L-2p59uIP1E" }
+    "photo_credit": {
+      "name": "Thomas Wavid Johns",
+      "url": "https://unsplash.com/photos/a-pulled-pork-sandwich-with-a-side-of-tater-tots-L-2p59uIP1E"
+    }
   },
   {
     "slug": "roast-chicken-with-potatoes-and-carrots",
     "name": "Roast Chicken with Potatoes and Carrots",
     "meal_type": "dinner",
-    "diet_tags": ["high_protein"],
+    "diet_tags": [
+      "high_protein"
+    ],
     "servings": 4,
     "prep_minutes": 100,
     "batch_friendly": true,
@@ -1243,17 +2410,62 @@
       "Rest the chicken 10 minutes on a board so the juices settle, then carve and serve with the vegetables and pan juices."
     ],
     "ingredients": [
-      { "id": "whole_chicken", "qty": 1 },
-      { "id": "potato_russet", "qty": 2, "note": "1-inch chunks", "note_es": "en trozos de 2,5 cm" },
-      { "id": "carrot", "qty": 1, "note": "cut into chunks", "note_es": "en trozos" },
-      { "id": "onion_yellow", "qty": 1, "note": "cut into wedges", "note_es": "en gajos" },
-      { "id": "butter", "qty": 2, "note": "softened", "note_es": "blanda" },
-      { "id": "lemon", "qty": 1, "note": "halved", "note_es": "cortado a la mitad" },
-      { "id": "garlic", "qty": 4, "note": "minced", "note_es": "picado fino" },
-      { "id": "thyme", "qty": 2 },
-      { "id": "olive_oil", "qty": 1 },
-      { "id": "salt", "qty": 2 },
-      { "id": "black_pepper", "qty": 1 }
+      {
+        "id": "whole_chicken",
+        "qty": 1
+      },
+      {
+        "id": "potato_russet",
+        "qty": 2,
+        "note": "1-inch chunks",
+        "note_es": "en trozos de 2,5 cm"
+      },
+      {
+        "id": "carrot",
+        "qty": 1,
+        "note": "cut into chunks",
+        "note_es": "en trozos"
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "cut into wedges",
+        "note_es": "en gajos"
+      },
+      {
+        "id": "butter",
+        "qty": 2,
+        "note": "softened",
+        "note_es": "blanda"
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "note": "halved",
+        "note_es": "cortado a la mitad"
+      },
+      {
+        "id": "garlic",
+        "qty": 4,
+        "note": "minced",
+        "note_es": "picado fino"
+      },
+      {
+        "id": "thyme",
+        "qty": 2
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 2
+      },
+      {
+        "id": "black_pepper",
+        "qty": 1
+      }
     ],
     "name_es": "Pollo asado con papas y zanahorias",
     "description_es": "Pollo entero untado con mantequilla de ajo y tomillo, asado sobre papas, zanahorias y cebolla.",
@@ -1266,12 +2478,17 @@
       "Hornea de 70 a 75 minutos, revolviendo las verduras una vez a la mitad, hasta que la piel esté bien dorada, los jugos salgan claros y la parte más gruesa del muslo llegue a {165F}.",
       "Deja reposar el pollo 10 minutos sobre una tabla para que los jugos se asienten; luego córtalo y sirve con las verduras y los jugos de la fuente."
     ],
-    "equipment": ["oven"],
+    "equipment": [
+      "oven"
+    ],
     "active_minutes": 20,
     "tip": "Save the bones: simmer them 1 hour covered with water for a free pot of broth. Leftover meat keeps 4 days in the fridge.",
     "tip_es": "Guarda los huesos: hiérvelos 1 hora cubiertos de agua y tendrás caldo gratis. La carne que sobre dura 4 días en el refrigerador.",
     "photo_url": "https://images.unsplash.com/photo-1600575615458-5129e7cb960b",
-    "photo_credit": { "name": "QUENTIN Mahe", "url": "https://unsplash.com/photos/roasted-chicken-on-white-ceramic-plate-exjZl4aydUc" }
+    "photo_credit": {
+      "name": "QUENTIN Mahe",
+      "url": "https://unsplash.com/photos/roasted-chicken-on-white-ceramic-plate-exjZl4aydUc"
+    }
   },
   {
     "slug": "beef-stew-with-potatoes-and-carrots",
@@ -1293,21 +2510,78 @@
       "Stir in the peas, cook 3 minutes until hot and serve."
     ],
     "ingredients": [
-      { "id": "beef_stew", "qty": 1 },
-      { "id": "potato_russet", "qty": 1.5, "note": "1-inch chunks", "note_es": "en trozos de 2,5 cm" },
-      { "id": "carrot", "qty": 1, "note": "cut into chunks", "note_es": "en trozos" },
-      { "id": "onion_yellow", "qty": 1, "note": "diced", "note_es": "en cubitos" },
-      { "id": "celery", "qty": 2, "note": "sliced", "note_es": "en rodajas" },
-      { "id": "garlic", "qty": 3, "note": "minced", "note_es": "picado fino" },
-      { "id": "beef_broth", "qty": 4 },
-      { "id": "tomato_paste", "qty": 2 },
-      { "id": "flour", "qty": 0.125, "note": "2 tablespoons", "note_es": "2 cucharadas" },
-      { "id": "worcestershire", "qty": 1 },
-      { "id": "thyme", "qty": 1 },
-      { "id": "peas_frozen", "qty": 1 },
-      { "id": "vegetable_oil", "qty": 2 },
-      { "id": "salt", "qty": 1.5 },
-      { "id": "black_pepper", "qty": 0.5 }
+      {
+        "id": "beef_stew",
+        "qty": 1
+      },
+      {
+        "id": "potato_russet",
+        "qty": 1.5,
+        "note": "1-inch chunks",
+        "note_es": "en trozos de 2,5 cm"
+      },
+      {
+        "id": "carrot",
+        "qty": 1,
+        "note": "cut into chunks",
+        "note_es": "en trozos"
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "celery",
+        "qty": 2,
+        "note": "sliced",
+        "note_es": "en rodajas"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced",
+        "note_es": "picado fino"
+      },
+      {
+        "id": "beef_broth",
+        "qty": 4
+      },
+      {
+        "id": "tomato_paste",
+        "qty": 2
+      },
+      {
+        "id": "flour",
+        "qty": 0.125,
+        "note": "2 tablespoons",
+        "note_es": "2 cucharadas"
+      },
+      {
+        "id": "worcestershire",
+        "qty": 1
+      },
+      {
+        "id": "thyme",
+        "qty": 1
+      },
+      {
+        "id": "peas_frozen",
+        "qty": 1
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 2
+      },
+      {
+        "id": "salt",
+        "qty": 1.5
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.5
+      }
     ],
     "name_es": "Guiso de res con papas y zanahorias",
     "description_es": "Carne de res cocida a fuego lento con papas, zanahorias, apio y arvejas en una salsa espesa de tomillo y tomate.",
@@ -1321,18 +2595,25 @@
       "Agrega las papas y las zanahorias, tapa y cocina de 35 a 40 minutos más, hasta que la carne y las verduras estén tan tiernas que se corten con una cuchara.",
       "Agrega las arvejas, cocina 3 minutos hasta que estén calientes y sirve."
     ],
-    "equipment": ["stovetop"],
+    "equipment": [
+      "stovetop"
+    ],
     "active_minutes": 25,
     "tip": "Keeps 4 days in the fridge and thickens as it sits; thin it with a splash of broth or water when reheating.",
     "tip_es": "Dura 4 días en el refrigerador y espesa con el reposo; agrégale un chorrito de caldo o agua al recalentar.",
     "photo_url": "https://images.unsplash.com/photo-1664741662725-bd131742b7b7",
-    "photo_credit": { "name": "Laura Ohlman", "url": "https://unsplash.com/photos/a-bowl-of-food-y_7KLDoPlAc" }
+    "photo_credit": {
+      "name": "Laura Ohlman",
+      "url": "https://unsplash.com/photos/a-bowl-of-food-y_7KLDoPlAc"
+    }
   },
   {
     "slug": "classic-meatloaf-with-mashed-potatoes",
     "name": "Classic Meatloaf with Mashed Potatoes",
     "meal_type": "dinner",
-    "diet_tags": ["high_protein"],
+    "diet_tags": [
+      "high_protein"
+    ],
     "servings": 4,
     "prep_minutes": 70,
     "batch_friendly": true,
@@ -1348,20 +2629,70 @@
       "Simmer the peas in a small pot with a splash of water over medium heat 3 minutes until hot, drain, and serve with the sliced meatloaf and mashed potatoes."
     ],
     "ingredients": [
-      { "id": "ground_beef", "qty": 1.25 },
-      { "id": "breadcrumbs", "qty": 0.5 },
-      { "id": "eggs", "qty": 1 },
-      { "id": "milk", "qty": 0.75 },
-      { "id": "onion_yellow", "qty": 0.5, "note": "finely diced", "note_es": "picada fina" },
-      { "id": "garlic", "qty": 2, "note": "minced", "note_es": "picado fino" },
-      { "id": "ketchup", "qty": 6 },
-      { "id": "brown_sugar", "qty": 0.0625, "note": "1 tablespoon", "note_es": "1 cucharada" },
-      { "id": "worcestershire", "qty": 1 },
-      { "id": "potato_russet", "qty": 2, "note": "peeled and cubed", "note_es": "peladas y en cubos" },
-      { "id": "butter", "qty": 3 },
-      { "id": "peas_frozen", "qty": 2 },
-      { "id": "salt", "qty": 1.5 },
-      { "id": "black_pepper", "qty": 0.5 }
+      {
+        "id": "ground_beef",
+        "qty": 1.25
+      },
+      {
+        "id": "breadcrumbs",
+        "qty": 0.5
+      },
+      {
+        "id": "eggs",
+        "qty": 1
+      },
+      {
+        "id": "milk",
+        "qty": 0.75
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 0.5,
+        "note": "finely diced",
+        "note_es": "picada fina"
+      },
+      {
+        "id": "garlic",
+        "qty": 2,
+        "note": "minced",
+        "note_es": "picado fino"
+      },
+      {
+        "id": "ketchup",
+        "qty": 6
+      },
+      {
+        "id": "brown_sugar",
+        "qty": 0.0625,
+        "note": "1 tablespoon",
+        "note_es": "1 cucharada"
+      },
+      {
+        "id": "worcestershire",
+        "qty": 1
+      },
+      {
+        "id": "potato_russet",
+        "qty": 2,
+        "note": "peeled and cubed",
+        "note_es": "peladas y en cubos"
+      },
+      {
+        "id": "butter",
+        "qty": 3
+      },
+      {
+        "id": "peas_frozen",
+        "qty": 2
+      },
+      {
+        "id": "salt",
+        "qty": 1.5
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.5
+      }
     ],
     "name_es": "Pastel de carne clásico con puré de papas",
     "description_es": "Pastel de carne de res glaseado con kétchup, con puré de papas con mantequilla y arvejas.",
@@ -1375,18 +2706,26 @@
       "Aplasta las papas con la mantequilla, el resto de la leche, la pimienta y el resto de la sal hasta obtener un puré suave.",
       "Cocina las arvejas en una olla pequeña con un chorrito de agua a fuego medio 3 minutos hasta que estén calientes, escúrrelas y sirve con el pastel de carne en rebanadas y el puré."
     ],
-    "equipment": ["oven", "stovetop"],
+    "equipment": [
+      "oven",
+      "stovetop"
+    ],
     "active_minutes": 25,
     "tip": "Cold meatloaf slices make excellent sandwiches. Wrapped well, it keeps 4 days in the fridge or 3 months in the freezer.",
     "tip_es": "Las rebanadas frías quedan excelentes en sándwiches. Bien envuelto, dura 4 días en el refrigerador o 3 meses en el congelador.",
     "photo_url": "https://images.unsplash.com/photo-1705945021699-7374c3fd34cb",
-    "photo_credit": { "name": "Martinet Sinan", "url": "https://unsplash.com/photos/a-loaf-of-meatloaf-on-a-cutting-board-with-a-sprig-of-u0gs_AzC9CQ" }
+    "photo_credit": {
+      "name": "Martinet Sinan",
+      "url": "https://unsplash.com/photos/a-loaf-of-meatloaf-on-a-cutting-board-with-a-sprig-of-u0gs_AzC9CQ"
+    }
   },
   {
     "slug": "turkey-and-spinach-lasagna",
     "name": "Turkey and Spinach Lasagna",
     "meal_type": "dinner",
-    "diet_tags": ["high_protein"],
+    "diet_tags": [
+      "high_protein"
+    ],
     "servings": 4,
     "prep_minutes": 80,
     "batch_friendly": true,
@@ -1401,17 +2740,56 @@
       "Rest 10 minutes so the layers set before slicing."
     ],
     "ingredients": [
-      { "id": "ground_turkey", "qty": 1 },
-      { "id": "lasagna_noodles", "qty": 8, "note": "about 9 noodles", "note_es": "unas 9 láminas" },
-      { "id": "marinara", "qty": 3 },
-      { "id": "cottage_cheese", "qty": 1.5 },
-      { "id": "mozzarella", "qty": 2 },
-      { "id": "parmesan", "qty": 0.25 },
-      { "id": "spinach_frozen", "qty": 1, "note": "thawed and squeezed dry", "note_es": "descongelada y bien escurrida" },
-      { "id": "eggs", "qty": 1 },
-      { "id": "garlic", "qty": 2, "note": "minced", "note_es": "picado fino" },
-      { "id": "italian_seasoning", "qty": 1 },
-      { "id": "salt", "qty": 0.5 }
+      {
+        "id": "ground_turkey",
+        "qty": 1
+      },
+      {
+        "id": "lasagna_noodles",
+        "qty": 8,
+        "note": "about 9 noodles",
+        "note_es": "unas 9 láminas"
+      },
+      {
+        "id": "marinara",
+        "qty": 3
+      },
+      {
+        "id": "cottage_cheese",
+        "qty": 1.5
+      },
+      {
+        "id": "mozzarella",
+        "qty": 2
+      },
+      {
+        "id": "parmesan",
+        "qty": 0.25
+      },
+      {
+        "id": "spinach_frozen",
+        "qty": 1,
+        "note": "thawed and squeezed dry",
+        "note_es": "descongelada y bien escurrida"
+      },
+      {
+        "id": "eggs",
+        "qty": 1
+      },
+      {
+        "id": "garlic",
+        "qty": 2,
+        "note": "minced",
+        "note_es": "picado fino"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      }
     ],
     "name_es": "Lasaña de pavo y espinaca",
     "description_es": "Capas de pasta, pavo molido en marinara, espinaca, queso cottage y mozzarella derretida.",
@@ -1424,11 +2802,17 @@
       "Cubre con papel aluminio y hornea 30 minutos; luego destapa y hornea 15 minutos más hasta que burbujee en los bordes y esté dorada por arriba.",
       "Deja reposar 10 minutos para que las capas se asienten antes de cortar."
     ],
-    "equipment": ["stovetop", "oven"],
+    "equipment": [
+      "stovetop",
+      "oven"
+    ],
     "active_minutes": 25,
     "tip": "Baked portions freeze well up to 3 months. Ricotta can replace the cottage cheese if that is what you have.",
     "tip_es": "Las porciones ya horneadas se congelan bien hasta 3 meses. Puedes cambiar el queso cottage por ricota si es lo que tienes.",
     "photo_url": "https://images.unsplash.com/photo-1625555897305-136548cc968c",
-    "photo_credit": { "name": "Stefen Tan", "url": "https://unsplash.com/photos/brown-bread-on-white-ceramic-plate-8-r-1CZUcbA" }
+    "photo_credit": {
+      "name": "Stefen Tan",
+      "url": "https://unsplash.com/photos/brown-bread-on-white-ceramic-plate-8-r-1CZUcbA"
+    }
   }
 ]
