@@ -123,8 +123,24 @@ end $$;
 
 alter table public.plan_items replica identity full;
 
+-- Policy expressions run as the caller, so they cannot see plan_shares (no
+-- policies on it). A definer function both reads it and applies the expiry
+-- rule, so realtime ticks reach link holders only while access is live.
+create function public.plan_item_share_visible(pid uuid) returns boolean
+language sql stable security definer set search_path = '' as $$
+  select exists (
+    select 1 from public.plan_shares s
+    where s.plan_id = pid and public.share_accessible(s.plan_id)
+  );
+$$;
+
+-- The caller role needs EXECUTE on functions inside policy expressions; both
+-- helpers return only booleans.
+grant execute on function public.plan_item_share_visible(uuid) to anon, authenticated;
+-- The existing "read items of a viewable plan" policy calls can_view_plan, so
+-- anon selects on plan_items need EXECUTE on it too (it returns false for anon).
+grant execute on function public.can_view_plan(uuid) to anon;
+
 create policy "shared plans' items are readable through a link"
   on public.plan_items for select to anon, authenticated
-  using (exists (
-    select 1 from public.plan_shares s where s.plan_id = plan_items.plan_id
-  ));
+  using (public.plan_item_share_visible(plan_id));
