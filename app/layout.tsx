@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Fraunces, Instrument_Sans } from "next/font/google";
 import { Analytics } from "@/components/analytics";
 import { ServiceWorker } from "@/components/service-worker";
+import { WholeResponses } from "@/components/whole-responses";
 import { siteUrl } from "@/lib/env";
 import "./globals.css";
 
@@ -57,6 +58,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         >
           Skip to content
         </a>
+        <WholeResponses />
         {children}
         <Analytics />
         <ServiceWorker />
