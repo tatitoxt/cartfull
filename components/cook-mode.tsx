@@ -11,6 +11,7 @@ export function CookMode({ title, ingredients, steps }: { title: string; ingredi
   // index 0 = ingredients, 1..steps.length = steps, steps.length+1 = done
   const [index, setIndex] = useState(0);
   const wakeLock = useRef<{ release: () => Promise<void> } | null>(null);
+  const dialogRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (!open) return;
@@ -29,6 +30,7 @@ export function CookMode({ title, ingredients, steps }: { title: string; ingredi
     acquire();
     document.addEventListener("visibilitychange", onVisible);
     document.body.style.overflow = "hidden";
+    dialogRef.current?.querySelector<HTMLElement>("button:not([disabled])")?.focus();
     return () => {
       released = true;
       document.removeEventListener("visibilitychange", onVisible);
@@ -63,8 +65,35 @@ export function CookMode({ title, ingredients, steps }: { title: string; ingredi
       </button>
     );
 
+  const trapFocus = (event: React.KeyboardEvent) => {
+    if (event.key !== "Tab" || !dialogRef.current) return;
+    const els = dialogRef.current.querySelectorAll<HTMLElement>("button:not([disabled])");
+    if (!els.length) return;
+    const first = els[0];
+    const lastEl = els[els.length - 1];
+    const active = document.activeElement;
+    if (!dialogRef.current.contains(active)) {
+      first.focus();
+      event.preventDefault();
+    } else if (event.shiftKey && active === first) {
+      lastEl.focus();
+      event.preventDefault();
+    } else if (!event.shiftKey && active === lastEl) {
+      first.focus();
+      event.preventDefault();
+    }
+  };
+
   return (
-    <div className="fixed inset-0 z-50 flex flex-col bg-bg p-5 sm:p-8" role="dialog" aria-modal="true" aria-label={title} data-testid="cook-mode-screen">
+    <div
+      ref={dialogRef}
+      onKeyDown={trapFocus}
+      className="fixed inset-0 z-[60] flex flex-col bg-bg p-5 sm:p-8"
+      role="dialog"
+      aria-modal="true"
+      aria-label={title}
+      data-testid="cook-mode-screen"
+    >
       <div className="flex items-start justify-between gap-4">
         <h1 className="text-lg font-semibold text-fg-soft">{title}</h1>
         <button type="button" className="btn btn-quiet shrink-0 px-4 py-2" onClick={() => { setOpen(false); setIndex(0); }}>
@@ -85,7 +114,7 @@ export function CookMode({ title, ingredients, steps }: { title: string; ingredi
         <button
           type="button"
           className="btn btn-primary flex-[2] py-4 text-lg"
-          onClick={() => (index === last ? setOpen(false) : setIndex((i) => i + 1))}
+          onClick={() => (index === last ? (setOpen(false), setIndex(0)) : setIndex((i) => i + 1))}
           data-testid="cook-next"
         >
           {index === last ? m.cookMode.close : index === total ? m.cookMode.finish : m.cookMode.next}
