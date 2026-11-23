@@ -64,6 +64,7 @@ export function RecipeFeedback({ slug, initialFavorite, initialRating }: {
     const delta = event.key === "ArrowRight" ? 1 : -1;
     const next = Math.min(5, Math.max(1, (rating ?? (delta > 0 ? 0 : 6)) + delta));
     rate(next);
+    event.currentTarget.querySelector<HTMLElement>(`[data-testid="rate-${next}"]`)?.focus();
   };
 
   return (
@@ -92,7 +93,6 @@ export function RecipeFeedback({ slug, initialFavorite, initialRating }: {
             aria-checked={rating === value}
             aria-label={fill(m.recipe.stars, { count: value })}
             tabIndex={rating === value || (rating === null && value === 1) ? 0 : -1}
-            disabled={pending}
             onClick={() => rate(value === rating ? null : value)}
             data-testid={`rate-${value}`}
             className={`grid size-11 place-items-center text-2xl transition-colors ${rating !== null && value <= rating ? "text-spend" : "text-fg-faint"}`}
