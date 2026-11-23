@@ -4,10 +4,9 @@
     "name": "Cottage Cheese Baked Penne",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian",
       "high_protein",
       "pescatarian",
-      "vegan"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 50,
@@ -103,22 +102,22 @@
     "name": "Tofu Scramble Black Bean Burritos",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian",
       "high_protein",
       "pescatarian",
-      "vegan"
+      "vegan",
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 25,
     "batch_friendly": false,
-    "description": "Spiced scrambled tofu, black beans, peppers and cheddar rolled into warm flour tortillas.",
+    "description": "Spiced scrambled tofu, black beans, peppers rolled into warm flour tortillas.",
     "steps": [
       "Drain the tofu, press it between paper towels to dry it, and crumble it with your hands into pieces the size of scrambled egg.",
       "Heat the oil in a large skillet over medium-high heat and cook the onion and bell pepper for 4 minutes, stirring, until softened.",
       "Add the tofu, cumin, chili powder, turmeric and salt and cook 6 minutes, stirring now and then, until the tofu looks dry and lightly browned.",
       "Stir in the drained beans and cook 2 minutes, until hot all the way through.",
       "Warm the tortillas one at a time in a dry skillet over medium heat, about 20 seconds per side, until soft and flexible.",
-      "Spoon the scramble down the center of each tortilla, top with cheddar and salsa, fold in the sides and roll up tightly."
+      "Spoon the scramble down the center of each tortilla, top with salsa, fold in the sides and roll up tightly."
     ],
     "ingredients": [
       {
@@ -136,10 +135,6 @@
       {
         "id": "tortilla_flour",
         "qty": 8
-      },
-      {
-        "id": "cheddar",
-        "qty": 1
       },
       {
         "id": "salsa",
@@ -179,14 +174,14 @@
       }
     ],
     "name_es": "Burritos de tofu revuelto y frijoles negros",
-    "description_es": "Tofu revuelto con especias, frijoles negros, pimiento y cheddar envueltos en tortillas de harina tibias.",
+    "description_es": "Tofu revuelto con especias, frijoles negros, pimiento envueltos en tortillas de harina tibias.",
     "steps_es": [
       "Escurre el tofu, sécalo apretándolo entre toallas de papel y desmenúzalo con las manos en trozos del tamaño de huevo revuelto.",
       "Calienta el aceite en una sartén grande a fuego medio-alto y cocina la cebolla y el pimiento 4 minutos, revolviendo, hasta que se ablanden.",
       "Agrega el tofu, el comino, el chile en polvo, la cúrcuma y la sal y cocina 6 minutos, revolviendo de vez en cuando, hasta que el tofu se vea seco y apenas dorado.",
       "Incorpora los frijoles escurridos y cocina 2 minutos, hasta que estén bien calientes.",
       "Calienta las tortillas una por una en una sartén seca a fuego medio, unos 20 segundos por lado, hasta que estén blandas y flexibles.",
-      "Pon el revuelto en el centro de cada tortilla, agrega el cheddar y la salsa, dobla los lados hacia adentro y enrolla bien apretado."
+      "Pon el revuelto en el centro de cada tortilla, agrega la salsa, dobla los lados hacia adentro y enrolla bien apretado."
     ],
     "equipment": [
       "stovetop"
@@ -205,16 +200,16 @@
     "name": "Curried Lentil Dal with Rice",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian",
+      "gluten_free",
       "high_protein",
       "pescatarian",
       "vegan",
-      "gluten_free"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 45,
     "batch_friendly": true,
-    "description": "Lentils simmered soft with tomatoes, ginger and curry spices, served over rice with cool yogurt.",
+    "description": "Lentils simmered soft with tomatoes, ginger and curry spices, served over rice with a swirl of coconut milk.",
     "steps": [
       "Heat the oil in a large pot over medium heat and cook the onion for 5 minutes, stirring, until soft and translucent.",
       "Stir in the garlic, ginger, curry powder, cumin and turmeric and cook 1 minute, until fragrant.",
@@ -222,7 +217,7 @@
       "Bring to a boil over high heat, then lower to medium-low and simmer partly covered for 25 to 30 minutes, stirring now and then, until the lentils are soft and the dal is thick.",
       "Meanwhile, put the rice in a saucepan with twice as much water as rice, bring to a boil, cover and cook over low heat for 18 minutes, until the water is absorbed.",
       "Mash some of the lentils against the side of the pot with a spoon to make the dal creamier, adding a splash of water if it is too thick.",
-      "Spoon the dal over the rice and top with the yogurt and chopped cilantro."
+      "Spoon the dal over the rice and top with a swirl of coconut milk and the chopped cilantro."
     ],
     "ingredients": [
       {
@@ -274,8 +269,8 @@
         "qty": 0.5
       },
       {
-        "id": "greek_yogurt",
-        "qty": 1
+        "id": "coconut_milk",
+        "qty": 0.5
       },
       {
         "id": "cilantro",
@@ -293,7 +288,7 @@
       }
     ],
     "name_es": "Dal de lentejas al curry con arroz",
-    "description_es": "Lentejas cocidas hasta quedar suaves con tomate, jengibre y especias de curry, servidas sobre arroz con yogur fresco.",
+    "description_es": "Lentejas cocidas hasta quedar suaves con tomate, jengibre y especias de curry, servidas sobre arroz con un chorrito de leche de coco.",
     "steps_es": [
       "Calienta el aceite en una olla grande a fuego medio y cocina la cebolla 5 minutos, revolviendo, hasta que esté blanda y transparente.",
       "Agrega el ajo, el jengibre, el curry en polvo, el comino y la cúrcuma y cocina 1 minuto, hasta que suelten su aroma.",
@@ -301,7 +296,7 @@
       "Lleva a hervor a fuego alto, baja a fuego medio-bajo y cocina semitapado de 25 a 30 minutos, revolviendo de vez en cuando, hasta que las lentejas estén blandas y el dal espeso.",
       "Mientras tanto, pon el arroz en una olla con el doble de agua que de arroz, lleva a hervor, tapa y cocina a fuego bajo 18 minutos, hasta que se absorba el agua.",
       "Aplasta parte de las lentejas contra la pared de la olla con una cuchara para que el dal quede más cremoso, y agrega un chorrito de agua si está muy espeso.",
-      "Sirve el dal sobre el arroz con el yogur y el cilantro picado encima."
+      "Sirve el dal sobre el arroz con un chorrito de leche de coco y el cilantro picado encima."
     ],
     "equipment": [
       "stovetop"
@@ -320,12 +315,11 @@
     "name": "Spinach and Feta Oven Frittata",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian",
-      "keto",
+      "gluten_free",
       "high_protein",
+      "keto",
       "pescatarian",
-      "vegan",
-      "gluten_free"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 35,
@@ -423,10 +417,10 @@
     "name": "Peanut Tofu and Broccoli Rice Bowls",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian",
       "high_protein",
       "pescatarian",
-      "vegan"
+      "vegan",
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 30,
@@ -437,7 +431,7 @@
       "Press the tofu between paper towels to dry it, cut it into bite-size cubes and toss with the cornstarch until coated.",
       "Heat the oil in a large nonstick skillet over medium-high heat and fry the tofu 8 to 10 minutes, turning every couple of minutes, until golden and crisp on most sides; move it to a plate.",
       "Add the broccoli florets and a splash of water to the same pan, cover and steam over medium heat for 4 minutes, until bright green and just tender.",
-      "Whisk the peanut butter, soy sauce, honey, vinegar, sriracha, garlic and ginger with a few spoonfuls of hot water until smooth and pourable.",
+      "Whisk the peanut butter, soy sauce, maple syrup, vinegar, sriracha, garlic and ginger with a few spoonfuls of hot water until smooth and pourable.",
       "Return the tofu to the pan, pour in the sauce and toss over low heat for 1 minute, until everything is coated and hot.",
       "Serve over the rice, topped with the chopped peanuts and green onion."
     ],
@@ -467,7 +461,7 @@
         "qty": 3
       },
       {
-        "id": "honey",
+        "id": "maple_syrup",
         "qty": 1
       },
       {
@@ -518,7 +512,7 @@
       "Seca el tofu apretándolo entre toallas de papel, córtalo en cubos de un bocado y mézclalo con la fécula de maíz hasta cubrirlo.",
       "Calienta el aceite en una sartén antiadherente grande a fuego medio-alto y fríe el tofu de 8 a 10 minutos, volteándolo cada par de minutos, hasta que esté dorado y crujiente por casi todos los lados; pásalo a un plato.",
       "Agrega los ramitos de brócoli y un chorrito de agua a la misma sartén, tapa y cocina al vapor a fuego medio 4 minutos, hasta que estén verde brillante y apenas tiernos.",
-      "Bate la mantequilla de maní, la salsa de soya, la miel, el vinagre, la sriracha, el ajo y el jengibre con unas cucharadas de agua caliente hasta obtener una salsa lisa y fluida.",
+      "Bate la mantequilla de maní, la salsa de soya, el jarabe de maple, el vinagre, la sriracha, el ajo y el jengibre con unas cucharadas de agua caliente hasta obtener una salsa lisa y fluida.",
       "Devuelve el tofu a la sartén, vierte la salsa y mezcla a fuego bajo 1 minuto, hasta que todo esté cubierto y caliente.",
       "Sirve sobre el arroz con el maní picado y la cebolla verde encima."
     ],
@@ -539,11 +533,10 @@
     "name": "Black Bean and Cheddar Enchiladas",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian",
+      "gluten_free",
       "high_protein",
       "pescatarian",
-      "vegan",
-      "gluten_free"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 45,
@@ -634,15 +627,15 @@
     "name": "Lentil Bolognese with Spaghetti",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian",
       "high_protein",
       "pescatarian",
-      "vegan"
+      "vegan",
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 50,
     "batch_friendly": true,
-    "description": "A thick tomato and lentil ragu with carrot and celery, tossed with spaghetti and parmesan.",
+    "description": "A thick tomato and lentil ragu with carrot and celery tossed with spaghetti.",
     "steps": [
       "Heat the oil in a large pot over medium heat and cook the onion, carrot and celery for 6 minutes, stirring, until soft.",
       "Stir in the garlic, tomato paste and Italian seasoning and cook 1 minute, until the paste darkens.",
@@ -651,7 +644,7 @@
       "When the sauce has 15 minutes left, bring a large pot of water to a boil over high heat and cook the spaghetti as the package says, until tender but still firm to the bite.",
       "Scoop out a mugful of the cooking water, then drain the spaghetti.",
       "Toss the spaghetti with the sauce over low heat for 1 minute, adding cooking water a splash at a time until the sauce clings to the noodles.",
-      "Serve sprinkled with the parmesan."
+      "Serve with a crack of black pepper."
     ],
     "ingredients": [
       {
@@ -709,10 +702,6 @@
         "qty": 2
       },
       {
-        "id": "parmesan",
-        "qty": 0.5
-      },
-      {
         "id": "salt",
         "qty": 1
       },
@@ -722,7 +711,7 @@
       }
     ],
     "name_es": "Espagueti con boloñesa de lentejas",
-    "description_es": "Un ragú espeso de tomate y lentejas con zanahoria y apio, mezclado con espagueti y parmesano.",
+    "description_es": "Un ragú espeso de tomate y lentejas con zanahoria y apio mezclado con espagueti.",
     "steps_es": [
       "Calienta el aceite en una olla grande a fuego medio y cocina la cebolla, la zanahoria y el apio 6 minutos, revolviendo, hasta que estén blandos.",
       "Agrega el ajo, la pasta de tomate y el condimento italiano y cocina 1 minuto, hasta que la pasta de tomate se oscurezca.",
@@ -731,7 +720,7 @@
       "Cuando a la salsa le falten 15 minutos, pon a hervir una olla grande de agua a fuego alto y cocina el espagueti según el paquete, hasta que esté tierno pero firme al morderlo.",
       "Aparta una taza del agua de cocción y escurre el espagueti.",
       "Mezcla el espagueti con la salsa a fuego bajo 1 minuto, agregando agua de cocción poco a poco hasta que la salsa se pegue a la pasta.",
-      "Sirve con el parmesano espolvoreado."
+      "Sirve con pimienta negra recién molida."
     ],
     "equipment": [
       "stovetop"
@@ -750,12 +739,11 @@
     "name": "Zucchini and Cottage Cheese Lasagna",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian",
-      "keto",
+      "gluten_free",
       "high_protein",
+      "keto",
       "pescatarian",
-      "vegan",
-      "gluten_free"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 70,
@@ -846,10 +834,9 @@
     "name": "Greek Yogurt Alfredo Penne with Peas",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian",
       "high_protein",
       "pescatarian",
-      "vegan"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 25,
@@ -930,11 +917,10 @@
     "name": "Skillet Shakshuka with Feta",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian",
+      "gluten_free",
       "keto",
       "pescatarian",
-      "vegan",
-      "gluten_free"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 25,
@@ -1039,19 +1025,19 @@
     "name": "Tofu Egg Roll in a Bowl",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian",
       "keto",
       "pescatarian",
-      "vegan"
+      "vegan",
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 20,
     "batch_friendly": false,
-    "description": "Crumbled tofu, cabbage and scrambled egg stir-fried with ginger, garlic and soy sauce.",
+    "description": "Crumbled tofu and cabbage stir-fried with ginger, garlic and soy sauce.",
     "steps": [
       "Press the tofu between paper towels to dry it and crumble it into bite-size pieces.",
       "Heat the vegetable oil in a large skillet or wok over high heat and cook the tofu 6 minutes, stirring only now and then, until browned in spots.",
-      "Push the tofu to one side, crack the eggs into the empty side and stir them 1 to 2 minutes, until just set, then break them into small pieces.",
+      "Pour in the soy sauce mixture and toss everything for 1 minute until coated and glossy.",
       "Add the garlic, ginger and coleslaw mix and stir-fry 3 to 4 minutes, until the cabbage wilts but still has some crunch.",
       "Stir in the soy sauce, vinegar and sesame oil and cook 30 seconds more.",
       "Serve in bowls topped with the green onion and a drizzle of sriracha."
@@ -1066,10 +1052,6 @@
       {
         "id": "coleslaw_mix",
         "qty": 1
-      },
-      {
-        "id": "eggs",
-        "qty": 4
       },
       {
         "id": "green_onion",
@@ -1111,11 +1093,11 @@
       }
     ],
     "name_es": "Bowl de tofu y repollo estilo egg roll",
-    "description_es": "Tofu desmenuzado, repollo y huevo revuelto salteados con jengibre, ajo y salsa de soya.",
+    "description_es": "Tofu desmenuzado y repollo salteados con jengibre, ajo y salsa de soya.",
     "steps_es": [
       "Seca el tofu apretándolo entre toallas de papel y desmenúzalo en trozos de un bocado.",
       "Calienta el aceite vegetal en una sartén grande o wok a fuego alto y cocina el tofu 6 minutos, revolviendo solo de vez en cuando, hasta que se dore en partes.",
-      "Empuja el tofu hacia un lado, rompe los huevos en el lado vacío y revuélvelos de 1 a 2 minutos, hasta que apenas cuajen; luego sepáralos en trozos pequeños.",
+      "Agrega la mezcla de salsa de soya y revuelve todo 1 minuto hasta que quede cubierto y brillante.",
       "Agrega el ajo, el jengibre y la mezcla de repollo y saltea de 3 a 4 minutos, hasta que el repollo se ablande pero siga algo crujiente.",
       "Incorpora la salsa de soya, el vinagre y el aceite de sésamo y cocina 30 segundos más.",
       "Sirve en tazones con la cebolla verde y un hilo de sriracha encima."
@@ -1137,10 +1119,9 @@
     "name": "Cauliflower Egg Fried Rice",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian",
       "keto",
       "pescatarian",
-      "vegan"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 20,
@@ -1231,11 +1212,10 @@
     "name": "Broccoli Cheddar Soup",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian",
+      "gluten_free",
       "keto",
       "pescatarian",
-      "vegan",
-      "gluten_free"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 35,
@@ -1326,11 +1306,10 @@
     "name": "Cauliflower Mac and Cheese Bake",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian",
+      "gluten_free",
       "keto",
       "pescatarian",
-      "vegan",
-      "gluten_free"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 35,
@@ -1418,10 +1397,10 @@
     "name": "Black Bean and Sweet Potato Tacos",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian",
+      "gluten_free",
       "pescatarian",
       "vegan",
-      "gluten_free"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 35,
@@ -1432,7 +1411,7 @@
       "On a large sheet pan, toss the diced sweet potatoes with the oil, cumin, chili powder, smoked paprika and salt and spread them in one layer.",
       "Roast 18 minutes, turning once halfway, until the edges brown and a fork slides in easily.",
       "Stir the drained beans into the pan and put the tortillas, wrapped in foil, on the rack beside it; roast 5 minutes more, until the beans are hot and the tortillas are soft.",
-      "Fill the tortillas with the sweet potatoes and beans and top with the red onion, avocado, feta, salsa and cilantro.",
+      "Fill the tortillas with the sweet potatoes and beans and top with the red onion, avocado, salsa and cilantro.",
       "Cut the lime into wedges and squeeze it over the tacos at the table."
     ],
     "ingredients": [
@@ -1463,12 +1442,6 @@
         "qty": 0.5,
         "note": "thinly sliced",
         "note_es": "en rodajas finas"
-      },
-      {
-        "id": "feta",
-        "qty": 2,
-        "note": "crumbled",
-        "note_es": "desmenuzado"
       },
       {
         "id": "salsa",
@@ -1512,7 +1485,7 @@
       "En una bandeja grande para horno, mezcla el camote en cubos con el aceite, el comino, el chile en polvo, el pimentón ahumado y la sal y distribúyelo en una sola capa.",
       "Hornea 18 minutos, volteando una vez a la mitad, hasta que los bordes se doren y un tenedor entre con facilidad.",
       "Mezcla los frijoles escurridos en la bandeja y pon las tortillas, envueltas en papel aluminio, en la rejilla de al lado; hornea 5 minutos más, hasta que los frijoles estén calientes y las tortillas blandas.",
-      "Rellena las tortillas con el camote y los frijoles y agrega la cebolla morada, el aguacate, el feta, la salsa y el cilantro.",
+      "Rellena las tortillas con el camote y los frijoles y agrega la cebolla morada, el aguacate, la salsa y el cilantro.",
       "Corta la lima en gajos y exprímela sobre los tacos en la mesa."
     ],
     "equipment": [
@@ -1630,9 +1603,8 @@
     "name": "Vegetable Egg Fried Rice",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian",
       "pescatarian",
-      "vegan"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 30,
@@ -1711,9 +1683,9 @@
     "name": "Two-Bean Minestrone Soup",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian",
       "pescatarian",
-      "vegan"
+      "vegan",
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 50,
@@ -1726,7 +1698,7 @@
       "Lower to medium-low and simmer uncovered 15 minutes, until the carrots are tender.",
       "Stir in the drained beans and the pasta and cook 8 to 10 minutes, stirring now and then so the pasta does not stick, until the pasta is tender.",
       "If the soup is thicker than you like, thin it with a little water, then taste and adjust the seasoning.",
-      "Ladle into bowls and sprinkle with the parmesan."
+      "Ladle into bowls and serve."
     ],
     "ingredients": [
       {
@@ -1798,10 +1770,6 @@
         "qty": 2
       },
       {
-        "id": "parmesan",
-        "qty": 0.25
-      },
-      {
         "id": "salt",
         "qty": 1
       }
@@ -1815,7 +1783,7 @@
       "Baja a fuego medio-bajo y cocina sin tapar 15 minutos, hasta que la zanahoria esté tierna.",
       "Incorpora los frijoles escurridos y la pasta y cocina de 8 a 10 minutos, revolviendo de vez en cuando para que la pasta no se pegue, hasta que esté tierna.",
       "Si la sopa queda más espesa de lo que te gusta, aligérala con un poco de agua; prueba y ajusta la sazón.",
-      "Sirve en tazones y espolvorea con el parmesano."
+      "Sirve en tazones."
     ],
     "equipment": [
       "stovetop"
@@ -1834,22 +1802,22 @@
     "name": "Three-Bean Vegetarian Chili",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian",
+      "gluten_free",
       "pescatarian",
       "vegan",
-      "gluten_free"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 50,
     "batch_friendly": true,
-    "description": "A thick meatless chili with black, kidney and pinto beans, corn and peppers, topped with cheddar.",
+    "description": "A thick meatless chili with black, kidney and pinto beans, corn and peppers.",
     "steps": [
       "Heat the oil in a large pot over medium heat and cook the onion and bell pepper 6 minutes, stirring, until soft.",
       "Stir in the garlic, chili powder, cumin and smoked paprika and cook 1 minute, until the spices smell toasted.",
       "Add the crushed and diced tomatoes, the drained beans and the broth and bring to a boil over high heat.",
       "Lower to medium-low and simmer partly covered 30 minutes, stirring every 10 minutes, until thick enough that a spoon leaves a trail on the bottom of the pot.",
       "Stir in the corn and cook 5 minutes more, until hot.",
-      "Taste, adjust the seasoning and serve topped with the cheddar."
+      "Taste, adjust the seasoning and serve."
     ],
     "ingredients": [
       {
@@ -1919,21 +1887,17 @@
       {
         "id": "vegetable_oil",
         "qty": 1
-      },
-      {
-        "id": "cheddar",
-        "qty": 1
       }
     ],
     "name_es": "Chili vegetariano de tres frijoles",
-    "description_es": "Un chili espeso sin carne con frijoles negros, rojos y pintos, maíz y pimiento, cubierto con cheddar.",
+    "description_es": "Un chili espeso sin carne con frijoles negros, rojos y pintos, maíz y pimiento.",
     "steps_es": [
       "Calienta el aceite en una olla grande a fuego medio y cocina la cebolla y el pimiento 6 minutos, revolviendo, hasta que estén blandos.",
       "Agrega el ajo, el chile en polvo, el comino y el pimentón ahumado y cocina 1 minuto, hasta que las especias huelan a tostado.",
       "Añade los tomates triturados y en cubos, los frijoles escurridos y el caldo y lleva a hervor a fuego alto.",
       "Baja a fuego medio-bajo y cocina semitapado 30 minutos, revolviendo cada 10 minutos, hasta que espese y la cuchara deje un surco en el fondo de la olla.",
       "Incorpora el maíz y cocina 5 minutos más, hasta que esté caliente.",
-      "Prueba, ajusta la sazón y sirve con el cheddar encima."
+      "Prueba, ajusta la sazón y sirve."
     ],
     "equipment": [
       "stovetop"
@@ -1952,9 +1916,8 @@
     "name": "Refried Bean and Corn Quesadillas",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian",
       "pescatarian",
-      "vegan"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 25,
@@ -2033,10 +1996,8 @@
     "name": "Creamy Tomato Tortellini Soup",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian",
       "pescatarian",
-      "vegan",
-      "gluten_free"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 25,
@@ -2123,10 +2084,9 @@
     "name": "Sheet-Pan Chickpeas and Vegetables",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian",
+      "gluten_free",
       "pescatarian",
-      "vegan",
-      "gluten_free"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 40,
@@ -2235,20 +2195,20 @@
     "name": "Crunchy Pinto Bean Taco Salad",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian",
+      "gluten_free",
       "pescatarian",
       "vegan",
-      "gluten_free"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 15,
     "batch_friendly": false,
-    "description": "Romaine piled with seasoned pinto beans, corn, tomato, cheddar, avocado and crushed tortilla chips.",
+    "description": "Romaine piled with seasoned pinto beans, corn, tomato, avocado and crushed tortilla chips.",
     "steps": [
       "Put the drained beans in a small pot with the taco seasoning and a splash of water and warm over medium heat for 3 minutes, stirring, until hot and coated.",
-      "In a small bowl, stir the salsa, sour cream and the juice of the lime into a dressing.",
+      "In a small bowl, stir the salsa and the juice of the lime into a dressing.",
       "Divide the chopped romaine among four bowls.",
-      "Top with the warm beans, corn, tomato, cheddar and avocado.",
+      "Top with the warm beans, corn, tomato and avocado.",
       "Spoon the dressing over each bowl and crush the tortilla chips on top just before serving so they stay crisp."
     ],
     "ingredients": [
@@ -2277,10 +2237,6 @@
         "note_es": "en cubitos"
       },
       {
-        "id": "cheddar",
-        "qty": 1
-      },
-      {
         "id": "avocado",
         "qty": 1,
         "note": "diced",
@@ -2295,10 +2251,6 @@
         "qty": 1
       },
       {
-        "id": "sour_cream",
-        "qty": 0.5
-      },
-      {
         "id": "taco_seasoning",
         "qty": 1
       },
@@ -2308,12 +2260,12 @@
       }
     ],
     "name_es": "Ensalada de tacos con frijoles pintos",
-    "description_es": "Lechuga romana con frijoles pintos sazonados, maíz, tomate, cheddar, aguacate y chips de tortilla triturados.",
+    "description_es": "Lechuga romana con frijoles pintos sazonados, maíz, tomate, aguacate y chips de tortilla triturados.",
     "steps_es": [
       "Pon los frijoles escurridos en una olla pequeña con el condimento para tacos y un chorrito de agua y calienta a fuego medio 3 minutos, revolviendo, hasta que estén calientes y cubiertos.",
-      "En un tazón pequeño, mezcla la salsa, la crema agria y el jugo de la lima para hacer el aderezo.",
+      "En un tazón pequeño, mezcla la salsa y el jugo de la lima para hacer el aderezo.",
       "Reparte la lechuga romana picada en cuatro tazones.",
-      "Agrega encima los frijoles tibios, el maíz, el tomate, el cheddar y el aguacate.",
+      "Agrega encima los frijoles tibios, el maíz, el tomate y el aguacate.",
       "Vierte el aderezo sobre cada tazón y tritura los chips de tortilla por encima justo antes de servir para que sigan crujientes."
     ],
     "equipment": [
@@ -2333,21 +2285,21 @@
     "name": "Mushroom Stroganoff with Egg Noodles",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian",
       "pescatarian",
-      "vegan"
+      "vegan",
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 30,
     "batch_friendly": false,
-    "description": "Browned mushrooms in a creamy sour cream sauce over buttered egg noodles.",
+    "description": "Browned mushrooms in a creamy coconut sauce over egg noodles.",
     "steps": [
       "Bring a large pot of water to a boil over high heat, cook the egg noodles as the package says until tender, and drain.",
-      "Meanwhile, melt the butter in a large skillet over medium-high heat and cook the mushrooms 8 minutes, stirring only now and then, until their liquid cooks off and they are deep brown.",
+      "Meanwhile, warm the olive oil in a large skillet over medium-high heat and cook the mushrooms 8 minutes, stirring only now and then, until their liquid cooks off and they are deep brown.",
       "Add the onion and cook 4 minutes, until soft.",
       "Stir in the garlic, paprika and thyme for 1 minute, then sprinkle in the flour and stir 30 seconds, until no dry flour shows.",
       "Pour in the broth, soy sauce and mustard, stirring, and simmer over medium heat for 5 minutes, until the sauce coats the back of a spoon.",
-      "Take the skillet off the heat and stir in the sour cream, salt and pepper; do not boil it again, or the sour cream can separate.",
+      "Take the skillet off the heat and stir in the coconut milk, salt and pepper; do not boil it again, or the coconut milk can separate.",
       "Spoon over the noodles and sprinkle with the parsley."
     ],
     "ingredients": [
@@ -2374,7 +2326,7 @@
         "note_es": "picado fino"
       },
       {
-        "id": "butter",
+        "id": "olive_oil",
         "qty": 2
       },
       {
@@ -2386,7 +2338,7 @@
         "qty": 1.5
       },
       {
-        "id": "sour_cream",
+        "id": "coconut_milk",
         "qty": 1
       },
       {
@@ -2421,14 +2373,14 @@
       }
     ],
     "name_es": "Stroganoff de champiñones con fideos al huevo",
-    "description_es": "Champiñones dorados en una salsa cremosa de crema agria sobre fideos al huevo.",
+    "description_es": "Champiñones dorados en una salsa cremosa de leche de coco sobre fideos al huevo.",
     "steps_es": [
       "Pon a hervir una olla grande de agua a fuego alto, cocina los fideos al huevo según el paquete hasta que estén tiernos y escúrrelos.",
-      "Mientras tanto, derrite la mantequilla en una sartén grande a fuego medio-alto y cocina los champiñones 8 minutos, revolviendo solo de vez en cuando, hasta que se evapore su líquido y estén bien dorados.",
+      "Mientras tanto, calienta el aceite de oliva en una sartén grande a fuego medio-alto y cocina los champiñones 8 minutos, revolviendo solo de vez en cuando, hasta que se evapore su líquido y estén bien dorados.",
       "Agrega la cebolla y cocina 4 minutos, hasta que esté blanda.",
       "Incorpora el ajo, la paprika y el tomillo durante 1 minuto; luego espolvorea la harina y revuelve 30 segundos, hasta que no se vea harina seca.",
       "Vierte el caldo, la salsa de soya y la mostaza, revolviendo, y cocina a fuego medio 5 minutos, hasta que la salsa cubra el dorso de una cuchara.",
-      "Retira la sartén del fuego e incorpora la crema agria, la sal y la pimienta; no la vuelvas a hervir, o la crema agria se puede cortar.",
+      "Retira la sartén del fuego e incorpora la leche de coco, la sal y la pimienta; no la vuelvas a hervir, o la leche de coco se puede cortar.",
       "Sirve sobre los fideos y espolvorea con el perejil."
     ],
     "equipment": [
@@ -2448,9 +2400,8 @@
     "name": "Veggie Ramen Stir-Fry with Eggs",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian",
       "pescatarian",
-      "vegan"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 20,
@@ -2545,9 +2496,8 @@
     "name": "Greek Chickpea Salad with Warm Pita",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian",
       "pescatarian",
-      "vegan"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 15,
@@ -2760,9 +2710,9 @@
     "name": "Peanut Noodles with Cabbage and Carrots",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian",
       "pescatarian",
-      "vegan"
+      "vegan",
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 20,
@@ -2770,7 +2720,7 @@
     "description": "Spaghetti tossed with crunchy cabbage and carrots in a creamy peanut, soy and lime sauce.",
     "steps": [
       "Bring a large pot of water to a boil over high heat and cook the spaghetti as the package says, until tender.",
-      "While it cooks, whisk the peanut butter, soy sauce, vinegar, honey, sesame oil, sriracha, garlic and ginger in a large bowl, adding hot water from the pot a spoonful at a time until the sauce is smooth and pourable.",
+      "While it cooks, whisk the peanut butter, soy sauce, vinegar, maple syrup, sesame oil, sriracha, garlic and ginger in a large bowl, adding hot water from the pot a spoonful at a time until the sauce is smooth and pourable.",
       "Add the coleslaw mix to the pot for the last minute of cooking, just until the cabbage softens slightly, then drain everything.",
       "Toss the hot noodles and cabbage with the sauce until evenly coated.",
       "Top with the green onion and chopped peanuts and serve with the lime cut into wedges."
@@ -2797,7 +2747,7 @@
         "qty": 2
       },
       {
-        "id": "honey",
+        "id": "maple_syrup",
         "qty": 1
       },
       {
@@ -2841,7 +2791,7 @@
     "description_es": "Espagueti con repollo y zanahoria crujientes en una salsa cremosa de maní, soya y lima.",
     "steps_es": [
       "Pon a hervir una olla grande de agua a fuego alto y cocina el espagueti según el paquete, hasta que esté tierno.",
-      "Mientras se cocina, bate la mantequilla de maní, la salsa de soya, el vinagre, la miel, el aceite de sésamo, la sriracha, el ajo y el jengibre en un tazón grande, agregando agua caliente de la olla por cucharadas hasta que la salsa quede lisa y fluida.",
+      "Mientras se cocina, bate la mantequilla de maní, la salsa de soya, el vinagre, el jarabe de maple, el aceite de sésamo, la sriracha, el ajo y el jengibre en un tazón grande, agregando agua caliente de la olla por cucharadas hasta que la salsa quede lisa y fluida.",
       "Agrega la mezcla de repollo a la olla el último minuto de cocción, solo hasta que el repollo se ablande un poco, y escurre todo.",
       "Mezcla los fideos y el repollo calientes con la salsa hasta cubrir de manera uniforme.",
       "Agrega encima la cebolla verde y el maní picado y sirve con la lima cortada en gajos."
@@ -2863,10 +2813,9 @@
     "name": "Pinto Bean Huevos Rancheros",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian",
+      "gluten_free",
       "pescatarian",
-      "vegan",
-      "gluten_free"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 20,
@@ -2949,10 +2898,9 @@
     "name": "Potato and Pea Curry with Naan",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian",
       "pescatarian",
       "vegan",
-      "gluten_free"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 40,
