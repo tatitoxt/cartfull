@@ -34,6 +34,31 @@ test.describe("emailed sign-in link", () => {
     await other.close();
   });
 
+  test("a confirmation screen only signs in the address it shows", async ({ page, browser }) => {
+    const shown = uniqueEmail("shown");
+    const later = uniqueEmail("later");
+    await page.goto("/login");
+    await requestSignIn(page, shown);
+    const first = await signInLink(shown);
+    await page.getByRole("button", { name: "Use a different email" }).click();
+    await requestSignIn(page, later);
+    const second = await signInLink(later);
+
+    const other = await browser.newContext();
+    const tab = await other.newPage();
+    await tab.goto(first);
+    await expect(tab.getByTestId("confirm-email")).toHaveText(shown);
+    // A second link opens in the same browser while the first screen is still up.
+    const background = await other.newPage();
+    await background.goto(second);
+    await expect(background.getByTestId("confirm-email")).toHaveText(later);
+
+    await tab.getByRole("button", { name: "Yes, sign me in" }).click();
+    await expect(tab).toHaveURL(/\/login\?error=link/);
+    expect(await signedIn(other)).toBe(false);
+    await other.close();
+  });
+
   test("refuses a link that claims to be for a different address", async ({ page, browser }) => {
     const sender = uniqueEmail("sender");
     const target = uniqueEmail("target");

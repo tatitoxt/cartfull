@@ -22,7 +22,9 @@ export default async function ConfirmPage() {
     const store = await cookies();
     const link = readPendingLink(store.get(PENDING_COOKIE)?.value);
     store.set(PENDING_COOKIE, "", { path: "/auth", maxAge: 0 });
-    if (!link) redirect(retry("/app"));
+    // Another link opened in this browser since this screen was drawn would sign in
+    // a different account than the one shown here.
+    if (!link || normalizeEmail(link.email) !== email) redirect(retry(next));
     const signedIn = await completeLink(link.tokenHash, link.type, normalizeEmail(link.email));
     redirect(signedIn ? safeNext(link.next) : retry(safeNext(link.next)));
   }
