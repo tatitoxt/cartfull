@@ -134,7 +134,8 @@ begin
 end;
 $$;
 
-revoke all on function public.share_accessible(uuid) from public, anon;
+revoke all on function public.share_accessible(uuid) from public, anon, authenticated;
+revoke all on function public.share_editable(uuid) from public, anon, authenticated;
 revoke all on function public.create_plan_share(uuid) from public, anon;
 grant execute on function public.create_plan_share(uuid) to authenticated;
 grant execute on function public.shared_plan(uuid) to anon, authenticated;
