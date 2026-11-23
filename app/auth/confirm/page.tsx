@@ -1,29 +1,30 @@
 import type { Metadata } from "next";
+import { cookies } from "next/headers";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { Logo } from "@/components/logo";
-import { completeLink } from "@/lib/auth/complete-link";
-import { normalizeEmail } from "@/lib/auth/requested";
+import { completeLink, readPendingLink } from "@/lib/auth/complete-link";
+import { normalizeEmail, PENDING_COOKIE } from "@/lib/auth/requested";
 import { safeNext } from "@/lib/safe-next";
 
 export const metadata: Metadata = { title: "Confirm sign-in", robots: { index: false } };
 
-export default async function ConfirmPage({
-  searchParams,
-}: {
-  searchParams: Promise<{ token_hash?: string; type?: string; email?: string; next?: string }>;
-}) {
-  const params = await searchParams;
-  const next = safeNext(params.next);
-  const email = normalizeEmail(params.email);
-  const tokenHash = params.token_hash ?? "";
-  const type = params.type;
-  const retry = `/login?error=link&next=${encodeURIComponent(next)}`;
-  if (!email || !tokenHash) redirect(retry);
+const retry = (next: string) => `/login?error=link&next=${encodeURIComponent(next)}`;
+
+export default async function ConfirmPage() {
+  const pending = readPendingLink((await cookies()).get(PENDING_COOKIE)?.value);
+  if (!pending) redirect(retry("/app"));
+  const next = safeNext(pending.next);
+  const email = normalizeEmail(pending.email);
 
   async function finish() {
     "use server";
-    redirect((await completeLink(tokenHash, type, email)) ? next : retry);
+    const store = await cookies();
+    const link = readPendingLink(store.get(PENDING_COOKIE)?.value);
+    store.set(PENDING_COOKIE, "", { path: "/auth", maxAge: 0 });
+    if (!link) redirect(retry("/app"));
+    const signedIn = await completeLink(link.tokenHash, link.type, normalizeEmail(link.email));
+    redirect(signedIn ? safeNext(link.next) : retry(safeNext(link.next)));
   }
 
   return (
