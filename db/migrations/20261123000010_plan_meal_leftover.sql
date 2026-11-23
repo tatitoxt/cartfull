@@ -49,13 +49,15 @@ begin
   -- derives the list from the cart) and keep their checked/have state for
   -- when the meal comes back, e.g. a leftovers flag toggled off again.
   -- The cart line already carries the merged have/have_qty state, so update
-  -- it on conflict; `checked` (the bought tick) always survives.
+  -- it on conflict; `checked` (the bought tick) always survives. have_qty is
+  -- capped at the week's need by buildCart, so keep the larger saved stock:
+  -- manual stock edits go through plan_items directly, never through here.
   insert into public.plan_items (plan_id, ingredient_id, have, have_qty)
   select pid, i ->> 'ingredient_id', coalesce((i ->> 'have')::boolean, false),
          coalesce((i ->> 'have_qty')::numeric, 0)
   from jsonb_array_elements(p_items) i
   on conflict (plan_id, ingredient_id) do update
-    set have = excluded.have, have_qty = excluded.have_qty;
+    set have = excluded.have, have_qty = greatest(public.plan_items.have_qty, excluded.have_qty);
 
   return pid;
 end;
