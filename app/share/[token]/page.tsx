@@ -21,7 +21,7 @@ type SharedPlan = {
   lang: Lang;
   units: Units;
   items: { ingredient_id: string; checked: boolean; have: boolean; have_qty: number }[];
-  meals: { day: number; slot: MealType; slug: string; servings: number }[];
+  meals: { day: number; slot: MealType; slug: string; servings: number; leftover?: boolean }[];
 };
 
 export default async function SharedPage({ params }: { params: Promise<{ token: string }> }) {
@@ -38,7 +38,8 @@ export default async function SharedPage({ params }: { params: Promise<{ token: 
   const meals: MealAssignment[] = [];
   for (const row of shared.meals) {
     const recipe = recipeBySlug(row.slug);
-    if (recipe) meals.push({ day: row.day, slot: row.slot, recipe, servings: row.servings });
+    if (recipe)
+      meals.push({ day: row.day, slot: row.slot, recipe, servings: row.servings, leftover: Boolean(row.leftover) });
   }
   meals.sort((a, b) => a.day - b.day || order.indexOf(a.slot) - order.indexOf(b.slot));
 
