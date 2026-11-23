@@ -3,6 +3,7 @@
 import { useRouter } from "next/navigation";
 import { useState, useTransition } from "react";
 import { track } from "@/components/analytics";
+import { keepForOffline } from "@/components/service-worker";
 import { createNextWeek, regenerateWeek, type ActionResult } from "@/lib/app/actions";
 
 const COPY = {
@@ -24,6 +25,7 @@ export function PlanActions({ mode, planId }: { mode: keyof typeof COPY; planId?
       if (result.ok) {
         track(mode === "regenerate" ? "plan_regenerated" : "plan_created");
         router.refresh();
+        keepForOffline();
       } else if (result.code === "paywall") {
         router.push("/app/upgrade");
       } else {

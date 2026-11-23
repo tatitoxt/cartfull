@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { BudgetMeter } from "@/components/budget-meter";
+import { keepForOffline } from "@/components/service-worker";
 import { setItemState } from "@/lib/app/actions";
 import { moneyExact } from "@/lib/format";
 
@@ -61,6 +62,7 @@ export function GroceryList({
 
   const flush = async () => {
     let queue = readQueue();
+    const sending = queue.length > 0;
     while (queue.length) {
       const [change] = queue;
       try {
@@ -74,6 +76,7 @@ export function GroceryList({
       localStorage.setItem(queueKey, JSON.stringify(queue));
     }
     setFailed(false);
+    if (sending) keepForOffline();
   };
 
   useEffect(() => {

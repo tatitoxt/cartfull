@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { useRef, useState, useTransition } from "react";
 import { track } from "@/components/analytics";
 import { Photo } from "@/components/photo";
+import { keepForOffline } from "@/components/service-worker";
 import { getSwapChoices, swapMeal, type SwapChoice } from "@/lib/app/actions";
 import type { MealType } from "@/lib/catalog/types";
 import { money } from "@/lib/format";
@@ -44,6 +45,7 @@ export function SwapButton({
       track("meal_swapped", { slot });
       dialog.current?.close();
       router.refresh();
+      keepForOffline();
     });
 
   return (
