@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { keepForOffline } from "@/components/service-worker";
-import { setItemState } from "@/lib/app/actions";
+import { getShareLink, setItemState } from "@/lib/app/actions";
 import { money, moneyExact } from "@/lib/format";
 import { amount, type Lang } from "@/lib/catalog/localize";
 import { useLocale, useMessages } from "@/lib/i18n/locale-provider";
@@ -142,6 +142,29 @@ export function GroceryList({
   const inCartCents = inCart.reduce((sum, l) => sum + l.cents, 0);
   const haveLines = lines.filter((l) => l.have);
 
+  const shareLive = async () => {
+    const url = await getShareLink(planId);
+    if (!url) {
+      setShareNote(m.list.shareLiveError);
+      return;
+    }
+    try {
+      if (navigator.share) {
+        await navigator.share({ title: m.list.shareTitle, text: `${m.list.shareTitle}: ${url}` });
+        setShareNote(m.list.shared);
+      } else {
+        throw new Error("no share");
+      }
+    } catch {
+      try {
+        await navigator.clipboard.writeText(url);
+        setShareNote(m.list.shareLiveNote);
+      } catch {
+        setShareNote(m.list.shareError);
+      }
+    }
+  };
+
   const share = async () => {
     const groups = aisles
       .map(({ aisle, label }) => {
@@ -187,6 +210,11 @@ export function GroceryList({
         <button type="button" className="btn btn-quiet" onClick={share} data-testid="share-list">
           {m.list.share}
         </button>
+        {editable && (
+          <button type="button" className="btn btn-quiet" onClick={shareLive} data-testid="share-live">
+            {m.list.shareLive}
+          </button>
+        )}
         {shareNote && (
           <span role="status" className="text-sm text-fg-soft">
             {shareNote}

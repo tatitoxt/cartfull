@@ -206,6 +206,9 @@ const en = {
     shareTitle: "Cartfull grocery list",
     shared: "Shared.",
     shareCopied: "Copied. Send it as a message.",
+    shareLive: "Share a live link",
+    shareLiveNote: "Live link copied \u2014 anyone with it can tick items off, no account needed.",
+    shareLiveError: "Couldn\u2019t create the live link. Try again.",
     shareError: "Couldn't share from this browser.",
     shareTotal: "Estimated total {amount}",
     shareChecked: "already in cart",
@@ -243,6 +246,11 @@ const en = {
     enjoy: "All done",
     ingredients: "Ingredients",
     step: "Step {step} of {total}",
+  },
+  shared: {
+    title: "Shared grocery list",
+    lead: "Tick items as they go in the cart \u2014 it updates for everyone with this link.",
+    ticked: "in the cart",
   },
   consent: {
     title: "A quick note on cookies",
@@ -623,6 +631,9 @@ const es: Messages = {
     shareTitle: "Lista del súper Cartfull",
     shared: "Compartida.",
     shareCopied: "Copiada. Envíala como mensaje.",
+    shareLive: "Compartir link en vivo",
+    shareLiveNote: "Link en vivo copiado \u2014 cualquiera con el link puede marcar ítems, sin cuenta.",
+    shareLiveError: "No pudimos crear el link en vivo. Inténtalo de nuevo.",
     shareError: "No se pudo compartir desde este navegador.",
     shareTotal: "Total estimado {amount}",
     shareChecked: "ya en el carrito",
@@ -660,6 +671,11 @@ const es: Messages = {
     enjoy: "Terminaste",
     ingredients: "Ingredientes",
     step: "Paso {step} de {total}",
+  },
+  shared: {
+    title: "Lista de compras compartida",
+    lead: "Marca los ítems a medida que van al carrito \u2014 se actualiza para todos los que tengan este link.",
+    ticked: "en el carrito",
   },
   consent: {
     title: "Una nota sobre cookies",

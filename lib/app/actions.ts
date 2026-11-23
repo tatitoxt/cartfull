@@ -24,6 +24,7 @@ import { answersSchema, typicalSpendCents, type Answers } from "./profile";
 import { addDays, targetWeekStart, weekIsOver } from "./week";
 import { MESSAGES, fill } from "../i18n/messages";
 import { getLocale } from "../i18n/server";
+import { siteUrl } from "../env";
 import { createAdminClient } from "../supabase/server";
 import type { Lang } from "../catalog/localize";
 
@@ -504,4 +505,18 @@ export async function deleteAccount(): Promise<ActionResult> {
     return fail("failed", m.account.deleteError);
   }
   return { ok: true };
+}
+
+/** Owner-side: the live link anyone can use to tick items off this plan's list. */
+export async function getShareLink(planId: string): Promise<string | null> {
+  const session = await requireSession("/app/list");
+  const { data, error } = await session.supabase.rpc("create_plan_share", { p_plan_id: planId });
+  if (error || !data) return null;
+  return `${siteUrl}/share/${data}`;
+}
+
+/** Token-gated: tick an item on a shared list (no account needed on the other side). */
+export async function checkSharedItem(token: string, ingredientId: string, checked: boolean): Promise<void> {
+  if (!/^[0-9a-f-]{36}$/i.test(token) || !catalog.ingredients.has(ingredientId)) return;
+  await createAdminClient().rpc("check_shared_item", { p_token: token, p_ingredient_id: ingredientId, p_checked: checked });
 }
