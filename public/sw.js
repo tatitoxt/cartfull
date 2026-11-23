@@ -17,6 +17,15 @@ const PHOTO_LIMIT = 80;
 const OFFLINE_URL = "/offline";
 const PRECACHE = [OFFLINE_URL, "/icons/icon-192.png", "/icons/icon.svg"];
 
+// Goes up each time kept pages are removed. A request that began before the
+// removal belongs to whoever was signed in then, and must not put a page back.
+let removals = 0;
+
+function removeKeptPages() {
+  removals += 1;
+  return caches.delete(PAGES);
+}
+
 const keptOffline = (path) => path === "/app/plan" || path === "/app/list" || path.startsWith("/app/recipe/");
 
 self.addEventListener("install", (event) => {
@@ -56,11 +65,11 @@ async function pageNetworkFirst(request) {
   const cache = await caches.open(PAGES);
   // One copy per path: query strings such as ?source=pwa do not change the page.
   const key = new URL(request.url).pathname;
+  const started = removals;
   try {
     const response = await fetch(request);
-    if (keptOffline(key) && response.ok && !response.redirected && response.headers.get("content-type")?.includes("text/html")) {
-      await cache.put(key, response.clone());
-    }
+    const keep = keptOffline(key) && response.ok && !response.redirected && response.headers.get("content-type")?.includes("text/html");
+    if (keep && started === removals) await cache.put(key, response.clone());
     return response;
   } catch {
     return (await cache.match(key)) ?? (await caches.match(OFFLINE_URL)) ?? Response.error();
@@ -68,9 +77,11 @@ async function pageNetworkFirst(request) {
 }
 
 async function savePage(url) {
+  const started = removals;
   try {
     const response = await fetch(url, { credentials: "same-origin" });
-    if (response.ok && !response.redirected && response.headers.get("content-type")?.includes("text/html")) {
+    const keep = response.ok && !response.redirected && response.headers.get("content-type")?.includes("text/html");
+    if (keep && started === removals) {
       const cache = await caches.open(PAGES);
       await cache.put(url.pathname, response);
     }
@@ -84,7 +95,7 @@ async function publicPage(request) {
     const response = await fetch(request);
     // The sign-in form only renders for someone who is signed out, so whatever
     // the last person left on this device goes.
-    if (new URL(request.url).pathname === "/login" && response.status === 200) await caches.delete(PAGES);
+    if (new URL(request.url).pathname === "/login" && response.status === 200) await removeKeptPages();
     return response;
   } catch {
     return (await caches.match(OFFLINE_URL)) ?? Response.error();
@@ -107,7 +118,7 @@ self.addEventListener("fetch", (event) => {
 
   if (url.origin === self.location.origin && url.pathname.startsWith("/auth/")) {
     // Signing in or out: whatever the last person left on this device goes.
-    event.waitUntil(caches.delete(PAGES));
+    event.waitUntil(removeKeptPages());
     return;
   }
   if (request.method !== "GET") return;
