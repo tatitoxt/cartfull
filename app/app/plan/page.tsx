@@ -6,23 +6,29 @@ import { catalog } from "@/lib/catalog";
 import { recipeCentsPerServing } from "@/lib/catalog/cost";
 import { loadAppState } from "@/lib/app/current";
 import { weekIsOver, weekLabel } from "@/lib/app/week";
-import { DAY_NAMES, money, moneyExact } from "@/lib/format";
+import { money, moneyExact } from "@/lib/format";
 import type { MealAssignment } from "@/lib/planner/types";
+import { MESSAGES, fill } from "@/lib/i18n/messages";
 import { PlanActions } from "./plan-actions";
 import { SwapButton } from "./swap-button";
 
-export const metadata: Metadata = { title: "This week" };
+export async function generateMetadata(): Promise<Metadata> {
+  const { profile } = await loadAppState("/app/plan");
+  return { title: MESSAGES[profile.lang].metadata.plan };
+}
 
 const perServing = (meal: MealAssignment) => Math.round(recipeCentsPerServing(meal.recipe, catalog.ingredients));
 
 export default async function PlanPage() {
-  const { current, entitlement, canPlanNext, plans } = await loadAppState("/app/plan");
+  const { current, entitlement, canPlanNext, plans, profile } = await loadAppState("/app/plan");
+  const m = MESSAGES[profile.lang];
+  const lang = profile.lang;
 
   if (!current) {
     return (
       <section className="py-10">
-        <h1 className="text-4xl">Let&apos;s plan your first week</h1>
-        <p className="mt-3 max-w-md text-ink-soft">Your answers are saved. One tap builds seven dinners priced to your budget.</p>
+        <h1 className="text-4xl">{m.plan.firstTitle}</h1>
+        <p className="mt-3 max-w-md text-ink-soft">{m.plan.firstLead}</p>
         <PlanActions mode="first" />
       </section>
     );
@@ -34,19 +40,19 @@ export default async function PlanPage() {
   if (!viewable) {
     return (
       <section className="py-10">
-        <p className="text-sm font-semibold uppercase tracking-wider text-green">Week of {weekLabel(row.week_start)}</p>
-        <h1 className="mt-2 text-4xl">Your subscription has ended</h1>
+        <p className="text-sm font-semibold uppercase tracking-wider text-green">{fill(m.common.weekOf, { date: weekLabel(row.week_start, lang) })}</p>
+        <h1 className="mt-2 text-4xl">{m.plan.subscriptionEnded}</h1>
         <p className="mt-3 max-w-md text-ink-soft">
-          Your {plans.length} planned weeks are saved. Subscribe again to open them and plan the next one.
+          {fill(m.plan.savedWeeks, { count: plans.length })}
         </p>
         <Link href="/app/upgrade" className="btn btn-cta mt-6">
-          See plans
+          {m.plan.seePlans}
         </Link>
       </section>
     );
   }
 
-  const days = DAY_NAMES.map((name, day) => ({
+  const days = m.days.full.map((name, day) => ({
     name,
     dinner: meals.find((m) => m.day === day && m.slot === "dinner"),
     others: meals.filter((m) => m.day === day && m.slot !== "dinner"),
@@ -55,45 +61,44 @@ export default async function PlanPage() {
   return (
     <>
       <section aria-labelledby="week-title">
-        <p className="text-sm font-semibold uppercase tracking-wider text-green">Week of {weekLabel(row.week_start)}</p>
+        <p className="text-sm font-semibold uppercase tracking-wider text-green">{fill(m.common.weekOf, { date: weekLabel(row.week_start, lang) })}</p>
         <h1 id="week-title" className="mt-2 text-4xl sm:text-5xl">
-          {over ? "Last week" : "This week"}, planned
+          {over ? m.plan.lastWeek : m.plan.thisWeek}, {m.plan.planned}
         </h1>
         <div className="mt-7">
           <BudgetMeter totalCents={cart.totalCents} budgetCents={row.budget_cents} />
         </div>
         <div className="mt-6 flex flex-wrap gap-3">
           <Link href="/app/list" className="btn btn-primary">
-            Open grocery list
+            {m.plan.openList}
           </Link>
           {editable && !over && <PlanActions mode="regenerate" planId={row.id} />}
         </div>
         {cart.totalCents > row.budget_cents && (
           <p role="status" className="mt-5 rounded-2xl bg-yellow-soft p-4 shadow-[inset_0_0_0_1.5px_var(--color-yellow)]">
-            The cart is {money(cart.totalCents - row.budget_cents)} over since you changed what you have at home. Tap
-            &ldquo;New mix&rdquo; to bring it back under budget.
+            {fill(m.plan.overChanged, { amount: money(cart.totalCents - row.budget_cents, lang) })}
           </p>
         )}
       </section>
 
       {(canPlanNext || over) && (
-        <section className="mt-8 rounded-card bg-mint-soft p-5" aria-label="Next week">
+        <section className="mt-8 rounded-card bg-mint-soft p-5" aria-label={m.plan.nextWeek}>
           {entitlement.active ? (
             <>
-              <h2 className="text-2xl">Ready for next week?</h2>
-              <p className="mt-1 text-ink-soft">Same budget, new dinners, and this week&apos;s leftovers stay off the cart.</p>
+              <h2 className="text-2xl">{m.plan.readyNext}</h2>
+              <p className="mt-1 text-ink-soft">{m.plan.nextLead}</p>
               <PlanActions mode="next" />
             </>
           ) : (
             <>
-              <h2 className="text-2xl">This was your free week</h2>
+              <h2 className="text-2xl">{m.plan.freeWeek}</h2>
               <p className="mt-1 text-ink-soft">
                 {entitlement.hadSubscription
-                  ? "Subscribe again to plan next week."
-                  : "Try Cartfull free for 7 days to plan next week. Cancel any time."}
+                  ? m.plan.subscribeAgain
+                  : m.plan.freeTrial}
               </p>
               <Link href="/app/upgrade" className="btn btn-cta mt-4" data-testid="paywall-cta">
-                {entitlement.hadSubscription ? "See plans" : "Start my free trial"}
+                {entitlement.hadSubscription ? m.plan.seePlans : m.plan.startTrial}
               </Link>
             </>
           )}
@@ -112,7 +117,7 @@ export default async function PlanPage() {
                 <Link href={`/app/recipe/${dinner.recipe.slug}?plan=${row.id}`} className="block overflow-hidden rounded-card">
                   <Photo
                     url={dinner.recipe.photo_url}
-                    alt={dinner.recipe.name}
+                    alt={dinner.recipe.name_es && lang === "es" ? dinner.recipe.name_es : dinner.recipe.name}
                     ratio={day === 0 ? 4 / 3 : 3 / 2}
                     sizes="(min-width: 640px) 320px, 100vw"
                     priority={day === 0}
@@ -122,17 +127,17 @@ export default async function PlanPage() {
                 <div>
                   <h3 className="text-[1.6rem] leading-tight">
                     <Link href={`/app/recipe/${dinner.recipe.slug}?plan=${row.id}`} className="hover:underline" data-testid="dinner-name">
-                      {dinner.recipe.name}
+                      {dinner.recipe.name_es && lang === "es" ? dinner.recipe.name_es : dinner.recipe.name}
                     </Link>
                   </h3>
-                  <p className="mt-2 text-ink-soft">{dinner.recipe.description}</p>
+                  <p className="mt-2 text-ink-soft">{lang === "es" && dinner.recipe.description_es ? dinner.recipe.description_es : dinner.recipe.description}</p>
                   <p className="tnum mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm">
-                    <span className="font-semibold text-tomato-deep">{moneyExact(perServing(dinner))} a serving</span>
-                    <span className="text-ink-soft">{dinner.recipe.prep_minutes} min</span>
-                    <span className="text-ink-soft">Serves {dinner.servings}</span>
+                    <span className="font-semibold text-tomato-deep">{fill(m.plan.perServing, { amount: moneyExact(perServing(dinner), lang) })}</span>
+                    <span className="text-ink-soft">{fill(m.common.min, { count: dinner.recipe.prep_minutes })}</span>
+                    <span className="text-ink-soft">{fill(m.recipe.serves, { count: dinner.servings })}</span>
                   </p>
                   {editable && !over && (
-                    <SwapButton planId={row.id} day={day} slot="dinner" currentName={dinner.recipe.name} />
+                  <SwapButton planId={row.id} day={day} slot="dinner" currentName={dinner.recipe.name_es && lang === "es" ? dinner.recipe.name_es : dinner.recipe.name} />
                   )}
                 </div>
               </article>
@@ -143,16 +148,16 @@ export default async function PlanPage() {
                   <li key={meal.slot} className="flex items-center gap-3 py-3">
                     <Photo url={meal.recipe.photo_url} alt="" ratio={1} sizes="56px" className="size-14 shrink-0 rounded-xl" />
                     <div className="min-w-0 flex-1">
-                      <p className="text-xs font-semibold uppercase tracking-wider text-ink-faint">{meal.slot}</p>
+                      <p className="text-xs font-semibold uppercase tracking-wider text-ink-faint">{m.plan.slot[meal.slot]}</p>
                       <Link href={`/app/recipe/${meal.recipe.slug}?plan=${row.id}`} className="block truncate font-semibold hover:underline">
-                        {meal.recipe.name}
+                          {meal.recipe.name_es && lang === "es" ? meal.recipe.name_es : meal.recipe.name}
                       </Link>
                       <p className="tnum text-sm text-ink-soft">
-                        {moneyExact(perServing(meal))} a serving · {meal.recipe.prep_minutes} min
+                        {fill(m.plan.perServing, { amount: moneyExact(perServing(meal), lang) })} · {fill(m.common.min, { count: meal.recipe.prep_minutes })}
                       </p>
                     </div>
                     {editable && !over && (
-                      <SwapButton planId={row.id} day={day} slot={meal.slot} currentName={meal.recipe.name} compact />
+                      <SwapButton planId={row.id} day={day} slot={meal.slot} currentName={meal.recipe.name_es && lang === "es" ? meal.recipe.name_es : meal.recipe.name} compact />
                     )}
                   </li>
                 ))}
@@ -163,7 +168,7 @@ export default async function PlanPage() {
       </ol>
 
       <p className="mt-10 text-sm text-ink-faint">
-        Prices are estimates based on typical US discount-grocer shelf prices. Your receipt will differ by store and week.
+        {m.plan.prices}
       </p>
     </>
   );

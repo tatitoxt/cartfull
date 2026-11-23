@@ -4,8 +4,11 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { track } from "@/components/analytics";
+import type { Lang } from "@/lib/catalog/localize";
+import { MESSAGES } from "@/lib/i18n/messages";
 
-export function WelcomeStatus({ active, status, interval }: { active: boolean; status: string; interval: string | null }) {
+export function WelcomeStatus({ active, status, interval, lang }: { active: boolean; status: string; interval: string | null; lang: Lang }) {
+  const m = MESSAGES[lang];
   const router = useRouter();
   const [tries, setTries] = useState(0);
   const tracked = useRef(false);
@@ -30,14 +33,14 @@ export function WelcomeStatus({ active, status, interval }: { active: boolean; s
   if (active) {
     return (
       <section className="py-10" data-testid="welcome-active">
-        <h1 className="text-4xl sm:text-5xl">You&apos;re in</h1>
+        <h1 className="text-4xl sm:text-5xl">{m.welcome.title}</h1>
         <p className="mt-3 max-w-md text-ink-soft">
           {status === "trialing"
-            ? "Your 7-day free trial has started. Plan as many weeks as you like."
-            : "Your subscription is active. Plan as many weeks as you like."}
+            ? m.welcome.trial
+            : m.welcome.active}
         </p>
         <Link href="/app/plan" className="btn btn-primary mt-6">
-          Go to my plan
+          {m.common.goPlan}
         </Link>
       </section>
     );
@@ -45,15 +48,15 @@ export function WelcomeStatus({ active, status, interval }: { active: boolean; s
 
   return (
     <section className="py-10" role="status">
-      <h1 className="text-4xl">{tries >= 15 ? "Still confirming your payment" : "Confirming with Stripe…"}</h1>
+      <h1 className="text-4xl">{tries >= 15 ? m.welcome.confirmingLong : m.welcome.confirming}</h1>
       <p className="mt-3 max-w-md text-ink-soft">
         {tries >= 15
-          ? "This is taking longer than usual. Your card is safe. Refresh in a minute, or check Account."
-          : "This takes a few seconds. Keep this page open."}
+          ? m.welcome.waitLong
+          : m.welcome.wait}
       </p>
       {tries >= 15 && (
         <Link href="/app/account" className="btn btn-quiet mt-6">
-          Go to Account
+          {m.welcome.goAccount}
         </Link>
       )}
     </section>
