@@ -76,7 +76,7 @@ export function RecipeFeedback({ slug, initialFavorite, initialRating }: {
         aria-pressed={favorite}
         data-testid="favorite-toggle"
         className={`inline-flex min-h-11 items-center gap-2 rounded-full px-4 text-sm font-semibold transition-colors ${
-          favorite ? "bg-accent-soft text-accent-deep" : "bg-line text-fg"
+          favorite ? "bg-rose-400/15 text-rose-400" : "bg-line text-fg"
         }`}
       >
         <svg viewBox="0 0 24 24" className="size-4" fill={favorite ? "currentColor" : "none"} stroke="currentColor" strokeWidth="2" aria-hidden="true">
