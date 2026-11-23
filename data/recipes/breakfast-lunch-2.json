@@ -263,7 +263,9 @@
     "slug": "fried-egg-blt-sandwiches",
     "name": "Fried Egg BLT Sandwiches",
     "meal_type": "breakfast",
-    "diet_tags": [],
+    "diet_tags": [
+      "dairy_free"
+    ],
     "servings": 2,
     "prep_minutes": 15,
     "batch_friendly": false,
@@ -415,6 +417,7 @@
     "name": "Egg in a Hole Toast",
     "meal_type": "breakfast",
     "diet_tags": [
+      "low_carb",
       "pescatarian",
       "vegetarian"
     ],
@@ -567,8 +570,10 @@
     "name": "Huevos a la Mexicana",
     "meal_type": "breakfast",
     "diet_tags": [
+      "dairy_free",
       "gluten_free",
       "keto",
+      "low_carb",
       "pescatarian",
       "vegetarian"
     ],
@@ -650,6 +655,7 @@
       "gluten_free",
       "high_protein",
       "keto",
+      "low_carb",
       "pescatarian",
       "vegetarian"
     ],
@@ -795,7 +801,8 @@
     "name": "Sausage, Egg and Cheese Muffin Sandwiches",
     "meal_type": "breakfast",
     "diet_tags": [
-      "high_protein"
+      "high_protein",
+      "low_carb"
     ],
     "servings": 4,
     "prep_minutes": 20,
@@ -931,9 +938,10 @@
     "name": "Denver Omelets",
     "meal_type": "breakfast",
     "diet_tags": [
-      "keto",
+      "gluten_free",
       "high_protein",
-      "gluten_free"
+      "keto",
+      "low_carb"
     ],
     "servings": 2,
     "prep_minutes": 15,
@@ -1008,9 +1016,10 @@
     "name": "Sausage and Egg Breakfast Casserole",
     "meal_type": "breakfast",
     "diet_tags": [
-      "keto",
+      "gluten_free",
       "high_protein",
-      "gluten_free"
+      "keto",
+      "low_carb"
     ],
     "servings": 4,
     "prep_minutes": 50,
@@ -1095,6 +1104,7 @@
       "gluten_free",
       "high_protein",
       "keto",
+      "low_carb",
       "pescatarian",
       "vegetarian"
     ],
@@ -1177,9 +1187,10 @@
     "name": "Sausage and Egg Stuffed Peppers",
     "meal_type": "breakfast",
     "diet_tags": [
-      "keto",
+      "gluten_free",
       "high_protein",
-      "gluten_free"
+      "keto",
+      "low_carb"
     ],
     "servings": 2,
     "prep_minutes": 40,
@@ -1579,6 +1590,7 @@
     "meal_type": "lunch",
     "diet_tags": [
       "high_protein",
+      "low_carb",
       "pescatarian"
     ],
     "servings": 2,
@@ -1656,6 +1668,7 @@
     "name": "Korean-Style Ground Beef Rice Bowls",
     "meal_type": "lunch",
     "diet_tags": [
+      "dairy_free",
       "high_protein"
     ],
     "servings": 4,
@@ -1855,9 +1868,10 @@
     "name": "Classic Cobb Salad",
     "meal_type": "lunch",
     "diet_tags": [
-      "keto",
+      "gluten_free",
       "high_protein",
-      "gluten_free"
+      "keto",
+      "low_carb"
     ],
     "servings": 4,
     "prep_minutes": 30,
@@ -1954,8 +1968,10 @@
     "name": "Sesame Chicken Cabbage Salad",
     "meal_type": "lunch",
     "diet_tags": [
+      "dairy_free",
+      "high_protein",
       "keto",
-      "high_protein"
+      "low_carb"
     ],
     "servings": 4,
     "prep_minutes": 15,
@@ -2034,9 +2050,10 @@
     "name": "Chicken Fajita Salad Bowls",
     "meal_type": "lunch",
     "diet_tags": [
-      "keto",
+      "gluten_free",
       "high_protein",
-      "gluten_free"
+      "keto",
+      "low_carb"
     ],
     "servings": 4,
     "prep_minutes": 25,
@@ -2129,6 +2146,7 @@
     "diet_tags": [
       "gluten_free",
       "keto",
+      "low_carb",
       "pescatarian",
       "vegetarian"
     ],
@@ -2213,7 +2231,9 @@
     "name": "Egg Drop Soup with Mushrooms and Spinach",
     "meal_type": "lunch",
     "diet_tags": [
-      "keto"
+      "dairy_free",
+      "keto",
+      "low_carb"
     ],
     "servings": 2,
     "prep_minutes": 15,
@@ -2296,9 +2316,11 @@
     "name": "Tomato and Cucumber Panzanella",
     "meal_type": "lunch",
     "diet_tags": [
-      "vegetarian",
+      "dairy_free",
+      "low_carb",
       "pescatarian",
-      "vegan"
+      "vegan",
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 30,
@@ -2385,10 +2407,11 @@
     "name": "Quinoa Tabbouleh with Chickpeas",
     "meal_type": "lunch",
     "diet_tags": [
-      "vegetarian",
+      "dairy_free",
+      "gluten_free",
       "pescatarian",
       "vegan",
-      "gluten_free"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 35,
@@ -2477,6 +2500,7 @@
     "name": "Smoky Black Bean Soup",
     "meal_type": "lunch",
     "diet_tags": [
+      "dairy_free",
       "gluten_free",
       "pescatarian",
       "vegan",
@@ -2579,6 +2603,7 @@
     "name": "Lentils and Rice with Caramelized Onions",
     "meal_type": "lunch",
     "diet_tags": [
+      "dairy_free",
       "gluten_free",
       "pescatarian",
       "vegan",
@@ -2893,6 +2918,7 @@
     "name": "Smashed Chickpea Salad Sandwiches",
     "meal_type": "lunch",
     "diet_tags": [
+      "dairy_free",
       "pescatarian"
     ],
     "servings": 4,

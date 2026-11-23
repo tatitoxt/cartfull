@@ -102,6 +102,7 @@
     "name": "Tofu Scramble Black Bean Burritos",
     "meal_type": "dinner",
     "diet_tags": [
+      "dairy_free",
       "high_protein",
       "pescatarian",
       "vegan",
@@ -200,6 +201,7 @@
     "name": "Curried Lentil Dal with Rice",
     "meal_type": "dinner",
     "diet_tags": [
+      "dairy_free",
       "gluten_free",
       "high_protein",
       "pescatarian",
@@ -318,6 +320,7 @@
       "gluten_free",
       "high_protein",
       "keto",
+      "low_carb",
       "pescatarian",
       "vegetarian"
     ],
@@ -417,6 +420,7 @@
     "name": "Peanut Tofu and Broccoli Rice Bowls",
     "meal_type": "dinner",
     "diet_tags": [
+      "dairy_free",
       "high_protein",
       "pescatarian",
       "vegan",
@@ -627,6 +631,7 @@
     "name": "Lentil Bolognese with Spaghetti",
     "meal_type": "dinner",
     "diet_tags": [
+      "dairy_free",
       "high_protein",
       "pescatarian",
       "vegan",
@@ -742,6 +747,7 @@
       "gluten_free",
       "high_protein",
       "keto",
+      "low_carb",
       "pescatarian",
       "vegetarian"
     ],
@@ -919,6 +925,7 @@
     "diet_tags": [
       "gluten_free",
       "keto",
+      "low_carb",
       "pescatarian",
       "vegetarian"
     ],
@@ -1025,7 +1032,9 @@
     "name": "Tofu Egg Roll in a Bowl",
     "meal_type": "dinner",
     "diet_tags": [
+      "dairy_free",
       "keto",
+      "low_carb",
       "pescatarian",
       "vegan",
       "vegetarian"
@@ -1119,7 +1128,9 @@
     "name": "Cauliflower Egg Fried Rice",
     "meal_type": "dinner",
     "diet_tags": [
+      "dairy_free",
       "keto",
+      "low_carb",
       "pescatarian",
       "vegetarian"
     ],
@@ -1214,6 +1225,7 @@
     "diet_tags": [
       "gluten_free",
       "keto",
+      "low_carb",
       "pescatarian",
       "vegetarian"
     ],
@@ -1308,6 +1320,7 @@
     "diet_tags": [
       "gluten_free",
       "keto",
+      "low_carb",
       "pescatarian",
       "vegetarian"
     ],
@@ -1397,6 +1410,7 @@
     "name": "Black Bean and Sweet Potato Tacos",
     "meal_type": "dinner",
     "diet_tags": [
+      "dairy_free",
       "gluten_free",
       "pescatarian",
       "vegan",
@@ -1505,10 +1519,11 @@
     "name": "Chickpea Spinach Coconut Curry",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian",
+      "dairy_free",
+      "gluten_free",
       "pescatarian",
       "vegan",
-      "gluten_free"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 25,
@@ -1603,6 +1618,7 @@
     "name": "Vegetable Egg Fried Rice",
     "meal_type": "dinner",
     "diet_tags": [
+      "dairy_free",
       "pescatarian",
       "vegetarian"
     ],
@@ -1683,6 +1699,7 @@
     "name": "Two-Bean Minestrone Soup",
     "meal_type": "dinner",
     "diet_tags": [
+      "dairy_free",
       "pescatarian",
       "vegan",
       "vegetarian"
@@ -1802,6 +1819,7 @@
     "name": "Three-Bean Vegetarian Chili",
     "meal_type": "dinner",
     "diet_tags": [
+      "dairy_free",
       "gluten_free",
       "pescatarian",
       "vegan",
@@ -2195,6 +2213,7 @@
     "name": "Crunchy Pinto Bean Taco Salad",
     "meal_type": "dinner",
     "diet_tags": [
+      "dairy_free",
       "gluten_free",
       "pescatarian",
       "vegan",
@@ -2285,6 +2304,7 @@
     "name": "Mushroom Stroganoff with Egg Noodles",
     "meal_type": "dinner",
     "diet_tags": [
+      "dairy_free",
       "pescatarian",
       "vegan",
       "vegetarian"
@@ -2400,6 +2420,7 @@
     "name": "Veggie Ramen Stir-Fry with Eggs",
     "meal_type": "dinner",
     "diet_tags": [
+      "dairy_free",
       "pescatarian",
       "vegetarian"
     ],
@@ -2598,10 +2619,11 @@
     "name": "Southwest Quinoa and Black Bean Salad",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian",
+      "dairy_free",
+      "gluten_free",
       "pescatarian",
       "vegan",
-      "gluten_free"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 30,
@@ -2710,6 +2732,7 @@
     "name": "Peanut Noodles with Cabbage and Carrots",
     "meal_type": "dinner",
     "diet_tags": [
+      "dairy_free",
       "pescatarian",
       "vegan",
       "vegetarian"
@@ -2898,6 +2921,7 @@
     "name": "Potato and Pea Curry with Naan",
     "meal_type": "dinner",
     "diet_tags": [
+      "dairy_free",
       "pescatarian",
       "vegan",
       "vegetarian"
