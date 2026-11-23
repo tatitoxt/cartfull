@@ -4,11 +4,21 @@ import { useEffect, useRef, useState } from "react";
 import { useMessages } from "@/lib/i18n/locale-provider";
 import { fill } from "@/lib/i18n/messages";
 
-/** Longest explicit duration mentioned in a step, in seconds ("5-7 minutes" → 7 × 60). */
+const RANGE = String.raw`(\d+(?:\.\d+)?)(?:\s*[-–]\s*(\d+(?:\.\d+)?))?`;
+
+/** Longest duration mentioned in a step, in seconds. Handles minutes, hours
+ * ("7 hours", "1 hour 45 minutes"), seconds and ranges ("90–105 minutes"). */
 function stepSeconds(text: string): number | null {
-  const match = text.match(/(\d+)(?:\s*[-–]\s*(\d+))?\s*(?:minutos?|minutes?|mins?|min)\b/i);
-  if (!match) return null;
-  return Math.max(Number(match[1]), Number(match[2] ?? 0)) * 60;
+  let best = 0;
+  const top = (a?: string, b?: string) => Math.max(Number(a ?? 0), Number(b ?? 0));
+  let match: RegExpExecArray | null;
+  const hours = new RegExp(`${RANGE}\\s*(?:hours?|hrs?|horas?)(?:\\s*(?:and\\s+)?${RANGE}\\s*(?:minutes?|mins?|minutos?))?`, "gi");
+  const minutes = new RegExp(`${RANGE}\\s*(?:minutes?|mins?|minutos?|min)\\b`, "gi");
+  const seconds = new RegExp(`${RANGE}\\s*(?:seconds?|secs?|segundos?)\\b`, "gi");
+  while ((match = hours.exec(text))) best = Math.max(best, top(match[1], match[2]) * 3600 + top(match[3], match[4]) * 60);
+  while ((match = minutes.exec(text))) best = Math.max(best, top(match[1], match[2]) * 60);
+  while ((match = seconds.exec(text))) best = Math.max(best, top(match[1], match[2]));
+  return best > 0 ? best : null;
 }
 
 function formatClock(totalSeconds: number): string {
@@ -23,21 +33,35 @@ function StepTimer({ seconds, resetKey }: { seconds: number; resetKey: number })
   const [left, setLeft] = useState(seconds);
   const [running, setRunning] = useState(false);
 
+  const endAt = useRef(0);
+
   useEffect(() => {
     setLeft(seconds);
     setRunning(false);
   }, [seconds, resetKey]);
 
+  // Count from a wall-clock deadline, not ticks: a suspended browser resumes
+  // with the right remaining time instead of a timer that finished late.
   useEffect(() => {
-    if (!running || left <= 0) return;
-    const id = setInterval(() => setLeft((t) => t - 1), 1000);
+    if (!running) return;
+    const id = setInterval(() => setLeft(Math.max(0, Math.round((endAt.current - Date.now()) / 1000))), 250);
     return () => clearInterval(id);
-  }, [running, left]);
+  }, [running]);
+
+  const toggle = () => {
+    if (left <= 0) {
+      setLeft(seconds);
+      setRunning(false);
+      return;
+    }
+    if (!running) endAt.current = Date.now() + left * 1000;
+    setRunning((r) => !r);
+  };
 
   return (
     <button
       type="button"
-      onClick={() => (left <= 0 ? (setLeft(seconds), setRunning(false)) : setRunning((r) => !r))}
+      onClick={toggle}
       className={`tnum mt-5 rounded-full px-5 py-3 text-xl font-semibold shadow-[inset_0_0_0_1.5px_var(--color-line)] ${
         left <= 0 ? "bg-accent text-bg" : running ? "bg-accent/15 text-accent" : "bg-surface text-fg"
       }`}
