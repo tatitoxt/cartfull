@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { loadAppState } from "@/lib/app/current";
+import { weekRecaps } from "@/lib/app/data";
 import { summarizeSavings } from "@/lib/app/savings";
 import { weekLabel } from "@/lib/app/week";
 import { money, moneyRound } from "@/lib/format";
@@ -14,11 +15,12 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function SavingsPage() {
-  const { plans, entitlement, firstId, profile } = await loadAppState("/app/savings");
+  const { session, plans, entitlement, firstId, profile } = await loadAppState("/app/savings");
   const lang = profile.lang;
   const m = MESSAGES[lang];
   const visible = entitlement.active ? plans : plans.filter((p) => p.id === firstId);
   const summary = summarizeSavings(visible);
+  const recaps = await weekRecaps(session, visible.map((p) => p.id));
 
   if (!summary.weeks.length) {
     return (
@@ -91,6 +93,26 @@ export default async function SavingsPage() {
                 </div>
               ))}
             </dl>
+            {(() => {
+              const recap = recaps.get(week.id);
+              if (!recap?.meals) return null;
+              const pills = [
+                fill(m.savings.statMeals, { count: recap.meals }),
+                ...(recap.leftovers ? [fill(m.savings.statLeftovers, { count: recap.leftovers })] : []),
+                fill(m.savings.statBought, { bought: recap.bought, total: recap.groceries }),
+                ...(recap.atHome ? [fill(m.savings.statHome, { count: recap.atHome })] : []),
+                fill(m.savings.statCart, { amount: money(plans.find((p) => p.id === week.id)?.total_cents ?? 0, lang) }),
+              ];
+              return (
+                <ul className="mt-4 flex flex-wrap gap-1.5" data-testid="week-recap">
+                  {pills.map((pill) => (
+                    <li key={pill} className="tnum rounded-pill bg-bg-deep px-2.5 py-1 text-xs font-medium text-fg-soft">
+                      {pill}
+                    </li>
+                  ))}
+                </ul>
+              );
+            })()}
             <SpendForm planId={week.id} spentCents={week.spentIsActual ? week.spentCents : null} hasReceipt={week.hasReceipt} />
           </li>
         ))}

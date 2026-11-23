@@ -128,6 +128,56 @@ export function firstPlanId(plans: PlanRow[]): string | null {
   return [...plans].sort((a, b) => a.created_at.localeCompare(b.created_at) || a.id.localeCompare(b.id))[0].id;
 }
 
+export interface WeekRecap {
+  meals: number;
+  leftovers: number;
+  groceries: number;
+  bought: number;
+  atHome: number;
+}
+
+/** Per-plan counts for the savings recap: meals, cart items and shopping progress. */
+export async function weekRecaps(session: Session, planIds: string[]): Promise<Map<string, WeekRecap>> {
+  const recaps = new Map<string, WeekRecap>();
+  if (!planIds.length) return recaps;
+  const [{ data: mealRows }, { data: itemRows }] = await Promise.all([
+    session.supabase.from("plan_meals").select("plan_id, day, slot, recipe_slug, servings, leftover").in("plan_id", planIds),
+    session.supabase.from("plan_items").select("plan_id, checked, have").in("plan_id", planIds),
+  ]);
+  const order: MealType[] = ["breakfast", "lunch", "dinner"];
+  const mealsByPlan = new Map<string, MealAssignment[]>();
+  for (const id of planIds) {
+    recaps.set(id, { meals: 0, leftovers: 0, groceries: 0, bought: 0, atHome: 0 });
+    mealsByPlan.set(id, []);
+  }
+  for (const row of mealRows ?? []) {
+    const recap = recaps.get(row.plan_id as string);
+    const recipe = recipeBySlug(row.recipe_slug as string);
+    if (!recap || !recipe) continue;
+    recap.meals += 1;
+    if (row.leftover) recap.leftovers += 1;
+    mealsByPlan.get(row.plan_id as string)!.push({
+      day: row.day as number,
+      slot: row.slot as MealType,
+      recipe,
+      servings: row.servings as number,
+      leftover: Boolean(row.leftover),
+    });
+  }
+  for (const [id, meals] of mealsByPlan) {
+    meals.sort((a, b) => a.day - b.day || order.indexOf(a.slot) - order.indexOf(b.slot));
+    // Leftover meals need no shopping; their lines are skipped by the cart.
+    recaps.get(id)!.groceries = buildCart(meals, catalog.ingredients, new Set(), new Map()).lines.length;
+  }
+  for (const row of itemRows ?? []) {
+    const recap = recaps.get(row.plan_id as string);
+    if (!recap) continue;
+    if (row.checked) recap.bought += 1;
+    if (row.have) recap.atHome += 1;
+  }
+  return recaps;
+}
+
 export async function loadPlan(
   session: Session,
   row: PlanRow,
