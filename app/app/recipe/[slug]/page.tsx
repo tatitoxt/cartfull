@@ -6,6 +6,8 @@ import { catalog, recipeBySlug } from "@/lib/catalog";
 import { recipeCentsPerServing } from "@/lib/catalog/cost";
 import { getFeedback, getProfile, requireSession } from "@/lib/app/data";
 import { RecipeFeedback } from "@/components/recipe-feedback";
+import { nutritionPerServing } from "@/lib/catalog/nutrition";
+import { fill } from "@/lib/i18n/messages";
 import { amount, ingredientName, ingredientNote, recipeText } from "@/lib/catalog/localize";
 import { moneyExact } from "@/lib/format";
 import { MESSAGES } from "@/lib/i18n/messages";
@@ -45,6 +47,15 @@ export default async function RecipePage({ params }: { params: Promise<{ slug: s
           <span className="text-fg-soft">{m.recipe.active.replace("{count}", String(recipe.active_minutes))}</span>
         )}
       </p>
+      {(() => {
+        const nutrition = nutritionPerServing(recipe);
+        return nutrition ? (
+          <p className="tnum mt-3 text-sm text-fg-soft">
+            {fill(m.recipe.nutrition, { kcal: nutrition.kcal, protein: nutrition.protein, carbs: nutrition.carbs, fat: nutrition.fat })}
+            <span className="mt-0.5 block text-xs text-fg-faint">{m.recipe.nutritionNote}</span>
+          </p>
+        ) : null;
+      })()}
       <RecipeFeedback slug={slug} initialFavorite={feedback.favorites.has(slug)} initialRating={feedback.ratings.get(slug) ?? null} />
       {recipe.equipment && recipe.equipment.length > 0 && (
         <p className="mt-3 text-sm text-fg-soft">

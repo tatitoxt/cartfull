@@ -215,6 +215,8 @@ const en = {
     rating: "Your rating",
     stars: "{count} stars",
     rateHint: "Favorites and 4-5 star recipes show up more often in your weeks; 1-2 stars show up less.",
+    nutrition: "About {kcal} kcal · {protein} g protein · {carbs} g carbs · {fat} g fat a serving",
+    nutritionNote: "Estimated from USDA data, before cooking. Check labels if numbers matter to you.",
   },
   account: {
     title: "Account",
@@ -590,6 +592,8 @@ const es: Messages = {
     rating: "Tu puntuación",
     stars: "{count} estrellas",
     rateHint: "Las favoritas y las recetas con 4-5 estrellas aparecen más seguido en tu semana; las de 1-2 estrellas, menos.",
+    nutrition: "Unas {kcal} kcal · {protein} g de proteína · {carbs} g de carbohidratos · {fat} g de grasas por porción",
+    nutritionNote: "Estimado con datos del USDA, antes de cocinar. Revisa las etiquetas si los números te importan.",
   },
   account: {
     title: "Cuenta",
