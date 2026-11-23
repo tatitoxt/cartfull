@@ -4,7 +4,8 @@
     "name": "Chilaquiles Rojos with Fried Eggs",
     "meal_type": "breakfast",
     "diet_tags": [
-      "vegetarian"
+      "vegetarian",
+      "pescatarian"
     ],
     "servings": 2,
     "prep_minutes": 15,
@@ -81,7 +82,8 @@
     "name": "Baked Berry Oatmeal",
     "meal_type": "breakfast",
     "diet_tags": [
-      "vegetarian"
+      "vegetarian",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 45,
@@ -172,7 +174,8 @@
     "name": "Banana Oat Blender Pancakes",
     "meal_type": "breakfast",
     "diet_tags": [
-      "vegetarian"
+      "vegetarian",
+      "pescatarian"
     ],
     "servings": 2,
     "prep_minutes": 20,
@@ -329,7 +332,8 @@
     "name": "Potato, Egg and Cheese Breakfast Tacos",
     "meal_type": "breakfast",
     "diet_tags": [
-      "vegetarian"
+      "vegetarian",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 25,
@@ -408,7 +412,8 @@
     "name": "Egg in a Hole Toast",
     "meal_type": "breakfast",
     "diet_tags": [
-      "vegetarian"
+      "vegetarian",
+      "pescatarian"
     ],
     "servings": 2,
     "prep_minutes": 10,
@@ -471,7 +476,8 @@
     "name": "Molletes with Pico de Gallo",
     "meal_type": "breakfast",
     "diet_tags": [
-      "vegetarian"
+      "vegetarian",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 20,
@@ -559,7 +565,8 @@
     "meal_type": "breakfast",
     "diet_tags": [
       "vegetarian",
-      "keto"
+      "keto",
+      "pescatarian"
     ],
     "servings": 2,
     "prep_minutes": 15,
@@ -638,7 +645,8 @@
     "diet_tags": [
       "vegetarian",
       "keto",
-      "high_protein"
+      "high_protein",
+      "pescatarian"
     ],
     "servings": 2,
     "prep_minutes": 10,
@@ -708,7 +716,8 @@
     "meal_type": "breakfast",
     "diet_tags": [
       "vegetarian",
-      "high_protein"
+      "high_protein",
+      "pescatarian"
     ],
     "servings": 2,
     "prep_minutes": 10,
@@ -1078,7 +1087,8 @@
     "diet_tags": [
       "vegetarian",
       "keto",
-      "high_protein"
+      "high_protein",
+      "pescatarian"
     ],
     "servings": 2,
     "prep_minutes": 15,
@@ -1559,7 +1569,8 @@
     "name": "Skillet Tuna Melts",
     "meal_type": "lunch",
     "diet_tags": [
-      "high_protein"
+      "high_protein",
+      "pescatarian"
     ],
     "servings": 2,
     "prep_minutes": 15,
@@ -2105,7 +2116,8 @@
     "meal_type": "lunch",
     "diet_tags": [
       "vegetarian",
-      "keto"
+      "keto",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 35,
@@ -2271,7 +2283,8 @@
     "name": "Tomato and Cucumber Panzanella",
     "meal_type": "lunch",
     "diet_tags": [
-      "vegetarian"
+      "vegetarian",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 30,
@@ -2358,7 +2371,8 @@
     "name": "Quinoa Tabbouleh with Chickpeas",
     "meal_type": "lunch",
     "diet_tags": [
-      "vegetarian"
+      "vegetarian",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 35,
@@ -2447,7 +2461,8 @@
     "name": "Smoky Black Bean Soup",
     "meal_type": "lunch",
     "diet_tags": [
-      "vegetarian"
+      "vegetarian",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 30,
@@ -2550,7 +2565,8 @@
     "name": "Lentils and Rice with Caramelized Onions",
     "meal_type": "lunch",
     "diet_tags": [
-      "vegetarian"
+      "vegetarian",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 50,
@@ -2629,7 +2645,8 @@
     "name": "Broccoli Cheddar Stuffed Baked Potatoes",
     "meal_type": "lunch",
     "diet_tags": [
-      "vegetarian"
+      "vegetarian",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 30,
@@ -2706,7 +2723,8 @@
     "name": "Black Bean, Rice and Cheese Burritos",
     "meal_type": "lunch",
     "diet_tags": [
-      "vegetarian"
+      "vegetarian",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 30,
@@ -2786,7 +2804,8 @@
     "meal_type": "lunch",
     "diet_tags": [
       "vegetarian",
-      "high_protein"
+      "high_protein",
+      "pescatarian"
     ],
     "servings": 2,
     "prep_minutes": 20,
@@ -2861,7 +2880,8 @@
     "name": "Smashed Chickpea Salad Sandwiches",
     "meal_type": "lunch",
     "diet_tags": [
-      "vegetarian"
+      "vegetarian",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 15,

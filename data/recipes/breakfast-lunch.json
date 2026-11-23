@@ -4,7 +4,8 @@
     "name": "Peanut Butter Banana Oatmeal",
     "meal_type": "breakfast",
     "diet_tags": [
-      "vegetarian"
+      "vegetarian",
+      "pescatarian"
     ],
     "servings": 2,
     "prep_minutes": 10,
@@ -73,7 +74,8 @@
     "name": "Apple Cinnamon Overnight Oats",
     "meal_type": "breakfast",
     "diet_tags": [
-      "vegetarian"
+      "vegetarian",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 480,
@@ -145,7 +147,8 @@
     "meal_type": "breakfast",
     "diet_tags": [
       "vegetarian",
-      "high_protein"
+      "high_protein",
+      "pescatarian"
     ],
     "servings": 2,
     "prep_minutes": 10,
@@ -206,7 +209,8 @@
     "name": "Berry Banana Yogurt Smoothies",
     "meal_type": "breakfast",
     "diet_tags": [
-      "vegetarian"
+      "vegetarian",
+      "pescatarian"
     ],
     "servings": 2,
     "prep_minutes": 5,
@@ -269,7 +273,8 @@
     "name": "Fluffy Pancakes with Maple Syrup",
     "meal_type": "breakfast",
     "diet_tags": [
-      "vegetarian"
+      "vegetarian",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 25,
@@ -352,7 +357,8 @@
     "name": "Avocado Toast with Fried Eggs",
     "meal_type": "breakfast",
     "diet_tags": [
-      "vegetarian"
+      "vegetarian",
+      "pescatarian"
     ],
     "servings": 2,
     "prep_minutes": 10,
@@ -430,7 +436,8 @@
     "meal_type": "breakfast",
     "diet_tags": [
       "vegetarian",
-      "high_protein"
+      "high_protein",
+      "pescatarian"
     ],
     "servings": 2,
     "prep_minutes": 5,
@@ -489,7 +496,8 @@
     "diet_tags": [
       "vegetarian",
       "keto",
-      "high_protein"
+      "high_protein",
+      "pescatarian"
     ],
     "servings": 2,
     "prep_minutes": 15,
@@ -566,7 +574,8 @@
     "diet_tags": [
       "vegetarian",
       "keto",
-      "high_protein"
+      "high_protein",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 50,
@@ -649,7 +658,8 @@
     "name": "Potato Pepper Breakfast Hash with Eggs",
     "meal_type": "breakfast",
     "diet_tags": [
-      "vegetarian"
+      "vegetarian",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 35,
@@ -945,7 +955,8 @@
     "name": "Cinnamon French Toast",
     "meal_type": "breakfast",
     "diet_tags": [
-      "vegetarian"
+      "vegetarian",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 20,
@@ -1088,7 +1099,8 @@
     "name": "Classic Tuna Salad Sandwiches",
     "meal_type": "lunch",
     "diet_tags": [
-      "high_protein"
+      "high_protein",
+      "pescatarian"
     ],
     "servings": 2,
     "prep_minutes": 10,
@@ -1165,7 +1177,8 @@
     "name": "Deli-Style Egg Salad Sandwiches",
     "meal_type": "lunch",
     "diet_tags": [
-      "vegetarian"
+      "vegetarian",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 25,
@@ -1336,7 +1349,8 @@
     "name": "Black Bean and Corn Quesadillas",
     "meal_type": "lunch",
     "diet_tags": [
-      "vegetarian"
+      "vegetarian",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 20,
@@ -1490,7 +1504,8 @@
     "name": "Greek Chickpea Salad",
     "meal_type": "lunch",
     "diet_tags": [
-      "vegetarian"
+      "vegetarian",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 15,
@@ -1573,7 +1588,8 @@
     "name": "Lemony Lentil Vegetable Soup",
     "meal_type": "lunch",
     "diet_tags": [
-      "vegetarian"
+      "vegetarian",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 45,
@@ -1735,7 +1751,8 @@
     "meal_type": "lunch",
     "diet_tags": [
       "keto",
-      "high_protein"
+      "high_protein",
+      "pescatarian"
     ],
     "servings": 2,
     "prep_minutes": 25,
@@ -1899,7 +1916,8 @@
     "meal_type": "lunch",
     "diet_tags": [
       "vegetarian",
-      "keto"
+      "keto",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 25,
@@ -1982,7 +2000,8 @@
     "name": "Hummus Veggie Pita Pockets",
     "meal_type": "lunch",
     "diet_tags": [
-      "vegetarian"
+      "vegetarian",
+      "pescatarian"
     ],
     "servings": 2,
     "prep_minutes": 10,
@@ -2053,7 +2072,8 @@
     "name": "Grilled Cheese with Tomato Soup",
     "meal_type": "lunch",
     "diet_tags": [
-      "vegetarian"
+      "vegetarian",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 30,
@@ -2148,7 +2168,8 @@
     "name": "Italian Veggie Pasta Salad",
     "meal_type": "lunch",
     "diet_tags": [
-      "vegetarian"
+      "vegetarian",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 25,
