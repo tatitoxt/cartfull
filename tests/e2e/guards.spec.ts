@@ -8,6 +8,18 @@ test.describe("access rules", () => {
     await expect(page.getByLabel("Email")).toBeVisible();
   });
 
+  test("the sign-in page removes pages a previous person left on the device", async ({ page }) => {
+    await page.goto("/");
+    await page.evaluate(() => navigator.serviceWorker.ready.then(() => undefined));
+    await expect.poll(() => page.evaluate(() => Boolean(navigator.serviceWorker.controller))).toBe(true);
+    await page.evaluate(async () => {
+      const cache = await caches.open("cartfull-pages-v1");
+      await cache.put("/app/list", new Response("someone else's list", { headers: { "content-type": "text/html" } }));
+    });
+    await page.goto("/login");
+    await expect.poll(() => page.evaluate(async () => Boolean(await caches.match("/app/list")))).toBe(false);
+  });
+
   test("billing endpoints refuse anonymous and unsigned requests", async ({ request }) => {
     const checkout = await request.post("/api/stripe/checkout", { form: { interval: "annual" }, maxRedirects: 0 });
     expect(checkout.status()).toBe(303);

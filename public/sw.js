@@ -2,9 +2,12 @@
  * Cartfull service worker.
  * - Build assets and icons: cache first (file names are content-hashed).
  * - Recipe photos: cache first, capped.
- * - Signed-in pages: network first, falling back to the last copy seen on this
- *   device, so the grocery list opens in a store with no signal.
- * - API, auth and non-GET requests are never touched.
+ * - The plan, the grocery list and recipes: network first, falling back to the
+ *   last copy seen on this device, so the list opens in a store with no signal.
+ *   Account and billing screens are never kept.
+ * - Kept pages are removed whenever someone signs in or out, or the sign-in
+ *   screen is shown, so they never outlive the person they belong to.
+ * - API, auth and non-GET requests are never answered from here.
  */
 const VERSION = "v1";
 const STATIC = `cartfull-static-${VERSION}`;
@@ -13,6 +16,8 @@ const PHOTOS = `cartfull-photos-${VERSION}`;
 const PHOTO_LIMIT = 80;
 const OFFLINE_URL = "/offline";
 const PRECACHE = [OFFLINE_URL, "/icons/icon-192.png", "/icons/icon.svg"];
+
+const keptOffline = (path) => path === "/app/plan" || path === "/app/list" || path.startsWith("/app/recipe/");
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
@@ -53,7 +58,7 @@ async function pageNetworkFirst(request) {
   const key = new URL(request.url).pathname;
   try {
     const response = await fetch(request);
-    if (response.ok && !response.redirected && response.headers.get("content-type")?.includes("text/html")) {
+    if (keptOffline(key) && response.ok && !response.redirected && response.headers.get("content-type")?.includes("text/html")) {
       await cache.put(key, response.clone());
     }
     return response;
@@ -62,12 +67,46 @@ async function pageNetworkFirst(request) {
   }
 }
 
+async function savePage(url) {
+  try {
+    const response = await fetch(url, { credentials: "same-origin" });
+    if (response.ok && !response.redirected && response.headers.get("content-type")?.includes("text/html")) {
+      const cache = await caches.open(PAGES);
+      await cache.put(url.pathname, response);
+    }
+  } catch {
+    // Offline or interrupted: the last saved copy stays.
+  }
+}
+
+async function publicPage(request) {
+  try {
+    const response = await fetch(request);
+    // The sign-in form only renders for someone who is signed out, so whatever
+    // the last person left on this device goes.
+    if (new URL(request.url).pathname === "/login" && response.status === 200) await caches.delete(PAGES);
+    return response;
+  } catch {
+    return (await caches.match(OFFLINE_URL)) ?? Response.error();
+  }
+}
+
+// Moving between screens inside the app does not load a new document, so the
+// app says which screen it is on and that screen is saved for offline use.
+self.addEventListener("message", (event) => {
+  const data = event.data;
+  if (data?.type !== "save-page" || typeof data.path !== "string") return;
+  const url = new URL(data.path, self.location.origin);
+  if (url.origin !== self.location.origin || !keptOffline(url.pathname)) return;
+  event.waitUntil(savePage(url));
+});
+
 self.addEventListener("fetch", (event) => {
   const { request } = event;
   const url = new URL(request.url);
 
-  if (url.origin === self.location.origin && url.pathname === "/auth/signout") {
-    // Signing out removes this person's saved pages from the device.
+  if (url.origin === self.location.origin && url.pathname.startsWith("/auth/")) {
+    // Signing in or out: whatever the last person left on this device goes.
     event.waitUntil(caches.delete(PAGES));
     return;
   }
@@ -78,7 +117,7 @@ self.addEventListener("fetch", (event) => {
     return;
   }
   if (url.origin !== self.location.origin) return;
-  if (url.pathname.startsWith("/api/") || url.pathname.startsWith("/auth/")) return;
+  if (url.pathname.startsWith("/api/")) return;
 
   if (url.pathname.startsWith("/_next/static/") || url.pathname.startsWith("/icons/")) {
     event.respondWith(cacheFirst(request, STATIC));
@@ -89,6 +128,6 @@ self.addEventListener("fetch", (event) => {
     return;
   }
   if (request.mode === "navigate") {
-    event.respondWith(fetch(request).catch(async () => (await caches.match(OFFLINE_URL)) ?? Response.error()));
+    event.respondWith(publicPage(request));
   }
 });
