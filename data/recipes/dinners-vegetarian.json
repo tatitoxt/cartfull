@@ -8,16 +8,18 @@
       "high_protein"
     ],
     "servings": 4,
-    "prep_minutes": 45,
+    "prep_minutes": 50,
     "batch_friendly": true,
     "description": "Penne baked with marinara, spinach and a creamy cottage cheese layer under melted mozzarella.",
     "steps": [
-      "Heat the oven to 400°F and boil the penne 2 minutes short of the package time, then drain.",
-      "Squeeze the thawed spinach dry and stir it into the cottage cheese with the egg, garlic, Italian seasoning, salt, pepper and half the mozzarella.",
-      "Toss the penne with the marinara and spread half in a 9x13 baking dish.",
-      "Spoon the cottage cheese mixture over the pasta and cover with the rest of the penne.",
-      "Top with the remaining mozzarella and the parmesan.",
-      "Bake 20 to 25 minutes until bubbling and golden, then rest 5 minutes before serving."
+      "Bring a large pot of water with a big pinch of salt to a boil over high heat.",
+      "Heat the oven to {400F}. Boil the penne for 2 minutes less than the package says, until bendable but still firm in the center, then drain.",
+      "While the pasta cooks, squeeze the thawed spinach in your hands over the sink until no more water runs out.",
+      "Stir the spinach into the cottage cheese with the egg, garlic, Italian seasoning, salt, pepper and half the mozzarella.",
+      "Toss the drained penne with the marinara in the pot and spread half of it in a large baking dish.",
+      "Spoon the cottage cheese mixture over the pasta in an even layer and cover with the rest of the penne.",
+      "Sprinkle the remaining mozzarella and the parmesan over the top.",
+      "Bake uncovered 20 to 25 minutes, until the sauce bubbles at the edges and the cheese is golden, then rest 5 minutes before serving."
     ],
     "ingredients": [
       {
@@ -47,12 +49,14 @@
       {
         "id": "spinach_frozen",
         "qty": 1,
-        "note": "thawed and squeezed dry"
+        "note": "thawed and squeezed dry",
+        "note_es": "descongelada y bien escurrida"
       },
       {
         "id": "garlic",
         "qty": 2,
-        "note": "minced"
+        "note": "minced",
+        "note_es": "picado fino"
       },
       {
         "id": "italian_seasoning",
@@ -67,6 +71,25 @@
         "qty": 0.25
       }
     ],
+    "name_es": "Penne al horno con queso cottage",
+    "description_es": "Penne horneado con salsa marinara, espinaca y una capa cremosa de queso cottage bajo mozzarella derretida.",
+    "steps_es": [
+      "Pon a hervir a fuego alto una olla grande de agua con una buena pizca de sal.",
+      "Precalienta el horno a {400F}. Hierve el penne 2 minutos menos de lo que indica el paquete, hasta que esté flexible pero todavía firme en el centro, y escúrrelo.",
+      "Mientras se cocina la pasta, aprieta la espinaca descongelada con las manos sobre el fregadero hasta que no suelte más agua.",
+      "Mezcla la espinaca con el queso cottage, el huevo, el ajo, el condimento italiano, la sal, la pimienta y la mitad de la mozzarella.",
+      "Revuelve el penne escurrido con la salsa marinara en la olla y extiende la mitad en una fuente grande para horno.",
+      "Reparte la mezcla de queso cottage sobre la pasta en una capa uniforme y cubre con el resto del penne.",
+      "Espolvorea encima el resto de la mozzarella y el parmesano.",
+      "Hornea sin tapar de 20 a 25 minutos, hasta que la salsa burbujee en los bordes y el queso esté dorado, y deja reposar 5 minutos antes de servir."
+    ],
+    "equipment": [
+      "stovetop",
+      "oven"
+    ],
+    "active_minutes": 15,
+    "tip": "Assemble it up to a day ahead and keep it covered in the fridge; add 10 minutes to the baking time.",
+    "tip_es": "Puedes armarlo hasta un día antes y guardarlo tapado en el refrigerador; súmale 10 minutos de horno.",
     "photo_url": "https://images.unsplash.com/photo-1522784081430-8ac6a122cbc8",
     "photo_credit": {
       "name": "Jonathan Pielmayer",
@@ -82,26 +105,29 @@
       "high_protein"
     ],
     "servings": 4,
-    "prep_minutes": 20,
+    "prep_minutes": 25,
     "batch_friendly": false,
     "description": "Spiced scrambled tofu, black beans, peppers and cheddar rolled into warm flour tortillas.",
     "steps": [
-      "Drain the tofu, pat it dry and crumble it with your hands.",
-      "Cook the onion and bell pepper in the oil over medium-high heat for 4 minutes.",
-      "Add the tofu, cumin, chili powder, turmeric and salt and cook 6 minutes, stirring, until dry and lightly browned.",
-      "Stir in the drained beans and heat through.",
-      "Warm the tortillas, fill with the scramble, cheddar and salsa, and roll up."
+      "Drain the tofu, press it between paper towels to dry it, and crumble it with your hands into pieces the size of scrambled egg.",
+      "Heat the oil in a large skillet over medium-high heat and cook the onion and bell pepper for 4 minutes, stirring, until softened.",
+      "Add the tofu, cumin, chili powder, turmeric and salt and cook 6 minutes, stirring now and then, until the tofu looks dry and lightly browned.",
+      "Stir in the drained beans and cook 2 minutes, until hot all the way through.",
+      "Warm the tortillas one at a time in a dry skillet over medium heat, about 20 seconds per side, until soft and flexible.",
+      "Spoon the scramble down the center of each tortilla, top with cheddar and salsa, fold in the sides and roll up tightly."
     ],
     "ingredients": [
       {
         "id": "tofu",
         "qty": 2,
-        "note": "firm, drained and crumbled"
+        "note": "firm, drained and crumbled",
+        "note_es": "firme, escurrido y desmenuzado"
       },
       {
         "id": "black_beans",
         "qty": 1,
-        "note": "drained and rinsed"
+        "note": "drained and rinsed",
+        "note_es": "escurridos y enjuagados"
       },
       {
         "id": "tortilla_flour",
@@ -118,12 +144,14 @@
       {
         "id": "bell_pepper",
         "qty": 1,
-        "note": "diced"
+        "note": "diced",
+        "note_es": "en cubitos"
       },
       {
         "id": "onion_yellow",
         "qty": 0.5,
-        "note": "diced"
+        "note": "diced",
+        "note_es": "en cubitos"
       },
       {
         "id": "vegetable_oil",
@@ -146,6 +174,22 @@
         "qty": 0.5
       }
     ],
+    "name_es": "Burritos de tofu revuelto y frijoles negros",
+    "description_es": "Tofu revuelto con especias, frijoles negros, pimiento y cheddar envueltos en tortillas de harina tibias.",
+    "steps_es": [
+      "Escurre el tofu, sécalo apretándolo entre toallas de papel y desmenúzalo con las manos en trozos del tamaño de huevo revuelto.",
+      "Calienta el aceite en una sartén grande a fuego medio-alto y cocina la cebolla y el pimiento 4 minutos, revolviendo, hasta que se ablanden.",
+      "Agrega el tofu, el comino, el chile en polvo, la cúrcuma y la sal y cocina 6 minutos, revolviendo de vez en cuando, hasta que el tofu se vea seco y apenas dorado.",
+      "Incorpora los frijoles escurridos y cocina 2 minutos, hasta que estén bien calientes.",
+      "Calienta las tortillas una por una en una sartén seca a fuego medio, unos 20 segundos por lado, hasta que estén blandas y flexibles.",
+      "Pon el revuelto en el centro de cada tortilla, agrega el cheddar y la salsa, dobla los lados hacia adentro y enrolla bien apretado."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 20,
+    "tip": "Wrap leftover burritos in foil and refrigerate up to 3 days; reheat in a dry skillet over medium heat until crisp.",
+    "tip_es": "Envuelve los burritos que sobren en papel aluminio y guárdalos hasta 3 días en el refrigerador; recaliéntalos en sartén seca a fuego medio.",
     "photo_url": "https://images.unsplash.com/photo-1566740933430-b5e70b06d2d5",
     "photo_credit": {
       "name": "Creative Headline",
@@ -161,22 +205,24 @@
       "high_protein"
     ],
     "servings": 4,
-    "prep_minutes": 40,
+    "prep_minutes": 45,
     "batch_friendly": true,
     "description": "Lentils simmered soft with tomatoes, ginger and curry spices, served over rice with cool yogurt.",
     "steps": [
-      "Cook the onion in the oil over medium heat for 5 minutes, then stir in the garlic, ginger, curry powder, cumin and turmeric for 1 minute.",
-      "Add the rinsed lentils, tomatoes, broth, 3 cups of water and the salt.",
-      "Simmer partly covered for 25 to 30 minutes, stirring now and then, until the lentils are soft and thick.",
-      "Meanwhile cook the rice in 3 cups of water, covered, for 18 minutes.",
-      "Mash some of the lentils against the pot to thicken the dal.",
-      "Serve over rice with a spoonful of yogurt and chopped cilantro."
+      "Heat the oil in a large pot over medium heat and cook the onion for 5 minutes, stirring, until soft and translucent.",
+      "Stir in the garlic, ginger, curry powder, cumin and turmeric and cook 1 minute, until fragrant.",
+      "Add the rinsed lentils, tomatoes, broth and salt, then pour in enough water to cover everything by about two finger widths.",
+      "Bring to a boil over high heat, then lower to medium-low and simmer partly covered for 25 to 30 minutes, stirring now and then, until the lentils are soft and the dal is thick.",
+      "Meanwhile, put the rice in a saucepan with twice as much water as rice, bring to a boil, cover and cook over low heat for 18 minutes, until the water is absorbed.",
+      "Mash some of the lentils against the side of the pot with a spoon to make the dal creamier, adding a splash of water if it is too thick.",
+      "Spoon the dal over the rice and top with the yogurt and chopped cilantro."
     ],
     "ingredients": [
       {
         "id": "lentils",
         "qty": 2,
-        "note": "rinsed"
+        "note": "rinsed",
+        "note_es": "enjuagadas"
       },
       {
         "id": "rice_white",
@@ -185,17 +231,20 @@
       {
         "id": "onion_yellow",
         "qty": 1,
-        "note": "diced"
+        "note": "diced",
+        "note_es": "en cubitos"
       },
       {
         "id": "garlic",
         "qty": 4,
-        "note": "minced"
+        "note": "minced",
+        "note_es": "picado fino"
       },
       {
         "id": "ginger",
         "qty": 1,
-        "note": "grated"
+        "note": "grated",
+        "note_es": "rallado"
       },
       {
         "id": "diced_tomatoes",
@@ -224,7 +273,8 @@
       {
         "id": "cilantro",
         "qty": 0.5,
-        "note": "chopped"
+        "note": "chopped",
+        "note_es": "picado"
       },
       {
         "id": "vegetable_oil",
@@ -235,6 +285,23 @@
         "qty": 1
       }
     ],
+    "name_es": "Dal de lentejas al curry con arroz",
+    "description_es": "Lentejas cocidas hasta quedar suaves con tomate, jengibre y especias de curry, servidas sobre arroz con yogur fresco.",
+    "steps_es": [
+      "Calienta el aceite en una olla grande a fuego medio y cocina la cebolla 5 minutos, revolviendo, hasta que esté blanda y transparente.",
+      "Agrega el ajo, el jengibre, el curry en polvo, el comino y la cúrcuma y cocina 1 minuto, hasta que suelten su aroma.",
+      "Añade las lentejas enjuagadas, los tomates, el caldo y la sal, y vierte agua suficiente para cubrir todo por unos dos dedos.",
+      "Lleva a hervor a fuego alto, baja a fuego medio-bajo y cocina semitapado de 25 a 30 minutos, revolviendo de vez en cuando, hasta que las lentejas estén blandas y el dal espeso.",
+      "Mientras tanto, pon el arroz en una olla con el doble de agua que de arroz, lleva a hervor, tapa y cocina a fuego bajo 18 minutos, hasta que se absorba el agua.",
+      "Aplasta parte de las lentejas contra la pared de la olla con una cuchara para que el dal quede más cremoso, y agrega un chorrito de agua si está muy espeso.",
+      "Sirve el dal sobre el arroz con el yogur y el cilantro picado encima."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 15,
+    "tip": "Dal thickens as it sits, so thin leftovers with a little water. It keeps 4 days in the fridge or 3 months in the freezer.",
+    "tip_es": "El dal se espesa al reposar; aligera las sobras con un poco de agua. Dura 4 días en el refrigerador o 3 meses en el congelador.",
     "photo_url": "https://images.unsplash.com/photo-1714062105923-5cb2a3a07499",
     "photo_credit": {
       "name": "Joanna Stołowicz",
@@ -251,16 +318,18 @@
       "high_protein"
     ],
     "servings": 4,
-    "prep_minutes": 30,
+    "prep_minutes": 35,
     "batch_friendly": false,
     "description": "A thick baked egg frittata packed with spinach, cottage cheese, feta and cheddar.",
     "steps": [
-      "Heat the oven to 400°F.",
-      "Cook the onion in the butter and oil in a 12-inch oven-safe skillet for 4 minutes, then add the garlic and spinach and stir until wilted.",
-      "Whisk the eggs with the cottage cheese, cheddar, salt and pepper.",
-      "Pour the eggs over the spinach, stir once and scatter the feta on top.",
-      "Cook 2 minutes on the stove, then bake 14 to 16 minutes until set and puffed.",
-      "Rest 5 minutes and cut into wedges."
+      "Heat the oven to {400F}.",
+      "Melt the butter with the oil in a large oven-safe skillet over medium heat and cook the onion for 4 minutes, until soft.",
+      "Add the garlic, then the spinach a handful at a time, and stir 2 minutes, until the spinach is wilted and the pan is nearly dry.",
+      "Whisk the eggs in a bowl with the cottage cheese, cheddar, salt and pepper until combined.",
+      "Pour the eggs over the spinach, stir once to spread everything out and scatter the feta on top.",
+      "Cook 2 minutes without stirring, until the edges begin to set, then move the skillet to the oven.",
+      "Bake 14 to 16 minutes, until puffed and the center no longer jiggles when you shake the pan.",
+      "Rest 5 minutes, then cut into wedges; use an oven mitt, because the handle stays hot."
     ],
     "ingredients": [
       {
@@ -274,7 +343,8 @@
       {
         "id": "feta",
         "qty": 4,
-        "note": "crumbled"
+        "note": "crumbled",
+        "note_es": "desmenuzado"
       },
       {
         "id": "cheddar",
@@ -287,12 +357,14 @@
       {
         "id": "onion_yellow",
         "qty": 0.5,
-        "note": "diced"
+        "note": "diced",
+        "note_es": "en cubitos"
       },
       {
         "id": "garlic",
         "qty": 2,
-        "note": "minced"
+        "note": "minced",
+        "note_es": "picado fino"
       },
       {
         "id": "butter",
@@ -311,6 +383,25 @@
         "qty": 0.25
       }
     ],
+    "name_es": "Frittata de espinaca y feta al horno",
+    "description_es": "Una frittata gruesa de huevo al horno, cargada de espinaca, queso cottage, feta y cheddar.",
+    "steps_es": [
+      "Precalienta el horno a {400F}.",
+      "Derrite la mantequilla con el aceite en una sartén grande apta para horno a fuego medio y cocina la cebolla 4 minutos, hasta que esté blanda.",
+      "Agrega el ajo y luego la espinaca por puñados, y revuelve 2 minutos, hasta que la espinaca se reduzca y la sartén esté casi seca.",
+      "Bate los huevos en un tazón con el queso cottage, el cheddar, la sal y la pimienta hasta integrar.",
+      "Vierte los huevos sobre la espinaca, revuelve una vez para distribuir todo y esparce el feta por encima.",
+      "Cocina 2 minutos sin revolver, hasta que los bordes empiecen a cuajar, y pasa la sartén al horno.",
+      "Hornea de 14 a 16 minutos, hasta que se infle y el centro ya no tiemble al mover la sartén.",
+      "Deja reposar 5 minutos y corta en porciones triangulares; usa un guante de cocina, porque el mango sigue caliente."
+    ],
+    "equipment": [
+      "stovetop",
+      "oven"
+    ],
+    "active_minutes": 12,
+    "tip": "Good cold or at room temperature; leftover wedges keep 3 days in the fridge and make an easy lunch.",
+    "tip_es": "También es rica fría o a temperatura ambiente; las porciones que sobren duran 3 días en el refrigerador y sirven de almuerzo.",
     "photo_url": "https://images.unsplash.com/photo-1607877200978-3cab430e00cd",
     "photo_credit": {
       "name": "Carlos Perales",
@@ -330,24 +421,26 @@
     "batch_friendly": false,
     "description": "Crisp pan-fried tofu and broccoli over rice with a quick peanut-soy sauce.",
     "steps": [
-      "Cook the rice in 3 cups of water, covered, for 18 minutes.",
-      "Press the tofu dry, cut it into cubes and toss with the cornstarch.",
-      "Fry the tofu in the oil over medium-high heat for 8 to 10 minutes, turning, until golden, then set aside.",
-      "Add the broccoli florets and a splash of water to the pan, cover and steam 4 minutes.",
-      "Whisk the peanut butter, soy sauce, honey, vinegar, sriracha, garlic, ginger and 1/4 cup hot water until smooth.",
-      "Return the tofu to the pan, pour in the sauce and toss for 1 minute.",
-      "Serve over rice topped with chopped peanuts and green onion."
+      "Put the rice in a saucepan with twice as much water as rice, bring to a boil, cover and cook over low heat for 18 minutes, until the water is absorbed.",
+      "Press the tofu between paper towels to dry it, cut it into bite-size cubes and toss with the cornstarch until coated.",
+      "Heat the oil in a large nonstick skillet over medium-high heat and fry the tofu 8 to 10 minutes, turning every couple of minutes, until golden and crisp on most sides; move it to a plate.",
+      "Add the broccoli florets and a splash of water to the same pan, cover and steam over medium heat for 4 minutes, until bright green and just tender.",
+      "Whisk the peanut butter, soy sauce, honey, vinegar, sriracha, garlic and ginger with a few spoonfuls of hot water until smooth and pourable.",
+      "Return the tofu to the pan, pour in the sauce and toss over low heat for 1 minute, until everything is coated and hot.",
+      "Serve over the rice, topped with the chopped peanuts and green onion."
     ],
     "ingredients": [
       {
         "id": "tofu",
         "qty": 2,
-        "note": "extra firm, pressed and cubed"
+        "note": "extra firm, pressed and cubed",
+        "note_es": "extra firme, prensado y en cubos"
       },
       {
         "id": "broccoli",
         "qty": 2,
-        "note": "cut into florets"
+        "note": "cut into florets",
+        "note_es": "en ramitos"
       },
       {
         "id": "rice_white",
@@ -376,12 +469,14 @@
       {
         "id": "garlic",
         "qty": 2,
-        "note": "minced"
+        "note": "minced",
+        "note_es": "picado fino"
       },
       {
         "id": "ginger",
         "qty": 1,
-        "note": "grated"
+        "note": "grated",
+        "note_es": "rallado"
       },
       {
         "id": "cornstarch",
@@ -394,14 +489,33 @@
       {
         "id": "peanuts",
         "qty": 0.25,
-        "note": "chopped"
+        "note": "chopped",
+        "note_es": "picado"
       },
       {
         "id": "green_onion",
         "qty": 0.5,
-        "note": "sliced"
+        "note": "sliced",
+        "note_es": "en rodajas finas"
       }
     ],
+    "name_es": "Bowls de arroz con tofu, brócoli y salsa de maní",
+    "description_es": "Tofu dorado y crujiente con brócoli sobre arroz, con una salsa rápida de maní y soya.",
+    "steps_es": [
+      "Pon el arroz en una olla con el doble de agua que de arroz, lleva a hervor, tapa y cocina a fuego bajo 18 minutos, hasta que se absorba el agua.",
+      "Seca el tofu apretándolo entre toallas de papel, córtalo en cubos de un bocado y mézclalo con la fécula de maíz hasta cubrirlo.",
+      "Calienta el aceite en una sartén antiadherente grande a fuego medio-alto y fríe el tofu de 8 a 10 minutos, volteándolo cada par de minutos, hasta que esté dorado y crujiente por casi todos los lados; pásalo a un plato.",
+      "Agrega los ramitos de brócoli y un chorrito de agua a la misma sartén, tapa y cocina al vapor a fuego medio 4 minutos, hasta que estén verde brillante y apenas tiernos.",
+      "Bate la mantequilla de maní, la salsa de soya, la miel, el vinagre, la sriracha, el ajo y el jengibre con unas cucharadas de agua caliente hasta obtener una salsa lisa y fluida.",
+      "Devuelve el tofu a la sartén, vierte la salsa y mezcla a fuego bajo 1 minuto, hasta que todo esté cubierto y caliente.",
+      "Sirve sobre el arroz con el maní picado y la cebolla verde encima."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 22,
+    "tip": "No sriracha? Use a pinch of red pepper flakes, or leave the heat out for kids.",
+    "tip_es": "¿No tienes sriracha? Usa una pizca de hojuelas de chile, o no le pongas picante si comen niños.",
     "photo_url": "https://images.unsplash.com/photo-1631255325918-1ca2886508a5",
     "photo_credit": {
       "name": "Bakd&Raw by Karolin Baitinger",
@@ -417,16 +531,17 @@
       "high_protein"
     ],
     "servings": 4,
-    "prep_minutes": 40,
+    "prep_minutes": 45,
     "batch_friendly": true,
     "description": "Corn tortillas rolled around black beans, corn and cheddar, baked under red enchilada sauce.",
     "steps": [
-      "Heat the oven to 400°F.",
-      "Roughly mash the drained beans with the corn, onion, cumin, chili powder and half the cheddar.",
-      "Warm the tortillas in the microwave under a damp towel so they bend without cracking.",
-      "Spread a little sauce in a 9x13 dish, fill and roll the tortillas and set them seam side down.",
-      "Pour the remaining sauce over the top and cover with the rest of the cheddar.",
-      "Bake 20 minutes until bubbling, then top with yogurt and cilantro."
+      "Heat the oven to {400F}. Wrap the tortillas in foil and put them in the oven for 8 minutes while it heats, until soft enough to bend without cracking.",
+      "In a bowl, roughly mash the drained beans with a fork, leaving some whole, then stir in the corn, onion, cumin, chili powder and half the cheddar.",
+      "Spread a thin layer of enchilada sauce over the bottom of a large baking dish.",
+      "Spoon a line of filling down the center of each warm tortilla, roll it up and set it seam side down in the dish, packing the rolls snugly.",
+      "Pour the remaining sauce over the top, covering the ends of the tortillas so they do not dry out, and sprinkle with the rest of the cheddar.",
+      "Bake uncovered 20 minutes, until the sauce bubbles and the cheese is melted and starting to brown.",
+      "Rest 5 minutes, then top with spoonfuls of yogurt and the chopped cilantro."
     ],
     "ingredients": [
       {
@@ -436,7 +551,8 @@
       {
         "id": "black_beans",
         "qty": 2,
-        "note": "drained and rinsed"
+        "note": "drained and rinsed",
+        "note_es": "escurridos y enjuagados"
       },
       {
         "id": "cheddar",
@@ -453,7 +569,8 @@
       {
         "id": "onion_yellow",
         "qty": 0.5,
-        "note": "finely diced"
+        "note": "finely diced",
+        "note_es": "picada fina"
       },
       {
         "id": "cumin",
@@ -470,9 +587,27 @@
       {
         "id": "cilantro",
         "qty": 0.5,
-        "note": "chopped"
+        "note": "chopped",
+        "note_es": "picado"
       }
     ],
+    "name_es": "Enchiladas de frijoles negros y cheddar",
+    "description_es": "Tortillas de maíz rellenas de frijoles negros, maíz y cheddar, horneadas bajo salsa roja para enchiladas.",
+    "steps_es": [
+      "Precalienta el horno a {400F}. Envuelve las tortillas en papel aluminio y ponlas en el horno 8 minutos mientras calienta, hasta que se doblen sin romperse.",
+      "En un tazón, aplasta un poco los frijoles escurridos con un tenedor, dejando algunos enteros, y mezcla con el maíz, la cebolla, el comino, el chile en polvo y la mitad del cheddar.",
+      "Extiende una capa fina de salsa para enchiladas en el fondo de una fuente grande para horno.",
+      "Pon una línea de relleno en el centro de cada tortilla tibia, enróllala y acomódala en la fuente con la unión hacia abajo, bien juntas.",
+      "Vierte el resto de la salsa por encima, cubriendo las puntas de las tortillas para que no se sequen, y espolvorea el resto del cheddar.",
+      "Hornea sin tapar 20 minutos, hasta que la salsa burbujee y el queso esté derretido y empiece a dorarse.",
+      "Deja reposar 5 minutos y sirve con cucharadas de yogur y el cilantro picado encima."
+    ],
+    "equipment": [
+      "oven"
+    ],
+    "active_minutes": 18,
+    "tip": "Freeze baked enchiladas in portions for up to 2 months; reheat covered at {350F} until hot in the center.",
+    "tip_es": "Congela las enchiladas ya horneadas en porciones hasta 2 meses; recaliéntalas tapadas a {350F} hasta que el centro esté caliente.",
     "photo_url": "https://images.unsplash.com/photo-1534352956036-cd81e27dd615",
     "photo_credit": {
       "name": "Alexandra Golovac",
@@ -488,22 +623,25 @@
       "high_protein"
     ],
     "servings": 4,
-    "prep_minutes": 45,
+    "prep_minutes": 50,
     "batch_friendly": true,
     "description": "A thick tomato and lentil ragu with carrot and celery, tossed with spaghetti and parmesan.",
     "steps": [
-      "Cook the onion, carrot and celery in the oil over medium heat for 6 minutes.",
-      "Stir in the garlic, tomato paste and Italian seasoning for 1 minute.",
-      "Add the lentils, crushed tomatoes, broth, salt and pepper and simmer covered for 30 minutes until the lentils are tender.",
-      "Boil the spaghetti until al dente and drain, saving a cup of the water.",
-      "Toss the spaghetti with the sauce, loosening with pasta water as needed.",
-      "Serve with parmesan."
+      "Heat the oil in a large pot over medium heat and cook the onion, carrot and celery for 6 minutes, stirring, until soft.",
+      "Stir in the garlic, tomato paste and Italian seasoning and cook 1 minute, until the paste darkens.",
+      "Add the rinsed lentils, crushed tomatoes, broth, salt and pepper and bring to a boil over high heat.",
+      "Lower to medium-low, cover and simmer 30 minutes, stirring every 10 minutes, until the lentils are tender and the sauce is thick; add a splash of water if it starts to stick.",
+      "When the sauce has 15 minutes left, bring a large pot of water to a boil over high heat and cook the spaghetti as the package says, until tender but still firm to the bite.",
+      "Scoop out a mugful of the cooking water, then drain the spaghetti.",
+      "Toss the spaghetti with the sauce over low heat for 1 minute, adding cooking water a splash at a time until the sauce clings to the noodles.",
+      "Serve sprinkled with the parmesan."
     ],
     "ingredients": [
       {
         "id": "lentils",
         "qty": 1.25,
-        "note": "rinsed"
+        "note": "rinsed",
+        "note_es": "enjuagadas"
       },
       {
         "id": "pasta_spaghetti",
@@ -516,22 +654,26 @@
       {
         "id": "onion_yellow",
         "qty": 1,
-        "note": "finely diced"
+        "note": "finely diced",
+        "note_es": "picada fina"
       },
       {
         "id": "carrot",
         "qty": 0.5,
-        "note": "finely diced"
+        "note": "finely diced",
+        "note_es": "en cubitos pequeños"
       },
       {
         "id": "celery",
         "qty": 2,
-        "note": "finely diced"
+        "note": "finely diced",
+        "note_es": "en cubitos pequeños"
       },
       {
         "id": "garlic",
         "qty": 4,
-        "note": "minced"
+        "note": "minced",
+        "note_es": "picado fino"
       },
       {
         "id": "tomato_paste",
@@ -562,6 +704,24 @@
         "qty": 0.5
       }
     ],
+    "name_es": "Espagueti con boloñesa de lentejas",
+    "description_es": "Un ragú espeso de tomate y lentejas con zanahoria y apio, mezclado con espagueti y parmesano.",
+    "steps_es": [
+      "Calienta el aceite en una olla grande a fuego medio y cocina la cebolla, la zanahoria y el apio 6 minutos, revolviendo, hasta que estén blandos.",
+      "Agrega el ajo, la pasta de tomate y el condimento italiano y cocina 1 minuto, hasta que la pasta de tomate se oscurezca.",
+      "Añade las lentejas enjuagadas, los tomates triturados, el caldo, la sal y la pimienta y lleva a hervor a fuego alto.",
+      "Baja a fuego medio-bajo, tapa y cocina 30 minutos, revolviendo cada 10 minutos, hasta que las lentejas estén tiernas y la salsa espesa; agrega un chorrito de agua si empieza a pegarse.",
+      "Cuando a la salsa le falten 15 minutos, pon a hervir una olla grande de agua a fuego alto y cocina el espagueti según el paquete, hasta que esté tierno pero firme al morderlo.",
+      "Aparta una taza del agua de cocción y escurre el espagueti.",
+      "Mezcla el espagueti con la salsa a fuego bajo 1 minuto, agregando agua de cocción poco a poco hasta que la salsa se pegue a la pasta.",
+      "Sirve con el parmesano espolvoreado."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 20,
+    "tip": "The sauce freezes well for 3 months, so double it and cook fresh pasta the night you serve it.",
+    "tip_es": "La salsa se congela bien hasta 3 meses: haz el doble y cocina pasta fresca el día que la sirvas.",
     "photo_url": "https://images.unsplash.com/photo-1562370345-d64b69d8f824",
     "photo_credit": {
       "name": "Paula Hayes",
@@ -578,22 +738,25 @@
       "high_protein"
     ],
     "servings": 4,
-    "prep_minutes": 60,
+    "prep_minutes": 70,
     "batch_friendly": true,
     "description": "Roasted zucchini planks stand in for noodles, layered with cottage cheese, marinara and mozzarella.",
     "steps": [
-      "Heat the oven to 425°F, slice the zucchini lengthwise into 1/4-inch planks, salt them and roast on two sheet pans for 12 minutes.",
-      "Blot the zucchini dry with paper towels and lower the oven to 375°F.",
-      "Mix the cottage cheese with the egg, garlic, Italian seasoning, half the parmesan and half the mozzarella.",
-      "Layer a little marinara, zucchini, cottage cheese mixture and more marinara in an 8x8 dish, repeating twice.",
+      "Heat the oven to {425F} and line two sheet pans with parchment paper.",
+      "Slice the zucchini lengthwise into thin planks, about as thick as a pencil, lay them on the pans in one layer and sprinkle with the salt.",
+      "Roast 12 minutes, until the planks are limp and starting to brown at the edges, then press them between paper towels to blot away the moisture.",
+      "Lower the oven to {375F}.",
+      "Mix the cottage cheese with the egg, garlic, Italian seasoning, pepper, half the parmesan and half the mozzarella.",
+      "Spread a thin layer of marinara in a medium square baking dish, then add a layer of zucchini, a third of the cottage cheese mixture and a little more marinara; repeat twice more.",
       "Top with the remaining mozzarella and parmesan.",
-      "Bake 30 minutes until browned, then rest 10 minutes before slicing."
+      "Bake uncovered 30 minutes, until bubbling and browned on top, then rest 10 minutes so the slices hold together."
     ],
     "ingredients": [
       {
         "id": "zucchini",
         "qty": 4,
-        "note": "sliced lengthwise into planks"
+        "note": "sliced lengthwise into planks",
+        "note_es": "en láminas a lo largo"
       },
       {
         "id": "cottage_cheese",
@@ -618,7 +781,8 @@
       {
         "id": "garlic",
         "qty": 2,
-        "note": "minced"
+        "note": "minced",
+        "note_es": "picado fino"
       },
       {
         "id": "italian_seasoning",
@@ -633,6 +797,24 @@
         "qty": 0.25
       }
     ],
+    "name_es": "Lasaña de calabacín y queso cottage",
+    "description_es": "Láminas de calabacín asado en lugar de pasta, en capas con queso cottage, salsa marinara y mozzarella.",
+    "steps_es": [
+      "Precalienta el horno a {425F} y forra dos bandejas para horno con papel para hornear.",
+      "Corta el calabacín a lo largo en láminas finas, del grosor de un lápiz, acomódalas en las bandejas en una sola capa y espolvoréalas con la sal.",
+      "Hornea 12 minutos, hasta que las láminas estén blandas y empiecen a dorarse en los bordes, y sécalas apretándolas entre toallas de papel.",
+      "Baja el horno a {375F}.",
+      "Mezcla el queso cottage con el huevo, el ajo, el condimento italiano, la pimienta, la mitad del parmesano y la mitad de la mozzarella.",
+      "Extiende una capa fina de salsa marinara en una fuente cuadrada mediana para horno, y agrega una capa de calabacín, un tercio de la mezcla de queso cottage y un poco más de salsa; repite dos veces más.",
+      "Cubre con el resto de la mozzarella y del parmesano.",
+      "Hornea sin tapar 30 minutos, hasta que burbujee y esté dorada por encima, y deja reposar 10 minutos para que las porciones no se desarmen."
+    ],
+    "equipment": [
+      "oven"
+    ],
+    "active_minutes": 20,
+    "tip": "Do not skip blotting the zucchini, or the lasagna turns watery. Leftovers keep 4 days in the fridge.",
+    "tip_es": "No te saltes el secado del calabacín, o la lasaña queda aguada. Las sobras duran 4 días en el refrigerador.",
     "photo_url": "https://images.unsplash.com/photo-1632229095740-8c75082087c5",
     "photo_credit": {
       "name": "Moira Nazzari",
@@ -648,15 +830,16 @@
       "high_protein"
     ],
     "servings": 4,
-    "prep_minutes": 20,
+    "prep_minutes": 25,
     "batch_friendly": false,
     "description": "Penne and peas in a creamy garlic parmesan sauce made with Greek yogurt instead of cream.",
     "steps": [
-      "Boil the penne until al dente, adding the peas for the last 2 minutes.",
-      "Save a cup of the pasta water, then drain.",
-      "Melt the butter in the empty pot over low heat and cook the garlic for 1 minute.",
-      "Take the pot off the heat and whisk in the yogurt, milk, parmesan, salt and pepper.",
-      "Add the pasta and peas and toss, loosening with pasta water until the sauce coats the penne."
+      "Bring a large pot of water to a boil over high heat and cook the penne as the package says, until tender but still firm to the bite.",
+      "Add the frozen peas to the pot for the last 2 minutes of cooking.",
+      "Scoop out a mugful of the cooking water, then drain the pasta and peas.",
+      "Melt the butter in the empty pot over low heat and cook the garlic 1 minute, until fragrant but not browned.",
+      "Take the pot off the heat and whisk in the yogurt, milk, parmesan, salt and pepper until smooth; the yogurt curdles if it boils.",
+      "Add the pasta and peas and toss, adding cooking water a splash at a time, until the sauce is creamy and coats the penne. Serve right away."
     ],
     "ingredients": [
       {
@@ -678,7 +861,8 @@
       {
         "id": "garlic",
         "qty": 3,
-        "note": "minced"
+        "note": "minced",
+        "note_es": "picado fino"
       },
       {
         "id": "butter",
@@ -697,6 +881,22 @@
         "qty": 0.5
       }
     ],
+    "name_es": "Penne Alfredo de yogur griego con arvejas",
+    "description_es": "Penne y arvejas en una salsa cremosa de ajo y parmesano hecha con yogur griego en lugar de crema.",
+    "steps_es": [
+      "Pon a hervir una olla grande de agua a fuego alto y cocina el penne según el paquete, hasta que esté tierno pero firme al morderlo.",
+      "Agrega las arvejas congeladas a la olla los últimos 2 minutos de cocción.",
+      "Aparta una taza del agua de cocción y escurre la pasta con las arvejas.",
+      "Derrite la mantequilla en la olla vacía a fuego bajo y cocina el ajo 1 minuto, hasta que suelte su aroma sin dorarse.",
+      "Retira la olla del fuego e incorpora el yogur, la leche, el parmesano, la sal y la pimienta batiendo hasta que quede liso; el yogur se corta si hierve.",
+      "Agrega la pasta y las arvejas y mezcla, añadiendo agua de cocción poco a poco, hasta que la salsa esté cremosa y cubra el penne. Sirve enseguida."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 10,
+    "tip": "Reheat leftovers gently over low heat with a splash of milk; high heat makes the yogurt sauce grainy.",
+    "tip_es": "Recalienta las sobras a fuego bajo con un chorrito de leche; el fuego alto corta la salsa de yogur.",
     "photo_url": "https://images.unsplash.com/photo-1625128726788-3fee36746aaa",
     "photo_credit": {
       "name": "Bakd&Raw by Karolin Baitinger",
@@ -716,12 +916,12 @@
     "batch_friendly": false,
     "description": "Eggs poached in a smoky tomato and pepper sauce, finished with crumbled feta.",
     "steps": [
-      "Cook the onion and bell pepper in the oil in a large skillet over medium heat for 6 minutes.",
-      "Stir in the garlic, tomato paste, cumin, smoked paprika and pepper flakes for 1 minute.",
-      "Add the tomatoes and salt and simmer 8 minutes until slightly thickened.",
-      "Make 8 wells in the sauce and crack an egg into each.",
-      "Cover and cook 5 to 7 minutes until the whites are set.",
-      "Top with feta and cilantro."
+      "Heat the oil in a large skillet over medium heat and cook the onion and bell pepper for 6 minutes, stirring, until soft.",
+      "Stir in the garlic, tomato paste, cumin, smoked paprika and red pepper flakes and cook 1 minute, until fragrant.",
+      "Add the tomatoes with their juice and the salt and simmer 8 minutes, stirring now and then, until the sauce is thick enough to hold a line when you drag a spoon through it.",
+      "With the back of a spoon, make a well in the sauce for each egg and crack an egg into each one.",
+      "Cover and cook over medium-low heat for 5 to 7 minutes, until the whites are set and the yolks are still soft.",
+      "Scatter the feta and cilantro over the top and serve straight from the skillet."
     ],
     "ingredients": [
       {
@@ -735,17 +935,20 @@
       {
         "id": "bell_pepper",
         "qty": 1,
-        "note": "diced"
+        "note": "diced",
+        "note_es": "en cubitos"
       },
       {
         "id": "onion_yellow",
         "qty": 1,
-        "note": "diced"
+        "note": "diced",
+        "note_es": "en cubitos"
       },
       {
         "id": "garlic",
         "qty": 3,
-        "note": "minced"
+        "note": "minced",
+        "note_es": "picado fino"
       },
       {
         "id": "tomato_paste",
@@ -770,18 +973,36 @@
       {
         "id": "feta",
         "qty": 3,
-        "note": "crumbled"
+        "note": "crumbled",
+        "note_es": "desmenuzado"
       },
       {
         "id": "cilantro",
         "qty": 0.25,
-        "note": "chopped"
+        "note": "chopped",
+        "note_es": "picado"
       },
       {
         "id": "salt",
         "qty": 0.5
       }
     ],
+    "name_es": "Shakshuka en sartén con feta",
+    "description_es": "Huevos cocidos en una salsa ahumada de tomate y pimiento, terminados con queso feta desmenuzado.",
+    "steps_es": [
+      "Calienta el aceite en una sartén grande a fuego medio y cocina la cebolla y el pimiento 6 minutos, revolviendo, hasta que estén blandos.",
+      "Agrega el ajo, la pasta de tomate, el comino, el pimentón ahumado y las hojuelas de chile y cocina 1 minuto, hasta que suelten su aroma.",
+      "Añade los tomates con su jugo y la sal y cocina a fuego suave 8 minutos, revolviendo de vez en cuando, hasta que la salsa espese y quede un surco al pasar la cuchara.",
+      "Con el dorso de una cuchara, haz un hueco en la salsa para cada huevo y rompe un huevo en cada uno.",
+      "Tapa y cocina a fuego medio-bajo de 5 a 7 minutos, hasta que las claras estén cuajadas y las yemas todavía blandas.",
+      "Esparce el feta y el cilantro por encima y sirve directo de la sartén."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 12,
+    "tip": "The sauce can be made 3 days ahead; reheat it to a simmer and add the eggs just before eating.",
+    "tip_es": "La salsa se puede preparar hasta 3 días antes; caliéntala hasta que hierva suave y agrega los huevos justo antes de comer.",
     "photo_url": "https://images.unsplash.com/photo-1582492710145-d723e0a219f8",
     "photo_credit": {
       "name": "amirali mirhashemian",
@@ -801,18 +1022,19 @@
     "batch_friendly": false,
     "description": "Crumbled tofu, cabbage and scrambled egg stir-fried with ginger, garlic and soy sauce.",
     "steps": [
-      "Press the tofu dry and crumble it into bite-size pieces.",
-      "Brown the tofu in the vegetable oil over high heat for 6 minutes, then push it to one side.",
-      "Scramble the eggs in the empty side of the pan and break them up.",
-      "Add the garlic, ginger and coleslaw mix and stir-fry 3 to 4 minutes until the cabbage just wilts.",
-      "Stir in the soy sauce, vinegar and sesame oil.",
-      "Serve topped with green onion and a drizzle of sriracha."
+      "Press the tofu between paper towels to dry it and crumble it into bite-size pieces.",
+      "Heat the vegetable oil in a large skillet or wok over high heat and cook the tofu 6 minutes, stirring only now and then, until browned in spots.",
+      "Push the tofu to one side, crack the eggs into the empty side and stir them 1 to 2 minutes, until just set, then break them into small pieces.",
+      "Add the garlic, ginger and coleslaw mix and stir-fry 3 to 4 minutes, until the cabbage wilts but still has some crunch.",
+      "Stir in the soy sauce, vinegar and sesame oil and cook 30 seconds more.",
+      "Serve in bowls topped with the green onion and a drizzle of sriracha."
     ],
     "ingredients": [
       {
         "id": "tofu",
         "qty": 2,
-        "note": "extra firm, pressed and crumbled"
+        "note": "extra firm, pressed and crumbled",
+        "note_es": "extra firme, prensado y desmenuzado"
       },
       {
         "id": "coleslaw_mix",
@@ -825,17 +1047,20 @@
       {
         "id": "green_onion",
         "qty": 1,
-        "note": "sliced"
+        "note": "sliced",
+        "note_es": "en rodajas finas"
       },
       {
         "id": "garlic",
         "qty": 3,
-        "note": "minced"
+        "note": "minced",
+        "note_es": "picado fino"
       },
       {
         "id": "ginger",
         "qty": 1,
-        "note": "grated"
+        "note": "grated",
+        "note_es": "rallado"
       },
       {
         "id": "soy_sauce",
@@ -858,6 +1083,22 @@
         "qty": 1
       }
     ],
+    "name_es": "Bowl de tofu y repollo estilo egg roll",
+    "description_es": "Tofu desmenuzado, repollo y huevo revuelto salteados con jengibre, ajo y salsa de soya.",
+    "steps_es": [
+      "Seca el tofu apretándolo entre toallas de papel y desmenúzalo en trozos de un bocado.",
+      "Calienta el aceite vegetal en una sartén grande o wok a fuego alto y cocina el tofu 6 minutos, revolviendo solo de vez en cuando, hasta que se dore en partes.",
+      "Empuja el tofu hacia un lado, rompe los huevos en el lado vacío y revuélvelos de 1 a 2 minutos, hasta que apenas cuajen; luego sepáralos en trozos pequeños.",
+      "Agrega el ajo, el jengibre y la mezcla de repollo y saltea de 3 a 4 minutos, hasta que el repollo se ablande pero siga algo crujiente.",
+      "Incorpora la salsa de soya, el vinagre y el aceite de sésamo y cocina 30 segundos más.",
+      "Sirve en tazones con la cebolla verde y un hilo de sriracha encima."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 18,
+    "tip": "A bag of coleslaw mix can be swapped for half a head of cabbage and a carrot, both shredded.",
+    "tip_es": "La bolsa de mezcla de repollo se puede cambiar por media cabeza de repollo y una zanahoria, ambos rallados.",
     "photo_url": "https://images.unsplash.com/photo-1788536442033-abf6a485fef7",
     "photo_credit": {
       "name": "Zoshua Colah",
@@ -877,11 +1118,11 @@
     "batch_friendly": false,
     "description": "Riced cauliflower stir-fried with scrambled eggs, mushrooms, carrot and green onion.",
     "steps": [
-      "Scramble the eggs in 1 tablespoon of the oil in a large skillet, then set them aside.",
-      "Cook the mushrooms and carrot in the remaining oil over high heat for 5 minutes.",
-      "Add the garlic, ginger and frozen cauliflower rice and stir-fry 5 to 6 minutes until dry and tender.",
-      "Return the eggs to the pan with the soy sauce and sesame oil and toss.",
-      "Top with green onion."
+      "Beat the eggs in a bowl. Heat half the vegetable oil in a large skillet or wok over medium heat, pour in the eggs and stir 1 to 2 minutes, until just set; move them to a plate.",
+      "Raise the heat to high, add the remaining oil and cook the mushrooms and carrot 5 minutes, stirring now and then, until the mushrooms are browned and their liquid has cooked off.",
+      "Add the garlic, ginger and the cauliflower rice straight from the freezer and stir-fry 5 to 6 minutes, until the cauliflower is tender and the pan is dry.",
+      "Return the eggs to the pan, add the soy sauce and sesame oil and toss 1 minute, until everything is hot and evenly coated.",
+      "Serve topped with the green onion."
     ],
     "ingredients": [
       {
@@ -895,27 +1136,32 @@
       {
         "id": "mushroom",
         "qty": 8,
-        "note": "sliced"
+        "note": "sliced",
+        "note_es": "en láminas"
       },
       {
         "id": "carrot",
         "qty": 0.25,
-        "note": "finely diced"
+        "note": "finely diced",
+        "note_es": "en cubitos pequeños"
       },
       {
         "id": "green_onion",
         "qty": 1,
-        "note": "sliced"
+        "note": "sliced",
+        "note_es": "en rodajas finas"
       },
       {
         "id": "garlic",
         "qty": 3,
-        "note": "minced"
+        "note": "minced",
+        "note_es": "picado fino"
       },
       {
         "id": "ginger",
         "qty": 1,
-        "note": "grated"
+        "note": "grated",
+        "note_es": "rallado"
       },
       {
         "id": "soy_sauce",
@@ -930,6 +1176,21 @@
         "qty": 2
       }
     ],
+    "name_es": "Arroz frito de coliflor con huevo",
+    "description_es": "Arroz de coliflor salteado con huevo revuelto, champiñones, zanahoria y cebolla verde.",
+    "steps_es": [
+      "Bate los huevos en un tazón. Calienta la mitad del aceite vegetal en una sartén grande o wok a fuego medio, vierte los huevos y revuelve de 1 a 2 minutos, hasta que apenas cuajen; pásalos a un plato.",
+      "Sube a fuego alto, agrega el resto del aceite y cocina los champiñones y la zanahoria 5 minutos, revolviendo de vez en cuando, hasta que los champiñones estén dorados y su líquido se haya evaporado.",
+      "Agrega el ajo, el jengibre y el arroz de coliflor directo del congelador y saltea de 5 a 6 minutos, hasta que la coliflor esté tierna y la sartén seca.",
+      "Devuelve los huevos a la sartén, añade la salsa de soya y el aceite de sésamo y mezcla 1 minuto, hasta que todo esté caliente y cubierto de manera uniforme.",
+      "Sirve con la cebolla verde encima."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 18,
+    "tip": "Keep the heat high and do not cover the pan; trapped steam makes cauliflower rice soggy.",
+    "tip_es": "Mantén el fuego alto y no tapes la sartén; el vapor atrapado deja el arroz de coliflor aguado.",
     "photo_url": "https://images.unsplash.com/photo-1716551828295-566b835db769",
     "photo_credit": {
       "name": "Sarabjeet Singh",
@@ -945,21 +1206,24 @@
       "keto"
     ],
     "servings": 4,
-    "prep_minutes": 30,
+    "prep_minutes": 35,
     "batch_friendly": true,
     "description": "A thick, creamy broccoli soup finished with plenty of sharp cheddar.",
     "steps": [
-      "Cook the onion in the butter over medium heat for 5 minutes, then add the garlic for 1 minute.",
-      "Add the chopped broccoli, broth, salt and pepper and simmer covered for 12 minutes until very tender.",
-      "Mash or blend about half the soup, leaving some broccoli pieces.",
-      "Stir in the cream and cream cheese over low heat until smooth.",
-      "Add the cheddar a handful at a time, stirring until melted, and serve."
+      "Melt the butter in a large pot over medium heat and cook the onion 5 minutes, until soft, then stir in the garlic for 1 minute.",
+      "Add the chopped broccoli, broth, salt and pepper and bring to a boil over high heat.",
+      "Lower to medium-low, cover and simmer 12 minutes, until the broccoli stems are soft enough to crush with a spoon.",
+      "Mash about half the soup in the pot with a potato masher, leaving some broccoli pieces for texture.",
+      "Turn the heat to low and stir in the cream and cream cheese for about 2 minutes, until the cream cheese melts and the soup is smooth.",
+      "Add the cheddar a handful at a time, stirring until each handful melts before adding the next; do not let the soup boil, or the cheese turns grainy.",
+      "Taste, adjust the seasoning and serve hot."
     ],
     "ingredients": [
       {
         "id": "broccoli",
         "qty": 2,
-        "note": "chopped, stems included"
+        "note": "chopped, stems included",
+        "note_es": "picado, con los tallos"
       },
       {
         "id": "cheddar",
@@ -980,12 +1244,14 @@
       {
         "id": "onion_yellow",
         "qty": 0.5,
-        "note": "diced"
+        "note": "diced",
+        "note_es": "en cubitos"
       },
       {
         "id": "garlic",
         "qty": 2,
-        "note": "minced"
+        "note": "minced",
+        "note_es": "picado fino"
       },
       {
         "id": "butter",
@@ -1000,6 +1266,23 @@
         "qty": 0.5
       }
     ],
+    "name_es": "Sopa de brócoli y cheddar",
+    "description_es": "Una sopa espesa y cremosa de brócoli terminada con bastante queso cheddar.",
+    "steps_es": [
+      "Derrite la mantequilla en una olla grande a fuego medio y cocina la cebolla 5 minutos, hasta que esté blanda; agrega el ajo y cocina 1 minuto más.",
+      "Añade el brócoli picado, el caldo, la sal y la pimienta y lleva a hervor a fuego alto.",
+      "Baja a fuego medio-bajo, tapa y cocina 12 minutos, hasta que los tallos del brócoli se deshagan al apretarlos con una cuchara.",
+      "Aplasta más o menos la mitad de la sopa en la olla con un machacador de papas, dejando algunos trozos de brócoli para dar textura.",
+      "Baja a fuego bajo e incorpora la crema y el queso crema, revolviendo unos 2 minutos, hasta que el queso crema se derrita y la sopa quede lisa.",
+      "Agrega el cheddar por puñados, revolviendo hasta que cada uno se derrita antes de añadir el siguiente; no dejes que la sopa hierva, o el queso se corta.",
+      "Prueba, ajusta la sazón y sirve caliente."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 15,
+    "tip": "Reheat over low heat, stirring, and never to a boil. It keeps 4 days in the fridge; freezing can make it grainy.",
+    "tip_es": "Recalienta a fuego bajo, revolviendo y sin que hierva. Dura 4 días en el refrigerador; al congelarla puede cortarse.",
     "photo_url": "https://images.unsplash.com/photo-1567953921490-6f671d196d1d",
     "photo_credit": {
       "name": "Denise Spijker",
@@ -1019,18 +1302,20 @@
     "batch_friendly": false,
     "description": "Tender cauliflower florets baked in a rich cheddar cream sauce with a golden parmesan top.",
     "steps": [
-      "Heat the oven to 425°F and boil the cauliflower florets in salted water for 5 minutes, then drain very well.",
-      "Warm the cream and cream cheese in a saucepan over low heat, whisking until smooth.",
-      "Whisk in the mustard, garlic powder, salt, pepper and three quarters of the cheddar until melted.",
-      "Fold the cauliflower into the sauce and spread in a baking dish.",
-      "Top with the remaining cheddar, the parmesan and paprika.",
-      "Bake 15 minutes until bubbling and browned."
+      "Heat the oven to {425F} and bring a large pot of water with a big pinch of salt to a boil over high heat.",
+      "Boil the cauliflower florets 5 minutes, until a knife slides in with a little resistance, then drain and let them steam dry in the colander for 2 minutes.",
+      "In a saucepan over low heat, warm the cream and cream cheese for about 3 minutes, whisking, until smooth and steaming.",
+      "Whisk in the mustard, garlic powder, salt, pepper and three quarters of the cheddar until melted, then take the pan off the heat.",
+      "Fold the cauliflower into the sauce and spread it in a medium baking dish.",
+      "Top with the remaining cheddar, the parmesan and the paprika.",
+      "Bake 15 minutes, until the sauce bubbles at the edges and the top is browned."
     ],
     "ingredients": [
       {
         "id": "cauliflower",
         "qty": 1,
-        "note": "large, cut into small florets"
+        "note": "large, cut into small florets",
+        "note_es": "grande, en ramitos pequeños"
       },
       {
         "id": "cheddar",
@@ -1069,6 +1354,24 @@
         "qty": 0.25
       }
     ],
+    "name_es": "Coliflor gratinada estilo mac and cheese",
+    "description_es": "Ramitos tiernos de coliflor horneados en una salsa cremosa de cheddar con una capa dorada de parmesano.",
+    "steps_es": [
+      "Precalienta el horno a {425F} y pon a hervir a fuego alto una olla grande de agua con una buena pizca de sal.",
+      "Hierve los ramitos de coliflor 5 minutos, hasta que un cuchillo entre con un poco de resistencia; escúrrelos y déjalos secar al vapor en el colador 2 minutos.",
+      "En una olla pequeña a fuego bajo, calienta la crema y el queso crema unos 3 minutos, batiendo, hasta que la mezcla esté lisa y humeante.",
+      "Incorpora la mostaza, el ajo en polvo, la sal, la pimienta y tres cuartos del cheddar, batiendo hasta que se derrita, y retira del fuego.",
+      "Mezcla la coliflor con la salsa y extiéndela en una fuente mediana para horno.",
+      "Cubre con el resto del cheddar, el parmesano y la paprika.",
+      "Hornea 15 minutos, hasta que la salsa burbujee en los bordes y la superficie esté dorada."
+    ],
+    "equipment": [
+      "stovetop",
+      "oven"
+    ],
+    "active_minutes": 15,
+    "tip": "Drain the cauliflower well; any water left on it thins the cheese sauce.",
+    "tip_es": "Escurre muy bien la coliflor; el agua que le quede aligera la salsa de queso.",
     "photo_url": "https://images.unsplash.com/photo-1586032340622-a86b847e8bdb",
     "photo_credit": {
       "name": "micheile henderson",
@@ -1087,23 +1390,25 @@
     "batch_friendly": false,
     "description": "Chili-roasted sweet potatoes and black beans in corn tortillas with avocado and lime.",
     "steps": [
-      "Heat the oven to 425°F.",
-      "Toss the diced sweet potatoes with the oil, cumin, chili powder, smoked paprika and salt and roast 22 minutes, turning once.",
-      "Add the drained beans to the pan for the last 5 minutes to warm through.",
-      "Char the tortillas in a dry skillet or over a gas flame.",
-      "Fill with sweet potatoes and beans and top with red onion, avocado, feta, salsa and cilantro.",
-      "Serve with lime wedges."
+      "Move a rack to the middle of the oven and heat the oven to {425F}.",
+      "On a large sheet pan, toss the diced sweet potatoes with the oil, cumin, chili powder, smoked paprika and salt and spread them in one layer.",
+      "Roast 18 minutes, turning once halfway, until the edges brown and a fork slides in easily.",
+      "Stir the drained beans into the pan and put the tortillas, wrapped in foil, on the rack beside it; roast 5 minutes more, until the beans are hot and the tortillas are soft.",
+      "Fill the tortillas with the sweet potatoes and beans and top with the red onion, avocado, feta, salsa and cilantro.",
+      "Cut the lime into wedges and squeeze it over the tacos at the table."
     ],
     "ingredients": [
       {
         "id": "sweet_potato",
         "qty": 1.5,
-        "note": "peeled, 1/2-inch dice"
+        "note": "peeled, 1/2-inch dice",
+        "note_es": "pelado, en cubos de 1 cm"
       },
       {
         "id": "black_beans",
         "qty": 1,
-        "note": "drained and rinsed"
+        "note": "drained and rinsed",
+        "note_es": "escurridos y enjuagados"
       },
       {
         "id": "tortilla_corn",
@@ -1112,17 +1417,20 @@
       {
         "id": "avocado",
         "qty": 1,
-        "note": "sliced"
+        "note": "sliced",
+        "note_es": "en láminas"
       },
       {
         "id": "onion_red",
         "qty": 0.5,
-        "note": "thinly sliced"
+        "note": "thinly sliced",
+        "note_es": "en rodajas finas"
       },
       {
         "id": "feta",
         "qty": 2,
-        "note": "crumbled"
+        "note": "crumbled",
+        "note_es": "desmenuzado"
       },
       {
         "id": "salsa",
@@ -1131,7 +1439,8 @@
       {
         "id": "cilantro",
         "qty": 0.5,
-        "note": "chopped"
+        "note": "chopped",
+        "note_es": "picado"
       },
       {
         "id": "lime",
@@ -1158,6 +1467,22 @@
         "qty": 0.75
       }
     ],
+    "name_es": "Tacos de camote y frijoles negros",
+    "description_es": "Camote asado con chile y frijoles negros en tortillas de maíz, con aguacate y lima.",
+    "steps_es": [
+      "Coloca una rejilla en el centro del horno y precaliéntalo a {425F}.",
+      "En una bandeja grande para horno, mezcla el camote en cubos con el aceite, el comino, el chile en polvo, el pimentón ahumado y la sal y distribúyelo en una sola capa.",
+      "Hornea 18 minutos, volteando una vez a la mitad, hasta que los bordes se doren y un tenedor entre con facilidad.",
+      "Mezcla los frijoles escurridos en la bandeja y pon las tortillas, envueltas en papel aluminio, en la rejilla de al lado; hornea 5 minutos más, hasta que los frijoles estén calientes y las tortillas blandas.",
+      "Rellena las tortillas con el camote y los frijoles y agrega la cebolla morada, el aguacate, el feta, la salsa y el cilantro.",
+      "Corta la lima en gajos y exprímela sobre los tacos en la mesa."
+    ],
+    "equipment": [
+      "oven"
+    ],
+    "active_minutes": 15,
+    "tip": "Roast extra sweet potatoes and beans; they keep 4 days in the fridge and turn into burrito bowls over rice.",
+    "tip_es": "Asa camote y frijoles de más: duran 4 días en el refrigerador y sirven para armar bowls con arroz.",
     "photo_url": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47",
     "photo_credit": {
       "name": "Chad Montano",
@@ -1176,17 +1501,19 @@
     "batch_friendly": false,
     "description": "Chickpeas and spinach in a mild coconut tomato curry, spooned over white rice.",
     "steps": [
-      "Start the rice in 3 cups of water, covered, for 18 minutes.",
-      "Cook the onion in the oil over medium heat for 4 minutes, then add the garlic, ginger and curry powder for 1 minute.",
-      "Add the tomatoes, coconut milk, drained chickpeas and salt and simmer 10 minutes.",
-      "Stir in the spinach until wilted.",
-      "Serve the curry over the rice."
+      "Put the rice in a saucepan with twice as much water as rice, bring to a boil, cover and cook over low heat for 18 minutes, until the water is absorbed.",
+      "Meanwhile, heat the oil in a large skillet or pot over medium heat and cook the onion 4 minutes, until soft.",
+      "Stir in the garlic, ginger and curry powder and cook 1 minute, until fragrant.",
+      "Add the tomatoes, coconut milk, drained chickpeas and salt, bring to a simmer and cook over medium-low heat for 10 minutes, until the sauce thickens slightly.",
+      "Stir in the spinach a handful at a time for about 1 minute, until just wilted.",
+      "Fluff the rice with a fork and spoon the curry over it."
     ],
     "ingredients": [
       {
         "id": "chickpeas",
         "qty": 2,
-        "note": "drained and rinsed"
+        "note": "drained and rinsed",
+        "note_es": "escurridos y enjuagados"
       },
       {
         "id": "coconut_milk",
@@ -1207,17 +1534,20 @@
       {
         "id": "onion_yellow",
         "qty": 1,
-        "note": "diced"
+        "note": "diced",
+        "note_es": "en cubitos"
       },
       {
         "id": "garlic",
         "qty": 3,
-        "note": "minced"
+        "note": "minced",
+        "note_es": "picado fino"
       },
       {
         "id": "ginger",
         "qty": 1,
-        "note": "grated"
+        "note": "grated",
+        "note_es": "rallado"
       },
       {
         "id": "curry_powder",
@@ -1232,6 +1562,22 @@
         "qty": 1
       }
     ],
+    "name_es": "Curry de garbanzos y espinaca con leche de coco",
+    "description_es": "Garbanzos y espinaca en un curry suave de coco y tomate, servido sobre arroz blanco.",
+    "steps_es": [
+      "Pon el arroz en una olla con el doble de agua que de arroz, lleva a hervor, tapa y cocina a fuego bajo 18 minutos, hasta que se absorba el agua.",
+      "Mientras tanto, calienta el aceite en una sartén grande u olla a fuego medio y cocina la cebolla 4 minutos, hasta que esté blanda.",
+      "Agrega el ajo, el jengibre y el curry en polvo y cocina 1 minuto, hasta que suelten su aroma.",
+      "Añade los tomates, la leche de coco, los garbanzos escurridos y la sal, lleva a hervor suave y cocina a fuego medio-bajo 10 minutos, hasta que la salsa espese un poco.",
+      "Incorpora la espinaca por puñados durante 1 minuto, hasta que apenas se ablande.",
+      "Separa el arroz con un tenedor y sirve el curry encima."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 12,
+    "tip": "Keeps 4 days in the fridge and tastes even better the next day. Frozen spinach works too; add it with the chickpeas.",
+    "tip_es": "Dura 4 días en el refrigerador y al día siguiente sabe mejor. También sirve espinaca congelada; agrégala con los garbanzos.",
     "photo_url": "https://images.unsplash.com/photo-1609595781576-1580ff3ee291",
     "photo_credit": {
       "name": "Álvaro Bernal",
@@ -1246,15 +1592,16 @@
       "vegetarian"
     ],
     "servings": 4,
-    "prep_minutes": 25,
+    "prep_minutes": 30,
     "batch_friendly": false,
     "description": "Rice stir-fried with scrambled eggs, frozen mixed vegetables, garlic and soy sauce.",
     "steps": [
-      "Cook the rice in 2 3/4 cups of water, covered, for 16 minutes, then spread it on a tray to steam dry (or use leftover rice).",
-      "Scramble the eggs in half the vegetable oil in a large skillet or wok and set aside.",
-      "Stir-fry the frozen vegetables and garlic in the remaining oil over high heat for 3 minutes.",
-      "Add the rice and fry 4 minutes, pressing out any clumps.",
-      "Stir in the eggs, soy sauce, sesame oil and green onion and serve."
+      "Put the rice in a saucepan with a little less than twice as much water as rice, bring to a boil, cover and cook over low heat for 16 minutes, until the water is absorbed.",
+      "Spread the hot rice on a tray or large plate for 5 minutes so the steam escapes and the grains dry out.",
+      "While the rice cooks, beat the eggs. Heat half the vegetable oil in a large skillet or wok over medium heat, pour in the eggs and stir 1 to 2 minutes, until just set; move them to a plate.",
+      "Raise the heat to high, add the remaining oil and stir-fry the frozen vegetables and garlic 3 minutes, until hot and no water is left in the pan.",
+      "Add the rice and fry 4 minutes, pressing out clumps with the spoon, until the grains are separate and a few start to toast.",
+      "Stir in the eggs, soy sauce, sesame oil and green onion, toss 1 minute and serve."
     ],
     "ingredients": [
       {
@@ -1272,12 +1619,14 @@
       {
         "id": "green_onion",
         "qty": 1,
-        "note": "sliced"
+        "note": "sliced",
+        "note_es": "en rodajas finas"
       },
       {
         "id": "garlic",
         "qty": 3,
-        "note": "minced"
+        "note": "minced",
+        "note_es": "picado fino"
       },
       {
         "id": "soy_sauce",
@@ -1292,6 +1641,22 @@
         "qty": 2
       }
     ],
+    "name_es": "Arroz frito con huevo y verduras",
+    "description_es": "Arroz salteado con huevo revuelto, verduras mixtas congeladas, ajo y salsa de soya.",
+    "steps_es": [
+      "Pon el arroz en una olla con un poco menos del doble de agua que de arroz, lleva a hervor, tapa y cocina a fuego bajo 16 minutos, hasta que se absorba el agua.",
+      "Extiende el arroz caliente en una bandeja o plato grande 5 minutos para que salga el vapor y los granos se sequen.",
+      "Mientras se cocina el arroz, bate los huevos. Calienta la mitad del aceite vegetal en una sartén grande o wok a fuego medio, vierte los huevos y revuelve de 1 a 2 minutos, hasta que apenas cuajen; pásalos a un plato.",
+      "Sube a fuego alto, agrega el resto del aceite y saltea las verduras congeladas y el ajo 3 minutos, hasta que estén calientes y no quede agua en la sartén.",
+      "Agrega el arroz y fríe 4 minutos, deshaciendo los grumos con la cuchara, hasta que los granos estén sueltos y algunos empiecen a tostarse.",
+      "Incorpora los huevos, la salsa de soya, el aceite de sésamo y la cebolla verde, mezcla 1 minuto y sirve."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 15,
+    "tip": "Cold leftover rice fries even better: skip the first two steps and use it straight from the fridge.",
+    "tip_es": "El arroz frío del día anterior queda aún mejor: sáltate los dos primeros pasos y úsalo directo del refrigerador.",
     "photo_url": "https://images.unsplash.com/photo-1788603907381-018a23c26c81",
     "photo_credit": {
       "name": "Zoshua Colah",
@@ -1306,15 +1671,17 @@
       "vegetarian"
     ],
     "servings": 4,
-    "prep_minutes": 45,
+    "prep_minutes": 50,
     "batch_friendly": true,
     "description": "A big pot of vegetable soup with cabbage, zucchini, beans and elbow pasta in tomato broth.",
     "steps": [
-      "Cook the onion, carrot and celery in the oil over medium heat for 6 minutes.",
-      "Add the garlic and Italian seasoning for 1 minute.",
-      "Add the tomatoes, broth, cabbage, zucchini and salt and simmer 15 minutes.",
-      "Stir in the drained beans and the pasta and cook 8 to 10 minutes until the pasta is tender.",
-      "Thin with a little water if needed and serve with parmesan."
+      "Heat the oil in a large pot over medium heat and cook the onion, carrot and celery 6 minutes, stirring, until soft.",
+      "Stir in the garlic and Italian seasoning and cook 1 minute, until fragrant.",
+      "Add the tomatoes, broth, cabbage, zucchini and salt and bring to a boil over high heat.",
+      "Lower to medium-low and simmer uncovered 15 minutes, until the carrots are tender.",
+      "Stir in the drained beans and the pasta and cook 8 to 10 minutes, stirring now and then so the pasta does not stick, until the pasta is tender.",
+      "If the soup is thicker than you like, thin it with a little water, then taste and adjust the seasoning.",
+      "Ladle into bowls and sprinkle with the parmesan."
     ],
     "ingredients": [
       {
@@ -1324,12 +1691,14 @@
       {
         "id": "kidney_beans",
         "qty": 1,
-        "note": "drained and rinsed"
+        "note": "drained and rinsed",
+        "note_es": "escurridos y enjuagados"
       },
       {
         "id": "white_beans",
         "qty": 1,
-        "note": "drained and rinsed"
+        "note": "drained and rinsed",
+        "note_es": "escurridos y enjuagados"
       },
       {
         "id": "diced_tomatoes",
@@ -1342,32 +1711,38 @@
       {
         "id": "onion_yellow",
         "qty": 1,
-        "note": "diced"
+        "note": "diced",
+        "note_es": "en cubitos"
       },
       {
         "id": "carrot",
         "qty": 0.5,
-        "note": "diced"
+        "note": "diced",
+        "note_es": "en cubitos"
       },
       {
         "id": "celery",
         "qty": 2,
-        "note": "diced"
+        "note": "diced",
+        "note_es": "en cubitos"
       },
       {
         "id": "zucchini",
         "qty": 1,
-        "note": "diced"
+        "note": "diced",
+        "note_es": "en cubitos"
       },
       {
         "id": "cabbage",
         "qty": 0.25,
-        "note": "shredded"
+        "note": "shredded",
+        "note_es": "en tiras finas"
       },
       {
         "id": "garlic",
         "qty": 3,
-        "note": "minced"
+        "note": "minced",
+        "note_es": "picado fino"
       },
       {
         "id": "italian_seasoning",
@@ -1386,6 +1761,23 @@
         "qty": 1
       }
     ],
+    "name_es": "Minestrone de dos frijoles",
+    "description_es": "Una olla grande de sopa de verduras con repollo, calabacín, frijoles y coditos en caldo de tomate.",
+    "steps_es": [
+      "Calienta el aceite en una olla grande a fuego medio y cocina la cebolla, la zanahoria y el apio 6 minutos, revolviendo, hasta que estén blandos.",
+      "Agrega el ajo y el condimento italiano y cocina 1 minuto, hasta que suelten su aroma.",
+      "Añade los tomates, el caldo, el repollo, el calabacín y la sal y lleva a hervor a fuego alto.",
+      "Baja a fuego medio-bajo y cocina sin tapar 15 minutos, hasta que la zanahoria esté tierna.",
+      "Incorpora los frijoles escurridos y la pasta y cocina de 8 a 10 minutos, revolviendo de vez en cuando para que la pasta no se pegue, hasta que esté tierna.",
+      "Si la sopa queda más espesa de lo que te gusta, aligérala con un poco de agua; prueba y ajusta la sazón.",
+      "Sirve en tazones y espolvorea con el parmesano."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 20,
+    "tip": "The pasta keeps soaking up broth, so add water when reheating. To freeze the soup, cook the pasta separately.",
+    "tip_es": "La pasta sigue absorbiendo caldo: agrega agua al recalentar. Si vas a congelar la sopa, cocina la pasta aparte.",
     "photo_url": "https://images.unsplash.com/photo-1603105037880-880cd4edfb0d",
     "photo_credit": {
       "name": "Victoria Shes",
@@ -1404,28 +1796,31 @@
     "batch_friendly": true,
     "description": "A thick meatless chili with black, kidney and pinto beans, corn and peppers, topped with cheddar.",
     "steps": [
-      "Cook the onion and bell pepper in the oil over medium heat for 6 minutes.",
-      "Stir in the garlic, chili powder, cumin and smoked paprika for 1 minute.",
-      "Add the crushed and diced tomatoes, the drained beans, broth and salt.",
-      "Simmer partly covered for 30 minutes, stirring now and then.",
-      "Stir in the corn and cook 5 minutes more.",
-      "Serve topped with cheddar."
+      "Heat the oil in a large pot over medium heat and cook the onion and bell pepper 6 minutes, stirring, until soft.",
+      "Stir in the garlic, chili powder, cumin and smoked paprika and cook 1 minute, until the spices smell toasted.",
+      "Add the crushed and diced tomatoes, the drained beans and the broth and bring to a boil over high heat.",
+      "Lower to medium-low and simmer partly covered 30 minutes, stirring every 10 minutes, until thick enough that a spoon leaves a trail on the bottom of the pot.",
+      "Stir in the corn and cook 5 minutes more, until hot.",
+      "Taste, adjust the seasoning and serve topped with the cheddar."
     ],
     "ingredients": [
       {
         "id": "black_beans",
         "qty": 1,
-        "note": "drained and rinsed"
+        "note": "drained and rinsed",
+        "note_es": "escurridos y enjuagados"
       },
       {
         "id": "kidney_beans",
         "qty": 1,
-        "note": "drained and rinsed"
+        "note": "drained and rinsed",
+        "note_es": "escurridos y enjuagados"
       },
       {
         "id": "pinto_beans",
         "qty": 1,
-        "note": "drained and rinsed"
+        "note": "drained and rinsed",
+        "note_es": "escurridos y enjuagados"
       },
       {
         "id": "crushed_tomatoes",
@@ -1438,17 +1833,20 @@
       {
         "id": "onion_yellow",
         "qty": 1,
-        "note": "diced"
+        "note": "diced",
+        "note_es": "en cubitos"
       },
       {
         "id": "bell_pepper",
         "qty": 1,
-        "note": "diced"
+        "note": "diced",
+        "note_es": "en cubitos"
       },
       {
         "id": "garlic",
         "qty": 4,
-        "note": "minced"
+        "note": "minced",
+        "note_es": "picado fino"
       },
       {
         "id": "corn_frozen",
@@ -1479,6 +1877,22 @@
         "qty": 1
       }
     ],
+    "name_es": "Chili vegetariano de tres frijoles",
+    "description_es": "Un chili espeso sin carne con frijoles negros, rojos y pintos, maíz y pimiento, cubierto con cheddar.",
+    "steps_es": [
+      "Calienta el aceite en una olla grande a fuego medio y cocina la cebolla y el pimiento 6 minutos, revolviendo, hasta que estén blandos.",
+      "Agrega el ajo, el chile en polvo, el comino y el pimentón ahumado y cocina 1 minuto, hasta que las especias huelan a tostado.",
+      "Añade los tomates triturados y en cubos, los frijoles escurridos y el caldo y lleva a hervor a fuego alto.",
+      "Baja a fuego medio-bajo y cocina semitapado 30 minutos, revolviendo cada 10 minutos, hasta que espese y la cuchara deje un surco en el fondo de la olla.",
+      "Incorpora el maíz y cocina 5 minutos más, hasta que esté caliente.",
+      "Prueba, ajusta la sazón y sirve con el cheddar encima."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 15,
+    "tip": "Chili keeps 5 days in the fridge and 3 months in the freezer; leftovers are good over baked potatoes or rice.",
+    "tip_es": "El chili dura 5 días en el refrigerador y 3 meses en el congelador; las sobras van bien sobre papas al horno o arroz.",
     "photo_url": "https://images.unsplash.com/photo-1591266798549-32fa7cd32f45",
     "photo_credit": {
       "name": "micheile henderson",
@@ -1493,14 +1907,15 @@
       "vegetarian"
     ],
     "servings": 4,
-    "prep_minutes": 20,
+    "prep_minutes": 25,
     "batch_friendly": false,
     "description": "Crisp flour tortillas filled with refried beans, corn, green chiles and melted cheddar.",
     "steps": [
-      "Stir the cumin, drained corn and green chiles into the refried beans.",
-      "Spread the bean mixture over half of each tortilla, top with cheddar and fold.",
-      "Cook in a lightly oiled skillet over medium heat for 2 to 3 minutes per side until crisp and melted.",
-      "Cut into wedges and serve with salsa and sour cream."
+      "In a bowl, stir the cumin, drained corn and green chiles into the refried beans until evenly mixed.",
+      "Spread the bean mixture over half of each tortilla, sprinkle with the cheddar and fold the other half over, pressing lightly.",
+      "Brush a large skillet with a little of the oil and heat it over medium heat for 1 minute.",
+      "Cook the quesadillas two at a time, 2 to 3 minutes per side, until the tortillas are crisp and golden and the cheese is melted; add a little more oil between batches.",
+      "Rest them 1 minute, cut each into wedges and serve with the salsa and sour cream."
     ],
     "ingredients": [
       {
@@ -1514,7 +1929,8 @@
       {
         "id": "corn_canned",
         "qty": 1,
-        "note": "drained"
+        "note": "drained",
+        "note_es": "escurrido"
       },
       {
         "id": "cheddar",
@@ -1541,6 +1957,21 @@
         "qty": 1
       }
     ],
+    "name_es": "Quesadillas de frijoles refritos y maíz",
+    "description_es": "Tortillas de harina crujientes rellenas de frijoles refritos, maíz, chiles verdes y cheddar derretido.",
+    "steps_es": [
+      "En un tazón, mezcla el comino, el maíz escurrido y los chiles verdes con los frijoles refritos hasta integrar.",
+      "Unta la mezcla de frijoles sobre la mitad de cada tortilla, espolvorea el cheddar y dobla la otra mitad encima, presionando un poco.",
+      "Pincela una sartén grande con un poco del aceite y caliéntala a fuego medio 1 minuto.",
+      "Cocina las quesadillas de dos en dos, de 2 a 3 minutos por lado, hasta que las tortillas estén crujientes y doradas y el queso derretido; agrega un poco más de aceite entre tandas.",
+      "Déjalas reposar 1 minuto, corta cada una en triángulos y sirve con la salsa y la crema agria."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 22,
+    "tip": "The bean filling keeps 4 days in the fridge, so you can cook a couple of quesadillas at a time for quick lunches.",
+    "tip_es": "El relleno de frijoles dura 4 días en el refrigerador, así puedes hacer un par de quesadillas cada vez para almuerzos rápidos.",
     "photo_url": "https://images.unsplash.com/photo-1617990590988-895fe6cbabda",
     "photo_credit": {
       "name": "Lottie Griffiths",
@@ -1559,11 +1990,12 @@
     "batch_friendly": false,
     "description": "Cheese tortellini and spinach in a creamy tomato broth, ready in one pot.",
     "steps": [
-      "Cook the onion in the oil over medium heat for 4 minutes, then add the garlic and Italian seasoning for 1 minute.",
-      "Add the crushed tomatoes and broth and bring to a simmer.",
-      "Add the tortellini and cook 5 to 7 minutes until tender.",
-      "Stir in the cream and spinach until the spinach wilts.",
-      "Serve with parmesan."
+      "Heat the oil in a large pot over medium heat and cook the onion 4 minutes, until soft.",
+      "Stir in the garlic and Italian seasoning and cook 1 minute, until fragrant.",
+      "Add the crushed tomatoes and broth, raise the heat to high and bring to a simmer.",
+      "Add the tortellini and cook over medium heat 5 to 7 minutes, until they float and are tender when you bite one.",
+      "Turn the heat to low and stir in the cream and spinach for about 1 minute, until the spinach wilts.",
+      "Ladle into bowls and sprinkle with the parmesan."
     ],
     "ingredients": [
       {
@@ -1589,12 +2021,14 @@
       {
         "id": "onion_yellow",
         "qty": 0.5,
-        "note": "diced"
+        "note": "diced",
+        "note_es": "en cubitos"
       },
       {
         "id": "garlic",
         "qty": 3,
-        "note": "minced"
+        "note": "minced",
+        "note_es": "picado fino"
       },
       {
         "id": "italian_seasoning",
@@ -1609,6 +2043,22 @@
         "qty": 0.25
       }
     ],
+    "name_es": "Sopa cremosa de tomate con tortellini",
+    "description_es": "Tortellini de queso y espinaca en un caldo cremoso de tomate, listo en una sola olla.",
+    "steps_es": [
+      "Calienta el aceite en una olla grande a fuego medio y cocina la cebolla 4 minutos, hasta que esté blanda.",
+      "Agrega el ajo y el condimento italiano y cocina 1 minuto, hasta que suelten su aroma.",
+      "Añade los tomates triturados y el caldo, sube a fuego alto y lleva a hervor suave.",
+      "Agrega los tortellini y cocina a fuego medio de 5 a 7 minutos, hasta que floten y estén tiernos al morder uno.",
+      "Baja a fuego bajo e incorpora la crema y la espinaca, revolviendo 1 minuto, hasta que la espinaca se ablande.",
+      "Sirve en tazones y espolvorea con el parmesano."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 10,
+    "tip": "Tortellini swell as they sit, so thin leftovers with a splash of broth or water when reheating.",
+    "tip_es": "Los tortellini se hinchan al reposar; aligera las sobras con un chorrito de caldo o agua al recalentar.",
     "photo_url": "https://images.unsplash.com/photo-1746632794965-cf4b75fd5f92",
     "photo_credit": {
       "name": "Carlos Davila Cepeda",
@@ -1627,47 +2077,55 @@
     "batch_friendly": true,
     "description": "Chickpeas, sweet potato, broccoli and peppers roasted on one pan and finished with feta and lemon.",
     "steps": [
-      "Heat the oven to 425°F.",
-      "Toss the sweet potato, bell pepper, red onion, zucchini and drained chickpeas with the oil, smoked paprika, garlic powder, oregano and salt.",
-      "Spread over two sheet pans and roast 15 minutes.",
-      "Add the broccoli, toss and roast 12 to 15 minutes more until browned.",
-      "Squeeze the lemon over the pans and top with feta."
+      "Heat the oven to {425F}.",
+      "In a large bowl, toss the sweet potato, bell pepper, red onion, zucchini and the drained, patted-dry chickpeas with the oil, smoked paprika, garlic powder, oregano and salt until evenly coated.",
+      "Spread over two sheet pans in a single layer, leaving space between the pieces so they roast instead of steam.",
+      "Roast 15 minutes, until the sweet potato starts to soften.",
+      "Divide the broccoli between the pans, toss and roast 12 to 15 minutes more, until the vegetables are browned at the edges and a fork slides easily into the sweet potato.",
+      "Cut the lemon in half, squeeze it over the pans and scatter the feta on top."
     ],
     "ingredients": [
       {
         "id": "chickpeas",
         "qty": 2,
-        "note": "drained and patted dry"
+        "note": "drained and patted dry",
+        "note_es": "escurridos y secados con toallas de papel"
       },
       {
         "id": "sweet_potato",
         "qty": 1,
-        "note": "3/4-inch dice"
+        "note": "3/4-inch dice",
+        "note_es": "en cubos de 2 cm"
       },
       {
         "id": "broccoli",
         "qty": 1,
-        "note": "cut into florets"
+        "note": "cut into florets",
+        "note_es": "en ramitos"
       },
       {
         "id": "bell_pepper",
         "qty": 1,
-        "note": "cut into chunks"
+        "note": "cut into chunks",
+        "note_es": "en trozos grandes"
       },
       {
         "id": "onion_red",
         "qty": 1,
-        "note": "cut into wedges"
+        "note": "cut into wedges",
+        "note_es": "en gajos"
       },
       {
         "id": "zucchini",
         "qty": 1,
-        "note": "sliced"
+        "note": "sliced",
+        "note_es": "en rodajas"
       },
       {
         "id": "feta",
         "qty": 4,
-        "note": "crumbled"
+        "note": "crumbled",
+        "note_es": "desmenuzado"
       },
       {
         "id": "lemon",
@@ -1694,6 +2152,22 @@
         "qty": 1
       }
     ],
+    "name_es": "Garbanzos y verduras asados en bandeja",
+    "description_es": "Garbanzos, camote, brócoli y pimiento asados en una bandeja y terminados con queso feta y limón.",
+    "steps_es": [
+      "Precalienta el horno a {425F}.",
+      "En un tazón grande, mezcla el camote, el pimiento, la cebolla morada, el calabacín y los garbanzos escurridos y bien secados con el aceite, el pimentón ahumado, el ajo en polvo, el orégano y la sal hasta cubrir de manera uniforme.",
+      "Distribuye en dos bandejas para horno en una sola capa, dejando espacio entre los trozos para que se asen y no se cuezan al vapor.",
+      "Hornea 15 minutos, hasta que el camote empiece a ablandarse.",
+      "Reparte el brócoli entre las bandejas, mezcla y hornea de 12 a 15 minutos más, hasta que las verduras estén doradas en los bordes y un tenedor entre fácil en el camote.",
+      "Corta el limón por la mitad, exprímelo sobre las bandejas y esparce el feta por encima."
+    ],
+    "equipment": [
+      "oven"
+    ],
+    "active_minutes": 15,
+    "tip": "Pack leftovers over rice or inside pitas for lunch; they keep 4 days in the fridge.",
+    "tip_es": "Lleva las sobras de almuerzo sobre arroz o dentro de pan pita; duran 4 días en el refrigerador.",
     "photo_url": "https://images.unsplash.com/photo-1578071768923-b3d68573028e",
     "photo_credit": {
       "name": "Louis Hansel",
@@ -1712,32 +2186,36 @@
     "batch_friendly": false,
     "description": "Romaine piled with seasoned pinto beans, corn, tomato, cheddar, avocado and crushed tortilla chips.",
     "steps": [
-      "Warm the drained beans with the taco seasoning and a splash of water for 3 minutes.",
-      "Stir the salsa, sour cream and lime juice together for the dressing.",
-      "Divide the chopped romaine among 4 bowls.",
-      "Top with the beans, corn, tomato, cheddar and avocado.",
-      "Spoon over the dressing and finish with crushed tortilla chips."
+      "Put the drained beans in a small pot with the taco seasoning and a splash of water and warm over medium heat for 3 minutes, stirring, until hot and coated.",
+      "In a small bowl, stir the salsa, sour cream and the juice of the lime into a dressing.",
+      "Divide the chopped romaine among four bowls.",
+      "Top with the warm beans, corn, tomato, cheddar and avocado.",
+      "Spoon the dressing over each bowl and crush the tortilla chips on top just before serving so they stay crisp."
     ],
     "ingredients": [
       {
         "id": "romaine",
         "qty": 2,
-        "note": "chopped"
+        "note": "chopped",
+        "note_es": "picada"
       },
       {
         "id": "pinto_beans",
         "qty": 2,
-        "note": "drained and rinsed"
+        "note": "drained and rinsed",
+        "note_es": "escurridos y enjuagados"
       },
       {
         "id": "corn_canned",
         "qty": 1,
-        "note": "drained"
+        "note": "drained",
+        "note_es": "escurrido"
       },
       {
         "id": "tomato",
         "qty": 2,
-        "note": "diced"
+        "note": "diced",
+        "note_es": "en cubitos"
       },
       {
         "id": "cheddar",
@@ -1746,7 +2224,8 @@
       {
         "id": "avocado",
         "qty": 1,
-        "note": "diced"
+        "note": "diced",
+        "note_es": "en cubos"
       },
       {
         "id": "tortilla_chips",
@@ -1769,6 +2248,21 @@
         "qty": 1
       }
     ],
+    "name_es": "Ensalada de tacos con frijoles pintos",
+    "description_es": "Lechuga romana con frijoles pintos sazonados, maíz, tomate, cheddar, aguacate y chips de tortilla triturados.",
+    "steps_es": [
+      "Pon los frijoles escurridos en una olla pequeña con el condimento para tacos y un chorrito de agua y calienta a fuego medio 3 minutos, revolviendo, hasta que estén calientes y cubiertos.",
+      "En un tazón pequeño, mezcla la salsa, la crema agria y el jugo de la lima para hacer el aderezo.",
+      "Reparte la lechuga romana picada en cuatro tazones.",
+      "Agrega encima los frijoles tibios, el maíz, el tomate, el cheddar y el aguacate.",
+      "Vierte el aderezo sobre cada tazón y tritura los chips de tortilla por encima justo antes de servir para que sigan crujientes."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 15,
+    "tip": "For packed lunches, keep the dressing, chips and avocado separate until you eat.",
+    "tip_es": "Si la llevas de almuerzo, guarda el aderezo, los chips y el aguacate aparte hasta el momento de comer.",
     "photo_url": "https://images.unsplash.com/photo-1543339127-b02a6d983980",
     "photo_credit": {
       "name": "Hermes Rivera",
@@ -1787,12 +2281,13 @@
     "batch_friendly": false,
     "description": "Browned mushrooms in a creamy sour cream sauce over buttered egg noodles.",
     "steps": [
-      "Boil the egg noodles until tender and drain.",
-      "Brown the mushrooms in the butter over medium-high heat for 8 minutes, then add the onion and cook 4 minutes.",
-      "Stir in the garlic, paprika and thyme for 1 minute, then the flour.",
-      "Add the broth, soy sauce and mustard and simmer 5 minutes until thickened.",
-      "Take off the heat and stir in the sour cream, salt and pepper.",
-      "Serve over the noodles with parsley."
+      "Bring a large pot of water to a boil over high heat, cook the egg noodles as the package says until tender, and drain.",
+      "Meanwhile, melt the butter in a large skillet over medium-high heat and cook the mushrooms 8 minutes, stirring only now and then, until their liquid cooks off and they are deep brown.",
+      "Add the onion and cook 4 minutes, until soft.",
+      "Stir in the garlic, paprika and thyme for 1 minute, then sprinkle in the flour and stir 30 seconds, until no dry flour shows.",
+      "Pour in the broth, soy sauce and mustard, stirring, and simmer over medium heat for 5 minutes, until the sauce coats the back of a spoon.",
+      "Take the skillet off the heat and stir in the sour cream, salt and pepper; do not boil it again, or the sour cream can separate.",
+      "Spoon over the noodles and sprinkle with the parsley."
     ],
     "ingredients": [
       {
@@ -1802,17 +2297,20 @@
       {
         "id": "mushroom",
         "qty": 16,
-        "note": "sliced"
+        "note": "sliced",
+        "note_es": "en láminas"
       },
       {
         "id": "onion_yellow",
         "qty": 1,
-        "note": "diced"
+        "note": "diced",
+        "note_es": "en cubitos"
       },
       {
         "id": "garlic",
         "qty": 3,
-        "note": "minced"
+        "note": "minced",
+        "note_es": "picado fino"
       },
       {
         "id": "butter",
@@ -1849,7 +2347,8 @@
       {
         "id": "parsley",
         "qty": 0.25,
-        "note": "chopped"
+        "note": "chopped",
+        "note_es": "picado"
       },
       {
         "id": "salt",
@@ -1860,6 +2359,23 @@
         "qty": 0.5
       }
     ],
+    "name_es": "Stroganoff de champiñones con fideos al huevo",
+    "description_es": "Champiñones dorados en una salsa cremosa de crema agria sobre fideos al huevo.",
+    "steps_es": [
+      "Pon a hervir una olla grande de agua a fuego alto, cocina los fideos al huevo según el paquete hasta que estén tiernos y escúrrelos.",
+      "Mientras tanto, derrite la mantequilla en una sartén grande a fuego medio-alto y cocina los champiñones 8 minutos, revolviendo solo de vez en cuando, hasta que se evapore su líquido y estén bien dorados.",
+      "Agrega la cebolla y cocina 4 minutos, hasta que esté blanda.",
+      "Incorpora el ajo, la paprika y el tomillo durante 1 minuto; luego espolvorea la harina y revuelve 30 segundos, hasta que no se vea harina seca.",
+      "Vierte el caldo, la salsa de soya y la mostaza, revolviendo, y cocina a fuego medio 5 minutos, hasta que la salsa cubra el dorso de una cuchara.",
+      "Retira la sartén del fuego e incorpora la crema agria, la sal y la pimienta; no la vuelvas a hervir, o la crema agria se puede cortar.",
+      "Sirve sobre los fideos y espolvorea con el perejil."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 20,
+    "tip": "Reheat gently over low heat with a splash of broth; the sauce thickens in the fridge.",
+    "tip_es": "Recalienta a fuego bajo con un chorrito de caldo; la salsa se espesa en el refrigerador.",
     "photo_url": "https://images.unsplash.com/photo-1611608927216-ca294fa86bee",
     "photo_credit": {
       "name": "Vladimir Gladkov",
@@ -1874,22 +2390,23 @@
       "vegetarian"
     ],
     "servings": 4,
-    "prep_minutes": 15,
+    "prep_minutes": 20,
     "batch_friendly": false,
     "description": "Ramen noodles tossed with stir-fry vegetables, scrambled eggs and a garlic soy sauce.",
     "steps": [
-      "Boil the ramen noodles for 2 minutes (leave out the seasoning packets) and drain.",
-      "Scramble the eggs in half the vegetable oil in a large skillet and set aside.",
-      "Stir-fry the frozen vegetables, garlic and ginger in the remaining oil over high heat for 5 minutes.",
-      "Mix the soy sauce, brown sugar, sriracha and sesame oil.",
-      "Add the noodles, eggs and sauce to the pan and toss 1 to 2 minutes.",
-      "Top with green onion."
+      "Bring a pot of water to a boil over high heat, cook the ramen noodles 2 minutes, until just loosened, and drain; leave out the seasoning packets.",
+      "In a small bowl, mix the soy sauce, brown sugar, sriracha and sesame oil until the sugar dissolves.",
+      "Beat the eggs. Heat half the vegetable oil in a large skillet or wok over medium heat, pour in the eggs and stir 1 to 2 minutes, until just set; move them to a plate.",
+      "Raise the heat to high, add the remaining oil and stir-fry the frozen vegetables, garlic and ginger 5 minutes, until hot and tender but still crisp.",
+      "Add the noodles, eggs and sauce and toss 1 to 2 minutes, until the noodles soak up the sauce.",
+      "Serve topped with the green onion."
     ],
     "ingredients": [
       {
         "id": "ramen",
         "qty": 4,
-        "note": "noodles only"
+        "note": "noodles only",
+        "note_es": "solo los fideos"
       },
       {
         "id": "stir_fry_veg_frozen",
@@ -1918,12 +2435,14 @@
       {
         "id": "garlic",
         "qty": 2,
-        "note": "minced"
+        "note": "minced",
+        "note_es": "picado fino"
       },
       {
         "id": "ginger",
         "qty": 1,
-        "note": "grated"
+        "note": "grated",
+        "note_es": "rallado"
       },
       {
         "id": "vegetable_oil",
@@ -1932,9 +2451,26 @@
       {
         "id": "green_onion",
         "qty": 0.5,
-        "note": "sliced"
+        "note": "sliced",
+        "note_es": "en rodajas finas"
       }
     ],
+    "name_es": "Salteado de ramen con verduras y huevo",
+    "description_es": "Fideos ramen salteados con verduras, huevo revuelto y una salsa de soya con ajo.",
+    "steps_es": [
+      "Pon a hervir una olla de agua a fuego alto, cocina los fideos ramen 2 minutos, hasta que apenas se suelten, y escúrrelos; no uses los sobres de condimento.",
+      "En un tazón pequeño, mezcla la salsa de soya, el azúcar morena, la sriracha y el aceite de sésamo hasta que se disuelva el azúcar.",
+      "Bate los huevos. Calienta la mitad del aceite vegetal en una sartén grande o wok a fuego medio, vierte los huevos y revuelve de 1 a 2 minutos, hasta que apenas cuajen; pásalos a un plato.",
+      "Sube a fuego alto, agrega el resto del aceite y saltea las verduras congeladas, el ajo y el jengibre 5 minutos, hasta que estén calientes y tiernas pero todavía crujientes.",
+      "Agrega los fideos, los huevos y la salsa y mezcla de 1 a 2 minutos, hasta que los fideos absorban la salsa.",
+      "Sirve con la cebolla verde encima."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 15,
+    "tip": "Any frozen vegetable mix works here; peas, corn or broccoli are all fine.",
+    "tip_es": "Sirve cualquier mezcla de verduras congeladas; arvejas, maíz o brócoli van igual de bien.",
     "photo_url": "https://images.unsplash.com/photo-1553621043-f607bfbf6640",
     "photo_credit": {
       "name": "Riccardo Bergamini",
@@ -1953,42 +2489,48 @@
     "batch_friendly": false,
     "description": "Chickpeas, cucumber, tomatoes and feta in a lemon oregano dressing over romaine with warm pita.",
     "steps": [
-      "Whisk the oil, lemon juice, oregano, salt and pepper in a large bowl.",
-      "Add the drained chickpeas, cucumber, halved tomatoes and red onion and toss.",
-      "Fold in the feta.",
-      "Warm the pitas in a dry skillet or toaster and cut into wedges.",
-      "Serve the salad over chopped romaine with the pita."
+      "In a large bowl, whisk the oil, the juice of the lemon, oregano, salt and pepper until blended.",
+      "Add the drained chickpeas, cucumber, halved tomatoes and red onion and toss until everything is coated.",
+      "Gently fold in the feta so it stays in pieces.",
+      "Warm the pitas one at a time in a dry skillet over medium heat, about 1 minute per side, until soft and lightly toasted, then cut them into wedges.",
+      "Divide the chopped romaine among plates, spoon the salad over it and serve with the warm pita."
     ],
     "ingredients": [
       {
         "id": "chickpeas",
         "qty": 2,
-        "note": "drained and rinsed"
+        "note": "drained and rinsed",
+        "note_es": "escurridos y enjuagados"
       },
       {
         "id": "cucumber",
         "qty": 1,
-        "note": "diced"
+        "note": "diced",
+        "note_es": "en cubitos"
       },
       {
         "id": "cherry_tomato",
         "qty": 1,
-        "note": "halved"
+        "note": "halved",
+        "note_es": "en mitades"
       },
       {
         "id": "onion_red",
         "qty": 0.5,
-        "note": "thinly sliced"
+        "note": "thinly sliced",
+        "note_es": "en rodajas finas"
       },
       {
         "id": "feta",
         "qty": 4,
-        "note": "crumbled"
+        "note": "crumbled",
+        "note_es": "desmenuzado"
       },
       {
         "id": "romaine",
         "qty": 1,
-        "note": "chopped"
+        "note": "chopped",
+        "note_es": "picada"
       },
       {
         "id": "pita",
@@ -2015,6 +2557,21 @@
         "qty": 0.25
       }
     ],
+    "name_es": "Ensalada griega de garbanzos con pan pita tibio",
+    "description_es": "Garbanzos, pepino, tomates y feta en un aderezo de limón y orégano sobre lechuga romana, con pan pita tibio.",
+    "steps_es": [
+      "En un tazón grande, bate el aceite, el jugo del limón, el orégano, la sal y la pimienta hasta integrar.",
+      "Agrega los garbanzos escurridos, el pepino, los tomates en mitades y la cebolla morada y mezcla hasta cubrir todo.",
+      "Incorpora el feta con suavidad para que quede en trozos.",
+      "Calienta los panes pita uno por uno en una sartén seca a fuego medio, 1 minuto por lado, hasta que estén blandos y apenas tostados, y córtalos en triángulos.",
+      "Reparte la lechuga romana picada en los platos, pon la ensalada encima y sirve con el pan pita tibio."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 15,
+    "tip": "The dressed chickpea salad keeps 3 days in the fridge; add the romaine and pita when you serve it.",
+    "tip_es": "La ensalada de garbanzos ya aderezada dura 3 días en el refrigerador; agrega la lechuga y el pan pita al servir.",
     "photo_url": "https://images.unsplash.com/photo-1568803776598-57e3cf2f90fc",
     "photo_credit": {
       "name": "dimitri.photography",
@@ -2033,11 +2590,12 @@
     "batch_friendly": true,
     "description": "Quinoa tossed with black beans, corn, peppers and avocado in a cumin lime dressing.",
     "steps": [
-      "Rinse the quinoa and simmer it in 2 cups of water, covered, for 15 minutes, then spread on a plate to cool.",
-      "Whisk the lime juice, oil, cumin, chili powder and salt in a large bowl.",
-      "Add the drained beans and corn, bell pepper, tomato and green onion.",
-      "Fold in the quinoa and cilantro.",
-      "Top with avocado just before serving."
+      "Rinse the quinoa in a fine strainer under cold water for 30 seconds to wash off its bitter coating.",
+      "Put it in a saucepan with twice as much water as quinoa, bring to a boil, cover and cook over low heat for 15 minutes, until the water is absorbed and the grains show little white tails.",
+      "Spread the quinoa on a large plate and let it cool for 10 minutes.",
+      "Meanwhile, whisk the juice of the limes, the oil, cumin, chili powder and salt in a large bowl.",
+      "Add the drained beans and corn, the bell pepper, tomato and green onion and toss.",
+      "Fold in the cooled quinoa and the cilantro, and top with the avocado just before serving."
     ],
     "ingredients": [
       {
@@ -2047,37 +2605,44 @@
       {
         "id": "black_beans",
         "qty": 2,
-        "note": "drained and rinsed"
+        "note": "drained and rinsed",
+        "note_es": "escurridos y enjuagados"
       },
       {
         "id": "corn_canned",
         "qty": 1,
-        "note": "drained"
+        "note": "drained",
+        "note_es": "escurrido"
       },
       {
         "id": "bell_pepper",
         "qty": 1,
-        "note": "diced"
+        "note": "diced",
+        "note_es": "en cubitos"
       },
       {
         "id": "tomato",
         "qty": 2,
-        "note": "diced"
+        "note": "diced",
+        "note_es": "en cubitos"
       },
       {
         "id": "avocado",
         "qty": 1,
-        "note": "diced"
+        "note": "diced",
+        "note_es": "en cubos"
       },
       {
         "id": "green_onion",
         "qty": 0.5,
-        "note": "sliced"
+        "note": "sliced",
+        "note_es": "en rodajas finas"
       },
       {
         "id": "cilantro",
         "qty": 0.5,
-        "note": "chopped"
+        "note": "chopped",
+        "note_es": "picado"
       },
       {
         "id": "lime",
@@ -2100,6 +2665,22 @@
         "qty": 0.75
       }
     ],
+    "name_es": "Ensalada de quinoa y frijoles negros",
+    "description_es": "Quinoa con frijoles negros, maíz, pimiento y aguacate en un aderezo de lima y comino.",
+    "steps_es": [
+      "Enjuaga la quinoa en un colador fino bajo agua fría 30 segundos para quitarle la capa amarga.",
+      "Ponla en una olla con el doble de agua que de quinoa, lleva a hervor, tapa y cocina a fuego bajo 15 minutos, hasta que se absorba el agua y los granos muestren un hilito blanco.",
+      "Extiende la quinoa en un plato grande y déjala enfriar 10 minutos.",
+      "Mientras tanto, bate el jugo de las limas, el aceite, el comino, el chile en polvo y la sal en un tazón grande.",
+      "Agrega los frijoles y el maíz escurridos, el pimiento, el tomate y la cebolla verde y mezcla.",
+      "Incorpora la quinoa fría y el cilantro, y agrega el aguacate justo antes de servir."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 15,
+    "tip": "Keeps 4 days in the fridge without the avocado; cut the avocado fresh for each serving.",
+    "tip_es": "Dura 4 días en el refrigerador sin el aguacate; corta el aguacate en el momento para cada porción.",
     "photo_url": "https://images.unsplash.com/photo-1505576633757-0ac1084af824",
     "photo_credit": {
       "name": "Mariana Medvedeva",
@@ -2118,10 +2699,11 @@
     "batch_friendly": false,
     "description": "Spaghetti tossed with crunchy cabbage and carrots in a creamy peanut, soy and lime sauce.",
     "steps": [
-      "Boil the spaghetti until tender, adding the coleslaw mix for the last minute, then drain.",
-      "Whisk the peanut butter, soy sauce, vinegar, honey, sesame oil, sriracha, garlic, ginger and 1/3 cup hot water until smooth.",
-      "Toss the noodles and cabbage with the sauce.",
-      "Top with green onion and chopped peanuts and serve with lime wedges."
+      "Bring a large pot of water to a boil over high heat and cook the spaghetti as the package says, until tender.",
+      "While it cooks, whisk the peanut butter, soy sauce, vinegar, honey, sesame oil, sriracha, garlic and ginger in a large bowl, adding hot water from the pot a spoonful at a time until the sauce is smooth and pourable.",
+      "Add the coleslaw mix to the pot for the last minute of cooking, just until the cabbage softens slightly, then drain everything.",
+      "Toss the hot noodles and cabbage with the sauce until evenly coated.",
+      "Top with the green onion and chopped peanuts and serve with the lime cut into wedges."
     ],
     "ingredients": [
       {
@@ -2159,28 +2741,47 @@
       {
         "id": "garlic",
         "qty": 2,
-        "note": "minced"
+        "note": "minced",
+        "note_es": "picado fino"
       },
       {
         "id": "ginger",
         "qty": 1,
-        "note": "grated"
+        "note": "grated",
+        "note_es": "rallado"
       },
       {
         "id": "green_onion",
         "qty": 1,
-        "note": "sliced"
+        "note": "sliced",
+        "note_es": "en rodajas finas"
       },
       {
         "id": "peanuts",
         "qty": 0.25,
-        "note": "chopped"
+        "note": "chopped",
+        "note_es": "picado"
       },
       {
         "id": "lime",
         "qty": 1
       }
     ],
+    "name_es": "Fideos con salsa de maní, repollo y zanahoria",
+    "description_es": "Espagueti con repollo y zanahoria crujientes en una salsa cremosa de maní, soya y lima.",
+    "steps_es": [
+      "Pon a hervir una olla grande de agua a fuego alto y cocina el espagueti según el paquete, hasta que esté tierno.",
+      "Mientras se cocina, bate la mantequilla de maní, la salsa de soya, el vinagre, la miel, el aceite de sésamo, la sriracha, el ajo y el jengibre en un tazón grande, agregando agua caliente de la olla por cucharadas hasta que la salsa quede lisa y fluida.",
+      "Agrega la mezcla de repollo a la olla el último minuto de cocción, solo hasta que el repollo se ablande un poco, y escurre todo.",
+      "Mezcla los fideos y el repollo calientes con la salsa hasta cubrir de manera uniforme.",
+      "Agrega encima la cebolla verde y el maní picado y sirve con la lima cortada en gajos."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 10,
+    "tip": "Good cold the next day; loosen the sauce with a spoonful of water or a squeeze of lime.",
+    "tip_es": "También son ricos fríos al día siguiente; aligera la salsa con una cucharada de agua o unas gotas de lima.",
     "photo_url": "https://images.unsplash.com/photo-1609690963718-0b55905aef78",
     "photo_credit": {
       "name": "Melissia Ohol",
@@ -2199,11 +2800,11 @@
     "batch_friendly": false,
     "description": "Fried eggs on crisp corn tortillas with mashed pinto beans, warm salsa, cheddar and avocado.",
     "steps": [
-      "Mash the drained beans in a small pot with the cumin and a splash of water and keep warm.",
-      "Warm the salsa in a small saucepan.",
-      "Fry the tortillas in a little oil for 30 seconds per side until just crisp.",
-      "Fry the eggs in the remaining oil to your liking.",
-      "Spread beans on each tortilla and top with an egg, salsa, cheddar, avocado and cilantro."
+      "Put the drained beans in a small pot with the cumin and a splash of water, warm over medium heat for 3 minutes and mash roughly with a fork; cover to keep warm.",
+      "Warm the salsa in a small saucepan over low heat for about 3 minutes, until it steams.",
+      "Heat a thin film of the oil in a large skillet over medium-high heat and fry the tortillas two at a time, about 30 seconds per side, until just crisp at the edges; drain on paper towels.",
+      "Lower the heat to medium, add the remaining oil and crack in the eggs, in batches if needed; fry 2 to 3 minutes, until the whites are set and the yolks are as runny or firm as you like.",
+      "Spread beans on each tortilla and top with an egg, warm salsa, cheddar, avocado and cilantro."
     ],
     "ingredients": [
       {
@@ -2217,7 +2818,8 @@
       {
         "id": "pinto_beans",
         "qty": 2,
-        "note": "drained and rinsed"
+        "note": "drained and rinsed",
+        "note_es": "escurridos y enjuagados"
       },
       {
         "id": "salsa",
@@ -2230,12 +2832,14 @@
       {
         "id": "avocado",
         "qty": 1,
-        "note": "sliced"
+        "note": "sliced",
+        "note_es": "en láminas"
       },
       {
         "id": "cilantro",
         "qty": 0.25,
-        "note": "chopped"
+        "note": "chopped",
+        "note_es": "picado"
       },
       {
         "id": "cumin",
@@ -2246,6 +2850,21 @@
         "qty": 2
       }
     ],
+    "name_es": "Huevos rancheros con frijoles pintos",
+    "description_es": "Huevos fritos sobre tortillas de maíz crujientes con frijoles pintos, salsa tibia, cheddar y aguacate.",
+    "steps_es": [
+      "Pon los frijoles escurridos en una olla pequeña con el comino y un chorrito de agua, calienta a fuego medio 3 minutos y aplástalos un poco con un tenedor; tapa para mantenerlos calientes.",
+      "Calienta la salsa en una olla pequeña a fuego bajo unos 3 minutos, hasta que humee.",
+      "Calienta una capa fina del aceite en una sartén grande a fuego medio-alto y fríe las tortillas de dos en dos, unos 30 segundos por lado, hasta que los bordes estén apenas crujientes; escúrrelas sobre toallas de papel.",
+      "Baja a fuego medio, agrega el resto del aceite y rompe los huevos en la sartén, por tandas si hace falta; fríe de 2 a 3 minutos, hasta que las claras estén cuajadas y las yemas tan líquidas o firmes como te gusten.",
+      "Unta frijoles sobre cada tortilla y agrega un huevo, salsa tibia, cheddar, aguacate y cilantro."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 18,
+    "tip": "Short on time? Skip frying the tortillas and warm them in a dry skillet for 20 seconds per side instead.",
+    "tip_es": "¿Poco tiempo? No frías las tortillas: caliéntalas en una sartén seca 20 segundos por lado.",
     "photo_url": "https://images.unsplash.com/photo-1650330151304-5db3ca9b3b6c",
     "photo_credit": {
       "name": "Alexandra Mendívil",
@@ -2264,17 +2883,20 @@
     "batch_friendly": false,
     "description": "Potatoes and peas simmered in a spiced tomato sauce and scooped up with warm naan.",
     "steps": [
-      "Cook the onion in the oil over medium heat for 5 minutes, then stir in the garlic, ginger, curry powder, cumin and turmeric for 1 minute.",
-      "Add the potatoes, tomatoes, broth and salt.",
-      "Cover and simmer 20 minutes until the potatoes are tender.",
-      "Stir in the peas and cook 3 minutes, mashing a few potatoes to thicken the sauce.",
-      "Warm the naan and serve with the curry and cilantro."
+      "Heat the oil in a large pot over medium heat and cook the onion 5 minutes, stirring, until soft.",
+      "Stir in the garlic, ginger, curry powder, cumin and turmeric and cook 1 minute, until fragrant.",
+      "Add the potatoes, tomatoes, broth and salt and bring to a boil over high heat.",
+      "Lower to medium-low, cover and simmer 20 minutes, stirring once or twice, until a knife slides easily into a potato.",
+      "Stir in the peas and cook 3 minutes, crushing a few potato cubes against the side of the pot to thicken the sauce.",
+      "Warm the naan one at a time in a dry skillet over medium heat, about 1 minute per side, until soft and hot.",
+      "Serve the curry sprinkled with the cilantro, with the naan on the side."
     ],
     "ingredients": [
       {
         "id": "potato_russet",
         "qty": 1.5,
-        "note": "peeled, 3/4-inch cubes"
+        "note": "peeled, 3/4-inch cubes",
+        "note_es": "peladas, en cubos de 2 cm"
       },
       {
         "id": "peas_frozen",
@@ -2287,17 +2909,20 @@
       {
         "id": "onion_yellow",
         "qty": 1,
-        "note": "diced"
+        "note": "diced",
+        "note_es": "en cubitos"
       },
       {
         "id": "garlic",
         "qty": 3,
-        "note": "minced"
+        "note": "minced",
+        "note_es": "picado fino"
       },
       {
         "id": "ginger",
         "qty": 1,
-        "note": "grated"
+        "note": "grated",
+        "note_es": "rallado"
       },
       {
         "id": "curry_powder",
@@ -2322,7 +2947,8 @@
       {
         "id": "cilantro",
         "qty": 0.5,
-        "note": "chopped"
+        "note": "chopped",
+        "note_es": "picado"
       },
       {
         "id": "vegetable_oil",
@@ -2333,6 +2959,23 @@
         "qty": 1
       }
     ],
+    "name_es": "Curry de papa y arvejas con naan",
+    "description_es": "Papas y arvejas cocidas en una salsa de tomate con especias, para acompañar con naan tibio.",
+    "steps_es": [
+      "Calienta el aceite en una olla grande a fuego medio y cocina la cebolla 5 minutos, revolviendo, hasta que esté blanda.",
+      "Agrega el ajo, el jengibre, el curry en polvo, el comino y la cúrcuma y cocina 1 minuto, hasta que suelten su aroma.",
+      "Añade las papas, los tomates, el caldo y la sal y lleva a hervor a fuego alto.",
+      "Baja a fuego medio-bajo, tapa y cocina 20 minutos, revolviendo una o dos veces, hasta que un cuchillo entre fácil en una papa.",
+      "Incorpora las arvejas y cocina 3 minutos, aplastando algunos cubos de papa contra la pared de la olla para espesar la salsa.",
+      "Calienta los naan uno por uno en una sartén seca a fuego medio, 1 minuto por lado, hasta que estén blandos y calientes.",
+      "Sirve el curry con el cilantro espolvoreado y el naan al lado."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 15,
+    "tip": "Out of naan? Serve the curry over rice. It keeps 4 days in the fridge.",
+    "tip_es": "¿No tienes naan? Sirve el curry sobre arroz. Dura 4 días en el refrigerador.",
     "photo_url": "https://images.unsplash.com/photo-1789990642036-e10c2df4fc81",
     "photo_credit": {
       "name": "Zoshua Colah",
