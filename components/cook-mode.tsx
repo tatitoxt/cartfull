@@ -4,6 +4,51 @@ import { useEffect, useRef, useState } from "react";
 import { useMessages } from "@/lib/i18n/locale-provider";
 import { fill } from "@/lib/i18n/messages";
 
+/** Longest explicit duration mentioned in a step, in seconds ("5-7 minutes" → 7 × 60). */
+function stepSeconds(text: string): number | null {
+  const match = text.match(/(\d+)(?:\s*[-–]\s*(\d+))?\s*(?:minutos?|minutes?|mins?|min)\b/i);
+  if (!match) return null;
+  return Math.max(Number(match[1]), Number(match[2] ?? 0)) * 60;
+}
+
+function formatClock(totalSeconds: number): string {
+  const min = Math.floor(totalSeconds / 60);
+  const sec = totalSeconds % 60;
+  return `${min}:${String(sec).padStart(2, "0")}`;
+}
+
+/** Tap-to-start countdown for a step with a stated time; resets on step change. */
+function StepTimer({ seconds, resetKey }: { seconds: number; resetKey: number }) {
+  const m = useMessages();
+  const [left, setLeft] = useState(seconds);
+  const [running, setRunning] = useState(false);
+
+  useEffect(() => {
+    setLeft(seconds);
+    setRunning(false);
+  }, [seconds, resetKey]);
+
+  useEffect(() => {
+    if (!running || left <= 0) return;
+    const id = setInterval(() => setLeft((t) => t - 1), 1000);
+    return () => clearInterval(id);
+  }, [running, left]);
+
+  return (
+    <button
+      type="button"
+      onClick={() => (left <= 0 ? (setLeft(seconds), setRunning(false)) : setRunning((r) => !r))}
+      className={`tnum mt-5 rounded-full px-5 py-3 text-xl font-semibold shadow-[inset_0_0_0_1.5px_var(--color-line)] ${
+        left <= 0 ? "bg-accent text-bg" : running ? "bg-accent/15 text-accent" : "bg-surface text-fg"
+      }`}
+      aria-pressed={running}
+      data-testid="step-timer"
+    >
+      {left <= 0 ? m.cookMode.timerDone : left === seconds && !running ? `\u25B6 ${formatClock(seconds)}` : `${running ? "\u275A\u275A" : "\u25B6"} ${formatClock(left)}`}
+    </button>
+  );
+}
+
 /** Full-screen, big-text step-by-step view that keeps the screen awake while cooking. */
 export function CookMode({ title, ingredients, steps }: { title: string; ingredients: string[]; steps: string[] }) {
   const m = useMessages();
@@ -53,7 +98,10 @@ export function CookMode({ title, ingredients, steps }: { title: string; ingredi
         ))}
       </ul>
     ) : index <= total ? (
-      <p className="mt-6 text-3xl font-medium leading-snug sm:text-4xl">{steps[index - 1]}</p>
+      <div>
+        <p className="mt-6 text-3xl font-medium leading-snug sm:text-4xl">{steps[index - 1]}</p>
+        {stepSeconds(steps[index - 1]) ? <StepTimer seconds={stepSeconds(steps[index - 1])!} resetKey={index} /> : null}
+      </div>
     ) : (
       <p className="mt-6 text-3xl font-semibold text-accent">{m.cookMode.done}</p>
     );
