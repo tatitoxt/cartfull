@@ -8,7 +8,7 @@ export interface SavingsInput {
   household_size: number;
   total_cents: number;
   spent_cents: number | null;
-  plan_receipts?: { plan_id: string }[] | null;
+  plan_receipts?: { plan_id: string } | { plan_id: string }[] | null;
 }
 
 export interface WeekSavings {
@@ -58,7 +58,7 @@ export function weekSavings(plan: SavingsInput): WeekSavings {
     savedCents: usualCents - spentCents,
     budgetCents: plan.budget_cents,
     underBudget: spentCents <= plan.budget_cents,
-    hasReceipt: (plan.plan_receipts?.length ?? 0) > 0,
+    hasReceipt: Array.isArray(plan.plan_receipts) ? plan.plan_receipts.length > 0 : plan.plan_receipts != null,
   };
 }
 

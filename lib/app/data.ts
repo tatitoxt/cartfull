@@ -95,8 +95,8 @@ export interface PlanRow {
   seed: number;
   spent_cents: number | null;
   created_at: string;
-  /** Embedded one-to-one: non-empty when a receipt photo is attached. */
-  plan_receipts?: { plan_id: string }[] | null;
+  /** Embedded one-to-one: PostgREST returns an object (or null) here. */
+  plan_receipts?: { plan_id: string } | { plan_id: string }[] | null;
 }
 
 export interface LoadedPlan {
