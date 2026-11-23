@@ -91,7 +91,7 @@ export default async function SavingsPage() {
                 </div>
               ))}
             </dl>
-            <SpendForm planId={week.id} spentCents={week.spentIsActual ? week.spentCents : null} />
+            <SpendForm planId={week.id} spentCents={week.spentIsActual ? week.spentCents : null} hasReceipt={week.hasReceipt} />
           </li>
         ))}
       </ol>

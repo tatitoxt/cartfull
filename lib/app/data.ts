@@ -95,6 +95,8 @@ export interface PlanRow {
   seed: number;
   spent_cents: number | null;
   created_at: string;
+  /** Embedded one-to-one: PostgREST returns an object (or null) here. */
+  plan_receipts?: { plan_id: string } | { plan_id: string }[] | null;
 }
 
 export interface LoadedPlan {
@@ -114,7 +116,7 @@ export interface LoadedPlan {
 export async function listPlans({ supabase, userId }: Session): Promise<PlanRow[]> {
   const { data, error } = await supabase
     .from("plans")
-    .select("id, week_start, budget_cents, usual_spend_cents, household_size, diet, total_cents, seed, spent_cents, created_at")
+    .select("id, week_start, budget_cents, usual_spend_cents, household_size, diet, total_cents, seed, spent_cents, created_at, plan_receipts(plan_id)")
     .eq("user_id", userId)
     .order("week_start", { ascending: false });
   if (error) throw new Error(`Could not load plans: ${error.message}`);

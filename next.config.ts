@@ -10,6 +10,11 @@ const securityHeaders = [
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  experimental: {
+    // Receipt photos upload through a server action; the default 1 MB cap
+    // would reject any photo over ~0.7 MB before it reaches validation.
+    serverActions: { bodySizeLimit: "8mb" },
+  },
   async headers() {
     return [
       { source: "/(.*)", headers: securityHeaders },

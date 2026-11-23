@@ -525,6 +525,30 @@ export async function recordSpend(planId: string, spentCents: number | null): Pr
   return { ok: true };
 }
 
+const RECEIPT_MIMES = new Set(["image/jpeg", "image/png", "image/webp", "image/heic"]);
+
+export async function attachReceipt(planId: string, formData: FormData): Promise<ActionResult> {
+  const session = await requireSession("/app/savings");
+  const m = MESSAGES[(await getProfile(session)).lang];
+  const file = formData.get("receipt");
+  if (!(file instanceof File) || !RECEIPT_MIMES.has(file.type) || file.size === 0 || file.size > 6 * 1024 * 1024)
+    return fail("invalid", m.savings.receiptFileError);
+  const image = "\\x" + Buffer.from(await file.arrayBuffer()).toString("hex");
+  const { error } = await session.supabase.from("plan_receipts").upsert({ plan_id: planId, image, mime: file.type });
+  if (error) return fail("locked", m.actions.locked);
+  revalidatePath("/app/savings");
+  return { ok: true };
+}
+
+export async function deleteReceipt(planId: string): Promise<ActionResult> {
+  const session = await requireSession("/app/savings");
+  const m = MESSAGES[(await getProfile(session)).lang];
+  const { error } = await session.supabase.from("plan_receipts").delete().eq("plan_id", planId);
+  if (error) return fail("locked", m.actions.locked);
+  revalidatePath("/app/savings");
+  return { ok: true };
+}
+
 export async function saveSettings(input: unknown): Promise<ActionResult> {
   const session = await requireSession("/app/account");
   const parsed = answersSchema.safeParse(input);
