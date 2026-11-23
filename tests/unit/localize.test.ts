@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import ingredients from "../../data/ingredients.json";
+import { countryByCode, guessCountry } from "../../lib/i18n/countries";
 import { amount, grams, packageLabel, temperatures } from "../../lib/catalog/localize";
 
 describe("amounts", () => {
@@ -53,5 +54,20 @@ describe("package labels", () => {
 
   it("rejects a form it cannot convert", () => {
     expect(packageLabel("family size", "es", "metric")).toBeNull();
+  });
+});
+
+describe("countries", () => {
+  it("guesses from the browser's languages", () => {
+    expect(guessCountry("es-AR,es;q=0.9,en;q=0.8").code).toBe("AR");
+    expect(guessCountry("en-GB,en;q=0.9").units).toBe("metric");
+    expect(guessCountry("es-419,es;q=0.9").lang).toBe("es");
+    expect(guessCountry("fr-FR,fr;q=0.9,en;q=0.5").code).toBe("US");
+    expect(guessCountry(null).code).toBe("US");
+  });
+
+  it("falls back to the United States for an unknown code", () => {
+    expect(countryByCode("ZZ").code).toBe("US");
+    expect(countryByCode("MX").lang).toBe("es");
   });
 });
