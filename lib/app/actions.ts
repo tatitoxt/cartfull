@@ -139,7 +139,8 @@ async function buildWeek(session: Session, planId?: string): Promise<ActionResul
       if (line.have) have.add(line.ingredient.id);
       else have.delete(line.ingredient.id);
     }
-    owned = new Map(loaded.cart.lines.map((l) => [l.ingredient.id, l.haveQty]));
+    // Full marks count as pantry stock; only partial rows cap the owned amount.
+    owned = new Map(loaded.cart.lines.filter((l) => !l.have && l.haveQty > 0).map((l) => [l.ingredient.id, l.haveQty]));
   } else {
     if (plans.length > 0 && !entitlement.active) return fail("paywall", m.actions.trialNext);
     weekStart = targetWeekStart();
@@ -293,7 +294,7 @@ export async function getSwapChoices(planId: string, day: number, slot: MealType
     householdSize: loaded.row.household_size,
     favoriteSlugs: feedback.favorites,
     ratings: feedback.ratings,
-    owned: new Map(loaded.cart.lines.map((l) => [l.ingredient.id, l.haveQty])),
+    owned: new Map(loaded.cart.lines.filter((l) => !l.have && l.haveQty > 0).map((l) => [l.ingredient.id, l.haveQty])),
   });
   return swapOptions(catalog, request, loaded.meals, { day, slot }).map((option) => ({
     slug: option.recipe.slug,
@@ -327,7 +328,7 @@ export async function swapMeal(planId: string, day: number, slot: MealType, slug
 
   const [pantry, feedback] = await Promise.all([getPantry(session), getFeedback(session)]);
   const have = effectiveHave(pantry, loaded);
-  const owned = new Map(loaded.cart.lines.map((l) => [l.ingredient.id, l.haveQty]));
+  const owned = new Map(loaded.cart.lines.filter((l) => !l.have && l.haveQty > 0).map((l) => [l.ingredient.id, l.haveQty]));
   const request = planRequest(profile, have, loaded.row.seed, {
     budgetCents: loaded.row.budget_cents,
     householdSize: loaded.row.household_size,
