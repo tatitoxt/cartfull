@@ -1,4 +1,4 @@
-import type { Allergen, Ingredient, MealType, Recipe } from "../catalog/types";
+import type { Allergen, Equipment, Ingredient, MealType, Recipe } from "../catalog/types";
 
 export const DIETS = ["none", "vegetarian", "keto", "high_protein"] as const;
 export type Diet = (typeof DIETS)[number];
@@ -18,6 +18,8 @@ export interface PlanRequest {
   allergens: readonly Allergen[];
   /** Keys from DISLIKE_OPTIONS. */
   dislikes: readonly string[];
+  /** Appliances in the kitchen. Recipes that need another one are left out. Omit for no limit. */
+  equipment?: readonly Equipment[];
   /** Same seed, same plan. */
   seed: number;
   /** Recipes to steer away from, e.g. last week's dinners. */

@@ -122,6 +122,30 @@ describe("generatePlan on a small catalog", () => {
   });
 });
 
+describe("appliances", () => {
+  const withAirFryer: typeof fixture = {
+    ingredients: fixture.ingredients,
+    recipes: fixture.recipes.map((r, i) => (i === 0 ? { ...r, equipment: ["stovetop", "air_fryer"] } : r)),
+  };
+  const slug = withAirFryer.recipes[0].slug;
+  const base = { diet: "none", allergens: [], dislikes: [] } as const;
+
+  it("leaves out a recipe that needs an appliance the kitchen lacks", () => {
+    const can = eligibleRecipes(withAirFryer, { ...base, equipment: ["stovetop", "oven"] });
+    expect(can.map((r) => r.slug)).not.toContain(slug);
+  });
+
+  it("keeps it when every appliance is there, or when no kitchen was given", () => {
+    const has = eligibleRecipes(withAirFryer, { ...base, equipment: ["air_fryer", "stovetop"] });
+    expect(has.map((r) => r.slug)).toContain(slug);
+    expect(eligibleRecipes(withAirFryer, base).map((r) => r.slug)).toContain(slug);
+  });
+
+  it("keeps recipes that do not say what they need", () => {
+    expect(eligibleRecipes(fixture, { ...base, equipment: [] })).toHaveLength(fixture.recipes.length);
+  });
+});
+
 describe("estimateWeek", () => {
   it("brackets the plan: minimum <= typical, and the minimum is plannable", () => {
     const estimate = estimateWeek(fixture, request());
