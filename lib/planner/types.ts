@@ -24,6 +24,10 @@ export interface PlanRequest {
   seed: number;
   /** Recipes to steer away from, e.g. last week's dinners. */
   avoidSlugs?: ReadonlySet<string>;
+  /** Heart-marked recipes are picked before others. */
+  favoriteSlugs?: ReadonlySet<string>;
+  /** 1-5 stars the household gave; high scores show up more, low scores less. */
+  ratings?: ReadonlyMap<string, number>;
 }
 
 export interface MealAssignment {

@@ -32,6 +32,26 @@ export async function getProfile({ supabase, userId }: Session): Promise<Profile
   return data as Profile;
 }
 
+export interface Feedback {
+  favorites: Set<string>;
+  ratings: Map<string, number>;
+}
+
+/** Hearts and stars the household gave recipes. */
+export async function getFeedback({ supabase, userId }: Session): Promise<Feedback> {
+  const { data } = await supabase
+    .from("recipe_feedback")
+    .select("recipe_slug, favorite, rating")
+    .eq("user_id", userId);
+  const favorites = new Set<string>();
+  const ratings = new Map<string, number>();
+  for (const row of data ?? []) {
+    if (row.favorite) favorites.add(row.recipe_slug as string);
+    if (typeof row.rating === "number") ratings.set(row.recipe_slug as string, row.rating);
+  }
+  return { favorites, ratings };
+}
+
 export interface Entitlement {
   /** True only while Stripe says the subscription is trialing or active. */
   active: boolean;

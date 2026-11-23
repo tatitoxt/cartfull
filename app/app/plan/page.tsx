@@ -5,6 +5,8 @@ import { Photo } from "@/components/photo";
 import { catalog } from "@/lib/catalog";
 import { recipeCentsPerServing } from "@/lib/catalog/cost";
 import { loadAppState } from "@/lib/app/current";
+import { getFeedback } from "@/lib/app/data";
+import { FavoriteToggle } from "@/components/recipe-feedback";
 import { weekIsOver, weekLabel } from "@/lib/app/week";
 import { money, moneyExact } from "@/lib/format";
 import type { MealAssignment } from "@/lib/planner/types";
@@ -20,7 +22,8 @@ export async function generateMetadata(): Promise<Metadata> {
 const perServing = (meal: MealAssignment) => Math.round(recipeCentsPerServing(meal.recipe, catalog.ingredients));
 
 export default async function PlanPage() {
-  const { current, entitlement, canPlanNext, plans, profile } = await loadAppState("/app/plan");
+  const { session, current, entitlement, canPlanNext, plans, profile } = await loadAppState("/app/plan");
+  const feedback = await getFeedback(session);
   const m = MESSAGES[profile.lang];
   const lang = profile.lang;
 
@@ -125,11 +128,14 @@ export default async function PlanPage() {
                   />
                 </Link>
                 <div>
-                  <h3 className="text-[1.6rem] leading-tight">
-                    <Link href={`/app/recipe/${dinner.recipe.slug}?plan=${row.id}`} className="hover:underline" data-testid="dinner-name">
-                      {dinner.recipe.name_es && lang === "es" ? dinner.recipe.name_es : dinner.recipe.name}
-                    </Link>
-                  </h3>
+                  <div className="flex items-start gap-1">
+                    <h3 className="text-[1.6rem] leading-tight">
+                      <Link href={`/app/recipe/${dinner.recipe.slug}?plan=${row.id}`} className="hover:underline" data-testid="dinner-name">
+                        {dinner.recipe.name_es && lang === "es" ? dinner.recipe.name_es : dinner.recipe.name}
+                      </Link>
+                    </h3>
+                    <FavoriteToggle slug={dinner.recipe.slug} initial={feedback.favorites.has(dinner.recipe.slug)} />
+                  </div>
                   <p className="mt-2 text-fg-soft">{lang === "es" && dinner.recipe.description_es ? dinner.recipe.description_es : dinner.recipe.description}</p>
                   <p className="tnum mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm">
                     <span className="font-semibold text-accent-deep">{fill(m.plan.perServing, { amount: moneyExact(perServing(dinner), lang) })}</span>
@@ -156,6 +162,7 @@ export default async function PlanPage() {
                         {fill(m.plan.perServing, { amount: moneyExact(perServing(meal), lang) })} · {fill(m.common.min, { count: meal.recipe.prep_minutes })}
                       </p>
                     </div>
+                    <FavoriteToggle slug={meal.recipe.slug} initial={feedback.favorites.has(meal.recipe.slug)} />
                     {editable && !over && (
                       <SwapButton planId={row.id} day={day} slot={meal.slot} currentName={meal.recipe.name_es && lang === "es" ? meal.recipe.name_es : meal.recipe.name} compact />
                     )}

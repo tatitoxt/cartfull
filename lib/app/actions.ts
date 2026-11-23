@@ -11,6 +11,7 @@ import { BudgetTooLowError, NotEnoughRecipesError, type MealAssignment } from ".
 import {
   firstPlanId,
   getEntitlement,
+  getFeedback,
   getPantry,
   getProfile,
   listPlans,
@@ -112,11 +113,12 @@ async function saveAnswers(session: Session, answers: Answers, markOnboarded: bo
  * week is created (free for the very first one, subscribers only after that).
  */
 async function buildWeek(session: Session, planId?: string): Promise<ActionResult> {
-  const [profile, pantry, plans, entitlement] = await Promise.all([
+  const [profile, pantry, plans, entitlement, feedback] = await Promise.all([
     getProfile(session),
     getPantry(session),
     listPlans(session),
     getEntitlement(session),
+    getFeedback(session),
   ]);
   const firstId = firstPlanId(plans);
   const m = MESSAGES[profile.lang];
@@ -151,7 +153,11 @@ async function buildWeek(session: Session, planId?: string): Promise<ActionResul
     avoidSlugs = new Set((data ?? []).map((m) => m.recipe_slug as string));
   }
 
-  const request = planRequest(profile, have, seed, { avoidSlugs });
+  const request = planRequest(profile, have, seed, {
+    avoidSlugs,
+    favoriteSlugs: feedback.favorites,
+    ratings: feedback.ratings,
+  });
   let plan;
   try {
     plan = generatePlan(catalog, request);
@@ -275,11 +281,13 @@ export async function getSwapChoices(planId: string, day: number, slot: MealType
   if (!MEAL_TYPES.includes(slot)) return [];
   const loaded = await editablePlan(session, planId);
   if (!loaded || !loaded.meals.some((m) => m.day === day && m.slot === slot)) return [];
-  const [profile, pantry] = await Promise.all([getProfile(session), getPantry(session)]);
+  const [profile, pantry, feedback] = await Promise.all([getProfile(session), getPantry(session), getFeedback(session)]);
   const have = effectiveHave(pantry, loaded);
   const request = planRequest(profile, have, loaded.row.seed, {
     budgetCents: loaded.row.budget_cents,
     householdSize: loaded.row.household_size,
+    favoriteSlugs: feedback.favorites,
+    ratings: feedback.ratings,
   });
   return swapOptions(catalog, request, loaded.meals, { day, slot }).map((option) => ({
     slug: option.recipe.slug,
@@ -311,11 +319,13 @@ export async function swapMeal(planId: string, day: number, slot: MealType, slug
   const current = loaded.meals.find((m) => m.day === day && m.slot === slot);
   if (!current) return fail("invalid", m.actions.mealMissing);
 
-  const pantry = await getPantry(session);
+  const [pantry, feedback] = await Promise.all([getPantry(session), getFeedback(session)]);
   const have = effectiveHave(pantry, loaded);
   const request = planRequest(profile, have, loaded.row.seed, {
     budgetCents: loaded.row.budget_cents,
     householdSize: loaded.row.household_size,
+    favoriteSlugs: feedback.favorites,
+    ratings: feedback.ratings,
   });
   // Re-check on the server: the swap must be allowed for this household and keep the cart in budget.
   const allowed = swapOptions(catalog, request, loaded.meals, { day, slot }, Infinity).some((o) => o.recipe.slug === slug);
@@ -335,6 +345,52 @@ export async function swapMeal(planId: string, day: number, slot: MealType, slug
     have,
   });
   if (error) return error;
+  revalidatePath("/app", "layout");
+  return { ok: true };
+}
+
+export async function setFavorite(slug: string, favorite: boolean): Promise<ActionResult> {
+  const session = await requireSession();
+  const profile = await getProfile(session);
+  if (!recipeBySlug(slug)) return fail("invalid", MESSAGES[profile.lang].actions.mealUnavailable);
+  const { data } = await session.supabase
+    .from("recipe_feedback")
+    .select("rating")
+    .eq("user_id", session.userId)
+    .eq("recipe_slug", slug)
+    .maybeSingle();
+  const { error } = await session.supabase.from("recipe_feedback").upsert({
+    user_id: session.userId,
+    recipe_slug: slug,
+    favorite,
+    rating: (data?.rating as number | null) ?? null,
+    updated_at: new Date().toISOString(),
+  });
+  if (error) return fail("failed", MESSAGES[profile.lang].actions.saveItem);
+  revalidatePath("/app", "layout");
+  return { ok: true };
+}
+
+export async function setRating(slug: string, rating: number | null): Promise<ActionResult> {
+  const session = await requireSession();
+  const profile = await getProfile(session);
+  if (!recipeBySlug(slug)) return fail("invalid", MESSAGES[profile.lang].actions.mealUnavailable);
+  if (rating !== null && (!Number.isInteger(rating) || rating < 1 || rating > 5))
+    return fail("invalid", MESSAGES[profile.lang].actions.invalidAnswers);
+  const { data } = await session.supabase
+    .from("recipe_feedback")
+    .select("favorite")
+    .eq("user_id", session.userId)
+    .eq("recipe_slug", slug)
+    .maybeSingle();
+  const { error } = await session.supabase.from("recipe_feedback").upsert({
+    user_id: session.userId,
+    recipe_slug: slug,
+    favorite: (data?.favorite as boolean) ?? false,
+    rating,
+    updated_at: new Date().toISOString(),
+  });
+  if (error) return fail("failed", MESSAGES[profile.lang].actions.saveItem);
   revalidatePath("/app", "layout");
   return { ok: true };
 }
