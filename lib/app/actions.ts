@@ -21,6 +21,9 @@ import {
 } from "./data";
 import { answersSchema, typicalSpendCents, type Answers } from "./profile";
 import { addDays, targetWeekStart, weekIsOver } from "./week";
+import { MESSAGES, fill } from "../i18n/messages";
+import { getLocale } from "../i18n/server";
+import type { Lang } from "../catalog/localize";
 
 export type ActionResult =
   | { ok: true }
@@ -30,19 +33,26 @@ export type ActionResult =
 const fail = (code: Exclude<ActionResult, { ok: true }>["code"], message: string): ActionResult =>
   ({ ok: false, code, message }) as ActionResult;
 
-function plannerFailure(error: unknown): ActionResult | null {
+function plannerFailure(error: unknown, lang: Lang): ActionResult | null {
+  const m = MESSAGES[lang];
   if (error instanceof BudgetTooLowError) {
     return {
       ok: false,
       code: "budget_too_low",
       minimumCents: error.minimumCents,
-      message: `We can't build this week for $${Math.floor(error.budgetCents / 100)}. The leanest week we can plan for your household is about $${Math.ceil(error.minimumCents / 100)}.`,
+      message: fill(m.onboarding.problemBudget, {
+        budget: Math.floor(error.budgetCents / 100),
+        minimum: Math.ceil(error.minimumCents / 100),
+      }),
     };
   }
   if (error instanceof NotEnoughRecipesError) {
     return fail(
       "not_enough_recipes",
-      `Only ${error.available} ${error.slot} recipes fit your diet, allergies and dislikes. Loosen one of them and try again.`,
+      fill(m.onboarding.problemRecipes, {
+        available: error.available,
+        slot: m.plan.slot[error.slot],
+      }),
     );
   }
   return null;
@@ -109,15 +119,16 @@ async function buildWeek(session: Session, planId?: string): Promise<ActionResul
     getEntitlement(session),
   ]);
   const firstId = firstPlanId(plans);
+  const m = MESSAGES[profile.lang];
   const existing = planId ? plans.find((p) => p.id === planId) : undefined;
-  if (planId && !existing) return fail("invalid", "That week no longer exists.");
+  if (planId && !existing) return fail("invalid", m.actions.weekMissing);
 
   let weekStart: string;
   let seed: number;
   const have = new Set(pantry);
   if (existing) {
     const loaded = await loadPlan(session, existing, { active: entitlement.active, firstId });
-    if (!loaded.editable) return fail("paywall", "Start your free trial to keep planning.");
+    if (!loaded.editable) return fail("paywall", m.actions.trialPlan);
     weekStart = existing.week_start;
     seed = (existing.seed + 1) | 0;
     // What the shopper told us on this week's list wins over the saved pantry.
@@ -126,7 +137,7 @@ async function buildWeek(session: Session, planId?: string): Promise<ActionResul
       else have.delete(line.ingredient.id);
     }
   } else {
-    if (plans.length > 0 && !entitlement.active) return fail("paywall", "Start your free trial to plan another week.");
+    if (plans.length > 0 && !entitlement.active) return fail("paywall", m.actions.trialNext);
     weekStart = targetWeekStart();
     while (plans.some((p) => p.week_start === weekStart)) weekStart = addDays(weekStart, 7);
     seed = hashSeed(`${session.userId}:${weekStart}`) | 0;
@@ -145,12 +156,12 @@ async function buildWeek(session: Session, planId?: string): Promise<ActionResul
   try {
     plan = generatePlan(catalog, request);
   } catch (error) {
-    const failure = plannerFailure(error);
+    const failure = plannerFailure(error, profile.lang);
     if (failure) return failure;
     throw error;
   }
 
-  const error = await savePlan(session, {
+  const error = await savePlan(session, profile.lang, {
     weekStart,
     budgetCents: request.budgetCents,
     usualSpendCents: profile.usual_spend_cents ?? typicalSpendCents(profile.household_size),
@@ -175,6 +186,7 @@ async function buildWeek(session: Session, planId?: string): Promise<ActionResul
 
 async function savePlan(
   session: Session,
+  lang: Lang,
   input: {
     weekStart: string;
     budgetCents: number;
@@ -199,19 +211,20 @@ async function savePlan(
     p_items: cart.lines.map((line) => ({ ingredient_id: line.ingredient.id, have: line.have })),
   });
   if (!error) return null;
-  if (error.code === "42501") return fail("paywall", "Start your free trial to keep planning.");
+  if (error.code === "42501") return fail("paywall", MESSAGES[lang].actions.trialPlan);
   console.error("save_plan failed", error);
-  return fail("failed", "We couldn't save your week. Try again.");
+  return fail("failed", MESSAGES[lang].actions.saveWeek);
 }
 
 export async function completeOnboarding(input: unknown): Promise<ActionResult> {
   const session = await requireSession("/start");
   const parsed = answersSchema.safeParse(input);
-  if (!parsed.success) return fail("invalid", "Some answers look off. Check them and try again.");
+  const locale = await getLocale();
+  if (!parsed.success) return fail("invalid", MESSAGES[locale.lang].actions.invalidAnswers);
 
   const profile = await getProfile(session);
   const error = await saveAnswers(session, parsed.data, true);
-  if (error) return fail("failed", "We couldn't save your answers. Try again.");
+  if (error) return fail("failed", MESSAGES[parsed.data.lang].actions.saveAnswers);
   if (!profile.onboarded_at) {
     await captureServer("onboarding_completed", session.userId, {
       budget: parsed.data.weekly_budget_cents / 100,
@@ -270,7 +283,7 @@ export async function getSwapChoices(planId: string, day: number, slot: MealType
   });
   return swapOptions(catalog, request, loaded.meals, { day, slot }).map((option) => ({
     slug: option.recipe.slug,
-    name: option.recipe.name,
+    name: (profile.lang === "es" && option.recipe.name_es) || option.recipe.name,
     photoUrl: option.recipe.photo_url,
     prepMinutes: option.recipe.prep_minutes,
     totalCents: option.totalCents,
@@ -289,14 +302,16 @@ function effectiveHave(pantry: ReadonlySet<string>, loaded: { cart: { lines: { h
 
 export async function swapMeal(planId: string, day: number, slot: MealType, slug: string): Promise<ActionResult> {
   const session = await requireSession();
+  const profile = await getProfile(session);
+  const m = MESSAGES[profile.lang];
   const recipe = recipeBySlug(slug);
-  if (!recipe || !MEAL_TYPES.includes(slot) || recipe.meal_type !== slot) return fail("invalid", "That meal isn't available.");
+  if (!recipe || !MEAL_TYPES.includes(slot) || recipe.meal_type !== slot) return fail("invalid", m.actions.mealUnavailable);
   const loaded = await editablePlan(session, planId);
-  if (!loaded) return fail("locked", "This week can't be changed.");
+  if (!loaded) return fail("locked", m.actions.locked);
   const current = loaded.meals.find((m) => m.day === day && m.slot === slot);
-  if (!current) return fail("invalid", "That meal isn't on this week.");
+  if (!current) return fail("invalid", m.actions.mealMissing);
 
-  const [profile, pantry] = await Promise.all([getProfile(session), getPantry(session)]);
+  const pantry = await getPantry(session);
   const have = effectiveHave(pantry, loaded);
   const request = planRequest(profile, have, loaded.row.seed, {
     budgetCents: loaded.row.budget_cents,
@@ -304,12 +319,12 @@ export async function swapMeal(planId: string, day: number, slot: MealType, slug
   });
   // Re-check on the server: the swap must be allowed for this household and keep the cart in budget.
   const allowed = swapOptions(catalog, request, loaded.meals, { day, slot }, Infinity).some((o) => o.recipe.slug === slug);
-  if (!allowed) return fail("invalid", "That swap would put the week over budget.");
+  if (!allowed) return fail("invalid", m.actions.swapBudget);
 
   const meals = loaded.meals.map((m) =>
     m.slot === slot && m.recipe.slug === current.recipe.slug ? { ...m, recipe } : m,
   );
-  const error = await savePlan(session, {
+  const error = await savePlan(session, profile.lang, {
     weekStart: loaded.row.week_start,
     budgetCents: loaded.row.budget_cents,
     usualSpendCents: loaded.row.usual_spend_cents ?? typicalSpendCents(loaded.row.household_size),
@@ -330,11 +345,13 @@ export async function setItemState(
   change: { checked?: boolean; have?: boolean },
 ): Promise<ActionResult> {
   const session = await requireSession();
+  const profile = await getProfile(session);
+  const m = MESSAGES[profile.lang];
   const ingredient = catalog.ingredients.get(ingredientId);
   const loaded = await editablePlan(session, planId);
-  if (!loaded) return fail("locked", "This week can't be changed.");
+  if (!loaded) return fail("locked", m.actions.locked);
   if (!ingredient || !loaded.cart.lines.some((l) => l.ingredient.id === ingredientId))
-    return fail("invalid", "That item isn't on this list.");
+    return fail("invalid", m.actions.itemMissing);
 
   const update: Record<string, boolean> = {};
   if (typeof change.checked === "boolean") update.checked = change.checked;
@@ -348,7 +365,7 @@ export async function setItemState(
   const { error } = await supabase
     .from("plan_items")
     .upsert({ plan_id: planId, ingredient_id: ingredientId, ...update }, { onConflict: "plan_id,ingredient_id" });
-  if (error) return fail("failed", "We couldn't save that. Try again.");
+  if (error) return fail("failed", m.actions.saveItem);
 
   if (typeof change.have === "boolean") {
     const have = new Set(loaded.have);
@@ -368,10 +385,12 @@ export async function setItemState(
 
 export async function recordSpend(planId: string, spentCents: number | null): Promise<ActionResult> {
   const session = await requireSession();
+  const profile = await getProfile(session);
+  const m = MESSAGES[profile.lang];
   if (spentCents !== null && (!Number.isInteger(spentCents) || spentCents < 0 || spentCents > 500000))
-    return fail("invalid", "Enter what you spent, in dollars.");
+    return fail("invalid", m.actions.spendDollars);
   const { error } = await session.supabase.rpc("record_spend", { p_plan_id: planId, p_spent_cents: spentCents });
-  if (error) return fail("locked", "This week can't be changed.");
+  if (error) return fail("locked", m.actions.locked);
   revalidatePath("/app", "layout");
   return { ok: true };
 }
@@ -379,9 +398,10 @@ export async function recordSpend(planId: string, spentCents: number | null): Pr
 export async function saveSettings(input: unknown): Promise<ActionResult> {
   const session = await requireSession("/app/account");
   const parsed = answersSchema.safeParse(input);
-  if (!parsed.success) return fail("invalid", "Some answers look off. Check them and try again.");
+  const locale = await getLocale();
+  if (!parsed.success) return fail("invalid", MESSAGES[locale.lang].actions.invalidAnswers);
   const error = await saveAnswers(session, parsed.data, false);
-  if (error) return fail("failed", "We couldn't save your settings. Try again.");
+  if (error) return fail("failed", MESSAGES[parsed.data.lang].actions.saveSettings);
   revalidatePath("/app", "layout");
   return { ok: true };
 }

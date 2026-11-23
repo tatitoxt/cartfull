@@ -13,6 +13,8 @@ import {
 import { saveSettings } from "@/lib/app/actions";
 import type { PantryGroups } from "@/lib/app/pantry";
 import type { Answers } from "@/lib/app/profile";
+import { CountryPreferences } from "@/components/country-preferences";
+import { useMessages } from "@/lib/i18n/locale-provider";
 
 export function SettingsForm({
   initial,
@@ -21,9 +23,10 @@ export function SettingsForm({
 }: {
   initial: Answers;
   pantry: PantryGroups;
-  dislikeOptions: { key: string; label: string }[];
+  dislikeOptions: { key: string }[];
 }) {
   const router = useRouter();
+  const m = useMessages();
   const [answers, setAnswers] = useState(initial);
   const [dirty, setDirty] = useState(false);
   const [message, setMessage] = useState<{ ok: boolean; text: string } | null>(null);
@@ -40,7 +43,7 @@ export function SettingsForm({
       const result = await saveSettings(answers);
       if (result.ok) {
         setDirty(false);
-        setMessage({ ok: true, text: "Saved. Your next plan uses these. Tap “New mix” on the plan to apply them to this week." });
+        setMessage({ ok: true, text: m.account.saveSuccess });
         track("settings_saved");
         router.refresh();
       } else {
@@ -49,15 +52,16 @@ export function SettingsForm({
     });
 
   const sections = [
-    { id: "budget", title: "Budget and household", body: (
+    { id: "country", title: m.account.countryLanguage, body: <CountryPreferences answers={answers} set={set} /> },
+    { id: "budget", title: m.account.budget, body: (
         <div className="space-y-8">
           <BudgetFields answers={answers} set={set} />
           <UsualSpendField answers={answers} set={set} />
         </div>
       ) },
-    { id: "meals", title: "Meals", body: <MealFields answers={answers} set={set} /> },
-    { id: "avoid", title: "Leave out", body: <AvoidFields answers={answers} set={set} dislikeOptions={dislikeOptions} /> },
-    { id: "kitchen", title: "Your kitchen", body: <PantryFields answers={answers} set={set} pantry={pantry} /> },
+    { id: "meals", title: m.account.meals, body: <MealFields answers={answers} set={set} /> },
+    { id: "avoid", title: m.account.leaveOut, body: <AvoidFields answers={answers} set={set} dislikeOptions={dislikeOptions} /> },
+    { id: "kitchen", title: m.account.kitchen, body: <PantryFields answers={answers} set={set} pantry={pantry} /> },
   ];
 
   return (
@@ -78,7 +82,7 @@ export function SettingsForm({
       ))}
       <div className="sticky bottom-20 z-10 flex flex-wrap items-center gap-3 rounded-card bg-paper/95 py-3 backdrop-blur sm:bottom-4">
         <button type="submit" className="btn btn-primary" disabled={pending || !dirty} data-testid="save-settings">
-          {pending ? "Saving…" : "Save changes"}
+          {pending ? m.common.saving : m.common.save}
         </button>
         {message && (
           <p role={message.ok ? "status" : "alert"} className={`text-sm font-medium ${message.ok ? "text-green-deep" : "text-tomato-deep"}`}>

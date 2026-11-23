@@ -3,6 +3,8 @@ import { ALLERGENS, EQUIPMENT } from "../catalog/types";
 import { COUNTRY_CODES } from "../i18n/countries";
 import { DISLIKE_KEYS } from "../planner/dislikes";
 import { COOK_TIMES, DIETS } from "../planner/types";
+import type { Lang } from "../catalog/localize";
+import { MESSAGES } from "../i18n/messages";
 
 export const BUDGET_MIN_CENTS = 3000;
 export const BUDGET_MAX_CENTS = 40000;
@@ -66,27 +68,17 @@ export interface Profile {
   onboarded_at: string | null;
 }
 
-export const ALLERGEN_LABELS: Record<(typeof ALLERGENS)[number], string> = {
-  peanuts: "Peanuts",
-  tree_nuts: "Tree nuts",
-  dairy: "Dairy",
-  eggs: "Eggs",
-  gluten: "Gluten",
-  soy: "Soy",
-  fish: "Fish",
-  shellfish: "Shellfish",
-  sesame: "Sesame",
+export const ALLERGEN_LABELS: Record<Lang, Record<(typeof ALLERGENS)[number], string>> = {
+  en: MESSAGES.en.preferences.allergens,
+  es: MESSAGES.es.preferences.allergens,
 };
 
-export const DIET_LABELS: Record<Answers["diet"], { label: string; hint: string }> = {
-  none: { label: "No preference", hint: "A bit of everything" },
-  vegetarian: { label: "Vegetarian", hint: "No meat or fish" },
-  keto: { label: "Keto", hint: "Low carb, no grains" },
-  high_protein: { label: "High protein", hint: "30 g or more per dinner" },
+export const DIET_LABELS: Record<Lang, Record<Answers["diet"], { label: string; hint: string }>> = {
+  en: MESSAGES.en.preferences.diets,
+  es: MESSAGES.es.preferences.diets,
 };
 
-export const COOK_TIME_LABELS: Record<Answers["cook_time"], { label: string; hint: string }> = {
-  fast: { label: "Fast", hint: "On the table in 25 minutes" },
-  normal: { label: "Normal", hint: "Up to 45 minutes" },
-  batch: { label: "Weekend batch", hint: "Cook big once, reheat on weeknights" },
+export const COOK_TIME_LABELS: Record<Lang, Record<Answers["cook_time"], { label: string; hint: string }>> = {
+  en: MESSAGES.en.preferences.cookTimes,
+  es: MESSAGES.es.preferences.cookTimes,
 };

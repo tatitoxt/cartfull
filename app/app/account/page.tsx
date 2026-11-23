@@ -6,17 +6,22 @@ import { loadAppState } from "@/lib/app/current";
 import { pantryGroups } from "@/lib/app/pantry";
 import { BUDGET_MAX_CENTS, BUDGET_MIN_CENTS, DEFAULTS, type Answers } from "@/lib/app/profile";
 import { PRICING, TRIAL_DAYS } from "@/lib/billing/plans";
+import { moneyExact } from "@/lib/format";
 import { DISLIKE_OPTIONS } from "@/lib/planner/dislikes";
 import { SettingsForm } from "./settings-form";
+import { MESSAGES } from "@/lib/i18n/messages";
 
-export const metadata: Metadata = { title: "Account" };
-
-const date = (iso: string | null) =>
-  iso ? new Date(iso).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" }) : null;
+export async function generateMetadata(): Promise<Metadata> {
+  const { profile } = await loadAppState("/app/account");
+  return { title: MESSAGES[profile.lang].metadata.account };
+}
 
 export default async function AccountPage({ searchParams }: { searchParams: Promise<{ error?: string }> }) {
   const params = await searchParams;
   const { session, profile, entitlement } = await loadAppState("/app/account");
+  const m = MESSAGES[profile.lang];
+  const date = (iso: string | null) =>
+    iso ? new Date(iso).toLocaleDateString(profile.lang === "es" ? "es-ES" : "en-US", { month: "long", day: "numeric", year: "numeric" }) : "";
   const pantry = await getPantry(session);
 
   const answers: Answers = {
@@ -36,72 +41,74 @@ export default async function AccountPage({ searchParams }: { searchParams: Prom
     equipment: profile.equipment,
   };
 
-  const price = entitlement.interval === "annual" ? `${PRICING.annual.label} a year` : `${PRICING.monthly.label} a month`;
+  const price = entitlement.interval === "annual"
+    ? `${moneyExact(PRICING.annual.cents, profile.lang)} ${profile.lang === "es" ? "al año" : "a year"}`
+    : `${moneyExact(PRICING.monthly.cents, profile.lang)} ${profile.lang === "es" ? "al mes" : "a month"}`;
   const billing = (() => {
     if (entitlement.status === "trialing")
       return entitlement.cancelAtPeriodEnd
-        ? `Free trial, ends ${date(entitlement.trialEnd)}. You won't be charged.`
-        : `Free trial until ${date(entitlement.trialEnd)}, then ${price}.`;
+        ? m.account.billing.trialEnds.replace("{date}", date(entitlement.trialEnd))
+        : m.account.billing.trialThen.replace("{date}", date(entitlement.trialEnd)).replace("{price}", price);
     if (entitlement.status === "active")
       return entitlement.cancelAtPeriodEnd
-        ? `Canceled. You keep access until ${date(entitlement.periodEnd)}.`
-        : `${price}. Renews ${date(entitlement.periodEnd)}.`;
+        ? m.account.billing.canceled.replace("{date}", date(entitlement.periodEnd))
+        : m.account.billing.renews.replace("{price}", price).replace("{date}", date(entitlement.periodEnd));
     if (entitlement.status === "past_due" || entitlement.status === "unpaid")
-      return "Your last payment didn't go through. Update your card to keep planning.";
-    if (entitlement.hadSubscription) return "Your subscription has ended.";
-    return `You're on the free first week. Try everything free for ${TRIAL_DAYS} days.`;
+      return m.account.billing.pastDue;
+    if (entitlement.hadSubscription) return m.account.billing.ended;
+    return m.account.billing.freeWeek.replace("{days}", String(TRIAL_DAYS));
   })();
 
   return (
     <>
-      <h1 className="text-4xl sm:text-5xl">Account</h1>
+      <h1 className="text-4xl sm:text-5xl">{m.account.title}</h1>
       <p className="mt-2 text-ink-soft">{profile.email ?? session.email}</p>
 
       <section aria-labelledby="billing-title" className="mt-8 rounded-card bg-surface p-5 shadow-[inset_0_0_0_1.5px_var(--color-line)]">
         <h2 id="billing-title" className="text-2xl">
-          Subscription
+          {m.account.subscription}
         </h2>
         <p className="mt-2" data-testid="billing-status">
           {billing}
         </p>
         {params.error && (
           <p role="alert" className="mt-3 text-sm text-tomato-deep">
-            We couldn&apos;t open the billing page. Try again in a moment.
+            {m.account.billingError}
           </p>
         )}
         <div className="mt-4 flex flex-wrap gap-3">
           {!entitlement.active && (
             <Link href="/app/upgrade" className="btn btn-cta" data-testid="account-upgrade">
-              {entitlement.hadSubscription ? "See plans" : "Start my free trial"}
+              {entitlement.hadSubscription ? m.account.seePlans : m.account.startTrial}
             </Link>
           )}
           {entitlement.hasCustomer && (
             <form action="/api/stripe/portal" method="post">
               <button type="submit" className="btn btn-quiet" data-testid="portal-button">
-                Manage billing
+                {m.account.manageBilling}
               </button>
             </form>
           )}
         </div>
         {entitlement.hasCustomer && (
-          <p className="mt-3 text-sm text-ink-soft">Change your card, switch plans, download invoices or cancel. Opens Stripe.</p>
+          <p className="mt-3 text-sm text-ink-soft">{m.account.stripe}</p>
         )}
       </section>
 
       <SettingsForm
         initial={answers}
         pantry={pantryGroups(catalog.ingredients)}
-        dislikeOptions={DISLIKE_OPTIONS.map(({ key, label }) => ({ key, label }))}
+        dislikeOptions={DISLIKE_OPTIONS.map(({ key }) => ({ key }))}
       />
 
       <section className="mt-10 border-t border-line pt-6">
         <form action="/auth/signout" method="post">
           <button type="submit" className="btn btn-quiet">
-            Sign out
+            {m.account.signOut}
           </button>
         </form>
         <p className="mt-6 text-sm text-ink-faint">
-          Need help or want your data deleted? Email{" "}
+          {m.account.help}{" "}
           <a href="mailto:hello@cartfull.app" className="underline underline-offset-2">
             hello@cartfull.app
           </a>
