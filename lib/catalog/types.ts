@@ -46,6 +46,8 @@ export const MEAT_KINDS: readonly IngredientKind[] = [
 export interface Ingredient {
   id: string;
   name: string;
+  /** Spanish name, lower-case first letter unless a proper noun is involved. */
+  name_es?: string;
   aisle: Aisle;
   /** Unit every recipe uses for this ingredient. */
   unit: string;
@@ -71,7 +73,22 @@ export interface RecipeIngredient {
   id: string;
   qty: number;
   note?: string;
+  note_es?: string;
 }
+
+/** What a kitchen needs to cook a recipe. A plan only uses recipes the household can make. */
+export const EQUIPMENT = [
+  "stovetop",
+  "oven",
+  "microwave",
+  "air_fryer",
+  "slow_cooker",
+  "pressure_cooker",
+  "blender",
+  "grill",
+  "toaster",
+] as const;
+export type Equipment = (typeof EQUIPMENT)[number];
 
 export interface Recipe {
   slug: string;
@@ -84,8 +101,20 @@ export interface Recipe {
   /** Scales up well and keeps for leftovers. */
   batch_friendly: boolean;
   description: string;
+  /** Oven and oil temperatures are written as {425F} so they can be shown in °F or °C. */
   steps: string[];
   ingredients: RecipeIngredient[];
+  name_es?: string;
+  description_es?: string;
+  /** Same steps, same order, in Spanish. */
+  steps_es?: string[];
+  /** Appliances the recipe cannot be made without. Empty for no-cook recipes. */
+  equipment?: Equipment[];
+  /** Hands-on minutes, the part of `prep_minutes` spent chopping and stirring. */
+  active_minutes?: number;
+  /** One practical line: how to store it, stretch it or swap something. */
+  tip?: string;
+  tip_es?: string;
   photo_url: string;
   photo_credit: { name: string; url: string };
 }

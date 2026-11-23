@@ -1,0 +1,2944 @@
+[
+  {
+    "slug": "chilaquiles-rojos-with-fried-eggs",
+    "name": "Chilaquiles Rojos with Fried Eggs",
+    "meal_type": "breakfast",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 2,
+    "prep_minutes": 15,
+    "batch_friendly": false,
+    "description": "Tortilla chips simmered in red salsa until just tender, topped with a fried egg, crumbled cheese and onion.",
+    "steps": [
+      "Finely chop the red onion and the cilantro, and crumble the feta.",
+      "Pour the salsa and a splash of water into a large skillet and simmer over medium heat for 3 minutes, until bubbling and slightly thickened.",
+      "Meanwhile, heat the oil in a second nonstick skillet over medium heat, crack in the eggs and fry 3 minutes, until the whites are set and the yolks are still runny.",
+      "Add the chips to the salsa and fold gently for 1 minute, until every chip is coated and the edges just begin to soften.",
+      "Divide between two plates right away, top each with an egg, the feta, onion, cilantro and a spoonful of sour cream, and serve before the chips go soft."
+    ],
+    "ingredients": [
+      {
+        "id": "tortilla_chips",
+        "qty": 4
+      },
+      {
+        "id": "salsa",
+        "qty": 1
+      },
+      {
+        "id": "eggs",
+        "qty": 2
+      },
+      {
+        "id": "feta",
+        "qty": 1,
+        "note": "crumbled",
+        "note_es": "desmenuzado"
+      },
+      {
+        "id": "sour_cream",
+        "qty": 0.125
+      },
+      {
+        "id": "onion_red",
+        "qty": 0.25,
+        "note": "finely chopped",
+        "note_es": "picada fina"
+      },
+      {
+        "id": "cilantro",
+        "qty": 0.25
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 1
+      }
+    ],
+    "name_es": "Chilaquiles rojos con huevo frito",
+    "description_es": "Chips de tortilla (totopos) bañados en salsa roja hasta quedar apenas tiernos, con huevo frito, queso desmenuzado y cebolla.",
+    "steps_es": [
+      "Pica fino la cebolla morada y el cilantro, y desmenuza el queso feta.",
+      "Vierte la salsa y un chorrito de agua en una sartén grande y cocina a fuego medio 3 minutos, hasta que burbujee y espese un poco.",
+      "Mientras tanto, calienta el aceite en otra sartén antiadherente a fuego medio, rompe los huevos y fríelos 3 minutos, hasta que la clara esté firme y la yema siga líquida.",
+      "Agrega los totopos a la salsa y revuelve con cuidado 1 minuto, hasta que todos queden cubiertos y los bordes apenas empiecen a ablandarse.",
+      "Reparte enseguida en dos platos, pon encima un huevo, el queso, la cebolla, el cilantro y una cucharada de crema agria, y sirve antes de que los totopos se ablanden."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 15,
+    "tip": "Stale corn tortillas cut into wedges and crisped in a little oil work even better than bagged chips.",
+    "tip_es": "Las tortillas de maíz del día anterior, cortadas en triángulos y doradas en un poco de aceite, quedan aún mejor que los totopos de bolsa.",
+    "photo_url": "https://images.unsplash.com/photo-1633372363856-f2fe2669a26e",
+    "photo_credit": {
+      "name": "Alexandra Mendívil",
+      "url": "https://unsplash.com/photos/a-pan-filled-with-food-next-to-two-cups-of-coffee-5sD2TgDZOxA"
+    }
+  },
+  {
+    "slug": "baked-berry-oatmeal",
+    "name": "Baked Berry Oatmeal",
+    "meal_type": "breakfast",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 4,
+    "prep_minutes": 45,
+    "batch_friendly": true,
+    "description": "Oats baked with milk, egg, banana and frozen berries into soft squares you can reheat all week.",
+    "steps": [
+      "Heat the oven to {375F} and grease a medium square baking dish (8 inches, 20 cm) with a little of the butter. Melt the rest.",
+      "Mix the oats, baking powder, cinnamon and salt in a bowl.",
+      "In a second bowl, whisk the milk, egg, brown sugar, melted butter and vanilla until smooth.",
+      "Slice the banana over the bottom of the dish and scatter on half of the berries, straight from the freezer.",
+      "Cover with the oat mixture, pour the milk mixture evenly over the top and finish with the remaining berries.",
+      "Bake 35 minutes, until the top is golden and the center feels set when pressed, with no liquid pooling.",
+      "Let it rest 5 minutes, then scoop into bowls and serve warm."
+    ],
+    "ingredients": [
+      {
+        "id": "oats",
+        "qty": 2
+      },
+      {
+        "id": "milk",
+        "qty": 1.75
+      },
+      {
+        "id": "eggs",
+        "qty": 1
+      },
+      {
+        "id": "berries_frozen",
+        "qty": 1.5
+      },
+      {
+        "id": "banana",
+        "qty": 1,
+        "note": "ripe",
+        "note_es": "madura"
+      },
+      {
+        "id": "brown_sugar",
+        "qty": 0.25
+      },
+      {
+        "id": "butter",
+        "qty": 2
+      },
+      {
+        "id": "baking_powder",
+        "qty": 1
+      },
+      {
+        "id": "cinnamon",
+        "qty": 1
+      },
+      {
+        "id": "vanilla",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 0.25
+      }
+    ],
+    "name_es": "Avena al horno con frutos rojos",
+    "description_es": "Avena horneada con leche, huevo, banana y frutos rojos congelados; queda en porciones suaves que se recalientan toda la semana.",
+    "steps_es": [
+      "Precalienta el horno a {375F} y engrasa una fuente cuadrada mediana (20 cm) con un poco de la mantequilla. Derrite el resto.",
+      "Mezcla la avena, el polvo de hornear, la canela y la sal en un tazón.",
+      "En otro tazón, bate la leche, el huevo, el azúcar morena, la mantequilla derretida y la vainilla hasta integrar.",
+      "Corta la banana en rodajas sobre el fondo de la fuente y reparte la mitad de los frutos rojos, sin descongelar.",
+      "Cubre con la mezcla de avena, vierte la mezcla de leche de manera uniforme y termina con el resto de los frutos rojos.",
+      "Hornea 35 minutos, hasta que la superficie esté dorada y el centro se sienta firme al presionar, sin líquido a la vista.",
+      "Deja reposar 5 minutos, sirve en tazones y come tibia."
+    ],
+    "equipment": [
+      "oven"
+    ],
+    "active_minutes": 10,
+    "tip": "Keeps 4 days covered in the fridge; reheat a square 1 minute in the microwave with a splash of milk.",
+    "tip_es": "Dura 4 días tapada en el refrigerador; recalienta una porción 1 minuto en el microondas con un chorrito de leche.",
+    "photo_url": "https://images.unsplash.com/photo-1590906645880-46e10f104160",
+    "photo_credit": {
+      "name": "Michal Balog",
+      "url": "https://unsplash.com/photos/white-and-blue-ceramic-bowl-with-sliced-strawberries-and-blueberries-luw2-JsMsv8"
+    }
+  },
+  {
+    "slug": "banana-oat-blender-pancakes",
+    "name": "Banana Oat Blender Pancakes",
+    "meal_type": "breakfast",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 2,
+    "prep_minutes": 20,
+    "batch_friendly": false,
+    "description": "Flourless pancakes made by blending oats, ripe bananas and eggs, cooked until golden and served with syrup.",
+    "steps": [
+      "Blend the oats on high for 30 seconds, until they turn into a fine flour.",
+      "Add the bananas, eggs, milk, baking powder, cinnamon, vanilla and salt and blend 30 seconds more, until smooth. Let the batter stand 5 minutes to thicken.",
+      "Melt a little of the butter in a large nonstick skillet over medium-low heat.",
+      "Pour in rounds of batter about the size of your palm and cook 2 to 3 minutes, until bubbles cover the surface and the edges look dry.",
+      "Flip and cook 1 to 2 minutes more, until golden and springy to the touch. Repeat with the rest of the batter, adding butter as needed.",
+      "Stack on two plates and serve with the maple syrup."
+    ],
+    "ingredients": [
+      {
+        "id": "oats",
+        "qty": 1.5
+      },
+      {
+        "id": "banana",
+        "qty": 2,
+        "note": "very ripe",
+        "note_es": "bien maduras"
+      },
+      {
+        "id": "eggs",
+        "qty": 2
+      },
+      {
+        "id": "milk",
+        "qty": 0.5
+      },
+      {
+        "id": "baking_powder",
+        "qty": 2
+      },
+      {
+        "id": "cinnamon",
+        "qty": 0.5
+      },
+      {
+        "id": "vanilla",
+        "qty": 0.5
+      },
+      {
+        "id": "salt",
+        "qty": 0.125
+      },
+      {
+        "id": "butter",
+        "qty": 1
+      },
+      {
+        "id": "maple_syrup",
+        "qty": 2
+      }
+    ],
+    "name_es": "Panqueques de avena y banana en licuadora",
+    "description_es": "Panqueques sin harina hechos licuando avena, bananas maduras y huevos, dorados en sartén y servidos con jarabe de maple.",
+    "steps_es": [
+      "Licúa la avena a velocidad alta 30 segundos, hasta que quede como una harina fina.",
+      "Agrega las bananas, los huevos, la leche, el polvo de hornear, la canela, la vainilla y la sal y licúa 30 segundos más, hasta que quede suave. Deja reposar la mezcla 5 minutos para que espese.",
+      "Derrite un poco de la mantequilla en una sartén antiadherente grande a fuego medio-bajo.",
+      "Vierte porciones de mezcla del tamaño de la palma de tu mano y cocina de 2 a 3 minutos, hasta que la superficie se llene de burbujas y los bordes se vean secos.",
+      "Voltea y cocina de 1 a 2 minutos más, hasta que estén dorados y esponjosos al tocarlos. Repite con el resto de la mezcla, agregando mantequilla cuando haga falta.",
+      "Apila en dos platos y sirve con el jarabe de maple."
+    ],
+    "equipment": [
+      "blender",
+      "stovetop"
+    ],
+    "active_minutes": 15,
+    "tip": "Freeze extra pancakes in a bag with paper between them and reheat straight from frozen in a dry skillet.",
+    "tip_es": "Congela los que sobren en una bolsa, separados con papel, y recaliéntalos sin descongelar en una sartén seca.",
+    "photo_url": "https://images.unsplash.com/photo-1597249637214-a85d31f434d6",
+    "photo_credit": {
+      "name": "Kelsey Curtis",
+      "url": "https://unsplash.com/photos/pancakes-on-white-ceramic-plate-OWwYniuOyiU"
+    }
+  },
+  {
+    "slug": "fried-egg-blt-sandwiches",
+    "name": "Fried Egg BLT Sandwiches",
+    "meal_type": "breakfast",
+    "diet_tags": [],
+    "servings": 2,
+    "prep_minutes": 15,
+    "batch_friendly": false,
+    "description": "Toasted bread stacked with crisp bacon, lettuce, tomato and a fried egg with a soft yolk.",
+    "steps": [
+      "Lay the bacon in a cold large skillet and cook over medium heat 8 minutes, turning now and then, until crisp. Drain on a paper towel and pour off all but a thin film of fat.",
+      "Toast the bread in the skillet over medium heat 1 to 2 minutes per side, until golden, then set it on two plates.",
+      "Crack the eggs into the skillet, season with the salt and pepper and fry over medium heat 2 minutes. Flip and cook 30 seconds more for a soft yolk, or 1 minute for a firm one.",
+      "Slice the tomato and separate the romaine leaves.",
+      "Spread the mayonnaise on the toast and stack two of the slices with the lettuce, tomato, bacon and an egg. Close with the remaining toast and cut in half."
+    ],
+    "ingredients": [
+      {
+        "id": "bread",
+        "qty": 4
+      },
+      {
+        "id": "bacon",
+        "qty": 6
+      },
+      {
+        "id": "eggs",
+        "qty": 2
+      },
+      {
+        "id": "tomato",
+        "qty": 1
+      },
+      {
+        "id": "romaine",
+        "qty": 0.25
+      },
+      {
+        "id": "mayo",
+        "qty": 2
+      },
+      {
+        "id": "salt",
+        "qty": 0.125
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.125
+      }
+    ],
+    "name_es": "Sándwiches de tocino, lechuga, tomate y huevo frito",
+    "description_es": "Pan tostado con tocino crocante, lechuga, tomate y un huevo frito de yema suave.",
+    "steps_es": [
+      "Coloca el tocino en una sartén grande fría y cocina a fuego medio 8 minutos, volteando de vez en cuando, hasta que esté crocante. Escurre sobre papel de cocina y retira la grasa dejando solo una capa fina.",
+      "Tuesta el pan en la sartén a fuego medio de 1 a 2 minutos por lado, hasta que esté dorado, y ponlo en dos platos.",
+      "Rompe los huevos en la sartén, sazona con la sal y la pimienta y fríe a fuego medio 2 minutos. Voltea y cocina 30 segundos más para una yema suave o 1 minuto para una yema firme.",
+      "Corta el tomate en rodajas y separa las hojas de lechuga.",
+      "Unta la mayonesa en el pan tostado y arma dos rebanadas con la lechuga, el tomate, el tocino y un huevo. Cierra con el resto del pan y corta por la mitad."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 15,
+    "tip": "To pack it, cook the yolk through and wrap the sandwich in foil with the tomato between the bacon and lettuce.",
+    "tip_es": "Para llevar, cocina la yema por completo y envuelve el sándwich en papel aluminio con el tomate entre el tocino y la lechuga.",
+    "photo_url": "https://images.unsplash.com/photo-1624383804003-44d04b668775",
+    "photo_credit": {
+      "name": "Peter Bravo de los Rios",
+      "url": "https://unsplash.com/photos/burger-with-vegetable-and-meat-on-white-ceramic-plate-nOoaFCsnkvo"
+    }
+  },
+  {
+    "slug": "potato-egg-cheese-breakfast-tacos",
+    "name": "Potato, Egg and Cheese Breakfast Tacos",
+    "meal_type": "breakfast",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 4,
+    "prep_minutes": 25,
+    "batch_friendly": false,
+    "description": "Crispy diced potatoes folded into soft scrambled eggs, tucked into warm flour tortillas with cheddar and salsa.",
+    "steps": [
+      "Scrub the potatoes and cut them into small cubes about the width of a fingertip; there is no need to peel them.",
+      "Heat the oil in a large nonstick skillet over medium-high heat, add the potatoes with half of the salt in one layer and cook 12 to 14 minutes, stirring every few minutes, until golden and a fork slides in easily.",
+      "Beat the eggs with the remaining salt and the pepper. Push the potatoes to one side, lower the heat to medium-low and melt the butter in the empty space.",
+      "Pour in the eggs and stir gently 2 minutes, until softly set, then fold them into the potatoes and take the skillet off the heat.",
+      "Warm the tortillas one at a time in a dry skillet over medium heat, 20 seconds per side, until soft and flexible.",
+      "Fill each tortilla with the potato and egg mixture, top with the cheddar and salsa, and serve two tacos per person."
+    ],
+    "ingredients": [
+      {
+        "id": "potato_russet",
+        "qty": 1
+      },
+      {
+        "id": "eggs",
+        "qty": 6
+      },
+      {
+        "id": "cheddar",
+        "qty": 1
+      },
+      {
+        "id": "tortilla_flour",
+        "qty": 8
+      },
+      {
+        "id": "salsa",
+        "qty": 0.5
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 2
+      },
+      {
+        "id": "butter",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      }
+    ],
+    "name_es": "Tacos de desayuno de papa, huevo y queso",
+    "description_es": "Cubitos de papa dorados mezclados con huevo revuelto suave, servidos en tortillas de harina tibias con cheddar y salsa.",
+    "steps_es": [
+      "Lava bien las papas y córtalas en cubos pequeños, del ancho de la punta de un dedo; no hace falta pelarlas.",
+      "Calienta el aceite en una sartén antiadherente grande a fuego medio-alto, agrega las papas con la mitad de la sal en una sola capa y cocina de 12 a 14 minutos, revolviendo cada pocos minutos, hasta que estén doradas y un tenedor entre fácilmente.",
+      "Bate los huevos con el resto de la sal y la pimienta. Empuja las papas hacia un lado, baja el fuego a medio-bajo y derrite la mantequilla en el espacio libre.",
+      "Vierte los huevos y revuelve con suavidad 2 minutos, hasta que cuajen pero sigan tiernos; mézclalos con las papas y retira la sartén del fuego.",
+      "Calienta las tortillas una por una en una sartén seca a fuego medio, 20 segundos por lado, hasta que estén suaves y flexibles.",
+      "Rellena cada tortilla con la mezcla de papa y huevo, agrega el cheddar y la salsa, y sirve dos tacos por persona."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 20,
+    "tip": "Wrap the filled tacos in foil to take along; they stay warm for about 30 minutes.",
+    "tip_es": "Envuelve los tacos ya armados en papel aluminio para llevar; se mantienen calientes unos 30 minutos.",
+    "photo_url": "https://images.unsplash.com/photo-1667499707432-0524fcfb63ba",
+    "photo_credit": {
+      "name": "Leanna Myers",
+      "url": "https://unsplash.com/photos/a-plate-of-food-mypgWO69XDY"
+    }
+  },
+  {
+    "slug": "egg-in-a-hole-toast",
+    "name": "Egg in a Hole Toast",
+    "meal_type": "breakfast",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 2,
+    "prep_minutes": 10,
+    "batch_friendly": false,
+    "description": "Buttery pan-toasted bread with an egg fried right in the middle, plus the toasted cut-outs for dipping.",
+    "steps": [
+      "Cut a hole in the center of each slice of bread with the rim of a small glass, and keep the cut-out rounds.",
+      "Melt half of the butter in a large nonstick skillet over medium heat.",
+      "Add two slices of bread and their rounds and toast 1 minute, until the underside starts to turn golden.",
+      "Crack an egg into each hole, season with salt and pepper and cook 2 minutes, until the white is mostly set underneath.",
+      "Flip the bread and the rounds carefully with a wide spatula and cook 1 minute more for a runny yolk or 2 minutes for a firm one.",
+      "Repeat with the remaining butter, bread and eggs, and serve with the toasted rounds for dipping in the yolk."
+    ],
+    "ingredients": [
+      {
+        "id": "bread",
+        "qty": 4
+      },
+      {
+        "id": "eggs",
+        "qty": 4
+      },
+      {
+        "id": "butter",
+        "qty": 2
+      },
+      {
+        "id": "salt",
+        "qty": 0.25
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.125
+      }
+    ],
+    "name_es": "Huevo en pan tostado a la sartén",
+    "description_es": "Pan dorado con mantequilla y un huevo frito en el centro, con los círculos de pan tostados para mojar en la yema.",
+    "steps_es": [
+      "Corta un círculo en el centro de cada rebanada de pan con el borde de un vaso pequeño y guarda los círculos.",
+      "Derrite la mitad de la mantequilla en una sartén antiadherente grande a fuego medio.",
+      "Pon dos rebanadas de pan con sus círculos y tuesta 1 minuto, hasta que la base empiece a dorarse.",
+      "Rompe un huevo en cada hueco, sazona con sal y pimienta y cocina 2 minutos, hasta que la clara esté casi firme por debajo.",
+      "Voltea el pan y los círculos con cuidado usando una espátula ancha y cocina 1 minuto más si quieres la yema líquida o 2 minutos para una yema firme.",
+      "Repite con el resto de la mantequilla, el pan y los huevos, y sirve con los círculos tostados para mojar en la yema."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 10,
+    "tip": "Slightly stale bread holds its shape best; add a slice of cheese on top after flipping if you have some.",
+    "tip_es": "El pan del día anterior mantiene mejor la forma; si tienes, agrega una rebanada de queso encima después de voltear.",
+    "photo_url": "https://images.unsplash.com/photo-1635345144460-d0c1200bc96a",
+    "photo_credit": {
+      "name": "Dmitry Dreyer",
+      "url": "https://unsplash.com/photos/a-pan-with-toast-and-an-egg-on-it-lTtmWp95FJw"
+    }
+  },
+  {
+    "slug": "molletes-with-pico-de-gallo",
+    "name": "Molletes with Pico de Gallo",
+    "meal_type": "breakfast",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 4,
+    "prep_minutes": 20,
+    "batch_friendly": false,
+    "description": "Mexican open-faced toasts: buttered bread spread with refried beans, covered in melted cheese and fresh pico.",
+    "steps": [
+      "Heat the oven to {425F}. Dice the tomatoes, finely chop the onion, jalapeño and cilantro, and mix them with the lime juice and half of the salt to make the pico de gallo.",
+      "Cut the bread in half crosswise, then split each piece lengthwise to make 4 pieces. Butter the cut sides and set them cut-side up on a sheet pan.",
+      "Bake 5 minutes, until lightly toasted at the edges.",
+      "Stir the beans with the remaining salt to loosen them, spread them thickly over each piece all the way to the edges and cover with the mozzarella.",
+      "Bake 6 to 8 minutes more, until the beans are hot and the cheese is bubbling and starting to brown.",
+      "Spoon the pico de gallo over the top and serve right away."
+    ],
+    "ingredients": [
+      {
+        "id": "french_bread",
+        "qty": 1
+      },
+      {
+        "id": "refried_beans",
+        "qty": 1
+      },
+      {
+        "id": "mozzarella",
+        "qty": 1.5
+      },
+      {
+        "id": "butter",
+        "qty": 2,
+        "note": "softened",
+        "note_es": "blanda"
+      },
+      {
+        "id": "tomato",
+        "qty": 2
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 0.25
+      },
+      {
+        "id": "jalapeno",
+        "qty": 1
+      },
+      {
+        "id": "cilantro",
+        "qty": 0.25
+      },
+      {
+        "id": "lime",
+        "qty": 0.5,
+        "note": "juiced",
+        "note_es": "en jugo"
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      }
+    ],
+    "name_es": "Molletes con pico de gallo",
+    "description_es": "Pan abierto con mantequilla, untado con frijoles refritos, cubierto de queso derretido y pico de gallo fresco.",
+    "steps_es": [
+      "Precalienta el horno a {425F}. Corta los tomates en cubitos, pica fino la cebolla, el jalapeño y el cilantro, y mézclalos con el jugo de lima y la mitad de la sal para hacer el pico de gallo.",
+      "Corta el pan por la mitad a lo ancho y luego abre cada trozo a lo largo para obtener 4 piezas. Unta mantequilla en los lados cortados y ponlos hacia arriba en una bandeja.",
+      "Hornea 5 minutos, hasta que los bordes estén apenas tostados.",
+      "Revuelve los frijoles con el resto de la sal para aflojarlos, úntalos en una capa gruesa sobre cada pieza hasta los bordes y cubre con la mozzarella.",
+      "Hornea de 6 a 8 minutos más, hasta que los frijoles estén calientes y el queso burbujee y empiece a dorarse.",
+      "Reparte el pico de gallo por encima y sirve enseguida."
+    ],
+    "equipment": [
+      "oven"
+    ],
+    "active_minutes": 12,
+    "tip": "Day-old bread or split sandwich rolls work just as well and stay crisper under the beans.",
+    "tip_es": "El pan del día anterior o unos panes pequeños abiertos funcionan igual de bien y quedan más crocantes bajo los frijoles.",
+    "photo_url": "https://images.unsplash.com/photo-1722239311914-973d8f206074",
+    "photo_credit": {
+      "name": "Alimentos Fotogénicos",
+      "url": "https://unsplash.com/photos/a-piece-of-cake-sitting-on-top-of-a-white-plate-lhwRcyUCuaQ"
+    }
+  },
+  {
+    "slug": "huevos-a-la-mexicana",
+    "name": "Huevos a la Mexicana",
+    "meal_type": "breakfast",
+    "diet_tags": [
+      "vegetarian",
+      "keto"
+    ],
+    "servings": 2,
+    "prep_minutes": 15,
+    "batch_friendly": false,
+    "description": "Soft scrambled eggs cooked with sautéed tomato, onion and jalapeño, served with sliced avocado.",
+    "steps": [
+      "Dice the onion and the tomatoes, seed and finely chop the jalapeño, and chop the cilantro. Beat the eggs with half of the salt.",
+      "Heat the oil in a large nonstick skillet over medium heat and cook the onion and jalapeño 3 minutes, until soft and translucent.",
+      "Add the tomatoes and the remaining salt and cook 3 minutes, until they break down and most of their juice has evaporated.",
+      "Lower the heat to medium-low, pour in the eggs and let them sit 20 seconds.",
+      "Stir gently with a spatula 2 to 3 minutes, until large soft curds form and no liquid egg remains.",
+      "Take off the heat, sprinkle with the cilantro and serve with the sliced avocado."
+    ],
+    "ingredients": [
+      {
+        "id": "eggs",
+        "qty": 6
+      },
+      {
+        "id": "tomato",
+        "qty": 2
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 0.5
+      },
+      {
+        "id": "jalapeno",
+        "qty": 1
+      },
+      {
+        "id": "avocado",
+        "qty": 1,
+        "note": "sliced",
+        "note_es": "en láminas"
+      },
+      {
+        "id": "cilantro",
+        "qty": 0.25
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      }
+    ],
+    "name_es": "Huevos a la mexicana",
+    "description_es": "Huevos revueltos suaves con tomate, cebolla y jalapeño salteados, servidos con aguacate en láminas.",
+    "steps_es": [
+      "Corta la cebolla y los tomates en cubitos, quita las semillas del jalapeño y pícalo fino, y pica el cilantro. Bate los huevos con la mitad de la sal.",
+      "Calienta el aceite en una sartén antiadherente grande a fuego medio y cocina la cebolla y el jalapeño 3 minutos, hasta que estén tiernos y transparentes.",
+      "Agrega los tomates y el resto de la sal y cocina 3 minutos, hasta que se deshagan y se evapore casi todo el jugo.",
+      "Baja el fuego a medio-bajo, vierte los huevos y déjalos 20 segundos sin mover.",
+      "Revuelve con suavidad con una espátula de 2 a 3 minutos, hasta que se formen trozos grandes y tiernos y no quede huevo líquido.",
+      "Retira del fuego, espolvorea el cilantro y sirve con el aguacate en láminas."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 15,
+    "tip": "Leave the jalapeño seeds in for more heat. If you are not eating low-carb, serve with warm corn tortillas.",
+    "tip_es": "Deja las semillas del jalapeño si te gusta más picante. Si no cuidas los carbohidratos, acompaña con tortillas de maíz calientes.",
+    "photo_url": "https://images.unsplash.com/photo-1740313498464-971eb7d2066d",
+    "photo_credit": {
+      "name": "Markus Winkler",
+      "url": "https://unsplash.com/photos/a-pot-of-food-sitting-on-top-of-a-wooden-table-tFdtuDNNc7A"
+    }
+  },
+  {
+    "slug": "savory-cottage-cheese-breakfast-bowls",
+    "name": "Savory Cottage Cheese Breakfast Bowls",
+    "meal_type": "breakfast",
+    "diet_tags": [
+      "vegetarian",
+      "keto",
+      "high_protein"
+    ],
+    "servings": 2,
+    "prep_minutes": 10,
+    "batch_friendly": false,
+    "description": "No-cook bowls of cottage cheese with cucumber, tomato and avocado, finished with olive oil and black pepper.",
+    "steps": [
+      "Dice the cucumber and the tomato and thinly slice the green onion.",
+      "Halve the avocado, remove the pit, scoop out the flesh with a spoon and slice it.",
+      "Divide the cottage cheese between two bowls and arrange the cucumber, tomato and avocado on top.",
+      "Drizzle with the olive oil, sprinkle with the salt, plenty of pepper and the green onion, and eat right away."
+    ],
+    "ingredients": [
+      {
+        "id": "cottage_cheese",
+        "qty": 2
+      },
+      {
+        "id": "cucumber",
+        "qty": 0.5
+      },
+      {
+        "id": "tomato",
+        "qty": 1
+      },
+      {
+        "id": "avocado",
+        "qty": 1
+      },
+      {
+        "id": "green_onion",
+        "qty": 0.25
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 0.125
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      }
+    ],
+    "name_es": "Tazones salados de queso cottage",
+    "description_es": "Tazones sin cocción de queso cottage con pepino, tomate y aguacate, terminados con aceite de oliva y pimienta negra.",
+    "steps_es": [
+      "Corta el pepino y el tomate en cubitos y la cebolla verde en rodajas finas.",
+      "Parte el aguacate a la mitad, quita la semilla, saca la pulpa con una cuchara y córtala en láminas.",
+      "Reparte el queso cottage en dos tazones y acomoda encima el pepino, el tomate y el aguacate.",
+      "Rocía con el aceite de oliva, espolvorea la sal, bastante pimienta y la cebolla verde, y come enseguida."
+    ],
+    "equipment": [],
+    "active_minutes": 10,
+    "tip": "To pack it, carry the chopped vegetables in a separate container so the cheese does not turn watery.",
+    "tip_es": "Para llevar, guarda las verduras picadas en un recipiente aparte para que el queso no se agüe.",
+    "photo_url": "https://images.unsplash.com/photo-1657835813264-282b20ca950f",
+    "photo_credit": {
+      "name": "Anastasiia Chepinska",
+      "url": "https://unsplash.com/photos/a-plate-of-food-lQ9rlsr7dD4"
+    }
+  },
+  {
+    "slug": "egg-and-cheese-bagel-sandwiches",
+    "name": "Egg and Cheese Bagel Sandwiches",
+    "meal_type": "breakfast",
+    "diet_tags": [
+      "vegetarian",
+      "high_protein"
+    ],
+    "servings": 2,
+    "prep_minutes": 10,
+    "batch_friendly": false,
+    "description": "Pan-toasted bagels filled with soft folded eggs, melted cheese, spinach and tomato.",
+    "steps": [
+      "Split the bagels and toast them cut-side down in a large dry skillet over medium heat 2 minutes, until golden. Set them on two plates.",
+      "Beat the eggs with the salt and pepper. Melt the butter in the same skillet over medium-low heat.",
+      "Pour in the eggs and let them set 1 minute, then pull the edges toward the center with a spatula for 1 minute more, until just set but still glossy.",
+      "Fold the eggs into two bagel-size portions, lay a slice of cheese on each, cover the skillet and cook 30 seconds, until the cheese melts.",
+      "Slice the tomato. Pile the spinach and tomato on the bottom halves, add the eggs and close with the tops."
+    ],
+    "ingredients": [
+      {
+        "id": "bagel",
+        "qty": 2
+      },
+      {
+        "id": "eggs",
+        "qty": 4
+      },
+      {
+        "id": "cheese_slices",
+        "qty": 2
+      },
+      {
+        "id": "spinach",
+        "qty": 1
+      },
+      {
+        "id": "tomato",
+        "qty": 1
+      },
+      {
+        "id": "butter",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 0.125
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.125
+      }
+    ],
+    "name_es": "Sándwiches de bagel con huevo y queso",
+    "description_es": "Bagels tostados en sartén, rellenos con huevo suave doblado, queso derretido, espinaca y tomate.",
+    "steps_es": [
+      "Abre los bagels y tuéstalos con el lado cortado hacia abajo en una sartén grande seca a fuego medio 2 minutos, hasta que estén dorados. Ponlos en dos platos.",
+      "Bate los huevos con la sal y la pimienta. Derrite la mantequilla en la misma sartén a fuego medio-bajo.",
+      "Vierte los huevos y deja que cuajen 1 minuto; luego lleva los bordes hacia el centro con una espátula 1 minuto más, hasta que estén apenas cuajados y todavía brillantes.",
+      "Dobla el huevo en dos porciones del tamaño del bagel, pon una rebanada de queso sobre cada una, tapa la sartén y cocina 30 segundos, hasta que el queso se derrita.",
+      "Corta el tomate en rodajas. Coloca la espinaca y el tomate sobre las bases, agrega el huevo y cierra con las tapas."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 10,
+    "tip": "Wrap each sandwich in foil to eat on the way; the steam keeps the bagel soft.",
+    "tip_es": "Envuelve cada sándwich en papel aluminio para comerlo en el camino; el vapor mantiene el bagel suave.",
+    "photo_url": "https://images.unsplash.com/photo-1707144289499-8903dc4929c7",
+    "photo_credit": {
+      "name": "Andrea Lacasse",
+      "url": "https://unsplash.com/photos/a-person-holding-a-sandwich-in-their-hand-AECi7xJlmsg"
+    }
+  },
+  {
+    "slug": "sausage-egg-cheese-muffin-sandwiches",
+    "name": "Sausage, Egg and Cheese Muffin Sandwiches",
+    "meal_type": "breakfast",
+    "diet_tags": [
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 20,
+    "batch_friendly": true,
+    "description": "Homemade drive-through style sandwiches: a sausage patty, a fried egg and melted cheese on a toasted English muffin.",
+    "steps": [
+      "Divide the sausage into 4 equal portions and flatten each into a thin patty a little wider than the muffins, since they shrink as they cook.",
+      "Cook the patties in a large skillet over medium heat 4 to 5 minutes per side, until well browned and no longer pink in the center ({160F}). Move them to a plate and wipe out most of the fat.",
+      "Split the muffins and toast them cut-side down in the skillet 1 to 2 minutes, until golden. Set aside.",
+      "Melt the butter in the skillet over medium-low heat, crack in the eggs, break the yolks with the corner of the spatula and season with the salt and pepper.",
+      "Cook the eggs 2 minutes, flip and cook 1 minute more, until set all the way through.",
+      "Stack a patty, an egg and a slice of cheese on each muffin bottom, close with the top and wait 1 minute so the cheese melts."
+    ],
+    "ingredients": [
+      {
+        "id": "sausage_breakfast",
+        "qty": 0.75
+      },
+      {
+        "id": "english_muffin",
+        "qty": 4
+      },
+      {
+        "id": "eggs",
+        "qty": 4
+      },
+      {
+        "id": "cheese_slices",
+        "qty": 4
+      },
+      {
+        "id": "butter",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 0.125
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.125
+      }
+    ],
+    "name_es": "Sándwiches de muffin inglés con salchicha y huevo",
+    "description_es": "Sándwiches caseros al estilo de autoservicio: una hamburguesita de salchicha, huevo frito y queso derretido en muffin inglés tostado.",
+    "steps_es": [
+      "Divide la salchicha en 4 porciones iguales y aplana cada una en un disco delgado, un poco más ancho que los muffins, porque se encogen al cocinarse.",
+      "Cocina los discos en una sartén grande a fuego medio de 4 a 5 minutos por lado, hasta que estén bien dorados y ya no se vean rosados en el centro ({160F}). Pásalos a un plato y limpia casi toda la grasa.",
+      "Abre los muffins y tuéstalos con el lado cortado hacia abajo en la sartén de 1 a 2 minutos, hasta que estén dorados. Reserva.",
+      "Derrite la mantequilla en la sartén a fuego medio-bajo, rompe los huevos en la sartén, pincha las yemas con la esquina de la espátula y sazona con la sal y la pimienta.",
+      "Cocina los huevos 2 minutos, voltea y cocina 1 minuto más, hasta que estén cuajados por completo.",
+      "Arma cada sándwich con un disco de salchicha, un huevo y una rebanada de queso sobre la base del muffin, cierra con la tapa y espera 1 minuto para que el queso se derrita."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 20,
+    "tip": "Wrap each sandwich in foil and freeze up to a month; unwrap, wrap in a paper towel and microwave 90 seconds.",
+    "tip_es": "Envuelve cada sándwich en papel aluminio y congela hasta un mes; quita el aluminio, envuelve en papel de cocina y calienta 90 segundos en el microondas.",
+    "photo_url": "https://images.unsplash.com/photo-1569159316006-900e88b5dbc2",
+    "photo_credit": {
+      "name": "Duncan Kidd",
+      "url": "https://unsplash.com/photos/baked-burger-on-wooden-surface-pnV8uZlFWrA"
+    }
+  },
+  {
+    "slug": "bacon-egg-cheese-breakfast-quesadillas",
+    "name": "Bacon, Egg and Cheese Breakfast Quesadillas",
+    "meal_type": "breakfast",
+    "diet_tags": [
+      "high_protein"
+    ],
+    "servings": 2,
+    "prep_minutes": 20,
+    "batch_friendly": false,
+    "description": "Crisp folded tortillas filled with scrambled eggs, bacon and melted cheddar, served with salsa.",
+    "steps": [
+      "Lay the bacon in a cold large skillet and cook over medium heat 8 minutes, turning now and then, until crisp. Drain on a paper towel, crumble it, and pour off all but a thin film of fat.",
+      "Beat the eggs and scramble them in the skillet over medium-low heat 2 minutes, stirring, until just set. Move them to a plate and wipe out the skillet.",
+      "Lay one tortilla in the skillet over medium heat. Cover half of it with a quarter of the cheddar, half of the eggs, half of the bacon and green onion, and another quarter of the cheddar, then fold the tortilla over.",
+      "Cook 2 minutes per side, pressing lightly with the spatula, until golden and crisp and the cheese has melted.",
+      "Repeat with the second tortilla, then cut each quesadilla into wedges and serve with the salsa."
+    ],
+    "ingredients": [
+      {
+        "id": "tortilla_flour",
+        "qty": 2
+      },
+      {
+        "id": "eggs",
+        "qty": 4
+      },
+      {
+        "id": "bacon",
+        "qty": 4
+      },
+      {
+        "id": "cheddar",
+        "qty": 1
+      },
+      {
+        "id": "green_onion",
+        "qty": 0.25,
+        "note": "sliced",
+        "note_es": "en rodajas"
+      },
+      {
+        "id": "salsa",
+        "qty": 0.25
+      }
+    ],
+    "name_es": "Quesadillas de desayuno con tocino y huevo",
+    "description_es": "Tortillas dobladas y crocantes, rellenas de huevo revuelto, tocino y cheddar derretido, servidas con salsa.",
+    "steps_es": [
+      "Coloca el tocino en una sartén grande fría y cocina a fuego medio 8 minutos, volteando de vez en cuando, hasta que esté crocante. Escurre sobre papel de cocina, desmenúzalo y retira la grasa dejando solo una capa fina.",
+      "Bate los huevos y revuélvelos en la sartén a fuego medio-bajo 2 minutos, moviendo, hasta que apenas cuajen. Pásalos a un plato y limpia la sartén.",
+      "Pon una tortilla en la sartén a fuego medio. Cubre la mitad con un cuarto del cheddar, la mitad del huevo, la mitad del tocino y de la cebolla verde, y otro cuarto del cheddar; luego dobla la tortilla.",
+      "Cocina 2 minutos por lado, presionando un poco con la espátula, hasta que esté dorada y crocante y el queso se haya derretido.",
+      "Repite con la segunda tortilla, corta cada quesadilla en triángulos y sirve con la salsa."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 20,
+    "photo_url": "https://images.unsplash.com/photo-1647545401800-bd8f77e670ed",
+    "photo_credit": {
+      "name": "Mikey Frost",
+      "url": "https://unsplash.com/photos/a-close-up-of-a-plate-of-food-on-a-table-jzaA_v8ucGs"
+    }
+  },
+  {
+    "slug": "denver-omelets",
+    "name": "Denver Omelets",
+    "meal_type": "breakfast",
+    "diet_tags": [
+      "keto",
+      "high_protein"
+    ],
+    "servings": 2,
+    "prep_minutes": 15,
+    "batch_friendly": false,
+    "description": "The diner classic: folded omelets filled with sautéed ham, bell pepper, onion and melted cheddar.",
+    "steps": [
+      "Cut the ham, bell pepper and onion into small dice. Beat the eggs with the salt and pepper.",
+      "Melt half of the butter in a medium nonstick skillet over medium heat and cook the ham, pepper and onion 4 minutes, until the vegetables are soft and the ham is lightly browned. Scrape into a bowl.",
+      "Melt half of the remaining butter in the skillet over medium-low heat and pour in half of the eggs.",
+      "As the eggs set, push the edges toward the center and tilt the skillet so the raw egg runs underneath, about 2 minutes, until the top is barely moist.",
+      "Spoon half of the ham mixture and half of the cheddar over one side, fold the other side over and cook 30 seconds, until the cheese melts. Slide onto a plate.",
+      "Repeat with the remaining butter, eggs, filling and cheddar for the second omelet."
+    ],
+    "ingredients": [
+      {
+        "id": "eggs",
+        "qty": 6
+      },
+      {
+        "id": "ham_deli",
+        "qty": 4
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 0.5
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 0.5
+      },
+      {
+        "id": "cheddar",
+        "qty": 0.5
+      },
+      {
+        "id": "butter",
+        "qty": 2
+      },
+      {
+        "id": "salt",
+        "qty": 0.25
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.125
+      }
+    ],
+    "name_es": "Omelets Denver con jamón y pimiento",
+    "description_es": "El clásico de las cafeterías: omelets doblados y rellenos de jamón, pimiento y cebolla salteados con cheddar derretido.",
+    "steps_es": [
+      "Corta el jamón, el pimiento y la cebolla en cubitos. Bate los huevos con la sal y la pimienta.",
+      "Derrite la mitad de la mantequilla en una sartén antiadherente mediana a fuego medio y cocina el jamón, el pimiento y la cebolla 4 minutos, hasta que las verduras estén tiernas y el jamón apenas dorado. Pasa todo a un tazón.",
+      "Derrite la mitad de la mantequilla restante en la sartén a fuego medio-bajo y vierte la mitad de los huevos.",
+      "A medida que cuajan, lleva los bordes hacia el centro e inclina la sartén para que el huevo crudo corra por debajo, unos 2 minutos, hasta que la superficie esté apenas húmeda.",
+      "Reparte la mitad del relleno de jamón y la mitad del cheddar sobre un lado, dobla el otro lado encima y cocina 30 segundos, hasta que el queso se derrita. Desliza a un plato.",
+      "Repite con el resto de la mantequilla, los huevos, el relleno y el cheddar para el segundo omelet."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 15,
+    "tip": "Use the other half of the pepper and onion in a soup or fajitas later in the week.",
+    "tip_es": "Usa la otra mitad del pimiento y de la cebolla en una sopa o en fajitas más adelante en la semana.",
+    "photo_url": "https://images.unsplash.com/photo-1709754521379-00166805eea4",
+    "photo_credit": {
+      "name": "Dinuka Lankaloka",
+      "url": "https://unsplash.com/photos/a-white-plate-topped-with-an-omelet-next-to-a-glass-of-orange-juice-M5IajiQxoeo"
+    }
+  },
+  {
+    "slug": "sausage-egg-breakfast-casserole",
+    "name": "Sausage and Egg Breakfast Casserole",
+    "meal_type": "breakfast",
+    "diet_tags": [
+      "keto",
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 50,
+    "batch_friendly": true,
+    "description": "A crustless bake of browned sausage, bell pepper, eggs and cheddar that cuts into squares for the week.",
+    "steps": [
+      "Heat the oven to {375F} and grease a medium square baking dish (8 inches, 20 cm) with the butter. Dice the bell pepper and slice the green onions.",
+      "Brown the sausage in a large skillet over medium-high heat 5 minutes, breaking it up with a spoon.",
+      "Add the bell pepper and cook 3 minutes more, until the sausage is no longer pink and the pepper begins to soften. Spoon off the excess fat.",
+      "Whisk the eggs, cream, salt and pepper in a large bowl until uniform, then stir in the green onions and most of the cheddar.",
+      "Spread the sausage and pepper in the dish, pour the egg mixture over the top and sprinkle with the remaining cheddar.",
+      "Bake 30 minutes, until puffed and golden and a knife inserted in the center comes out clean.",
+      "Let it rest 5 minutes, then cut into squares and serve."
+    ],
+    "ingredients": [
+      {
+        "id": "sausage_breakfast",
+        "qty": 0.75
+      },
+      {
+        "id": "eggs",
+        "qty": 8
+      },
+      {
+        "id": "cheddar",
+        "qty": 1
+      },
+      {
+        "id": "heavy_cream",
+        "qty": 0.5
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1
+      },
+      {
+        "id": "green_onion",
+        "qty": 0.5
+      },
+      {
+        "id": "butter",
+        "qty": 0.5
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      }
+    ],
+    "name_es": "Cazuela de desayuno con salchicha y huevo",
+    "description_es": "Un horneado sin masa de salchicha dorada, pimiento, huevos y cheddar que se corta en cuadrados para toda la semana.",
+    "steps_es": [
+      "Precalienta el horno a {375F} y engrasa una fuente cuadrada mediana (20 cm) con la mantequilla. Corta el pimiento en cubitos y la cebolla verde en rodajas.",
+      "Dora la salchicha en una sartén grande a fuego medio-alto 5 minutos, deshaciéndola con una cuchara.",
+      "Agrega el pimiento y cocina 3 minutos más, hasta que la salchicha ya no esté rosada y el pimiento empiece a ablandarse. Retira el exceso de grasa con una cuchara.",
+      "Bate los huevos, la crema de leche, la sal y la pimienta en un tazón grande hasta integrar; luego agrega la cebolla verde y casi todo el cheddar.",
+      "Distribuye la salchicha y el pimiento en la fuente, vierte encima la mezcla de huevo y espolvorea el resto del cheddar.",
+      "Hornea 30 minutos, hasta que esté inflada y dorada y un cuchillo insertado en el centro salga limpio.",
+      "Deja reposar 5 minutos, corta en cuadrados y sirve."
+    ],
+    "equipment": [
+      "stovetop",
+      "oven"
+    ],
+    "active_minutes": 15,
+    "tip": "Squares keep 4 days in the fridge; reheat one for 1 minute in the microwave.",
+    "tip_es": "Los cuadrados duran 4 días en el refrigerador; recalienta uno 1 minuto en el microondas.",
+    "photo_url": "https://images.unsplash.com/photo-1551978155-63d44a16fe24",
+    "photo_credit": {
+      "name": "sheri silver",
+      "url": "https://unsplash.com/photos/baked-pastries--MNxKF8a6j0"
+    }
+  },
+  {
+    "slug": "turkish-eggs-with-garlic-yogurt",
+    "name": "Turkish Eggs with Garlic Yogurt",
+    "meal_type": "breakfast",
+    "diet_tags": [
+      "vegetarian",
+      "keto",
+      "high_protein"
+    ],
+    "servings": 2,
+    "prep_minutes": 15,
+    "batch_friendly": false,
+    "description": "Poached eggs on a bed of garlicky Greek yogurt, finished with warm paprika and chile butter.",
+    "steps": [
+      "Mince the garlic as finely as you can and stir it into the yogurt with half of the salt. Spread the yogurt in two shallow bowls and leave it out so it loses its chill.",
+      "Fill a medium pot with water to the depth of three fingers, bring it to a bare simmer over medium heat and add the vinegar.",
+      "Crack each egg into a small cup and slide them into the water one at a time. Cook 3 minutes at a bare simmer, until the whites are set and the yolks are still soft.",
+      "Lift the eggs out with a slotted spoon and drain them briefly on a paper towel.",
+      "Meanwhile, melt the butter in a small skillet over medium-low heat. When it foams, stir in the paprika and red pepper flakes for 30 seconds, until red and fragrant, then take it off the heat.",
+      "Set two eggs on each bowl of yogurt, spoon the spiced butter over them and finish with the remaining salt and the chopped parsley."
+    ],
+    "ingredients": [
+      {
+        "id": "greek_yogurt",
+        "qty": 1.5
+      },
+      {
+        "id": "eggs",
+        "qty": 4
+      },
+      {
+        "id": "garlic",
+        "qty": 1
+      },
+      {
+        "id": "butter",
+        "qty": 3
+      },
+      {
+        "id": "paprika",
+        "qty": 1
+      },
+      {
+        "id": "red_pepper_flakes",
+        "qty": 0.5
+      },
+      {
+        "id": "vinegar_cider",
+        "qty": 1,
+        "note": "for the poaching water",
+        "note_es": "para el agua de cocción"
+      },
+      {
+        "id": "parsley",
+        "qty": 0.125
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      }
+    ],
+    "name_es": "Huevos turcos con yogur al ajo",
+    "description_es": "Huevos escalfados sobre yogur griego con ajo, terminados con mantequilla tibia de paprika y chile.",
+    "steps_es": [
+      "Pica el ajo lo más fino que puedas y mézclalo con el yogur y la mitad de la sal. Extiende el yogur en dos platos hondos y déjalo fuera para que pierda el frío.",
+      "Llena una olla mediana con agua hasta una altura de tres dedos, llévala a un hervor muy suave a fuego medio y agrega el vinagre.",
+      "Rompe cada huevo en una taza pequeña y deslízalos al agua de uno en uno. Cocina 3 minutos a hervor muy suave, hasta que las claras estén firmes y las yemas sigan blandas.",
+      "Saca los huevos con una espumadera y escúrrelos un momento sobre papel de cocina.",
+      "Mientras tanto, derrite la mantequilla en una sartén pequeña a fuego medio-bajo. Cuando haga espuma, agrega la paprika y las hojuelas de chile rojo y revuelve 30 segundos, hasta que esté roja y aromática; retira del fuego.",
+      "Coloca dos huevos sobre cada plato de yogur, báñalos con la mantequilla especiada y termina con el resto de la sal y el perejil picado."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 15,
+    "tip": "If you are not eating low-carb, serve with toast or warm pita to scoop up the yogurt and yolk.",
+    "tip_es": "Si no cuidas los carbohidratos, acompaña con pan tostado o pita caliente para recoger el yogur y la yema.",
+    "photo_url": "https://images.unsplash.com/photo-1762638896659-71c459861a45",
+    "photo_credit": {
+      "name": "Amin Zabardast",
+      "url": "https://unsplash.com/photos/poached-eggs-with-yogurt-and-herbs-iCAeN-87L6w"
+    }
+  },
+  {
+    "slug": "sausage-and-egg-stuffed-peppers",
+    "name": "Sausage and Egg Stuffed Peppers",
+    "meal_type": "breakfast",
+    "diet_tags": [
+      "keto",
+      "high_protein"
+    ],
+    "servings": 2,
+    "prep_minutes": 40,
+    "batch_friendly": false,
+    "description": "Bell pepper halves filled with browned breakfast sausage, beaten eggs and cheddar, baked until set and golden.",
+    "steps": [
+      "Heat the oven to {400F}. Cut the peppers in half lengthwise through the stem and remove the seeds and white ribs.",
+      "Set the halves cut-side up in a baking dish and bake 10 minutes, until they begin to soften.",
+      "Meanwhile, brown the sausage in a small skillet over medium-high heat 5 minutes, breaking it up, until no pink remains. Spoon off the excess fat.",
+      "Beat the eggs with the salt and pepper and stir in the sausage, the sliced green onion and half of the cheddar.",
+      "Spoon the mixture into the pepper halves, filling them almost to the rim, and sprinkle with the remaining cheddar.",
+      "Bake 18 to 20 minutes, until the filling is puffed and set in the center and the cheese is golden. Serve two halves per person."
+    ],
+    "ingredients": [
+      {
+        "id": "bell_pepper",
+        "qty": 2
+      },
+      {
+        "id": "sausage_breakfast",
+        "qty": 0.25
+      },
+      {
+        "id": "eggs",
+        "qty": 4
+      },
+      {
+        "id": "cheddar",
+        "qty": 0.5
+      },
+      {
+        "id": "green_onion",
+        "qty": 0.25
+      },
+      {
+        "id": "salt",
+        "qty": 0.25
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.125
+      }
+    ],
+    "name_es": "Pimientos rellenos de salchicha y huevo",
+    "description_es": "Mitades de pimiento rellenas de salchicha de desayuno dorada, huevo batido y cheddar, horneadas hasta cuajar y dorarse.",
+    "steps_es": [
+      "Precalienta el horno a {400F}. Corta los pimientos a lo largo por la mitad, pasando por el tallo, y quita las semillas y las venas blancas.",
+      "Coloca las mitades con el corte hacia arriba en una fuente para horno y hornea 10 minutos, hasta que empiecen a ablandarse.",
+      "Mientras tanto, dora la salchicha en una sartén pequeña a fuego medio-alto 5 minutos, deshaciéndola, hasta que no quede nada rosado. Retira el exceso de grasa con una cuchara.",
+      "Bate los huevos con la sal y la pimienta y agrega la salchicha, la cebolla verde en rodajas y la mitad del cheddar.",
+      "Reparte la mezcla en las mitades de pimiento, llenándolas casi hasta el borde, y espolvorea el resto del cheddar.",
+      "Hornea de 18 a 20 minutos, hasta que el relleno esté inflado y firme en el centro y el queso dorado. Sirve dos mitades por persona."
+    ],
+    "equipment": [
+      "stovetop",
+      "oven"
+    ],
+    "active_minutes": 12,
+    "tip": "Pick wide, blocky peppers that sit flat so the egg does not spill out; leftovers reheat in 1 minute in the microwave.",
+    "tip_es": "Elige pimientos anchos y de base plana para que el huevo no se derrame; lo que sobra se recalienta en 1 minuto en el microondas.",
+    "photo_url": "https://images.unsplash.com/photo-1673646960062-9aeb2188335f",
+    "photo_credit": {
+      "name": "Natalia Gusakova",
+      "url": "https://unsplash.com/photos/a-white-plate-topped-with-stuffed-bell-peppers-myfDbaJr6vA"
+    }
+  },
+  {
+    "slug": "monte-cristo-sandwiches",
+    "name": "Monte Cristo Sandwiches",
+    "meal_type": "breakfast",
+    "diet_tags": [
+      "high_protein"
+    ],
+    "servings": 2,
+    "prep_minutes": 15,
+    "batch_friendly": false,
+    "description": "Ham, turkey and cheese sandwiches dipped in egg and pan-fried like French toast until golden and melted.",
+    "steps": [
+      "Spread the mustard on two slices of bread. Layer each with a slice of cheese, the ham and the turkey, close with the remaining bread and press firmly.",
+      "Whisk the eggs, milk and salt in a shallow dish until no streaks remain.",
+      "Melt the butter in a large nonstick skillet over medium-low heat.",
+      "Dip each sandwich in the egg mixture about 10 seconds per side, letting the excess drip back into the dish.",
+      "Cook the sandwiches 3 to 4 minutes per side, until deep golden and the cheese has melted; lower the heat if the bread browns too fast.",
+      "Cut each sandwich in half on the diagonal and serve hot."
+    ],
+    "ingredients": [
+      {
+        "id": "bread",
+        "qty": 4
+      },
+      {
+        "id": "ham_deli",
+        "qty": 3
+      },
+      {
+        "id": "turkey_deli",
+        "qty": 3
+      },
+      {
+        "id": "cheese_slices",
+        "qty": 2
+      },
+      {
+        "id": "eggs",
+        "qty": 2
+      },
+      {
+        "id": "milk",
+        "qty": 0.25
+      },
+      {
+        "id": "mustard",
+        "qty": 1
+      },
+      {
+        "id": "butter",
+        "qty": 1.5
+      },
+      {
+        "id": "salt",
+        "qty": 0.125
+      }
+    ],
+    "name_es": "Sándwiches Monte Cristo",
+    "description_es": "Sándwiches de jamón, pavo y queso pasados por huevo y dorados en sartén como pan francés, hasta que el queso se derrite.",
+    "steps_es": [
+      "Unta la mostaza en dos rebanadas de pan. Pon sobre cada una una rebanada de queso, el jamón y el pavo, cierra con el resto del pan y presiona con firmeza.",
+      "Bate los huevos, la leche y la sal en un plato hondo hasta que no queden hilos de clara.",
+      "Derrite la mantequilla en una sartén antiadherente grande a fuego medio-bajo.",
+      "Pasa cada sándwich por la mezcla de huevo unos 10 segundos por lado y deja que el exceso escurra en el plato.",
+      "Cocina los sándwiches de 3 a 4 minutos por lado, hasta que estén bien dorados y el queso se haya derretido; baja el fuego si el pan se dora demasiado rápido.",
+      "Corta cada sándwich en diagonal y sirve caliente."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 15,
+    "tip": "The diner version comes with a spoonful of berry jam on the side for dipping.",
+    "tip_es": "En las cafeterías se sirve con una cucharada de mermelada de frutos rojos al lado para mojar.",
+    "photo_url": "https://images.unsplash.com/photo-1670403474909-90849aa25834",
+    "photo_credit": {
+      "name": "sehoon ye",
+      "url": "https://unsplash.com/photos/a-tray-of-food-VIp_q7wNjZk"
+    }
+  },
+  {
+    "slug": "bacon-and-egg-breakfast-pizza",
+    "name": "Bacon and Egg Breakfast Pizza",
+    "meal_type": "breakfast",
+    "diet_tags": [
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 35,
+    "batch_friendly": false,
+    "description": "Store-bought pizza dough baked with garlic oil, mozzarella and bacon, with an egg cooked on top of each quarter.",
+    "steps": [
+      "Heat the oven to {450F} with a rack in the lower third. Take the dough out of the fridge so it relaxes, and lightly oil a large sheet pan with a little of the olive oil.",
+      "Cook the bacon in a skillet over medium heat 6 minutes, turning once, until the fat has rendered but it is still flexible; it finishes in the oven. Drain and chop.",
+      "Stretch the dough on a floured counter into a rectangle roughly the size of the pan and lift it onto the pan.",
+      "Mince the garlic, mix it with the remaining olive oil and brush it over the dough. Cover with the mozzarella and bacon, leaving 4 shallow wells for the eggs.",
+      "Bake 7 minutes, until the crust is set and starting to color.",
+      "Pull out the pan, crack an egg into each well and bake 6 to 8 minutes more, until the crust is deep golden, the whites are set and the yolks are still soft.",
+      "Scatter with sliced green onion and the pepper, and cut into 4 pieces so each one has an egg."
+    ],
+    "ingredients": [
+      {
+        "id": "pizza_dough",
+        "qty": 1
+      },
+      {
+        "id": "bacon",
+        "qty": 6
+      },
+      {
+        "id": "eggs",
+        "qty": 4
+      },
+      {
+        "id": "mozzarella",
+        "qty": 1.5
+      },
+      {
+        "id": "garlic",
+        "qty": 1
+      },
+      {
+        "id": "green_onion",
+        "qty": 0.25
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1
+      },
+      {
+        "id": "flour",
+        "qty": 0.125,
+        "note": "for the counter",
+        "note_es": "para la mesa"
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      }
+    ],
+    "name_es": "Pizza de desayuno con tocino y huevo",
+    "description_es": "Masa de pizza comprada, horneada con aceite de ajo, mozzarella y tocino, con un huevo cocido sobre cada porción.",
+    "steps_es": [
+      "Precalienta el horno a {450F} con una rejilla en el tercio inferior. Saca la masa del refrigerador para que se relaje y engrasa una bandeja grande con un poco del aceite de oliva.",
+      "Cocina el tocino en una sartén a fuego medio 6 minutos, volteando una vez, hasta que suelte la grasa pero siga flexible; se termina de cocinar en el horno. Escurre y pica.",
+      "Estira la masa sobre una mesa enharinada hasta formar un rectángulo casi del tamaño de la bandeja y pásala a la bandeja.",
+      "Pica fino el ajo, mézclalo con el resto del aceite de oliva y unta la masa con una brocha. Cubre con la mozzarella y el tocino, dejando 4 huecos poco profundos para los huevos.",
+      "Hornea 7 minutos, hasta que la masa esté firme y empiece a tomar color.",
+      "Saca la bandeja, rompe un huevo en cada hueco y hornea de 6 a 8 minutos más, hasta que la masa esté bien dorada, las claras firmes y las yemas todavía suaves.",
+      "Reparte encima la cebolla verde en rodajas y la pimienta, y corta en 4 porciones para que cada una tenga un huevo."
+    ],
+    "equipment": [
+      "stovetop",
+      "oven"
+    ],
+    "active_minutes": 15,
+    "tip": "Cold dough springs back; if it resists, let it rest 5 minutes and stretch again.",
+    "tip_es": "La masa fría se encoge; si se resiste, déjala reposar 5 minutos y vuelve a estirar.",
+    "photo_url": "https://images.unsplash.com/photo-1593272280654-b56e97e002e4",
+    "photo_credit": {
+      "name": "Taylor Rooney",
+      "url": "https://unsplash.com/photos/pizza-with-egg-and-cheese-on-brown-wooden-table-Vxnwk1qB8P8"
+    }
+  },
+  {
+    "slug": "turkey-bacon-avocado-wraps",
+    "name": "Turkey, Bacon and Avocado Wraps",
+    "meal_type": "lunch",
+    "diet_tags": [
+      "high_protein"
+    ],
+    "servings": 2,
+    "prep_minutes": 15,
+    "batch_friendly": false,
+    "description": "Club-sandwich fillings rolled in a flour tortilla: deli turkey, crisp bacon, avocado, cheese, lettuce and tomato.",
+    "steps": [
+      "Lay the bacon in a cold skillet and cook over medium heat 8 minutes, turning now and then, until crisp. Drain on a paper towel.",
+      "Shred the romaine, slice the tomato thinly and slice the avocado.",
+      "Wipe out the skillet and warm each tortilla in it over medium heat 10 seconds per side, so it rolls without cracking.",
+      "Spread the mayonnaise over each tortilla, leaving a border, and layer the cheese, turkey, bacon, avocado, tomato and romaine in a line across the lower third.",
+      "Fold in the sides, roll up tightly from the bottom and cut each wrap in half on the diagonal."
+    ],
+    "ingredients": [
+      {
+        "id": "tortilla_flour",
+        "qty": 2
+      },
+      {
+        "id": "turkey_deli",
+        "qty": 6
+      },
+      {
+        "id": "bacon",
+        "qty": 4
+      },
+      {
+        "id": "cheese_slices",
+        "qty": 2
+      },
+      {
+        "id": "avocado",
+        "qty": 1
+      },
+      {
+        "id": "romaine",
+        "qty": 0.5
+      },
+      {
+        "id": "tomato",
+        "qty": 1
+      },
+      {
+        "id": "mayo",
+        "qty": 2
+      }
+    ],
+    "name_es": "Wraps de pavo, tocino y aguacate",
+    "description_es": "El relleno de un sándwich club enrollado en tortilla de harina: pavo, tocino crocante, aguacate, queso, lechuga y tomate.",
+    "steps_es": [
+      "Coloca el tocino en una sartén fría y cocina a fuego medio 8 minutos, volteando de vez en cuando, hasta que esté crocante. Escurre sobre papel de cocina.",
+      "Corta la lechuga romana en tiras, el tomate en rodajas finas y el aguacate en láminas.",
+      "Limpia la sartén y calienta en ella cada tortilla a fuego medio 10 segundos por lado, para que se enrolle sin romperse.",
+      "Unta la mayonesa sobre cada tortilla dejando un borde libre y acomoda el queso, el pavo, el tocino, el aguacate, el tomate y la lechuga en una línea sobre el tercio inferior.",
+      "Dobla los lados hacia adentro, enrolla bien apretado desde abajo y corta cada wrap por la mitad en diagonal."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 15,
+    "tip": "To pack, roll each wrap tightly in foil and keep the tomato in the middle so the tortilla stays dry.",
+    "tip_es": "Para llevar, envuelve cada wrap bien apretado en papel aluminio y deja el tomate en el centro para que la tortilla no se humedezca.",
+    "photo_url": "https://images.unsplash.com/photo-1667451519899-793b85160223",
+    "photo_credit": {
+      "name": "Luther Yonel",
+      "url": "https://unsplash.com/photos/a-group-of-coins-in-a-cup-yA9guldcm54"
+    }
+  },
+  {
+    "slug": "buffalo-chicken-wraps",
+    "name": "Buffalo Chicken Wraps",
+    "meal_type": "lunch",
+    "diet_tags": [
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 25,
+    "batch_friendly": false,
+    "description": "Skillet chicken tossed in hot sauce and butter, wrapped with crunchy lettuce, celery, carrot and a creamy yogurt dressing.",
+    "steps": [
+      "Cut the chicken into bite-size pieces and season with the salt and half of the garlic powder.",
+      "Heat the oil in a large skillet over medium-high heat and cook the chicken 6 to 8 minutes, stirring now and then, until golden and no longer pink inside ({165F}).",
+      "Lower the heat to low, add the butter and hot sauce and stir 1 minute, until the butter melts and the chicken is coated.",
+      "Stir the yogurt, mayonnaise and remaining garlic powder into a dressing. Shred the romaine, thinly slice the celery and grate the carrot.",
+      "Warm the tortillas in a dry skillet over medium heat 10 seconds per side, until flexible.",
+      "Spread the dressing down the center of each tortilla, pile on the romaine, celery, carrot and chicken, fold in the sides and roll up tightly."
+    ],
+    "ingredients": [
+      {
+        "id": "chicken_breast",
+        "qty": 1.25
+      },
+      {
+        "id": "hot_sauce",
+        "qty": 4
+      },
+      {
+        "id": "butter",
+        "qty": 2
+      },
+      {
+        "id": "tortilla_flour",
+        "qty": 4
+      },
+      {
+        "id": "romaine",
+        "qty": 1
+      },
+      {
+        "id": "celery",
+        "qty": 2
+      },
+      {
+        "id": "carrot",
+        "qty": 0.25
+      },
+      {
+        "id": "greek_yogurt",
+        "qty": 0.5
+      },
+      {
+        "id": "mayo",
+        "qty": 2
+      },
+      {
+        "id": "garlic_powder",
+        "qty": 1
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      }
+    ],
+    "name_es": "Wraps de pollo búfalo",
+    "description_es": "Pollo a la sartén bañado en salsa picante y mantequilla, envuelto con lechuga, apio y zanahoria crocantes y un aderezo cremoso de yogur.",
+    "steps_es": [
+      "Corta el pollo en trozos del tamaño de un bocado y sazónalo con la sal y la mitad del ajo en polvo.",
+      "Calienta el aceite en una sartén grande a fuego medio-alto y cocina el pollo de 6 a 8 minutos, revolviendo de vez en cuando, hasta que esté dorado y ya no se vea rosado por dentro ({165F}).",
+      "Baja el fuego al mínimo, agrega la mantequilla y la salsa picante y revuelve 1 minuto, hasta que la mantequilla se derrita y el pollo quede cubierto.",
+      "Mezcla el yogur, la mayonesa y el resto del ajo en polvo para hacer el aderezo. Corta la lechuga en tiras, el apio en rodajas finas y ralla la zanahoria.",
+      "Calienta las tortillas en una sartén seca a fuego medio 10 segundos por lado, hasta que estén flexibles.",
+      "Unta el aderezo en el centro de cada tortilla, agrega la lechuga, el apio, la zanahoria y el pollo, dobla los lados y enrolla bien apretado."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 20,
+    "tip": "The sauced chicken keeps 3 days in the fridge; pack it apart from the vegetables and roll the wrap at lunch.",
+    "tip_es": "El pollo con su salsa dura 3 días en el refrigerador; llévalo separado de las verduras y arma el wrap a la hora de comer.",
+    "photo_url": "https://images.unsplash.com/photo-1621334954920-9fc5f5490401",
+    "photo_credit": {
+      "name": "Khalid Boutchich",
+      "url": "https://unsplash.com/photos/brown-bread-with-white-cream-EeyZZ7DBgXE"
+    }
+  },
+  {
+    "slug": "skillet-tuna-melts",
+    "name": "Skillet Tuna Melts",
+    "meal_type": "lunch",
+    "diet_tags": [
+      "high_protein"
+    ],
+    "servings": 2,
+    "prep_minutes": 15,
+    "batch_friendly": false,
+    "description": "Tuna salad and melted cheese griddled between buttered bread until crisp and golden.",
+    "steps": [
+      "Drain the tuna well and flake it in a bowl. Finely dice the celery and mix it in with the mayonnaise, mustard and pepper.",
+      "Butter one side of each slice of bread.",
+      "Set two slices buttered-side down in a large cold skillet, spread the tuna salad to the edges, top each with a slice of cheese and close with the remaining bread, buttered-side up.",
+      "Cook over medium-low heat 3 to 4 minutes, until the underside is deep golden.",
+      "Flip carefully with a wide spatula and cook 3 minutes more, until golden and the cheese has melted.",
+      "Cut each sandwich in half and serve hot."
+    ],
+    "ingredients": [
+      {
+        "id": "tuna_canned",
+        "qty": 2
+      },
+      {
+        "id": "bread",
+        "qty": 4
+      },
+      {
+        "id": "cheese_slices",
+        "qty": 2
+      },
+      {
+        "id": "celery",
+        "qty": 1
+      },
+      {
+        "id": "mayo",
+        "qty": 2
+      },
+      {
+        "id": "mustard",
+        "qty": 0.5
+      },
+      {
+        "id": "butter",
+        "qty": 1.5,
+        "note": "softened",
+        "note_es": "blanda"
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.125
+      }
+    ],
+    "name_es": "Sándwiches calientes de atún con queso",
+    "description_es": "Ensalada de atún y queso derretido entre rebanadas de pan con mantequilla, dorados en sartén hasta quedar crocantes.",
+    "steps_es": [
+      "Escurre bien el atún y desmenúzalo en un tazón. Corta el apio en cubitos pequeños y mézclalo con la mayonesa, la mostaza y la pimienta.",
+      "Unta mantequilla en un lado de cada rebanada de pan.",
+      "Pon dos rebanadas con la mantequilla hacia abajo en una sartén grande fría, reparte la ensalada de atún hasta los bordes, coloca una rebanada de queso sobre cada una y cierra con el resto del pan, con la mantequilla hacia arriba.",
+      "Cocina a fuego medio-bajo de 3 a 4 minutos, hasta que la base esté bien dorada.",
+      "Voltea con cuidado usando una espátula ancha y cocina 3 minutos más, hasta que esté dorado y el queso se haya derretido.",
+      "Corta cada sándwich por la mitad y sirve caliente."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 15,
+    "tip": "The tuna salad keeps 3 days in the fridge, so you can griddle a fresh sandwich in 7 minutes.",
+    "tip_es": "La ensalada de atún dura 3 días en el refrigerador, así que puedes dorar un sándwich recién hecho en 7 minutos.",
+    "photo_url": "https://images.unsplash.com/photo-1537494792426-7c8526686fb9",
+    "photo_credit": {
+      "name": "Eiliv Aceron",
+      "url": "https://unsplash.com/photos/sandwich-on-brown-board-AKBoj1mA7ck"
+    }
+  },
+  {
+    "slug": "korean-style-beef-rice-bowls",
+    "name": "Korean-Style Ground Beef Rice Bowls",
+    "meal_type": "lunch",
+    "diet_tags": [
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 30,
+    "batch_friendly": true,
+    "description": "Ground beef glazed with soy, garlic, ginger and brown sugar over rice, with a fried egg and quick-pickled cucumber.",
+    "steps": [
+      "Put the rice in a medium pot with twice its volume of water, bring to a boil over high heat, cover, turn the heat to low and cook 15 minutes, until the water is absorbed. Leave covered off the heat.",
+      "Thinly slice the cucumber and toss it with the rice vinegar and a pinch of the salt. Mince the garlic and ginger and slice the green onions.",
+      "Stir the soy sauce, brown sugar, sesame oil and red pepper flakes together in a cup.",
+      "Brown the beef in a large skillet over medium-high heat 6 to 7 minutes, breaking it up, until no pink remains and the edges crisp. Spoon off the excess fat.",
+      "Add the garlic and ginger and stir 30 seconds, until fragrant, then pour in the soy mixture and simmer 2 minutes, until glossy and mostly absorbed.",
+      "Heat the vegetable oil in a nonstick skillet over medium heat and fry the eggs 3 minutes, until the whites are set.",
+      "Divide the rice among four bowls and top with the beef, an egg, the cucumber and the green onions."
+    ],
+    "ingredients": [
+      {
+        "id": "ground_beef",
+        "qty": 1
+      },
+      {
+        "id": "rice_white",
+        "qty": 1.5
+      },
+      {
+        "id": "eggs",
+        "qty": 4
+      },
+      {
+        "id": "cucumber",
+        "qty": 1
+      },
+      {
+        "id": "green_onion",
+        "qty": 0.5
+      },
+      {
+        "id": "garlic",
+        "qty": 3
+      },
+      {
+        "id": "ginger",
+        "qty": 1
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 4
+      },
+      {
+        "id": "brown_sugar",
+        "qty": 0.125
+      },
+      {
+        "id": "sesame_oil",
+        "qty": 1
+      },
+      {
+        "id": "vinegar_rice",
+        "qty": 1
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 1
+      },
+      {
+        "id": "red_pepper_flakes",
+        "qty": 0.5
+      },
+      {
+        "id": "salt",
+        "qty": 0.25
+      }
+    ],
+    "name_es": "Tazones de arroz con carne molida estilo coreano",
+    "description_es": "Carne molida glaseada con soya, ajo, jengibre y azúcar morena sobre arroz, con huevo frito y pepino en vinagre rápido.",
+    "steps_es": [
+      "Pon el arroz en una olla mediana con el doble de su volumen de agua, lleva a hervor a fuego alto, tapa, baja el fuego al mínimo y cocina 15 minutos, hasta que absorba el agua. Deja tapado fuera del fuego.",
+      "Corta el pepino en rodajas finas y mézclalo con el vinagre de arroz y una pizca de la sal. Pica fino el ajo y el jengibre y corta la cebolla verde en rodajas.",
+      "Mezcla en una taza la salsa de soya, el azúcar morena, el aceite de sésamo y las hojuelas de chile rojo.",
+      "Dora la carne en una sartén grande a fuego medio-alto de 6 a 7 minutos, deshaciéndola, hasta que no quede nada rosado y los bordes estén crocantes. Retira el exceso de grasa con una cuchara.",
+      "Agrega el ajo y el jengibre y revuelve 30 segundos, hasta que suelten aroma; vierte la mezcla de soya y cocina 2 minutos, hasta que la carne quede brillante y la salsa casi absorbida.",
+      "Calienta el aceite vegetal en una sartén antiadherente a fuego medio y fríe los huevos 3 minutos, hasta que las claras estén firmes.",
+      "Reparte el arroz en cuatro tazones y pon encima la carne, un huevo, el pepino y la cebolla verde."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 20,
+    "tip": "The beef and rice keep 4 days and reheat in 2 minutes in the microwave; pack the cucumber separately and fry the egg fresh.",
+    "tip_es": "La carne y el arroz duran 4 días y se recalientan en 2 minutos en el microondas; lleva el pepino aparte y fríe el huevo al momento.",
+    "photo_url": "https://images.unsplash.com/photo-1706288586306-b40e8fd3c711",
+    "photo_credit": {
+      "name": "Jason Leung",
+      "url": "https://unsplash.com/photos/a-plate-of-rice-cucumbers-and-meat-on-a-table-VsSLnEO2Jxo"
+    }
+  },
+  {
+    "slug": "greek-chicken-rice-bowls-with-tzatziki",
+    "name": "Greek Chicken Rice Bowls with Tzatziki",
+    "meal_type": "lunch",
+    "diet_tags": [
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 30,
+    "batch_friendly": true,
+    "description": "Lemon-oregano chicken over rice with cucumber, tomato, red onion, feta and a quick yogurt tzatziki.",
+    "steps": [
+      "Put the rice in a medium pot with twice its volume of water and a pinch of the salt, bring to a boil over high heat, cover, turn the heat to low and cook 15 minutes, until the water is absorbed. Leave covered off the heat.",
+      "Cut the chicken into bite-size pieces. Mince the garlic. Toss the chicken with half of the olive oil, half of the lemon juice, the oregano, half of the garlic, the pepper and most of the remaining salt.",
+      "Grate half of the cucumber, squeeze out the water with your hands and stir it into the yogurt with the remaining garlic, lemon juice and salt to make the tzatziki.",
+      "Dice the rest of the cucumber and the tomatoes, and thinly slice the onion.",
+      "Heat the remaining olive oil in a large skillet over medium-high heat, add the chicken in one layer and cook 6 to 8 minutes, turning once or twice, until browned and cooked through ({165F}).",
+      "Divide the rice among four bowls and top with the chicken, cucumber, tomato, onion, crumbled feta and a large spoonful of tzatziki."
+    ],
+    "ingredients": [
+      {
+        "id": "chicken_breast",
+        "qty": 1.25
+      },
+      {
+        "id": "rice_white",
+        "qty": 1.5
+      },
+      {
+        "id": "cucumber",
+        "qty": 1
+      },
+      {
+        "id": "tomato",
+        "qty": 2
+      },
+      {
+        "id": "onion_red",
+        "qty": 0.25
+      },
+      {
+        "id": "greek_yogurt",
+        "qty": 0.75
+      },
+      {
+        "id": "feta",
+        "qty": 2
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "note": "juiced",
+        "note_es": "en jugo"
+      },
+      {
+        "id": "garlic",
+        "qty": 2
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2
+      },
+      {
+        "id": "oregano",
+        "qty": 2
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      }
+    ],
+    "name_es": "Tazones griegos de pollo y arroz con tzatziki",
+    "description_es": "Pollo al limón y orégano sobre arroz con pepino, tomate, cebolla morada, queso feta y un tzatziki rápido de yogur.",
+    "steps_es": [
+      "Pon el arroz en una olla mediana con el doble de su volumen de agua y una pizca de la sal, lleva a hervor a fuego alto, tapa, baja el fuego al mínimo y cocina 15 minutos, hasta que absorba el agua. Deja tapado fuera del fuego.",
+      "Corta el pollo en trozos del tamaño de un bocado. Pica fino el ajo. Mezcla el pollo con la mitad del aceite de oliva, la mitad del jugo de limón, el orégano, la mitad del ajo, la pimienta y casi toda la sal restante.",
+      "Ralla la mitad del pepino, exprímelo con las manos para quitarle el agua y mézclalo con el yogur, el resto del ajo, del jugo de limón y de la sal para hacer el tzatziki.",
+      "Corta en cubitos el resto del pepino y los tomates, y la cebolla en rodajas finas.",
+      "Calienta el resto del aceite de oliva en una sartén grande a fuego medio-alto, agrega el pollo en una sola capa y cocina de 6 a 8 minutos, volteando una o dos veces, hasta que esté dorado y bien cocido ({165F}).",
+      "Reparte el arroz en cuatro tazones y pon encima el pollo, el pepino, el tomate, la cebolla, el queso feta desmenuzado y una cucharada grande de tzatziki."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 20,
+    "tip": "Chicken and rice keep 4 days; store the tzatziki and vegetables separately and add them cold after reheating.",
+    "tip_es": "El pollo y el arroz duran 4 días; guarda el tzatziki y las verduras aparte y agrégalos fríos después de recalentar.",
+    "photo_url": "https://images.unsplash.com/photo-1593787614841-5d53fca8a33d",
+    "photo_credit": {
+      "name": "Louis Hansel",
+      "url": "https://unsplash.com/photos/brown-wooden-tray-with-food-ZK63tYsvyM8"
+    }
+  },
+  {
+    "slug": "classic-cobb-salad",
+    "name": "Classic Cobb Salad",
+    "meal_type": "lunch",
+    "diet_tags": [
+      "keto",
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 30,
+    "batch_friendly": false,
+    "description": "Rows of chicken, bacon, hard-boiled egg, avocado, tomato and crumbled cheese over romaine with a mustard vinaigrette.",
+    "steps": [
+      "Put the eggs in a small pot, cover with cold water, bring to a boil over high heat, then cover, take off the heat and let stand 10 minutes. Cool under cold water, peel and quarter.",
+      "Meanwhile, cook the bacon in a large skillet over medium heat 8 minutes, turning now and then, until crisp. Drain on a paper towel, crumble, and leave a thin film of fat in the skillet.",
+      "Slice the chicken breasts in half horizontally into thin cutlets and season with half of the salt and the pepper.",
+      "Cook the chicken in the same skillet over medium-high heat 4 to 5 minutes per side, until golden and cooked through ({165F}). Rest 5 minutes, then dice.",
+      "Mince the garlic and whisk it with the olive oil, vinegar, mustard and remaining salt to make the vinaigrette.",
+      "Chop the romaine and spread it on a platter or in four bowls. Dice the tomatoes and avocados.",
+      "Arrange the chicken, bacon, eggs, tomato, avocado and crumbled feta in rows over the lettuce and drizzle with the vinaigrette just before serving."
+    ],
+    "ingredients": [
+      {
+        "id": "romaine",
+        "qty": 2
+      },
+      {
+        "id": "chicken_breast",
+        "qty": 1
+      },
+      {
+        "id": "bacon",
+        "qty": 6
+      },
+      {
+        "id": "eggs",
+        "qty": 4
+      },
+      {
+        "id": "avocado",
+        "qty": 2
+      },
+      {
+        "id": "tomato",
+        "qty": 2
+      },
+      {
+        "id": "feta",
+        "qty": 3
+      },
+      {
+        "id": "olive_oil",
+        "qty": 4
+      },
+      {
+        "id": "vinegar_cider",
+        "qty": 2
+      },
+      {
+        "id": "mustard",
+        "qty": 0.5
+      },
+      {
+        "id": "garlic",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      }
+    ],
+    "name_es": "Ensalada Cobb clásica",
+    "description_es": "Hileras de pollo, tocino, huevo duro, aguacate, tomate y queso desmenuzado sobre lechuga romana con vinagreta de mostaza.",
+    "steps_es": [
+      "Pon los huevos en una olla pequeña, cúbrelos con agua fría, lleva a hervor a fuego alto, tapa, retira del fuego y deja reposar 10 minutos. Enfría bajo el chorro de agua, pela y corta en cuartos.",
+      "Mientras tanto, cocina el tocino en una sartén grande a fuego medio 8 minutos, volteando de vez en cuando, hasta que esté crocante. Escurre sobre papel de cocina, desmenuza y deja una capa fina de grasa en la sartén.",
+      "Corta las pechugas por la mitad a lo largo, en horizontal, para obtener filetes delgados, y sazona con la mitad de la sal y la pimienta.",
+      "Cocina el pollo en la misma sartén a fuego medio-alto de 4 a 5 minutos por lado, hasta que esté dorado y bien cocido ({165F}). Deja reposar 5 minutos y corta en cubos.",
+      "Pica fino el ajo y bátelo con el aceite de oliva, el vinagre, la mostaza y el resto de la sal para hacer la vinagreta.",
+      "Pica la lechuga y repártela en una fuente o en cuatro tazones. Corta los tomates y los aguacates en cubos.",
+      "Acomoda el pollo, el tocino, los huevos, el tomate, el aguacate y el queso feta desmenuzado en hileras sobre la lechuga y rocía con la vinagreta justo antes de servir."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 25,
+    "tip": "For packed lunches, keep the dressing in a small jar and cut the avocado right before eating.",
+    "tip_es": "Para llevar, guarda la vinagreta en un frasco pequeño y corta el aguacate justo antes de comer.",
+    "photo_url": "https://images.unsplash.com/photo-1562634117-6645bf4a9136",
+    "photo_credit": {
+      "name": "sheri silver",
+      "url": "https://unsplash.com/photos/sliced-tomato-cabbage-and-avocado-fruits-AibVl6o117k"
+    }
+  },
+  {
+    "slug": "sesame-chicken-cabbage-salad",
+    "name": "Sesame Chicken Cabbage Salad",
+    "meal_type": "lunch",
+    "diet_tags": [
+      "keto",
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 15,
+    "batch_friendly": true,
+    "description": "Shredded rotisserie chicken and crunchy cabbage tossed in a sesame-ginger dressing with almonds and green onion.",
+    "steps": [
+      "Pull the meat off the chicken, discarding the skin and bones, and shred it into bite-size pieces with your fingers or two forks.",
+      "Grate the ginger and whisk it with the sesame oil, vegetable oil, soy sauce and rice vinegar in a large bowl.",
+      "Slice the green onions and roughly chop the cilantro and the almonds.",
+      "Add the coleslaw mix, chicken, green onions and cilantro to the bowl and toss 1 minute, until everything is evenly coated.",
+      "Let the salad stand 5 minutes so the cabbage softens slightly, then scatter the almonds on top and serve."
+    ],
+    "ingredients": [
+      {
+        "id": "rotisserie_chicken",
+        "qty": 1
+      },
+      {
+        "id": "coleslaw_mix",
+        "qty": 1
+      },
+      {
+        "id": "green_onion",
+        "qty": 0.5
+      },
+      {
+        "id": "cilantro",
+        "qty": 0.25
+      },
+      {
+        "id": "almonds",
+        "qty": 0.33
+      },
+      {
+        "id": "ginger",
+        "qty": 1
+      },
+      {
+        "id": "sesame_oil",
+        "qty": 1.5
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 2
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 2
+      },
+      {
+        "id": "vinegar_rice",
+        "qty": 2
+      }
+    ],
+    "name_es": "Ensalada de pollo y repollo con sésamo",
+    "description_es": "Pollo rostizado desmenuzado y repollo crocante con un aderezo de sésamo y jengibre, almendras y cebolla verde.",
+    "steps_es": [
+      "Separa la carne del pollo, descarta la piel y los huesos, y desmenúzala en trozos pequeños con los dedos o con dos tenedores.",
+      "Ralla el jengibre y bátelo en un tazón grande con el aceite de sésamo, el aceite vegetal, la salsa de soya y el vinagre de arroz.",
+      "Corta la cebolla verde en rodajas y pica en trozos grandes el cilantro y las almendras.",
+      "Agrega al tazón el repollo rallado, el pollo, la cebolla verde y el cilantro y mezcla 1 minuto, hasta que todo quede cubierto de manera uniforme.",
+      "Deja reposar la ensalada 5 minutos para que el repollo se ablande un poco, reparte las almendras por encima y sirve."
+    ],
+    "equipment": [],
+    "active_minutes": 15,
+    "tip": "The dressed salad stays crisp 2 days in the fridge. Simmer the chicken bones with water for a free pot of broth.",
+    "tip_es": "La ensalada ya aderezada se mantiene crocante 2 días en el refrigerador. Hierve los huesos del pollo en agua para obtener un caldo gratis.",
+    "photo_url": "https://images.unsplash.com/photo-1678063460272-daeb9a9cf27c",
+    "photo_credit": {
+      "name": "Juno Jo",
+      "url": "https://unsplash.com/photos/a-white-bowl-filled-with-lots-of-food-on-top-of-a-table-S-mXw4JCNm8"
+    }
+  },
+  {
+    "slug": "chicken-fajita-salad-bowls",
+    "name": "Chicken Fajita Salad Bowls",
+    "meal_type": "lunch",
+    "diet_tags": [
+      "keto",
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 25,
+    "batch_friendly": false,
+    "description": "Spiced chicken strips with charred peppers and onion over romaine, topped with avocado, sour cream and lime.",
+    "steps": [
+      "Slice the chicken into thin strips and toss with the chili powder, cumin, garlic powder and most of the salt. Slice the peppers and onion into strips.",
+      "Heat half of the oil in a large skillet over medium-high heat, add the chicken in one layer and cook 5 to 6 minutes, turning once, until browned and cooked through ({165F}). Move it to a plate.",
+      "Add the remaining oil, the peppers, the onion and the remaining salt and cook 5 to 6 minutes, stirring now and then, until softened and charred at the edges.",
+      "Return the chicken to the skillet, squeeze in the juice of half of the lime and toss for 30 seconds.",
+      "Chop the romaine and divide it among four bowls. Dice the avocado.",
+      "Top the lettuce with the chicken and vegetables, the avocado and a spoonful of sour cream, and squeeze the remaining lime over the bowls."
+    ],
+    "ingredients": [
+      {
+        "id": "chicken_breast",
+        "qty": 1.25
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 2
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1
+      },
+      {
+        "id": "romaine",
+        "qty": 2
+      },
+      {
+        "id": "avocado",
+        "qty": 1
+      },
+      {
+        "id": "sour_cream",
+        "qty": 0.25
+      },
+      {
+        "id": "lime",
+        "qty": 1
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 2
+      },
+      {
+        "id": "chili_powder",
+        "qty": 2
+      },
+      {
+        "id": "cumin",
+        "qty": 1
+      },
+      {
+        "id": "garlic_powder",
+        "qty": 0.5
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      }
+    ],
+    "name_es": "Tazones de ensalada con fajitas de pollo",
+    "description_es": "Tiras de pollo especiado con pimientos y cebolla dorados sobre lechuga romana, con aguacate, crema agria y lima.",
+    "steps_es": [
+      "Corta el pollo en tiras finas y mézclalo con el chile en polvo, el comino, el ajo en polvo y casi toda la sal. Corta los pimientos y la cebolla en tiras.",
+      "Calienta la mitad del aceite en una sartén grande a fuego medio-alto, agrega el pollo en una sola capa y cocina de 5 a 6 minutos, volteando una vez, hasta que esté dorado y bien cocido ({165F}). Pásalo a un plato.",
+      "Agrega el resto del aceite, los pimientos, la cebolla y el resto de la sal y cocina de 5 a 6 minutos, revolviendo de vez en cuando, hasta que estén tiernos y con los bordes tostados.",
+      "Regresa el pollo a la sartén, exprime el jugo de media lima y mezcla 30 segundos.",
+      "Pica la lechuga y repártela en cuatro tazones. Corta el aguacate en cubos.",
+      "Pon sobre la lechuga el pollo con las verduras, el aguacate y una cucharada de crema agria, y exprime el resto de la lima sobre los tazones."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 20,
+    "tip": "The chicken and peppers keep 3 days; reheat them 1 minute in the microwave and pile onto cold lettuce.",
+    "tip_es": "El pollo con los pimientos dura 3 días; recaliéntalo 1 minuto en el microondas y sírvelo sobre la lechuga fría.",
+    "photo_url": "https://images.unsplash.com/photo-1564844536311-de546a28c87d",
+    "photo_credit": {
+      "name": "Louis Hansel",
+      "url": "https://unsplash.com/photos/cooked-food-in-bowl-xtC0wQtt4Zo"
+    }
+  },
+  {
+    "slug": "creamy-mushroom-soup",
+    "name": "Creamy Mushroom Soup",
+    "meal_type": "lunch",
+    "diet_tags": [
+      "vegetarian",
+      "keto"
+    ],
+    "servings": 4,
+    "prep_minutes": 35,
+    "batch_friendly": true,
+    "description": "Deeply browned mushrooms simmered with onion, garlic and thyme, finished with cream and cream cheese, no flour.",
+    "steps": [
+      "Slice the mushrooms, dice the onion and mince the garlic.",
+      "Melt the butter in a large pot over medium-high heat, add the mushrooms and half of the salt and cook 8 to 10 minutes, stirring now and then, until their liquid has evaporated and they are well browned.",
+      "Add the onion and cook 4 minutes, until soft, then stir in the garlic and thyme for 30 seconds.",
+      "Pour in the broth and scrape up the browned bits from the bottom. Bring to a boil, lower the heat to medium-low and simmer 10 minutes.",
+      "Turn the heat to low, add the cream cheese in small pieces and the cream, and stir 2 minutes, until the cream cheese melts and the soup is smooth. Do not let it boil.",
+      "Season with the remaining salt and the pepper and ladle into bowls."
+    ],
+    "ingredients": [
+      {
+        "id": "mushroom",
+        "qty": 16
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1
+      },
+      {
+        "id": "garlic",
+        "qty": 3
+      },
+      {
+        "id": "butter",
+        "qty": 3
+      },
+      {
+        "id": "vegetable_broth",
+        "qty": 3
+      },
+      {
+        "id": "heavy_cream",
+        "qty": 0.5
+      },
+      {
+        "id": "cream_cheese",
+        "qty": 2
+      },
+      {
+        "id": "thyme",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      }
+    ],
+    "name_es": "Sopa cremosa de champiñones",
+    "description_es": "Champiñones bien dorados cocidos con cebolla, ajo y tomillo, terminados con crema de leche y queso crema, sin harina.",
+    "steps_es": [
+      "Corta los champiñones en láminas, la cebolla en cubitos y pica fino el ajo.",
+      "Derrite la mantequilla en una olla grande a fuego medio-alto, agrega los champiñones con la mitad de la sal y cocina de 8 a 10 minutos, revolviendo de vez en cuando, hasta que se evapore su líquido y estén bien dorados.",
+      "Agrega la cebolla y cocina 4 minutos, hasta que esté tierna; luego incorpora el ajo y el tomillo y revuelve 30 segundos.",
+      "Vierte el caldo y raspa el fondo para soltar lo dorado. Lleva a hervor, baja el fuego a medio-bajo y cocina 10 minutos.",
+      "Baja el fuego al mínimo, agrega el queso crema en trozos pequeños y la crema de leche, y revuelve 2 minutos, hasta que el queso se derrita y la sopa quede suave. No dejes que hierva.",
+      "Sazona con el resto de la sal y la pimienta y sirve en tazones."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 20,
+    "tip": "Keeps 4 days in the fridge; reheat gently over low heat so the cream does not separate.",
+    "tip_es": "Dura 4 días en el refrigerador; recalienta a fuego bajo para que la crema no se corte.",
+    "photo_url": "https://images.unsplash.com/photo-1636044994100-5728ed506526",
+    "photo_credit": {
+      "name": "nrd",
+      "url": "https://unsplash.com/photos/a-bowl-of-soup-on-a-plate-with-a-spoon-TiKeTt7GpyQ"
+    }
+  },
+  {
+    "slug": "egg-drop-soup-with-mushrooms-and-spinach",
+    "name": "Egg Drop Soup with Mushrooms and Spinach",
+    "meal_type": "lunch",
+    "diet_tags": [
+      "keto"
+    ],
+    "servings": 2,
+    "prep_minutes": 15,
+    "batch_friendly": false,
+    "description": "Ginger-scented chicken broth with silky ribbons of egg, mushrooms and spinach, ready in 15 minutes.",
+    "steps": [
+      "Slice the mushrooms and green onions and grate the ginger. Stir the cornstarch with a splash of cold water until smooth. Beat the eggs in a cup with a spout.",
+      "Bring the broth, ginger, soy sauce and mushrooms to a boil in a medium pot over high heat, then lower the heat to medium and simmer 3 minutes, until the mushrooms are tender.",
+      "Stir the cornstarch mixture again, pour it in while stirring and simmer 1 minute, until the soup thickens slightly and looks glossy.",
+      "Add the spinach and stir 30 seconds, until wilted. Turn the heat to low so the soup is barely moving.",
+      "Stir the soup slowly in one direction and pour in the eggs in a thin stream, then stop stirring and let the ribbons set for 30 seconds.",
+      "Take off the heat, stir in the sesame oil and pepper, and serve topped with the green onions."
+    ],
+    "ingredients": [
+      {
+        "id": "chicken_broth",
+        "qty": 4
+      },
+      {
+        "id": "eggs",
+        "qty": 3
+      },
+      {
+        "id": "mushroom",
+        "qty": 4
+      },
+      {
+        "id": "spinach",
+        "qty": 2
+      },
+      {
+        "id": "green_onion",
+        "qty": 0.25
+      },
+      {
+        "id": "ginger",
+        "qty": 0.5
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 1
+      },
+      {
+        "id": "cornstarch",
+        "qty": 1
+      },
+      {
+        "id": "sesame_oil",
+        "qty": 0.5
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.125
+      }
+    ],
+    "name_es": "Sopa de huevo con champiñones y espinaca",
+    "description_es": "Caldo de pollo con jengibre, hilos sedosos de huevo, champiñones y espinaca, listo en 15 minutos.",
+    "steps_es": [
+      "Corta los champiñones en láminas y la cebolla verde en rodajas, y ralla el jengibre. Disuelve la fécula de maíz en un chorrito de agua fría hasta que no tenga grumos. Bate los huevos en una taza con pico.",
+      "Lleva a hervor el caldo con el jengibre, la salsa de soya y los champiñones en una olla mediana a fuego alto; baja el fuego a medio y cocina 3 minutos, hasta que los champiñones estén tiernos.",
+      "Revuelve otra vez la fécula, viértela mientras mueves la sopa y cocina 1 minuto, hasta que espese un poco y se vea brillante.",
+      "Agrega la espinaca y revuelve 30 segundos, hasta que se marchite. Baja el fuego al mínimo para que la sopa apenas se mueva.",
+      "Revuelve la sopa despacio en una sola dirección y vierte los huevos en un hilo fino; deja de revolver y espera 30 segundos a que cuajen.",
+      "Retira del fuego, agrega el aceite de sésamo y la pimienta, y sirve con la cebolla verde por encima."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 12,
+    "tip": "Add leftover shredded chicken or cubed tofu with the spinach to make it more filling.",
+    "tip_es": "Agrega pollo desmenuzado que haya sobrado o tofu en cubos junto con la espinaca para hacerla más sustanciosa.",
+    "photo_url": "https://images.unsplash.com/photo-1652088079703-38f4a8d6b981",
+    "photo_credit": {
+      "name": "Alex Bayev",
+      "url": "https://unsplash.com/photos/a-bowl-of-soup-with-a-spoon-OPeL-54iYOU"
+    }
+  },
+  {
+    "slug": "tomato-cucumber-panzanella",
+    "name": "Tomato and Cucumber Panzanella",
+    "meal_type": "lunch",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 4,
+    "prep_minutes": 30,
+    "batch_friendly": false,
+    "description": "Italian bread salad: toasted bread cubes soaked in the juices of ripe tomatoes with cucumber, red onion and basil.",
+    "steps": [
+      "Heat the oven to {400F}. Tear or cut the bread into bite-size cubes and toss them on a sheet pan with a third of the olive oil and a pinch of the salt.",
+      "Bake 10 minutes, shaking the pan once, until golden and crisp outside but still a little chewy in the center. Let cool.",
+      "Cut the tomatoes into chunks, put them in a large bowl with the remaining salt, toss and let them sit 10 minutes to release their juices.",
+      "Slice the cucumber into half-moons, thinly slice the onion and mince the garlic.",
+      "Stir the remaining olive oil, the vinegar, garlic and pepper into the tomatoes and their juices.",
+      "Add the bread, cucumber, onion and torn basil leaves, toss well and let stand 10 minutes, tossing once, until the bread has soaked up the dressing without turning mushy."
+    ],
+    "ingredients": [
+      {
+        "id": "french_bread",
+        "qty": 0.5,
+        "note": "day-old is best",
+        "note_es": "mejor del día anterior"
+      },
+      {
+        "id": "tomato",
+        "qty": 4,
+        "note": "ripe",
+        "note_es": "maduros"
+      },
+      {
+        "id": "cucumber",
+        "qty": 1
+      },
+      {
+        "id": "onion_red",
+        "qty": 0.5
+      },
+      {
+        "id": "basil",
+        "qty": 0.5
+      },
+      {
+        "id": "garlic",
+        "qty": 1
+      },
+      {
+        "id": "olive_oil",
+        "qty": 5
+      },
+      {
+        "id": "vinegar_balsamic",
+        "qty": 2
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      }
+    ],
+    "name_es": "Panzanella de tomate y pepino",
+    "description_es": "Ensalada italiana de pan: cubos de pan tostado empapados en el jugo de tomates maduros, con pepino, cebolla morada y albahaca.",
+    "steps_es": [
+      "Precalienta el horno a {400F}. Corta o rompe el pan en cubos del tamaño de un bocado y mézclalos en una bandeja con un tercio del aceite de oliva y una pizca de la sal.",
+      "Hornea 10 minutos, sacudiendo la bandeja una vez, hasta que estén dorados y crocantes por fuera pero todavía un poco tiernos en el centro. Deja enfriar.",
+      "Corta los tomates en trozos, ponlos en un tazón grande con el resto de la sal, mezcla y déjalos 10 minutos para que suelten su jugo.",
+      "Corta el pepino en medias lunas, la cebolla en rodajas finas y pica fino el ajo.",
+      "Agrega a los tomates y su jugo el resto del aceite de oliva, el vinagre, el ajo y la pimienta, y revuelve.",
+      "Incorpora el pan, el pepino, la cebolla y las hojas de albahaca partidas con la mano, mezcla bien y deja reposar 10 minutos, revolviendo una vez, hasta que el pan absorba el aderezo sin deshacerse."
+    ],
+    "equipment": [
+      "oven"
+    ],
+    "active_minutes": 15,
+    "tip": "To pack it, carry the toasted bread in a separate bag and toss it in 10 minutes before eating.",
+    "tip_es": "Para llevar, guarda el pan tostado en una bolsa aparte y mézclalo 10 minutos antes de comer.",
+    "photo_url": "https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5",
+    "photo_credit": {
+      "name": "Luisa Brimble",
+      "url": "https://unsplash.com/photos/sliced-tomato-and-green-leaf-vegetable-on-white-ceramic-plate-vIm26fn_QKg"
+    }
+  },
+  {
+    "slug": "quinoa-tabbouleh-with-chickpeas",
+    "name": "Quinoa Tabbouleh with Chickpeas",
+    "meal_type": "lunch",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 4,
+    "prep_minutes": 35,
+    "batch_friendly": true,
+    "description": "A parsley-heavy lemon salad with quinoa, chickpeas, tomato and cucumber that gets better overnight.",
+    "steps": [
+      "Rinse the quinoa in a fine strainer under cold water for 30 seconds to remove its bitter coating.",
+      "Put it in a small pot with twice its volume of water and a pinch of the salt, bring to a boil over high heat, cover, turn the heat to low and cook 15 minutes, until the water is absorbed and the grains show little tails.",
+      "Spread the quinoa on a large plate and let it cool 10 minutes so it does not wilt the herbs.",
+      "Meanwhile, finely chop the parsley leaves and tender stems, dice the tomatoes and cucumber small, slice the green onions, mince the garlic, and drain and rinse the chickpeas.",
+      "Whisk the lemon juice, olive oil, garlic, pepper and remaining salt in a large bowl.",
+      "Add the quinoa, chickpeas, vegetables and parsley and toss well. Taste, add more salt or lemon if needed, and serve cold or at room temperature."
+    ],
+    "ingredients": [
+      {
+        "id": "quinoa",
+        "qty": 1
+      },
+      {
+        "id": "chickpeas",
+        "qty": 1
+      },
+      {
+        "id": "parsley",
+        "qty": 2
+      },
+      {
+        "id": "tomato",
+        "qty": 3
+      },
+      {
+        "id": "cucumber",
+        "qty": 1
+      },
+      {
+        "id": "green_onion",
+        "qty": 0.5
+      },
+      {
+        "id": "lemon",
+        "qty": 2,
+        "note": "juiced",
+        "note_es": "en jugo"
+      },
+      {
+        "id": "garlic",
+        "qty": 1
+      },
+      {
+        "id": "olive_oil",
+        "qty": 4
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      }
+    ],
+    "name_es": "Tabule de quinoa con garbanzos",
+    "description_es": "Una ensalada con mucho perejil y limón, quinoa, garbanzos, tomate y pepino, que queda aún mejor al día siguiente.",
+    "steps_es": [
+      "Enjuaga la quinoa en un colador fino bajo agua fría 30 segundos para quitarle la capa amarga.",
+      "Ponla en una olla pequeña con el doble de su volumen de agua y una pizca de la sal, lleva a hervor a fuego alto, tapa, baja el fuego al mínimo y cocina 15 minutos, hasta que absorba el agua y los granos muestren un hilito blanco.",
+      "Extiende la quinoa en un plato grande y déjala enfriar 10 minutos para que no marchite las hierbas.",
+      "Mientras tanto, pica fino las hojas y los tallos tiernos del perejil, corta los tomates y el pepino en cubitos, la cebolla verde en rodajas, pica fino el ajo, y escurre y enjuaga los garbanzos.",
+      "Bate el jugo de limón, el aceite de oliva, el ajo, la pimienta y el resto de la sal en un tazón grande.",
+      "Agrega la quinoa, los garbanzos, las verduras y el perejil y mezcla bien. Prueba, ajusta con más sal o limón si hace falta, y sirve fría o a temperatura ambiente."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 20,
+    "tip": "Keeps 3 days in the fridge and travels well; the flavor improves after a night.",
+    "tip_es": "Dura 3 días en el refrigerador y aguanta bien el traslado; el sabor mejora después de una noche.",
+    "photo_url": "https://images.unsplash.com/photo-1656853834420-51980b12a920",
+    "photo_credit": {
+      "name": "Reza Eghtedari",
+      "url": "https://unsplash.com/photos/a-plate-of-salad-epetkkA9lr0"
+    }
+  },
+  {
+    "slug": "smoky-black-bean-soup",
+    "name": "Smoky Black Bean Soup",
+    "meal_type": "lunch",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 4,
+    "prep_minutes": 30,
+    "batch_friendly": true,
+    "description": "Canned black beans simmered with onion, pepper, cumin and smoked paprika, partly mashed and finished with lime.",
+    "steps": [
+      "Dice the onion and bell pepper and mince the garlic.",
+      "Heat the olive oil in a large pot over medium heat and cook the onion and pepper 6 minutes, until soft.",
+      "Stir in the garlic, cumin, oregano and smoked paprika for 30 seconds, until fragrant.",
+      "Add the beans with their liquid, the broth, salt and pepper. Bring to a boil over high heat, then lower the heat to medium-low and simmer uncovered 15 minutes, until slightly thickened.",
+      "Mash about a third of the beans against the side of the pot with a potato masher or the back of a spoon, until the soup is creamy but still chunky.",
+      "Stir in the lime juice, taste for salt, and serve topped with the sour cream and chopped cilantro."
+    ],
+    "ingredients": [
+      {
+        "id": "black_beans",
+        "qty": 3,
+        "note": "undrained",
+        "note_es": "sin escurrir"
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1
+      },
+      {
+        "id": "garlic",
+        "qty": 4
+      },
+      {
+        "id": "vegetable_broth",
+        "qty": 3
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2
+      },
+      {
+        "id": "cumin",
+        "qty": 2
+      },
+      {
+        "id": "oregano",
+        "qty": 1
+      },
+      {
+        "id": "smoked_paprika",
+        "qty": 1
+      },
+      {
+        "id": "lime",
+        "qty": 1,
+        "note": "juiced",
+        "note_es": "en jugo"
+      },
+      {
+        "id": "sour_cream",
+        "qty": 0.25
+      },
+      {
+        "id": "cilantro",
+        "qty": 0.25
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      }
+    ],
+    "name_es": "Sopa ahumada de frijoles negros",
+    "description_es": "Frijoles negros de lata cocidos con cebolla, pimiento, comino y paprika ahumada, machacados en parte y terminados con lima.",
+    "steps_es": [
+      "Corta la cebolla y el pimiento en cubitos y pica fino el ajo.",
+      "Calienta el aceite de oliva en una olla grande a fuego medio y cocina la cebolla y el pimiento 6 minutos, hasta que estén tiernos.",
+      "Agrega el ajo, el comino, el orégano y la paprika ahumada y revuelve 30 segundos, hasta que suelten aroma.",
+      "Incorpora los frijoles con su líquido, el caldo, la sal y la pimienta. Lleva a hervor a fuego alto, baja el fuego a medio-bajo y cocina sin tapar 15 minutos, hasta que espese un poco.",
+      "Machaca más o menos un tercio de los frijoles contra la pared de la olla con un machacador de papas o el dorso de una cuchara, hasta que la sopa quede cremosa pero con trozos.",
+      "Agrega el jugo de lima, prueba la sal y sirve con la crema agria y el cilantro picado por encima."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 12,
+    "tip": "Freezes well for 3 months; thin it with a splash of water when reheating, or ladle it over rice to stretch it.",
+    "tip_es": "Se congela bien hasta 3 meses; aligérala con un chorrito de agua al recalentar o sírvela sobre arroz para que rinda más.",
+    "photo_url": "https://images.unsplash.com/photo-1659603606213-cb19636f9f34",
+    "photo_credit": {
+      "name": "Green And Great",
+      "url": "https://unsplash.com/photos/a-bowl-of-soup-aHko8K3U7as"
+    }
+  },
+  {
+    "slug": "lentils-and-rice-with-caramelized-onions",
+    "name": "Lentils and Rice with Caramelized Onions",
+    "meal_type": "lunch",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 4,
+    "prep_minutes": 50,
+    "batch_friendly": true,
+    "description": "Mujadara: cumin-scented lentils and rice cooked together and topped with deeply browned onions and cool yogurt.",
+    "steps": [
+      "Rinse the lentils, put them in a medium pot with plenty of water, bring to a boil and simmer over medium heat 12 minutes, until just starting to soften but still firm. Drain.",
+      "Meanwhile, halve and thinly slice the onions. Heat the olive oil in a large pot over medium-high heat, add the onions with a pinch of the salt and cook 20 minutes, stirring often and lowering the heat to medium if they scorch, until deep brown and crisp at the edges.",
+      "Lift half of the onions onto a plate for the topping. Stir the cumin and the rice into the onions left in the pot for 1 minute.",
+      "Add the drained lentils, the remaining salt, the pepper and 2 cups (480 ml) of water. Bring to a boil, cover, turn the heat to low and cook 17 minutes, until the rice is tender and the water is absorbed.",
+      "Take off the heat and leave covered 5 minutes, then fluff with a fork.",
+      "Serve topped with the reserved onions, a spoonful of yogurt and the chopped parsley."
+    ],
+    "ingredients": [
+      {
+        "id": "lentils",
+        "qty": 1
+      },
+      {
+        "id": "rice_white",
+        "qty": 1
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 3
+      },
+      {
+        "id": "olive_oil",
+        "qty": 4
+      },
+      {
+        "id": "cumin",
+        "qty": 1.5
+      },
+      {
+        "id": "greek_yogurt",
+        "qty": 0.5
+      },
+      {
+        "id": "parsley",
+        "qty": 0.25
+      },
+      {
+        "id": "salt",
+        "qty": 1.25
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      }
+    ],
+    "name_es": "Lentejas con arroz y cebolla caramelizada",
+    "description_es": "Mujadara: lentejas y arroz con comino cocidos juntos, cubiertos con cebolla bien dorada y yogur fresco.",
+    "steps_es": [
+      "Enjuaga las lentejas, ponlas en una olla mediana con bastante agua, lleva a hervor y cocina a fuego medio 12 minutos, hasta que empiecen a ablandarse pero sigan firmes. Escurre.",
+      "Mientras tanto, corta las cebollas por la mitad y luego en rodajas finas. Calienta el aceite de oliva en una olla grande a fuego medio-alto, agrega las cebollas con una pizca de la sal y cocina 20 minutos, revolviendo seguido y bajando el fuego a medio si se queman, hasta que estén bien doradas y crocantes en los bordes.",
+      "Pasa la mitad de las cebollas a un plato para servir al final. Agrega el comino y el arroz a las cebollas que quedaron en la olla y revuelve 1 minuto.",
+      "Incorpora las lentejas escurridas, el resto de la sal, la pimienta y 480 ml (2 tazas) de agua. Lleva a hervor, tapa, baja el fuego al mínimo y cocina 17 minutos, hasta que el arroz esté tierno y el agua se haya absorbido.",
+      "Retira del fuego y deja tapado 5 minutos; luego separa los granos con un tenedor.",
+      "Sirve con las cebollas reservadas, una cucharada de yogur y el perejil picado por encima."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 25,
+    "tip": "Keeps 5 days in the fridge and is good cold or reheated; a fried egg on top turns leftovers into dinner.",
+    "tip_es": "Dura 5 días en el refrigerador y se come fría o recalentada; con un huevo frito encima, lo que sobra se convierte en cena.",
+    "photo_url": "https://images.unsplash.com/photo-1601214533705-9f24a51b1c2e",
+    "photo_credit": {
+      "name": "Nvr Endng Anupam",
+      "url": "https://unsplash.com/photos/stainless-steel-spoon-on-white-ceramic-plate-WeBNnRbIdKA"
+    }
+  },
+  {
+    "slug": "broccoli-cheddar-stuffed-baked-potatoes",
+    "name": "Broccoli Cheddar Stuffed Baked Potatoes",
+    "meal_type": "lunch",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 4,
+    "prep_minutes": 30,
+    "batch_friendly": false,
+    "description": "Microwave-baked potatoes split open and loaded with broccoli, melted cheddar, sour cream and green onion.",
+    "steps": [
+      "Scrub the potatoes and prick each one 6 to 8 times with a fork so steam can escape.",
+      "Arrange them in a circle on a microwave-safe plate and microwave on high 15 minutes, turning them over halfway. They are done when a knife slides to the center without resistance; if not, continue in 2-minute bursts.",
+      "Put the broccoli in a microwave-safe bowl with a spoonful of water, cover with a plate and microwave on high 3 to 4 minutes, until hot and tender. Drain and chop roughly.",
+      "Split each potato lengthwise, squeeze the ends to open it and fluff the inside with a fork together with the butter, salt and pepper.",
+      "Pile the broccoli and cheddar on the potatoes and microwave 1 minute, until the cheese melts.",
+      "Top with the sour cream and sliced green onion and serve."
+    ],
+    "ingredients": [
+      {
+        "id": "potato_russet",
+        "qty": 2.5,
+        "note": "4 medium",
+        "note_es": "4 medianas"
+      },
+      {
+        "id": "broccoli_frozen",
+        "qty": 3
+      },
+      {
+        "id": "cheddar",
+        "qty": 1.5
+      },
+      {
+        "id": "sour_cream",
+        "qty": 0.5
+      },
+      {
+        "id": "butter",
+        "qty": 2
+      },
+      {
+        "id": "green_onion",
+        "qty": 0.25
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      }
+    ],
+    "name_es": "Papas rellenas de brócoli y cheddar",
+    "description_es": "Papas cocidas en el microondas, abiertas y rellenas de brócoli, cheddar derretido, crema agria y cebolla verde.",
+    "steps_es": [
+      "Lava bien las papas y pincha cada una de 6 a 8 veces con un tenedor para que salga el vapor.",
+      "Acomódalas en círculo en un plato apto para microondas y cocina a potencia alta 15 minutos, volteándolas a la mitad. Están listas cuando un cuchillo llega al centro sin resistencia; si no, sigue en tandas de 2 minutos.",
+      "Pon el brócoli en un tazón apto para microondas con una cucharada de agua, tapa con un plato y cocina a potencia alta de 3 a 4 minutos, hasta que esté caliente y tierno. Escurre y pica en trozos grandes.",
+      "Abre cada papa a lo largo, aprieta los extremos para abrirla y afloja la pulpa con un tenedor junto con la mantequilla, la sal y la pimienta.",
+      "Reparte el brócoli y el cheddar sobre las papas y calienta 1 minuto en el microondas, hasta que el queso se derrita.",
+      "Termina con la crema agria y la cebolla verde en rodajas y sirve."
+    ],
+    "equipment": [
+      "microwave"
+    ],
+    "active_minutes": 10,
+    "tip": "Leftover chili, taco meat or black beans make just as good a topping as broccoli.",
+    "tip_es": "El chili, la carne para tacos o los frijoles negros que hayan sobrado sirven de relleno tan bien como el brócoli.",
+    "photo_url": "https://images.unsplash.com/photo-1642522685167-cf414ea225be",
+    "photo_credit": {
+      "name": "Yolanda Djajakesukma",
+      "url": "https://unsplash.com/photos/a-baked-potato-covered-in-cheese-and-broccoli-ZarbohKJIQ8"
+    }
+  },
+  {
+    "slug": "black-bean-rice-and-cheese-burritos",
+    "name": "Black Bean, Rice and Cheese Burritos",
+    "meal_type": "lunch",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 4,
+    "prep_minutes": 30,
+    "batch_friendly": true,
+    "description": "Freezer-friendly burritos of cumin black beans, salsa rice and cheddar, toasted in a dry skillet until crisp.",
+    "steps": [
+      "Put the rice in a small pot with twice its volume of water and half of the salt, bring to a boil over high heat, cover, turn the heat to low and cook 15 minutes, until the water is absorbed. Stir in half of the salsa.",
+      "Mince the garlic. Heat the oil in a medium skillet over medium heat and cook the garlic and cumin 30 seconds, until fragrant.",
+      "Add the beans with about half of their liquid and the remaining salt and simmer 5 minutes, mashing about half of them with a fork, until thick enough to hold a line when you drag a spoon through.",
+      "Warm the tortillas one at a time in a dry skillet over medium heat 15 seconds per side, until flexible.",
+      "Spoon a line of beans down the center of each tortilla, top with the rice and cheddar, fold in the sides and roll up tightly from the bottom.",
+      "Set the burritos seam-side down in the dry skillet over medium heat and toast 2 minutes per side, until golden and sealed. Serve with the remaining salsa."
+    ],
+    "ingredients": [
+      {
+        "id": "tortilla_flour",
+        "qty": 4
+      },
+      {
+        "id": "black_beans",
+        "qty": 2
+      },
+      {
+        "id": "rice_white",
+        "qty": 0.75
+      },
+      {
+        "id": "cheddar",
+        "qty": 1.5
+      },
+      {
+        "id": "salsa",
+        "qty": 0.75
+      },
+      {
+        "id": "garlic",
+        "qty": 2
+      },
+      {
+        "id": "cumin",
+        "qty": 1
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      }
+    ],
+    "name_es": "Burritos de frijoles negros, arroz y queso",
+    "description_es": "Burritos de frijoles negros con comino, arroz con salsa y cheddar, tostados en sartén seca hasta quedar crocantes; se pueden congelar.",
+    "steps_es": [
+      "Pon el arroz en una olla pequeña con el doble de su volumen de agua y la mitad de la sal, lleva a hervor a fuego alto, tapa, baja el fuego al mínimo y cocina 15 minutos, hasta que absorba el agua. Mezcla la mitad de la salsa.",
+      "Pica fino el ajo. Calienta el aceite en una sartén mediana a fuego medio y cocina el ajo y el comino 30 segundos, hasta que suelten aroma.",
+      "Agrega los frijoles con más o menos la mitad de su líquido y el resto de la sal y cocina 5 minutos, machacando cerca de la mitad con un tenedor, hasta que espesen y quede un surco al pasar una cuchara.",
+      "Calienta las tortillas una por una en una sartén seca a fuego medio 15 segundos por lado, hasta que estén flexibles.",
+      "Pon una línea de frijoles en el centro de cada tortilla, agrega el arroz y el cheddar, dobla los lados hacia adentro y enrolla bien apretado desde abajo.",
+      "Coloca los burritos con el cierre hacia abajo en la sartén seca a fuego medio y tuesta 2 minutos por lado, hasta que estén dorados y sellados. Sirve con el resto de la salsa."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 15,
+    "tip": "Freeze untoasted burritos wrapped in foil up to 3 months; unwrap and microwave 2 minutes, turning once.",
+    "tip_es": "Congela los burritos sin tostar envueltos en papel aluminio hasta 3 meses; quita el aluminio y calienta 2 minutos en el microondas, volteando una vez.",
+    "photo_url": "https://images.unsplash.com/photo-1635107420756-9f930ed6c97b",
+    "photo_credit": {
+      "name": "Gonzalo Mendiola",
+      "url": "https://unsplash.com/photos/a-green-plate-topped-with-a-burrito-and-a-cup-of-coffee-1r_k74aEK58"
+    }
+  },
+  {
+    "slug": "veggie-pita-pizzas",
+    "name": "Veggie Pita Pizzas",
+    "meal_type": "lunch",
+    "diet_tags": [
+      "vegetarian",
+      "high_protein"
+    ],
+    "servings": 2,
+    "prep_minutes": 20,
+    "batch_friendly": false,
+    "description": "Pita rounds baked crisp with marinara, mozzarella, mushrooms, bell pepper and red onion.",
+    "steps": [
+      "Heat the oven to {425F}. Thinly slice the bell pepper, mushrooms and onion.",
+      "Arrange the pitas on a large sheet pan and bake 3 minutes, until the surface feels dry.",
+      "Spread the marinara over each pita, leaving a small border, and cover with the mozzarella.",
+      "Top with the vegetables, sprinkle with the Italian seasoning and drizzle with the olive oil.",
+      "Bake 8 to 10 minutes, until the cheese is bubbling and browned in spots and the pita edges are crisp.",
+      "Let cool 2 minutes, cut into quarters and serve two pizzas per person."
+    ],
+    "ingredients": [
+      {
+        "id": "pita",
+        "qty": 4
+      },
+      {
+        "id": "marinara",
+        "qty": 0.5
+      },
+      {
+        "id": "mozzarella",
+        "qty": 1.5
+      },
+      {
+        "id": "mushroom",
+        "qty": 4
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 0.5
+      },
+      {
+        "id": "onion_red",
+        "qty": 0.25
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 0.5
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1
+      }
+    ],
+    "name_es": "Pizzas de pan pita con verduras",
+    "description_es": "Panes pita horneados hasta quedar crocantes con salsa marinara, mozzarella, champiñones, pimiento y cebolla morada.",
+    "steps_es": [
+      "Precalienta el horno a {425F}. Corta el pimiento, los champiñones y la cebolla en láminas finas.",
+      "Acomoda los panes pita en una bandeja grande y hornea 3 minutos, hasta que la superficie se sienta seca.",
+      "Unta la salsa marinara sobre cada pita dejando un borde pequeño y cubre con la mozzarella.",
+      "Reparte las verduras, espolvorea el condimento italiano y rocía con el aceite de oliva.",
+      "Hornea de 8 a 10 minutos, hasta que el queso burbujee y se dore en partes y los bordes del pan estén crocantes.",
+      "Deja enfriar 2 minutos, corta en cuartos y sirve dos pizzas por persona."
+    ],
+    "equipment": [
+      "oven"
+    ],
+    "active_minutes": 10,
+    "tip": "Any leftover cooked vegetables or shredded chicken work as toppings; naan or split English muffins replace the pita.",
+    "tip_es": "Cualquier verdura cocida o pollo desmenuzado que haya sobrado sirve para cubrirlas; el naan o los muffins ingleses abiertos reemplazan al pan pita.",
+    "photo_url": "https://images.unsplash.com/photo-1627461985459-51600559fffe",
+    "photo_credit": {
+      "name": "georgia z",
+      "url": "https://unsplash.com/photos/pizza-with-cheese-and-green-leaves-JG5lgvc57qE"
+    }
+  },
+  {
+    "slug": "smashed-chickpea-salad-sandwiches",
+    "name": "Smashed Chickpea Salad Sandwiches",
+    "meal_type": "lunch",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 4,
+    "prep_minutes": 15,
+    "batch_friendly": true,
+    "description": "A no-cook sandwich filling of mashed chickpeas with mayo, mustard, lemon and celery, served with lettuce and tomato.",
+    "steps": [
+      "Drain and rinse the chickpeas, pat them dry and put them in a medium bowl.",
+      "Mash them with a fork or potato masher until most are broken up but some chunks remain.",
+      "Finely dice the celery and slice the green onion. Add them to the bowl with the mayonnaise, mustard, lemon juice, salt and pepper and stir until creamy.",
+      "Taste and adjust the salt and lemon. Slice the tomato and separate the romaine leaves.",
+      "Spread the chickpea salad on half of the bread slices, top with lettuce and tomato, close with the remaining bread and cut each sandwich in half."
+    ],
+    "ingredients": [
+      {
+        "id": "chickpeas",
+        "qty": 2
+      },
+      {
+        "id": "bread",
+        "qty": 8
+      },
+      {
+        "id": "celery",
+        "qty": 2
+      },
+      {
+        "id": "green_onion",
+        "qty": 0.25
+      },
+      {
+        "id": "mayo",
+        "qty": 3
+      },
+      {
+        "id": "mustard",
+        "qty": 1
+      },
+      {
+        "id": "lemon",
+        "qty": 0.5,
+        "note": "juiced",
+        "note_es": "en jugo"
+      },
+      {
+        "id": "romaine",
+        "qty": 0.5
+      },
+      {
+        "id": "tomato",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      }
+    ],
+    "name_es": "Sándwiches de ensalada de garbanzos",
+    "description_es": "Un relleno sin cocción de garbanzos machacados con mayonesa, mostaza, limón y apio, servido con lechuga y tomate.",
+    "steps_es": [
+      "Escurre y enjuaga los garbanzos, sécalos y ponlos en un tazón mediano.",
+      "Machácalos con un tenedor o un machacador de papas hasta que la mayoría esté deshecha pero queden algunos trozos.",
+      "Corta el apio en cubitos pequeños y la cebolla verde en rodajas. Agrégalos al tazón con la mayonesa, la mostaza, el jugo de limón, la sal y la pimienta y revuelve hasta que quede cremoso.",
+      "Prueba y ajusta la sal y el limón. Corta el tomate en rodajas y separa las hojas de lechuga.",
+      "Unta la ensalada de garbanzos en la mitad de las rebanadas de pan, agrega lechuga y tomate, cierra con el resto del pan y corta cada sándwich por la mitad."
+    ],
+    "equipment": [],
+    "active_minutes": 15,
+    "tip": "The filling keeps 4 days in the fridge; pack it separately from the bread so the sandwich does not get soggy.",
+    "tip_es": "El relleno dura 4 días en el refrigerador; llévalo separado del pan para que el sándwich no se humedezca.",
+    "photo_url": "https://images.unsplash.com/photo-1540713434306-58505cf1b6fc",
+    "photo_credit": {
+      "name": "Pille R. Priske",
+      "url": "https://unsplash.com/photos/clubhouse-sandwich-U0PiIS4Uvkc"
+    }
+  }
+]

@@ -45,26 +45,30 @@ export async function signInLink(email: string): Promise<string> {
 
 /** Asks for a sign-in email from the sign-in form and waits until it is on its way. */
 export async function requestSignIn(page: Page, email: string) {
-  await page.getByLabel("Email").fill(email);
-  await page.getByRole("button", { name: /email me a sign-in link/i }).click();
-  await expect(page.getByText("Check your inbox")).toBeVisible();
+  await page.getByLabel(/email|correo electrónico/i).fill(email);
+  await page.getByRole("button", { name: /email me a sign-in link|enviarme un enlace/i }).click();
+  await expect(page.getByText(/check your inbox|revisa tu correo/i)).toBeVisible();
 }
 
 /** Completes the email sign-in form with the emailed code. */
 export async function signIn(page: Page, email: string) {
-  await page.getByLabel("Email").fill(email);
-  await page.getByRole("button", { name: /email me a sign-in link/i }).click();
-  await page.getByLabel(/code/i).fill(await signInCode(email));
-  await page.getByRole("button", { name: /^sign in$/i }).click();
+  await page.getByLabel(/email|correo electrónico/i).fill(email);
+  await page.getByRole("button", { name: /email me a sign-in link|enviarme un enlace/i }).click();
+  await page.getByLabel(/code|código/i).fill(await signInCode(email));
+  await page.getByRole("button", { name: /^(sign in|entrar)$/i }).click();
 }
 
 /** Answers onboarding with defaults, signs up, and lands on the first plan. */
-export async function onboard(page: Page, email: string, options: { budget?: number; people?: number } = {}) {
+export async function onboard(page: Page, email: string, options: { budget?: number; people?: number; withoutOven?: boolean } = {}) {
   const query = new URLSearchParams();
   if (options.budget) query.set("budget", String(options.budget));
   if (options.people) query.set("people", String(options.people));
   await page.goto(`/start?${query}`);
-  for (let step = 0; step < 3; step++) await page.getByRole("button", { name: "Continue" }).click();
+  for (let step = 0; step < 4; step++) await page.getByRole("button", { name: "Continue" }).click();
+  if (options.withoutOven) {
+    await page.getByText("Oven", { exact: true }).click();
+    await expect(page.getByRole("checkbox", { name: "Oven" })).not.toBeChecked();
+  }
   await page.getByRole("button", { name: "Plan my week" }).click();
   await page.waitForURL(/\/login/);
   await signIn(page, email);

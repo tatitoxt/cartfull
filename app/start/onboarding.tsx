@@ -15,16 +15,14 @@ import {
 import { completeOnboarding } from "@/lib/app/actions";
 import type { PantryGroups } from "@/lib/app/pantry";
 import { BUDGET_MAX_CENTS, BUDGET_MIN_CENTS, DEFAULTS, answersSchema, type Answers } from "@/lib/app/profile";
+import { CountryPreferences } from "@/components/country-preferences";
+import { countryByCode } from "@/lib/i18n/countries";
+import { useLocale, useMessages } from "@/lib/i18n/locale-provider";
+import { fill } from "@/lib/i18n/messages";
+import { moneyRound } from "@/lib/format";
 
-const STORAGE_KEY = "cartfull.answers.v1";
-const STEPS = ["Budget", "Meals", "Avoid", "Kitchen"] as const;
-
-const TITLES = [
-  { title: "What can you spend on groceries this week?", lead: "Set the number. We plan to it and never go over." },
-  { title: "What should the week look like?", lead: "Pick what fits. You can change it any time." },
-  { title: "Anything to leave out?", lead: "Skip this if you eat everything." },
-  { title: "What do you already have?", lead: "Food at home costs nothing this week." },
-];
+const STORAGE_KEY = "cartfull.answers.v2";
+const STEPS = ["country", "budget", "meals", "avoid", "kitchen"] as const;
 
 type Estimate =
   | { state: "loading" }
@@ -32,9 +30,13 @@ type Estimate =
   | { state: "none"; slot: string }
   | { state: "error" };
 
-function initialAnswers(staples: string[], params: URLSearchParams): Answers {
+function initialAnswers(staples: string[], params: URLSearchParams, initialCountry: string): Answers {
   const base: Answers = {
     ...DEFAULTS,
+    country: initialCountry,
+    lang: countryByCode(initialCountry).lang,
+    units: countryByCode(initialCountry).units,
+    equipment: [...DEFAULTS.equipment],
     usual_spend_cents: null,
     allergens: [],
     dislikes: [],
@@ -61,15 +63,19 @@ function Flow({
   pantry,
   staples,
   dislikeOptions,
+  initialCountry,
 }: {
   signedIn: boolean;
   pantry: PantryGroups;
   staples: string[];
-  dislikeOptions: { key: string; label: string }[];
+  dislikeOptions: { key: string }[];
+  initialCountry: string;
 }) {
   const router = useRouter();
   const params = useSearchParams();
-  const [answers, setAnswers] = useState<Answers>(() => initialAnswers(staples, new URLSearchParams(params)));
+  const { setLocale } = useLocale();
+  const messages = useMessages();
+  const [answers, setAnswers] = useState<Answers>(() => initialAnswers(staples, new URLSearchParams(params), initialCountry));
   const [step, setStep] = useState(0);
   const [ready, setReady] = useState(false);
   const [busy, setBusy] = useState(false);
@@ -102,10 +108,10 @@ function Flow({
       }
       setBusy(false);
       if (result.code === "budget_too_low") {
-        setStep(0);
+        setStep(1);
         setProblem({ message: result.message, minimumCents: result.minimumCents });
       } else {
-        if (result.code === "not_enough_recipes") setStep(2);
+        if (result.code === "not_enough_recipes") setStep(3);
         setProblem({ message: result.message });
       }
     },
@@ -144,6 +150,7 @@ function Flow({
         allergens: answers.allergens,
         dislikes: answers.dislikes,
         pantry: answers.pantry,
+        equipment: answers.equipment,
       }),
     [answers],
   );
@@ -188,37 +195,67 @@ function Flow({
   return (
     <div className="mx-auto flex min-h-dvh w-full max-w-xl flex-col px-5 pb-40 pt-5">
       <header className="flex items-center justify-between">
-        <Link href="/" aria-label="Cartfull home">
+        <Link href="/" aria-label={messages.common.home}>
           <Logo />
         </Link>
         <p className="tnum text-sm font-medium text-ink-soft" aria-live="polite">
-          Step {step + 1} of {STEPS.length}
+          {fill(messages.onboarding.step, { current: step + 1, total: STEPS.length })}
         </p>
       </header>
 
       <ol className="mt-5 grid grid-cols-4 gap-1.5" aria-hidden="true">
-        {STEPS.map((name, index) => (
-          <li key={name} className={`h-1.5 rounded-full ${index <= step ? "bg-green" : "bg-line"}`} />
+        {Array.from({ length: 4 }, (_, index) => (
+          <li key={index} className={`h-1.5 rounded-full ${index < Math.ceil(((step + 1) * 4) / STEPS.length) ? "bg-green" : "bg-line"}`} />
         ))}
       </ol>
 
       <main id="main" className="mt-8 flex-1">
         <div key={step} className="rise">
           <h1 ref={heading} tabIndex={-1} className="text-[1.9rem] outline-none sm:text-4xl">
-            {TITLES[step].title}
+            {[
+              messages.onboarding.countryTitle,
+              messages.onboarding.budgetTitle,
+              messages.onboarding.mealsTitle,
+              messages.onboarding.avoidTitle,
+              messages.onboarding.kitchenTitle,
+            ][step]}
           </h1>
-          <p className="mt-3 text-ink-soft">{TITLES[step].lead}</p>
+          <p className="mt-3 text-ink-soft">
+            {[
+              messages.onboarding.countryLead,
+              messages.onboarding.budgetLead,
+              messages.onboarding.mealsLead,
+              messages.onboarding.avoidLead,
+              messages.onboarding.kitchenLead,
+            ][step]}
+          </p>
 
           <div className="mt-8">
             {step === 0 && (
+              <CountryPreferences
+                answers={answers}
+                set={(patch) => {
+                  set(patch);
+                  const next = {
+                    country: patch.country ?? answers.country,
+                    lang: patch.lang ?? answers.lang,
+                    units: patch.units ?? answers.units,
+                  };
+                  setLocale(next);
+                  const secure = window.location.protocol === "https:" ? "; secure" : "";
+                  document.cookie = `cartfull_locale=${encodeURIComponent(JSON.stringify(next))}; path=/; max-age=31536000; samesite=lax${secure}`;
+                }}
+              />
+            )}
+            {step === 1 && (
               <div className="space-y-8">
                 <BudgetFields answers={answers} set={set} />
                 <UsualSpendField answers={answers} set={set} />
               </div>
             )}
-            {step === 1 && <MealFields answers={answers} set={set} />}
-            {step === 2 && <AvoidFields answers={answers} set={set} dislikeOptions={dislikeOptions} />}
-            {step === 3 && <PantryFields answers={answers} set={set} pantry={pantry} />}
+            {step === 2 && <MealFields answers={answers} set={set} />}
+            {step === 3 && <AvoidFields answers={answers} set={set} dislikeOptions={dislikeOptions} />}
+            {step === 4 && <PantryFields answers={answers} set={set} pantry={pantry} />}
           </div>
         </div>
 
@@ -231,7 +268,7 @@ function Flow({
                 className="mt-3 font-semibold text-green-deep underline underline-offset-4"
                 onClick={() => set({ weekly_budget_cents: Math.min(BUDGET_MAX_CENTS, Math.ceil(problem.minimumCents! / 500) * 500) })}
               >
-                Set my budget to ${Math.ceil(problem.minimumCents / 500) * 5}
+                {fill(messages.onboarding.budgetTarget, { amount: Math.ceil(problem.minimumCents / 500) * 5 })}
               </button>
             )}
           </div>
@@ -241,18 +278,18 @@ function Flow({
       <div className="fixed inset-x-0 bottom-0 z-10 border-t border-line bg-paper/95 pb-[max(1rem,env(safe-area-inset-bottom))] pt-3 backdrop-blur">
         <div className="mx-auto w-full max-w-xl px-5">
           <p className="min-h-12 text-[0.95rem] leading-snug" aria-live="polite" data-testid="estimate">
-            {estimate.state === "loading" && <span className="text-ink-faint">Pricing a week for your household…</span>}
-            {estimate.state === "error" && <span className="text-ink-faint">We&apos;ll price the week when you finish.</span>}
+            {estimate.state === "loading" && <span className="text-ink-faint">{messages.onboarding.pricingLoading}</span>}
+            {estimate.state === "error" && <span className="text-ink-faint">{messages.onboarding.pricingLater}</span>}
             {estimate.state === "none" && (
               <span className="font-medium">
-                Not enough {estimate.slot} recipes fit these choices.{" "}
-                <span className="font-normal text-ink-soft">Loosen your diet, allergies or dislikes.</span>
+                {fill(messages.onboarding.notEnough, { slot: estimate.slot })}
+                {" "}<span className="font-normal text-ink-soft">{messages.onboarding.loosen}</span>
               </span>
             )}
             {estimate.state === "ready" && tooLow && (
               <span>
-                <span className="font-semibold">${Math.round(answers.weekly_budget_cents / 100)} is too tight for this week.</span>{" "}
-                <span className="text-ink-soft">The leanest plan we can build is about </span>
+                <span className="font-semibold">{fill(messages.onboarding.tooTight, { amount: Math.round(answers.weekly_budget_cents / 100) })}</span>{" "}
+                <span className="text-ink-soft">{messages.onboarding.leanest} </span>
                 <button
                   type="button"
                   className="tnum font-semibold text-green-deep underline underline-offset-2"
@@ -270,7 +307,7 @@ function Flow({
           <div className="mt-2 flex items-center gap-3">
             {step > 0 && (
               <button type="button" className="btn btn-quiet px-5" onClick={() => go(step - 1)} disabled={busy}>
-                Back
+                {messages.common.back}
               </button>
             )}
             {last ? (
@@ -280,11 +317,11 @@ function Flow({
                 onClick={() => submit(answers)}
                 disabled={busy || blocked}
               >
-                {busy ? "Planning your week…" : "Plan my week"}
+                {busy ? messages.onboarding.planning : messages.onboarding.plan}
               </button>
             ) : (
               <button type="button" className="btn btn-primary flex-1" onClick={() => go(step + 1)}>
-                Continue
+                {messages.common.continue}
               </button>
             )}
           </div>
@@ -294,7 +331,7 @@ function Flow({
               className="mx-auto mt-1 block min-h-11 px-3 text-sm font-medium text-ink-soft underline underline-offset-4"
               onClick={() => go(step + 1)}
             >
-              Skip this step
+              {messages.common.skipStep}
             </button>
           )}
         </div>
@@ -304,20 +341,22 @@ function Flow({
 }
 
 function BudgetLine({ budget, typical, minimum }: { budget: number; typical: number; minimum: number }) {
+  const messages = useMessages();
+  const { lang } = useLocale();
   const need = Math.min(budget, Math.max(minimum, typical));
   const left = budget - need;
   return (
     <span>
-      <span className="text-ink-soft">These meals need about </span>
-      <span className="tnum font-semibold">${Math.round(need / 100)}</span>
+      <span className="text-ink-soft">{messages.onboarding.needs} </span>
+      <span className="tnum font-semibold">{moneyRound(need, lang)}</span>
       {left >= 100 ? (
         <>
-          <span className="text-ink-soft">. That leaves </span>
-          <span className="tnum font-semibold text-tomato-deep">${Math.round(left / 100)}</span>
-          <span className="text-ink-soft"> for everything else.</span>
+          <span className="text-ink-soft">. {messages.onboarding.leaves} </span>
+          <span className="tnum font-semibold text-tomato-deep">{moneyRound(left, lang)}</span>
+          <span className="text-ink-soft"> {messages.onboarding.everythingElse}</span>
         </>
       ) : (
-        <span className="text-ink-soft">. It fits, with little to spare.</span>
+        <span className="text-ink-soft">. {messages.onboarding.fits}</span>
       )}
     </span>
   );

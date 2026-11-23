@@ -6,8 +6,13 @@ import { Logo } from "@/components/logo";
 import { completeLink, readPendingLink } from "@/lib/auth/complete-link";
 import { normalizeEmail, PENDING_COOKIE } from "@/lib/auth/requested";
 import { safeNext } from "@/lib/safe-next";
+import { getLocale } from "@/lib/i18n/server";
+import { MESSAGES } from "@/lib/i18n/messages";
 
-export const metadata: Metadata = { title: "Confirm sign-in", robots: { index: false } };
+export async function generateMetadata(): Promise<Metadata> {
+  const { lang } = await getLocale();
+  return { title: MESSAGES[lang].misc.confirmTitle, robots: { index: false } };
+}
 
 const retry = (next: string) => `/login?error=link&next=${encodeURIComponent(next)}`;
 
@@ -16,6 +21,7 @@ export default async function ConfirmPage() {
   if (!pending) redirect(retry("/app"));
   const next = safeNext(pending.next);
   const email = normalizeEmail(pending.email);
+  const m = MESSAGES[(await getLocale()).lang];
 
   async function finish() {
     "use server";
@@ -31,27 +37,27 @@ export default async function ConfirmPage() {
 
   return (
     <div className="mx-auto flex min-h-dvh w-full max-w-md flex-col px-5 pb-10 pt-6">
-      <Link href="/" aria-label="Cartfull home" className="self-start">
+      <Link href="/" aria-label={m.common.home} className="self-start">
         <Logo />
       </Link>
       <main id="main" className="flex flex-1 flex-col justify-center py-10">
-        <h1 className="text-[2rem] sm:text-4xl">Is this your email?</h1>
+        <h1 className="text-[2rem] sm:text-4xl">{m.misc.confirmTitle}</h1>
         <p className="mt-3 text-ink-soft">
-          This link signs in to Cartfull as{" "}
+          {m.misc.confirmLead}{" "}
           <span className="font-medium text-ink" data-testid="confirm-email">
             {email}
           </span>
-          . It was opened in a browser that didn&apos;t ask for it, so we&apos;re checking first.
+          {m.misc.confirmOpened}
         </p>
         <form action={finish} className="mt-8">
           <button type="submit" className="btn btn-primary w-full">
-            Yes, sign me in
+            {m.misc.confirmButton}
           </button>
         </form>
         <p className="mt-6 text-sm text-ink-soft">
-          Not your address? Don&apos;t continue: anything you save would go to someone else&apos;s account.{" "}
+          {m.misc.confirmWrong}{" "}
           <Link href={`/login?next=${encodeURIComponent(next)}`} className="font-medium text-green underline underline-offset-4">
-            Sign in with your own email
+            {m.misc.confirmOwn}
           </Link>
           .
         </p>

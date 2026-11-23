@@ -25,9 +25,9 @@ export function targetWeekStart(date: string = today()): string {
   return addDays(shifted, -weekday(shifted));
 }
 
-export function weekLabel(weekStart: string): string {
+export function weekLabel(weekStart: string, lang: "en" | "es" = "en"): string {
   const format = (d: string) =>
-    new Date(`${d}T12:00:00Z`).toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "UTC" });
+    new Date(`${d}T12:00:00Z`).toLocaleDateString(lang === "es" ? "es-ES" : "en-US", { month: "short", day: "numeric", timeZone: "UTC" });
   return `${format(weekStart)} – ${format(addDays(weekStart, 6))}`;
 }
 
