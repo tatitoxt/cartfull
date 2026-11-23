@@ -32,6 +32,26 @@ export async function getProfile({ supabase, userId }: Session): Promise<Profile
   return data as Profile;
 }
 
+export interface Feedback {
+  favorites: Set<string>;
+  ratings: Map<string, number>;
+}
+
+/** Hearts and stars the household gave recipes. */
+export async function getFeedback({ supabase, userId }: Session): Promise<Feedback> {
+  const { data } = await supabase
+    .from("recipe_feedback")
+    .select("recipe_slug, favorite, rating")
+    .eq("user_id", userId);
+  const favorites = new Set<string>();
+  const ratings = new Map<string, number>();
+  for (const row of data ?? []) {
+    if (row.favorite) favorites.add(row.recipe_slug as string);
+    if (typeof row.rating === "number") ratings.set(row.recipe_slug as string, row.rating);
+  }
+  return { favorites, ratings };
+}
+
 export interface Entitlement {
   /** True only while Stripe says the subscription is trialing or active. */
   active: boolean;
@@ -83,6 +103,8 @@ export interface LoadedPlan {
   cart: Cart;
   checked: Set<string>;
   have: Set<string>;
+  /** Saved per-ingredient stock (uncapped), including fully-owned rows. */
+  haveQty: Map<string, number>;
   /** The free first week, or any week while subscribed. */
   viewable: boolean;
   editable: boolean;
@@ -113,12 +135,12 @@ export async function loadPlan(
   const viewable = access.active || isFirst;
   const editable = access.active || (isFirst && !weekIsOver(row.week_start));
   if (!viewable) {
-    return { row, meals: [], cart: { lines: [], totalCents: 0 }, checked: new Set(), have: new Set(), viewable, editable, isFirst };
+    return { row, meals: [], cart: { lines: [], totalCents: 0 }, checked: new Set(), have: new Set(), haveQty: new Map(), viewable, editable, isFirst };
   }
 
   const [{ data: mealRows }, { data: itemRows }] = await Promise.all([
     session.supabase.from("plan_meals").select("day, slot, recipe_slug, servings").eq("plan_id", row.id),
-    session.supabase.from("plan_items").select("ingredient_id, checked, have").eq("plan_id", row.id),
+    session.supabase.from("plan_items").select("ingredient_id, checked, have, have_qty").eq("plan_id", row.id),
   ]);
 
   const order: MealType[] = ["breakfast", "lunch", "dinner"];
@@ -131,12 +153,15 @@ export async function loadPlan(
 
   const have = new Set<string>();
   const checked = new Set<string>();
+  const haveQty = new Map<string, number>();
   for (const item of itemRows ?? []) {
     if (item.have) have.add(item.ingredient_id as string);
+    const owned = Number(item.have_qty ?? 0);
+    if (owned > 0) haveQty.set(item.ingredient_id as string, owned);
     if (item.checked) checked.add(item.ingredient_id as string);
   }
-  const cart = buildCart(meals, catalog.ingredients, have);
-  return { row, meals, cart, checked, have, viewable, editable, isFirst };
+  const cart = buildCart(meals, catalog.ingredients, have, haveQty);
+  return { row, meals, cart, checked, have, haveQty, viewable, editable, isFirst };
 }
 
 /** The planner request that reproduces a household's preferences. */

@@ -28,17 +28,17 @@ export function GET(request: NextRequest) {
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
-          background: "#1F4D39",
-          color: "#FAF7F2",
+          background: "#0a0b0d",
+          color: "#f3f4f6",
           padding: 88,
-          fontFamily: "serif",
+          fontFamily: "sans-serif",
         }}
       >
-        <div style={{ display: "flex", fontSize: 40, color: "#95D5B2", fontFamily: "sans-serif", letterSpacing: 4 }}>
+        <div style={{ display: "flex", fontSize: 40, color: "#a8e24b", fontFamily: "sans-serif", letterSpacing: 4 }}>
           {m.savings.cardTitle}
         </div>
         <div style={{ display: "flex", flexDirection: "column" }}>
-          <div style={{ display: "flex", fontSize: 300, fontWeight: 700, lineHeight: 1, color: "#E9C46A" }}>
+          <div style={{ display: "flex", fontSize: 300, fontWeight: 700, lineHeight: 1, color: "#a8e24b" }}>
             ${saved.toLocaleString(numberLocale)}
           </div>
           <div style={{ display: "flex", fontSize: 56, marginTop: 24, fontFamily: "sans-serif" }}>
@@ -47,7 +47,7 @@ export function GET(request: NextRequest) {
         </div>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", fontFamily: "sans-serif" }}>
           <div style={{ display: "flex", fontSize: 64, fontWeight: 700 }}>Cartfull</div>
-          <div style={{ display: "flex", fontSize: 32, color: "#95D5B2" }}>{m.savings.cardTagline}</div>
+          <div style={{ display: "flex", fontSize: 32, color: "#7d8289" }}>{m.savings.cardTagline}</div>
         </div>
       </div>
     ),

@@ -1,6 +1,6 @@
 "use client";
 
-import type { ReactNode } from "react";
+import { useState, type ReactNode } from "react";
 import { ALLERGENS, EQUIPMENT } from "@/lib/catalog/types";
 import {
   BUDGET_MAX_CENTS,
@@ -85,7 +85,7 @@ export function BudgetSlider({
         <label htmlFor={id} className="font-medium">
           {label}
         </label>
-        <output htmlFor={id} className="tnum font-display text-4xl font-semibold text-green-deep">
+        <output htmlFor={id} className="tnum font-display text-4xl font-semibold text-accent-deep">
           {moneyRound(cents, lang)}
         </output>
       </div>
@@ -101,7 +101,7 @@ export function BudgetSlider({
         style={{ "--fill": `${percent}%` } as React.CSSProperties}
         aria-valuetext={fill(m.preferences.perWeek, { amount: moneyRound(cents, lang) })}
       />
-      <div className="tnum flex justify-between text-sm text-ink-faint" aria-hidden="true">
+      <div className="tnum flex justify-between text-sm text-fg-faint" aria-hidden="true">
         <span>{moneyRound(min, lang)}</span>
         <span>{moneyRound(max, lang)}</span>
       </div>
@@ -131,9 +131,9 @@ export function ChoiceCards<T extends string>({
           return (
             <label
               key={option.value}
-              className={`flex min-h-16 cursor-pointer items-center gap-3 rounded-2xl px-4 py-3 transition-colors has-[:focus-visible]:outline has-[:focus-visible]:outline-3 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-green ${
+              className={`flex min-h-16 cursor-pointer items-center gap-3 rounded-2xl px-4 py-3 transition-colors has-[:focus-visible]:outline has-[:focus-visible]:outline-3 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-accent ${
                 selected
-                  ? "bg-mint-soft shadow-[inset_0_0_0_2px_var(--color-green)]"
+                  ? "bg-accent-soft shadow-[inset_0_0_0_2px_var(--color-accent)]"
                   : "bg-surface shadow-[inset_0_0_0_1.5px_var(--color-line)]"
               }`}
             >
@@ -147,13 +147,13 @@ export function ChoiceCards<T extends string>({
               />
               <span
                 aria-hidden="true"
-                className={`grid size-5 shrink-0 place-items-center rounded-full ${selected ? "bg-green" : "shadow-[inset_0_0_0_1.5px_var(--color-ink-faint)]"}`}
+                className={`grid size-5 shrink-0 place-items-center rounded-full ${selected ? "bg-accent" : "shadow-[inset_0_0_0_1.5px_var(--color-fg-faint)]"}`}
               >
                 {selected && <span className="size-2 rounded-full bg-white" />}
               </span>
               <span>
                 <span className="block font-semibold leading-tight">{option.label}</span>
-                <span className="block text-sm text-ink-soft">{option.hint}</span>
+                <span className="block text-sm text-fg-soft">{option.hint}</span>
               </span>
             </label>
           );
@@ -182,18 +182,18 @@ export function Chips({
   return (
     <fieldset>
       <legend className="font-medium">{legend}</legend>
-      {hint && <p className="mt-1 text-sm text-ink-soft">{hint}</p>}
+      {hint && <p className="mt-1 text-sm text-fg-soft">{hint}</p>}
       <div className="mt-3 flex flex-wrap gap-2">
         {options.map((option) => {
           const on = selected.includes(option.key);
           const onClass =
             tone === "have"
-              ? "bg-mint-soft text-green-deep shadow-[inset_0_0_0_2px_var(--color-green)]"
-              : "bg-ink text-paper";
+              ? "bg-accent-soft text-accent-deep shadow-[inset_0_0_0_2px_var(--color-accent)]"
+              : "bg-fg text-bg";
           return (
             <label
               key={option.key}
-              className={`inline-flex min-h-11 cursor-pointer select-none items-center gap-1.5 rounded-full px-4 text-[0.95rem] font-medium transition-colors has-[:focus-visible]:outline has-[:focus-visible]:outline-3 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-green ${
+              className={`inline-flex min-h-11 cursor-pointer select-none items-center gap-1.5 rounded-full px-4 text-[0.95rem] font-medium transition-colors has-[:focus-visible]:outline has-[:focus-visible]:outline-3 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-accent ${
                 on ? onClass : "bg-surface shadow-[inset_0_0_0_1.5px_var(--color-line)]"
               }`}
             >
@@ -228,10 +228,10 @@ export function Toggle({
   onChange: (checked: boolean) => void;
 }) {
   return (
-    <label className="flex min-h-14 cursor-pointer items-center justify-between gap-4 rounded-2xl bg-surface px-4 py-3 shadow-[inset_0_0_0_1.5px_var(--color-line)] has-[:focus-visible]:outline has-[:focus-visible]:outline-3 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-green">
+    <label className="flex min-h-14 cursor-pointer items-center justify-between gap-4 rounded-2xl bg-surface px-4 py-3 shadow-[inset_0_0_0_1.5px_var(--color-line)] has-[:focus-visible]:outline has-[:focus-visible]:outline-3 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-accent">
       <span>
         <span className="block font-semibold leading-tight">{label}</span>
-        {hint && <span className="block text-sm text-ink-soft">{hint}</span>}
+        {hint && <span className="block text-sm text-fg-soft">{hint}</span>}
       </span>
       <input
         type="checkbox"
@@ -242,7 +242,7 @@ export function Toggle({
       />
       <span
         aria-hidden="true"
-        className="relative h-7 w-12 shrink-0 rounded-full bg-line transition-colors after:absolute after:left-0.5 after:top-0.5 after:size-6 after:rounded-full after:bg-white after:shadow after:transition-transform peer-checked:bg-green peer-checked:after:translate-x-5"
+        className="relative h-7 w-12 shrink-0 rounded-full bg-line transition-colors after:absolute after:left-0.5 after:top-0.5 after:size-6 after:rounded-full after:bg-white after:shadow after:transition-transform peer-checked:bg-accent peer-checked:after:translate-x-5"
       />
     </label>
   );
@@ -280,11 +280,11 @@ export function UsualSpendField({ answers, set }: { answers: Answers; set: SetAn
       <label htmlFor="usual" className="font-medium">
         {m.preferences.usualSpend}
       </label>
-      <p id="usual-hint" className="mt-1 text-sm text-ink-soft">
+      <p id="usual-hint" className="mt-1 text-sm text-fg-soft">
         {m.preferences.spendHint}
       </p>
       <div className="relative mt-3 max-w-48">
-        <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-ink-soft">$</span>
+        <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-fg-soft">$</span>
         <input
           id="usual"
           inputMode="numeric"
@@ -304,13 +304,26 @@ export function UsualSpendField({ answers, set }: { answers: Answers; set: SetAn
 
 export function MealFields({ answers, set }: { answers: Answers; set: SetAnswers }) {
   const m = useMessages();
+  const [query, setQuery] = useState("");
+  const diets = DIETS.map((value) => ({ value, ...m.preferences.diets[value] }));
+  const needle = query.trim().toLowerCase();
+  const shown = needle ? diets.filter((d) => `${d.label} ${d.hint}`.toLowerCase().includes(needle)) : diets;
   return (
     <div className="space-y-8">
+      <input
+        type="search"
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+        onKeyDown={(e) => { if (e.key === "Enter") e.preventDefault() }}
+        placeholder={m.preferences.dietSearch}
+        aria-label={m.preferences.dietSearch}
+        className="w-full rounded-full bg-surface px-4 py-2.5 text-sm shadow-[inset_0_0_0_1.5px_var(--color-line)] outline-none placeholder:text-fg-faint focus-visible:shadow-[inset_0_0_0_2px_var(--color-accent)]"
+      />
       <ChoiceCards
         legend={m.preferences.howEat}
         name="diet"
         value={answers.diet}
-        options={DIETS.map((value) => ({ value, ...m.preferences.diets[value] }))}
+        options={shown}
         onChange={(diet) => set({ diet })}
       />
       <ChoiceCards
@@ -408,7 +421,7 @@ export function PantryFields({
         <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between gap-4 font-medium [&::-webkit-details-marker]:hidden">
           <span>
             {m.preferences.basics}
-            <span className="block text-sm font-normal text-ink-soft">{m.preferences.basicsHint}</span>
+            <span className="block text-sm font-normal text-fg-soft">{m.preferences.basicsHint}</span>
           </span>
           <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true" className="shrink-0 transition-transform group-open:rotate-180">
             <path d="M4 7l5 5 5-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />

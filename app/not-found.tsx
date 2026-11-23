@@ -9,7 +9,7 @@ export default async function NotFound() {
     <main id="main" className="mx-auto flex min-h-dvh w-full max-w-md flex-col justify-center px-5 py-10">
       <Logo />
       <h1 className="mt-8 text-4xl">{m.misc.notFound}</h1>
-      <p className="mt-3 text-ink-soft">{m.misc.moved}</p>
+      <p className="mt-3 text-fg-soft">{m.misc.moved}</p>
       <div className="mt-6 flex flex-wrap gap-3">
         <Link href="/app/plan" className="btn btn-primary">
           {m.common.goPlan}

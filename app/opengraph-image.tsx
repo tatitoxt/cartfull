@@ -14,20 +14,20 @@ export default function OpengraphImage() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
-          background: "#FAF7F2",
-          color: "#1C1B1A",
+          background: "#0a0b0d",
+          color: "#f3f4f6",
           padding: 72,
-          fontFamily: "serif",
+          fontFamily: "sans-serif",
         }}
       >
         <div style={{ display: "flex", alignItems: "center", fontSize: 44, fontWeight: 700 }}>
-          <div style={{ display: "flex", width: 56, height: 56, borderRadius: 16, background: "#2D6A4F", marginRight: 18 }} />
+          <div style={{ display: "flex", width: 56, height: 56, borderRadius: 16, background: "#A8E24B", marginRight: 18 }} />
           Cartfull
         </div>
         <div style={{ display: "flex", fontSize: 92, fontWeight: 700, lineHeight: 1.05, maxWidth: 980 }}>
           A week of dinners that fits your grocery budget.
         </div>
-        <div style={{ display: "flex", fontSize: 34, color: "#B9442A", fontFamily: "sans-serif" }}>
+        <div style={{ display: "flex", fontSize: 34, color: "#a8e24b", fontFamily: "sans-serif" }}>
           We plan the week, price the cart, and show what you saved.
         </div>
       </div>

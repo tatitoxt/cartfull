@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { redirect } from "next/navigation";
 import { PricingChoice } from "@/components/pricing-choice";
 import { getEntitlement, getProfile, requireSession } from "@/lib/app/data";
+import { createAdminClient } from "@/lib/supabase/server";
 import { MESSAGES } from "@/lib/i18n/messages";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -20,21 +21,25 @@ export default async function UpgradePage({
   const [entitlement, profile] = await Promise.all([getEntitlement(session), getProfile(session)]);
   const m = MESSAGES[profile.lang];
   if (entitlement.active) redirect("/app/account");
-  const trial = !entitlement.hadSubscription;
+  // A re-registered email gets no second free trial: match what checkout charges.
+  const { data: deleted } = session.email
+    ? await createAdminClient().from("deleted_accounts").select("email").eq("email", session.email.toLowerCase()).maybeSingle()
+    : { data: null };
+  const trial = !entitlement.hadSubscription && !deleted;
 
   return (
     <section className="mx-auto max-w-xl py-4">
       <h1 className="text-4xl sm:text-5xl">{trial ? m.billing.title : m.billing.welcome}</h1>
-      <p className="mt-3 text-ink-soft">
+      <p className="mt-3 text-fg-soft">
         {trial ? m.billing.trialLead : m.billing.returnLead}
       </p>
       {params.canceled && (
-        <p role="status" className="mt-5 rounded-2xl bg-paper-deep p-4">
+        <p role="status" className="mt-5 rounded-2xl bg-bg-deep p-4">
           {m.billing.canceled}
         </p>
       )}
       {params.error && (
-        <p role="alert" className="mt-5 rounded-2xl bg-yellow-soft p-4 shadow-[inset_0_0_0_1.5px_var(--color-yellow)]">
+        <p role="alert" className="mt-5 rounded-2xl bg-over-soft p-4 shadow-[inset_0_0_0_1.5px_var(--color-over)]">
           {m.billing.error}
         </p>
       )}

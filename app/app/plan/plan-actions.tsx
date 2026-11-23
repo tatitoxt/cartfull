@@ -43,9 +43,9 @@ export function PlanActions({ mode, planId }: { mode: keyof typeof COPY; planId?
         {pending ? busy : idle}
       </button>
       {problem && (
-        <p role="alert" className="mt-4 basis-full rounded-2xl bg-yellow-soft p-4 shadow-[inset_0_0_0_1.5px_var(--color-yellow)]">
+        <p role="alert" className="mt-4 basis-full rounded-2xl bg-over-soft p-4 shadow-[inset_0_0_0_1.5px_var(--color-over)]">
           {problem.message}{" "}
-          <a href="/app/account" className="font-semibold text-green-deep underline underline-offset-4">
+          <a href="/app/account" className="font-semibold text-accent-deep underline underline-offset-4">
             {m.plan.changePrefs}
           </a>
         </p>

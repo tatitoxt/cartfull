@@ -4,8 +4,10 @@
     "name": "Lettuce-Wrap Cheeseburgers",
     "meal_type": "dinner",
     "diet_tags": [
+      "gluten_free",
+      "high_protein",
       "keto",
-      "high_protein"
+      "low_carb"
     ],
     "servings": 4,
     "prep_minutes": 20,
@@ -94,7 +96,9 @@
     "name": "Pork Egg Roll in a Bowl",
     "meal_type": "dinner",
     "diet_tags": [
-      "keto"
+      "dairy_free",
+      "keto",
+      "low_carb"
     ],
     "servings": 4,
     "prep_minutes": 20,
@@ -185,8 +189,10 @@
     "name": "Chicken Cauliflower Fried Rice",
     "meal_type": "dinner",
     "diet_tags": [
+      "dairy_free",
+      "high_protein",
       "keto",
-      "high_protein"
+      "low_carb"
     ],
     "servings": 4,
     "prep_minutes": 25,
@@ -281,8 +287,10 @@
     "name": "Chicken Burrito Cauliflower Rice Skillet",
     "meal_type": "dinner",
     "diet_tags": [
+      "gluten_free",
+      "high_protein",
       "keto",
-      "high_protein"
+      "low_carb"
     ],
     "servings": 4,
     "prep_minutes": 30,
@@ -375,8 +383,10 @@
     "name": "Turkey Bolognese Zucchini Noodles",
     "meal_type": "dinner",
     "diet_tags": [
+      "gluten_free",
+      "high_protein",
       "keto",
-      "high_protein"
+      "low_carb"
     ],
     "servings": 4,
     "prep_minutes": 30,
@@ -455,8 +465,10 @@
     "name": "Creamy Lemon Garlic Chicken Skillet",
     "meal_type": "dinner",
     "diet_tags": [
+      "gluten_free",
+      "high_protein",
       "keto",
-      "high_protein"
+      "low_carb"
     ],
     "servings": 4,
     "prep_minutes": 30,
@@ -551,7 +563,9 @@
     "name": "Italian Sausage, Zucchini & Pepper Skillet",
     "meal_type": "dinner",
     "diet_tags": [
-      "keto"
+      "gluten_free",
+      "keto",
+      "low_carb"
     ],
     "servings": 4,
     "prep_minutes": 30,
@@ -638,7 +652,10 @@
     "name": "Sheet-Pan Lemon Salmon & Broccoli",
     "meal_type": "dinner",
     "diet_tags": [
-      "keto"
+      "gluten_free",
+      "keto",
+      "low_carb",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 25,
@@ -717,8 +734,10 @@
     "name": "Turkey Taco Salad Bowls",
     "meal_type": "dinner",
     "diet_tags": [
+      "gluten_free",
+      "high_protein",
       "keto",
-      "high_protein"
+      "low_carb"
     ],
     "servings": 4,
     "prep_minutes": 20,
@@ -797,7 +816,10 @@
     "name": "Garlic Butter Shrimp & Mushroom Skillet",
     "meal_type": "dinner",
     "diet_tags": [
-      "keto"
+      "gluten_free",
+      "keto",
+      "low_carb",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 20,
@@ -882,8 +904,11 @@
     "name": "Cheesy Tuna Cauliflower Casserole",
     "meal_type": "dinner",
     "diet_tags": [
+      "gluten_free",
+      "high_protein",
       "keto",
-      "high_protein"
+      "low_carb",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 40,
@@ -979,8 +1004,11 @@
     "name": "Blackened Tilapia Chopped Salad",
     "meal_type": "dinner",
     "diet_tags": [
+      "gluten_free",
+      "high_protein",
       "keto",
-      "high_protein"
+      "low_carb",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 20,
@@ -1085,8 +1113,11 @@
     "name": "Parmesan-Crusted Cod with Green Beans",
     "meal_type": "dinner",
     "diet_tags": [
+      "gluten_free",
+      "high_protein",
       "keto",
-      "high_protein"
+      "low_carb",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 25,
@@ -1171,7 +1202,10 @@
     "name": "Unstuffed Cabbage Roll Skillet",
     "meal_type": "dinner",
     "diet_tags": [
-      "keto"
+      "dairy_free",
+      "gluten_free",
+      "keto",
+      "low_carb"
     ],
     "servings": 4,
     "prep_minutes": 35,
@@ -1264,8 +1298,11 @@
     "name": "Slow-Cooker Pulled Pork Slaw Bowls",
     "meal_type": "dinner",
     "diet_tags": [
+      "dairy_free",
+      "gluten_free",
+      "high_protein",
       "keto",
-      "high_protein"
+      "low_carb"
     ],
     "servings": 4,
     "prep_minutes": 480,
@@ -1360,8 +1397,10 @@
     "name": "Cheesy Chicken Broccoli Bake",
     "meal_type": "dinner",
     "diet_tags": [
+      "gluten_free",
+      "high_protein",
       "keto",
-      "high_protein"
+      "low_carb"
     ],
     "servings": 4,
     "prep_minutes": 40,
@@ -1451,8 +1490,10 @@
     "name": "Pan-Seared Pork Chops with Buttered Cabbage",
     "meal_type": "dinner",
     "diet_tags": [
+      "gluten_free",
+      "high_protein",
       "keto",
-      "high_protein"
+      "low_carb"
     ],
     "servings": 4,
     "prep_minutes": 25,
@@ -1551,8 +1592,10 @@
     "name": "Garlic Herb Drumsticks with Green Beans",
     "meal_type": "dinner",
     "diet_tags": [
+      "gluten_free",
+      "high_protein",
       "keto",
-      "high_protein"
+      "low_carb"
     ],
     "servings": 4,
     "prep_minutes": 45,
@@ -1644,7 +1687,9 @@
     "name": "Smoked Sausage, Pepper & Cabbage Skillet",
     "meal_type": "dinner",
     "diet_tags": [
-      "keto"
+      "gluten_free",
+      "keto",
+      "low_carb"
     ],
     "servings": 4,
     "prep_minutes": 25,
@@ -1731,7 +1776,9 @@
     "name": "Ginger Beef & Broccoli Stir-Fry",
     "meal_type": "dinner",
     "diet_tags": [
-      "keto"
+      "dairy_free",
+      "keto",
+      "low_carb"
     ],
     "servings": 4,
     "prep_minutes": 20,
@@ -1818,7 +1865,8 @@
     "name": "Lemon Garlic Tuna Pasta",
     "meal_type": "dinner",
     "diet_tags": [
-      "high_protein"
+      "high_protein",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 20,
@@ -1907,7 +1955,9 @@
     "name": "Cajun Tilapia over Seasoned Rice",
     "meal_type": "dinner",
     "diet_tags": [
-      "high_protein"
+      "high_protein",
+      "pescatarian",
+      "gluten_free"
     ],
     "servings": 4,
     "prep_minutes": 30,
@@ -2002,7 +2052,9 @@
     "name": "Honey Garlic Salmon with Rice & Broccoli",
     "meal_type": "dinner",
     "diet_tags": [
-      "high_protein"
+      "dairy_free",
+      "high_protein",
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 25,
@@ -2079,6 +2131,8 @@
     "name": "Turkey & Two-Bean Chili",
     "meal_type": "dinner",
     "diet_tags": [
+      "dairy_free",
+      "gluten_free",
       "high_protein"
     ],
     "servings": 4,
@@ -2184,7 +2238,8 @@
     "name": "Chicken & Black Bean Burrito Bowls",
     "meal_type": "dinner",
     "diet_tags": [
-      "high_protein"
+      "high_protein",
+      "gluten_free"
     ],
     "servings": 4,
     "prep_minutes": 30,
@@ -2279,6 +2334,8 @@
     "name": "Lemon Chicken Thigh & Potato Bake",
     "meal_type": "dinner",
     "diet_tags": [
+      "dairy_free",
+      "gluten_free",
       "high_protein"
     ],
     "servings": 4,
@@ -2455,6 +2512,8 @@
     "name": "Pork Tenderloin & Sweet Potato Skillet",
     "meal_type": "dinner",
     "diet_tags": [
+      "dairy_free",
+      "gluten_free",
       "high_protein"
     ],
     "servings": 4,
@@ -2550,6 +2609,8 @@
     "name": "Sheet-Pan Paprika Drumsticks & Potatoes",
     "meal_type": "dinner",
     "diet_tags": [
+      "dairy_free",
+      "gluten_free",
       "high_protein"
     ],
     "servings": 4,
@@ -2629,7 +2690,8 @@
     "name": "Weeknight Chicken Tikka Masala with Rice",
     "meal_type": "dinner",
     "diet_tags": [
-      "high_protein"
+      "high_protein",
+      "gluten_free"
     ],
     "servings": 4,
     "prep_minutes": 40,

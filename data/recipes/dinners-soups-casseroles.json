@@ -3,7 +3,13 @@
     "slug": "cuban-style-black-bean-soup",
     "name": "Cuban-Style Black Bean Soup",
     "meal_type": "dinner",
-    "diet_tags": ["vegetarian"],
+    "diet_tags": [
+      "dairy_free",
+      "gluten_free",
+      "pescatarian",
+      "vegan",
+      "vegetarian"
+    ],
     "servings": 4,
     "prep_minutes": 40,
     "batch_friendly": true,
@@ -17,19 +23,68 @@
       "Stir in the vinegar, salt and pepper, taste and adjust, then ladle over the rice and top with the cilantro."
     ],
     "ingredients": [
-      { "id": "black_beans", "qty": 3, "note": "undrained", "note_es": "sin escurrir" },
-      { "id": "onion_yellow", "qty": 1, "note": "diced", "note_es": "en cubitos" },
-      { "id": "bell_pepper", "qty": 1, "note": "diced", "note_es": "en cubitos" },
-      { "id": "garlic", "qty": 4, "note": "minced", "note_es": "picado" },
-      { "id": "olive_oil", "qty": 2 },
-      { "id": "cumin", "qty": 1.5 },
-      { "id": "oregano", "qty": 1 },
-      { "id": "vegetable_broth", "qty": 2 },
-      { "id": "vinegar_cider", "qty": 1 },
-      { "id": "rice_white", "qty": 1 },
-      { "id": "cilantro", "qty": 0.25, "note": "chopped", "note_es": "picado" },
-      { "id": "salt", "qty": 0.5 },
-      { "id": "black_pepper", "qty": 0.25 }
+      {
+        "id": "black_beans",
+        "qty": 3,
+        "note": "undrained",
+        "note_es": "sin escurrir"
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "garlic",
+        "qty": 4,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2
+      },
+      {
+        "id": "cumin",
+        "qty": 1.5
+      },
+      {
+        "id": "oregano",
+        "qty": 1
+      },
+      {
+        "id": "vegetable_broth",
+        "qty": 2
+      },
+      {
+        "id": "vinegar_cider",
+        "qty": 1
+      },
+      {
+        "id": "rice_white",
+        "qty": 1
+      },
+      {
+        "id": "cilantro",
+        "qty": 0.25,
+        "note": "chopped",
+        "note_es": "picado"
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      }
     ],
     "name_es": "Sopa de frijoles negros a la cubana",
     "description_es": "Frijoles negros cocidos con un sofrito de cebolla, pimiento, ajo y comino, con un toque de vinagre y servidos sobre arroz.",
@@ -41,115 +96,233 @@
       "Aplasta más o menos un tercio de los frijoles contra el borde de la olla con un machacador de papas o el dorso de una cuchara para que la sopa quede cremosa.",
       "Incorpora el vinagre, la sal y la pimienta, prueba y ajusta, y sirve sobre el arroz con el cilantro por encima."
     ],
-    "equipment": ["stovetop"],
+    "equipment": [
+      "stovetop"
+    ],
     "active_minutes": 15,
     "tip": "The soup thickens overnight; loosen it with a splash of water when you reheat it. It freezes well for 3 months.",
     "tip_es": "La sopa espesa de un día para otro; aligérala con un chorrito de agua al recalentar. Se congela bien hasta 3 meses.",
     "photo_url": "https://images.unsplash.com/photo-1568182602251-496c110627a0",
-    "photo_credit": { "name": "Ilya Mirnyy", "url": "https://unsplash.com/photos/white-ceramic-bowl-with-soup-1URYA5bEnb4" }
+    "photo_credit": {
+      "name": "Ilya Mirnyy",
+      "url": "https://unsplash.com/photos/white-ceramic-bowl-with-soup-1URYA5bEnb4"
+    }
   },
   {
     "slug": "pasta-e-fagioli",
     "name": "Pasta e Fagioli",
     "meal_type": "dinner",
-    "diet_tags": ["vegetarian"],
+    "diet_tags": [
+      "dairy_free",
+      "pescatarian",
+      "vegan",
+      "vegetarian"
+    ],
     "servings": 4,
     "prep_minutes": 40,
     "batch_friendly": true,
-    "description": "Thick Italian soup of white beans, small pasta and vegetables in a tomato broth, finished with parmesan.",
+    "description": "Thick Italian soup of white beans, small pasta and vegetables in a tomato broth, finished with a drizzle of olive oil.",
     "steps": [
       "Heat the oil in a large pot over medium heat and cook the onion, carrot and celery for 8 minutes, stirring now and then, until soft.",
       "Add the garlic, tomato paste and Italian seasoning and stir for 2 minutes until the paste darkens.",
       "Mash one can of the beans with a fork, then add both the mashed and the whole beans, the tomatoes with their juice, the broth and the salt.",
       "Bring to a boil over high heat, then lower the heat and simmer for 10 minutes.",
       "Stir in the macaroni and cook for 8 to 10 minutes, stirring often so it does not stick, until the pasta is tender and the soup is thick.",
-      "Season with the pepper, let it rest off the heat for 5 minutes and serve with the parmesan."
+      "Season with the pepper, let it rest off the heat for 5 minutes and serve."
     ],
     "ingredients": [
-      { "id": "olive_oil", "qty": 2 },
-      { "id": "onion_yellow", "qty": 1, "note": "diced", "note_es": "en cubitos" },
-      { "id": "carrot", "qty": 0.25, "note": "diced", "note_es": "en cubitos" },
-      { "id": "celery", "qty": 2, "note": "diced", "note_es": "en cubitos" },
-      { "id": "garlic", "qty": 3, "note": "minced", "note_es": "picado" },
-      { "id": "tomato_paste", "qty": 2 },
-      { "id": "italian_seasoning", "qty": 1 },
-      { "id": "white_beans", "qty": 2, "note": "drained and rinsed", "note_es": "escurridos y enjuagados" },
-      { "id": "diced_tomatoes", "qty": 1 },
-      { "id": "vegetable_broth", "qty": 4 },
-      { "id": "pasta_elbow", "qty": 6 },
-      { "id": "parmesan", "qty": 0.25 },
-      { "id": "salt", "qty": 0.75 },
-      { "id": "black_pepper", "qty": 0.25 }
+      {
+        "id": "olive_oil",
+        "qty": 2
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "carrot",
+        "qty": 0.25,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "celery",
+        "qty": 2,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "tomato_paste",
+        "qty": 2
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1
+      },
+      {
+        "id": "white_beans",
+        "qty": 2,
+        "note": "drained and rinsed",
+        "note_es": "escurridos y enjuagados"
+      },
+      {
+        "id": "diced_tomatoes",
+        "qty": 1
+      },
+      {
+        "id": "vegetable_broth",
+        "qty": 4
+      },
+      {
+        "id": "pasta_elbow",
+        "qty": 6
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      }
     ],
     "name_es": "Pasta e fagioli",
-    "description_es": "Sopa italiana espesa de frijoles blancos, pasta corta y verduras en caldo de tomate, terminada con parmesano.",
+    "description_es": "Sopa italiana espesa de frijoles blancos, pasta corta y verduras en caldo de tomate, terminada con un chorrito de aceite de oliva.",
     "steps_es": [
       "Calienta el aceite en una olla grande a fuego medio y cocina la cebolla, la zanahoria y el apio 8 minutos, revolviendo de vez en cuando, hasta que estén blandos.",
       "Agrega el ajo, la pasta de tomate y el condimento italiano y revuelve 2 minutos hasta que la pasta de tomate se oscurezca.",
       "Aplasta una lata de frijoles con un tenedor y agrega los frijoles aplastados y los enteros, los tomates con su jugo, el caldo y la sal.",
       "Lleva a hervor a fuego alto, baja el fuego y cocina 10 minutos a fuego lento.",
       "Incorpora los coditos y cocina de 8 a 10 minutos, revolviendo con frecuencia para que no se peguen, hasta que la pasta esté tierna y la sopa espesa.",
-      "Sazona con la pimienta, deja reposar 5 minutos fuera del fuego y sirve con el parmesano."
+      "Sazona con la pimienta, deja reposar 5 minutos fuera del fuego y sirve."
     ],
-    "equipment": ["stovetop"],
+    "equipment": [
+      "stovetop"
+    ],
     "active_minutes": 15,
     "tip": "The pasta keeps drinking broth in the fridge, so add a little water when reheating.",
     "tip_es": "La pasta sigue absorbiendo caldo en el refrigerador, así que agrega un poco de agua al recalentar.",
     "photo_url": "https://images.unsplash.com/photo-1715702397057-2f7eebc86f2b",
-    "photo_credit": { "name": "Jovan Vasiljević", "url": "https://unsplash.com/photos/a-woman-sitting-at-a-table-with-a-bowl-of-soup-fcOaa6j4cUo" }
+    "photo_credit": {
+      "name": "Jovan Vasiljević",
+      "url": "https://unsplash.com/photos/a-woman-sitting-at-a-table-with-a-bowl-of-soup-fcOaa6j4cUo"
+    }
   },
   {
     "slug": "butternut-squash-soup",
     "name": "Butternut Squash Soup",
     "meal_type": "dinner",
-    "diet_tags": ["vegetarian"],
+    "diet_tags": [
+      "dairy_free",
+      "pescatarian",
+      "vegan",
+      "vegetarian"
+    ],
     "servings": 4,
     "prep_minutes": 45,
     "batch_friendly": true,
-    "description": "Silky blended soup of butternut squash, onion and carrot with a little cream, served with crusty bread.",
+    "description": "Silky blended soup of butternut squash, onion and carrot with coconut milk, served with crusty bread.",
     "steps": [
       "Peel the squash, scoop out the seeds and cut the flesh into bite-size cubes.",
-      "Melt the butter in a large pot over medium heat and cook the onion and carrot for 5 minutes until the onion turns translucent.",
+      "Warm the olive oil in a large pot over medium heat and cook the onion and carrot for 5 minutes until the onion turns translucent.",
       "Add the garlic and thyme and stir for 1 minute until fragrant.",
       "Add the squash, broth and salt, bring to a boil over high heat, then cover and simmer over low heat for 20 to 25 minutes until the squash falls apart when pressed with a spoon.",
       "Blend the soup in batches until completely smooth, filling the blender only halfway and holding the lid down with a towel, and return it to the pot.",
-      "Stir in the cream and pepper, warm over low heat for 2 minutes without boiling and serve with the sliced bread."
+      "Stir in the coconut milk and pepper, warm over low heat for 2 minutes without boiling and serve with the sliced bread."
     ],
     "ingredients": [
-      { "id": "butternut_squash", "qty": 1 },
-      { "id": "onion_yellow", "qty": 1, "note": "chopped", "note_es": "picada" },
-      { "id": "carrot", "qty": 0.25, "note": "sliced", "note_es": "en rodajas" },
-      { "id": "garlic", "qty": 2, "note": "smashed", "note_es": "aplastado" },
-      { "id": "butter", "qty": 2 },
-      { "id": "thyme", "qty": 0.5 },
-      { "id": "vegetable_broth", "qty": 4 },
-      { "id": "heavy_cream", "qty": 0.25 },
-      { "id": "salt", "qty": 0.75 },
-      { "id": "black_pepper", "qty": 0.25 },
-      { "id": "french_bread", "qty": 0.5, "note": "sliced", "note_es": "en rebanadas" }
+      {
+        "id": "butternut_squash",
+        "qty": 1
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "chopped",
+        "note_es": "picada"
+      },
+      {
+        "id": "carrot",
+        "qty": 0.25,
+        "note": "sliced",
+        "note_es": "en rodajas"
+      },
+      {
+        "id": "garlic",
+        "qty": 2,
+        "note": "smashed",
+        "note_es": "aplastado"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2
+      },
+      {
+        "id": "thyme",
+        "qty": 0.5
+      },
+      {
+        "id": "vegetable_broth",
+        "qty": 4
+      },
+      {
+        "id": "coconut_milk",
+        "qty": 0.5
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      },
+      {
+        "id": "french_bread",
+        "qty": 0.5,
+        "note": "sliced",
+        "note_es": "en rebanadas"
+      }
     ],
     "name_es": "Sopa crema de calabaza",
-    "description_es": "Sopa licuada y sedosa de calabaza, cebolla y zanahoria con un toque de crema, servida con pan crujiente.",
+    "description_es": "Sopa licuada y sedosa de calabaza, cebolla y zanahoria con leche de coco, servida con pan crujiente.",
     "steps_es": [
       "Pela la calabaza, retira las semillas y corta la pulpa en cubos del tamaño de un bocado.",
-      "Derrite la mantequilla en una olla grande a fuego medio y cocina la cebolla y la zanahoria 5 minutos hasta que la cebolla esté transparente.",
+      "Calienta el aceite de oliva en una olla grande a fuego medio y cocina la cebolla y la zanahoria 5 minutos hasta que la cebolla esté transparente.",
       "Agrega el ajo y el tomillo y revuelve 1 minuto hasta que suelten su aroma.",
       "Agrega la calabaza, el caldo y la sal, lleva a hervor a fuego alto, tapa y cocina a fuego bajo de 20 a 25 minutos hasta que la calabaza se deshaga al presionarla con una cuchara.",
       "Licúa la sopa por tandas hasta que quede bien lisa, llenando la licuadora solo hasta la mitad y sujetando la tapa con un paño, y devuélvela a la olla.",
-      "Incorpora la crema y la pimienta, calienta 2 minutos a fuego bajo sin que hierva y sirve con el pan en rebanadas."
+      "Incorpora la leche de coco y la pimienta, calienta 2 minutos a fuego bajo sin que hierva y sirve con el pan en rebanadas."
     ],
-    "equipment": ["stovetop", "blender"],
+    "equipment": [
+      "stovetop",
+      "blender"
+    ],
     "active_minutes": 15,
-    "tip": "Freeze the soup before adding the cream for up to 3 months, then stir the cream in when you reheat it.",
-    "tip_es": "Congela la sopa antes de agregar la crema hasta por 3 meses y añade la crema al recalentar.",
+    "tip": "Freeze the soup before adding the coconut milk for up to 3 months, then stir the coconut milk in when you reheat it.",
+    "tip_es": "Congela la sopa antes de agregar la leche de coco hasta por 3 meses y añade la leche de coco al recalentar.",
     "photo_url": "https://images.unsplash.com/photo-1530734575165-ce39d996fbaa",
-    "photo_credit": { "name": "Jade Aucamp", "url": "https://unsplash.com/photos/soup-with-sesame-seeds-and-bread-OMcrCX6wDpU" }
+    "photo_credit": {
+      "name": "Jade Aucamp",
+      "url": "https://unsplash.com/photos/soup-with-sesame-seeds-and-bread-OMcrCX6wDpU"
+    }
   },
   {
     "slug": "baked-macaroni-and-cheese",
     "name": "Baked Macaroni and Cheese",
     "meal_type": "dinner",
-    "diet_tags": ["vegetarian"],
+    "diet_tags": [
+      "pescatarian",
+      "vegetarian"
+    ],
     "servings": 6,
     "prep_minutes": 45,
     "batch_friendly": true,
@@ -165,17 +338,50 @@
       "Bake for 20 to 25 minutes until the edges bubble and the top is golden, then let it rest for 5 minutes before serving."
     ],
     "ingredients": [
-      { "id": "pasta_elbow", "qty": 16 },
-      { "id": "butter", "qty": 5 },
-      { "id": "flour", "qty": 0.25 },
-      { "id": "milk", "qty": 3 },
-      { "id": "cheddar", "qty": 3 },
-      { "id": "mozzarella", "qty": 1 },
-      { "id": "breadcrumbs", "qty": 0.5 },
-      { "id": "salt", "qty": 1 },
-      { "id": "black_pepper", "qty": 0.25 },
-      { "id": "garlic_powder", "qty": 0.5 },
-      { "id": "paprika", "qty": 0.5 }
+      {
+        "id": "pasta_elbow",
+        "qty": 16
+      },
+      {
+        "id": "butter",
+        "qty": 5
+      },
+      {
+        "id": "flour",
+        "qty": 0.25
+      },
+      {
+        "id": "milk",
+        "qty": 3
+      },
+      {
+        "id": "cheddar",
+        "qty": 3
+      },
+      {
+        "id": "mozzarella",
+        "qty": 1
+      },
+      {
+        "id": "breadcrumbs",
+        "qty": 0.5
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      },
+      {
+        "id": "garlic_powder",
+        "qty": 0.5
+      },
+      {
+        "id": "paprika",
+        "qty": 0.5
+      }
     ],
     "name_es": "Macarrones con queso al horno",
     "description_es": "Coditos en salsa cremosa de cheddar, horneados bajo una capa crujiente de pan rallado con mantequilla.",
@@ -189,18 +395,30 @@
       "Derrite la mantequilla reservada, mézclala con el pan rallado y espárcelo por encima junto con el resto de la mozzarella.",
       "Hornea de 20 a 25 minutos hasta que los bordes burbujeen y la superficie esté dorada, y deja reposar 5 minutos antes de servir."
     ],
-    "equipment": ["stovetop", "oven"],
+    "equipment": [
+      "stovetop",
+      "oven"
+    ],
     "active_minutes": 20,
     "tip": "Reheat leftovers with a splash of milk, covered, so the sauce turns creamy again.",
     "tip_es": "Recalienta lo que sobre con un chorrito de leche y tapado para que la salsa vuelva a quedar cremosa.",
     "photo_url": "https://images.unsplash.com/photo-1701484185547-a71576b65e1a",
-    "photo_credit": { "name": "Keith Hanson Jr", "url": "https://unsplash.com/photos/a-dish-of-macaroni-and-cheese-with-a-spoon-in-it-VKI3lU4GA1w" }
+    "photo_credit": {
+      "name": "Keith Hanson Jr",
+      "url": "https://unsplash.com/photos/a-dish-of-macaroni-and-cheese-with-a-spoon-in-it-VKI3lU4GA1w"
+    }
   },
   {
     "slug": "moroccan-style-chickpea-stew",
     "name": "Moroccan-Style Chickpea Stew",
     "meal_type": "dinner",
-    "diet_tags": ["vegetarian"],
+    "diet_tags": [
+      "dairy_free",
+      "gluten_free",
+      "pescatarian",
+      "vegan",
+      "vegetarian"
+    ],
     "servings": 4,
     "prep_minutes": 40,
     "batch_friendly": true,
@@ -215,21 +433,78 @@
       "Taste, adjust the salt and serve over the rice."
     ],
     "ingredients": [
-      { "id": "olive_oil", "qty": 2 },
-      { "id": "onion_yellow", "qty": 1, "note": "diced", "note_es": "en cubitos" },
-      { "id": "garlic", "qty": 3, "note": "minced", "note_es": "picado" },
-      { "id": "cumin", "qty": 2 },
-      { "id": "cinnamon", "qty": 0.5 },
-      { "id": "smoked_paprika", "qty": 1 },
-      { "id": "sweet_potato", "qty": 1, "note": "peeled, bite-size cubes", "note_es": "pelado, en cubos chicos" },
-      { "id": "carrot", "qty": 0.5, "note": "sliced", "note_es": "en rodajas" },
-      { "id": "chickpeas", "qty": 2, "note": "drained and rinsed", "note_es": "escurridos y enjuagados" },
-      { "id": "diced_tomatoes", "qty": 1 },
-      { "id": "vegetable_broth", "qty": 3 },
-      { "id": "spinach", "qty": 4 },
-      { "id": "lemon", "qty": 0.5, "note": "juiced", "note_es": "en jugo" },
-      { "id": "rice_white", "qty": 1 },
-      { "id": "salt", "qty": 0.75 }
+      {
+        "id": "olive_oil",
+        "qty": 2
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "cumin",
+        "qty": 2
+      },
+      {
+        "id": "cinnamon",
+        "qty": 0.5
+      },
+      {
+        "id": "smoked_paprika",
+        "qty": 1
+      },
+      {
+        "id": "sweet_potato",
+        "qty": 1,
+        "note": "peeled, bite-size cubes",
+        "note_es": "pelado, en cubos chicos"
+      },
+      {
+        "id": "carrot",
+        "qty": 0.5,
+        "note": "sliced",
+        "note_es": "en rodajas"
+      },
+      {
+        "id": "chickpeas",
+        "qty": 2,
+        "note": "drained and rinsed",
+        "note_es": "escurridos y enjuagados"
+      },
+      {
+        "id": "diced_tomatoes",
+        "qty": 1
+      },
+      {
+        "id": "vegetable_broth",
+        "qty": 3
+      },
+      {
+        "id": "spinach",
+        "qty": 4
+      },
+      {
+        "id": "lemon",
+        "qty": 0.5,
+        "note": "juiced",
+        "note_es": "en jugo"
+      },
+      {
+        "id": "rice_white",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      }
     ],
     "name_es": "Guiso de garbanzos estilo marroquí",
     "description_es": "Garbanzos, camote y espinaca guisados en caldo de tomate con comino, canela y paprika, servidos sobre arroz.",
@@ -242,18 +517,26 @@
       "Incorpora la espinaca y cocina 2 minutos hasta que se marchite; luego exprime el jugo de limón.",
       "Prueba, ajusta la sal y sirve sobre el arroz."
     ],
-    "equipment": ["stovetop"],
+    "equipment": [
+      "stovetop"
+    ],
     "active_minutes": 15,
     "tip": "Keeps 4 days in the fridge and tastes better the next day; swap the spinach for any leafy green you have.",
     "tip_es": "Dura 4 días en el refrigerador y sabe mejor al día siguiente; cambia la espinaca por cualquier hoja verde que tengas.",
     "photo_url": "https://images.unsplash.com/photo-1708782343809-0050c38b3a1a",
-    "photo_credit": { "name": "Rimsha Noor", "url": "https://unsplash.com/photos/a-bowl-of-stew-with-a-spoon-and-spoons-next-to-it-ON36i-YCFTM" }
+    "photo_credit": {
+      "name": "Rimsha Noor",
+      "url": "https://unsplash.com/photos/a-bowl-of-stew-with-a-spoon-and-spoons-next-to-it-ON36i-YCFTM"
+    }
   },
   {
     "slug": "baked-eggplant-parmesan",
     "name": "Baked Eggplant Parmesan",
     "meal_type": "dinner",
-    "diet_tags": ["vegetarian"],
+    "diet_tags": [
+      "pescatarian",
+      "vegetarian"
+    ],
     "servings": 4,
     "prep_minutes": 70,
     "batch_friendly": true,
@@ -269,16 +552,48 @@
       "Let it rest for 10 minutes so it holds together, then serve with the bread."
     ],
     "ingredients": [
-      { "id": "eggplant", "qty": 2 },
-      { "id": "salt", "qty": 1 },
-      { "id": "eggs", "qty": 2 },
-      { "id": "breadcrumbs", "qty": 1.5 },
-      { "id": "parmesan", "qty": 0.5 },
-      { "id": "italian_seasoning", "qty": 1 },
-      { "id": "olive_oil", "qty": 3 },
-      { "id": "marinara", "qty": 3 },
-      { "id": "mozzarella", "qty": 2 },
-      { "id": "french_bread", "qty": 0.5, "note": "sliced", "note_es": "en rebanadas" }
+      {
+        "id": "eggplant",
+        "qty": 2
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      },
+      {
+        "id": "eggs",
+        "qty": 2
+      },
+      {
+        "id": "breadcrumbs",
+        "qty": 1.5
+      },
+      {
+        "id": "parmesan",
+        "qty": 0.5
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1
+      },
+      {
+        "id": "olive_oil",
+        "qty": 3
+      },
+      {
+        "id": "marinara",
+        "qty": 3
+      },
+      {
+        "id": "mozzarella",
+        "qty": 2
+      },
+      {
+        "id": "french_bread",
+        "qty": 0.5,
+        "note": "sliced",
+        "note_es": "en rebanadas"
+      }
     ],
     "name_es": "Berenjenas a la parmesana al horno",
     "description_es": "Rodajas de berenjena empanizadas y horneadas hasta quedar crujientes, en capas con salsa marinara y mozzarella derretida.",
@@ -292,18 +607,26 @@
       "Hornea de 15 a 20 minutos hasta que la salsa burbujee y el queso se dore en partes.",
       "Deja reposar 10 minutos para que no se desarme y sirve con el pan."
     ],
-    "equipment": ["oven"],
+    "equipment": [
+      "oven"
+    ],
     "active_minutes": 25,
     "tip": "Leftovers make a great sandwich filling the next day; reheat them in the oven so the crumbs stay crisp.",
     "tip_es": "Lo que sobre queda muy bien en sándwich al día siguiente; recaliéntalo en el horno para que el empanizado siga crujiente.",
     "photo_url": "https://images.unsplash.com/photo-1753775290758-bf6f5ab2cd43",
-    "photo_credit": { "name": "Elena Leya", "url": "https://unsplash.com/photos/deliciously-cooked-meat-served-with-drinks-and-sauce-fC2NQAtuoDA" }
+    "photo_credit": {
+      "name": "Elena Leya",
+      "url": "https://unsplash.com/photos/deliciously-cooked-meat-served-with-drinks-and-sauce-fC2NQAtuoDA"
+    }
   },
   {
     "slug": "potato-corn-chowder",
     "name": "Potato Corn Chowder",
     "meal_type": "dinner",
-    "diet_tags": ["vegetarian"],
+    "diet_tags": [
+      "pescatarian",
+      "vegetarian"
+    ],
     "servings": 4,
     "prep_minutes": 40,
     "batch_friendly": true,
@@ -317,20 +640,72 @@
       "Mash a few of the potatoes against the side of the pot to thicken the chowder, then serve topped with the cheddar and green onion."
     ],
     "ingredients": [
-      { "id": "butter", "qty": 3 },
-      { "id": "onion_yellow", "qty": 1, "note": "diced", "note_es": "en cubitos" },
-      { "id": "celery", "qty": 2, "note": "diced", "note_es": "en cubitos" },
-      { "id": "garlic", "qty": 2, "note": "minced", "note_es": "picado" },
-      { "id": "thyme", "qty": 0.5 },
-      { "id": "flour", "qty": 0.25 },
-      { "id": "vegetable_broth", "qty": 3 },
-      { "id": "potato_russet", "qty": 1.5, "note": "peeled, bite-size cubes", "note_es": "peladas, en cubos chicos" },
-      { "id": "corn_frozen", "qty": 2.5 },
-      { "id": "milk", "qty": 2 },
-      { "id": "cheddar", "qty": 0.5 },
-      { "id": "green_onion", "qty": 0.5, "note": "sliced", "note_es": "en rodajas" },
-      { "id": "salt", "qty": 1 },
-      { "id": "black_pepper", "qty": 0.25 }
+      {
+        "id": "butter",
+        "qty": 3
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "celery",
+        "qty": 2,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "garlic",
+        "qty": 2,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "thyme",
+        "qty": 0.5
+      },
+      {
+        "id": "flour",
+        "qty": 0.25
+      },
+      {
+        "id": "vegetable_broth",
+        "qty": 3
+      },
+      {
+        "id": "potato_russet",
+        "qty": 1.5,
+        "note": "peeled, bite-size cubes",
+        "note_es": "peladas, en cubos chicos"
+      },
+      {
+        "id": "corn_frozen",
+        "qty": 2.5
+      },
+      {
+        "id": "milk",
+        "qty": 2
+      },
+      {
+        "id": "cheddar",
+        "qty": 0.5
+      },
+      {
+        "id": "green_onion",
+        "qty": 0.5,
+        "note": "sliced",
+        "note_es": "en rodajas"
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      }
     ],
     "name_es": "Chowder de papa y maíz",
     "description_es": "Sopa cremosa de papa y maíz dulce, espesada con un poco de harina y servida con cheddar y cebolla verde.",
@@ -342,18 +717,26 @@
       "Agrega el maíz y la leche y cocina 5 minutos a fuego suave, sin que hierva fuerte.",
       "Aplasta algunas papas contra el borde de la olla para espesar y sirve con el cheddar y la cebolla verde por encima."
     ],
-    "equipment": ["stovetop"],
+    "equipment": [
+      "stovetop"
+    ],
     "active_minutes": 15,
     "tip": "Reheat gently over low heat, stirring, so the milk does not separate.",
     "tip_es": "Recalienta a fuego bajo y revolviendo para que la leche no se corte.",
     "photo_url": "https://images.unsplash.com/photo-1660899227222-b9fd7fe2e060",
-    "photo_credit": { "name": "ALLAN LAINEZ", "url": "https://unsplash.com/photos/a-plate-of-food-FX_vvVtEAnw" }
+    "photo_credit": {
+      "name": "ALLAN LAINEZ",
+      "url": "https://unsplash.com/photos/a-plate-of-food-FX_vvVtEAnw"
+    }
   },
   {
     "slug": "cheesy-baked-gnocchi-with-spinach",
     "name": "Cheesy Baked Gnocchi with Spinach",
     "meal_type": "dinner",
-    "diet_tags": ["vegetarian"],
+    "diet_tags": [
+      "pescatarian",
+      "vegetarian"
+    ],
     "servings": 4,
     "prep_minutes": 30,
     "batch_friendly": false,
@@ -367,15 +750,44 @@
       "Bake for 12 to 15 minutes until the sauce bubbles and the cheese is browned in spots, then rest for 5 minutes before serving."
     ],
     "ingredients": [
-      { "id": "gnocchi", "qty": 32 },
-      { "id": "olive_oil", "qty": 1 },
-      { "id": "garlic", "qty": 2, "note": "minced", "note_es": "picado" },
-      { "id": "red_pepper_flakes", "qty": 0.25 },
-      { "id": "spinach", "qty": 5 },
-      { "id": "marinara", "qty": 3 },
-      { "id": "italian_seasoning", "qty": 0.5 },
-      { "id": "mozzarella", "qty": 1.5 },
-      { "id": "parmesan", "qty": 0.25 }
+      {
+        "id": "gnocchi",
+        "qty": 32
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1
+      },
+      {
+        "id": "garlic",
+        "qty": 2,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "red_pepper_flakes",
+        "qty": 0.25
+      },
+      {
+        "id": "spinach",
+        "qty": 5
+      },
+      {
+        "id": "marinara",
+        "qty": 3
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 0.5
+      },
+      {
+        "id": "mozzarella",
+        "qty": 1.5
+      },
+      {
+        "id": "parmesan",
+        "qty": 0.25
+      }
     ],
     "name_es": "Ñoquis gratinados con espinaca",
     "description_es": "Ñoquis de papa y espinaca en salsa marinara, gratinados con mozzarella y parmesano.",
@@ -387,18 +799,29 @@
       "Esparce la mozzarella y el parmesano por encima; si tu sartén no puede ir al horno, pasa todo antes a una fuente.",
       "Hornea de 12 a 15 minutos hasta que la salsa burbujee y el queso se dore en partes, y deja reposar 5 minutos antes de servir."
     ],
-    "equipment": ["stovetop", "oven"],
+    "equipment": [
+      "stovetop",
+      "oven"
+    ],
     "active_minutes": 10,
     "tip": "Shelf-stable gnocchi keep for months in the pantry, so this is a good end-of-week dinner.",
     "tip_es": "Los ñoquis envasados duran meses en la despensa, así que es una buena cena para el final de la semana.",
     "photo_url": "https://images.unsplash.com/photo-1650475972369-4579ce5e8b71",
-    "photo_credit": { "name": "Max Griss", "url": "https://unsplash.com/photos/a-casserole-dish-of-pasta-and-basil-with-a-bottle-of-olive-oil-l45QVRM79Sk" }
+    "photo_credit": {
+      "name": "Max Griss",
+      "url": "https://unsplash.com/photos/a-casserole-dish-of-pasta-and-basil-with-a-bottle-of-olive-oil-l45QVRM79Sk"
+    }
   },
   {
     "slug": "tuscan-white-bean-kale-soup",
     "name": "Tuscan White Bean and Kale Soup",
     "meal_type": "dinner",
-    "diet_tags": ["vegetarian"],
+    "diet_tags": [
+      "dairy_free",
+      "pescatarian",
+      "vegan",
+      "vegetarian"
+    ],
     "servings": 4,
     "prep_minutes": 40,
     "batch_friendly": true,
@@ -409,23 +832,73 @@
       "Add the beans, tomatoes with their juice, broth and salt and bring to a boil over high heat.",
       "Strip the kale leaves from the stems, tear them into pieces and stir them into the pot.",
       "Lower the heat and simmer uncovered for 15 minutes until the kale is tender and the broth has thickened slightly.",
-      "Mash a few spoonfuls of beans against the side of the pot, stir, and serve with the parmesan and the bread for dipping."
+      "Mash a few spoonfuls of beans against the side of the pot, stir, and serve with the bread for dipping."
     ],
     "ingredients": [
-      { "id": "olive_oil", "qty": 2 },
-      { "id": "onion_yellow", "qty": 1, "note": "diced", "note_es": "en cubitos" },
-      { "id": "carrot", "qty": 0.5, "note": "diced", "note_es": "en cubitos" },
-      { "id": "celery", "qty": 2, "note": "diced", "note_es": "en cubitos" },
-      { "id": "garlic", "qty": 4, "note": "minced", "note_es": "picado" },
-      { "id": "italian_seasoning", "qty": 1 },
-      { "id": "red_pepper_flakes", "qty": 0.25 },
-      { "id": "white_beans", "qty": 3, "note": "drained and rinsed", "note_es": "escurridos y enjuagados" },
-      { "id": "diced_tomatoes", "qty": 1 },
-      { "id": "vegetable_broth", "qty": 4 },
-      { "id": "kale", "qty": 1 },
-      { "id": "parmesan", "qty": 0.25 },
-      { "id": "french_bread", "qty": 0.5, "note": "sliced and toasted", "note_es": "en rebanadas tostadas" },
-      { "id": "salt", "qty": 0.75 }
+      {
+        "id": "olive_oil",
+        "qty": 2
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "carrot",
+        "qty": 0.5,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "celery",
+        "qty": 2,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "garlic",
+        "qty": 4,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1
+      },
+      {
+        "id": "red_pepper_flakes",
+        "qty": 0.25
+      },
+      {
+        "id": "white_beans",
+        "qty": 3,
+        "note": "drained and rinsed",
+        "note_es": "escurridos y enjuagados"
+      },
+      {
+        "id": "diced_tomatoes",
+        "qty": 1
+      },
+      {
+        "id": "vegetable_broth",
+        "qty": 4
+      },
+      {
+        "id": "kale",
+        "qty": 1
+      },
+      {
+        "id": "french_bread",
+        "qty": 0.5,
+        "note": "sliced and toasted",
+        "note_es": "en rebanadas tostadas"
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      }
     ],
     "name_es": "Sopa toscana de frijoles blancos y kale",
     "description_es": "Sopa rústica de frijoles blancos, kale y verduras en caldo de tomate con ajo, servida con pan tostado.",
@@ -435,20 +908,30 @@
       "Agrega los frijoles, los tomates con su jugo, el caldo y la sal y lleva a hervor a fuego alto.",
       "Separa las hojas de kale de los tallos, córtalas en trozos con las manos e incorpóralas a la olla.",
       "Baja el fuego y cocina destapado 15 minutos hasta que el kale esté tierno y el caldo espese un poco.",
-      "Aplasta unas cucharadas de frijoles contra el borde de la olla, revuelve y sirve con el parmesano y el pan para mojar."
+      "Aplasta unas cucharadas de frijoles contra el borde de la olla, revuelve y sirve con el pan para mojar."
     ],
-    "equipment": ["stovetop"],
+    "equipment": [
+      "stovetop"
+    ],
     "active_minutes": 15,
     "tip": "Stale bread is perfect here: drop a slice in the bowl and ladle the hot soup over it.",
     "tip_es": "El pan del día anterior es ideal: pon una rebanada en el plato y sirve la sopa caliente encima.",
     "photo_url": "https://images.unsplash.com/photo-1659603646708-2e6db467b5e4",
-    "photo_credit": { "name": "Green And Great", "url": "https://unsplash.com/photos/a-bowl-of-food--k7U_-Og15A" }
+    "photo_credit": {
+      "name": "Green And Great",
+      "url": "https://unsplash.com/photos/a-bowl-of-food--k7U_-Og15A"
+    }
   },
   {
     "slug": "cream-of-mushroom-soup",
     "name": "Cream of Mushroom Soup",
     "meal_type": "dinner",
-    "diet_tags": ["vegetarian", "keto"],
+    "diet_tags": [
+      "keto",
+      "low_carb",
+      "pescatarian",
+      "vegetarian"
+    ],
     "servings": 4,
     "prep_minutes": 35,
     "batch_friendly": true,
@@ -462,18 +945,62 @@
       "Stir in the cream, salt and pepper, warm for 2 minutes without boiling and serve sprinkled with the parsley."
     ],
     "ingredients": [
-      { "id": "mushroom", "qty": 24, "note": "sliced", "note_es": "en láminas" },
-      { "id": "butter", "qty": 4 },
-      { "id": "onion_yellow", "qty": 1, "note": "finely diced", "note_es": "en cubitos finos" },
-      { "id": "garlic", "qty": 3, "note": "minced", "note_es": "picado" },
-      { "id": "thyme", "qty": 1 },
-      { "id": "vegetable_broth", "qty": 3 },
-      { "id": "soy_sauce", "qty": 1 },
-      { "id": "cream_cheese", "qty": 4 },
-      { "id": "heavy_cream", "qty": 1 },
-      { "id": "parsley", "qty": 0.25, "note": "chopped", "note_es": "picado" },
-      { "id": "salt", "qty": 0.5 },
-      { "id": "black_pepper", "qty": 0.5 }
+      {
+        "id": "mushroom",
+        "qty": 24,
+        "note": "sliced",
+        "note_es": "en láminas"
+      },
+      {
+        "id": "butter",
+        "qty": 4
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "finely diced",
+        "note_es": "en cubitos finos"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "thyme",
+        "qty": 1
+      },
+      {
+        "id": "vegetable_broth",
+        "qty": 3
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 1
+      },
+      {
+        "id": "cream_cheese",
+        "qty": 4
+      },
+      {
+        "id": "heavy_cream",
+        "qty": 1
+      },
+      {
+        "id": "parsley",
+        "qty": 0.25,
+        "note": "chopped",
+        "note_es": "picado"
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.5
+      }
     ],
     "name_es": "Crema de champiñones",
     "description_es": "Champiñones bien dorados, cocidos con ajo y tomillo y terminados con crema y queso crema, sin harina.",
@@ -485,18 +1012,27 @@
       "Baja el fuego, agrega el queso crema en trozos y bate hasta que se derrita en el caldo.",
       "Incorpora la crema, la sal y la pimienta, calienta 2 minutos sin que hierva y sirve con el perejil por encima."
     ],
-    "equipment": ["stovetop"],
+    "equipment": [
+      "stovetop"
+    ],
     "active_minutes": 20,
     "tip": "Browning the mushrooms in two batches is what gives the flavor; a crowded pot steams them instead.",
     "tip_es": "Dorar los champiñones en dos tandas es lo que da el sabor; si la olla está muy llena, se cuecen al vapor.",
     "photo_url": "https://images.unsplash.com/photo-1659603851579-17755833517e",
-    "photo_credit": { "name": "Green And Great", "url": "https://unsplash.com/photos/a-bowl-of-food-auTqcVC96X4" }
+    "photo_credit": {
+      "name": "Green And Great",
+      "url": "https://unsplash.com/photos/a-bowl-of-food-auTqcVC96X4"
+    }
   },
   {
     "slug": "sausage-kale-cauliflower-soup",
     "name": "Sausage, Kale and Cauliflower Soup",
     "meal_type": "dinner",
-    "diet_tags": ["keto"],
+    "diet_tags": [
+      "gluten_free",
+      "keto",
+      "low_carb"
+    ],
     "servings": 4,
     "prep_minutes": 40,
     "batch_friendly": true,
@@ -510,16 +1046,52 @@
       "Stir in the cream and pepper, warm for 1 minute over low heat and serve."
     ],
     "ingredients": [
-      { "id": "sausage_italian", "qty": 1 },
-      { "id": "onion_yellow", "qty": 1, "note": "diced", "note_es": "en cubitos" },
-      { "id": "garlic", "qty": 4, "note": "minced", "note_es": "picado" },
-      { "id": "red_pepper_flakes", "qty": 0.5 },
-      { "id": "cauliflower", "qty": 0.5, "note": "small florets", "note_es": "en ramitos chicos" },
-      { "id": "chicken_broth", "qty": 5 },
-      { "id": "kale", "qty": 1 },
-      { "id": "heavy_cream", "qty": 0.75 },
-      { "id": "salt", "qty": 0.5 },
-      { "id": "black_pepper", "qty": 0.25 }
+      {
+        "id": "sausage_italian",
+        "qty": 1
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "garlic",
+        "qty": 4,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "red_pepper_flakes",
+        "qty": 0.5
+      },
+      {
+        "id": "cauliflower",
+        "qty": 0.5,
+        "note": "small florets",
+        "note_es": "en ramitos chicos"
+      },
+      {
+        "id": "chicken_broth",
+        "qty": 5
+      },
+      {
+        "id": "kale",
+        "qty": 1
+      },
+      {
+        "id": "heavy_cream",
+        "qty": 0.75
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      }
     ],
     "name_es": "Sopa de salchicha, kale y coliflor",
     "description_es": "Una versión baja en carbohidratos de la zuppa toscana: salchicha italiana, kale y coliflor en un caldo cremoso con ajo.",
@@ -531,18 +1103,28 @@
       "Separa las hojas de kale de los tallos, córtalas en trozos con las manos, incorpóralas y cocina 5 minutos hasta que estén tiernas.",
       "Incorpora la crema y la pimienta, calienta 1 minuto a fuego bajo y sirve."
     ],
-    "equipment": ["stovetop"],
+    "equipment": [
+      "stovetop"
+    ],
     "active_minutes": 15,
     "tip": "Roast the other half of the cauliflower later in the week or use it in a casserole.",
     "tip_es": "Asa la otra mitad de la coliflor otro día de la semana o úsala en un gratinado.",
     "photo_url": "https://images.unsplash.com/photo-1691501946447-34a08da5b930",
-    "photo_credit": { "name": "Filipp Romanovski", "url": "https://unsplash.com/photos/a-white-bowl-filled-with-soup-next-to-a-plate-of-greens-wtwS_S3K6u4" }
+    "photo_credit": {
+      "name": "Filipp Romanovski",
+      "url": "https://unsplash.com/photos/a-white-bowl-filled-with-soup-next-to-a-plate-of-greens-wtwS_S3K6u4"
+    }
   },
   {
     "slug": "buffalo-chicken-cauliflower-casserole",
     "name": "Buffalo Chicken Cauliflower Casserole",
     "meal_type": "dinner",
-    "diet_tags": ["keto", "high_protein"],
+    "diet_tags": [
+      "gluten_free",
+      "high_protein",
+      "keto",
+      "low_carb"
+    ],
     "servings": 4,
     "prep_minutes": 45,
     "batch_friendly": true,
@@ -556,17 +1138,58 @@
       "Scatter the green onion over the top and serve."
     ],
     "ingredients": [
-      { "id": "rotisserie_chicken", "qty": 1 },
-      { "id": "cauliflower", "qty": 1, "note": "small florets", "note_es": "en ramitos chicos" },
-      { "id": "olive_oil", "qty": 1 },
-      { "id": "cream_cheese", "qty": 6, "note": "softened", "note_es": "a temperatura ambiente" },
-      { "id": "sour_cream", "qty": 0.5 },
-      { "id": "hot_sauce", "qty": 5 },
-      { "id": "garlic_powder", "qty": 1 },
-      { "id": "celery", "qty": 2, "note": "diced", "note_es": "en cubitos" },
-      { "id": "cheddar", "qty": 1.5 },
-      { "id": "green_onion", "qty": 0.5, "note": "sliced", "note_es": "en rodajas" },
-      { "id": "salt", "qty": 0.25 }
+      {
+        "id": "rotisserie_chicken",
+        "qty": 1
+      },
+      {
+        "id": "cauliflower",
+        "qty": 1,
+        "note": "small florets",
+        "note_es": "en ramitos chicos"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1
+      },
+      {
+        "id": "cream_cheese",
+        "qty": 6,
+        "note": "softened",
+        "note_es": "a temperatura ambiente"
+      },
+      {
+        "id": "sour_cream",
+        "qty": 0.5
+      },
+      {
+        "id": "hot_sauce",
+        "qty": 5
+      },
+      {
+        "id": "garlic_powder",
+        "qty": 1
+      },
+      {
+        "id": "celery",
+        "qty": 2,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "cheddar",
+        "qty": 1.5
+      },
+      {
+        "id": "green_onion",
+        "qty": 0.5,
+        "note": "sliced",
+        "note_es": "en rodajas"
+      },
+      {
+        "id": "salt",
+        "qty": 0.25
+      }
     ],
     "name_es": "Gratinado de pollo búfalo con coliflor",
     "description_es": "Pollo desmenuzado y coliflor asada, horneados en una mezcla cremosa de salsa picante y cheddar.",
@@ -578,18 +1201,28 @@
       "Cubre con el resto del cheddar y hornea de 15 a 20 minutos hasta que burbujee en los bordes y esté dorado por encima.",
       "Esparce la cebolla verde por encima y sirve."
     ],
-    "equipment": ["oven"],
+    "equipment": [
+      "oven"
+    ],
     "active_minutes": 15,
     "tip": "Simmer the chicken bones with water and an onion for an hour to get free broth for the week's soups.",
     "tip_es": "Hierve los huesos del pollo con agua y una cebolla durante una hora y tendrás caldo gratis para las sopas de la semana.",
     "photo_url": "https://images.unsplash.com/photo-1626911690101-ae8f428b4468",
-    "photo_credit": { "name": "Erik Mclean", "url": "https://unsplash.com/photos/white-ceramic-plate-with-cooked-food-6FZqY0H05zA" }
+    "photo_credit": {
+      "name": "Erik Mclean",
+      "url": "https://unsplash.com/photos/white-ceramic-plate-with-cooked-food-6FZqY0H05zA"
+    }
   },
   {
     "slug": "cabbage-smoked-sausage-soup",
     "name": "Cabbage and Smoked Sausage Soup",
     "meal_type": "dinner",
-    "diet_tags": ["keto"],
+    "diet_tags": [
+      "dairy_free",
+      "gluten_free",
+      "keto",
+      "low_carb"
+    ],
     "servings": 4,
     "prep_minutes": 40,
     "batch_friendly": true,
@@ -603,19 +1236,68 @@
       "Stir in the vinegar, taste, adjust the salt and serve."
     ],
     "ingredients": [
-      { "id": "sausage_smoked", "qty": 1, "note": "sliced into half-moons", "note_es": "en medias lunas" },
-      { "id": "olive_oil", "qty": 1 },
-      { "id": "onion_yellow", "qty": 1, "note": "diced", "note_es": "en cubitos" },
-      { "id": "celery", "qty": 2, "note": "sliced", "note_es": "en rodajas" },
-      { "id": "garlic", "qty": 3, "note": "minced", "note_es": "picado" },
-      { "id": "smoked_paprika", "qty": 1 },
-      { "id": "thyme", "qty": 0.5 },
-      { "id": "cabbage", "qty": 0.5, "note": "cored and chopped", "note_es": "sin el centro, picado" },
-      { "id": "diced_tomatoes", "qty": 1 },
-      { "id": "chicken_broth", "qty": 5 },
-      { "id": "vinegar_cider", "qty": 1 },
-      { "id": "salt", "qty": 0.5 },
-      { "id": "black_pepper", "qty": 0.25 }
+      {
+        "id": "sausage_smoked",
+        "qty": 1,
+        "note": "sliced into half-moons",
+        "note_es": "en medias lunas"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "celery",
+        "qty": 2,
+        "note": "sliced",
+        "note_es": "en rodajas"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "smoked_paprika",
+        "qty": 1
+      },
+      {
+        "id": "thyme",
+        "qty": 0.5
+      },
+      {
+        "id": "cabbage",
+        "qty": 0.5,
+        "note": "cored and chopped",
+        "note_es": "sin el centro, picado"
+      },
+      {
+        "id": "diced_tomatoes",
+        "qty": 1
+      },
+      {
+        "id": "chicken_broth",
+        "qty": 5
+      },
+      {
+        "id": "vinegar_cider",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      }
     ],
     "name_es": "Sopa de repollo y salchicha ahumada",
     "description_es": "Salchicha ahumada dorada, repollo y tomate cocidos en un caldo con paprika; rinde, es barata y baja en carbohidratos.",
@@ -627,18 +1309,28 @@
       "Baja el fuego, tapa y cocina de 15 a 20 minutos hasta que el repollo esté tierno.",
       "Incorpora el vinagre, prueba, ajusta la sal y sirve."
     ],
-    "equipment": ["stovetop"],
+    "equipment": [
+      "stovetop"
+    ],
     "active_minutes": 15,
     "tip": "Use the other half of the cabbage for slaw or a stir-fry later in the week.",
     "tip_es": "Usa la otra mitad del repollo para una ensalada o un salteado otro día de la semana.",
     "photo_url": "https://images.unsplash.com/photo-1788141485442-f0d4ce4dca2e",
-    "photo_credit": { "name": "Charles Chen", "url": "https://unsplash.com/photos/vegetable-soup-in-black-bowl-YdMbzFOxbMQ" }
+    "photo_credit": {
+      "name": "Charles Chen",
+      "url": "https://unsplash.com/photos/vegetable-soup-in-black-bowl-YdMbzFOxbMQ"
+    }
   },
   {
     "slug": "jalapeno-popper-chicken-casserole",
     "name": "Jalapeño Popper Chicken Casserole",
     "meal_type": "dinner",
-    "diet_tags": ["keto", "high_protein"],
+    "diet_tags": [
+      "gluten_free",
+      "high_protein",
+      "keto",
+      "low_carb"
+    ],
     "servings": 4,
     "prep_minutes": 50,
     "batch_friendly": true,
@@ -653,16 +1345,50 @@
       "Rest for 5 minutes, then serve with the green onion on top."
     ],
     "ingredients": [
-      { "id": "chicken_breast", "qty": 1.75 },
-      { "id": "bacon", "qty": 6 },
-      { "id": "cream_cheese", "qty": 8, "note": "softened", "note_es": "a temperatura ambiente" },
-      { "id": "cheddar", "qty": 1.5 },
-      { "id": "jalapeno", "qty": 3 },
-      { "id": "garlic_powder", "qty": 1 },
-      { "id": "onion_powder", "qty": 0.5 },
-      { "id": "green_onion", "qty": 0.5, "note": "sliced", "note_es": "en rodajas" },
-      { "id": "salt", "qty": 0.75 },
-      { "id": "black_pepper", "qty": 0.25 }
+      {
+        "id": "chicken_breast",
+        "qty": 1.75
+      },
+      {
+        "id": "bacon",
+        "qty": 6
+      },
+      {
+        "id": "cream_cheese",
+        "qty": 8,
+        "note": "softened",
+        "note_es": "a temperatura ambiente"
+      },
+      {
+        "id": "cheddar",
+        "qty": 1.5
+      },
+      {
+        "id": "jalapeno",
+        "qty": 3
+      },
+      {
+        "id": "garlic_powder",
+        "qty": 1
+      },
+      {
+        "id": "onion_powder",
+        "qty": 0.5
+      },
+      {
+        "id": "green_onion",
+        "qty": 0.5,
+        "note": "sliced",
+        "note_es": "en rodajas"
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      }
     ],
     "name_es": "Pollo al horno estilo jalapeño popper",
     "description_es": "Pechugas de pollo horneadas bajo una capa de queso crema, cheddar y jalapeño con tocino crujiente.",
@@ -675,18 +1401,28 @@
       "Hornea de 22 a 25 minutos hasta que el queso esté dorado y la pieza de pollo más gruesa llegue a {165F} o no se vea rosada al cortarla.",
       "Deja reposar 5 minutos y sirve con la cebolla verde por encima."
     ],
-    "equipment": ["oven"],
+    "equipment": [
+      "oven"
+    ],
     "active_minutes": 15,
     "tip": "Serve with steamed broccoli or a green salad; leftovers reheat well sliced into a skillet.",
     "tip_es": "Sirve con brócoli al vapor o una ensalada verde; lo que sobre se recalienta bien cortado en tiras en una sartén.",
     "photo_url": "https://images.unsplash.com/photo-1719317607191-4161a7c9eeff",
-    "photo_credit": { "name": "Alina Chernysheva", "url": "https://unsplash.com/photos/a-plate-of-food-on-a-table-next-to-a-bowl-of-food-xAPVmaNqvMg" }
+    "photo_credit": {
+      "name": "Alina Chernysheva",
+      "url": "https://unsplash.com/photos/a-plate-of-food-on-a-table-next-to-a-bowl-of-food-xAPVmaNqvMg"
+    }
   },
   {
     "slug": "thai-coconut-curry-chicken-soup",
     "name": "Thai Coconut Curry Chicken Soup",
     "meal_type": "dinner",
-    "diet_tags": ["keto", "high_protein"],
+    "diet_tags": [
+      "dairy_free",
+      "high_protein",
+      "keto",
+      "low_carb"
+    ],
     "servings": 4,
     "prep_minutes": 30,
     "batch_friendly": true,
@@ -700,19 +1436,72 @@
       "Ladle into bowls and top with the cilantro."
     ],
     "ingredients": [
-      { "id": "chicken_breast", "qty": 1.25, "note": "thinly sliced", "note_es": "en láminas finas" },
-      { "id": "vegetable_oil", "qty": 1 },
-      { "id": "curry_paste", "qty": 3 },
-      { "id": "ginger", "qty": 1, "note": "grated", "note_es": "rallado" },
-      { "id": "garlic", "qty": 3, "note": "minced", "note_es": "picado" },
-      { "id": "coconut_milk", "qty": 1 },
-      { "id": "chicken_broth", "qty": 4 },
-      { "id": "mushroom", "qty": 8, "note": "sliced", "note_es": "en láminas" },
-      { "id": "bell_pepper", "qty": 1, "note": "thin strips", "note_es": "en tiras finas" },
-      { "id": "spinach", "qty": 3 },
-      { "id": "soy_sauce", "qty": 1 },
-      { "id": "lime", "qty": 1, "note": "juiced", "note_es": "en jugo" },
-      { "id": "cilantro", "qty": 0.25, "note": "chopped", "note_es": "picado" }
+      {
+        "id": "chicken_breast",
+        "qty": 1.25,
+        "note": "thinly sliced",
+        "note_es": "en láminas finas"
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 1
+      },
+      {
+        "id": "curry_paste",
+        "qty": 3
+      },
+      {
+        "id": "ginger",
+        "qty": 1,
+        "note": "grated",
+        "note_es": "rallado"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "coconut_milk",
+        "qty": 1
+      },
+      {
+        "id": "chicken_broth",
+        "qty": 4
+      },
+      {
+        "id": "mushroom",
+        "qty": 8,
+        "note": "sliced",
+        "note_es": "en láminas"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "note": "thin strips",
+        "note_es": "en tiras finas"
+      },
+      {
+        "id": "spinach",
+        "qty": 3
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 1
+      },
+      {
+        "id": "lime",
+        "qty": 1,
+        "note": "juiced",
+        "note_es": "en jugo"
+      },
+      {
+        "id": "cilantro",
+        "qty": 0.25,
+        "note": "chopped",
+        "note_es": "picado"
+      }
     ],
     "name_es": "Sopa tailandesa de pollo al curry con coco",
     "description_es": "Pollo en láminas, champiñones y pimiento en un caldo de curry rojo y leche de coco con lima y cilantro.",
@@ -724,12 +1513,17 @@
       "Retira la olla del fuego, exprime el jugo de lima, prueba y agrega un poco más de salsa de soya si le falta sal.",
       "Sirve en platos hondos con el cilantro por encima."
     ],
-    "equipment": ["stovetop"],
+    "equipment": [
+      "stovetop"
+    ],
     "active_minutes": 15,
     "tip": "Not eating low-carb? Ladle it over cooked rice or rice noodles to stretch it to six bowls.",
     "tip_es": "Si no comes bajo en carbohidratos, sírvela sobre arroz cocido o fideos de arroz y rinde para seis platos.",
     "photo_url": "https://images.unsplash.com/photo-1548943487-a2e4e43b4853",
-    "photo_credit": { "name": "Nick Karvounis", "url": "https://unsplash.com/photos/seafood-ramen-platter-YmyFBvW7oG8" }
+    "photo_credit": {
+      "name": "Nick Karvounis",
+      "url": "https://unsplash.com/photos/seafood-ramen-platter-YmyFBvW7oG8"
+    }
   },
   {
     "slug": "loaded-baked-potato-soup",
@@ -750,19 +1544,68 @@
       "Serve topped with the bacon, green onion and the rest of the cheddar."
     ],
     "ingredients": [
-      { "id": "bacon", "qty": 6, "note": "chopped", "note_es": "picado" },
-      { "id": "butter", "qty": 2 },
-      { "id": "onion_yellow", "qty": 1, "note": "diced", "note_es": "en cubitos" },
-      { "id": "garlic", "qty": 2, "note": "minced", "note_es": "picado" },
-      { "id": "flour", "qty": 0.25 },
-      { "id": "chicken_broth", "qty": 3 },
-      { "id": "milk", "qty": 2 },
-      { "id": "potato_russet", "qty": 2.5, "note": "peeled, bite-size cubes", "note_es": "peladas, en cubos chicos" },
-      { "id": "sour_cream", "qty": 0.5 },
-      { "id": "cheddar", "qty": 1 },
-      { "id": "green_onion", "qty": 0.5, "note": "sliced", "note_es": "en rodajas" },
-      { "id": "salt", "qty": 1 },
-      { "id": "black_pepper", "qty": 0.5 }
+      {
+        "id": "bacon",
+        "qty": 6,
+        "note": "chopped",
+        "note_es": "picado"
+      },
+      {
+        "id": "butter",
+        "qty": 2
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "garlic",
+        "qty": 2,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "flour",
+        "qty": 0.25
+      },
+      {
+        "id": "chicken_broth",
+        "qty": 3
+      },
+      {
+        "id": "milk",
+        "qty": 2
+      },
+      {
+        "id": "potato_russet",
+        "qty": 2.5,
+        "note": "peeled, bite-size cubes",
+        "note_es": "peladas, en cubos chicos"
+      },
+      {
+        "id": "sour_cream",
+        "qty": 0.5
+      },
+      {
+        "id": "cheddar",
+        "qty": 1
+      },
+      {
+        "id": "green_onion",
+        "qty": 0.5,
+        "note": "sliced",
+        "note_es": "en rodajas"
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.5
+      }
     ],
     "name_es": "Sopa de papa con tocino y queso",
     "description_es": "Sopa espesa de papa con tocino, cheddar, crema agria y cebolla verde, como una papa rellena en un plato hondo.",
@@ -775,18 +1618,26 @@
       "Retira la olla del fuego e incorpora la crema agria y casi todo el cheddar hasta que se derrita.",
       "Sirve con el tocino, la cebolla verde y el resto del cheddar por encima."
     ],
-    "equipment": ["stovetop"],
+    "equipment": [
+      "stovetop"
+    ],
     "active_minutes": 20,
     "tip": "Keep the toppings separate and reheat the soup gently with a splash of milk.",
     "tip_es": "Guarda los ingredientes de encima por separado y recalienta la sopa a fuego bajo con un chorrito de leche.",
     "photo_url": "https://images.unsplash.com/photo-1612815160130-ff641f5bf967",
-    "photo_credit": { "name": "Nathan Dumlao", "url": "https://unsplash.com/photos/person-holding-white-ceramic-bowl-with-soup-0dqLSBDEcdg" }
+    "photo_credit": {
+      "name": "Nathan Dumlao",
+      "url": "https://unsplash.com/photos/person-holding-white-ceramic-bowl-with-soup-0dqLSBDEcdg"
+    }
   },
   {
     "slug": "white-chicken-chili",
     "name": "White Chicken Chili",
     "meal_type": "dinner",
-    "diet_tags": ["high_protein"],
+    "diet_tags": [
+      "high_protein",
+      "gluten_free"
+    ],
     "servings": 4,
     "prep_minutes": 45,
     "batch_friendly": true,
@@ -801,21 +1652,78 @@
       "Take the pot off the heat, stir in the sour cream and lime juice and serve topped with the cilantro."
     ],
     "ingredients": [
-      { "id": "chicken_breast", "qty": 1.25 },
-      { "id": "olive_oil", "qty": 1 },
-      { "id": "onion_yellow", "qty": 1, "note": "diced", "note_es": "en cubitos" },
-      { "id": "jalapeno", "qty": 1, "note": "seeded and minced", "note_es": "sin semillas, picado" },
-      { "id": "garlic", "qty": 3, "note": "minced", "note_es": "picado" },
-      { "id": "cumin", "qty": 2 },
-      { "id": "oregano", "qty": 1 },
-      { "id": "chicken_broth", "qty": 3 },
-      { "id": "green_chiles", "qty": 2 },
-      { "id": "white_beans", "qty": 2, "note": "drained and rinsed", "note_es": "escurridos y enjuagados" },
-      { "id": "corn_frozen", "qty": 1 },
-      { "id": "sour_cream", "qty": 0.5 },
-      { "id": "lime", "qty": 1, "note": "juiced", "note_es": "en jugo" },
-      { "id": "cilantro", "qty": 0.25, "note": "chopped", "note_es": "picado" },
-      { "id": "salt", "qty": 0.75 }
+      {
+        "id": "chicken_breast",
+        "qty": 1.25
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "jalapeno",
+        "qty": 1,
+        "note": "seeded and minced",
+        "note_es": "sin semillas, picado"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "cumin",
+        "qty": 2
+      },
+      {
+        "id": "oregano",
+        "qty": 1
+      },
+      {
+        "id": "chicken_broth",
+        "qty": 3
+      },
+      {
+        "id": "green_chiles",
+        "qty": 2
+      },
+      {
+        "id": "white_beans",
+        "qty": 2,
+        "note": "drained and rinsed",
+        "note_es": "escurridos y enjuagados"
+      },
+      {
+        "id": "corn_frozen",
+        "qty": 1
+      },
+      {
+        "id": "sour_cream",
+        "qty": 0.5
+      },
+      {
+        "id": "lime",
+        "qty": 1,
+        "note": "juiced",
+        "note_es": "en jugo"
+      },
+      {
+        "id": "cilantro",
+        "qty": 0.25,
+        "note": "chopped",
+        "note_es": "picado"
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      }
     ],
     "name_es": "Chili blanco de pollo",
     "description_es": "Pollo desmenuzado, frijoles blancos, maíz y chiles verdes en un caldo cremoso con comino, lima y cilantro.",
@@ -828,18 +1736,26 @@
       "Devuelve el pollo a la olla junto con el maíz y cocina destapado 5 minutos.",
       "Retira la olla del fuego, incorpora la crema agria y el jugo de lima y sirve con el cilantro por encima."
     ],
-    "equipment": ["stovetop"],
+    "equipment": [
+      "stovetop"
+    ],
     "active_minutes": 15,
     "tip": "Freeze portions before adding the sour cream; stir it in after reheating so it does not curdle.",
     "tip_es": "Congela las porciones antes de agregar la crema agria y añádela después de recalentar para que no se corte.",
     "photo_url": "https://images.unsplash.com/photo-1715733448307-9a5010aaafbb",
-    "photo_credit": { "name": "Tim McErston", "url": "https://unsplash.com/photos/a-person-holding-a-bowl-of-soup-in-front-of-a-crock-pot-k4MaXzTx1Qk" }
+    "photo_credit": {
+      "name": "Tim McErston",
+      "url": "https://unsplash.com/photos/a-person-holding-a-bowl-of-soup-in-front-of-a-crock-pot-k4MaXzTx1Qk"
+    }
   },
   {
     "slug": "beef-taco-soup",
     "name": "Beef Taco Soup",
     "meal_type": "dinner",
-    "diet_tags": ["high_protein"],
+    "diet_tags": [
+      "high_protein",
+      "gluten_free"
+    ],
     "servings": 6,
     "prep_minutes": 35,
     "batch_friendly": true,
@@ -853,18 +1769,62 @@
       "Top each bowl with the cheddar and a handful of crushed tortilla chips."
     ],
     "ingredients": [
-      { "id": "ground_beef", "qty": 1.5 },
-      { "id": "onion_yellow", "qty": 1, "note": "diced", "note_es": "en cubitos" },
-      { "id": "taco_seasoning", "qty": 3 },
-      { "id": "black_beans", "qty": 1, "note": "undrained", "note_es": "sin escurrir" },
-      { "id": "pinto_beans", "qty": 1, "note": "undrained", "note_es": "sin escurrir" },
-      { "id": "corn_canned", "qty": 1, "note": "undrained", "note_es": "sin escurrir" },
-      { "id": "diced_tomatoes", "qty": 2 },
-      { "id": "green_chiles", "qty": 1 },
-      { "id": "tomato_sauce", "qty": 1 },
-      { "id": "beef_broth", "qty": 2 },
-      { "id": "cheddar", "qty": 0.75 },
-      { "id": "tortilla_chips", "qty": 4 }
+      {
+        "id": "ground_beef",
+        "qty": 1.5
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "taco_seasoning",
+        "qty": 3
+      },
+      {
+        "id": "black_beans",
+        "qty": 1,
+        "note": "undrained",
+        "note_es": "sin escurrir"
+      },
+      {
+        "id": "pinto_beans",
+        "qty": 1,
+        "note": "undrained",
+        "note_es": "sin escurrir"
+      },
+      {
+        "id": "corn_canned",
+        "qty": 1,
+        "note": "undrained",
+        "note_es": "sin escurrir"
+      },
+      {
+        "id": "diced_tomatoes",
+        "qty": 2
+      },
+      {
+        "id": "green_chiles",
+        "qty": 1
+      },
+      {
+        "id": "tomato_sauce",
+        "qty": 1
+      },
+      {
+        "id": "beef_broth",
+        "qty": 2
+      },
+      {
+        "id": "cheddar",
+        "qty": 0.75
+      },
+      {
+        "id": "tortilla_chips",
+        "qty": 4
+      }
     ],
     "name_es": "Sopa de taco con carne molida",
     "description_es": "Carne molida, dos tipos de frijoles, maíz y tomate cocidos con condimento para tacos y servidos con cheddar y chips de tortilla.",
@@ -876,18 +1836,25 @@
       "Prueba, agrega sal si hace falta y sirve en platos hondos.",
       "Termina cada plato con el cheddar y un puñado de chips de tortilla triturados."
     ],
-    "equipment": ["stovetop"],
+    "equipment": [
+      "stovetop"
+    ],
     "active_minutes": 10,
     "tip": "Freezes for 3 months; keep the chips and cheese aside and add them when you serve.",
     "tip_es": "Se congela hasta 3 meses; guarda los chips de tortilla y el queso aparte y agrégalos al servir.",
     "photo_url": "https://images.unsplash.com/photo-1790701909034-6c7b45c7b58a",
-    "photo_credit": { "name": "Chad Montano", "url": "https://unsplash.com/photos/chili-bowl-with-cheese-and-cream-HNVi6m5KCr8" }
+    "photo_credit": {
+      "name": "Chad Montano",
+      "url": "https://unsplash.com/photos/chili-bowl-with-cheese-and-cream-HNVi6m5KCr8"
+    }
   },
   {
     "slug": "stuffed-pepper-soup",
     "name": "Stuffed Pepper Soup",
     "meal_type": "dinner",
-    "diet_tags": [],
+    "diet_tags": [
+      "gluten_free"
+    ],
     "servings": 6,
     "prep_minutes": 45,
     "batch_friendly": true,
@@ -901,19 +1868,64 @@
       "Taste, adjust the salt and serve sprinkled with the parmesan."
     ],
     "ingredients": [
-      { "id": "ground_beef", "qty": 1 },
-      { "id": "olive_oil", "qty": 1 },
-      { "id": "onion_yellow", "qty": 1, "note": "diced", "note_es": "en cubitos" },
-      { "id": "bell_pepper", "qty": 3, "note": "diced", "note_es": "en cubitos" },
-      { "id": "garlic", "qty": 3, "note": "minced", "note_es": "picado" },
-      { "id": "italian_seasoning", "qty": 1.5 },
-      { "id": "diced_tomatoes", "qty": 1 },
-      { "id": "tomato_sauce", "qty": 1 },
-      { "id": "beef_broth", "qty": 4 },
-      { "id": "rice_white", "qty": 0.75 },
-      { "id": "parmesan", "qty": 0.25 },
-      { "id": "salt", "qty": 1 },
-      { "id": "black_pepper", "qty": 0.25 }
+      {
+        "id": "ground_beef",
+        "qty": 1
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 3,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1.5
+      },
+      {
+        "id": "diced_tomatoes",
+        "qty": 1
+      },
+      {
+        "id": "tomato_sauce",
+        "qty": 1
+      },
+      {
+        "id": "beef_broth",
+        "qty": 4
+      },
+      {
+        "id": "rice_white",
+        "qty": 0.75
+      },
+      {
+        "id": "parmesan",
+        "qty": 0.25
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      }
     ],
     "name_es": "Sopa de pimientos rellenos",
     "description_es": "Todo lo que lleva un pimiento relleno, pero en la olla: carne molida, pimientos, tomate y arroz en un caldo sabroso.",
@@ -925,18 +1937,26 @@
       "Incorpora el arroz, baja el fuego, tapa y cocina de 18 a 20 minutos, revolviendo una o dos veces, hasta que el arroz esté tierno.",
       "Prueba, ajusta la sal y sirve con el parmesano por encima."
     ],
-    "equipment": ["stovetop"],
+    "equipment": [
+      "stovetop"
+    ],
     "active_minutes": 15,
     "tip": "The rice keeps swelling as it sits; thin leftovers with a little broth or water when reheating.",
     "tip_es": "El arroz sigue hinchándose al reposar; aligera lo que sobre con un poco de caldo o agua al recalentar.",
     "photo_url": "https://images.unsplash.com/photo-1666819632298-fe15dc7d4c34",
-    "photo_credit": { "name": "Leanna Myers", "url": "https://unsplash.com/photos/a-bowl-of-soup-with-a-spoon-omP-kDbTc8w" }
+    "photo_credit": {
+      "name": "Leanna Myers",
+      "url": "https://unsplash.com/photos/a-bowl-of-soup-with-a-spoon-omP-kDbTc8w"
+    }
   },
   {
     "slug": "albondigas-mexican-meatball-soup",
     "name": "Albondigas (Mexican Meatball Soup)",
     "meal_type": "dinner",
-    "diet_tags": [],
+    "diet_tags": [
+      "dairy_free",
+      "gluten_free"
+    ],
     "servings": 4,
     "prep_minutes": 55,
     "batch_friendly": true,
@@ -951,21 +1971,80 @@
       "Serve in bowls with the rest of the cilantro and lime wedges to squeeze over."
     ],
     "ingredients": [
-      { "id": "ground_beef", "qty": 1 },
-      { "id": "rice_white", "qty": 0.25 },
-      { "id": "eggs", "qty": 1 },
-      { "id": "cilantro", "qty": 0.5, "note": "chopped", "note_es": "picado" },
-      { "id": "garlic", "qty": 4, "note": "minced", "note_es": "picado" },
-      { "id": "cumin", "qty": 1 },
-      { "id": "oregano", "qty": 0.5 },
-      { "id": "beef_broth", "qty": 6 },
-      { "id": "tomato_sauce", "qty": 1 },
-      { "id": "onion_yellow", "qty": 1, "note": "diced", "note_es": "en cubitos" },
-      { "id": "carrot", "qty": 0.5, "note": "sliced", "note_es": "en rodajas" },
-      { "id": "potato_russet", "qty": 0.75, "note": "peeled, bite-size cubes", "note_es": "peladas, en cubos chicos" },
-      { "id": "zucchini", "qty": 1, "note": "half-moons", "note_es": "en medias lunas" },
-      { "id": "lime", "qty": 1, "note": "cut into wedges", "note_es": "en gajos" },
-      { "id": "salt", "qty": 1.25 }
+      {
+        "id": "ground_beef",
+        "qty": 1
+      },
+      {
+        "id": "rice_white",
+        "qty": 0.25
+      },
+      {
+        "id": "eggs",
+        "qty": 1
+      },
+      {
+        "id": "cilantro",
+        "qty": 0.5,
+        "note": "chopped",
+        "note_es": "picado"
+      },
+      {
+        "id": "garlic",
+        "qty": 4,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "cumin",
+        "qty": 1
+      },
+      {
+        "id": "oregano",
+        "qty": 0.5
+      },
+      {
+        "id": "beef_broth",
+        "qty": 6
+      },
+      {
+        "id": "tomato_sauce",
+        "qty": 1
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "carrot",
+        "qty": 0.5,
+        "note": "sliced",
+        "note_es": "en rodajas"
+      },
+      {
+        "id": "potato_russet",
+        "qty": 0.75,
+        "note": "peeled, bite-size cubes",
+        "note_es": "peladas, en cubos chicos"
+      },
+      {
+        "id": "zucchini",
+        "qty": 1,
+        "note": "half-moons",
+        "note_es": "en medias lunas"
+      },
+      {
+        "id": "lime",
+        "qty": 1,
+        "note": "cut into wedges",
+        "note_es": "en gajos"
+      },
+      {
+        "id": "salt",
+        "qty": 1.25
+      }
     ],
     "name_es": "Sopa de albóndigas a la mexicana",
     "description_es": "Albóndigas tiernas de carne y arroz cocidas con zanahoria, papa y calabacín en un caldo ligero de tomate.",
@@ -978,18 +2057,25 @@
       "Agrega el calabacín y cocina de 8 a 10 minutos más hasta que las verduras estén tiernas y el arroz de una albóndiga esté blando al abrirla.",
       "Sirve en platos hondos con el resto del cilantro y gajos de lima para exprimir."
     ],
-    "equipment": ["stovetop"],
+    "equipment": [
+      "stovetop"
+    ],
     "active_minutes": 25,
     "tip": "Keeps 3 days in the fridge and freezes well; warm corn tortillas on the side stretch it further.",
     "tip_es": "Dura 3 días en el refrigerador y se congela bien; acompañarla con tortillas de maíz calientes la hace rendir más.",
     "photo_url": "https://images.unsplash.com/photo-1673436977889-334fcab20436",
-    "photo_credit": { "name": "Elena Leya", "url": "https://unsplash.com/photos/a-bowl-of-soup-with-meatballs-and-vegetables-y-wM_h_27Fg" }
+    "photo_credit": {
+      "name": "Elena Leya",
+      "url": "https://unsplash.com/photos/a-bowl-of-soup-with-meatballs-and-vegetables-y-wM_h_27Fg"
+    }
   },
   {
     "slug": "chicken-and-dumplings",
     "name": "Chicken and Dumplings",
     "meal_type": "dinner",
-    "diet_tags": ["high_protein"],
+    "diet_tags": [
+      "high_protein"
+    ],
     "servings": 4,
     "prep_minutes": 60,
     "batch_friendly": true,
@@ -1004,20 +2090,70 @@
       "Cover tightly and cook over low heat for 15 minutes without lifting the lid, until the dumplings are puffed and a toothpick poked into one comes out clean."
     ],
     "ingredients": [
-      { "id": "chicken_thigh", "qty": 1.5 },
-      { "id": "butter", "qty": 4 },
-      { "id": "onion_yellow", "qty": 1, "note": "diced", "note_es": "en cubitos" },
-      { "id": "carrot", "qty": 0.5, "note": "sliced", "note_es": "en rodajas" },
-      { "id": "celery", "qty": 3, "note": "sliced", "note_es": "en rodajas" },
-      { "id": "garlic", "qty": 2, "note": "minced", "note_es": "picado" },
-      { "id": "thyme", "qty": 1 },
-      { "id": "flour", "qty": 2 },
-      { "id": "chicken_broth", "qty": 5 },
-      { "id": "baking_powder", "qty": 2 },
-      { "id": "milk", "qty": 1.25 },
-      { "id": "peas_frozen", "qty": 1 },
-      { "id": "salt", "qty": 1.5 },
-      { "id": "black_pepper", "qty": 0.5 }
+      {
+        "id": "chicken_thigh",
+        "qty": 1.5
+      },
+      {
+        "id": "butter",
+        "qty": 4
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "carrot",
+        "qty": 0.5,
+        "note": "sliced",
+        "note_es": "en rodajas"
+      },
+      {
+        "id": "celery",
+        "qty": 3,
+        "note": "sliced",
+        "note_es": "en rodajas"
+      },
+      {
+        "id": "garlic",
+        "qty": 2,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "thyme",
+        "qty": 1
+      },
+      {
+        "id": "flour",
+        "qty": 2
+      },
+      {
+        "id": "chicken_broth",
+        "qty": 5
+      },
+      {
+        "id": "baking_powder",
+        "qty": 2
+      },
+      {
+        "id": "milk",
+        "qty": 1.25
+      },
+      {
+        "id": "peas_frozen",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 1.5
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.5
+      }
     ],
     "name_es": "Guiso de pollo con dumplings",
     "description_es": "Muslos de pollo desmenuzados y verduras en una salsa espesa, con bollitos de masa esponjosos cocidos al vapor en la misma olla.",
@@ -1030,18 +2166,25 @@
       "Deja caer cucharadas colmadas de masa sobre la superficie, con un poco de espacio entre una y otra.",
       "Tapa bien y cocina a fuego bajo 15 minutos sin levantar la tapa, hasta que los bollitos estén inflados y un palillo salga limpio al pincharlos."
     ],
-    "equipment": ["stovetop"],
+    "equipment": [
+      "stovetop"
+    ],
     "active_minutes": 25,
     "tip": "Leftover dumplings soak up the gravy, so add a splash of broth or water when reheating.",
     "tip_es": "Los bollitos absorben la salsa al guardarlos, así que agrega un chorrito de caldo o agua al recalentar.",
     "photo_url": "https://images.unsplash.com/photo-1762388371122-3ad9b573588e",
-    "photo_credit": { "name": "Elijah Crouch", "url": "https://unsplash.com/photos/golden-brown-biscuits-baked-in-a-cast-iron-skillet-NcsdLcklhMQ" }
+    "photo_credit": {
+      "name": "Elijah Crouch",
+      "url": "https://unsplash.com/photos/golden-brown-biscuits-baked-in-a-cast-iron-skillet-NcsdLcklhMQ"
+    }
   },
   {
     "slug": "ground-beef-shepherds-pie",
     "name": "Ground Beef Shepherd's Pie",
     "meal_type": "dinner",
-    "diet_tags": ["high_protein"],
+    "diet_tags": [
+      "high_protein"
+    ],
     "servings": 4,
     "prep_minutes": 60,
     "batch_friendly": true,
@@ -1056,21 +2199,74 @@
       "Bake for 20 to 25 minutes until the filling bubbles at the edges and the potato peaks are golden, then rest for 5 minutes before serving."
     ],
     "ingredients": [
-      { "id": "ground_beef", "qty": 1.25 },
-      { "id": "potato_russet", "qty": 2, "note": "peeled, cut into chunks", "note_es": "peladas, en trozos" },
-      { "id": "butter", "qty": 3 },
-      { "id": "milk", "qty": 0.5 },
-      { "id": "onion_yellow", "qty": 1, "note": "diced", "note_es": "en cubitos" },
-      { "id": "carrot", "qty": 0.5, "note": "diced", "note_es": "en cubitos" },
-      { "id": "garlic", "qty": 2, "note": "minced", "note_es": "picado" },
-      { "id": "tomato_paste", "qty": 2 },
-      { "id": "thyme", "qty": 1 },
-      { "id": "flour", "qty": 0.125 },
-      { "id": "beef_broth", "qty": 1 },
-      { "id": "worcestershire", "qty": 1 },
-      { "id": "peas_frozen", "qty": 1 },
-      { "id": "salt", "qty": 1.5 },
-      { "id": "black_pepper", "qty": 0.5 }
+      {
+        "id": "ground_beef",
+        "qty": 1.25
+      },
+      {
+        "id": "potato_russet",
+        "qty": 2,
+        "note": "peeled, cut into chunks",
+        "note_es": "peladas, en trozos"
+      },
+      {
+        "id": "butter",
+        "qty": 3
+      },
+      {
+        "id": "milk",
+        "qty": 0.5
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "carrot",
+        "qty": 0.5,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "garlic",
+        "qty": 2,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "tomato_paste",
+        "qty": 2
+      },
+      {
+        "id": "thyme",
+        "qty": 1
+      },
+      {
+        "id": "flour",
+        "qty": 0.125
+      },
+      {
+        "id": "beef_broth",
+        "qty": 1
+      },
+      {
+        "id": "worcestershire",
+        "qty": 1
+      },
+      {
+        "id": "peas_frozen",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 1.5
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.5
+      }
     ],
     "name_es": "Pastel de carne y papa",
     "description_es": "Carne molida, zanahoria y arvejas en una salsa sustanciosa, horneadas bajo una capa dorada de puré de papa con mantequilla.",
@@ -1083,18 +2279,27 @@
       "Distribuye la carne en una fuente grande para horno, cubre con el puré y marca la superficie con un tenedor.",
       "Hornea de 20 a 25 minutos hasta que el relleno burbujee en los bordes y los picos del puré estén dorados, y deja reposar 5 minutos antes de servir."
     ],
-    "equipment": ["stovetop", "oven"],
+    "equipment": [
+      "stovetop",
+      "oven"
+    ],
     "active_minutes": 30,
     "tip": "Assemble it the day before and keep it covered in the fridge; add 10 minutes to the baking time.",
     "tip_es": "Ármalo el día anterior y guárdalo tapado en el refrigerador; súmale 10 minutos al horneado.",
     "photo_url": "https://images.unsplash.com/photo-1696935257293-9ec4f03074a1",
-    "photo_credit": { "name": "The Fry Family Food Co.", "url": "https://unsplash.com/photos/a-casserole-dish-on-a-plate-with-a-fork-next-to-it-LHr6EN-B8NQ" }
+    "photo_credit": {
+      "name": "The Fry Family Food Co.",
+      "url": "https://unsplash.com/photos/a-casserole-dish-on-a-plate-with-a-fork-next-to-it-LHr6EN-B8NQ"
+    }
   },
   {
     "slug": "slow-cooker-green-chile-pork-stew",
     "name": "Slow Cooker Green Chile Pork Stew",
     "meal_type": "dinner",
-    "diet_tags": ["high_protein"],
+    "diet_tags": [
+      "dairy_free",
+      "high_protein"
+    ],
     "servings": 6,
     "prep_minutes": 450,
     "batch_friendly": true,
@@ -1108,19 +2313,68 @@
       "Serve in bowls with the rest of the cilantro and the tortillas."
     ],
     "ingredients": [
-      { "id": "pork_shoulder", "qty": 2 },
-      { "id": "onion_yellow", "qty": 1, "note": "diced", "note_es": "en cubitos" },
-      { "id": "garlic", "qty": 5, "note": "minced", "note_es": "picado" },
-      { "id": "potato_russet", "qty": 1.5, "note": "peeled, cut into chunks", "note_es": "peladas, en trozos" },
-      { "id": "green_chiles", "qty": 3 },
-      { "id": "cumin", "qty": 2 },
-      { "id": "oregano", "qty": 1 },
-      { "id": "chicken_broth", "qty": 3 },
-      { "id": "lime", "qty": 1, "note": "juiced", "note_es": "en jugo" },
-      { "id": "cilantro", "qty": 0.25, "note": "chopped", "note_es": "picado" },
-      { "id": "tortilla_flour", "qty": 6 },
-      { "id": "salt", "qty": 1.5 },
-      { "id": "black_pepper", "qty": 0.5 }
+      {
+        "id": "pork_shoulder",
+        "qty": 2
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "garlic",
+        "qty": 5,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "potato_russet",
+        "qty": 1.5,
+        "note": "peeled, cut into chunks",
+        "note_es": "peladas, en trozos"
+      },
+      {
+        "id": "green_chiles",
+        "qty": 3
+      },
+      {
+        "id": "cumin",
+        "qty": 2
+      },
+      {
+        "id": "oregano",
+        "qty": 1
+      },
+      {
+        "id": "chicken_broth",
+        "qty": 3
+      },
+      {
+        "id": "lime",
+        "qty": 1,
+        "note": "juiced",
+        "note_es": "en jugo"
+      },
+      {
+        "id": "cilantro",
+        "qty": 0.25,
+        "note": "chopped",
+        "note_es": "picado"
+      },
+      {
+        "id": "tortilla_flour",
+        "qty": 6
+      },
+      {
+        "id": "salt",
+        "qty": 1.5
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.5
+      }
     ],
     "name_es": "Guiso de cerdo con chile verde en olla de cocción lenta",
     "description_es": "Paleta de cerdo, papas y chiles verdes cocidos a fuego lento hasta que la carne se deshace, servidos con tortillas calientes.",
@@ -1132,18 +2386,25 @@
       "Incorpora el jugo de lima y la mitad del cilantro, prueba y ajusta la sal.",
       "Sirve en platos hondos con el resto del cilantro y las tortillas."
     ],
-    "equipment": ["slow_cooker"],
+    "equipment": [
+      "slow_cooker"
+    ],
     "active_minutes": 20,
     "tip": "Leftovers make great burrito or quesadilla filling and freeze for 3 months.",
     "tip_es": "Lo que sobre es un gran relleno para burritos o quesadillas y se congela hasta 3 meses.",
     "photo_url": "https://images.unsplash.com/photo-1792427566393-5c55fb19adb7",
-    "photo_credit": { "name": "Michael Navarro", "url": "https://unsplash.com/photos/green-soup-with-meat-and-corn-4zjhGV486rc" }
+    "photo_credit": {
+      "name": "Michael Navarro",
+      "url": "https://unsplash.com/photos/green-soup-with-meat-and-corn-4zjhGV486rc"
+    }
   },
   {
     "slug": "king-ranch-chicken-casserole",
     "name": "King Ranch Chicken Casserole",
     "meal_type": "dinner",
-    "diet_tags": ["high_protein"],
+    "diet_tags": [
+      "high_protein"
+    ],
     "servings": 6,
     "prep_minutes": 60,
     "batch_friendly": true,
@@ -1158,21 +2419,72 @@
       "Bake for 25 to 30 minutes until bubbling at the edges and golden on top, then rest for 10 minutes before cutting."
     ],
     "ingredients": [
-      { "id": "rotisserie_chicken", "qty": 1 },
-      { "id": "butter", "qty": 3 },
-      { "id": "onion_yellow", "qty": 1, "note": "diced", "note_es": "en cubitos" },
-      { "id": "bell_pepper", "qty": 1, "note": "diced", "note_es": "en cubitos" },
-      { "id": "garlic", "qty": 2, "note": "minced", "note_es": "picado" },
-      { "id": "chili_powder", "qty": 2 },
-      { "id": "cumin", "qty": 1 },
-      { "id": "flour", "qty": 0.25 },
-      { "id": "chicken_broth", "qty": 1.5 },
-      { "id": "diced_tomatoes", "qty": 1 },
-      { "id": "green_chiles", "qty": 1 },
-      { "id": "sour_cream", "qty": 0.5 },
-      { "id": "tortilla_corn", "qty": 12 },
-      { "id": "cheddar", "qty": 2.5 },
-      { "id": "salt", "qty": 0.75 }
+      {
+        "id": "rotisserie_chicken",
+        "qty": 1
+      },
+      {
+        "id": "butter",
+        "qty": 3
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "garlic",
+        "qty": 2,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "chili_powder",
+        "qty": 2
+      },
+      {
+        "id": "cumin",
+        "qty": 1
+      },
+      {
+        "id": "flour",
+        "qty": 0.25
+      },
+      {
+        "id": "chicken_broth",
+        "qty": 1.5
+      },
+      {
+        "id": "diced_tomatoes",
+        "qty": 1
+      },
+      {
+        "id": "green_chiles",
+        "qty": 1
+      },
+      {
+        "id": "sour_cream",
+        "qty": 0.5
+      },
+      {
+        "id": "tortilla_corn",
+        "qty": 12
+      },
+      {
+        "id": "cheddar",
+        "qty": 2.5
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      }
     ],
     "name_es": "Cazuela de pollo King Ranch",
     "description_es": "Cazuela texana de pollo desmenuzado, tortillas de maíz, tomate y chiles verdes en salsa cremosa, gratinada con cheddar.",
@@ -1185,18 +2497,27 @@
       "Extiende encima un tercio de la mezcla de pollo, espolvorea un tercio del cheddar y repite dos veces más, terminando con cheddar.",
       "Hornea de 25 a 30 minutos hasta que burbujee en los bordes y esté dorado por encima, y deja reposar 10 minutos antes de cortar."
     ],
-    "equipment": ["stovetop", "oven"],
+    "equipment": [
+      "stovetop",
+      "oven"
+    ],
     "active_minutes": 25,
     "tip": "Cut leftovers into squares and freeze them individually for quick lunches.",
     "tip_es": "Corta lo que sobre en cuadrados y congélalos por separado para almuerzos rápidos.",
     "photo_url": "https://images.unsplash.com/photo-1586032340735-01a5bc5495e9",
-    "photo_credit": { "name": "micheile henderson", "url": "https://unsplash.com/photos/brown-and-black-round-plate-with-food-d-MYIZBu44c" }
+    "photo_credit": {
+      "name": "micheile henderson",
+      "url": "https://unsplash.com/photos/brown-and-black-round-plate-with-food-d-MYIZBu44c"
+    }
   },
   {
     "slug": "hamburger-vegetable-soup",
     "name": "Hamburger Vegetable Soup",
     "meal_type": "dinner",
-    "diet_tags": [],
+    "diet_tags": [
+      "dairy_free",
+      "gluten_free"
+    ],
     "servings": 6,
     "prep_minutes": 45,
     "batch_friendly": true,
@@ -1210,19 +2531,66 @@
       "Taste, adjust the salt and serve."
     ],
     "ingredients": [
-      { "id": "ground_beef", "qty": 1 },
-      { "id": "onion_yellow", "qty": 1, "note": "diced", "note_es": "en cubitos" },
-      { "id": "celery", "qty": 2, "note": "sliced", "note_es": "en rodajas" },
-      { "id": "garlic", "qty": 2, "note": "minced", "note_es": "picado" },
-      { "id": "tomato_paste", "qty": 2 },
-      { "id": "italian_seasoning", "qty": 1 },
-      { "id": "potato_russet", "qty": 1, "note": "peeled, bite-size cubes", "note_es": "peladas, en cubos chicos" },
-      { "id": "diced_tomatoes", "qty": 1 },
-      { "id": "beef_broth", "qty": 4 },
-      { "id": "worcestershire", "qty": 1 },
-      { "id": "mixed_veg_frozen", "qty": 2.5 },
-      { "id": "salt", "qty": 1 },
-      { "id": "black_pepper", "qty": 0.25 }
+      {
+        "id": "ground_beef",
+        "qty": 1
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "celery",
+        "qty": 2,
+        "note": "sliced",
+        "note_es": "en rodajas"
+      },
+      {
+        "id": "garlic",
+        "qty": 2,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "tomato_paste",
+        "qty": 2
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1
+      },
+      {
+        "id": "potato_russet",
+        "qty": 1,
+        "note": "peeled, bite-size cubes",
+        "note_es": "peladas, en cubos chicos"
+      },
+      {
+        "id": "diced_tomatoes",
+        "qty": 1
+      },
+      {
+        "id": "beef_broth",
+        "qty": 4
+      },
+      {
+        "id": "worcestershire",
+        "qty": 1
+      },
+      {
+        "id": "mixed_veg_frozen",
+        "qty": 2.5
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      }
     ],
     "name_es": "Sopa de carne molida con verduras",
     "description_es": "Carne molida, papa y verduras mixtas en un caldo de tomate y carne: una olla grande y económica que alcanza para todos.",
@@ -1234,18 +2602,25 @@
       "Incorpora las verduras congeladas y cocina destapado de 8 a 10 minutos hasta que todo esté tierno.",
       "Prueba, ajusta la sal y sirve."
     ],
-    "equipment": ["stovetop"],
+    "equipment": [
+      "stovetop"
+    ],
     "active_minutes": 15,
     "tip": "Freezes for 3 months in single portions; any vegetable odds and ends in the fridge can go in.",
     "tip_es": "Se congela hasta 3 meses en porciones individuales; puedes agregar cualquier resto de verdura que tengas en el refrigerador.",
     "photo_url": "https://images.unsplash.com/photo-1611068120813-eca5a8cbf793",
-    "photo_credit": { "name": "Nathan Dumlao", "url": "https://unsplash.com/photos/soup-in-white-ceramic-bowl-5eROVOJW2bA" }
+    "photo_credit": {
+      "name": "Nathan Dumlao",
+      "url": "https://unsplash.com/photos/soup-in-white-ceramic-bowl-5eROVOJW2bA"
+    }
   },
   {
     "slug": "baked-spaghetti-casserole",
     "name": "Baked Spaghetti Casserole",
     "meal_type": "dinner",
-    "diet_tags": ["high_protein"],
+    "diet_tags": [
+      "high_protein"
+    ],
     "servings": 6,
     "prep_minutes": 55,
     "batch_friendly": true,
@@ -1260,17 +2635,56 @@
       "Bake for 25 to 30 minutes until the sauce bubbles at the edges and the cheese is golden, then rest for 10 minutes before cutting."
     ],
     "ingredients": [
-      { "id": "pasta_spaghetti", "qty": 12 },
-      { "id": "ground_beef", "qty": 1 },
-      { "id": "onion_yellow", "qty": 1, "note": "diced", "note_es": "en cubitos" },
-      { "id": "garlic", "qty": 3, "note": "minced", "note_es": "picado" },
-      { "id": "italian_seasoning", "qty": 1 },
-      { "id": "marinara", "qty": 3 },
-      { "id": "cream_cheese", "qty": 4, "note": "softened", "note_es": "a temperatura ambiente" },
-      { "id": "cottage_cheese", "qty": 1 },
-      { "id": "parmesan", "qty": 0.25 },
-      { "id": "mozzarella", "qty": 2 },
-      { "id": "salt", "qty": 0.5 }
+      {
+        "id": "pasta_spaghetti",
+        "qty": 12
+      },
+      {
+        "id": "ground_beef",
+        "qty": 1
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1
+      },
+      {
+        "id": "marinara",
+        "qty": 3
+      },
+      {
+        "id": "cream_cheese",
+        "qty": 4,
+        "note": "softened",
+        "note_es": "a temperatura ambiente"
+      },
+      {
+        "id": "cottage_cheese",
+        "qty": 1
+      },
+      {
+        "id": "parmesan",
+        "qty": 0.25
+      },
+      {
+        "id": "mozzarella",
+        "qty": 2
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      }
     ],
     "name_es": "Espagueti al horno con carne y queso",
     "description_es": "Espagueti en capas con un relleno cremoso de quesos y salsa de carne, gratinado con mozzarella hasta que burbujea.",
@@ -1283,18 +2697,27 @@
       "Vierte la salsa de carne por encima y espolvorea la mozzarella y el resto del parmesano.",
       "Hornea de 25 a 30 minutos hasta que la salsa burbujee en los bordes y el queso esté dorado, y deja reposar 10 minutos antes de cortar."
     ],
-    "equipment": ["stovetop", "oven"],
+    "equipment": [
+      "stovetop",
+      "oven"
+    ],
     "active_minutes": 20,
     "tip": "Assemble ahead and freeze unbaked for up to 2 months; thaw overnight in the fridge before baking.",
     "tip_es": "Ármalo con anticipación y congélalo sin hornear hasta 2 meses; descongélalo en el refrigerador la noche anterior.",
     "photo_url": "https://images.unsplash.com/photo-1645453015291-0a80bbdeeea6",
-    "photo_credit": { "name": "Some Tale", "url": "https://unsplash.com/photos/a-bowl-of-spaghetti-on-a-wooden-tray-IGe6IV7S_IU" }
+    "photo_credit": {
+      "name": "Some Tale",
+      "url": "https://unsplash.com/photos/a-bowl-of-spaghetti-on-a-wooden-tray-IGe6IV7S_IU"
+    }
   },
   {
     "slug": "smoked-sausage-lentil-stew",
     "name": "Smoked Sausage and Lentil Stew",
     "meal_type": "dinner",
-    "diet_tags": [],
+    "diet_tags": [
+      "dairy_free",
+      "gluten_free"
+    ],
     "servings": 4,
     "prep_minutes": 50,
     "batch_friendly": true,
@@ -1309,21 +2732,76 @@
       "Stir in the vinegar, taste, adjust the salt and serve."
     ],
     "ingredients": [
-      { "id": "sausage_smoked", "qty": 1, "note": "sliced", "note_es": "en rodajas" },
-      { "id": "olive_oil", "qty": 1 },
-      { "id": "onion_yellow", "qty": 1, "note": "diced", "note_es": "en cubitos" },
-      { "id": "carrot", "qty": 0.5, "note": "diced", "note_es": "en cubitos" },
-      { "id": "celery", "qty": 2, "note": "diced", "note_es": "en cubitos" },
-      { "id": "garlic", "qty": 3, "note": "minced", "note_es": "picado" },
-      { "id": "smoked_paprika", "qty": 1 },
-      { "id": "thyme", "qty": 0.5 },
-      { "id": "lentils", "qty": 1.25 },
-      { "id": "diced_tomatoes", "qty": 1 },
-      { "id": "chicken_broth", "qty": 5 },
-      { "id": "spinach", "qty": 3 },
-      { "id": "vinegar_cider", "qty": 1 },
-      { "id": "salt", "qty": 0.5 },
-      { "id": "black_pepper", "qty": 0.25 }
+      {
+        "id": "sausage_smoked",
+        "qty": 1,
+        "note": "sliced",
+        "note_es": "en rodajas"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "carrot",
+        "qty": 0.5,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "celery",
+        "qty": 2,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "smoked_paprika",
+        "qty": 1
+      },
+      {
+        "id": "thyme",
+        "qty": 0.5
+      },
+      {
+        "id": "lentils",
+        "qty": 1.25
+      },
+      {
+        "id": "diced_tomatoes",
+        "qty": 1
+      },
+      {
+        "id": "chicken_broth",
+        "qty": 5
+      },
+      {
+        "id": "spinach",
+        "qty": 3
+      },
+      {
+        "id": "vinegar_cider",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      }
     ],
     "name_es": "Guiso de lentejas con salchicha ahumada",
     "description_es": "Lentejas secas cocidas con salchicha ahumada dorada, verduras, tomate y espinaca en un guiso espeso y ahumado.",
@@ -1336,18 +2814,25 @@
       "Incorpora la espinaca, la sal y la pimienta y cocina 2 minutos hasta que la espinaca se marchite.",
       "Incorpora el vinagre, prueba, ajusta la sal y sirve."
     ],
-    "equipment": ["stovetop"],
+    "equipment": [
+      "stovetop"
+    ],
     "active_minutes": 15,
     "tip": "Salt the lentils at the end: the sausage and broth are already salty and you may need less than you think.",
     "tip_es": "Sala las lentejas al final: la salchicha y el caldo ya son salados y puede que necesites menos de lo que crees.",
     "photo_url": "https://images.unsplash.com/photo-1621179815459-073503f7b444",
-    "photo_credit": { "name": "Marlon Alves", "url": "https://unsplash.com/photos/white-ceramic-bowl-with-soup-nHmr9pU3tNs" }
+    "photo_credit": {
+      "name": "Marlon Alves",
+      "url": "https://unsplash.com/photos/white-ceramic-bowl-with-soup-nHmr9pU3tNs"
+    }
   },
   {
     "slug": "ham-hash-brown-casserole",
     "name": "Ham and Cheddar Hash Brown Casserole",
     "meal_type": "dinner",
-    "diet_tags": [],
+    "diet_tags": [
+      "gluten_free"
+    ],
     "servings": 6,
     "prep_minutes": 65,
     "batch_friendly": true,
@@ -1361,17 +2846,58 @@
       "Rest for 5 minutes, then scatter the green onion over the top and serve."
     ],
     "ingredients": [
-      { "id": "hash_browns", "qty": 8, "note": "thawed", "note_es": "descongeladas" },
-      { "id": "ham_deli", "qty": 9, "note": "diced", "note_es": "en cubitos" },
-      { "id": "butter", "qty": 4 },
-      { "id": "sour_cream", "qty": 1.5 },
-      { "id": "milk", "qty": 0.5 },
-      { "id": "onion_yellow", "qty": 1, "note": "finely diced", "note_es": "en cubitos finos" },
-      { "id": "cheddar", "qty": 2 },
-      { "id": "garlic_powder", "qty": 1 },
-      { "id": "green_onion", "qty": 0.5, "note": "sliced", "note_es": "en rodajas" },
-      { "id": "salt", "qty": 0.5 },
-      { "id": "black_pepper", "qty": 0.5 }
+      {
+        "id": "hash_browns",
+        "qty": 8,
+        "note": "thawed",
+        "note_es": "descongeladas"
+      },
+      {
+        "id": "ham_deli",
+        "qty": 9,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "butter",
+        "qty": 4
+      },
+      {
+        "id": "sour_cream",
+        "qty": 1.5
+      },
+      {
+        "id": "milk",
+        "qty": 0.5
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "finely diced",
+        "note_es": "en cubitos finos"
+      },
+      {
+        "id": "cheddar",
+        "qty": 2
+      },
+      {
+        "id": "garlic_powder",
+        "qty": 1
+      },
+      {
+        "id": "green_onion",
+        "qty": 0.5,
+        "note": "sliced",
+        "note_es": "en rodajas"
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.5
+      }
     ],
     "name_es": "Gratinado de papa rallada con jamón y cheddar",
     "description_es": "Papa rallada horneada con jamón en cubitos, cheddar, crema agria y cebolla hasta quedar dorada y crujiente en los bordes.",
@@ -1383,18 +2909,25 @@
       "Hornea destapado de 45 a 50 minutos hasta que el centro burbujee y los bordes estén bien dorados y crujientes.",
       "Deja reposar 5 minutos, esparce la cebolla verde por encima y sirve."
     ],
-    "equipment": ["oven"],
+    "equipment": [
+      "oven"
+    ],
     "active_minutes": 15,
     "tip": "Thaw the hash browns in the fridge overnight; frozen ones release water and the casserole turns soggy.",
     "tip_es": "Descongela la papa rallada en el refrigerador la noche anterior; si va congelada suelta agua y el gratinado queda aguado.",
     "photo_url": "https://images.unsplash.com/photo-1645453014403-4ad5170a386c",
-    "photo_credit": { "name": "Some Tale", "url": "https://unsplash.com/photos/a-casserole-dish-with-cheese-and-parsley-lqRfdLcZm_w" }
+    "photo_credit": {
+      "name": "Some Tale",
+      "url": "https://unsplash.com/photos/a-casserole-dish-with-cheese-and-parsley-lqRfdLcZm_w"
+    }
   },
   {
     "slug": "ham-and-white-bean-soup",
     "name": "Ham and White Bean Soup",
     "meal_type": "dinner",
-    "diet_tags": [],
+    "diet_tags": [
+      "dairy_free"
+    ],
     "servings": 4,
     "prep_minutes": 35,
     "batch_friendly": true,
@@ -1408,18 +2941,70 @@
       "Taste before adding any salt, since the ham is salty, then stir in the parsley and serve with the bread."
     ],
     "ingredients": [
-      { "id": "ham_deli", "qty": 9, "note": "diced", "note_es": "en cubitos" },
-      { "id": "olive_oil", "qty": 1 },
-      { "id": "onion_yellow", "qty": 1, "note": "diced", "note_es": "en cubitos" },
-      { "id": "carrot", "qty": 0.5, "note": "diced", "note_es": "en cubitos" },
-      { "id": "celery", "qty": 2, "note": "diced", "note_es": "en cubitos" },
-      { "id": "garlic", "qty": 3, "note": "minced", "note_es": "picado" },
-      { "id": "thyme", "qty": 1 },
-      { "id": "white_beans", "qty": 3, "note": "drained and rinsed", "note_es": "escurridos y enjuagados" },
-      { "id": "chicken_broth", "qty": 4 },
-      { "id": "parsley", "qty": 0.25, "note": "chopped", "note_es": "picado" },
-      { "id": "french_bread", "qty": 0.5, "note": "sliced", "note_es": "en rebanadas" },
-      { "id": "black_pepper", "qty": 0.5 }
+      {
+        "id": "ham_deli",
+        "qty": 9,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "carrot",
+        "qty": 0.5,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "celery",
+        "qty": 2,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "thyme",
+        "qty": 1
+      },
+      {
+        "id": "white_beans",
+        "qty": 3,
+        "note": "drained and rinsed",
+        "note_es": "escurridos y enjuagados"
+      },
+      {
+        "id": "chicken_broth",
+        "qty": 4
+      },
+      {
+        "id": "parsley",
+        "qty": 0.25,
+        "note": "chopped",
+        "note_es": "picado"
+      },
+      {
+        "id": "french_bread",
+        "qty": 0.5,
+        "note": "sliced",
+        "note_es": "en rebanadas"
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.5
+      }
     ],
     "name_es": "Sopa de frijoles blancos con jamón",
     "description_es": "Jamón en cubitos y frijoles blancos cocidos con zanahoria, apio y tomillo en una sopa espesa y reconfortante.",
@@ -1431,18 +3016,25 @@
       "Aplasta más o menos una cuarta parte de los frijoles contra el borde de la olla para que el caldo quede cremoso.",
       "Prueba antes de agregar sal, porque el jamón ya es salado; incorpora el perejil y sirve con el pan."
     ],
-    "equipment": ["stovetop"],
+    "equipment": [
+      "stovetop"
+    ],
     "active_minutes": 15,
     "tip": "Leftover holiday ham or a ham bone works even better than deli ham here.",
     "tip_es": "Si te sobró jamón de una fiesta o tienes un hueso de jamón, queda todavía mejor que con jamón en rebanadas.",
     "photo_url": "https://images.unsplash.com/photo-1698917467449-08bcd1d9014b",
-    "photo_credit": { "name": "David de Andrés Martín", "url": "https://unsplash.com/photos/a-white-plate-topped-with-a-stew-of-beans-and-meat-9iJPST6E1-M" }
+    "photo_credit": {
+      "name": "David de Andrés Martín",
+      "url": "https://unsplash.com/photos/a-white-plate-topped-with-a-stew-of-beans-and-meat-9iJPST6E1-M"
+    }
   },
   {
     "slug": "chicken-tetrazzini",
     "name": "Chicken Tetrazzini",
     "meal_type": "dinner",
-    "diet_tags": ["high_protein"],
+    "diet_tags": [
+      "high_protein"
+    ],
     "servings": 6,
     "prep_minutes": 55,
     "batch_friendly": true,
@@ -1458,21 +3050,70 @@
       "Bake for 20 to 25 minutes until bubbling at the edges and golden on top."
     ],
     "ingredients": [
-      { "id": "pasta_spaghetti", "qty": 12 },
-      { "id": "rotisserie_chicken", "qty": 1 },
-      { "id": "butter", "qty": 4 },
-      { "id": "mushroom", "qty": 8, "note": "sliced", "note_es": "en láminas" },
-      { "id": "garlic", "qty": 3, "note": "minced", "note_es": "picado" },
-      { "id": "thyme", "qty": 0.5 },
-      { "id": "flour", "qty": 0.25 },
-      { "id": "chicken_broth", "qty": 2 },
-      { "id": "milk", "qty": 1.5 },
-      { "id": "parmesan", "qty": 0.75 },
-      { "id": "peas_frozen", "qty": 1 },
-      { "id": "mozzarella", "qty": 1 },
-      { "id": "breadcrumbs", "qty": 0.5 },
-      { "id": "salt", "qty": 0.75 },
-      { "id": "black_pepper", "qty": 0.25 }
+      {
+        "id": "pasta_spaghetti",
+        "qty": 12
+      },
+      {
+        "id": "rotisserie_chicken",
+        "qty": 1
+      },
+      {
+        "id": "butter",
+        "qty": 4
+      },
+      {
+        "id": "mushroom",
+        "qty": 8,
+        "note": "sliced",
+        "note_es": "en láminas"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "thyme",
+        "qty": 0.5
+      },
+      {
+        "id": "flour",
+        "qty": 0.25
+      },
+      {
+        "id": "chicken_broth",
+        "qty": 2
+      },
+      {
+        "id": "milk",
+        "qty": 1.5
+      },
+      {
+        "id": "parmesan",
+        "qty": 0.75
+      },
+      {
+        "id": "peas_frozen",
+        "qty": 1
+      },
+      {
+        "id": "mozzarella",
+        "qty": 1
+      },
+      {
+        "id": "breadcrumbs",
+        "qty": 0.5
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      }
     ],
     "name_es": "Tetrazzini de pollo",
     "description_es": "Espagueti, pollo desmenuzado, champiñones y arvejas en salsa cremosa de parmesano, horneado con una capa crujiente de pan rallado.",
@@ -1486,18 +3127,26 @@
       "Distribuye en una fuente grande para horno y cubre con la mozzarella, el pan rallado y el resto del parmesano.",
       "Hornea de 20 a 25 minutos hasta que burbujee en los bordes y esté dorado por encima."
     ],
-    "equipment": ["stovetop", "oven"],
+    "equipment": [
+      "stovetop",
+      "oven"
+    ],
     "active_minutes": 25,
     "tip": "A good way to use up leftover roast chicken or turkey; reheat covered with a splash of milk.",
     "tip_es": "Es una buena forma de aprovechar pollo o pavo asado que sobró; recalienta tapado con un chorrito de leche.",
     "photo_url": "https://images.unsplash.com/photo-1583744511860-2daadcb4666e",
-    "photo_credit": { "name": "engin akyurt", "url": "https://unsplash.com/photos/pasta-in-white-ceramic-bowl-Y3IuHd3ztMY" }
+    "photo_credit": {
+      "name": "engin akyurt",
+      "url": "https://unsplash.com/photos/pasta-in-white-ceramic-bowl-Y3IuHd3ztMY"
+    }
   },
   {
     "slug": "creamy-chicken-gnocchi-soup",
     "name": "Creamy Chicken Gnocchi Soup",
     "meal_type": "dinner",
-    "diet_tags": ["high_protein"],
+    "diet_tags": [
+      "high_protein"
+    ],
     "servings": 4,
     "prep_minutes": 40,
     "batch_friendly": true,
@@ -1511,21 +3160,76 @@
       "Stir in the spinach, cream, pepper and the rest of the salt and cook for 1 minute until the spinach wilts, then serve."
     ],
     "ingredients": [
-      { "id": "chicken_breast", "qty": 1, "note": "bite-size pieces", "note_es": "en trozos chicos" },
-      { "id": "butter", "qty": 2 },
-      { "id": "onion_yellow", "qty": 1, "note": "diced", "note_es": "en cubitos" },
-      { "id": "carrot", "qty": 0.5, "note": "diced", "note_es": "en cubitos" },
-      { "id": "celery", "qty": 2, "note": "diced", "note_es": "en cubitos" },
-      { "id": "garlic", "qty": 3, "note": "minced", "note_es": "picado" },
-      { "id": "thyme", "qty": 0.5 },
-      { "id": "flour", "qty": 0.25 },
-      { "id": "chicken_broth", "qty": 4 },
-      { "id": "milk", "qty": 1.5 },
-      { "id": "gnocchi", "qty": 16 },
-      { "id": "spinach", "qty": 3 },
-      { "id": "heavy_cream", "qty": 0.5 },
-      { "id": "salt", "qty": 1 },
-      { "id": "black_pepper", "qty": 0.25 }
+      {
+        "id": "chicken_breast",
+        "qty": 1,
+        "note": "bite-size pieces",
+        "note_es": "en trozos chicos"
+      },
+      {
+        "id": "butter",
+        "qty": 2
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "carrot",
+        "qty": 0.5,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "celery",
+        "qty": 2,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "thyme",
+        "qty": 0.5
+      },
+      {
+        "id": "flour",
+        "qty": 0.25
+      },
+      {
+        "id": "chicken_broth",
+        "qty": 4
+      },
+      {
+        "id": "milk",
+        "qty": 1.5
+      },
+      {
+        "id": "gnocchi",
+        "qty": 16
+      },
+      {
+        "id": "spinach",
+        "qty": 3
+      },
+      {
+        "id": "heavy_cream",
+        "qty": 0.5
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      }
     ],
     "name_es": "Sopa cremosa de pollo con ñoquis",
     "description_es": "Pollo, ñoquis de papa, zanahoria y espinaca en un caldo cremoso con tomillo, como la de restaurante.",
@@ -1537,18 +3241,25 @@
       "Agrega los ñoquis y cocina de 3 a 4 minutos hasta que floten y estén tiernos.",
       "Incorpora la espinaca, la crema, la pimienta y el resto de la sal, cocina 1 minuto hasta que la espinaca se marchite y sirve."
     ],
-    "equipment": ["stovetop"],
+    "equipment": [
+      "stovetop"
+    ],
     "active_minutes": 20,
     "tip": "The gnocchi soften as leftovers sit; reheat gently and thin with a little milk.",
     "tip_es": "Los ñoquis se ablandan al guardar la sopa; recalienta a fuego bajo y aligera con un poco de leche.",
     "photo_url": "https://images.unsplash.com/photo-1679556221456-bde72ab024a1",
-    "photo_credit": { "name": "Bakd&Raw by Karolin Baitinger", "url": "https://unsplash.com/photos/two-bowls-of-food-on-a-marble-table-FnhZXKOgL6M" }
+    "photo_credit": {
+      "name": "Bakd&Raw by Karolin Baitinger",
+      "url": "https://unsplash.com/photos/two-bowls-of-food-on-a-marble-table-FnhZXKOgL6M"
+    }
   },
   {
     "slug": "lasagna-soup",
     "name": "Lasagna Soup",
     "meal_type": "dinner",
-    "diet_tags": ["high_protein"],
+    "diet_tags": [
+      "high_protein"
+    ],
     "servings": 4,
     "prep_minutes": 40,
     "batch_friendly": true,
@@ -1562,19 +3273,62 @@
       "Ladle the soup into bowls, add a big spoonful of the cottage cheese mixture and sprinkle with the mozzarella so it melts on top."
     ],
     "ingredients": [
-      { "id": "sausage_italian", "qty": 1 },
-      { "id": "onion_yellow", "qty": 1, "note": "diced", "note_es": "en cubitos" },
-      { "id": "garlic", "qty": 4, "note": "minced", "note_es": "picado" },
-      { "id": "tomato_paste", "qty": 2 },
-      { "id": "italian_seasoning", "qty": 2 },
-      { "id": "red_pepper_flakes", "qty": 0.25 },
-      { "id": "crushed_tomatoes", "qty": 1 },
-      { "id": "chicken_broth", "qty": 4 },
-      { "id": "lasagna_noodles", "qty": 8 },
-      { "id": "cottage_cheese", "qty": 1 },
-      { "id": "parmesan", "qty": 0.25 },
-      { "id": "mozzarella", "qty": 1 },
-      { "id": "salt", "qty": 0.5 }
+      {
+        "id": "sausage_italian",
+        "qty": 1
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "garlic",
+        "qty": 4,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "tomato_paste",
+        "qty": 2
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 2
+      },
+      {
+        "id": "red_pepper_flakes",
+        "qty": 0.25
+      },
+      {
+        "id": "crushed_tomatoes",
+        "qty": 1
+      },
+      {
+        "id": "chicken_broth",
+        "qty": 4
+      },
+      {
+        "id": "lasagna_noodles",
+        "qty": 8
+      },
+      {
+        "id": "cottage_cheese",
+        "qty": 1
+      },
+      {
+        "id": "parmesan",
+        "qty": 0.25
+      },
+      {
+        "id": "mozzarella",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      }
     ],
     "name_es": "Sopa de lasaña",
     "description_es": "Salchicha italiana y pasta para lasaña partida en caldo de tomate, servidos con queso cottage, mozzarella y parmesano.",
@@ -1586,18 +3340,25 @@
       "Mientras tanto mezcla el queso cottage con el parmesano en un bol pequeño.",
       "Sirve la sopa en platos hondos, agrega una cucharada grande de la mezcla de cottage y espolvorea la mozzarella para que se derrita encima."
     ],
-    "equipment": ["stovetop"],
+    "equipment": [
+      "stovetop"
+    ],
     "active_minutes": 15,
     "tip": "For leftovers, store the soup and cheese separately and add a splash of water when reheating.",
     "tip_es": "Si sobra, guarda la sopa y el queso por separado y agrega un chorrito de agua al recalentar.",
     "photo_url": "https://images.unsplash.com/photo-1680420572234-1acdf5b8fb89",
-    "photo_credit": { "name": "Corryn Burtenshaw", "url": "https://unsplash.com/photos/a-bowl-of-pasta-soup-with-a-spoon-in-it-gw83j8eNPg4" }
+    "photo_credit": {
+      "name": "Corryn Burtenshaw",
+      "url": "https://unsplash.com/photos/a-bowl-of-pasta-soup-with-a-spoon-in-it-gw83j8eNPg4"
+    }
   },
   {
     "slug": "hungarian-beef-goulash",
     "name": "Hungarian Beef Goulash with Egg Noodles",
     "meal_type": "dinner",
-    "diet_tags": ["high_protein"],
+    "diet_tags": [
+      "high_protein"
+    ],
     "servings": 4,
     "prep_minutes": 140,
     "batch_friendly": true,
@@ -1612,19 +3373,64 @@
       "Serve the goulash over the noodles with a spoonful of sour cream."
     ],
     "ingredients": [
-      { "id": "beef_stew", "qty": 1.25 },
-      { "id": "vegetable_oil", "qty": 2 },
-      { "id": "onion_yellow", "qty": 2, "note": "thinly sliced", "note_es": "en láminas finas" },
-      { "id": "garlic", "qty": 3, "note": "minced", "note_es": "picado" },
-      { "id": "bell_pepper", "qty": 1, "note": "diced", "note_es": "en cubitos" },
-      { "id": "tomato_paste", "qty": 2 },
-      { "id": "paprika", "qty": 6 },
-      { "id": "beef_broth", "qty": 2.5 },
-      { "id": "egg_noodles", "qty": 8 },
-      { "id": "butter", "qty": 1 },
-      { "id": "sour_cream", "qty": 0.25 },
-      { "id": "salt", "qty": 1.25 },
-      { "id": "black_pepper", "qty": 0.5 }
+      {
+        "id": "beef_stew",
+        "qty": 1.25
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 2
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 2,
+        "note": "thinly sliced",
+        "note_es": "en láminas finas"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "tomato_paste",
+        "qty": 2
+      },
+      {
+        "id": "paprika",
+        "qty": 6
+      },
+      {
+        "id": "beef_broth",
+        "qty": 2.5
+      },
+      {
+        "id": "egg_noodles",
+        "qty": 8
+      },
+      {
+        "id": "butter",
+        "qty": 1
+      },
+      {
+        "id": "sour_cream",
+        "qty": 0.25
+      },
+      {
+        "id": "salt",
+        "qty": 1.25
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.5
+      }
     ],
     "name_es": "Goulash húngaro de res con fideos de huevo",
     "description_es": "Carne de res cocida lentamente con mucha cebolla y paprika dulce hasta quedar muy tierna, servida sobre fideos de huevo con mantequilla.",
@@ -1637,18 +3443,26 @@
       "Destapa y cocina 10 minutos para espesar la salsa mientras hierves los fideos en agua con sal hasta que estén tiernos; escúrrelos y mézclalos con la mantequilla.",
       "Sirve el goulash sobre los fideos con una cucharada de crema agria."
     ],
-    "equipment": ["stovetop"],
+    "equipment": [
+      "stovetop"
+    ],
     "active_minutes": 25,
     "tip": "The goulash tastes even better the next day and freezes for 3 months; cook fresh noodles when you serve it.",
     "tip_es": "El goulash sabe todavía mejor al día siguiente y se congela hasta 3 meses; cocina fideos frescos al servirlo.",
     "photo_url": "https://images.unsplash.com/photo-1551889579-8acb3f14a917",
-    "photo_credit": { "name": "Michael Uebler", "url": "https://unsplash.com/photos/stew-in-white-and-blue-ceramic-bowl-LERjH8KPTco" }
+    "photo_credit": {
+      "name": "Michael Uebler",
+      "url": "https://unsplash.com/photos/stew-in-white-and-blue-ceramic-bowl-LERjH8KPTco"
+    }
   },
   {
     "slug": "chicken-and-sausage-gumbo",
     "name": "Chicken and Sausage Gumbo",
     "meal_type": "dinner",
-    "diet_tags": ["high_protein"],
+    "diet_tags": [
+      "dairy_free",
+      "high_protein"
+    ],
     "servings": 6,
     "prep_minutes": 90,
     "batch_friendly": true,
@@ -1664,21 +3478,78 @@
       "Serve the gumbo over a scoop of rice with the green onion on top."
     ],
     "ingredients": [
-      { "id": "chicken_thigh", "qty": 1.5 },
-      { "id": "sausage_smoked", "qty": 1, "note": "sliced", "note_es": "en rodajas" },
-      { "id": "vegetable_oil", "qty": 5 },
-      { "id": "flour", "qty": 0.33 },
-      { "id": "onion_yellow", "qty": 1, "note": "diced", "note_es": "en cubitos" },
-      { "id": "bell_pepper", "qty": 1, "note": "diced", "note_es": "en cubitos" },
-      { "id": "celery", "qty": 3, "note": "diced", "note_es": "en cubitos" },
-      { "id": "garlic", "qty": 4, "note": "minced", "note_es": "picado" },
-      { "id": "thyme", "qty": 1 },
-      { "id": "smoked_paprika", "qty": 1 },
-      { "id": "cayenne", "qty": 0.5 },
-      { "id": "chicken_broth", "qty": 6 },
-      { "id": "rice_white", "qty": 1.5 },
-      { "id": "green_onion", "qty": 0.5, "note": "sliced", "note_es": "en rodajas" },
-      { "id": "salt", "qty": 1 }
+      {
+        "id": "chicken_thigh",
+        "qty": 1.5
+      },
+      {
+        "id": "sausage_smoked",
+        "qty": 1,
+        "note": "sliced",
+        "note_es": "en rodajas"
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 5
+      },
+      {
+        "id": "flour",
+        "qty": 0.33
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "celery",
+        "qty": 3,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "garlic",
+        "qty": 4,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "thyme",
+        "qty": 1
+      },
+      {
+        "id": "smoked_paprika",
+        "qty": 1
+      },
+      {
+        "id": "cayenne",
+        "qty": 0.5
+      },
+      {
+        "id": "chicken_broth",
+        "qty": 6
+      },
+      {
+        "id": "rice_white",
+        "qty": 1.5
+      },
+      {
+        "id": "green_onion",
+        "qty": 0.5,
+        "note": "sliced",
+        "note_es": "en rodajas"
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      }
     ],
     "name_es": "Gumbo de pollo y salchicha ahumada",
     "description_es": "Guiso de Luisiana hecho sobre un roux oscuro con muslos de pollo, salchicha ahumada, cebolla, apio y pimiento, servido sobre arroz.",
@@ -1692,12 +3563,17 @@
       "Retira el pollo, desmenúzalo con dos tenedores y devuélvelo a la olla; prueba y ajusta la sal.",
       "Sirve el gumbo sobre una porción de arroz con la cebolla verde por encima."
     ],
-    "equipment": ["stovetop"],
+    "equipment": [
+      "stovetop"
+    ],
     "active_minutes": 40,
     "tip": "Gumbo freezes for 3 months without the rice; cook the rice fresh when you reheat it.",
     "tip_es": "El gumbo se congela hasta 3 meses sin el arroz; cocina el arroz en el momento de recalentarlo.",
     "photo_url": "https://images.unsplash.com/photo-1580052380706-16fcc67ee1da",
-    "photo_credit": { "name": "uomo libero", "url": "https://unsplash.com/photos/white-ceramic-plate-with-white-cream-Zz_piqu6fqU" }
+    "photo_credit": {
+      "name": "uomo libero",
+      "url": "https://unsplash.com/photos/white-ceramic-plate-with-white-cream-Zz_piqu6fqU"
+    }
   },
   {
     "slug": "new-england-fish-chowder",
@@ -1718,20 +3594,74 @@
       "Serve sprinkled with the bacon and parsley."
     ],
     "ingredients": [
-      { "id": "cod", "qty": 1, "note": "thawed, cut into large chunks", "note_es": "descongelado, en trozos grandes" },
-      { "id": "bacon", "qty": 4, "note": "chopped", "note_es": "picado" },
-      { "id": "butter", "qty": 1 },
-      { "id": "onion_yellow", "qty": 1, "note": "diced", "note_es": "en cubitos" },
-      { "id": "celery", "qty": 2, "note": "diced", "note_es": "en cubitos" },
-      { "id": "thyme", "qty": 0.5 },
-      { "id": "flour", "qty": 0.125 },
-      { "id": "chicken_broth", "qty": 2 },
-      { "id": "potato_russet", "qty": 1.5, "note": "peeled, bite-size cubes", "note_es": "peladas, en cubos chicos" },
-      { "id": "milk", "qty": 2 },
-      { "id": "heavy_cream", "qty": 0.5 },
-      { "id": "parsley", "qty": 0.25, "note": "chopped", "note_es": "picado" },
-      { "id": "salt", "qty": 1 },
-      { "id": "black_pepper", "qty": 0.25 }
+      {
+        "id": "cod",
+        "qty": 1,
+        "note": "thawed, cut into large chunks",
+        "note_es": "descongelado, en trozos grandes"
+      },
+      {
+        "id": "bacon",
+        "qty": 4,
+        "note": "chopped",
+        "note_es": "picado"
+      },
+      {
+        "id": "butter",
+        "qty": 1
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "celery",
+        "qty": 2,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "thyme",
+        "qty": 0.5
+      },
+      {
+        "id": "flour",
+        "qty": 0.125
+      },
+      {
+        "id": "chicken_broth",
+        "qty": 2
+      },
+      {
+        "id": "potato_russet",
+        "qty": 1.5,
+        "note": "peeled, bite-size cubes",
+        "note_es": "peladas, en cubos chicos"
+      },
+      {
+        "id": "milk",
+        "qty": 2
+      },
+      {
+        "id": "heavy_cream",
+        "qty": 0.5
+      },
+      {
+        "id": "parsley",
+        "qty": 0.25,
+        "note": "chopped",
+        "note_es": "picado"
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.25
+      }
     ],
     "name_es": "Chowder de pescado estilo Nueva Inglaterra",
     "description_es": "Trozos de bacalao fresco y papa en un caldo con leche, con sabor a tocino, cebolla y tomillo.",
@@ -1744,11 +3674,16 @@
       "Cocina a fuego bajo de 5 a 7 minutos sin revolver con fuerza, hasta que el pescado esté blanco y se separe fácil en lascas con un tenedor.",
       "Sirve con el tocino y el perejil por encima."
     ],
-    "equipment": ["stovetop"],
+    "equipment": [
+      "stovetop"
+    ],
     "active_minutes": 20,
     "tip": "Any firm white fish works, so buy whichever frozen fillets are cheapest; reheat gently so the fish stays in chunks.",
     "tip_es": "Sirve cualquier pescado blanco firme, así que compra los filetes congelados más baratos; recalienta suave para que el pescado no se deshaga.",
     "photo_url": "https://images.unsplash.com/photo-1652408414631-f09eae7cc1db",
-    "photo_credit": { "name": "Alexey Demidov", "url": "https://unsplash.com/photos/a-bowl-of-food-GpKTnnfnM50" }
+    "photo_credit": {
+      "name": "Alexey Demidov",
+      "url": "https://unsplash.com/photos/a-bowl-of-food-GpKTnnfnM50"
+    }
   }
 ]

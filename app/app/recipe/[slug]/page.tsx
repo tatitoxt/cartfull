@@ -4,7 +4,11 @@ import { notFound } from "next/navigation";
 import { Photo } from "@/components/photo";
 import { catalog, recipeBySlug } from "@/lib/catalog";
 import { recipeCentsPerServing } from "@/lib/catalog/cost";
-import { getProfile, requireSession } from "@/lib/app/data";
+import { getFeedback, getProfile, requireSession } from "@/lib/app/data";
+import { CookMode } from "@/components/cook-mode";
+import { RecipeFeedback } from "@/components/recipe-feedback";
+import { nutritionPerServing } from "@/lib/catalog/nutrition";
+import { fill } from "@/lib/i18n/messages";
 import { amount, ingredientName, ingredientNote, recipeText } from "@/lib/catalog/localize";
 import { moneyExact } from "@/lib/format";
 import { MESSAGES } from "@/lib/i18n/messages";
@@ -21,7 +25,7 @@ export default async function RecipePage({ params }: { params: Promise<{ slug: s
   const recipe = recipeBySlug(slug);
   if (!recipe) notFound();
   const session = await requireSession(`/app/recipe/${slug}`);
-  const profile = await getProfile(session);
+  const [profile, feedback] = await Promise.all([getProfile(session), getFeedback(session)]);
   const servings = profile.household_size;
   const scale = servings / recipe.servings;
   const m = MESSAGES[profile.lang];
@@ -29,30 +33,55 @@ export default async function RecipePage({ params }: { params: Promise<{ slug: s
 
   return (
     <article>
-      <Link href="/app/plan" className="inline-flex min-h-11 items-center gap-1 text-sm font-semibold text-green-deep">
+      <Link href="/app/plan" className="inline-flex min-h-11 items-center gap-1 text-sm font-semibold text-accent-deep">
         <span aria-hidden="true">←</span> {m.recipe.back}
       </Link>
       <h1 className="mt-2 text-4xl sm:text-5xl">{text.name}</h1>
-      <p className="mt-3 max-w-xl text-ink-soft">{text.description}</p>
-      <p className="tnum mt-4 flex flex-wrap gap-x-5 gap-y-1 text-sm">
-        <span className="font-semibold text-tomato-deep">
+      <p className="mt-3 max-w-xl text-fg-soft">{text.description}</p>
+      <ul className="tnum mt-4 flex flex-wrap gap-2 text-sm">
+        <li className="rounded-full bg-accent-soft px-3 py-1 font-semibold text-accent-deep">
           {m.recipe.serving.replace("{amount}", moneyExact(Math.round(recipeCentsPerServing(recipe, catalog.ingredients)), profile.lang))}
-        </span>
-        <span className="text-ink-soft">{m.common.min.replace("{count}", String(recipe.prep_minutes))}</span>
-        <span className="text-ink-soft">{m.recipe.serves.replace("{count}", String(servings))}</span>
+        </li>
+        <li className="rounded-full bg-budget-soft px-3 py-1 font-semibold text-budget">{m.common.min.replace("{count}", String(recipe.prep_minutes))}</li>
+        <li className="rounded-full bg-spend-soft px-3 py-1 font-semibold text-spend">{m.recipe.serves.replace("{count}", String(servings))}</li>
         {recipe.active_minutes !== undefined && (
-          <span className="text-ink-soft">{m.recipe.active.replace("{count}", String(recipe.active_minutes))}</span>
+          <li className="rounded-full bg-surface px-3 py-1 font-semibold text-fg-soft shadow-[inset_0_0_0_1.5px_var(--color-line)]">{m.recipe.active.replace("{count}", String(recipe.active_minutes))}</li>
         )}
-      </p>
+      </ul>
+      {(() => {
+        const nutrition = nutritionPerServing(recipe);
+        return nutrition ? (
+          <div className="mt-6">
+            <p className="text-xs font-semibold uppercase tracking-wider text-fg-faint">{m.recipe.nutritionLabel}</p>
+            <ul className="tnum mt-2 flex flex-wrap gap-2 text-sm" aria-label={m.recipe.nutritionLabel}>
+              <li className="rounded-full bg-accent-soft px-3 py-1 font-semibold text-accent-deep">{fill(m.recipe.nutritionKcal, { kcal: nutrition.kcal })}</li>
+              <li className="rounded-full bg-budget-soft px-3 py-1 font-semibold text-budget">{fill(m.recipe.nutritionProtein, { protein: nutrition.protein })}</li>
+              <li className="rounded-full bg-spend-soft px-3 py-1 font-semibold text-spend">{fill(m.recipe.nutritionCarbs, { carbs: nutrition.carbs })}</li>
+              <li className="rounded-full bg-over-soft px-3 py-1 font-semibold text-over">{fill(m.recipe.nutritionFat, { fat: nutrition.fat })}</li>
+            </ul>
+            <p className="mt-1.5 text-xs text-fg-faint">{m.recipe.nutritionNote}</p>
+          </div>
+        ) : null;
+      })()}
+      <RecipeFeedback slug={slug} initialFavorite={feedback.favorites.has(slug)} initialRating={feedback.ratings.get(slug) ?? null} />
+      <CookMode
+        title={text.name}
+        ingredients={recipe.ingredients.map((ri) => {
+          const ing = catalog.ingredients.get(ri.id)!;
+          const note = ingredientNote(ri, profile.lang);
+          return `${amount(ri.qty * scale, ing.unit, profile.lang, profile.units)} ${ingredientName(ing, profile.lang)}${note ? `, ${note}` : ""}`;
+        })}
+        steps={text.steps}
+      />
       {recipe.equipment && recipe.equipment.length > 0 && (
-        <p className="mt-3 text-sm text-ink-soft">
+        <p className="mt-3 text-sm text-fg-soft">
           {m.recipe.equipment}: {recipe.equipment.map((item) => m.preferences.equipment[item]).join(", ")}
         </p>
       )}
       <div className="mt-6 overflow-hidden rounded-card">
         <Photo url={recipe.photo_url} alt={text.name} ratio={16 / 10} sizes="(min-width: 768px) 728px, 100vw" priority className="w-full" />
       </div>
-      <p className="mt-2 text-xs text-ink-faint">
+      <p className="mt-2 text-xs text-fg-faint">
         {m.recipe.photoBy}{" "}
         <a href={recipe.photo_credit.url} className="underline underline-offset-2" rel="noreferrer" target="_blank">
           {recipe.photo_credit.name}
@@ -76,7 +105,7 @@ export default async function RecipePage({ params }: { params: Promise<{ slug: s
                   </span>
                   <span>
                     {ingredientName(ing, profile.lang)}
-                    {ingredientNote(ri, profile.lang) && <span className="text-ink-soft">, {ingredientNote(ri, profile.lang)}</span>}
+                    {ingredientNote(ri, profile.lang) && <span className="text-fg-soft">, {ingredientNote(ri, profile.lang)}</span>}
                   </span>
                 </li>
               );
@@ -90,7 +119,7 @@ export default async function RecipePage({ params }: { params: Promise<{ slug: s
           <ol className="mt-4 space-y-5">
             {text.steps.map((step, index) => (
               <li key={index} className="flex gap-4">
-                <span className="tnum font-display text-3xl font-semibold leading-none text-green" aria-hidden="true">
+                <span className="tnum font-display text-3xl font-semibold leading-none text-accent" aria-hidden="true">
                   {index + 1}
                 </span>
                 <p className="pt-0.5">{step}</p>
@@ -99,7 +128,7 @@ export default async function RecipePage({ params }: { params: Promise<{ slug: s
           </ol>
         </section>
       </div>
-      {text.tip && <p className="mt-8 rounded-card bg-mint-soft p-5">{text.tip}</p>}
+      {text.tip && <p className="mt-8 rounded-card bg-accent-soft p-5">{text.tip}</p>}
     </article>
   );
 }

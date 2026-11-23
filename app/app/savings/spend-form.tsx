@@ -45,9 +45,18 @@ export function SpendForm({ planId, spentCents }: { planId: string; spentCents: 
       <label htmlFor={id} className="text-sm font-medium">
         {m.savings.spendPrompt}
       </label>
+      <p className="mt-1 flex items-start gap-1.5 text-xs text-fg-soft">
+        <span
+          aria-hidden="true"
+          className="mt-px flex size-4 shrink-0 items-center justify-center rounded-full text-[10px] font-bold shadow-[inset_0_0_0_1px_var(--color-line)]"
+        >
+          ?
+        </span>
+        {m.savings.spendHint}
+      </p>
       <div className="mt-2 flex flex-wrap items-center gap-2">
         <div className="relative w-36">
-          <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-ink-soft">$</span>
+          <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-fg-soft">$</span>
           <input
             id={id}
             className="field tnum pl-8"
@@ -66,18 +75,18 @@ export function SpendForm({ planId, spentCents }: { planId: string; spentCents: 
           {pending ? m.common.saving : m.common.save}
         </button>
         {spentCents !== null && (
-          <button type="button" className="min-h-11 px-2 text-sm font-medium text-ink-soft underline underline-offset-4" onClick={() => save(null)} disabled={pending}>
+          <button type="button" className="min-h-11 px-2 text-sm font-medium text-fg-soft underline underline-offset-4" onClick={() => save(null)} disabled={pending}>
             {m.savings.clear}
           </button>
         )}
         {saved && !pending && (
-          <span role="status" className="text-sm font-medium text-green-deep">
+          <span role="status" className="text-sm font-medium text-accent-deep">
             {m.common.saved}
           </span>
         )}
       </div>
       {error && (
-        <p id={`${id}-error`} role="alert" className="mt-2 text-sm text-tomato-deep">
+        <p id={`${id}-error`} role="alert" className="mt-2 text-sm text-over-deep">
           {error}
         </p>
       )}

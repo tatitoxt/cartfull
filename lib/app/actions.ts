@@ -11,6 +11,7 @@ import { BudgetTooLowError, NotEnoughRecipesError, type MealAssignment } from ".
 import {
   firstPlanId,
   getEntitlement,
+  getFeedback,
   getPantry,
   getProfile,
   listPlans,
@@ -23,6 +24,10 @@ import { answersSchema, typicalSpendCents, type Answers } from "./profile";
 import { addDays, targetWeekStart, weekIsOver } from "./week";
 import { MESSAGES, fill } from "../i18n/messages";
 import { getLocale } from "../i18n/server";
+import { siteUrl } from "../env";
+import { createAdminClient } from "../supabase/server";
+import { hasEnded } from "../billing/plans";
+import { getStripe } from "../billing/stripe";
 import type { Lang } from "../catalog/localize";
 
 export type ActionResult =
@@ -112,11 +117,12 @@ async function saveAnswers(session: Session, answers: Answers, markOnboarded: bo
  * week is created (free for the very first one, subscribers only after that).
  */
 async function buildWeek(session: Session, planId?: string): Promise<ActionResult> {
-  const [profile, pantry, plans, entitlement] = await Promise.all([
+  const [profile, pantry, plans, entitlement, feedback] = await Promise.all([
     getProfile(session),
     getPantry(session),
     listPlans(session),
     getEntitlement(session),
+    getFeedback(session),
   ]);
   const firstId = firstPlanId(plans);
   const m = MESSAGES[profile.lang];
@@ -126,6 +132,7 @@ async function buildWeek(session: Session, planId?: string): Promise<ActionResul
   let weekStart: string;
   let seed: number;
   const have = new Set(pantry);
+  let owned: ReadonlyMap<string, number> | undefined;
   if (existing) {
     const loaded = await loadPlan(session, existing, { active: entitlement.active, firstId });
     if (!loaded.editable) return fail("paywall", m.actions.trialPlan);
@@ -136,6 +143,9 @@ async function buildWeek(session: Session, planId?: string): Promise<ActionResul
       if (line.have) have.add(line.ingredient.id);
       else have.delete(line.ingredient.id);
     }
+    // Saved stock caps the owned amount, so a plan needing more than the
+    // shopper marked still charges the difference.
+    owned = new Map(loaded.haveQty);
   } else {
     if (plans.length > 0 && !entitlement.active) return fail("paywall", m.actions.trialNext);
     weekStart = targetWeekStart();
@@ -151,7 +161,12 @@ async function buildWeek(session: Session, planId?: string): Promise<ActionResul
     avoidSlugs = new Set((data ?? []).map((m) => m.recipe_slug as string));
   }
 
-  const request = planRequest(profile, have, seed, { avoidSlugs });
+  const request = planRequest(profile, have, seed, {
+    avoidSlugs,
+    favoriteSlugs: feedback.favorites,
+    ratings: feedback.ratings,
+    owned,
+  });
   let plan;
   try {
     plan = generatePlan(catalog, request);
@@ -170,6 +185,7 @@ async function buildWeek(session: Session, planId?: string): Promise<ActionResul
     seed,
     meals: plan.meals,
     have,
+    owned,
   });
   if (error) return error;
 
@@ -196,9 +212,10 @@ async function savePlan(
     seed: number;
     meals: MealAssignment[];
     have: ReadonlySet<string>;
+    owned?: ReadonlyMap<string, number>;
   },
 ): Promise<ActionResult | null> {
-  const cart = buildCart(input.meals, catalog.ingredients, input.have);
+  const cart = buildCart(input.meals, catalog.ingredients, input.have, input.owned);
   const { error } = await session.supabase.rpc("save_plan", {
     p_week_start: input.weekStart,
     p_budget_cents: input.budgetCents,
@@ -208,7 +225,7 @@ async function savePlan(
     p_total_cents: cart.totalCents,
     p_seed: input.seed,
     p_meals: input.meals.map((m) => ({ day: m.day, slot: m.slot, recipe_slug: m.recipe.slug, servings: m.servings })),
-    p_items: cart.lines.map((line) => ({ ingredient_id: line.ingredient.id, have: line.have })),
+    p_items: cart.lines.map((line) => ({ ingredient_id: line.ingredient.id, have: line.have, have_qty: line.haveQty })),
   });
   if (!error) return null;
   if (error.code === "42501") return fail("paywall", MESSAGES[lang].actions.trialPlan);
@@ -275,11 +292,14 @@ export async function getSwapChoices(planId: string, day: number, slot: MealType
   if (!MEAL_TYPES.includes(slot)) return [];
   const loaded = await editablePlan(session, planId);
   if (!loaded || !loaded.meals.some((m) => m.day === day && m.slot === slot)) return [];
-  const [profile, pantry] = await Promise.all([getProfile(session), getPantry(session)]);
+  const [profile, pantry, feedback] = await Promise.all([getProfile(session), getPantry(session), getFeedback(session)]);
   const have = effectiveHave(pantry, loaded);
   const request = planRequest(profile, have, loaded.row.seed, {
     budgetCents: loaded.row.budget_cents,
     householdSize: loaded.row.household_size,
+    favoriteSlugs: feedback.favorites,
+    ratings: feedback.ratings,
+    owned: new Map(loaded.haveQty),
   });
   return swapOptions(catalog, request, loaded.meals, { day, slot }).map((option) => ({
     slug: option.recipe.slug,
@@ -311,11 +331,15 @@ export async function swapMeal(planId: string, day: number, slot: MealType, slug
   const current = loaded.meals.find((m) => m.day === day && m.slot === slot);
   if (!current) return fail("invalid", m.actions.mealMissing);
 
-  const pantry = await getPantry(session);
+  const [pantry, feedback] = await Promise.all([getPantry(session), getFeedback(session)]);
   const have = effectiveHave(pantry, loaded);
+  const owned = new Map(loaded.haveQty);
   const request = planRequest(profile, have, loaded.row.seed, {
     budgetCents: loaded.row.budget_cents,
     householdSize: loaded.row.household_size,
+    favoriteSlugs: feedback.favorites,
+    ratings: feedback.ratings,
+    owned,
   });
   // Re-check on the server: the swap must be allowed for this household and keep the cart in budget.
   const allowed = swapOptions(catalog, request, loaded.meals, { day, slot }, Infinity).some((o) => o.recipe.slug === slug);
@@ -333,8 +357,63 @@ export async function swapMeal(planId: string, day: number, slot: MealType, slug
     seed: loaded.row.seed,
     meals,
     have,
+    owned,
   });
   if (error) return error;
+  revalidatePath("/app", "layout");
+  return { ok: true };
+}
+
+/** Writes one feedback field without reading the other, so overlapping saves don't clobber it. */
+async function saveFeedback(
+  session: Session,
+  slug: string,
+  patch: { favorite?: boolean; rating?: number | null },
+): Promise<string | null> {
+  const { supabase, userId } = session;
+  const fields = { ...patch, updated_at: new Date().toISOString() };
+  const { error: updateError, data: touched } = await supabase
+    .from("recipe_feedback")
+    .update(fields)
+    .eq("user_id", userId)
+    .eq("recipe_slug", slug)
+    .select("recipe_slug");
+  if (updateError) return updateError.message;
+  if (touched?.length) return null;
+  const { error } = await supabase
+    .from("recipe_feedback")
+    .insert({ user_id: userId, recipe_slug: slug, ...patch });
+  if (!error) return null;
+  // A save landing from another device inserted the row first: merge into it.
+  if (error.code === "23505") {
+    const again = await supabase
+      .from("recipe_feedback")
+      .update(fields)
+      .eq("user_id", userId)
+      .eq("recipe_slug", slug);
+    return again.error?.message ?? null;
+  }
+  return error.message;
+}
+
+export async function setFavorite(slug: string, favorite: boolean): Promise<ActionResult> {
+  const session = await requireSession();
+  const profile = await getProfile(session);
+  if (!recipeBySlug(slug)) return fail("invalid", MESSAGES[profile.lang].actions.mealUnavailable);
+  const error = await saveFeedback(session, slug, { favorite });
+  if (error) return fail("failed", MESSAGES[profile.lang].actions.saveItem);
+  revalidatePath("/app", "layout");
+  return { ok: true };
+}
+
+export async function setRating(slug: string, rating: number | null): Promise<ActionResult> {
+  const session = await requireSession();
+  const profile = await getProfile(session);
+  if (!recipeBySlug(slug)) return fail("invalid", MESSAGES[profile.lang].actions.mealUnavailable);
+  if (rating !== null && (!Number.isInteger(rating) || rating < 1 || rating > 5))
+    return fail("invalid", MESSAGES[profile.lang].actions.invalidAnswers);
+  const error = await saveFeedback(session, slug, { rating });
+  if (error) return fail("failed", MESSAGES[profile.lang].actions.saveItem);
   revalidatePath("/app", "layout");
   return { ok: true };
 }
@@ -342,7 +421,7 @@ export async function swapMeal(planId: string, day: number, slot: MealType, slug
 export async function setItemState(
   planId: string,
   ingredientId: string,
-  change: { checked?: boolean; have?: boolean },
+  change: { checked?: boolean; have?: boolean; haveQty?: number },
 ): Promise<ActionResult> {
   const session = await requireSession();
   const profile = await getProfile(session);
@@ -350,13 +429,20 @@ export async function setItemState(
   const ingredient = catalog.ingredients.get(ingredientId);
   const loaded = await editablePlan(session, planId);
   if (!loaded) return fail("locked", m.actions.locked);
-  if (!ingredient || !loaded.cart.lines.some((l) => l.ingredient.id === ingredientId))
-    return fail("invalid", m.actions.itemMissing);
+  const line = ingredient ? loaded.cart.lines.find((l) => l.ingredient.id === ingredientId) : undefined;
+  if (!ingredient || !line) return fail("invalid", m.actions.itemMissing);
 
-  const update: Record<string, boolean> = {};
+  const update: Record<string, boolean | number> = {};
   if (typeof change.checked === "boolean") update.checked = change.checked;
-  if (typeof change.have === "boolean") {
+  if (typeof change.haveQty === "number" && Number.isFinite(change.haveQty)) {
+    const owned = Math.max(0, Math.min(change.haveQty, line.qty));
+    update.have_qty = owned;
+    const full = owned >= line.qty - 1e-6;
+    update.have = full;
+    if (full) update.checked = false;
+  } else if (typeof change.have === "boolean") {
     update.have = change.have;
+    update.have_qty = change.have ? line.qty : 0;
     if (change.have) update.checked = false;
   }
   if (!Object.keys(update).length) return { ok: true };
@@ -367,15 +453,19 @@ export async function setItemState(
     .upsert({ plan_id: planId, ingredient_id: ingredientId, ...update }, { onConflict: "plan_id,ingredient_id" });
   if (error) return fail("failed", m.actions.saveItem);
 
-  if (typeof change.have === "boolean") {
+  const ownershipChanged = typeof change.have === "boolean" || typeof change.haveQty === "number";
+  if (ownershipChanged) {
     const have = new Set(loaded.have);
-    if (change.have) have.add(ingredientId);
+    const fracs = new Map(loaded.cart.lines.map((l) => [l.ingredient.id, l.haveQty]));
+    const owned = update.have === true ? line.qty : Number(update.have_qty ?? 0);
+    fracs.set(ingredientId, owned);
+    if (update.have === true) have.add(ingredientId);
     else have.delete(ingredientId);
-    const total = buildCart(loaded.meals, catalog.ingredients, have).totalCents;
+    const total = buildCart(loaded.meals, catalog.ingredients, have, fracs).totalCents;
     await supabase.from("plans").update({ total_cents: total }).eq("id", planId);
-    // Long-lasting basics are remembered for future weeks.
+    // Long-lasting basics are remembered for future weeks, only once fully owned.
     if (ingredient.staple) {
-      if (change.have) await supabase.from("pantry_items").upsert({ user_id: userId, ingredient_id: ingredientId });
+      if (update.have === true) await supabase.from("pantry_items").upsert({ user_id: userId, ingredient_id: ingredientId });
       else await supabase.from("pantry_items").delete().eq("user_id", userId).eq("ingredient_id", ingredientId);
     }
   }
@@ -404,4 +494,70 @@ export async function saveSettings(input: unknown): Promise<ActionResult> {
   if (error) return fail("failed", MESSAGES[parsed.data.lang].actions.saveSettings);
   revalidatePath("/app", "layout");
   return { ok: true };
+}
+
+export async function deleteAccount(): Promise<ActionResult> {
+  const session = await requireSession("/app/account");
+  const locale = await getLocale();
+  const m = MESSAGES[locale.lang];
+  try {
+    const admin = createAdminClient();
+    // Stop Stripe first: once the account is gone it can no longer cancel itself.
+    const { data: sub } = await admin
+      .from("subscriptions")
+      .select("stripe_customer_id, stripe_subscription_id, status")
+      .eq("user_id", session.userId)
+      .maybeSingle();
+    if (sub?.stripe_subscription_id && !hasEnded(sub.status)) {
+      try {
+        await getStripe().subscriptions.cancel(sub.stripe_subscription_id);
+      } catch {
+        return fail("failed", m.account.deleteError);
+      }
+    }
+    // A Checkout tab left open would still be payable after deletion and could
+    // start billing an account that no longer exists.
+    if (sub?.stripe_customer_id) {
+      try {
+        const stripe = getStripe();
+        const open = await stripe.checkout.sessions.list({ customer: sub.stripe_customer_id, status: "open", limit: 10 });
+        for (const openSession of open.data) await stripe.checkout.sessions.expire(openSession.id);
+      } catch {
+        return fail("failed", m.account.deleteError);
+      }
+    }
+    // Remember the email so a re-registration doesn't earn a second free trial.
+    // Only people who actually reached a subscription count: someone who never
+    // subscribed hasn't used a trial and gets their first one like anyone else.
+    if (session.email && sub?.stripe_subscription_id) {
+      const { error: markError } = await admin
+        .from("deleted_accounts")
+        .upsert({ email: session.email.toLowerCase() });
+      if (markError) return fail("failed", m.account.deleteError);
+    }
+    const { error } = await admin.auth.admin.deleteUser(session.userId);
+    if (error) return fail("failed", m.account.deleteError);
+  } catch {
+    return fail("failed", m.account.deleteError);
+  }
+  return { ok: true };
+}
+
+/** Owner-side: the live link anyone can use to tick items off this plan's list. */
+export async function getShareLink(planId: string): Promise<string | null> {
+  const session = await requireSession("/app/list");
+  const { data, error } = await session.supabase.rpc("create_plan_share", { p_plan_id: planId });
+  if (error || !data) return null;
+  return `${siteUrl}/share/${data}`;
+}
+
+/** Token-gated: tick an item on a shared list (no account needed on the other side). */
+export async function checkSharedItem(token: string, ingredientId: string, checked: boolean): Promise<boolean> {
+  if (!/^[0-9a-f-]{36}$/i.test(token) || !catalog.ingredients.has(ingredientId)) return false;
+  const { error } = await createAdminClient().rpc("check_shared_item", {
+    p_token: token,
+    p_ingredient_id: ingredientId,
+    p_checked: checked,
+  });
+  return !error;
 }

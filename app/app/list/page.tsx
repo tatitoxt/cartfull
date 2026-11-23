@@ -23,7 +23,7 @@ export default async function ListPage() {
     return (
       <section className="py-10">
         <h1 className="text-4xl">{m.list.noList}</h1>
-        <p className="mt-3 text-ink-soft">{m.list.noListLead}</p>
+        <p className="mt-3 text-fg-soft">{m.list.noListLead}</p>
         <Link href="/app/plan" className="btn btn-primary mt-6">
           {m.common.goPlan}
         </Link>
@@ -43,14 +43,21 @@ export default async function ListPage() {
       need: amount(line.qty, ing.unit, lang, units),
       buy: soldByWeight(ing) ? amount(packages, "lb", lang, units) : packages > 1 ? `${packages} × ${buyLabel}` : buyLabel,
       cents: line.cents,
+      fullCents: line.fullCents,
       have: line.have,
+      qty: line.qty,
+      unit: ing.unit,
+      pkgQty: ing.pkg_qty,
+      pkgCents: ing.pkg_cents,
+      byWeight: soldByWeight(ing),
+      haveQty: line.haveQty,
       checked: checked.has(ing.id),
     };
   });
 
   return (
     <>
-      <p className="text-sm font-semibold uppercase tracking-wider text-green">{fill(m.common.weekOf, { date: weekLabel(row.week_start, lang) })}</p>
+      <p className="text-sm font-semibold uppercase tracking-wider text-accent">{fill(m.common.weekOf, { date: weekLabel(row.week_start, lang) })}</p>
       <h1 className="mt-2 text-4xl sm:text-5xl">{m.list.title}</h1>
       <GroceryList
         planId={row.id}

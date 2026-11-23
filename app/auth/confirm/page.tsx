@@ -42,9 +42,9 @@ export default async function ConfirmPage() {
       </Link>
       <main id="main" className="flex flex-1 flex-col justify-center py-10">
         <h1 className="text-[2rem] sm:text-4xl">{m.misc.confirmTitle}</h1>
-        <p className="mt-3 text-ink-soft">
+        <p className="mt-3 text-fg-soft">
           {m.misc.confirmLead}{" "}
-          <span className="font-medium text-ink" data-testid="confirm-email">
+          <span className="font-medium text-fg" data-testid="confirm-email">
             {email}
           </span>
           {m.misc.confirmOpened}
@@ -54,9 +54,9 @@ export default async function ConfirmPage() {
             {m.misc.confirmButton}
           </button>
         </form>
-        <p className="mt-6 text-sm text-ink-soft">
+        <p className="mt-6 text-sm text-fg-soft">
           {m.misc.confirmWrong}{" "}
-          <Link href={`/login?next=${encodeURIComponent(next)}`} className="font-medium text-green underline underline-offset-4">
+          <Link href={`/login?next=${encodeURIComponent(next)}`} className="font-medium text-accent underline underline-offset-4">
             {m.misc.confirmOwn}
           </Link>
           .

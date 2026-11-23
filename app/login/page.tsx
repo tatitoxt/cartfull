@@ -36,9 +36,9 @@ export default async function LoginPage({
       </Link>
       <main id="main" className="flex flex-1 flex-col justify-center py-10">
         <h1 className="text-[2rem] sm:text-4xl">{m.login.title}</h1>
-        <p className="mt-3 text-ink-soft">{m.login.lead}</p>
+        <p className="mt-3 text-fg-soft">{m.login.lead}</p>
         <LoginForm next={next} googleEnabled={googleAuthEnabled} linkError={params.error === "link"} />
-        <p className="mt-8 text-sm text-ink-faint">
+        <p className="mt-8 text-sm text-fg-faint">
           {m.login.termsLead} <Link href="/terms" className="underline underline-offset-2">{m.login.terms}</Link> {m.login.and}{" "}
           <Link href="/privacy" className="underline underline-offset-2">{m.login.privacy}</Link>.
         </p>

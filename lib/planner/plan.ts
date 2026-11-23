@@ -106,8 +106,17 @@ class Week {
     private ingredients: ReadonlyMap<string, Ingredient>,
     private have: ReadonlySet<string>,
     private household: number,
+    private owned: ReadonlyMap<string, number> = new Map(),
   ) {
     this.choice = groups.map(() => null);
+  }
+
+  /** Cart cost of needing `qty` units of `id` after owned stock; pantry ids are free. */
+  private costFor(id: string, qty: number): number {
+    const owned = this.owned.get(id);
+    if (owned !== undefined) return purchaseCents(this.ingredients.get(id)!, Math.max(qty - owned, 0));
+    if (this.have.has(id)) return 0;
+    return purchaseCents(this.ingredients.get(id)!, qty);
   }
 
   private scale(group: Group, recipe: Recipe): number {
@@ -119,10 +128,8 @@ class Week {
     const scale = this.scale(group, recipe);
     let cents = 0;
     for (const ri of recipe.ingredients) {
-      if (this.have.has(ri.id)) continue;
-      const ing = this.ingredients.get(ri.id)!;
       const current = this.qty.get(ri.id) ?? 0;
-      cents += purchaseCents(ing, current + ri.qty * scale) - purchaseCents(ing, current);
+      cents += this.costFor(ri.id, current + ri.qty * scale) - this.costFor(ri.id, current);
     }
     return cents;
   }
@@ -145,11 +152,7 @@ class Week {
 
   totalCents(): number {
     let cents = 0;
-    for (const [id, qty] of this.qty) {
-      if (this.have.has(id)) continue;
-      const ing = this.ingredients.get(id)!;
-      cents += purchaseCents(ing, qty);
-    }
+    for (const [id, qty] of this.qty) cents += this.costFor(id, qty);
     return cents;
   }
 
@@ -206,9 +209,17 @@ function makeContext(catalog: Catalog, req: PlanRequest, groups: Group[]): Conte
   return { catalog, req, bySlot, jitter, protein, targetCents };
 }
 
+/** What the household already told us: favorites get a lift, ratings tilt up or down. */
+export function likeBoost(req: PlanRequest, slug: string): number {
+  let boost = req.favoriteSlugs?.has(slug) ? 0.6 : 0;
+  const rating = req.ratings?.get(slug);
+  if (rating) boost += (rating - 3) * 0.25;
+  return boost;
+}
+
 /** How much the household should like this recipe in this spot, before cost. */
 function preference(ctx: Context, week: Week, index: number, recipe: Recipe): number {
-  let score = timeFit(recipe, ctx.req.cookTime) + (ctx.jitter.get(recipe.slug) ?? 0);
+  let score = timeFit(recipe, ctx.req.cookTime) + (ctx.jitter.get(recipe.slug) ?? 0) + likeBoost(ctx.req, recipe.slug);
   if (ctx.req.avoidSlugs?.has(recipe.slug)) score -= 0.6;
   if (week.groups[index].slot === "dinner") {
     const kind = ctx.protein.get(recipe.slug);
@@ -270,9 +281,9 @@ function reduceToBudget(ctx: Context, week: Week, budgetCents: number): number {
   return total;
 }
 
-function toPlan(catalog: Catalog, week: Week, have: ReadonlySet<string>): Plan {
+function toPlan(catalog: Catalog, week: Week, req: PlanRequest): Plan {
   const meals = week.meals();
-  const cart = buildCart(meals, catalog.ingredients, have);
+  const cart = buildCart(meals, catalog.ingredients, req.pantry, req.owned);
   return { meals, cart, totalCents: cart.totalCents };
 }
 
@@ -290,12 +301,12 @@ export function generatePlan(catalog: Catalog, req: PlanRequest): Plan {
   const ctx = makeContext(catalog, req, groups);
   let cheapest = Infinity;
   for (const costWeight of COST_WEIGHTS) {
-    const week = new Week(groups, catalog.ingredients, req.pantry, req.householdSize);
+    const week = new Week(groups, catalog.ingredients, req.pantry, req.householdSize, req.owned);
     construct(ctx, week, costWeight);
     const total = reduceToBudget(ctx, week, req.budgetCents);
     cheapest = Math.min(cheapest, total);
     if (total <= req.budgetCents) {
-      const plan = toPlan(catalog, week, req.pantry);
+      const plan = toPlan(catalog, week, req);
       if (plan.totalCents > req.budgetCents) throw new Error("Planner invariant broken: cart exceeds budget");
       return plan;
     }
@@ -350,7 +361,7 @@ export function swapOptions(
   const replaced = (m: MealAssignment) => m.slot === target.slot && m.recipe.slug === current.recipe.slug;
   const others = meals.filter((m) => !replaced(m));
   const repeats = meals.filter(replaced);
-  const currentTotal = buildCart(meals, catalog.ingredients, req.pantry).totalCents;
+  const currentTotal = buildCart(meals, catalog.ingredients, req.pantry, req.owned).totalCents;
   const taken = new Set(meals.filter((m) => m.slot === target.slot).map((m) => m.recipe.slug));
   const random = mulberry32(req.seed ^ hashSeed(`${target.day}:${target.slot}`));
 
@@ -358,10 +369,10 @@ export function swapOptions(
   for (const recipe of eligibleRecipes(catalog, req)) {
     if (recipe.meal_type !== target.slot || taken.has(recipe.slug)) continue;
     const candidates = repeats.map((m) => ({ ...m, recipe }));
-    const totalCents = buildCart([...others, ...candidates], catalog.ingredients, req.pantry).totalCents;
+    const totalCents = buildCart([...others, ...candidates], catalog.ingredients, req.pantry, req.owned).totalCents;
     if (totalCents > req.budgetCents) continue;
     const score =
-      timeFit(recipe, req.cookTime) + random() * 0.3 - (0.8 * (totalCents - currentTotal)) / Math.max(1, req.budgetCents / 7);
+      timeFit(recipe, req.cookTime) + likeBoost(req, recipe.slug) + random() * 0.3 - (0.8 * (totalCents - currentTotal)) / Math.max(1, req.budgetCents / 7);
     options.push({ recipe, totalCents, deltaCents: totalCents - currentTotal, score });
   }
   options.sort((a, b) => b.score - a.score || a.recipe.slug.localeCompare(b.recipe.slug));

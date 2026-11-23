@@ -66,7 +66,7 @@ export interface Ingredient {
 export const MEAL_TYPES = ["dinner", "lunch", "breakfast"] as const;
 export type MealType = (typeof MEAL_TYPES)[number];
 
-export const DIET_TAGS = ["vegetarian", "keto", "high_protein"] as const;
+export const DIET_TAGS = ["vegetarian", "vegan", "pescatarian", "keto", "low_carb", "gluten_free", "dairy_free", "high_protein"] as const;
 export type DietTag = (typeof DIET_TAGS)[number];
 
 export interface RecipeIngredient {

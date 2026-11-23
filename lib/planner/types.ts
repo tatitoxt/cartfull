@@ -1,6 +1,6 @@
 import type { Allergen, Equipment, Ingredient, MealType, Recipe } from "../catalog/types";
 
-export const DIETS = ["none", "vegetarian", "keto", "high_protein"] as const;
+export const DIETS = ["none", "vegetarian", "vegan", "pescatarian", "keto", "low_carb", "gluten_free", "dairy_free", "high_protein"] as const;
 export type Diet = (typeof DIETS)[number];
 
 export const COOK_TIMES = ["fast", "normal", "batch"] as const;
@@ -15,6 +15,8 @@ export interface PlanRequest {
   includeLunch: boolean;
   /** Ingredient ids the household already has; they cost nothing. */
   pantry: ReadonlySet<string>;
+  /** Units of an ingredient already owned; counts against the need, still unlimited for pantry ids. */
+  owned?: ReadonlyMap<string, number>;
   allergens: readonly Allergen[];
   /** Keys from DISLIKE_OPTIONS. */
   dislikes: readonly string[];
@@ -24,6 +26,10 @@ export interface PlanRequest {
   seed: number;
   /** Recipes to steer away from, e.g. last week's dinners. */
   avoidSlugs?: ReadonlySet<string>;
+  /** Heart-marked recipes are picked before others. */
+  favoriteSlugs?: ReadonlySet<string>;
+  /** 1-5 stars the household gave; high scores show up more, low scores less. */
+  ratings?: ReadonlyMap<string, number>;
 }
 
 export interface MealAssignment {
@@ -39,10 +45,14 @@ export interface CartLine {
   qty: number;
   /** Packages to buy: whole numbers, or pounds in quarter steps for by-weight items. */
   packages: number;
-  /** Shelf cost of those packages, in cents. */
+  /** Shelf cost of the packages still to buy, in cents. */
   cents: number;
+  /** Shelf cost of the whole line when nothing is owned, in cents. */
+  fullCents: number;
   /** Already at home: listed but not counted in the total. */
   have: boolean;
+  /** Units of `qty` already at home; a partial amount prices only the rest. */
+  haveQty: number;
   usedIn: string[];
 }
 
