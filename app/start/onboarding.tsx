@@ -35,6 +35,7 @@ type Estimate =
 function initialAnswers(staples: string[], params: URLSearchParams): Answers {
   const base: Answers = {
     ...DEFAULTS,
+    equipment: [...DEFAULTS.equipment],
     usual_spend_cents: null,
     allergens: [],
     dislikes: [],

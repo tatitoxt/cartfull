@@ -55,11 +55,15 @@ function buildGroups(req: PlanRequest): Group[] {
   return groups;
 }
 
-/** Recipes this household can eat at all: diet, allergens and dislikes are hard rules. */
-export function eligibleRecipes(catalog: Catalog, req: Pick<PlanRequest, "diet" | "allergens" | "dislikes">): Recipe[] {
+/** Recipes this household can eat and cook at all: diet, allergens, dislikes and appliances are hard rules. */
+export function eligibleRecipes(
+  catalog: Catalog,
+  req: Pick<PlanRequest, "diet" | "allergens" | "dislikes" | "equipment">,
+): Recipe[] {
   const dislikeMatchers = DISLIKE_OPTIONS.filter((d) => req.dislikes.includes(d.key)).map((d) => d.matches);
   return catalog.recipes.filter((recipe) => {
     if (req.diet !== "none" && !recipe.diet_tags.includes(req.diet)) return false;
+    if (req.equipment && recipe.equipment?.some((e) => !req.equipment!.includes(e))) return false;
     for (const ri of recipe.ingredients) {
       const ing = catalog.ingredients.get(ri.id);
       if (!ing) return false;
