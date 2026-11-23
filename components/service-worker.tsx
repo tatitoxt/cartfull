@@ -3,7 +3,8 @@
 import { usePathname } from "next/navigation";
 import { useEffect, useRef } from "react";
 
-let pending: ReturnType<typeof setTimeout> | undefined;
+let timer: ReturnType<typeof setTimeout> | undefined;
+const waiting = new Set<string>();
 
 /**
  * Asks the service worker to keep a fresh copy of the screen being shown. Call
@@ -12,12 +13,15 @@ let pending: ReturnType<typeof setTimeout> | undefined;
  */
 export function keepForOffline() {
   if (process.env.NODE_ENV !== "production" || !("serviceWorker" in navigator)) return;
-  clearTimeout(pending);
+  // Remembered now: by the time the save runs, the person may be on another screen.
+  waiting.add(`${window.location.pathname}${window.location.search}`);
+  clearTimeout(timer);
   // A run of taps saves once, after the last one.
-  pending = setTimeout(() => {
-    const path = `${window.location.pathname}${window.location.search}`;
+  timer = setTimeout(() => {
+    const paths = [...waiting];
+    waiting.clear();
     navigator.serviceWorker.ready
-      .then((registration) => registration.active?.postMessage({ type: "save-page", path }))
+      .then((registration) => paths.forEach((path) => registration.active?.postMessage({ type: "save-page", path })))
       .catch(() => {});
   }, 600);
 }
