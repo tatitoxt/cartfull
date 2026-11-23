@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { useState, useTransition } from "react";
 import { track } from "@/components/analytics";
 import { recordSpend } from "@/lib/app/actions";
+import { useMessages } from "@/lib/i18n/locale-provider";
 
 export function SpendForm({ planId, spentCents }: { planId: string; spentCents: number | null }) {
   const router = useRouter();
@@ -12,6 +13,7 @@ export function SpendForm({ planId, spentCents }: { planId: string; spentCents: 
   const [saved, setSaved] = useState(false);
   const [pending, start] = useTransition();
   const id = `spent-${planId}`;
+  const m = useMessages();
 
   const save = (cents: number | null) =>
     start(async () => {
@@ -34,14 +36,14 @@ export function SpendForm({ planId, spentCents }: { planId: string; spentCents: 
         e.preventDefault();
         const amount = Number(value);
         if (!value.trim() || !Number.isFinite(amount) || amount < 0) {
-          setError("Enter the total from your receipt, like 84.50.");
+          setError(m.savings.receiptError);
           return;
         }
         save(Math.round(amount * 100));
       }}
     >
       <label htmlFor={id} className="text-sm font-medium">
-        What did you really spend?
+        {m.savings.spendPrompt}
       </label>
       <div className="mt-2 flex flex-wrap items-center gap-2">
         <div className="relative w-36">
@@ -50,7 +52,7 @@ export function SpendForm({ planId, spentCents }: { planId: string; spentCents: 
             id={id}
             className="field tnum pl-8"
             inputMode="decimal"
-            placeholder="0.00"
+            placeholder={m.savings.spendPlaceholder}
             value={value}
             onChange={(e) => {
               setSaved(false);
@@ -61,16 +63,16 @@ export function SpendForm({ planId, spentCents }: { planId: string; spentCents: 
           />
         </div>
         <button type="submit" className="btn btn-quiet px-5" disabled={pending}>
-          {pending ? "Saving…" : "Save"}
+          {pending ? m.common.saving : m.common.save}
         </button>
         {spentCents !== null && (
           <button type="button" className="min-h-11 px-2 text-sm font-medium text-ink-soft underline underline-offset-4" onClick={() => save(null)} disabled={pending}>
-            Clear
+            {m.savings.clear}
           </button>
         )}
         {saved && !pending && (
           <span role="status" className="text-sm font-medium text-green-deep">
-            Saved
+            {m.common.saved}
           </span>
         )}
       </div>

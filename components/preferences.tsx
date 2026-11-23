@@ -1,17 +1,17 @@
 "use client";
 
 import type { ReactNode } from "react";
-import { ALLERGENS } from "@/lib/catalog/types";
+import { ALLERGENS, EQUIPMENT } from "@/lib/catalog/types";
 import {
-  ALLERGEN_LABELS,
   BUDGET_MAX_CENTS,
   BUDGET_MIN_CENTS,
-  COOK_TIME_LABELS,
-  DIET_LABELS,
   type Answers,
 } from "@/lib/app/profile";
 import type { PantryGroups } from "@/lib/app/pantry";
 import { COOK_TIMES, DIETS } from "@/lib/planner/types";
+import { useLocale, useMessages } from "@/lib/i18n/locale-provider";
+import { fill } from "@/lib/i18n/messages";
+import { moneyRound } from "@/lib/format";
 
 export type SetAnswers = (patch: Partial<Answers>) => void;
 
@@ -30,6 +30,7 @@ export function Stepper({
   onChange: (value: number) => void;
   unit: (value: number) => string;
 }) {
+  const m = useMessages();
   return (
     <div className="flex items-center justify-between gap-4" role="group" aria-label={label}>
       <span className="font-medium">{label}</span>
@@ -39,7 +40,7 @@ export function Stepper({
           className="grid size-12 place-items-center rounded-full bg-surface text-2xl leading-none shadow-[inset_0_0_0_1.5px_var(--color-line)] disabled:opacity-40"
           onClick={() => onChange(Math.max(min, value - 1))}
           disabled={value <= min}
-          aria-label={`Fewer: ${label}`}
+          aria-label={fill(m.preferences.fewer, { label })}
         >
           −
         </button>
@@ -51,7 +52,7 @@ export function Stepper({
           className="grid size-12 place-items-center rounded-full bg-surface text-2xl leading-none shadow-[inset_0_0_0_1.5px_var(--color-line)] disabled:opacity-40"
           onClick={() => onChange(Math.min(max, value + 1))}
           disabled={value >= max}
-          aria-label={`More: ${label}`}
+          aria-label={fill(m.preferences.more, { label })}
         >
           +
         </button>
@@ -75,7 +76,9 @@ export function BudgetSlider({
   max?: number;
   onChange: (cents: number) => void;
 }) {
-  const fill = ((cents - min) / (max - min)) * 100;
+  const percent = ((cents - min) / (max - min)) * 100;
+  const { lang } = useLocale();
+  const m = useMessages();
   return (
     <div>
       <div className="flex items-baseline justify-between gap-4">
@@ -83,7 +86,7 @@ export function BudgetSlider({
           {label}
         </label>
         <output htmlFor={id} className="tnum font-display text-4xl font-semibold text-green-deep">
-          ${Math.round(cents / 100)}
+          {moneyRound(cents, lang)}
         </output>
       </div>
       <input
@@ -95,12 +98,12 @@ export function BudgetSlider({
         step={5}
         value={Math.round(cents / 100)}
         onChange={(e) => onChange(Number(e.target.value) * 100)}
-        style={{ "--fill": `${fill}%` } as React.CSSProperties}
-        aria-valuetext={`$${Math.round(cents / 100)} a week`}
+        style={{ "--fill": `${percent}%` } as React.CSSProperties}
+        aria-valuetext={fill(m.preferences.perWeek, { amount: moneyRound(cents, lang) })}
       />
       <div className="tnum flex justify-between text-sm text-ink-faint" aria-hidden="true">
-        <span>${min / 100}</span>
-        <span>${max / 100}</span>
+        <span>{moneyRound(min, lang)}</span>
+        <span>{moneyRound(max, lang)}</span>
       </div>
     </div>
   );
@@ -249,34 +252,36 @@ const toggleIn = <T extends string>(list: readonly T[], key: T): T[] =>
   list.includes(key) ? list.filter((k) => k !== key) : [...list, key];
 
 export function BudgetFields({ answers, set }: { answers: Answers; set: SetAnswers }) {
+  const m = useMessages();
   return (
     <div className="space-y-8">
       <BudgetSlider
         id="budget"
-        label="Weekly grocery budget"
+        label={m.preferences.weeklyBudget}
         cents={answers.weekly_budget_cents}
         onChange={(cents) => set({ weekly_budget_cents: cents })}
       />
       <Stepper
-        label="People eating"
+        label={m.preferences.peopleEating}
         value={answers.household_size}
         min={1}
         max={8}
         onChange={(household_size) => set({ household_size })}
-        unit={(n) => (n === 1 ? "1 person" : `${n} people`)}
+        unit={(n) => n === 1 ? m.common.person : fill(m.common.people, { count: n })}
       />
     </div>
   );
 }
 
 export function UsualSpendField({ answers, set }: { answers: Answers; set: SetAnswers }) {
+  const m = useMessages();
   return (
     <div>
       <label htmlFor="usual" className="font-medium">
-        What do you usually spend a week?
+        {m.preferences.usualSpend}
       </label>
       <p id="usual-hint" className="mt-1 text-sm text-ink-soft">
-        We compare each week against this to show what you saved. A rough number is fine.
+        {m.preferences.spendHint}
       </p>
       <div className="relative mt-3 max-w-48">
         <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-ink-soft">$</span>
@@ -285,7 +290,7 @@ export function UsualSpendField({ answers, set }: { answers: Answers; set: SetAn
           inputMode="numeric"
           className="field tnum pl-8"
           aria-describedby="usual-hint"
-          placeholder="e.g. 180"
+          placeholder={m.preferences.spendPlaceholder}
           value={answers.usual_spend_cents === null ? "" : String(Math.round(answers.usual_spend_cents / 100))}
           onChange={(e) => {
             const digits = e.target.value.replace(/\D/g, "").slice(0, 4);
@@ -298,34 +303,35 @@ export function UsualSpendField({ answers, set }: { answers: Answers; set: SetAn
 }
 
 export function MealFields({ answers, set }: { answers: Answers; set: SetAnswers }) {
+  const m = useMessages();
   return (
     <div className="space-y-8">
       <ChoiceCards
-        legend="How do you eat?"
+        legend={m.preferences.howEat}
         name="diet"
         value={answers.diet}
-        options={DIETS.map((value) => ({ value, ...DIET_LABELS[value] }))}
+        options={DIETS.map((value) => ({ value, ...m.preferences.diets[value] }))}
         onChange={(diet) => set({ diet })}
       />
       <ChoiceCards
-        legend="How much time do you have to cook?"
+        legend={m.preferences.cookTime}
         name="cook_time"
         value={answers.cook_time}
-        options={COOK_TIMES.map((value) => ({ value, ...COOK_TIME_LABELS[value] }))}
+        options={COOK_TIMES.map((value) => ({ value, ...m.preferences.cookTimes[value] }))}
         onChange={(cook_time) => set({ cook_time })}
       />
       <fieldset>
-        <legend className="font-medium">Dinners are always planned. Add more?</legend>
+        <legend className="font-medium">{m.preferences.dinners}</legend>
         <div className="mt-3 grid gap-2 sm:grid-cols-2">
           <Toggle
-            label="Lunches"
-            hint="Three recipes, repeated"
+            label={m.preferences.lunches}
+            hint={m.preferences.threeRepeated}
             checked={answers.include_lunch}
             onChange={(include_lunch) => set({ include_lunch })}
           />
           <Toggle
-            label="Breakfasts"
-            hint="Three recipes, repeated"
+            label={m.preferences.breakfasts}
+            hint={m.preferences.threeRepeated}
             checked={answers.include_breakfast}
             onChange={(include_breakfast) => set({ include_breakfast })}
           />
@@ -342,20 +348,21 @@ export function AvoidFields({
 }: {
   answers: Answers;
   set: SetAnswers;
-  dislikeOptions: { key: string; label: string }[];
+  dislikeOptions: { key: string }[];
 }) {
+  const m = useMessages();
   return (
     <div className="space-y-8">
       <Chips
-        legend="Any allergies?"
-        hint="Recipes containing these are never planned."
-        options={ALLERGENS.map((key) => ({ key, label: ALLERGEN_LABELS[key] }))}
+        legend={m.preferences.allergies}
+        hint={m.preferences.allergiesHint}
+        options={ALLERGENS.map((key) => ({ key, label: m.preferences.allergens[key] }))}
         selected={answers.allergens}
         onToggle={(key) => set({ allergens: toggleIn(answers.allergens, key as (typeof ALLERGENS)[number]) })}
       />
       <Chips
-        legend="Anything you won't eat?"
-        options={dislikeOptions}
+        legend={m.preferences.dislikesTitle}
+        options={dislikeOptions.map(({ key }) => ({ key, label: m.preferences.dislikes[key as keyof typeof m.preferences.dislikes] ?? key }))}
         selected={answers.dislikes}
         onToggle={(key) => set({ dislikes: toggleIn(answers.dislikes, key) })}
       />
@@ -374,13 +381,24 @@ export function PantryFields({
   pantry: PantryGroups;
   children?: ReactNode;
 }) {
+  const m = useMessages();
+  const { lang } = useLocale();
   const toggle = (key: string) => set({ pantry: toggleIn(answers.pantry, key) });
+  const toggleEquipment = (key: string) => set({ equipment: toggleIn(answers.equipment, key as (typeof EQUIPMENT)[number]) });
   return (
     <div className="space-y-8">
       <Chips
-        legend="In your kitchen right now"
-        hint="Tick what you have. It comes off the cart, so the same budget buys more."
-        options={pantry.common.map((item) => ({ key: item.id, label: item.name }))}
+        legend={m.preferences.appliances}
+        hint={m.preferences.appliancesHint}
+        options={EQUIPMENT.map((key) => ({ key, label: m.preferences.equipment[key] }))}
+        selected={answers.equipment}
+        onToggle={toggleEquipment}
+        tone="have"
+      />
+      <Chips
+        legend={m.preferences.kitchenNow}
+        hint={m.preferences.pantryHint}
+        options={pantry.common.map((item) => ({ key: item.id, label: lang === "es" && item.name_es ? item.name_es : item.name }))}
         selected={answers.pantry}
         onToggle={toggle}
         tone="have"
@@ -389,8 +407,8 @@ export function PantryFields({
       <details className="group rounded-2xl bg-surface px-4 py-1 shadow-[inset_0_0_0_1.5px_var(--color-line)]">
         <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between gap-4 font-medium [&::-webkit-details-marker]:hidden">
           <span>
-            Basics we assume you have
-            <span className="block text-sm font-normal text-ink-soft">Salt, oil, spices. Untick anything you&apos;re out of.</span>
+            {m.preferences.basics}
+            <span className="block text-sm font-normal text-ink-soft">{m.preferences.basicsHint}</span>
           </span>
           <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true" className="shrink-0 transition-transform group-open:rotate-180">
             <path d="M4 7l5 5 5-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -399,9 +417,9 @@ export function PantryFields({
         <div className="space-y-6 pb-4 pt-2">
           {pantry.basics.map((group) => (
             <Chips
-              key={group.title}
-              legend={group.title}
-              options={group.items.map((item) => ({ key: item.id, label: item.name }))}
+              key={group.key}
+              legend={m.preferences.pantryGroups[group.key]}
+              options={group.items.map((item) => ({ key: item.id, label: lang === "es" && item.name_es ? item.name_es : item.name }))}
               selected={answers.pantry}
               onToggle={toggle}
               tone="have"

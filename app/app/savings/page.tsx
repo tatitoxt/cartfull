@@ -6,21 +6,27 @@ import { weekLabel } from "@/lib/app/week";
 import { money, moneyRound } from "@/lib/format";
 import { ShareSavings } from "./share-savings";
 import { SpendForm } from "./spend-form";
+import { MESSAGES, fill } from "@/lib/i18n/messages";
 
-export const metadata: Metadata = { title: "Savings" };
+export async function generateMetadata(): Promise<Metadata> {
+  const { profile } = await loadAppState("/app/savings");
+  return { title: MESSAGES[profile.lang].metadata.savings };
+}
 
 export default async function SavingsPage() {
-  const { plans, entitlement, firstId } = await loadAppState("/app/savings");
+  const { plans, entitlement, firstId, profile } = await loadAppState("/app/savings");
+  const lang = profile.lang;
+  const m = MESSAGES[lang];
   const visible = entitlement.active ? plans : plans.filter((p) => p.id === firstId);
   const summary = summarizeSavings(visible);
 
   if (!summary.weeks.length) {
     return (
       <section className="py-10">
-        <h1 className="text-4xl">Savings</h1>
-        <p className="mt-3 text-ink-soft">Plan your first week and we&apos;ll start counting what you keep.</p>
+        <h1 className="text-4xl">{m.savings.title}</h1>
+        <p className="mt-3 text-ink-soft">{m.savings.first}</p>
         <Link href="/app/plan" className="btn btn-primary mt-6">
-          Go to my plan
+          {m.common.goPlan}
         </Link>
       </section>
     );
@@ -34,19 +40,18 @@ export default async function SavingsPage() {
     <>
       <section aria-labelledby="saved-title" className="rounded-card bg-green-deep p-6 text-paper sm:p-8">
         <h1 id="saved-title" className="text-sm font-semibold uppercase tracking-wider text-mint">
-          {saved >= 0 ? "Saved so far" : "Over your usual so far"}
+          {saved >= 0 ? m.savings.saved : m.savings.over}
         </h1>
         <p className="tnum mt-2 font-display text-7xl font-semibold leading-none" data-testid="total-saved">
-          {moneyRound(Math.abs(saved))}
+          {moneyRound(Math.abs(saved), lang)}
         </p>
         <p className="tnum mt-3 text-mint">
-          across {summary.weeks.length} {summary.weeks.length === 1 ? "week" : "weeks"}
-          {summary.weeks.length > 1 && saved > 0 && <> · about {moneyRound(summary.averageSavedCents)} a week</>}
+          {fill(m.savings.across, { count: summary.weeks.length, unit: summary.weeks.length === 1 ? m.savings.week : m.savings.weeks })}
+          {summary.weeks.length > 1 && saved > 0 && <> {fill(m.savings.average, { amount: moneyRound(summary.averageSavedCents, lang) })}</>}
         </p>
         {saved > 0 && (
           <p className="tnum mt-5 max-w-sm text-paper/85">
-            At this pace that&apos;s <strong className="text-yellow">{moneyRound(summary.yearlyPaceCents)}</strong> a year back in
-            your pocket.
+            {fill(m.savings.pace, { amount: moneyRound(summary.yearlyPaceCents, lang) })}
           </p>
         )}
         {saved > 0 && <ShareSavings savedCents={saved} weeks={summary.weeks.length} />}
@@ -54,24 +59,26 @@ export default async function SavingsPage() {
 
       {summary.confirmedWeeks < summary.weeks.length && (
         <p className="mt-4 text-sm text-ink-soft">
-          Weeks without a receipt count as if you spent your whole budget. Add what you really spent to make the number yours.
+          {m.savings.missingReceipt}
         </p>
       )}
 
-      <h2 className="mt-10 text-2xl">Week by week</h2>
+      <h2 className="mt-10 text-2xl">{m.savings.weekByWeek}</h2>
       <ol className="mt-4 space-y-4">
         {summary.weeks.map((week) => (
           <li key={week.id} className="rounded-card bg-surface p-5 shadow-[inset_0_0_0_1.5px_var(--color-line)]" data-testid="savings-week">
             <div className="flex items-baseline justify-between gap-4">
-              <h3 className="text-xl">Week of {weekLabel(week.weekStart)}</h3>
+              <h3 className="text-xl">{fill(m.common.weekOf, { date: weekLabel(week.weekStart, lang) })}</h3>
               <p className={`tnum shrink-0 font-semibold ${week.savedCents >= 0 ? "text-tomato-deep" : "text-ink"}`} data-testid="week-saved">
-                {week.savedCents >= 0 ? `Saved ${money(week.savedCents)}` : `${money(-week.savedCents)} over usual`}
+                {week.savedCents >= 0
+                  ? fill(m.savings.savedAmount, { amount: money(week.savedCents, lang) })
+                  : fill(m.savings.overUsual, { amount: money(-week.savedCents, lang) })}
               </p>
             </div>
             <dl className="tnum mt-4 space-y-2 text-sm">
               {[
-                { label: week.usualIsEstimate ? "Typical week" : "Your usual", cents: week.usualCents, bar: "bg-line" },
-                { label: week.spentIsActual ? "You spent" : "Your budget", cents: week.spentCents, bar: "bg-green" },
+                { label: week.usualIsEstimate ? m.savings.typical : m.savings.yourUsual, cents: week.usualCents, bar: "bg-line" },
+                { label: week.spentIsActual ? m.savings.spent : m.savings.budget, cents: week.spentCents, bar: "bg-green" },
               ].map((row) => (
                 <div key={row.label} className="grid grid-cols-[7.5rem_1fr_4.5rem] items-center gap-3">
                   <dt className="text-ink-soft">{row.label}</dt>
@@ -79,7 +86,7 @@ export default async function SavingsPage() {
                     <span className="h-2.5 rounded-full bg-paper-deep" aria-hidden="true">
                       <span className={`block h-full rounded-full ${row.bar}`} style={{ width: `${(row.cents / peak) * 100}%` }} />
                     </span>
-                    <span className="text-right font-semibold">{money(row.cents)}</span>
+                    <span className="text-right font-semibold">{money(row.cents, lang)}</span>
                   </dd>
                 </div>
               ))}
@@ -91,20 +98,20 @@ export default async function SavingsPage() {
 
       {!entitlement.active && plans.length > visible.length && (
         <p className="mt-6 text-ink-soft">
-          {plans.length - visible.length} earlier weeks are saved.{" "}
+          {fill(m.savings.earlier, { count: plans.length - visible.length })}{" "}
           <Link href="/app/upgrade" className="font-semibold text-green-deep underline underline-offset-4">
-            Subscribe to see them
+            {m.savings.subscribe}
           </Link>
           .
         </p>
       )}
       {anyEstimate && (
         <p className="mt-6 text-sm text-ink-faint">
-          &ldquo;Typical week&rdquo; is a rough figure for a household your size.{" "}
+          {m.savings.estimate}{" "}
           <Link href="/app/account" className="underline underline-offset-2">
-            Enter what you usually spend
+            {m.savings.enterUsual}
           </Link>{" "}
-          for a truer comparison.
+          {m.savings.truer}
         </p>
       )}
     </>

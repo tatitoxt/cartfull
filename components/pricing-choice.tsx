@@ -3,8 +3,11 @@
 import Link from "next/link";
 import { useState } from "react";
 import { track } from "@/components/analytics";
-import { PRICING, TRIAL_DAYS, type BillingInterval } from "@/lib/billing/plans";
+import { ANNUAL_SAVING_PERCENT, PRICING, TRIAL_DAYS, type BillingInterval } from "@/lib/billing/plans";
 import { LANDING, fill, type LandingCopy } from "@/lib/i18n/landing";
+import { useLocale, useMessages } from "@/lib/i18n/locale-provider";
+import { moneyExact } from "@/lib/format";
+import type { Lang } from "@/lib/catalog/localize";
 
 /**
  * Monthly / yearly toggle with one price in focus. On the landing page the
@@ -14,17 +17,32 @@ export function PricingChoice({
   mode,
   trial = true,
   copy = LANDING.en.pricing,
+  landingLang,
 }: {
   mode: "landing" | "checkout";
   trial?: boolean;
   copy?: LandingCopy["pricing"];
+  landingLang?: Lang;
 }) {
   const [interval, setInterval] = useState<BillingInterval>("annual");
   const annual = interval === "annual";
+  const { lang: appLang } = useLocale();
+  const lang = mode === "landing" ? landingLang ?? appLang : appLang;
+  const m = useMessages();
+  const yearlyLabel = mode === "landing" ? copy.yearly : m.billing.annual.replace("{percent}", String(ANNUAL_SAVING_PERCENT));
+  const monthlyLabel = mode === "landing" ? copy.monthly : m.billing.monthly;
+  const perYear = mode === "landing" ? copy.perYear : m.billing.perYear;
+  const perMonth = mode === "landing" ? copy.perMonth : m.billing.perMonth;
+  const yearlyNote = mode === "landing"
+    ? copy.yearlyNote.replace(PRICING.annual.perMonthLabel, moneyExact(Math.round(PRICING.annual.cents / 12), lang))
+    : m.billing.yearlyNote.replace("{amount}", moneyExact(Math.round(PRICING.annual.cents / 12), lang));
+  const annualPrice = lang === "es" ? moneyExact(PRICING.annual.cents, lang) : PRICING.annual.label;
+  const monthlyPrice = lang === "es" ? moneyExact(PRICING.monthly.cents, lang) : PRICING.monthly.label;
+  const monthlyNote = mode === "landing" ? copy.monthlyNote : m.billing.monthlyNote;
 
   return (
     <div className="mt-8">
-      <div role="radiogroup" aria-label="Billing period" className="inline-grid grid-cols-2 rounded-full bg-paper-deep p-1">
+      <div role="radiogroup" aria-label={lang === "es" ? "Período de pago" : "Billing period"} className="inline-grid grid-cols-2 rounded-full bg-paper-deep p-1">
         {(["annual", "monthly"] as const).map((value) => (
           <button
             key={value}
@@ -37,26 +55,26 @@ export function PricingChoice({
             }`}
             data-testid={`interval-${value}`}
           >
-            {value === "annual" ? copy.yearly : copy.monthly}
+            {value === "annual" ? yearlyLabel : monthlyLabel}
           </button>
         ))}
       </div>
 
       <p className="mt-6 flex items-baseline gap-2" aria-live="polite">
         <span className="tnum font-display text-6xl font-semibold leading-none" data-testid="price">
-          {annual ? PRICING.annual.label : PRICING.monthly.label}
+          {annual ? annualPrice : monthlyPrice}
         </span>
-        <span className="text-ink-soft">{annual ? copy.perYear : copy.perMonth}</span>
+        <span className="text-ink-soft">{annual ? perYear : perMonth}</span>
       </p>
       <p className="tnum mt-2 text-ink-soft">
-        {annual ? copy.yearlyNote : copy.monthlyNote}
+        {annual ? yearlyNote : monthlyNote}
       </p>
 
       {mode === "checkout" ? (
         <form action="/api/stripe/checkout" method="post" className="mt-6" onSubmit={() => track("checkout_started", { interval })}>
           <input type="hidden" name="interval" value={interval} />
           <button type="submit" className="btn btn-cta w-full sm:w-auto" data-testid="checkout-button">
-            {trial ? `Start my ${TRIAL_DAYS}-day free trial` : "Subscribe"}
+            {trial ? m.billing.trialButton.replace("{days}", String(TRIAL_DAYS)) : m.billing.subscribe}
           </button>
         </form>
       ) : (
@@ -66,10 +84,16 @@ export function PricingChoice({
       )}
       <p className="mt-4 max-w-md text-sm text-ink-soft">
         {mode === "landing"
-          ? fill(copy.terms, { price: annual ? copy.yearPrice : copy.monthPrice })
-          : trial
-            ? `Free for ${TRIAL_DAYS} days, then ${annual ? `${PRICING.annual.label} a year` : `${PRICING.monthly.label} a month`}. Cancel any time before the trial ends and you pay nothing.`
-            : `${annual ? `${PRICING.annual.label} a year` : `${PRICING.monthly.label} a month`}, charged today. Cancel any time.`}
+          ? fill(copy.terms, {
+              price: annual
+                ? `${annualPrice} ${lang === "es" ? "al año" : "a year"}`
+                : `${monthlyPrice} ${lang === "es" ? "al mes" : "a month"}`,
+            })
+            : trial
+            ? m.billing.termsTrial
+                .replace("{days}", String(TRIAL_DAYS))
+                .replace("{price}", annual ? `${annualPrice} ${lang === "es" ? "al año" : "a year"}` : `${monthlyPrice} ${lang === "es" ? "al mes" : "a month"}`)
+            : m.billing.termsPaid.replace("{price}", annual ? `${annualPrice} ${lang === "es" ? "al año" : "a year"}` : `${monthlyPrice} ${lang === "es" ? "al mes" : "a month"}`)}
       </p>
     </div>
   );

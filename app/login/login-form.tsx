@@ -5,6 +5,8 @@ import { useState } from "react";
 import { track } from "@/components/analytics";
 import { normalizeEmail, REQUESTED_COOKIE } from "@/lib/auth/requested";
 import { createClient } from "@/lib/supabase/client";
+import { useMessages } from "@/lib/i18n/locale-provider";
+import { fill } from "@/lib/i18n/messages";
 
 type Stage = "email" | "sent";
 
@@ -18,12 +20,13 @@ export function LoginForm({
   linkError: boolean;
 }) {
   const router = useRouter();
+  const m = useMessages();
   const [stage, setStage] = useState<Stage>("email");
   const [email, setEmail] = useState("");
   const [code, setCode] = useState("");
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(
-    linkError ? "That link has expired or was already used. Enter your email for a new one." : null,
+    linkError ? m.login.expired : null,
   );
 
   const redirectTo = () => `${window.location.origin}/auth/callback?next=${encodeURIComponent(next)}`;
@@ -45,8 +48,8 @@ export function LoginForm({
     if (error) {
       setError(
         error.status === 429
-          ? "Too many tries. Wait a minute and ask for a new link."
-          : "We couldn't send the email. Check the address and try again.",
+          ? m.login.tooMany
+          : m.login.sendError,
       );
       return;
     }
@@ -61,7 +64,7 @@ export function LoginForm({
     const { error } = await createClient().auth.verifyOtp({ email: email.trim(), token: code.trim(), type: "email" });
     if (error) {
       setBusy(false);
-      setError("That code didn't match. Check the email and try again.");
+      setError(m.login.codeError);
       return;
     }
     router.replace(next);
@@ -76,7 +79,7 @@ export function LoginForm({
     });
     if (error) {
       setBusy(false);
-      setError("Google sign-in isn't available right now. Use your email instead.");
+      setError(m.login.googleError);
     }
   }
 
@@ -84,15 +87,14 @@ export function LoginForm({
     return (
       <div className="mt-8">
         <div className="rounded-card bg-mint-soft p-5" role="status">
-          <p className="font-semibold text-green-deep">Check your inbox</p>
+          <p className="font-semibold text-green-deep">{m.login.inbox}</p>
           <p className="mt-1 text-ink-soft">
-            We sent a sign-in link to <span className="font-medium text-ink">{email}</span>. Tap it on this device, or
-            type the 6-digit code from the email below.
+            {fill(m.login.sent, { email })}
           </p>
         </div>
         <form onSubmit={verifyCode} className="mt-6 space-y-3">
           <label htmlFor="code" className="block text-sm font-medium">
-            6-digit code
+            {m.login.codeLabel}
           </label>
           <input
             id="code"
@@ -113,7 +115,7 @@ export function LoginForm({
             </p>
           )}
           <button type="submit" className="btn btn-primary w-full" disabled={busy || code.length !== 6}>
-            {busy ? "Checking…" : "Sign in"}
+            {busy ? m.login.checking : m.login.signIn}
           </button>
         </form>
         <button
@@ -125,7 +127,7 @@ export function LoginForm({
             setError(null);
           }}
         >
-          Use a different email
+          {m.login.differentEmail}
         </button>
       </div>
     );
@@ -135,7 +137,7 @@ export function LoginForm({
     <div className="mt-8">
       <form onSubmit={sendLink} className="space-y-3">
         <label htmlFor="email" className="block text-sm font-medium">
-          Email
+          {m.login.email}
         </label>
         <input
           id="email"
@@ -144,7 +146,7 @@ export function LoginForm({
           autoComplete="email"
           inputMode="email"
           required
-          placeholder="you@example.com"
+          placeholder={m.login.emailPlaceholder}
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           className="field"
@@ -156,14 +158,14 @@ export function LoginForm({
           </p>
         )}
         <button type="submit" className="btn btn-primary w-full" disabled={busy}>
-          {busy ? "Sending…" : "Email me a sign-in link"}
+          {busy ? m.login.sending : m.login.send}
         </button>
       </form>
       {googleEnabled && (
         <>
           <div className="my-6 flex items-center gap-3 text-sm text-ink-faint">
             <span className="h-px flex-1 bg-line" />
-            or
+            {m.login.or}
             <span className="h-px flex-1 bg-line" />
           </div>
           <button type="button" onClick={google} className="btn btn-quiet w-full" disabled={busy}>
@@ -173,7 +175,7 @@ export function LoginForm({
               <path fill="#FBBC05" d="M3.96 10.71a5.41 5.41 0 0 1 0-3.42V4.96H.96a9 9 0 0 0 0 8.08l3-2.33Z" />
               <path fill="#EA4335" d="M9 3.58c1.32 0 2.5.45 3.44 1.35l2.58-2.59A9 9 0 0 0 .96 4.96l3 2.33C4.67 5.16 6.66 3.58 9 3.58Z" />
             </svg>
-            Continue with Google
+            {m.login.google}
           </button>
         </>
       )}
