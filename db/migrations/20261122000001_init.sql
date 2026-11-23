@@ -129,11 +129,13 @@ create policy "read own subscription" on public.subscriptions for select
   using (user_id = (select auth.uid()));
 -- No insert/update/delete policies: clients can never grant themselves access.
 
+-- Answers only about the caller: these helpers skip row-level security, so they
+-- must not reveal anything about another household.
 create function public.has_access(uid uuid) returns boolean
 language sql stable security definer set search_path = '' as $$
   select exists (
     select 1 from public.subscriptions s
-    where s.user_id = uid and s.status in ('trialing', 'active')
+    where s.user_id = uid and uid = (select auth.uid()) and s.status in ('trialing', 'active')
   );
 $$;
 
@@ -180,7 +182,9 @@ create index plans_user_week_idx on public.plans (user_id, week_start desc);
 -- The first plan a household ever created is theirs to keep for free.
 create function public.first_plan_id(uid uuid) returns uuid
 language sql stable security definer set search_path = '' as $$
-  select p.id from public.plans p where p.user_id = uid order by p.created_at, p.id limit 1;
+  select p.id from public.plans p
+  where p.user_id = uid and uid = (select auth.uid())
+  order by p.created_at, p.id limit 1;
 $$;
 
 -- Viewing: the free first week stays readable; everything else needs a subscription.
