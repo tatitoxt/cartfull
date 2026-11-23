@@ -89,7 +89,7 @@ The end-to-end suite covers the landing page and calculator, onboarding, sign-in
 
 ## Deploy
 
-1. **Supabase** – create a project, then `npx supabase link` and `npx supabase db push` to apply `db/migrations`. Run `db/seed.sql` once to load the catalog. In Auth settings set the Site URL, add `https://<domain>/auth/callback**` to the redirect list (the link carries a query string), and use `supabase/templates/magic_link.html` for the magic link and confirmation emails so they include the 6-digit code and name the account the link signs in to (links without it are refused). Configure an SMTP provider for production email. Enable Google under Auth providers if wanted.
+1. **Supabase** – create a project, then `npx supabase link` and `npx supabase db push` to apply `db/migrations`. Run `db/seed.sql` once to load the catalog. In Auth settings set the Site URL, add `https://<domain>/auth/callback**` to the redirect list (the link carries the destination and the address it signs in), and use `supabase/templates/magic_link.html` for the magic link and confirmation emails so they include the 6-digit code. Configure an SMTP provider for production email. Enable Google under Auth providers if wanted.
 2. **Stripe** – create one product with two recurring prices ($9.99 monthly, $49.99 yearly). Add a webhook endpoint at `https://<domain>/api/stripe/webhook` for `checkout.session.completed`, `customer.subscription.*` and `invoice.*`. Turn on the Customer Portal.
 3. **Vercel** (or any Node host) – import the repository, set the variables above, deploy.
 

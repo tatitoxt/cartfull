@@ -6,7 +6,8 @@ const signedIn = async (context: BrowserContext) =>
 
 test.describe("emailed sign-in link", () => {
   test("signs in the browser that asked for it", async ({ page }) => {
-    const email = uniqueEmail("link");
+    // Punctuation that means something in a link must survive the trip through the email.
+    const email = uniqueEmail("a&b#c+d");
     await page.goto("/login?next=/app/account");
     await requestSignIn(page, email);
     await page.goto(await signInLink(email));
@@ -23,7 +24,7 @@ test.describe("emailed sign-in link", () => {
     const other = await browser.newContext();
     const visitor = await other.newPage();
     await visitor.goto(await signInLink(email));
-    await expect(visitor).toHaveURL(/\/auth\/confirm/);
+    await expect(visitor).toHaveURL(/\/auth\/confirm$/);
     await expect(visitor.getByTestId("confirm-email")).toHaveText(email);
     // Nothing is signed in until the person says the address is theirs.
     expect(await signedIn(other)).toBe(false);
