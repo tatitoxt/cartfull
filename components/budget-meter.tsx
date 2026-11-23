@@ -16,7 +16,7 @@ export function BudgetMeter({ totalCents, budgetCents }: { totalCents: number; b
       <div className="flex items-end justify-between gap-4">
         <p>
           <span className="block text-sm font-medium text-fg-soft">{m.budgetMeter.estimated}</span>
-          <span className="tnum font-display text-5xl font-semibold leading-none" data-testid="cart-total">
+          <span className="tnum font-display text-4xl font-semibold leading-none" data-testid="cart-total">
             {money(totalCents, lang)}
           </span>
         </p>

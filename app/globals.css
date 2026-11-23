@@ -59,8 +59,8 @@
   --over-soft: rgb(239 64 56 / 0.14);
   --spend: #dfa53d;
   --spend-soft: rgb(223 165 61 / 0.15);
-  --budget: #a78bfa;
-  --budget-soft: rgb(167 139 250 / 0.14);
+  --budget: #9b5cff;
+  --budget-soft: rgb(155 92 255 / 0.16);
 }
 
 /* Light, explicit or via the device. */
@@ -82,8 +82,8 @@
   --over-soft: rgb(217 45 32 / 0.10);
   --spend: #a9761a;
   --spend-soft: rgb(169 118 26 / 0.14);
-  --budget: #7a5bd6;
-  --budget-soft: rgb(122 91 214 / 0.14);
+  --budget: #6d3fd8;
+  --budget-soft: rgb(109 63 216 / 0.14);
 }
 @media (prefers-color-scheme: light) {
   :root[data-theme="auto"] {
@@ -104,8 +104,8 @@
     --over-soft: rgb(217 45 32 / 0.10);
     --spend: #a9761a;
     --spend-soft: rgb(169 118 26 / 0.14);
-    --budget: #7a5bd6;
-    --budget-soft: rgb(122 91 214 / 0.14);
+    --budget: #6d3fd8;
+    --budget-soft: rgb(109 63 216 / 0.14);
   }
 }
 
