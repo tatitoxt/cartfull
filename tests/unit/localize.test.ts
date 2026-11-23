@@ -31,7 +31,7 @@ describe("amounts", () => {
 describe("temperatures", () => {
   it("shows the oven setting in the reader's scale", () => {
     expect(temperatures("Heat the oven to {425F}.", "imperial")).toBe("Heat the oven to 425°F.");
-    expect(temperatures("Calentá el horno a {425F}.", "metric")).toBe("Calentá el horno a 220°C.");
+    expect(temperatures("Calienta el horno a {425F}.", "metric")).toBe("Calienta el horno a 220°C.");
     expect(temperatures("Bake at {350F}, then {400F}.", "metric")).toBe("Bake at 180°C, then 200°C.");
   });
 });
