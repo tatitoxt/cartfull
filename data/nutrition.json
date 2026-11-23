@@ -30,7 +30,7 @@
   "bacon": {
     "carbs": 1.4,
     "fat": 42,
-    "g": 29,
+    "g": 8,
     "kcal": 541,
     "protein": 37
   },
@@ -247,7 +247,7 @@
   "chicken_drumstick": {
     "carbs": 0,
     "fat": 9.2,
-    "g": 453.6,
+    "g": 320,
     "kcal": 161,
     "protein": 18.1
   },
@@ -919,7 +919,7 @@
   "rotisserie_chicken": {
     "carbs": 0,
     "fat": 11,
-    "g": 1000,
+    "g": 750,
     "kcal": 190,
     "protein": 21
   },
@@ -961,7 +961,7 @@
   "sausage_smoked": {
     "carbs": 2,
     "fat": 26,
-    "g": 240,
+    "g": 369,
     "kcal": 300,
     "protein": 12
   },
@@ -1143,7 +1143,7 @@
   "tuna_canned": {
     "carbs": 0,
     "fat": 1,
-    "g": 142,
+    "g": 112,
     "kcal": 116,
     "protein": 26
   },
@@ -1213,7 +1213,7 @@
   "whole_chicken": {
     "carbs": 0,
     "fat": 14,
-    "g": 1400,
+    "g": 924,
     "kcal": 205,
     "protein": 18
   },
