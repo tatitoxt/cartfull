@@ -12,6 +12,7 @@ import { money, moneyExact } from "@/lib/format";
 import type { MealAssignment } from "@/lib/planner/types";
 import { MESSAGES, fill } from "@/lib/i18n/messages";
 import { PlanActions } from "./plan-actions";
+import { LeftoverToggle } from "./leftover-toggle";
 import { SwapButton } from "./swap-button";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -144,9 +145,17 @@ export default async function PlanPage() {
                     <span className="text-fg-soft">{fill(m.common.min, { count: dinner.recipe.prep_minutes })}</span>
                     <span className="text-fg-soft">{fill(m.recipe.serves, { count: dinner.servings })}</span>
                   </p>
-                  {editable && !over && (
-                  <SwapButton planId={row.id} day={day} slot="dinner" currentName={dinner.recipe.name_es && lang === "es" ? dinner.recipe.name_es : dinner.recipe.name} />
-                  )}
+                  <div className="mt-3 flex flex-wrap items-center gap-2">
+                    {editable && !over && (
+                    <SwapButton planId={row.id} day={day} slot="dinner" currentName={dinner.recipe.name_es && lang === "es" ? dinner.recipe.name_es : dinner.recipe.name} />
+                    )}
+                    {editable && !over && (
+                      <LeftoverToggle planId={row.id} day={day} slot="dinner" leftover={Boolean(dinner.leftover)} />
+                    )}
+                    {dinner.leftover && (
+                      <span className="rounded-full bg-accent-soft px-3 py-1 text-xs font-semibold text-accent-deep">{m.plan.leftoversOn}</span>
+                    )}
+                  </div>
                 </div>
               </article>
             )}
@@ -166,6 +175,9 @@ export default async function PlanPage() {
                     </div>
                     <FavoriteToggle slug={meal.recipe.slug} initial={feedback.favorites.has(meal.recipe.slug)} />
                     {editable && !over && (
+                      <LeftoverToggle planId={row.id} day={day} slot={meal.slot} leftover={Boolean(meal.leftover)} />
+                    )}
+                    {editable && !over && !meal.leftover && (
                       <SwapButton planId={row.id} day={day} slot={meal.slot} currentName={meal.recipe.name_es && lang === "es" ? meal.recipe.name_es : meal.recipe.name} compact />
                     )}
                   </li>

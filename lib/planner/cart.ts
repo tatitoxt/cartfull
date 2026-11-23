@@ -36,6 +36,7 @@ export function buildCart(
 ): Cart {
   const byId = new Map<string, { qty: number; usedIn: Set<string> }>();
   for (const meal of meals) {
+    if (meal.leftover) continue;
     const scale = meal.servings / meal.recipe.servings;
     for (const ri of meal.recipe.ingredients) {
       const entry = byId.get(ri.id) ?? { qty: 0, usedIn: new Set<string>() };

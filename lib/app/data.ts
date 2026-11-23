@@ -139,7 +139,7 @@ export async function loadPlan(
   }
 
   const [{ data: mealRows }, { data: itemRows }] = await Promise.all([
-    session.supabase.from("plan_meals").select("day, slot, recipe_slug, servings").eq("plan_id", row.id),
+    session.supabase.from("plan_meals").select("day, slot, recipe_slug, servings, leftover").eq("plan_id", row.id),
     session.supabase.from("plan_items").select("ingredient_id, checked, have, have_qty").eq("plan_id", row.id),
   ]);
 
@@ -147,7 +147,14 @@ export async function loadPlan(
   const meals: MealAssignment[] = [];
   for (const m of mealRows ?? []) {
     const recipe = recipeBySlug(m.recipe_slug as string);
-    if (recipe) meals.push({ day: m.day as number, slot: m.slot as MealType, recipe, servings: m.servings as number });
+    if (recipe)
+      meals.push({
+        day: m.day as number,
+        slot: m.slot as MealType,
+        recipe,
+        servings: m.servings as number,
+        leftover: Boolean(m.leftover),
+      });
   }
   meals.sort((a, b) => a.day - b.day || order.indexOf(a.slot) - order.indexOf(b.slot));
 

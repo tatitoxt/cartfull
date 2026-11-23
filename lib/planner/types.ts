@@ -37,6 +37,8 @@ export interface MealAssignment {
   slot: MealType;
   recipe: Recipe;
   servings: number;
+  /** Eating yesterday's leftovers instead: kept on the plan but shops nothing. */
+  leftover?: boolean;
 }
 
 export interface CartLine {

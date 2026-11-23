@@ -224,7 +224,13 @@ async function savePlan(
     p_diet: input.diet,
     p_total_cents: cart.totalCents,
     p_seed: input.seed,
-    p_meals: input.meals.map((m) => ({ day: m.day, slot: m.slot, recipe_slug: m.recipe.slug, servings: m.servings })),
+    p_meals: input.meals.map((m) => ({
+      day: m.day,
+      slot: m.slot,
+      recipe_slug: m.recipe.slug,
+      servings: m.servings,
+      leftover: Boolean(m.leftover),
+    })),
     p_items: cart.lines.map((line) => ({ ingredient_id: line.ingredient.id, have: line.have, have_qty: line.haveQty })),
   });
   if (!error) return null;
@@ -346,7 +352,7 @@ export async function swapMeal(planId: string, day: number, slot: MealType, slug
   if (!allowed) return fail("invalid", m.actions.swapBudget);
 
   const meals = loaded.meals.map((m) =>
-    m.slot === slot && m.recipe.slug === current.recipe.slug ? { ...m, recipe } : m,
+    m.slot === slot && m.recipe.slug === current.recipe.slug ? { ...m, recipe, leftover: false } : m,
   );
   const error = await savePlan(session, profile.lang, {
     weekStart: loaded.row.week_start,
@@ -358,6 +364,40 @@ export async function swapMeal(planId: string, day: number, slot: MealType, slug
     meals,
     have,
     owned,
+  });
+  if (error) return error;
+  revalidatePath("/app", "layout");
+  return { ok: true };
+}
+
+/**
+ * Marks a meal as "eating leftovers" or back to cooking it. Leftover meals stay
+ * on the plan but contribute nothing to the cart or its total.
+ */
+export async function toggleLeftover(planId: string, day: number, slot: MealType): Promise<ActionResult> {
+  const session = await requireSession();
+  const profile = await getProfile(session);
+  const m = MESSAGES[profile.lang];
+  if (!MEAL_TYPES.includes(slot) || day < 0 || day > 6) return fail("invalid", m.actions.mealMissing);
+  const loaded = await editablePlan(session, planId);
+  if (!loaded) return fail("locked", m.actions.locked);
+  const current = loaded.meals.find((meal) => meal.day === day && meal.slot === slot);
+  if (!current) return fail("invalid", m.actions.mealMissing);
+
+  const meals = loaded.meals.map((meal) =>
+    meal.day === day && meal.slot === slot ? { ...meal, leftover: !meal.leftover } : meal,
+  );
+  const pantry = await getPantry(session);
+  const error = await savePlan(session, profile.lang, {
+    weekStart: loaded.row.week_start,
+    budgetCents: loaded.row.budget_cents,
+    usualSpendCents: loaded.row.usual_spend_cents ?? typicalSpendCents(loaded.row.household_size),
+    householdSize: loaded.row.household_size,
+    diet: loaded.row.diet,
+    seed: loaded.row.seed,
+    meals,
+    have: effectiveHave(pantry, loaded),
+    owned: new Map(loaded.haveQty),
   });
   if (error) return error;
   revalidatePath("/app", "layout");
