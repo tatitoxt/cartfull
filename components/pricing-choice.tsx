@@ -42,7 +42,7 @@ export function PricingChoice({
 
   return (
     <div className="mt-8">
-      <div role="radiogroup" aria-label={lang === "es" ? "Período de pago" : "Billing period"} className="inline-grid grid-cols-2 rounded-full bg-paper-deep p-1">
+      <div role="radiogroup" aria-label={lang === "es" ? "Período de pago" : "Billing period"} className="inline-grid grid-cols-2 rounded-full bg-bg-deep p-1">
         {(["annual", "monthly"] as const).map((value) => (
           <button
             key={value}
@@ -51,7 +51,7 @@ export function PricingChoice({
             aria-checked={interval === value}
             onClick={() => setInterval(value)}
             className={`min-h-11 rounded-full px-5 text-sm font-semibold transition-colors ${
-              interval === value ? "bg-surface text-ink shadow-sm" : "text-ink-soft"
+              interval === value ? "bg-surface text-fg shadow-sm" : "text-fg-soft"
             }`}
             data-testid={`interval-${value}`}
           >
@@ -64,9 +64,9 @@ export function PricingChoice({
         <span className="tnum font-display text-6xl font-semibold leading-none" data-testid="price">
           {annual ? annualPrice : monthlyPrice}
         </span>
-        <span className="text-ink-soft">{annual ? perYear : perMonth}</span>
+        <span className="text-fg-soft">{annual ? perYear : perMonth}</span>
       </p>
-      <p className="tnum mt-2 text-ink-soft">
+      <p className="tnum mt-2 text-fg-soft">
         {annual ? yearlyNote : monthlyNote}
       </p>
 
@@ -82,7 +82,7 @@ export function PricingChoice({
           {copy.cta}
         </Link>
       )}
-      <p className="mt-4 max-w-md text-sm text-ink-soft">
+      <p className="mt-4 max-w-md text-sm text-fg-soft">
         {mode === "landing"
           ? fill(copy.terms, {
               price: annual

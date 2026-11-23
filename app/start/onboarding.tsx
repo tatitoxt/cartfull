@@ -198,14 +198,14 @@ function Flow({
         <Link href="/" aria-label={messages.common.home}>
           <Logo />
         </Link>
-        <p className="tnum text-sm font-medium text-ink-soft" aria-live="polite">
+        <p className="tnum text-sm font-medium text-fg-soft" aria-live="polite">
           {fill(messages.onboarding.step, { current: step + 1, total: STEPS.length })}
         </p>
       </header>
 
       <ol className="mt-5 grid grid-cols-4 gap-1.5" aria-hidden="true">
         {Array.from({ length: 4 }, (_, index) => (
-          <li key={index} className={`h-1.5 rounded-full ${index < Math.ceil(((step + 1) * 4) / STEPS.length) ? "bg-green" : "bg-line"}`} />
+          <li key={index} className={`h-1.5 rounded-full ${index < Math.ceil(((step + 1) * 4) / STEPS.length) ? "bg-accent" : "bg-line"}`} />
         ))}
       </ol>
 
@@ -220,7 +220,7 @@ function Flow({
               messages.onboarding.kitchenTitle,
             ][step]}
           </h1>
-          <p className="mt-3 text-ink-soft">
+          <p className="mt-3 text-fg-soft">
             {[
               messages.onboarding.countryLead,
               messages.onboarding.budgetLead,
@@ -260,12 +260,12 @@ function Flow({
         </div>
 
         {problem && (
-          <div role="alert" className="mt-6 rounded-2xl bg-yellow-soft p-4 shadow-[inset_0_0_0_1.5px_var(--color-yellow)]">
+          <div role="alert" className="mt-6 rounded-2xl bg-over-soft p-4 shadow-[inset_0_0_0_1.5px_var(--color-over)]">
             <p className="font-medium">{problem.message}</p>
             {problem.minimumCents && (
               <button
                 type="button"
-                className="mt-3 font-semibold text-green-deep underline underline-offset-4"
+                className="mt-3 font-semibold text-accent-deep underline underline-offset-4"
                 onClick={() => set({ weekly_budget_cents: Math.min(BUDGET_MAX_CENTS, Math.ceil(problem.minimumCents! / 500) * 500) })}
               >
                 {fill(messages.onboarding.budgetTarget, { amount: Math.ceil(problem.minimumCents / 500) * 5 })}
@@ -275,24 +275,24 @@ function Flow({
         )}
       </main>
 
-      <div className="fixed inset-x-0 bottom-0 z-10 border-t border-line bg-paper/95 pb-[max(1rem,env(safe-area-inset-bottom))] pt-3 backdrop-blur">
+      <div className="fixed inset-x-0 bottom-0 z-10 border-t border-line bg-bg/95 pb-[max(1rem,env(safe-area-inset-bottom))] pt-3 backdrop-blur">
         <div className="mx-auto w-full max-w-xl px-5">
           <p className="min-h-12 text-[0.95rem] leading-snug" aria-live="polite" data-testid="estimate">
-            {estimate.state === "loading" && <span className="text-ink-faint">{messages.onboarding.pricingLoading}</span>}
-            {estimate.state === "error" && <span className="text-ink-faint">{messages.onboarding.pricingLater}</span>}
+            {estimate.state === "loading" && <span className="text-fg-faint">{messages.onboarding.pricingLoading}</span>}
+            {estimate.state === "error" && <span className="text-fg-faint">{messages.onboarding.pricingLater}</span>}
             {estimate.state === "none" && (
               <span className="font-medium">
                 {fill(messages.onboarding.notEnough, { slot: estimate.slot })}
-                {" "}<span className="font-normal text-ink-soft">{messages.onboarding.loosen}</span>
+                {" "}<span className="font-normal text-fg-soft">{messages.onboarding.loosen}</span>
               </span>
             )}
             {estimate.state === "ready" && tooLow && (
               <span>
                 <span className="font-semibold">{fill(messages.onboarding.tooTight, { amount: Math.round(answers.weekly_budget_cents / 100) })}</span>{" "}
-                <span className="text-ink-soft">{messages.onboarding.leanest} </span>
+                <span className="text-fg-soft">{messages.onboarding.leanest} </span>
                 <button
                   type="button"
-                  className="tnum font-semibold text-green-deep underline underline-offset-2"
+                  className="tnum font-semibold text-accent-deep underline underline-offset-2"
                   onClick={() => set({ weekly_budget_cents: Math.min(BUDGET_MAX_CENTS, leanest!) })}
                 >
                   ${leanest! / 100}
@@ -328,7 +328,7 @@ function Flow({
           {!last && step > 0 && (
             <button
               type="button"
-              className="mx-auto mt-1 block min-h-11 px-3 text-sm font-medium text-ink-soft underline underline-offset-4"
+              className="mx-auto mt-1 block min-h-11 px-3 text-sm font-medium text-fg-soft underline underline-offset-4"
               onClick={() => go(step + 1)}
             >
               {messages.common.skipStep}
@@ -347,16 +347,16 @@ function BudgetLine({ budget, typical, minimum }: { budget: number; typical: num
   const left = budget - need;
   return (
     <span>
-      <span className="text-ink-soft">{messages.onboarding.needs} </span>
+      <span className="text-fg-soft">{messages.onboarding.needs} </span>
       <span className="tnum font-semibold">{moneyRound(need, lang)}</span>
       {left >= 100 ? (
         <>
-          <span className="text-ink-soft">. {messages.onboarding.leaves} </span>
-          <span className="tnum font-semibold text-tomato-deep">{moneyRound(left, lang)}</span>
-          <span className="text-ink-soft"> {messages.onboarding.everythingElse}</span>
+          <span className="text-fg-soft">. {messages.onboarding.leaves} </span>
+          <span className="tnum font-semibold text-accent-deep">{moneyRound(left, lang)}</span>
+          <span className="text-fg-soft"> {messages.onboarding.everythingElse}</span>
         </>
       ) : (
-        <span className="text-ink-soft">. {messages.onboarding.fits}</span>
+        <span className="text-fg-soft">. {messages.onboarding.fits}</span>
       )}
     </span>
   );

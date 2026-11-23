@@ -18,7 +18,7 @@ async function main() {
   ] as const) {
     const inner = Math.round(size * scale);
     const mark = await sharp(Buffer.from(glyph), { density: 600 }).resize(inner, inner).png().toBuffer();
-    await sharp({ create: { width: size, height: size, channels: 4, background: "#2D6A4F" } })
+    await sharp({ create: { width: size, height: size, channels: 4, background: "#A8E24B" } })
       .composite([{ input: mark, gravity: "center" }])
       .png()
       .toFile(join(dir, name));

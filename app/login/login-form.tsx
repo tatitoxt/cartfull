@@ -86,9 +86,9 @@ export function LoginForm({
   if (stage === "sent") {
     return (
       <div className="mt-8">
-        <div className="rounded-card bg-mint-soft p-5" role="status">
-          <p className="font-semibold text-green-deep">{m.login.inbox}</p>
-          <p className="mt-1 text-ink-soft">
+        <div className="rounded-card bg-accent-soft p-5" role="status">
+          <p className="font-semibold text-accent-deep">{m.login.inbox}</p>
+          <p className="mt-1 text-fg-soft">
             {fill(m.login.sent, { email })}
           </p>
         </div>
@@ -110,7 +110,7 @@ export function LoginForm({
             aria-describedby={error ? "login-error" : undefined}
           />
           {error && (
-            <p id="login-error" role="alert" className="text-sm text-tomato-deep">
+            <p id="login-error" role="alert" className="text-sm text-over-deep">
               {error}
             </p>
           )}
@@ -120,7 +120,7 @@ export function LoginForm({
         </form>
         <button
           type="button"
-          className="mt-4 text-sm font-medium text-green underline underline-offset-4"
+          className="mt-4 text-sm font-medium text-accent underline underline-offset-4"
           onClick={() => {
             setStage("email");
             setCode("");
@@ -153,7 +153,7 @@ export function LoginForm({
           aria-describedby={error ? "login-error" : undefined}
         />
         {error && (
-          <p id="login-error" role="alert" className="text-sm text-tomato-deep">
+          <p id="login-error" role="alert" className="text-sm text-over-deep">
             {error}
           </p>
         )}
@@ -163,7 +163,7 @@ export function LoginForm({
       </form>
       {googleEnabled && (
         <>
-          <div className="my-6 flex items-center gap-3 text-sm text-ink-faint">
+          <div className="my-6 flex items-center gap-3 text-sm text-fg-faint">
             <span className="h-px flex-1 bg-line" />
             {m.login.or}
             <span className="h-px flex-1 bg-line" />

@@ -43,7 +43,7 @@ export function Photo({
       loading={priority ? "eager" : "lazy"}
       fetchPriority={priority ? "high" : undefined}
       decoding="async"
-      className={`bg-paper-deep object-cover ${className}`}
+      className={`bg-bg-deep object-cover ${className}`}
       style={{ aspectRatio: String(ratio) }}
     />
   );

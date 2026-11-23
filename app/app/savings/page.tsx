@@ -24,7 +24,7 @@ export default async function SavingsPage() {
     return (
       <section className="py-10">
         <h1 className="text-4xl">{m.savings.title}</h1>
-        <p className="mt-3 text-ink-soft">{m.savings.first}</p>
+        <p className="mt-3 text-fg-soft">{m.savings.first}</p>
         <Link href="/app/plan" className="btn btn-primary mt-6">
           {m.common.goPlan}
         </Link>
@@ -38,19 +38,19 @@ export default async function SavingsPage() {
 
   return (
     <>
-      <section aria-labelledby="saved-title" className="rounded-card bg-green-deep p-6 text-paper sm:p-8">
-        <h1 id="saved-title" className="text-sm font-semibold uppercase tracking-wider text-mint">
+      <section aria-labelledby="saved-title" className="glass rounded-card bg-accent-soft p-6 sm:p-8">
+        <h1 id="saved-title" className="text-sm font-semibold uppercase tracking-wider text-accent-deep">
           {saved >= 0 ? m.savings.saved : m.savings.over}
         </h1>
         <p className="tnum mt-2 font-display text-7xl font-semibold leading-none" data-testid="total-saved">
           {moneyRound(Math.abs(saved), lang)}
         </p>
-        <p className="tnum mt-3 text-mint">
+        <p className="tnum mt-3 text-fg-soft">
           {fill(m.savings.across, { count: summary.weeks.length, unit: summary.weeks.length === 1 ? m.savings.week : m.savings.weeks })}
           {summary.weeks.length > 1 && saved > 0 && <> {fill(m.savings.average, { amount: moneyRound(summary.averageSavedCents, lang) })}</>}
         </p>
         {saved > 0 && (
-          <p className="tnum mt-5 max-w-sm text-paper/85">
+          <p className="tnum mt-5 max-w-sm text-fg-soft">
             {fill(m.savings.pace, { amount: moneyRound(summary.yearlyPaceCents, lang) })}
           </p>
         )}
@@ -58,7 +58,7 @@ export default async function SavingsPage() {
       </section>
 
       {summary.confirmedWeeks < summary.weeks.length && (
-        <p className="mt-4 text-sm text-ink-soft">
+        <p className="mt-4 text-sm text-fg-soft">
           {m.savings.missingReceipt}
         </p>
       )}
@@ -69,7 +69,7 @@ export default async function SavingsPage() {
           <li key={week.id} className="rounded-card bg-surface p-5 shadow-[inset_0_0_0_1.5px_var(--color-line)]" data-testid="savings-week">
             <div className="flex items-baseline justify-between gap-4">
               <h3 className="text-xl">{fill(m.common.weekOf, { date: weekLabel(week.weekStart, lang) })}</h3>
-              <p className={`tnum shrink-0 font-semibold ${week.savedCents >= 0 ? "text-tomato-deep" : "text-ink"}`} data-testid="week-saved">
+              <p className={`tnum shrink-0 font-semibold ${week.savedCents >= 0 ? "text-accent-deep" : "text-over-deep"}`} data-testid="week-saved">
                 {week.savedCents >= 0
                   ? fill(m.savings.savedAmount, { amount: money(week.savedCents, lang) })
                   : fill(m.savings.overUsual, { amount: money(-week.savedCents, lang) })}
@@ -77,13 +77,13 @@ export default async function SavingsPage() {
             </div>
             <dl className="tnum mt-4 space-y-2 text-sm">
               {[
-                { label: week.usualIsEstimate ? m.savings.typical : m.savings.yourUsual, cents: week.usualCents, bar: "bg-line" },
-                { label: week.spentIsActual ? m.savings.spent : m.savings.budget, cents: week.spentCents, bar: "bg-green" },
+                { label: week.usualIsEstimate ? m.savings.typical : m.savings.yourUsual, cents: week.usualCents, bar: "bg-spend" },
+                { label: week.spentIsActual ? m.savings.spent : m.savings.budget, cents: week.spentCents, bar: "bg-accent" },
               ].map((row) => (
                 <div key={row.label} className="grid grid-cols-[7.5rem_1fr_4.5rem] items-center gap-3">
-                  <dt className="text-ink-soft">{row.label}</dt>
+                  <dt className="text-fg-soft">{row.label}</dt>
                   <dd className="contents">
-                    <span className="h-2.5 rounded-full bg-paper-deep" aria-hidden="true">
+                    <span className="h-2.5 rounded-full bg-bg-deep" aria-hidden="true">
                       <span className={`block h-full rounded-full ${row.bar}`} style={{ width: `${(row.cents / peak) * 100}%` }} />
                     </span>
                     <span className="text-right font-semibold">{money(row.cents, lang)}</span>
@@ -97,16 +97,16 @@ export default async function SavingsPage() {
       </ol>
 
       {!entitlement.active && plans.length > visible.length && (
-        <p className="mt-6 text-ink-soft">
+        <p className="mt-6 text-fg-soft">
           {fill(m.savings.earlier, { count: plans.length - visible.length })}{" "}
-          <Link href="/app/upgrade" className="font-semibold text-green-deep underline underline-offset-4">
+          <Link href="/app/upgrade" className="font-semibold text-accent-deep underline underline-offset-4">
             {m.savings.subscribe}
           </Link>
           .
         </p>
       )}
       {anyEstimate && (
-        <p className="mt-6 text-sm text-ink-faint">
+        <p className="mt-6 text-sm text-fg-faint">
           {m.savings.estimate}{" "}
           <Link href="/app/account" className="underline underline-offset-2">
             {m.savings.enterUsual}

@@ -34,7 +34,7 @@ export function WelcomeStatus({ active, status, interval, lang }: { active: bool
     return (
       <section className="py-10" data-testid="welcome-active">
         <h1 className="text-4xl sm:text-5xl">{m.welcome.title}</h1>
-        <p className="mt-3 max-w-md text-ink-soft">
+        <p className="mt-3 max-w-md text-fg-soft">
           {status === "trialing"
             ? m.welcome.trial
             : m.welcome.active}
@@ -49,7 +49,7 @@ export function WelcomeStatus({ active, status, interval, lang }: { active: bool
   return (
     <section className="py-10" role="status">
       <h1 className="text-4xl">{tries >= 15 ? m.welcome.confirmingLong : m.welcome.confirming}</h1>
-      <p className="mt-3 max-w-md text-ink-soft">
+      <p className="mt-3 max-w-md text-fg-soft">
         {tries >= 15
           ? m.welcome.waitLong
           : m.welcome.wait}

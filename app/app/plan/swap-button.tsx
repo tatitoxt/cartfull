@@ -59,8 +59,8 @@ export function SwapButton({
         onClick={open}
         className={
           compact
-            ? "min-h-11 shrink-0 rounded-full px-3 text-sm font-semibold text-green-deep underline underline-offset-4"
-            : "mt-4 inline-flex min-h-11 items-center gap-2 rounded-full px-4 text-sm font-semibold text-green-deep shadow-[inset_0_0_0_1.5px_var(--color-line)] hover:bg-paper-deep"
+            ? "min-h-11 shrink-0 rounded-full px-3 text-sm font-semibold text-accent-deep underline underline-offset-4"
+            : "mt-4 inline-flex min-h-11 items-center gap-2 rounded-full px-4 text-sm font-semibold text-accent-deep shadow-[inset_0_0_0_1.5px_var(--color-line)] hover:bg-bg-deep"
         }
         aria-label={`${m.plan.swap} ${currentName}`}
         data-testid="swap-button"
@@ -69,7 +69,7 @@ export function SwapButton({
       </button>
       <dialog
         ref={dialog}
-        className="m-auto w-[min(34rem,calc(100vw-1.5rem))] rounded-card bg-paper p-0 text-ink shadow-2xl backdrop:bg-ink/40"
+        className="m-auto w-[min(34rem,calc(100vw-1.5rem))] rounded-card bg-bg p-0 text-fg shadow-2xl backdrop:bg-fg/40"
         aria-label={`${m.plan.swap} ${currentName}`}
         onClick={(e) => e.target === dialog.current && dialog.current?.close()}
       >
@@ -77,11 +77,11 @@ export function SwapButton({
           <div className="flex items-start justify-between gap-4">
             <div>
               <h2 className="text-2xl">{m.plan.swapTitle}</h2>
-              <p className="mt-1 text-sm text-ink-soft">{m.plan.swapHint}</p>
+              <p className="mt-1 text-sm text-fg-soft">{m.plan.swapHint}</p>
             </div>
             <button
               type="button"
-              className="grid size-11 shrink-0 place-items-center rounded-full hover:bg-paper-deep"
+              className="grid size-11 shrink-0 place-items-center rounded-full hover:bg-bg-deep"
               onClick={() => dialog.current?.close()}
               aria-label={m.common.close}
             >
@@ -91,13 +91,13 @@ export function SwapButton({
             </button>
           </div>
           {error && (
-            <p role="alert" className="mt-4 text-sm text-tomato-deep">
+            <p role="alert" className="mt-4 text-sm text-over-deep">
               {error}
             </p>
           )}
-          {choices === null && <p className="py-10 text-center text-ink-soft">{m.plan.finding}</p>}
+          {choices === null && <p className="py-10 text-center text-fg-soft">{m.plan.finding}</p>}
           {choices?.length === 0 && (
-            <p className="py-8 text-ink-soft">
+            <p className="py-8 text-fg-soft">
               {m.plan.noSwap}
             </p>
           )}
@@ -108,15 +108,15 @@ export function SwapButton({
                   type="button"
                   disabled={pending}
                   onClick={() => choose(choice.slug)}
-                  className="flex w-full items-center gap-3 rounded-2xl bg-surface p-2 pr-4 text-left shadow-[inset_0_0_0_1.5px_var(--color-line)] hover:shadow-[inset_0_0_0_2px_var(--color-green)] disabled:opacity-60"
+                  className="flex w-full items-center gap-3 rounded-2xl bg-surface p-2 pr-4 text-left shadow-[inset_0_0_0_1.5px_var(--color-line)] hover:shadow-[inset_0_0_0_2px_var(--color-accent)] disabled:opacity-60"
                   data-testid="swap-choice"
                 >
                   <Photo url={choice.photoUrl} alt="" ratio={1} sizes="64px" className="size-16 shrink-0 rounded-xl" />
                   <span className="min-w-0 flex-1">
                     <span className="block font-semibold leading-tight">{choice.name}</span>
-                    <span className="tnum block text-sm text-ink-soft">{fill(m.common.min, { count: choice.prepMinutes })}</span>
+                    <span className="tnum block text-sm text-fg-soft">{fill(m.common.min, { count: choice.prepMinutes })}</span>
                   </span>
-                  <span className={`tnum shrink-0 text-sm font-semibold ${choice.deltaCents < 0 ? "text-tomato-deep" : "text-ink-soft"}`}>
+                  <span className={`tnum shrink-0 text-sm font-semibold ${choice.deltaCents < 0 ? "text-over-deep" : "text-fg-soft"}`}>
                     {choice.deltaCents === 0
                       ? m.plan.sameCart
                       : choice.deltaCents < 0

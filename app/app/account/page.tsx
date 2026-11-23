@@ -8,6 +8,7 @@ import { BUDGET_MAX_CENTS, BUDGET_MIN_CENTS, DEFAULTS, type Answers } from "@/li
 import { PRICING, TRIAL_DAYS } from "@/lib/billing/plans";
 import { moneyExact } from "@/lib/format";
 import { DISLIKE_OPTIONS } from "@/lib/planner/dislikes";
+import { ThemePicker } from "@/components/theme-picker";
 import { SettingsForm } from "./settings-form";
 import { MESSAGES } from "@/lib/i18n/messages";
 
@@ -62,7 +63,7 @@ export default async function AccountPage({ searchParams }: { searchParams: Prom
   return (
     <>
       <h1 className="text-4xl sm:text-5xl">{m.account.title}</h1>
-      <p className="mt-2 text-ink-soft">{profile.email ?? session.email}</p>
+      <p className="mt-2 text-fg-soft">{profile.email ?? session.email}</p>
 
       <section aria-labelledby="billing-title" className="mt-8 rounded-card bg-surface p-5 shadow-[inset_0_0_0_1.5px_var(--color-line)]">
         <h2 id="billing-title" className="text-2xl">
@@ -72,7 +73,7 @@ export default async function AccountPage({ searchParams }: { searchParams: Prom
           {billing}
         </p>
         {params.error && (
-          <p role="alert" className="mt-3 text-sm text-tomato-deep">
+          <p role="alert" className="mt-3 text-sm text-over-deep">
             {m.account.billingError}
           </p>
         )}
@@ -91,7 +92,7 @@ export default async function AccountPage({ searchParams }: { searchParams: Prom
           )}
         </div>
         {entitlement.hasCustomer && (
-          <p className="mt-3 text-sm text-ink-soft">{m.account.stripe}</p>
+          <p className="mt-3 text-sm text-fg-soft">{m.account.stripe}</p>
         )}
       </section>
 
@@ -101,13 +102,15 @@ export default async function AccountPage({ searchParams }: { searchParams: Prom
         dislikeOptions={DISLIKE_OPTIONS.map(({ key }) => ({ key }))}
       />
 
+      <ThemePicker />
+
       <section className="mt-10 border-t border-line pt-6">
         <form action="/auth/signout" method="post">
           <button type="submit" className="btn btn-quiet">
             {m.account.signOut}
           </button>
         </form>
-        <p className="mt-6 text-sm text-ink-faint">
+        <p className="mt-6 text-sm text-fg-faint">
           {m.account.help}{" "}
           <a href="mailto:hello@cartfull.app" className="underline underline-offset-2">
             hello@cartfull.app

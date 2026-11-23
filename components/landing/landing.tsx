@@ -19,19 +19,19 @@ export function Landing({ locale }: { locale: Locale }) {
           <Logo />
         </Link>
         <nav aria-label="Main" className="flex items-center gap-1 text-sm font-semibold">
-          <a href="#how" className="hidden min-h-11 content-center rounded-full px-3 hover:bg-paper-deep md:block">
+          <a href="#how" className="hidden min-h-11 content-center rounded-full px-3 hover:bg-bg-deep md:block">
             {t.nav.how}
           </a>
-          <a href="#pricing" className="hidden min-h-11 content-center rounded-full px-3 hover:bg-paper-deep md:block">
+          <a href="#pricing" className="hidden min-h-11 content-center rounded-full px-3 hover:bg-bg-deep md:block">
             {t.nav.pricing}
           </a>
-          <a href="#faq" className="hidden min-h-11 content-center rounded-full px-3 hover:bg-paper-deep md:block">
+          <a href="#faq" className="hidden min-h-11 content-center rounded-full px-3 hover:bg-bg-deep md:block">
             {t.nav.faq}
           </a>
-          <Link href={t.nav.otherHref} hrefLang={locale === "es" ? "en" : "es"} lang={locale === "es" ? "en" : "es"} className="min-h-11 content-center rounded-full px-3 text-ink-soft hover:bg-paper-deep">
+          <Link href={t.nav.otherHref} hrefLang={locale === "es" ? "en" : "es"} lang={locale === "es" ? "en" : "es"} className="min-h-11 content-center rounded-full px-3 text-fg-soft hover:bg-bg-deep">
             {t.nav.other}
           </Link>
-          <Link href="/login" className="min-h-11 content-center rounded-full px-4 shadow-[inset_0_0_0_1.5px_var(--color-line)] hover:bg-paper-deep">
+          <Link href="/login" className="min-h-11 content-center rounded-full px-4 shadow-[inset_0_0_0_1.5px_var(--color-line)] hover:bg-bg-deep">
             {t.nav.signIn}
           </Link>
         </nav>
@@ -40,30 +40,30 @@ export function Landing({ locale }: { locale: Locale }) {
       <main id="main">
         <section className="mx-auto grid w-full max-w-6xl gap-10 px-5 pb-16 pt-8 lg:grid-cols-[minmax(0,6fr)_minmax(0,5fr)] lg:items-center lg:gap-14 lg:pt-14">
           <div className="rise">
-            <p className="text-sm font-semibold uppercase tracking-wider text-green">{t.hero.eyebrow}</p>
+            <p className="text-sm font-semibold uppercase tracking-wider text-accent">{t.hero.eyebrow}</p>
             <h1 className="mt-4 text-[2.75rem] sm:text-6xl lg:text-7xl">{t.hero.title}</h1>
-            <p className="mt-6 max-w-xl text-lg text-ink-soft sm:text-xl">{t.hero.lead}</p>
+            <p className="mt-6 max-w-xl text-lg text-fg-soft sm:text-xl">{t.hero.lead}</p>
             <div className="mt-8 flex flex-wrap items-center gap-x-5 gap-y-3">
               <Link href="/start" className="btn btn-cta px-8 text-lg" data-testid="hero-cta">
                 {t.hero.cta}
               </Link>
-              <p className="text-sm text-ink-soft">{t.hero.note}</p>
+              <p className="text-sm text-fg-soft">{t.hero.note}</p>
             </div>
           </div>
           <Calculator planned={planned} copy={t.calc} cta={t.hero.cta} />
         </section>
 
-        <section id="how" className="border-y border-line bg-paper-deep">
+        <section id="how" className="border-y border-line bg-bg-deep">
           <div className="mx-auto w-full max-w-6xl px-5 py-16 sm:py-20">
             <h2 className="max-w-xl text-4xl sm:text-5xl">{t.steps.title}</h2>
             <ol className="mt-10 grid gap-10 md:grid-cols-3 md:gap-8">
               {t.steps.items.map((step, index) => (
                 <li key={step.title}>
-                  <p className="tnum font-display text-7xl font-semibold leading-none text-green" aria-hidden="true">
+                  <p className="tnum font-display text-7xl font-semibold leading-none text-accent" aria-hidden="true">
                     {index + 1}
                   </p>
                   <h3 className="mt-4 text-2xl">{step.title}</h3>
-                  <p className="mt-2 text-ink-soft">{step.body}</p>
+                  <p className="mt-2 text-fg-soft">{step.body}</p>
                 </li>
               ))}
             </ol>
@@ -77,14 +77,14 @@ export function Landing({ locale }: { locale: Locale }) {
                 <h2 id="sample-title" className="text-4xl sm:text-5xl">
                   {t.sample.title}
                 </h2>
-                <p className="mt-3 text-lg text-ink-soft">
+                <p className="mt-3 text-lg text-fg-soft">
                   {fill(t.sample.lead, { people: sample.people, budget: moneyRound(sample.budgetCents, locale) })}
                 </p>
               </div>
               <p className="tnum" data-testid="sample-total">
-                <span className="block text-sm font-medium text-ink-soft">{t.sample.cart}</span>
+                <span className="block text-sm font-medium text-fg-soft">{t.sample.cart}</span>
                 <span className="font-display text-5xl font-semibold leading-none">{moneyExact(sample.totalCents, locale)}</span>
-                <span className="ml-3 font-semibold text-tomato-deep">
+                <span className="ml-3 font-semibold text-accent-deep">
                   {moneyExact(sample.budgetCents - sample.totalCents, locale)} {t.sample.under}
                 </span>
               </p>
@@ -99,13 +99,13 @@ export function Landing({ locale }: { locale: Locale }) {
                     sizes={index === 0 ? "(min-width: 1024px) 470px, 100vw" : "(min-width: 1024px) 225px, 50vw"}
                     className="w-full rounded-card"
                   />
-                  <p className="mt-3 text-xs font-semibold uppercase tracking-wider text-green">{t.sample.days[index]}</p>
+                  <p className="mt-3 text-xs font-semibold uppercase tracking-wider text-accent">{t.sample.days[index]}</p>
                   <h3 className={`mt-1 leading-tight ${index === 0 ? "text-2xl lg:text-3xl" : "text-lg"}`}>{dinner.name}</h3>
                   <p className="tnum mt-1 text-sm">
-                    <span className="font-semibold text-tomato-deep">
+                    <span className="font-semibold text-accent-deep">
                       {moneyExact(dinner.centsPerServing, locale)} {t.sample.serving}
                     </span>
-                    <span className="text-ink-soft"> · {dinner.minutes} min</span>
+                    <span className="text-fg-soft"> · {dinner.minutes} min</span>
                   </p>
                 </li>
               ))}
@@ -113,14 +113,14 @@ export function Landing({ locale }: { locale: Locale }) {
           </section>
         )}
 
-        <section className="bg-green-deep text-paper">
+        <section className="bg-accent-deep text-bg">
           <div className="mx-auto w-full max-w-6xl px-5 py-16 sm:py-20">
             <h2 className="max-w-2xl text-4xl sm:text-5xl">{t.why.title}</h2>
             <dl className="mt-10 grid gap-x-12 gap-y-9 sm:grid-cols-2">
               {t.why.items.map((item) => (
-                <div key={item.title} className="border-t border-paper/25 pt-5">
-                  <dt className="font-display text-2xl font-semibold text-yellow">{item.title}</dt>
-                  <dd className="mt-2 text-paper/85">{item.body}</dd>
+                <div key={item.title} className="border-t border-bg/25 pt-5">
+                  <dt className="font-display text-2xl font-semibold text-bg">{item.title}</dt>
+                  <dd className="mt-2 text-bg/85">{item.body}</dd>
                 </div>
               ))}
             </dl>
@@ -130,11 +130,11 @@ export function Landing({ locale }: { locale: Locale }) {
         <section id="pricing" className="mx-auto grid w-full max-w-6xl gap-10 px-5 py-16 sm:py-20 lg:grid-cols-2 lg:gap-16">
           <div>
             <h2 className="text-4xl sm:text-5xl">{t.pricing.title}</h2>
-            <p className="mt-4 text-lg text-ink-soft">{t.pricing.lead}</p>
+            <p className="mt-4 text-lg text-fg-soft">{t.pricing.lead}</p>
             <ul className="mt-8 space-y-3">
               {t.pricing.includes.map((line) => (
                 <li key={line} className="flex items-start gap-3">
-                  <svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true" className="mt-0.5 shrink-0 text-green">
+                  <svg width="22" height="22" viewBox="0 0 22 22" aria-hidden="true" className="mt-0.5 shrink-0 text-accent">
                     <path d="M5 11.5 9.5 16 17 7" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                   {line}
@@ -159,14 +159,14 @@ export function Landing({ locale }: { locale: Locale }) {
                       <path d="M10 4v12M4 10h12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
                     </svg>
                   </summary>
-                  <p className="pb-5 pr-8 text-ink-soft">{item.a}</p>
+                  <p className="pb-5 pr-8 text-fg-soft">{item.a}</p>
                 </details>
               ))}
             </div>
           </div>
         </section>
 
-        <section className="bg-paper-deep">
+        <section className="bg-bg-deep">
           <div className="mx-auto flex w-full max-w-6xl flex-col items-start gap-6 px-5 py-16 sm:flex-row sm:items-center sm:justify-between">
             <h2 className="max-w-xl text-4xl sm:text-5xl">{t.closing.title}</h2>
             <Link href="/start" className="btn btn-cta shrink-0 px-8 text-lg">
@@ -176,7 +176,7 @@ export function Landing({ locale }: { locale: Locale }) {
         </section>
       </main>
 
-      <footer className="mx-auto w-full max-w-6xl px-5 py-10 text-sm text-ink-soft">
+      <footer className="mx-auto w-full max-w-6xl px-5 py-10 text-sm text-fg-soft">
         <div className="flex flex-wrap items-center justify-between gap-4">
           <Logo />
           <nav aria-label="Legal" className="flex gap-1">
@@ -188,8 +188,8 @@ export function Landing({ locale }: { locale: Locale }) {
             </Link>
           </nav>
         </div>
-        <p className="mt-4 max-w-3xl text-ink-faint">{t.footer.disclaimer}</p>
-        <p className="mt-2 text-ink-faint">
+        <p className="mt-4 max-w-3xl text-fg-faint">{t.footer.disclaimer}</p>
+        <p className="mt-2 text-fg-faint">
           © {new Date().getFullYear()} {t.footer.rights}
         </p>
       </footer>

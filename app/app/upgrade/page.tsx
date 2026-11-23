@@ -25,16 +25,16 @@ export default async function UpgradePage({
   return (
     <section className="mx-auto max-w-xl py-4">
       <h1 className="text-4xl sm:text-5xl">{trial ? m.billing.title : m.billing.welcome}</h1>
-      <p className="mt-3 text-ink-soft">
+      <p className="mt-3 text-fg-soft">
         {trial ? m.billing.trialLead : m.billing.returnLead}
       </p>
       {params.canceled && (
-        <p role="status" className="mt-5 rounded-2xl bg-paper-deep p-4">
+        <p role="status" className="mt-5 rounded-2xl bg-bg-deep p-4">
           {m.billing.canceled}
         </p>
       )}
       {params.error && (
-        <p role="alert" className="mt-5 rounded-2xl bg-yellow-soft p-4 shadow-[inset_0_0_0_1.5px_var(--color-yellow)]">
+        <p role="alert" className="mt-5 rounded-2xl bg-over-soft p-4 shadow-[inset_0_0_0_1.5px_var(--color-over)]">
           {m.billing.error}
         </p>
       )}

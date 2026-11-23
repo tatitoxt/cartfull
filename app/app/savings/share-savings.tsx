@@ -44,11 +44,11 @@ export function ShareSavings({ savedCents, weeks }: { savedCents: number; weeks:
       <button type="button" className="btn btn-cta" onClick={share} data-testid="share-savings">
         {m.savings.share}
       </button>
-      <a href={path} download="cartfull-savings.png" className="min-h-11 content-center px-2 text-sm font-semibold text-paper underline underline-offset-4">
+      <a href={path} download="cartfull-savings.png" className="min-h-11 content-center px-2 text-sm font-semibold text-fg underline underline-offset-4">
         {m.savings.download}
       </a>
       {note && (
-        <span role="status" className="basis-full text-sm text-mint">
+        <span role="status" className="basis-full text-sm text-accent-deep">
           {note}
         </span>
       )}
