@@ -3,15 +3,16 @@
 import { useRouter } from "next/navigation";
 import { useState, useTransition } from "react";
 import { track } from "@/components/analytics";
-import { recordSpend } from "@/lib/app/actions";
+import { attachReceipt, deleteReceipt, recordSpend } from "@/lib/app/actions";
 import { useMessages } from "@/lib/i18n/locale-provider";
 
-export function SpendForm({ planId, spentCents }: { planId: string; spentCents: number | null }) {
+export function SpendForm({ planId, spentCents, hasReceipt }: { planId: string; spentCents: number | null; hasReceipt: boolean }) {
   const router = useRouter();
   const [value, setValue] = useState(spentCents === null ? "" : (spentCents / 100).toFixed(2));
   const [error, setError] = useState<string | null>(null);
   const [saved, setSaved] = useState(false);
   const [pending, start] = useTransition();
+  const fileInput = `receipt-${planId}`;
   const id = `spent-${planId}`;
   const m = useMessages();
 
@@ -90,6 +91,57 @@ export function SpendForm({ planId, spentCents }: { planId: string; spentCents: 
           {error}
         </p>
       )}
+      <div className="mt-3 flex flex-wrap items-center gap-2">
+        <input
+          id={fileInput}
+          type="file"
+          accept="image/jpeg,image/png,image/webp,image/heic"
+          capture="environment"
+          className="sr-only"
+          disabled={pending}
+          onChange={(e) => {
+            const file = e.target.files?.[0];
+            e.target.value = "";
+            if (!file) return;
+            setError(null);
+            start(async () => {
+              const fd = new FormData();
+              fd.set("receipt", file);
+              const result = await attachReceipt(planId, fd);
+              if (!result.ok) setError(result.message);
+              else {
+                track("receipt_attached");
+                router.refresh();
+              }
+            });
+          }}
+        />
+        <label htmlFor={fileInput} className={`btn btn-quiet px-4 text-sm ${pending ? "opacity-60" : "cursor-pointer"}`}>
+          {pending ? m.common.saving : hasReceipt ? m.savings.receiptReplace : m.savings.receiptAttach}
+        </label>
+        {hasReceipt && (
+          <>
+            <a href={`/app/receipt/${planId}`} target="_blank" rel="noopener" className="btn btn-quiet px-4 text-sm">
+              {m.savings.receiptView}
+            </a>
+            <button
+              type="button"
+              className="min-h-11 px-2 text-sm font-medium text-fg-soft underline underline-offset-4"
+              disabled={pending}
+              onClick={() =>
+                start(async () => {
+                  setError(null);
+                  const result = await deleteReceipt(planId);
+                  if (!result.ok) setError(result.message);
+                  else router.refresh();
+                })
+              }
+            >
+              {m.savings.receiptRemove}
+            </button>
+          </>
+        )}
+      </div>
     </form>
   );
 }

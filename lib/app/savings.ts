@@ -8,6 +8,7 @@ export interface SavingsInput {
   household_size: number;
   total_cents: number;
   spent_cents: number | null;
+  plan_receipts?: { plan_id: string }[] | null;
 }
 
 export interface WeekSavings {
@@ -27,6 +28,8 @@ export interface WeekSavings {
   savedCents: number;
   budgetCents: number;
   underBudget: boolean;
+  /** A receipt photo is attached to the week. */
+  hasReceipt: boolean;
 }
 
 export interface SavingsSummary {
@@ -55,6 +58,7 @@ export function weekSavings(plan: SavingsInput): WeekSavings {
     savedCents: usualCents - spentCents,
     budgetCents: plan.budget_cents,
     underBudget: spentCents <= plan.budget_cents,
+    hasReceipt: (plan.plan_receipts?.length ?? 0) > 0,
   };
 }
 
