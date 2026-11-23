@@ -21,7 +21,7 @@ export function AppNav() {
     { key: "account", label: m.nav.account, href: "/app/account" },
   ] as const;
   return (
-    <nav className="fixed inset-x-0 bottom-0 z-10 px-4 pb-3 pt-1" aria-label="App">
+    <nav className="fixed inset-x-0 bottom-0 z-30 px-4 pb-3 pt-1" aria-label="App">
       <ul className="glass mx-auto flex max-w-md gap-1 rounded-full p-1.5">
         {items.map((item) => {
           const active = item.href === "/app" ? pathname === item.href : pathname.startsWith(item.href);

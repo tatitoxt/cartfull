@@ -19,6 +19,10 @@ export interface ListLine {
   fullCents: number;
   qty: number;
   unit: string;
+  /** Package sizing so offline totals match the server's package math. */
+  pkgQty: number;
+  pkgCents: number;
+  byWeight: boolean;
   /** Units of `qty` already at home. */
   haveQty: number;
   have: boolean;
@@ -76,8 +80,14 @@ export function GroceryList({
         if (have) checked = false;
       }
       if (typeof change.checked === "boolean") checked = change.checked;
-      const cents = have || line.qty <= 0 ? 0 : Math.round((line.fullCents * Math.max(0, line.qty - haveQty)) / line.qty);
-      return { ...line, have, checked, haveQty, cents };
+      const buyQty = have ? 0 : Math.max(0, line.qty - haveQty);
+      const pkgs =
+        buyQty <= 0
+          ? 0
+          : line.byWeight
+            ? Math.ceil((buyQty / line.pkgQty) * 4 - 1e-6) / 4
+            : Math.ceil(buyQty / line.pkgQty - 1e-6);
+      return { ...line, have, checked, haveQty, cents: Math.round(pkgs * line.pkgCents) };
     });
 
   const flush = async () => {
@@ -137,7 +147,10 @@ export function GroceryList({
       .map(({ aisle, label }) => {
         const items = toBuy.filter((l) => l.aisle === aisle);
         if (!items.length) return "";
-        const rows = items.map((l) => `${l.checked ? "✓" : "□"} ${l.name} — ${l.buy}${l.checked ? ` (${m.list.shareChecked})` : ""}`);
+        const rows = items.map(
+          (l) =>
+            `${l.checked ? "✓" : "□"} ${l.name} — ${l.buy}${l.haveQty > 0 ? ` (${fill(m.list.haveSome, { qty: amount(l.haveQty, l.unit, lang, units) })})` : ""}${l.checked ? ` (${m.list.shareChecked})` : ""}`,
+        );
         return `${label}\n${rows.join("\n")}`;
       })
       .filter(Boolean)
@@ -253,7 +266,7 @@ export function GroceryList({
                         )}
                         <button
                           type="button"
-                          onClick={() => change({ id: line.id, haveQty: line.haveQty + (line.qty <= 1 ? line.qty : 1) })}
+                          onClick={() => change({ id: line.id, haveQty: line.haveQty + (line.qty > 1 ? 1 : Math.min(0.5, line.qty)) })}
                           className="flex size-8 items-center justify-center rounded-full text-base font-bold text-accent-deep shadow-[inset_0_0_0_1.5px_var(--color-accent)] hover:bg-bg-deep"
                           aria-label={fill(m.list.haveAdd, { name: line.name })}
                           data-testid="have-button"

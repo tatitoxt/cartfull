@@ -47,6 +47,9 @@ export default async function ListPage() {
       have: line.have,
       qty: line.qty,
       unit: ing.unit,
+      pkgQty: ing.pkg_qty,
+      pkgCents: ing.pkg_cents,
+      byWeight: soldByWeight(ing),
       haveQty: line.haveQty,
       checked: checked.has(ing.id),
     };
