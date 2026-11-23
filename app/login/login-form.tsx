@@ -3,6 +3,7 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { track } from "@/components/analytics";
+import { normalizeEmail, REQUESTED_COOKIE } from "@/lib/auth/requested";
 import { createClient } from "@/lib/supabase/client";
 
 type Stage = "email" | "sent";
@@ -31,6 +32,9 @@ export function LoginForm({
     event.preventDefault();
     setBusy(true);
     setError(null);
+    // The emailed link signs in without a question only in the browser that asked for it.
+    const secure = window.location.protocol === "https:" ? "; secure" : "";
+    document.cookie = `${REQUESTED_COOKIE}=${encodeURIComponent(normalizeEmail(email))}; path=/auth; max-age=3600; samesite=lax${secure}`;
     const { error } = await createClient().auth.signInWithOtp({
       email: email.trim(),
       options: { emailRedirectTo: redirectTo(), shouldCreateUser: true },
