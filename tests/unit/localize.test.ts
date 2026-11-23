@@ -34,6 +34,14 @@ describe("temperatures", () => {
     expect(temperatures("Calienta el horno a {425F}.", "metric")).toBe("Calienta el horno a 220°C.");
     expect(temperatures("Bake at {350F}, then {400F}.", "metric")).toBe("Bake at 180°C, then 200°C.");
   });
+
+  it("keeps food-safety temperatures precise while rounding oven settings", () => {
+    expect(temperatures("{165F}", "metric")).toBe("74°C");
+    expect(temperatures("{145F}", "metric")).toBe("63°C");
+    expect(temperatures("{160F}", "metric")).toBe("71°C");
+    expect(temperatures("{425F}", "metric")).toBe("220°C");
+    expect(temperatures("{350F}", "metric")).toBe("180°C");
+  });
 });
 
 describe("package labels", () => {

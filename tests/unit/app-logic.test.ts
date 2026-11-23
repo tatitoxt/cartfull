@@ -70,6 +70,7 @@ describe("weeks", () => {
   it("handles month and year boundaries", () => {
     expect(addDays("2026-12-28", 7)).toBe("2027-01-04");
     expect(weekLabel("2026-12-28")).toBe("Dec 28 – Jan 3");
+    expect(weekLabel("2026-12-28", "es")).toBe("28 dic – 3 ene");
     expect(weekIsOver("2026-11-23", "2026-11-29")).toBe(false);
     expect(weekIsOver("2026-11-23", "2026-11-30")).toBe(true);
   });
@@ -105,6 +106,15 @@ describe("billing constants", () => {
     expect(replacesStored("sub_a", { id: "sub_b", status: "active" })).toBe(true);
     expect(replacesStored("sub_b", { id: "sub_a", status: "canceled" })).toBe(false);
     expect(replacesStored("sub_b", { id: "sub_a", status: "incomplete_expired" })).toBe(false);
+  });
+});
+
+describe("localized money", () => {
+  it("formats US dollars with the language's decimal and thousands separators", () => {
+    expect(money(11840, "en")).toBe("$118.40");
+    expect(money(11840, "es")).toBe("$118,40");
+    expect(moneyExact(101000, "es")).toBe("$1.010,00");
+    expect(moneyRound(101000, "es")).toBe("$1.010");
   });
 });
 

@@ -124,9 +124,12 @@ export function amount(qty: number, unit: string, lang: Lang, units: Units): str
 
 /** Turns {425F} into "425°F" or "220°C". */
 export function temperatures(text: string, units: Units): string {
-  return text.replace(/\{(\d{2,3})F\}/g, (_, f: string) =>
-    units === "metric" ? `${Math.round(((Number(f) - 32) * 5) / 9 / 10) * 10}°C` : `${f}°F`,
-  );
+  return text.replace(/\{(\d{2,3})F\}/g, (_, f: string) => {
+    if (units !== "metric") return `${f}°F`;
+    const fahrenheit = Number(f);
+    const celsius = ((fahrenheit - 32) * 5) / 9;
+    return `${fahrenheit < 200 ? Math.round(celsius) : Math.round(celsius / 10) * 10}°C`;
+  });
 }
 
 export function ingredientName(ingredient: Ingredient, lang: Lang): string {

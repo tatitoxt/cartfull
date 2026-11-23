@@ -39,7 +39,7 @@ test.describe("access rules", () => {
 
   test("a budget below the cheapest week is refused with the amount that works", async ({ page }) => {
     await page.goto("/start?people=6&budget=30");
-    for (let step = 0; step < 3; step++) await page.getByRole("button", { name: "Continue" }).click();
+    for (let step = 0; step < 4; step++) await page.getByRole("button", { name: "Continue" }).click();
     await expect(page.getByTestId("estimate")).toContainText("$");
     await expect(page.getByRole("button", { name: "Plan my week" })).toBeDisabled();
     await page.getByTestId("estimate").getByRole("button").click();
