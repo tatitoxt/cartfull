@@ -46,8 +46,18 @@ export async function POST(request: NextRequest) {
     if (error) return NextResponse.redirect(`${siteUrl}/app/upgrade?error=billing`, 303);
   }
 
-  // The trial is for first-time subscribers only.
-  const trial = existing?.stripe_subscription_id ? undefined : TRIAL_DAYS;
+  // The trial is for first-time subscribers only — including people whose
+  // previous account was deleted (a fresh account doesn't reset trial history).
+  let usedBefore = !!existing?.stripe_subscription_id;
+  if (!usedBefore && user.email) {
+    const { data: deleted } = await admin
+      .from("deleted_accounts")
+      .select("email")
+      .eq("email", user.email.toLowerCase())
+      .maybeSingle();
+    usedBefore = !!deleted;
+  }
+  const trial = usedBefore ? undefined : TRIAL_DAYS;
   const session = await stripe.checkout.sessions.create({
     mode: "subscription",
     customer: customerId,

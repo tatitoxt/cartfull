@@ -25,6 +25,8 @@ import { addDays, targetWeekStart, weekIsOver } from "./week";
 import { MESSAGES, fill } from "../i18n/messages";
 import { getLocale } from "../i18n/server";
 import { createAdminClient } from "../supabase/server";
+import { hasEnded } from "../billing/plans";
+import { getStripe } from "../billing/stripe";
 import type { Lang } from "../catalog/localize";
 
 export type ActionResult =
@@ -498,6 +500,26 @@ export async function deleteAccount(): Promise<ActionResult> {
   const m = MESSAGES[locale.lang];
   try {
     const admin = createAdminClient();
+    // Stop Stripe first: once the account is gone it can no longer cancel itself.
+    const { data: sub } = await admin
+      .from("subscriptions")
+      .select("stripe_subscription_id, status")
+      .eq("user_id", session.userId)
+      .maybeSingle();
+    if (sub?.stripe_subscription_id && !hasEnded(sub.status)) {
+      try {
+        await getStripe().subscriptions.cancel(sub.stripe_subscription_id);
+      } catch {
+        return fail("failed", m.account.deleteError);
+      }
+    }
+    // Remember the email so a re-registration doesn't earn a second free trial.
+    if (session.email) {
+      const { error: markError } = await admin
+        .from("deleted_accounts")
+        .upsert({ email: session.email.toLowerCase() });
+      if (markError) return fail("failed", m.account.deleteError);
+    }
     const { error } = await admin.auth.admin.deleteUser(session.userId);
     if (error) return fail("failed", m.account.deleteError);
   } catch {
