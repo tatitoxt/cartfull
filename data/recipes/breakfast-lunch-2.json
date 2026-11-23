@@ -4,10 +4,9 @@
     "name": "Chilaquiles Rojos with Fried Eggs",
     "meal_type": "breakfast",
     "diet_tags": [
-      "vegetarian",
+      "gluten_free",
       "pescatarian",
-      "vegan",
-      "gluten_free"
+      "vegetarian"
     ],
     "servings": 2,
     "prep_minutes": 15,
@@ -84,10 +83,9 @@
     "name": "Baked Berry Oatmeal",
     "meal_type": "breakfast",
     "diet_tags": [
-      "vegetarian",
+      "gluten_free",
       "pescatarian",
-      "vegan",
-      "gluten_free"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 45,
@@ -178,10 +176,9 @@
     "name": "Banana Oat Blender Pancakes",
     "meal_type": "breakfast",
     "diet_tags": [
-      "vegetarian",
+      "gluten_free",
       "pescatarian",
-      "vegan",
-      "gluten_free"
+      "vegetarian"
     ],
     "servings": 2,
     "prep_minutes": 20,
@@ -338,9 +335,8 @@
     "name": "Potato, Egg and Cheese Breakfast Tacos",
     "meal_type": "breakfast",
     "diet_tags": [
-      "vegetarian",
       "pescatarian",
-      "vegan"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 25,
@@ -419,9 +415,8 @@
     "name": "Egg in a Hole Toast",
     "meal_type": "breakfast",
     "diet_tags": [
-      "vegetarian",
       "pescatarian",
-      "vegan"
+      "vegetarian"
     ],
     "servings": 2,
     "prep_minutes": 10,
@@ -484,9 +479,8 @@
     "name": "Molletes with Pico de Gallo",
     "meal_type": "breakfast",
     "diet_tags": [
-      "vegetarian",
       "pescatarian",
-      "vegan"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 20,
@@ -573,11 +567,10 @@
     "name": "Huevos a la Mexicana",
     "meal_type": "breakfast",
     "diet_tags": [
-      "vegetarian",
+      "gluten_free",
       "keto",
       "pescatarian",
-      "vegan",
-      "gluten_free"
+      "vegetarian"
     ],
     "servings": 2,
     "prep_minutes": 15,
@@ -654,12 +647,11 @@
     "name": "Savory Cottage Cheese Breakfast Bowls",
     "meal_type": "breakfast",
     "diet_tags": [
-      "vegetarian",
-      "keto",
+      "gluten_free",
       "high_protein",
+      "keto",
       "pescatarian",
-      "vegan",
-      "gluten_free"
+      "vegetarian"
     ],
     "servings": 2,
     "prep_minutes": 10,
@@ -728,11 +720,9 @@
     "name": "Egg and Cheese Bagel Sandwiches",
     "meal_type": "breakfast",
     "diet_tags": [
-      "vegetarian",
       "high_protein",
       "pescatarian",
-      "vegan",
-      "gluten_free"
+      "vegetarian"
     ],
     "servings": 2,
     "prep_minutes": 10,
@@ -805,8 +795,7 @@
     "name": "Sausage, Egg and Cheese Muffin Sandwiches",
     "meal_type": "breakfast",
     "diet_tags": [
-      "high_protein",
-      "gluten_free"
+      "high_protein"
     ],
     "servings": 4,
     "prep_minutes": 20,
@@ -1103,12 +1092,11 @@
     "name": "Turkish Eggs with Garlic Yogurt",
     "meal_type": "breakfast",
     "diet_tags": [
-      "vegetarian",
-      "keto",
+      "gluten_free",
       "high_protein",
+      "keto",
       "pescatarian",
-      "vegan",
-      "gluten_free"
+      "vegetarian"
     ],
     "servings": 2,
     "prep_minutes": 15,
@@ -2139,11 +2127,10 @@
     "name": "Creamy Mushroom Soup",
     "meal_type": "lunch",
     "diet_tags": [
-      "vegetarian",
+      "gluten_free",
       "keto",
       "pescatarian",
-      "vegan",
-      "gluten_free"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 35,
@@ -2490,10 +2477,10 @@
     "name": "Smoky Black Bean Soup",
     "meal_type": "lunch",
     "diet_tags": [
-      "vegetarian",
+      "gluten_free",
       "pescatarian",
       "vegan",
-      "gluten_free"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 30,
@@ -2505,7 +2492,7 @@
       "Stir in the garlic, cumin, oregano and smoked paprika for 30 seconds, until fragrant.",
       "Add the beans with their liquid, the broth, salt and pepper. Bring to a boil over high heat, then lower the heat to medium-low and simmer uncovered 15 minutes, until slightly thickened.",
       "Mash about a third of the beans against the side of the pot with a potato masher or the back of a spoon, until the soup is creamy but still chunky.",
-      "Stir in the lime juice, taste for salt, and serve topped with the sour cream and chopped cilantro."
+      "Stir in the lime juice, taste for salt, and serve topped with the chopped cilantro."
     ],
     "ingredients": [
       {
@@ -2553,10 +2540,6 @@
         "note_es": "en jugo"
       },
       {
-        "id": "sour_cream",
-        "qty": 0.25
-      },
-      {
         "id": "cilantro",
         "qty": 0.25
       },
@@ -2577,7 +2560,7 @@
       "Agrega el ajo, el comino, el orégano y la paprika ahumada y revuelve 30 segundos, hasta que suelten aroma.",
       "Incorpora los frijoles con su líquido, el caldo, la sal y la pimienta. Lleva a hervor a fuego alto, baja el fuego a medio-bajo y cocina sin tapar 15 minutos, hasta que espese un poco.",
       "Machaca más o menos un tercio de los frijoles contra la pared de la olla con un machacador de papas o el dorso de una cuchara, hasta que la sopa quede cremosa pero con trozos.",
-      "Agrega el jugo de lima, prueba la sal y sirve con la crema agria y el cilantro picado por encima."
+      "Agrega el jugo de lima, prueba la sal y sirve con el cilantro picado por encima."
     ],
     "equipment": [
       "stovetop"
@@ -2596,22 +2579,22 @@
     "name": "Lentils and Rice with Caramelized Onions",
     "meal_type": "lunch",
     "diet_tags": [
-      "vegetarian",
+      "gluten_free",
       "pescatarian",
       "vegan",
-      "gluten_free"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 50,
     "batch_friendly": true,
-    "description": "Mujadara: cumin-scented lentils and rice cooked together and topped with deeply browned onions and cool yogurt.",
+    "description": "Mujadara: cumin-scented lentils and rice cooked together and topped with deeply browned onions.",
     "steps": [
       "Rinse the lentils, put them in a medium pot with plenty of water, bring to a boil and simmer over medium heat 12 minutes, until just starting to soften but still firm. Drain.",
       "Meanwhile, halve and thinly slice the onions. Heat the olive oil in a large pot over medium-high heat, add the onions with a pinch of the salt and cook 20 minutes, stirring often and lowering the heat to medium if they scorch, until deep brown and crisp at the edges.",
       "Lift half of the onions onto a plate for the topping. Stir the cumin and the rice into the onions left in the pot for 1 minute.",
       "Add the drained lentils, the remaining salt, the pepper and 2 cups (480 ml) of water. Bring to a boil, cover, turn the heat to low and cook 17 minutes, until the rice is tender and the water is absorbed.",
       "Take off the heat and leave covered 5 minutes, then fluff with a fork.",
-      "Serve topped with the reserved onions, a spoonful of yogurt and the chopped parsley."
+      "Serve topped with the reserved onions, the chopped parsley."
     ],
     "ingredients": [
       {
@@ -2635,10 +2618,6 @@
         "qty": 1.5
       },
       {
-        "id": "greek_yogurt",
-        "qty": 0.5
-      },
-      {
         "id": "parsley",
         "qty": 0.25
       },
@@ -2652,14 +2631,14 @@
       }
     ],
     "name_es": "Lentejas con arroz y cebolla caramelizada",
-    "description_es": "Mujadara: lentejas y arroz con comino cocidos juntos, cubiertos con cebolla bien dorada y yogur fresco.",
+    "description_es": "Mujadara: lentejas y arroz con comino cocidos juntos, cubiertos con cebolla bien dorada.",
     "steps_es": [
       "Enjuaga las lentejas, ponlas en una olla mediana con bastante agua, lleva a hervor y cocina a fuego medio 12 minutos, hasta que empiecen a ablandarse pero sigan firmes. Escurre.",
       "Mientras tanto, corta las cebollas por la mitad y luego en rodajas finas. Calienta el aceite de oliva en una olla grande a fuego medio-alto, agrega las cebollas con una pizca de la sal y cocina 20 minutos, revolviendo seguido y bajando el fuego a medio si se queman, hasta que estén bien doradas y crocantes en los bordes.",
       "Pasa la mitad de las cebollas a un plato para servir al final. Agrega el comino y el arroz a las cebollas que quedaron en la olla y revuelve 1 minuto.",
       "Incorpora las lentejas escurridas, el resto de la sal, la pimienta y 480 ml (2 tazas) de agua. Lleva a hervor, tapa, baja el fuego al mínimo y cocina 17 minutos, hasta que el arroz esté tierno y el agua se haya absorbido.",
       "Retira del fuego y deja tapado 5 minutos; luego separa los granos con un tenedor.",
-      "Sirve con las cebollas reservadas, una cucharada de yogur y el perejil picado por encima."
+      "Sirve con las cebollas reservadas, el perejil picado por encima."
     ],
     "equipment": [
       "stovetop"
@@ -2678,10 +2657,9 @@
     "name": "Broccoli Cheddar Stuffed Baked Potatoes",
     "meal_type": "lunch",
     "diet_tags": [
-      "vegetarian",
+      "gluten_free",
       "pescatarian",
-      "vegan",
-      "gluten_free"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 30,
@@ -2758,9 +2736,8 @@
     "name": "Black Bean, Rice and Cheese Burritos",
     "meal_type": "lunch",
     "diet_tags": [
-      "vegetarian",
       "pescatarian",
-      "vegan"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 30,
@@ -2839,10 +2816,9 @@
     "name": "Veggie Pita Pizzas",
     "meal_type": "lunch",
     "diet_tags": [
-      "vegetarian",
       "high_protein",
       "pescatarian",
-      "vegan"
+      "vegetarian"
     ],
     "servings": 2,
     "prep_minutes": 20,
@@ -2917,9 +2893,7 @@
     "name": "Smashed Chickpea Salad Sandwiches",
     "meal_type": "lunch",
     "diet_tags": [
-      "vegetarian",
-      "pescatarian",
-      "vegan"
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 15,

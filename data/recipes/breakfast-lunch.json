@@ -4,21 +4,21 @@
     "name": "Peanut Butter Banana Oatmeal",
     "meal_type": "breakfast",
     "diet_tags": [
-      "vegetarian",
+      "gluten_free",
       "pescatarian",
       "vegan",
-      "gluten_free"
+      "vegetarian"
     ],
     "servings": 2,
     "prep_minutes": 10,
     "batch_friendly": false,
-    "description": "Creamy stovetop oats cooked in milk, topped with sliced banana and a spoonful of peanut butter.",
+    "description": "Creamy stovetop oats cooked in oat milk, topped with sliced banana and a spoonful of peanut butter.",
     "steps": [
-      "Pour the milk into a small pot with the same amount of water and the salt. Bring to a gentle simmer over medium heat, about 3 minutes, until small bubbles form around the edge.",
+      "Pour the oat milk into a small pot with the same amount of water and the salt. Bring to a gentle simmer over medium heat, about 3 minutes, until small bubbles form around the edge.",
       "Stir in the oats and cinnamon and turn the heat down to medium-low.",
       "Cook 5 minutes, stirring often so the bottom does not catch, until the oats are soft and the porridge is thick and creamy.",
       "While the oats cook, peel and slice the bananas.",
-      "Take the pot off the heat and let it stand 1 minute; stir in a splash of milk or water if it is thicker than you like.",
+      "Take the pot off the heat and let it stand 1 minute; stir in a splash of oat milk or water if it is thicker than you like.",
       "Divide between bowls, top with the banana slices and a spoonful of peanut butter, and serve hot."
     ],
     "ingredients": [
@@ -27,7 +27,7 @@
         "qty": 1
       },
       {
-        "id": "milk",
+        "id": "oat_milk",
         "qty": 1
       },
       {
@@ -50,13 +50,13 @@
       }
     ],
     "name_es": "Avena con banana y mantequilla de maní",
-    "description_es": "Avena cremosa cocida en leche, con rodajas de banana y una cucharada de mantequilla de maní.",
+    "description_es": "Avena cremosa cocida en leche de avena, con rodajas de banana y una cucharada de mantequilla de maní.",
     "steps_es": [
-      "Pon la leche en una olla pequeña con la misma cantidad de agua y la sal. Llévala a un hervor suave a fuego medio, unos 3 minutos, hasta que aparezcan burbujas pequeñas en el borde.",
+      "Pon la leche de avena en una olla pequeña con la misma cantidad de agua y la sal. Llévala a un hervor suave a fuego medio, unos 3 minutos, hasta que aparezcan burbujas pequeñas en el borde.",
       "Agrega la avena y la canela, revuelve y baja el fuego a medio-bajo.",
       "Cocina 5 minutos, revolviendo seguido para que no se pegue al fondo, hasta que la avena esté tierna y la mezcla quede espesa y cremosa.",
       "Mientras se cocina la avena, pela las bananas y córtalas en rodajas.",
-      "Retira la olla del fuego y deja reposar 1 minuto; si quedó más espesa de lo que te gusta, agrega un chorrito de leche o agua.",
+      "Retira la olla del fuego y deja reposar 1 minuto; si quedó más espesa de lo que te gusta, agrega un chorrito de leche de avena o agua.",
       "Reparte en tazones, cubre con las rodajas de banana y una cucharada de mantequilla de maní, y sirve caliente."
     ],
     "equipment": [
@@ -76,22 +76,22 @@
     "name": "Apple Cinnamon Overnight Oats",
     "meal_type": "breakfast",
     "diet_tags": [
-      "vegetarian",
+      "gluten_free",
       "pescatarian",
       "vegan",
-      "gluten_free"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 480,
     "batch_friendly": true,
-    "description": "Oats soaked overnight with milk, yogurt, diced apple and cinnamon for four grab-and-go breakfasts.",
+    "description": "Oats soaked overnight with oat milk and diced apple and cinnamon for four grab-and-go breakfasts.",
     "steps": [
       "Wash the apples, cut them into quarters, remove the cores and dice them small; leave the peel on.",
-      "In a large bowl, stir the oats, milk, yogurt, maple syrup, cinnamon and salt until no dry oats or lumps of yogurt remain.",
+      "In a large bowl, stir the oats, oat milk, maple syrup, cinnamon and salt until no dry oats or lumps of yogurt remain.",
       "Fold in most of the diced apple, saving a handful for the top.",
       "Divide among jars or containers with lids, one per serving, and scatter the saved apple on top.",
       "Cover and refrigerate at least 8 hours or overnight, until the oats have soaked up the liquid and are soft and thick.",
-      "Stir and eat cold, loosening with a splash of milk if needed. The jars keep up to 4 days in the fridge."
+      "Stir and eat cold, loosening with a splash of oat milk if needed. The jars keep up to 4 days in the fridge."
     ],
     "ingredients": [
       {
@@ -99,12 +99,8 @@
         "qty": 2
       },
       {
-        "id": "milk",
+        "id": "oat_milk",
         "qty": 2
-      },
-      {
-        "id": "greek_yogurt",
-        "qty": 1
       },
       {
         "id": "apple",
@@ -126,14 +122,14 @@
       }
     ],
     "name_es": "Avena reposada con manzana y canela",
-    "description_es": "Avena remojada toda la noche con leche, yogur, manzana y canela: cuatro desayunos listos para llevar.",
+    "description_es": "Avena remojada toda la noche con leche de avena y manzana y canela: cuatro desayunos listos para llevar.",
     "steps_es": [
       "Lava las manzanas, córtalas en cuartos, quítales el centro y pícalas en cubos pequeños, con cáscara.",
-      "En un tazón grande, mezcla la avena, la leche, el yogur, el jarabe de maple, la canela y la sal hasta que no queden partes secas ni grumos de yogur.",
+      "En un tazón grande, mezcla la avena, la leche de avena, el jarabe de maple, la canela y la sal hasta que no queden partes secas ni grumos.",
       "Incorpora casi toda la manzana y reserva un puñado para poner encima.",
       "Reparte en frascos o recipientes con tapa, uno por porción, y pon encima la manzana reservada.",
       "Tapa y refrigera al menos 8 horas o toda la noche, hasta que la avena absorba el líquido y quede blanda y espesa.",
-      "Revuelve y come fría; agrega un chorrito de leche si hace falta. Los frascos duran hasta 4 días en el refrigerador."
+      "Revuelve y come fría; agrega un chorrito de leche de avena si hace falta. Los frascos duran hasta 4 días en el refrigerador."
     ],
     "equipment": [],
     "active_minutes": 10,
@@ -150,11 +146,8 @@
     "name": "Berry Yogurt Granola Parfaits",
     "meal_type": "breakfast",
     "diet_tags": [
-      "vegetarian",
       "high_protein",
-      "pescatarian",
-      "vegan",
-      "gluten_free"
+      "pescatarian"
     ],
     "servings": 2,
     "prep_minutes": 10,
@@ -211,25 +204,25 @@
     }
   },
   {
-    "slug": "berry-banana-yogurt-smoothies",
-    "name": "Berry Banana Yogurt Smoothies",
+    "slug": "berry-banana-smoothies",
+    "name": "Berry Banana Smoothies",
     "meal_type": "breakfast",
     "diet_tags": [
-      "vegetarian",
+      "gluten_free",
       "pescatarian",
       "vegan",
-      "gluten_free"
+      "vegetarian"
     ],
     "servings": 2,
     "prep_minutes": 5,
     "batch_friendly": false,
-    "description": "Frozen berries and banana blended with yogurt and milk into a thick, filling smoothie.",
+    "description": "Frozen berries and banana blended with oat milk into a thick, filling smoothie.",
     "steps": [
       "Peel the bananas and break them into chunks.",
-      "Pour the milk into the blender first, then add the yogurt; liquid at the bottom helps the blades catch.",
-      "Add the banana chunks, the berries straight from the freezer and the honey.",
+      "Pour the oat milk into the blender first; liquid at the bottom helps the blades catch.",
+      "Add the banana chunks, the berries straight from the freezer and the maple syrup.",
       "Put the lid on and blend on low for 10 seconds, then on high for about 1 minute, until completely smooth with no icy bits.",
-      "If it is too thick to pour, add a splash of milk and blend 10 seconds more.",
+      "If it is too thick to pour, add a splash of oat milk and blend 10 seconds more.",
       "Pour into glasses and serve right away."
     ],
     "ingredients": [
@@ -242,26 +235,22 @@
         "qty": 2
       },
       {
-        "id": "greek_yogurt",
+        "id": "oat_milk",
         "qty": 1
       },
       {
-        "id": "milk",
-        "qty": 1
-      },
-      {
-        "id": "honey",
+        "id": "maple_syrup",
         "qty": 1
       }
     ],
-    "name_es": "Batido de frutos rojos, banana y yogur",
-    "description_es": "Frutos rojos congelados y banana licuados con yogur y leche: un batido espeso que llena.",
+    "name_es": "Batido de frutos rojos y banana",
+    "description_es": "Frutos rojos congelados y banana licuados con leche de avena: un batido espeso que llena.",
     "steps_es": [
       "Pela las bananas y pártelas en trozos.",
-      "Vierte primero la leche en la licuadora y luego el yogur; con el líquido abajo, las cuchillas trabajan mejor.",
-      "Agrega los trozos de banana, los frutos rojos recién sacados del congelador y la miel.",
+      "Vierte primero la leche de avena en la licuadora; con el líquido abajo, las cuchillas trabajan mejor.",
+      "Agrega los trozos de banana, los frutos rojos recién sacados del congelador y el jarabe de maple.",
       "Tapa y licúa a velocidad baja 10 segundos y luego a velocidad alta cerca de 1 minuto, hasta que quede totalmente suave y sin trocitos de hielo.",
-      "Si quedó demasiado espeso para servir, agrega un chorrito de leche y licúa 10 segundos más.",
+      "Si quedó demasiado espeso para servir, agrega un chorrito de leche de avena y licúa 10 segundos más.",
       "Sirve en vasos y toma enseguida."
     ],
     "equipment": [
@@ -281,9 +270,8 @@
     "name": "Fluffy Pancakes with Maple Syrup",
     "meal_type": "breakfast",
     "diet_tags": [
-      "vegetarian",
       "pescatarian",
-      "vegan"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 25,
@@ -362,24 +350,22 @@
     }
   },
   {
-    "slug": "avocado-toast-with-fried-eggs",
-    "name": "Avocado Toast with Fried Eggs",
+    "slug": "avocado-toast",
+    "name": "Avocado Toast",
     "meal_type": "breakfast",
     "diet_tags": [
-      "vegetarian",
       "pescatarian",
-      "vegan"
+      "vegan",
+      "vegetarian"
     ],
     "servings": 2,
     "prep_minutes": 10,
     "batch_friendly": false,
-    "description": "Toasted whole wheat bread piled with lemony mashed avocado and a fried egg on each slice.",
+    "description": "Toasted whole wheat bread piled with lemony mashed avocado.",
     "steps": [
       "Toast the bread until golden and crisp: use a toaster, or a dry skillet over medium heat for 1 to 2 minutes per side.",
       "Halve the avocados, remove the pits and scoop the flesh into a bowl. Add the lemon juice and the salt and mash with a fork, leaving it a little chunky.",
-      "Melt the butter in a nonstick skillet over medium heat until it foams, about 1 minute.",
-      "Crack in the eggs, spaced apart, and fry about 3 minutes, until the whites are fully set and the yolks are still soft. For firm yolks, flip and cook 1 minute more.",
-      "Spread the avocado over the toast and top each slice with an egg.",
+      "Spread the mashed avocado over the toast.",
       "Sprinkle with the black pepper and red pepper flakes and serve at once."
     ],
     "ingredients": [
@@ -392,18 +378,10 @@
         "qty": 2
       },
       {
-        "id": "eggs",
-        "qty": 4
-      },
-      {
         "id": "lemon",
         "qty": 0.5,
         "note": "juiced",
         "note_es": "exprimido"
-      },
-      {
-        "id": "butter",
-        "qty": 1
       },
       {
         "id": "salt",
@@ -418,14 +396,12 @@
         "qty": 0.25
       }
     ],
-    "name_es": "Tostadas de aguacate con huevo frito",
-    "description_es": "Pan integral tostado con aguacate aplastado con limón y un huevo frito sobre cada rebanada.",
+    "name_es": "Tostadas de aguacate",
+    "description_es": "Pan integral tostado con aguacate aplastado con limón.",
     "steps_es": [
       "Tuesta el pan hasta que esté dorado y crujiente: en la tostadora, o en una sartén seca a fuego medio de 1 a 2 minutos por lado.",
       "Parte los aguacates por la mitad, quítales el hueso y pasa la pulpa a un tazón. Agrega el jugo de limón y la sal y aplasta con un tenedor, dejando algunos trocitos.",
-      "Derrite la mantequilla en una sartén antiadherente a fuego medio hasta que haga espuma, cerca de 1 minuto.",
-      "Rompe los huevos en la sartén, separados entre sí, y fríelos unos 3 minutos, hasta que la clara esté bien cuajada y la yema siga blanda. Si prefieres la yema firme, voltéalos y cocina 1 minuto más.",
-      "Unta el aguacate sobre las tostadas y pon un huevo sobre cada rebanada.",
+      "Unta el aguacate aplastado sobre las tostadas.",
       "Espolvorea con la pimienta negra y las hojuelas de chile y sirve de inmediato."
     ],
     "equipment": [
@@ -445,11 +421,8 @@
     "name": "Strawberry Cottage Cheese Granola Bowls",
     "meal_type": "breakfast",
     "diet_tags": [
-      "vegetarian",
       "high_protein",
-      "pescatarian",
-      "vegan",
-      "gluten_free"
+      "pescatarian"
     ],
     "servings": 2,
     "prep_minutes": 5,
@@ -506,12 +479,11 @@
     "name": "Mushroom Spinach Cheddar Omelets",
     "meal_type": "breakfast",
     "diet_tags": [
-      "vegetarian",
-      "keto",
+      "gluten_free",
       "high_protein",
+      "keto",
       "pescatarian",
-      "vegan",
-      "gluten_free"
+      "vegetarian"
     ],
     "servings": 2,
     "prep_minutes": 15,
@@ -586,12 +558,11 @@
     "name": "Crustless Spinach Feta Quiche",
     "meal_type": "breakfast",
     "diet_tags": [
-      "vegetarian",
-      "keto",
+      "gluten_free",
       "high_protein",
+      "keto",
       "pescatarian",
-      "vegan",
-      "gluten_free"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 50,
@@ -674,10 +645,9 @@
     "name": "Potato Pepper Breakfast Hash with Eggs",
     "meal_type": "breakfast",
     "diet_tags": [
-      "vegetarian",
+      "gluten_free",
       "pescatarian",
-      "vegan",
-      "gluten_free"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 35,
@@ -975,9 +945,8 @@
     "name": "Cinnamon French Toast",
     "meal_type": "breakfast",
     "diet_tags": [
-      "vegetarian",
       "pescatarian",
-      "vegan"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 20,
@@ -1199,9 +1168,7 @@
     "name": "Deli-Style Egg Salad Sandwiches",
     "meal_type": "lunch",
     "diet_tags": [
-      "vegetarian",
-      "pescatarian",
-      "vegan"
+      "pescatarian"
     ],
     "servings": 4,
     "prep_minutes": 25,
@@ -1373,9 +1340,8 @@
     "name": "Black Bean and Corn Quesadillas",
     "meal_type": "lunch",
     "diet_tags": [
-      "vegetarian",
       "pescatarian",
-      "vegan"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 20,
@@ -1530,21 +1496,21 @@
     "name": "Greek Chickpea Salad",
     "meal_type": "lunch",
     "diet_tags": [
-      "vegetarian",
+      "gluten_free",
       "pescatarian",
       "vegan",
-      "gluten_free"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 15,
     "batch_friendly": true,
-    "description": "Chickpeas tossed with cucumber, tomato, red onion and feta in a lemon-oregano dressing.",
+    "description": "Chickpeas tossed with cucumber, tomato, red onion in a lemon-oregano dressing.",
     "steps": [
       "Drain the chickpeas in a sieve, rinse under cold water and shake dry.",
       "Dice the cucumber and the tomatoes into pieces about the size of a chickpea, and slice the red onion as thinly as you can.",
       "Squeeze the lemon into a large bowl, catching the seeds. Add the olive oil, oregano, salt and pepper and whisk with a fork until blended.",
       "Add the chickpeas, cucumber, tomatoes and onion and toss until everything is coated.",
-      "Scatter in the feta and fold gently so it stays in pieces.",
+      "Pour over the dressing and fold gently so everything is coated.",
       "Let the salad stand 5 minutes for the flavors to blend, then serve; or refrigerate in a sealed container up to 4 days."
     ],
     "ingredients": [
@@ -1563,10 +1529,6 @@
       {
         "id": "onion_red",
         "qty": 0.5
-      },
-      {
-        "id": "feta",
-        "qty": 4
       },
       {
         "id": "olive_oil",
@@ -1592,13 +1554,13 @@
       }
     ],
     "name_es": "Ensalada griega de garbanzos",
-    "description_es": "Garbanzos con pepino, tomate, cebolla morada y feta, con un aderezo de limón y orégano.",
+    "description_es": "Garbanzos con pepino, tomate, cebolla morada, con un aderezo de limón y orégano.",
     "steps_es": [
       "Escurre los garbanzos en un colador, enjuágalos con agua fría y sacude para secar.",
       "Pica el pepino y los tomates en trozos del tamaño de un garbanzo, y corta la cebolla morada lo más fina que puedas.",
       "Exprime el limón en un tazón grande, sin dejar caer las semillas. Agrega el aceite de oliva, el orégano, la sal y la pimienta y bate con un tenedor hasta integrar.",
       "Agrega los garbanzos, el pepino, los tomates y la cebolla y revuelve hasta que todo quede cubierto.",
-      "Esparce el feta y mezcla con suavidad para que quede en trozos.",
+      "Vierte el aderezo y mezcla con suavidad hasta que todo quede cubierto.",
       "Deja reposar la ensalada 5 minutos para que se mezclen los sabores y sirve; o guárdala en un recipiente cerrado en el refrigerador hasta 4 días."
     ],
     "equipment": [],
@@ -1947,11 +1909,10 @@
     "name": "Creamy Broccoli Cheddar Soup",
     "meal_type": "lunch",
     "diet_tags": [
-      "vegetarian",
+      "gluten_free",
       "keto",
       "pescatarian",
-      "vegan",
-      "gluten_free"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 25,
@@ -2034,20 +1995,20 @@
     "name": "Hummus Veggie Pita Pockets",
     "meal_type": "lunch",
     "diet_tags": [
-      "vegetarian",
       "pescatarian",
-      "vegan"
+      "vegan",
+      "vegetarian"
     ],
     "servings": 2,
     "prep_minutes": 10,
     "batch_friendly": false,
-    "description": "Warm pita halves spread with hummus and stuffed with spinach, cucumber, tomato, carrot and feta.",
+    "description": "Warm pita halves spread with hummus and stuffed with spinach, cucumber, tomato, and carrot.",
     "steps": [
       "Wash the vegetables. Thinly slice the cucumber and the tomato, and peel the carrot and shred it on the large holes of a grater.",
       "If you like the pitas warm, heat them 30 seconds per side in a dry skillet over medium heat, or 15 seconds in the microwave, until soft and flexible.",
       "Cut each pita in half and gently open the pockets with your fingers, taking care not to tear them.",
       "Spread the hummus over the inside of each pocket.",
-      "Fill each pocket with the spinach first, then the cucumber, tomato and carrot, and finish with the feta.",
+      "Fill each pocket with the spinach first, then the cucumber, tomato and carrot.",
       "Serve right away, or wrap tightly and keep cold for up to 4 hours."
     ],
     "ingredients": [
@@ -2076,20 +2037,16 @@
       {
         "id": "spinach",
         "qty": 2
-      },
-      {
-        "id": "feta",
-        "qty": 2
       }
     ],
     "name_es": "Pan pita relleno de hummus y vegetales",
-    "description_es": "Mitades de pan pita untadas con hummus y rellenas de espinaca, pepino, tomate, zanahoria y feta.",
+    "description_es": "Mitades de pan pita untadas con hummus y rellenas de espinaca, pepino, tomate, y zanahoria.",
     "steps_es": [
       "Lava los vegetales. Corta el pepino y el tomate en rodajas finas; pela la zanahoria y rállala por el lado grueso del rallador.",
       "Si te gusta el pan tibio, calienta los panes pita 30 segundos por lado en una sartén seca a fuego medio, o 15 segundos en el microondas, hasta que estén blandos y flexibles.",
       "Corta cada pan pita por la mitad y abre los bolsillos con los dedos, con cuidado de no romperlos.",
       "Unta el hummus por dentro de cada bolsillo.",
-      "Rellena cada bolsillo primero con la espinaca, luego con el pepino, el tomate y la zanahoria, y termina con el feta.",
+      "Rellena cada bolsillo primero con la espinaca, luego con el pepino, el tomate y la zanahoria.",
       "Sirve enseguida, o envuelve bien y mantén frío hasta 4 horas."
     ],
     "equipment": [],
@@ -2107,9 +2064,8 @@
     "name": "Grilled Cheese with Tomato Soup",
     "meal_type": "lunch",
     "diet_tags": [
-      "vegetarian",
       "pescatarian",
-      "vegan"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 30,
@@ -2204,21 +2160,21 @@
     "name": "Italian Veggie Pasta Salad",
     "meal_type": "lunch",
     "diet_tags": [
-      "vegetarian",
       "pescatarian",
-      "vegan"
+      "vegan",
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 25,
     "batch_friendly": true,
-    "description": "Penne tossed with tomatoes, cucumber, bell pepper and mozzarella in a tangy Italian vinaigrette.",
+    "description": "Penne tossed with tomatoes, cucumber, bell pepper in a tangy Italian vinaigrette.",
     "steps": [
       "Bring a large pot of water to a rolling boil over high heat, about 8 minutes, and add a generous pinch of salt.",
       "Add the penne and cook for the time on the package, usually 10 to 12 minutes, stirring now and then, until tender but still firm when you bite a piece.",
       "While the pasta cooks, halve the cherry tomatoes, dice the cucumber and the bell pepper, and slice the red onion as thinly as you can.",
       "In a large bowl, whisk the olive oil, vinegar, Italian seasoning, garlic powder, salt and pepper until blended.",
       "Drain the pasta and rinse it under cold water for 1 minute, tossing, until completely cool. Shake off the water well.",
-      "Add the pasta, vegetables, mozzarella and parmesan to the bowl and toss until everything is coated with the dressing.",
+      "Add the pasta and vegetables to the bowl and toss until everything is coated with the dressing.",
       "Serve now, or cover and refrigerate up to 4 days; stir before serving."
     ],
     "ingredients": [
@@ -2240,14 +2196,6 @@
       },
       {
         "id": "onion_red",
-        "qty": 0.25
-      },
-      {
-        "id": "mozzarella",
-        "qty": 1
-      },
-      {
-        "id": "parmesan",
         "qty": 0.25
       },
       {
@@ -2276,14 +2224,14 @@
       }
     ],
     "name_es": "Ensalada italiana de pasta y vegetales",
-    "description_es": "Penne con tomates, pepino, pimiento y mozzarella en una vinagreta italiana con un toque ácido.",
+    "description_es": "Penne con tomates, pepino, pimiento en una vinagreta italiana con un toque ácido.",
     "steps_es": [
       "Pon a hervir una olla grande de agua a fuego alto, unos 8 minutos, hasta que hierva a borbotones, y agrega una pizca generosa de sal.",
       "Agrega la pasta y cocina el tiempo que indica el paquete, en general de 10 a 12 minutos, revolviendo de vez en cuando, hasta que esté tierna pero firme al morder un trozo.",
       "Mientras se cocina la pasta, corta los tomates cherry por la mitad, pica el pepino y el pimiento en cubos, y corta la cebolla morada lo más fina que puedas.",
       "En un tazón grande, bate el aceite de oliva, el vinagre, el condimento italiano, el ajo en polvo, la sal y la pimienta hasta integrar.",
       "Escurre la pasta y enjuágala con agua fría 1 minuto, moviéndola, hasta que esté completamente fría. Sacude bien para quitar el agua.",
-      "Agrega al tazón la pasta, los vegetales, la mozzarella y el parmesano y revuelve hasta que todo quede cubierto con el aderezo.",
+      "Agrega al tazón la pasta y los vegetales y revuelve hasta que todo quede cubierto con el aderezo.",
       "Sirve enseguida, o tapa y refrigera hasta 4 días; revuelve antes de servir."
     ],
     "equipment": [

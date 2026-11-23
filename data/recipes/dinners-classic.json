@@ -801,9 +801,7 @@
     "slug": "sloppy-joes-with-quick-coleslaw",
     "name": "Sloppy Joes with Quick Coleslaw",
     "meal_type": "dinner",
-    "diet_tags": [
-      "gluten_free"
-    ],
+    "diet_tags": [],
     "servings": 4,
     "prep_minutes": 20,
     "batch_friendly": false,
@@ -2316,8 +2314,7 @@
     "name": "Slow Cooker Pulled Pork Sandwiches",
     "meal_type": "dinner",
     "diet_tags": [
-      "high_protein",
-      "gluten_free"
+      "high_protein"
     ],
     "servings": 4,
     "prep_minutes": 450,

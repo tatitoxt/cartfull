@@ -112,21 +112,21 @@
     "name": "Pasta e Fagioli",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian",
       "pescatarian",
-      "vegan"
+      "vegan",
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 40,
     "batch_friendly": true,
-    "description": "Thick Italian soup of white beans, small pasta and vegetables in a tomato broth, finished with parmesan.",
+    "description": "Thick Italian soup of white beans, small pasta and vegetables in a tomato broth, finished with a drizzle of olive oil.",
     "steps": [
       "Heat the oil in a large pot over medium heat and cook the onion, carrot and celery for 8 minutes, stirring now and then, until soft.",
       "Add the garlic, tomato paste and Italian seasoning and stir for 2 minutes until the paste darkens.",
       "Mash one can of the beans with a fork, then add both the mashed and the whole beans, the tomatoes with their juice, the broth and the salt.",
       "Bring to a boil over high heat, then lower the heat and simmer for 10 minutes.",
       "Stir in the macaroni and cook for 8 to 10 minutes, stirring often so it does not stick, until the pasta is tender and the soup is thick.",
-      "Season with the pepper, let it rest off the heat for 5 minutes and serve with the parmesan."
+      "Season with the pepper, let it rest off the heat for 5 minutes and serve."
     ],
     "ingredients": [
       {
@@ -184,10 +184,6 @@
         "qty": 6
       },
       {
-        "id": "parmesan",
-        "qty": 0.25
-      },
-      {
         "id": "salt",
         "qty": 0.75
       },
@@ -197,14 +193,14 @@
       }
     ],
     "name_es": "Pasta e fagioli",
-    "description_es": "Sopa italiana espesa de frijoles blancos, pasta corta y verduras en caldo de tomate, terminada con parmesano.",
+    "description_es": "Sopa italiana espesa de frijoles blancos, pasta corta y verduras en caldo de tomate, terminada con un chorrito de aceite de oliva.",
     "steps_es": [
       "Calienta el aceite en una olla grande a fuego medio y cocina la cebolla, la zanahoria y el apio 8 minutos, revolviendo de vez en cuando, hasta que estén blandos.",
       "Agrega el ajo, la pasta de tomate y el condimento italiano y revuelve 2 minutos hasta que la pasta de tomate se oscurezca.",
       "Aplasta una lata de frijoles con un tenedor y agrega los frijoles aplastados y los enteros, los tomates con su jugo, el caldo y la sal.",
       "Lleva a hervor a fuego alto, baja el fuego y cocina 10 minutos a fuego lento.",
       "Incorpora los coditos y cocina de 8 a 10 minutos, revolviendo con frecuencia para que no se peguen, hasta que la pasta esté tierna y la sopa espesa.",
-      "Sazona con la pimienta, deja reposar 5 minutos fuera del fuego y sirve con el parmesano."
+      "Sazona con la pimienta, deja reposar 5 minutos fuera del fuego y sirve."
     ],
     "equipment": [
       "stovetop"
@@ -223,21 +219,21 @@
     "name": "Butternut Squash Soup",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian",
       "pescatarian",
-      "vegan"
+      "vegan",
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 45,
     "batch_friendly": true,
-    "description": "Silky blended soup of butternut squash, onion and carrot with a little cream, served with crusty bread.",
+    "description": "Silky blended soup of butternut squash, onion and carrot with coconut milk, served with crusty bread.",
     "steps": [
       "Peel the squash, scoop out the seeds and cut the flesh into bite-size cubes.",
-      "Melt the butter in a large pot over medium heat and cook the onion and carrot for 5 minutes until the onion turns translucent.",
+      "Warm the olive oil in a large pot over medium heat and cook the onion and carrot for 5 minutes until the onion turns translucent.",
       "Add the garlic and thyme and stir for 1 minute until fragrant.",
       "Add the squash, broth and salt, bring to a boil over high heat, then cover and simmer over low heat for 20 to 25 minutes until the squash falls apart when pressed with a spoon.",
       "Blend the soup in batches until completely smooth, filling the blender only halfway and holding the lid down with a towel, and return it to the pot.",
-      "Stir in the cream and pepper, warm over low heat for 2 minutes without boiling and serve with the sliced bread."
+      "Stir in the coconut milk and pepper, warm over low heat for 2 minutes without boiling and serve with the sliced bread."
     ],
     "ingredients": [
       {
@@ -263,7 +259,7 @@
         "note_es": "aplastado"
       },
       {
-        "id": "butter",
+        "id": "olive_oil",
         "qty": 2
       },
       {
@@ -275,8 +271,8 @@
         "qty": 4
       },
       {
-        "id": "heavy_cream",
-        "qty": 0.25
+        "id": "coconut_milk",
+        "qty": 0.5
       },
       {
         "id": "salt",
@@ -294,22 +290,22 @@
       }
     ],
     "name_es": "Sopa crema de calabaza",
-    "description_es": "Sopa licuada y sedosa de calabaza, cebolla y zanahoria con un toque de crema, servida con pan crujiente.",
+    "description_es": "Sopa licuada y sedosa de calabaza, cebolla y zanahoria con leche de coco, servida con pan crujiente.",
     "steps_es": [
       "Pela la calabaza, retira las semillas y corta la pulpa en cubos del tamaño de un bocado.",
-      "Derrite la mantequilla en una olla grande a fuego medio y cocina la cebolla y la zanahoria 5 minutos hasta que la cebolla esté transparente.",
+      "Calienta el aceite de oliva en una olla grande a fuego medio y cocina la cebolla y la zanahoria 5 minutos hasta que la cebolla esté transparente.",
       "Agrega el ajo y el tomillo y revuelve 1 minuto hasta que suelten su aroma.",
       "Agrega la calabaza, el caldo y la sal, lleva a hervor a fuego alto, tapa y cocina a fuego bajo de 20 a 25 minutos hasta que la calabaza se deshaga al presionarla con una cuchara.",
       "Licúa la sopa por tandas hasta que quede bien lisa, llenando la licuadora solo hasta la mitad y sujetando la tapa con un paño, y devuélvela a la olla.",
-      "Incorpora la crema y la pimienta, calienta 2 minutos a fuego bajo sin que hierva y sirve con el pan en rebanadas."
+      "Incorpora la leche de coco y la pimienta, calienta 2 minutos a fuego bajo sin que hierva y sirve con el pan en rebanadas."
     ],
     "equipment": [
       "stovetop",
       "blender"
     ],
     "active_minutes": 15,
-    "tip": "Freeze the soup before adding the cream for up to 3 months, then stir the cream in when you reheat it.",
-    "tip_es": "Congela la sopa antes de agregar la crema hasta por 3 meses y añade la crema al recalentar.",
+    "tip": "Freeze the soup before adding the coconut milk for up to 3 months, then stir the coconut milk in when you reheat it.",
+    "tip_es": "Congela la sopa antes de agregar la leche de coco hasta por 3 meses y añade la leche de coco al recalentar.",
     "photo_url": "https://images.unsplash.com/photo-1530734575165-ce39d996fbaa",
     "photo_credit": {
       "name": "Jade Aucamp",
@@ -321,9 +317,8 @@
     "name": "Baked Macaroni and Cheese",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian",
       "pescatarian",
-      "vegan"
+      "vegetarian"
     ],
     "servings": 6,
     "prep_minutes": 45,
@@ -535,9 +530,8 @@
     "name": "Baked Eggplant Parmesan",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian",
       "pescatarian",
-      "vegan"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 70,
@@ -626,9 +620,8 @@
     "name": "Potato Corn Chowder",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian",
       "pescatarian",
-      "vegan"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 40,
@@ -737,10 +730,8 @@
     "name": "Cheesy Baked Gnocchi with Spinach",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian",
       "pescatarian",
-      "vegan",
-      "gluten_free"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 30,
@@ -822,9 +813,9 @@
     "name": "Tuscan White Bean and Kale Soup",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian",
       "pescatarian",
-      "vegan"
+      "vegan",
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 40,
@@ -836,7 +827,7 @@
       "Add the beans, tomatoes with their juice, broth and salt and bring to a boil over high heat.",
       "Strip the kale leaves from the stems, tear them into pieces and stir them into the pot.",
       "Lower the heat and simmer uncovered for 15 minutes until the kale is tender and the broth has thickened slightly.",
-      "Mash a few spoonfuls of beans against the side of the pot, stir, and serve with the parmesan and the bread for dipping."
+      "Mash a few spoonfuls of beans against the side of the pot, stir, and serve with the bread for dipping."
     ],
     "ingredients": [
       {
@@ -894,10 +885,6 @@
         "qty": 1
       },
       {
-        "id": "parmesan",
-        "qty": 0.25
-      },
-      {
         "id": "french_bread",
         "qty": 0.5,
         "note": "sliced and toasted",
@@ -916,7 +903,7 @@
       "Agrega los frijoles, los tomates con su jugo, el caldo y la sal y lleva a hervor a fuego alto.",
       "Separa las hojas de kale de los tallos, córtalas en trozos con las manos e incorpóralas a la olla.",
       "Baja el fuego y cocina destapado 15 minutos hasta que el kale esté tierno y el caldo espese un poco.",
-      "Aplasta unas cucharadas de frijoles contra el borde de la olla, revuelve y sirve con el parmesano y el pan para mojar."
+      "Aplasta unas cucharadas de frijoles contra el borde de la olla, revuelve y sirve con el pan para mojar."
     ],
     "equipment": [
       "stovetop"
@@ -935,10 +922,9 @@
     "name": "Cream of Mushroom Soup",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian",
       "keto",
       "pescatarian",
-      "vegan"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 35,
