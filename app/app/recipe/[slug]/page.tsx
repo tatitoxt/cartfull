@@ -5,6 +5,7 @@ import { Photo } from "@/components/photo";
 import { catalog, recipeBySlug } from "@/lib/catalog";
 import { recipeCentsPerServing } from "@/lib/catalog/cost";
 import { getFeedback, getProfile, requireSession } from "@/lib/app/data";
+import { CookMode } from "@/components/cook-mode";
 import { RecipeFeedback } from "@/components/recipe-feedback";
 import { nutritionPerServing } from "@/lib/catalog/nutrition";
 import { fill } from "@/lib/i18n/messages";
@@ -63,6 +64,15 @@ export default async function RecipePage({ params }: { params: Promise<{ slug: s
         ) : null;
       })()}
       <RecipeFeedback slug={slug} initialFavorite={feedback.favorites.has(slug)} initialRating={feedback.ratings.get(slug) ?? null} />
+      <CookMode
+        title={text.name}
+        ingredients={recipe.ingredients.map((ri) => {
+          const ing = catalog.ingredients.get(ri.id)!;
+          const note = ingredientNote(ri, profile.lang);
+          return `${amount(ri.qty * scale, ing.unit, profile.lang, profile.units)} ${ingredientName(ing, profile.lang)}${note ? `, ${note}` : ""}`;
+        })}
+        steps={text.steps}
+      />
       {recipe.equipment && recipe.equipment.length > 0 && (
         <p className="mt-3 text-sm text-fg-soft">
           {m.recipe.equipment}: {recipe.equipment.map((item) => m.preferences.equipment[item]).join(", ")}
