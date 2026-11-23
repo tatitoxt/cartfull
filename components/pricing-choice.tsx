@@ -101,10 +101,15 @@ export function PricingChoice({
                 ? `${annualPrice} ${lang === "es" ? "al año" : "a year"}`
                 : `${monthlyPrice} ${lang === "es" ? "al mes" : "a month"}`,
             })
+            : trial && intro && !annual
+            ? m.billing.termsIntro
+                .replace("{days}", String(TRIAL_DAYS))
+                .replace("{intro}", introPrice ?? "")
+                .replace("{price}", monthlyPrice)
             : trial
             ? m.billing.termsTrial
                 .replace("{days}", String(TRIAL_DAYS))
-                .replace("{price}", annual ? `${annualPrice} ${lang === "es" ? "al año" : "a year"}` : `${intro ? introPrice : monthlyPrice} ${lang === "es" ? "al mes" : "a month"}`)
+                .replace("{price}", annual ? `${annualPrice} ${lang === "es" ? "al año" : "a year"}` : `${monthlyPrice} ${lang === "es" ? "al mes" : "a month"}`)
             : m.billing.termsPaid.replace("{price}", annual ? `${annualPrice} ${lang === "es" ? "al año" : "a year"}` : `${monthlyPrice} ${lang === "es" ? "al mes" : "a month"}`)}
       </p>
     </div>

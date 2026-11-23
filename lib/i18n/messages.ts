@@ -384,6 +384,7 @@ const en = {
     trialButton: "Start my {days}-day free trial",
     subscribe: "Subscribe",
     termsTrial: "Free for {days} days, then {price}. Cancel any time before the trial ends and you pay nothing.",
+    termsIntro: "Free for {days} days, then {intro} for your first month and {price} a month after that. Cancel any time.",
     termsPaid: "{price}, charged today. Cancel any time.",
   },
   welcome: {
@@ -816,6 +817,7 @@ const es: Messages = {
     trialButton: "Iniciar prueba gratis de {days} días",
     subscribe: "Suscribirme",
     termsTrial: "{days} días gratis y luego {price}. Cancela antes de que termine la prueba y no pagarás nada.",
+    termsIntro: "{days} días gratis, luego {intro} el primer mes y {price} al mes después. Cancela cuando quieras.",
     termsPaid: "{price}, se cobra hoy. Cancela cuando quieras.",
   },
   welcome: {
