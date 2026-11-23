@@ -1,0 +1,2590 @@
+[
+ {
+  "slug": "chicken-enchiladas-verdes",
+  "name": "Chicken Enchiladas Verdes",
+  "meal_type": "dinner",
+  "name_es": "Enchiladas verdes de pollo",
+  "diet_tags": [
+   "gluten_free",
+   "high_protein"
+  ],
+  "servings": 4,
+  "prep_minutes": 40,
+  "batch_friendly": true,
+  "description": "Corn tortillas rolled around shredded chicken, baked under salsa verde and melted cheese.",
+  "description_es": "Tortillas de maíz rellenas de pollo deshebrado, horneadas con salsa verde y queso derretido.",
+  "steps": [
+   "Heat the oven to {375F} and lightly oil a baking dish.",
+   "Shred the chicken and toss it with half the salsa verde and a pinch of salt.",
+   "Warm the tortillas in a dry skillet 20 seconds per side so they roll without cracking.",
+   "Fill each tortilla with chicken, roll tightly and place seam-side down in the dish.",
+   "Pour over the remaining salsa and scatter the cheese on top.",
+   "Bake 20 minutes until the cheese melts and the edges are bubbly; serve with sour cream and cilantro."
+  ],
+  "steps_es": [
+   "Calienta el horno a {375F} y aceita apenas una fuente para horno.",
+   "Deshebra el pollo y mézclalo con la mitad de la salsa verde y una pizca de sal.",
+   "Calienta las tortillas en una sartén seca 20 segundos por lado para que no se rompan al enrollar.",
+   "Rellena cada tortilla con pollo, enrolla firme y acomódala con la unión hacia abajo en la fuente.",
+   "Vierte el resto de la salsa y esparce el queso por encima.",
+   "Hornea 20 minutos hasta que el queso se derrita y los bordes burbujeen; sirve con crema agria y cilantro."
+  ],
+  "ingredients": [
+   {
+    "id": "rotisserie_chicken",
+    "qty": 1,
+    "note": "about 3 cups shredded",
+    "note_es": "unas 3 tazas deshebrado"
+   },
+   {
+    "id": "salsa_verde",
+    "qty": 2
+   },
+   {
+    "id": "tortilla_corn",
+    "qty": 12
+   },
+   {
+    "id": "cheddar",
+    "qty": 1.5,
+    "note": "shredded",
+    "note_es": "rallado"
+   },
+   {
+    "id": "sour_cream",
+    "qty": 0.5
+   },
+   {
+    "id": "cilantro",
+    "qty": 0.25,
+    "note": "chopped",
+    "note_es": "picado"
+   },
+   {
+    "id": "salt",
+    "qty": 0.5
+   },
+   {
+    "id": "vegetable_oil",
+    "qty": 1
+   }
+  ],
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "active_minutes": 20,
+  "tip": "Microwave the tortillas wrapped in a damp towel for 30 seconds instead of toasting them one by one.",
+  "tip_es": "Calienta las tortillas envueltas en un paño húmedo 30 segundos en el microondas en vez de tostarlas una por una.",
+  "photo_url": "https://images.unsplash.com/photo-1597797061946-cb9b0d4fee88",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/fried-chicken-on-stainless-steel-tray-k3I24tHFx4w"
+  }
+ },
+ {
+  "slug": "steak-fajitas-skillet",
+  "name": "Skillet Steak Fajitas",
+  "meal_type": "dinner",
+  "name_es": "Fajitas de bistec a la sartén",
+  "diet_tags": [
+   "gluten_free",
+   "dairy_free",
+   "high_protein"
+  ],
+  "servings": 4,
+  "prep_minutes": 30,
+  "batch_friendly": false,
+  "description": "Charred steak strips with peppers and onions, warm tortillas and lime.",
+  "description_es": "Tiras de bistec selladas con morrones y cebolla, tortillas tibias y lima.",
+  "steps": [
+   "Season the steak with salt and sear it in a very hot oiled skillet 3 minutes per side; transfer to a board to rest.",
+   "Add the peppers and onion to the same pan and stir-fry 5 minutes until charred at the edges.",
+   "Slice the steak thin against the grain and return it to the pan with any juices; toss 1 minute.",
+   "Warm the tortillas in a dry skillet.",
+   "Serve the steak and vegetables in the tortillas with lime wedges."
+  ],
+  "steps_es": [
+   "Sazona el bistec con sal y séllalo en una sartén aceitada muy caliente 3 minutos por lado; pásalo a una tabla a reposar.",
+   "Agrega los morrones y la cebolla a la misma sartén y saltea 5 minutos hasta que tengan bordes dorados.",
+   "Corta el bistec en tiras finas a contraveta y vuélvelo a poner en la sartén con sus jugos; mezcla 1 minuto.",
+   "Calienta las tortillas en una sartén seca.",
+   "Sirve la carne y las verduras en las tortillas con gajos de lima."
+  ],
+  "ingredients": [
+   {
+    "id": "steak_sirloin",
+    "qty": 1.25
+   },
+   {
+    "id": "bell_pepper",
+    "qty": 3,
+    "note": "sliced",
+    "note_es": "en tiras"
+   },
+   {
+    "id": "onion_yellow",
+    "qty": 1,
+    "note": "sliced",
+    "note_es": "en tiras"
+   },
+   {
+    "id": "tortilla_flour",
+    "qty": 8,
+    "note": "or corn for gluten-free",
+    "note_es": "o de maíz para sin gluten"
+   },
+   {
+    "id": "lime",
+    "qty": 1,
+    "note": "in wedges",
+    "note_es": "en gajos"
+   },
+   {
+    "id": "vegetable_oil",
+    "qty": 2
+   },
+   {
+    "id": "salt",
+    "qty": 0.75
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 22,
+  "tip": "Get the pan properly hot before the steak goes in — that's where the char comes from.",
+  "tip_es": "Deja que la sartén caliente bien antes de poner la carne: de ahí viene el sellado.",
+  "photo_url": "https://images.unsplash.com/photo-1723531055833-49fb132cbaab",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/a-white-plate-topped-with-meat-and-veggies-rEEvc3q_vrk"
+  }
+ },
+ {
+  "slug": "chicken-tinga-tostadas",
+  "name": "Chicken Tinga Tostadas",
+  "meal_type": "dinner",
+  "name_es": "Tostadas de tinga de pollo",
+  "diet_tags": [
+   "gluten_free",
+   "dairy_free",
+   "high_protein"
+  ],
+  "servings": 4,
+  "prep_minutes": 35,
+  "batch_friendly": true,
+  "description": "Shredded chicken simmered in a smoky tomato-chipotle-style sauce, piled on tostadas.",
+  "description_es": "Pollo deshebrado en salsa ahumada de tomate y chile, servido sobre tostadas.",
+  "steps": [
+   "Sauté the onion in hot oil 4 minutes until soft, then add the garlic and cook 30 seconds.",
+   "Add the diced tomatoes, chili powder, cumin and a pinch of salt; simmer 5 minutes.",
+   "Blend or mash the sauce until mostly smooth, return it to the pan and stir in the shredded chicken.",
+   "Simmer 10 minutes until thick and saucy.",
+   "Spoon onto tostada-style chips or fried tortillas and top with avocado and cilantro."
+  ],
+  "steps_es": [
+   "Saltea la cebolla en aceite caliente 4 minutos hasta que esté blanda, agrega el ajo y cocina 30 segundos.",
+   "Suma los tomates en cubos, el chile en polvo, el comino y una pizca de sal; cocina 5 minutos.",
+   "Licúa o machaca la salsa hasta que esté casi lisa, devuélvela a la sartén y agrega el pollo deshebrado.",
+   "Cocina a fuego suave 10 minutos hasta que espese.",
+   "Sirve sobre tostadas o tortillas fritas con aguacate y cilantro."
+  ],
+  "ingredients": [
+   {
+    "id": "rotisserie_chicken",
+    "qty": 1,
+    "note": "about 3 cups shredded",
+    "note_es": "unas 3 tazas deshebrado"
+   },
+   {
+    "id": "diced_tomatoes",
+    "qty": 2
+   },
+   {
+    "id": "onion_yellow",
+    "qty": 1,
+    "note": "thinly sliced",
+    "note_es": "en tiras finas"
+   },
+   {
+    "id": "garlic",
+    "qty": 2,
+    "note": "minced",
+    "note_es": "picado"
+   },
+   {
+    "id": "chili_powder",
+    "qty": 1
+   },
+   {
+    "id": "cumin",
+    "qty": 1
+   },
+   {
+    "id": "tortilla_corn",
+    "qty": 8,
+    "note": "fried crisp or use tostadas",
+    "note_es": "fritas crocantes o tostadas"
+   },
+   {
+    "id": "avocado",
+    "qty": 1,
+    "note": "sliced",
+    "note_es": "en rodajas"
+   },
+   {
+    "id": "cilantro",
+    "qty": 0.25,
+    "note": "chopped",
+    "note_es": "picado"
+   },
+   {
+    "id": "vegetable_oil",
+    "qty": 2
+   },
+   {
+    "id": "salt",
+    "qty": 0.5
+   }
+  ],
+  "equipment": [
+   "stovetop",
+   "blender"
+  ],
+  "active_minutes": 20,
+  "tip": "The sauce thickens as it sits — make it a day ahead and it tastes even better.",
+  "tip_es": "La salsa espesa al reposar: prepárala un día antes y sabe todavía mejor.",
+  "photo_url": "https://images.unsplash.com/photo-1760322328049-91bb196d41d9",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/four-gourmet-tacos-with-assorted-toppings-on-wooden-board-D0dNTxlljjo"
+  }
+ },
+ {
+  "slug": "arroz-con-pollo",
+  "name": "One-Pot Arroz con Pollo",
+  "meal_type": "dinner",
+  "name_es": "Arroz con pollo en una olla",
+  "diet_tags": [
+   "gluten_free",
+   "dairy_free",
+   "high_protein"
+  ],
+  "servings": 4,
+  "prep_minutes": 50,
+  "batch_friendly": true,
+  "description": "Chicken thighs and rice cooked together in a tomato-cumin broth with peas.",
+  "description_es": "Muslos de pollo y arroz cocidos juntos en caldo de tomate y comino con arvejas.",
+  "steps": [
+   "Season the chicken with salt and brown it in hot oil in a deep pot 4 minutes per side; transfer to a plate.",
+   "Sauté the onion and bell pepper 4 minutes, add the garlic and cumin and cook 30 seconds.",
+   "Stir in the rice to coat it, add the tomatoes, broth and turmeric; bring to a simmer.",
+   "Nestle the chicken back in, cover and cook 20 minutes on low until the rice is tender.",
+   "Stir in the peas, rest 5 minutes off the heat and serve."
+  ],
+  "steps_es": [
+   "Sazona el pollo con sal y dóralo en aceite caliente en una olla profunda 4 minutos por lado; reserva en un plato.",
+   "Saltea la cebolla y el morrón 4 minutos, agrega el ajo y el comino y cocina 30 segundos.",
+   "Suma el arroz para cubrirlo, agrega el tomate, el caldo y la cúrcuma; lleva a hervor suave.",
+   "Acomoda el pollo de nuevo, tapa y cocina 20 minutos a fuego bajo hasta que el arroz esté tierno.",
+   "Agrega las arvejas, deja reposar 5 minutos fuera del fuego y sirve."
+  ],
+  "ingredients": [
+   {
+    "id": "chicken_thigh",
+    "qty": 1.5,
+    "note": "bone-in or boneless",
+    "note_es": "con o sin hueso"
+   },
+   {
+    "id": "rice_white",
+    "qty": 1.5
+   },
+   {
+    "id": "onion_yellow",
+    "qty": 1,
+    "note": "diced",
+    "note_es": "en cubitos"
+   },
+   {
+    "id": "bell_pepper",
+    "qty": 1,
+    "note": "diced",
+    "note_es": "en cubitos"
+   },
+   {
+    "id": "garlic",
+    "qty": 3,
+    "note": "minced",
+    "note_es": "picado"
+   },
+   {
+    "id": "cumin",
+    "qty": 1
+   },
+   {
+    "id": "turmeric",
+    "qty": 0.5
+   },
+   {
+    "id": "diced_tomatoes",
+    "qty": 1
+   },
+   {
+    "id": "chicken_broth",
+    "qty": 1,
+    "note": "about 3 cups, partial carton",
+    "note_es": "unas 3 tazas"
+   },
+   {
+    "id": "peas_frozen",
+    "qty": 1
+   },
+   {
+    "id": "vegetable_oil",
+    "qty": 2
+   },
+   {
+    "id": "salt",
+    "qty": 0.75
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 25,
+  "tip": "Resist the urge to stir once the lid goes on — the rice sets better untouched.",
+  "tip_es": "Resiste las ganas de revolver cuando tapes la olla: el arroz queda mejor sin tocarlo.",
+  "photo_url": "https://images.unsplash.com/photo-1762631383556-7fa1365898b7",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/sliced-grilled-chicken-with-rice-and-beans-PSoXt5_8hNM"
+  }
+ },
+ {
+  "slug": "beans-rice-sunday",
+  "name": "Black Beans and Rice",
+  "meal_type": "dinner",
+  "name_es": "Frijoles negros con arroz",
+  "diet_tags": [
+   "vegetarian",
+   "vegan",
+   "gluten_free",
+   "dairy_free"
+  ],
+  "servings": 4,
+  "prep_minutes": 40,
+  "batch_friendly": true,
+  "description": "Slow-simmered cumin black beans over fluffy rice with lime and avocado.",
+  "description_es": "Frijoles negros al comino cocidos a fuego lento sobre arroz con lima y aguacate.",
+  "steps": [
+   "Cook the rice according to the package directions.",
+   "Sauté the onion and bell pepper in hot oil 5 minutes until soft, add the garlic, cumin and oregano and cook 1 minute.",
+   "Add the beans with their liquid and a splash of water; simmer 15 minutes, mashing a few beans to thicken.",
+   "Season with salt, stir in the lime juice and serve over rice with avocado and cilantro."
+  ],
+  "steps_es": [
+   "Cocina el arroz según las instrucciones del paquete.",
+   "Saltea la cebolla y el morrón en aceite caliente 5 minutos hasta que estén blandos, agrega el ajo, comino y orégano y cocina 1 minuto.",
+   "Suma los frijoles con su líquido y un chorrito de agua; cocina 15 minutos a fuego suave, machacando algunos para espesar.",
+   "Sazona con sal, agrega el jugo de lima y sirve sobre arroz con aguacate y cilantro."
+  ],
+  "ingredients": [
+   {
+    "id": "black_beans",
+    "qty": 3,
+    "note": "cans, with liquid",
+    "note_es": "latas, con su líquido"
+   },
+   {
+    "id": "rice_white",
+    "qty": 1.5
+   },
+   {
+    "id": "onion_yellow",
+    "qty": 1,
+    "note": "diced",
+    "note_es": "en cubitos"
+   },
+   {
+    "id": "bell_pepper",
+    "qty": 1,
+    "note": "diced",
+    "note_es": "en cubitos"
+   },
+   {
+    "id": "garlic",
+    "qty": 3,
+    "note": "minced",
+    "note_es": "picado"
+   },
+   {
+    "id": "cumin",
+    "qty": 1
+   },
+   {
+    "id": "oregano",
+    "qty": 0.5
+   },
+   {
+    "id": "lime",
+    "qty": 1,
+    "note": "juiced",
+    "note_es": "el jugo"
+   },
+   {
+    "id": "avocado",
+    "qty": 1,
+    "note": "sliced",
+    "note_es": "en rodajas"
+   },
+   {
+    "id": "cilantro",
+    "qty": 0.25,
+    "note": "chopped",
+    "note_es": "picado"
+   },
+   {
+    "id": "vegetable_oil",
+    "qty": 1
+   },
+   {
+    "id": "salt",
+    "qty": 0.5
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 15,
+  "photo_url": "https://images.unsplash.com/photo-1771074168450-11e3f8b7aa53",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/a-colorful-bowl-of-rice-chickpeas-and-salad-emy9Rhhn2PI"
+  }
+ },
+ {
+  "slug": "carnitas-tacos",
+  "name": "Easy Carnitas Tacos",
+  "meal_type": "dinner",
+  "name_es": "Tacos de carnitas fáciles",
+  "diet_tags": [
+   "gluten_free",
+   "dairy_free",
+   "high_protein"
+  ],
+  "servings": 4,
+  "prep_minutes": 90,
+  "batch_friendly": true,
+  "description": "Slow-braised pork shoulder, crisped under the broiler, in corn tortillas with onion and lime.",
+  "description_es": "Paletilla de cerdo cocida a fuego lento y dorada al grill, en tortillas de maíz con cebolla y lima.",
+  "steps": [
+   "Heat the oven to {325F}.",
+   "Cut the pork into large chunks, season with salt and place in a pot with the onion, garlic, cumin, oregano and enough water to barely cover.",
+   "Cover and braise in the oven 1 hour until fork-tender.",
+   "Shred the pork, spread it on a sheet pan and broil 4 minutes until the edges crisp.",
+   "Serve in warm corn tortillas with chopped onion, cilantro and lime."
+  ],
+  "steps_es": [
+   "Calienta el horno a {325F}.",
+   "Corta el cerdo en trozos grandes, sazona con sal y ponlo en una olla con la cebolla, el ajo, el comino, el orégano y agua apenas a cubrir.",
+   "Tapa y cocina en el horno 1 hora hasta que se deshaga con el tenedor.",
+   "Desmenuza el cerdo, extiéndelo en una placa y cocina al grill 4 minutos hasta que los bordes estén crocantes.",
+   "Sirve en tortillas de maíz tibias con cebolla picada, cilantro y lima."
+  ],
+  "ingredients": [
+   {
+    "id": "pork_shoulder",
+    "qty": 2
+   },
+   {
+    "id": "onion_yellow",
+    "qty": 1,
+    "note": "quartered plus extra chopped to serve",
+    "note_es": "en cuartos más extra picada para servir"
+   },
+   {
+    "id": "garlic",
+    "qty": 3,
+    "note": "smashed",
+    "note_es": "machacado"
+   },
+   {
+    "id": "cumin",
+    "qty": 1
+   },
+   {
+    "id": "oregano",
+    "qty": 1
+   },
+   {
+    "id": "tortilla_corn",
+    "qty": 12
+   },
+   {
+    "id": "cilantro",
+    "qty": 0.25,
+    "note": "chopped",
+    "note_es": "picado"
+   },
+   {
+    "id": "lime",
+    "qty": 1,
+    "note": "in wedges",
+    "note_es": "en gajos"
+   },
+   {
+    "id": "salt",
+    "qty": 1
+   }
+  ],
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "active_minutes": 25,
+  "tip": "Leftover carnitas freeze beautifully — crisp them straight from the fridge.",
+  "tip_es": "Las carnitas que sobran se congelan perfecto: dóralas directo de la heladera.",
+  "photo_url": "https://images.unsplash.com/photo-1599974579688-8dbdd335c77f",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/beef-tacos-with-onion-and-cilantro-z_PfaGzeN9E"
+  }
+ },
+ {
+  "slug": "chorizo-potato-tacos",
+  "name": "Chorizo and Potato Tacos",
+  "meal_type": "dinner",
+  "name_es": "Tacos de chorizo con papa",
+  "diet_tags": [
+   "gluten_free",
+   "dairy_free"
+  ],
+  "servings": 4,
+  "prep_minutes": 30,
+  "batch_friendly": false,
+  "description": "Crumbled chorizo with crispy potatoes in corn tortillas, topped with onion and cilantro.",
+  "description_es": "Chorizo desmenuzado con papas crocantes en tortillas de maíz, con cebolla y cilantro.",
+  "steps": [
+   "Boil the potatoes in salted water 10 minutes until just tender; drain.",
+   "Cook the chorizo in a large dry skillet over medium-high heat 5 minutes, breaking it up; transfer with a slotted spoon.",
+   "Fry the potatoes in the chorizo fat 6 minutes until crisp at the edges, then return the chorizo and toss.",
+   "Serve in warm tortillas with onion, cilantro and salsa."
+  ],
+  "steps_es": [
+   "Hierve las papas en agua con sal 10 minutos hasta que estén apenas tiernas; escúrrelas.",
+   "Cocina el chorizo en una sartén grande seca a fuego medio-alto 5 minutos desmenuzándolo; retíralo con espumadera.",
+   "Fríe las papas en la grasa del chorizo 6 minutos hasta que tengan bordes crocantes, vuelve a poner el chorizo y mezcla.",
+   "Sirve en tortillas tibias con cebolla, cilantro y salsa."
+  ],
+  "ingredients": [
+   {
+    "id": "chorizo",
+    "qty": 2,
+    "note": "casings removed",
+    "note_es": "sin la piel"
+   },
+   {
+    "id": "potato_russet",
+    "qty": 2,
+    "note": "in small cubes",
+    "note_es": "en cubitos"
+   },
+   {
+    "id": "tortilla_corn",
+    "qty": 12
+   },
+   {
+    "id": "onion_yellow",
+    "qty": 0.5,
+    "note": "chopped",
+    "note_es": "picada"
+   },
+   {
+    "id": "cilantro",
+    "qty": 0.25,
+    "note": "chopped",
+    "note_es": "picado"
+   },
+   {
+    "id": "salsa",
+    "qty": 0.5
+   },
+   {
+    "id": "salt",
+    "qty": 0.5
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 25,
+  "photo_url": "https://images.unsplash.com/photo-1757774551171-91143e145b0a",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/crispy-corn-taco-shells-arranged-in-a-row-LZLmnoI2OZ0"
+  }
+ },
+ {
+  "slug": "shrimp-ajillo-tacos",
+  "name": "Garlic Shrimp Tacos",
+  "meal_type": "dinner",
+  "name_es": "Tacos de camarones al ajillo",
+  "diet_tags": [
+   "pescatarian",
+   "dairy_free",
+   "high_protein"
+  ],
+  "servings": 4,
+  "prep_minutes": 20,
+  "batch_friendly": false,
+  "description": "Shrimp sizzled in garlic-lime butterless sauce, tucked into tortillas with slaw.",
+  "description_es": "Camarones salteados en salsa de ajo y lima, dentro de tortillas con ensalada.",
+  "steps": [
+   "Toss the coleslaw mix with the lime juice and a pinch of salt; set aside.",
+   "Heat the oil in a large skillet over medium heat and cook the garlic and red pepper flakes 1 minute until fragrant.",
+   "Raise the heat, add the shrimp and cook 2 minutes per side until pink.",
+   "Serve in warm tortillas topped with the slaw."
+  ],
+  "steps_es": [
+   "Mezcla la ensalada de repollo con el jugo de lima y una pizca de sal; reserva.",
+   "Calienta el aceite en una sartén grande a fuego medio y cocina el ajo con el ají molido 1 minuto hasta que largue aroma.",
+   "Sube el fuego, agrega los camarones y cocina 2 minutos por lado hasta que estén rosados.",
+   "Sirve en tortillas tibias con la ensalada por encima."
+  ],
+  "ingredients": [
+   {
+    "id": "shrimp",
+    "qty": 1.25,
+    "note": "peeled and deveined",
+    "note_es": "pelados y limpios"
+   },
+   {
+    "id": "coleslaw_mix",
+    "qty": 0.5
+   },
+   {
+    "id": "tortilla_corn",
+    "qty": 12
+   },
+   {
+    "id": "garlic",
+    "qty": 4,
+    "note": "thinly sliced",
+    "note_es": "en láminas finas"
+   },
+   {
+    "id": "lime",
+    "qty": 1,
+    "note": "juiced",
+    "note_es": "el jugo"
+   },
+   {
+    "id": "red_pepper_flakes",
+    "qty": 0.5
+   },
+   {
+    "id": "olive_oil",
+    "qty": 3
+   },
+   {
+    "id": "salt",
+    "qty": 0.5
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 15,
+  "photo_url": "https://images.unsplash.com/photo-1652957705092-b2f8d357c8a2",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/a-white-plate-topped-with-shrimp-and-veggies-_aePGhfNhhI"
+  }
+ },
+ {
+  "slug": "chicken-quesadillas",
+  "name": "Crispy Chicken Quesadillas",
+  "meal_type": "dinner",
+  "name_es": "Quesadillas crocantes de pollo",
+  "diet_tags": [
+   "high_protein"
+  ],
+  "servings": 4,
+  "prep_minutes": 25,
+  "batch_friendly": false,
+  "description": "Golden tortillas filled with seasoned chicken and melted cheese, with salsa and sour cream.",
+  "description_es": "Tortillas doradas rellenas de pollo sazonado y queso derretido, con salsa y crema.",
+  "steps": [
+   "Toss the shredded chicken with the taco seasoning and a splash of water in a skillet; warm 3 minutes until saucy.",
+   "Lay a tortilla flat, scatter cheese over half, top with chicken and more cheese, then fold in half.",
+   "Toast in a dry skillet 2 to 3 minutes per side over medium heat until golden and the cheese melts.",
+   "Cut into wedges and serve with salsa and sour cream."
+  ],
+  "steps_es": [
+   "Mezcla el pollo deshebrado con el sazonador y un chorrito de agua en una sartén; calienta 3 minutos hasta que esté jugoso.",
+   "Coloca una tortilla plana, esparce queso sobre la mitad, cubre con pollo y más queso, y dóblala por la mitad.",
+   "Tuesta en una sartén seca de 2 a 3 minutos por lado a fuego medio hasta que esté dorada y el queso se derrita.",
+   "Corta en gajos y sirve con salsa y crema agria."
+  ],
+  "ingredients": [
+   {
+    "id": "rotisserie_chicken",
+    "qty": 1,
+    "note": "about 2 cups shredded",
+    "note_es": "unas 2 tazas deshebrado"
+   },
+   {
+    "id": "tortilla_flour",
+    "qty": 8
+   },
+   {
+    "id": "cheddar",
+    "qty": 2,
+    "note": "shredded",
+    "note_es": "rallado"
+   },
+   {
+    "id": "taco_seasoning",
+    "qty": 2
+   },
+   {
+    "id": "salsa",
+    "qty": 0.5
+   },
+   {
+    "id": "sour_cream",
+    "qty": 0.5
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 15,
+  "tip": "Medium heat is the secret — high heat burns the tortilla before the cheese melts.",
+  "tip_es": "El fuego medio es la clave: con fuego fuerte se quema la tortilla antes de que el queso se derrita.",
+  "photo_url": "https://images.unsplash.com/photo-1768967145720-1eae9fe6ecb7",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/crispy-tacos-topped-with-diced-onions-and-cilantro-tlfjDBm-fXc"
+  }
+ },
+ {
+  "slug": "empanadas-beef",
+  "name": "Baked Beef Empanadas",
+  "meal_type": "dinner",
+  "name_es": "Empanadas de carne al horno",
+  "diet_tags": [
+   "high_protein"
+  ],
+  "servings": 4,
+  "prep_minutes": 50,
+  "batch_friendly": true,
+  "description": "Flaky rounds filled with cumin-beef picadillo, baked golden instead of fried.",
+  "description_es": "Discos crocantes rellenos de picadillo de carne al comino, horneados en vez de fritos.",
+  "steps": [
+   "Sauté the onion in hot oil 4 minutes, add the beef and cook 6 minutes, breaking it up, until browned.",
+   "Stir in the cumin, paprika, olives and raisins-free seasoning with salt; cook 2 minutes and let cool slightly.",
+   "Heat the oven to {400F} and line a sheet pan with parchment.",
+   "Separate the dough into 8 small balls (or use store rounds), roll each into a circle, fill with beef and fold into a half-moon, crimping the edge.",
+   "Brush the tops with beaten egg and bake 20 minutes until golden."
+  ],
+  "steps_es": [
+   "Saltea la cebolla en aceite caliente 4 minutos, agrega la carne y cocina 6 minutos desmenuzándola hasta dorarla.",
+   "Suma el comino, el pimentón, las aceitunas y la sal; cocina 2 minutos y deja entibiar.",
+   "Calienta el horno a {400F} y forra una placa con papel.",
+   "Divide la masa en 8 bolitas (o usa discos comprados), estira cada una en círculo, rellena con carne y cierra en medialuna haciendo el repulgue.",
+   "Pinta con huevo batido y hornea 20 minutos hasta que estén doradas."
+  ],
+  "ingredients": [
+   {
+    "id": "ground_beef",
+    "qty": 1
+   },
+   {
+    "id": "onion_yellow",
+    "qty": 1,
+    "note": "finely diced",
+    "note_es": "en cubitos chicos"
+   },
+   {
+    "id": "pizza_dough",
+    "qty": 1,
+    "note": "or empanada discs",
+    "note_es": "o discos de empanada"
+   },
+   {
+    "id": "cumin",
+    "qty": 1
+   },
+   {
+    "id": "smoked_paprika",
+    "qty": 1
+   },
+   {
+    "id": "olives",
+    "qty": 0.25,
+    "note": "chopped",
+    "note_es": "picadas"
+   },
+   {
+    "id": "eggs",
+    "qty": 1,
+    "note": "beaten",
+    "note_es": "batido"
+   },
+   {
+    "id": "vegetable_oil",
+    "qty": 1
+   },
+   {
+    "id": "salt",
+    "qty": 0.5
+   }
+  ],
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "active_minutes": 30,
+  "tip": "Cool the filling 15 minutes before folding — hot filling melts the dough.",
+  "tip_es": "Deja enfriar el relleno 15 minutos antes de armar: el relleno caliente ablanda la masa.",
+  "photo_url": "https://images.unsplash.com/photo-1774971343509-d575ec6bd3af",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/rows-of-assorted-empanadas-on-display-wyOmd8z2Uws"
+  }
+ },
+ {
+  "slug": "arepas-cheese",
+  "name": "Arepas with Cheese and Avocado",
+  "meal_type": "dinner",
+  "name_es": "Arepas con queso y aguacate",
+  "diet_tags": [
+   "vegetarian",
+   "gluten_free"
+  ],
+  "servings": 4,
+  "prep_minutes": 30,
+  "batch_friendly": false,
+  "description": "Crisp corn cakes split and stuffed with melted cheese and avocado.",
+  "description_es": "Tortitas de maíz crocantes abiertas y rellenas con queso derretido y aguacate.",
+  "steps": [
+   "Stir the masarepa with the salt and warm water; rest 5 minutes until it firms up.",
+   "Knead briefly and form 8 small patties about half an inch thick.",
+   "Cook in a lightly oiled skillet over medium heat 5 minutes per side until golden and crusty.",
+   "Split them open like English muffins, stuff with cheese and return to the pan 1 minute to melt.",
+   "Serve with avocado and a little sour cream."
+  ],
+  "steps_es": [
+   "Mezcla la masarepa con la sal y el agua tibia; deja reposar 5 minutos hasta que tome cuerpo.",
+   "Amasa brevemente y forma 8 tortitas de un centímetro y medio de grosor.",
+   "Cocínalas en una sartén apenas aceitada a fuego medio 5 minutos por lado hasta que estén doradas y crocantes.",
+   "Ábrelas como panes, rellénalas con queso y vuelve a la sartén 1 minuto para que se derrita.",
+   "Sirve con aguacate y un poco de crema agria."
+  ],
+  "ingredients": [
+   {
+    "id": "masarepa",
+    "qty": 2,
+    "note": "with 2.5 cups warm water",
+    "note_es": "con 2.5 tazas de agua tibia"
+   },
+   {
+    "id": "mozzarella",
+    "qty": 2,
+    "note": "shredded",
+    "note_es": "rallada"
+   },
+   {
+    "id": "avocado",
+    "qty": 2,
+    "note": "sliced",
+    "note_es": "en rodajas"
+   },
+   {
+    "id": "sour_cream",
+    "qty": 0.5
+   },
+   {
+    "id": "salt",
+    "qty": 0.75
+   },
+   {
+    "id": "vegetable_oil",
+    "qty": 1
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 25,
+  "tip": "The dough should feel like soft playdough — add water a spoonful at a time if it cracks.",
+  "tip_es": "La masa debe sentirse como plastilina blanda; si se agrieta, agrega agua de a cucharadas.",
+  "photo_url": "https://images.unsplash.com/photo-1783321324850-73cee4dc9be9",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/a-hand-placing-cheese-bread-on-a-bamboo-rack-HNDFeKFtxNg"
+  }
+ },
+ {
+  "slug": "chile-relleno-casserole",
+  "name": "Green Chile Egg Bake",
+  "meal_type": "dinner",
+  "name_es": "Pastel de huevo y chiles verdes",
+  "diet_tags": [
+   "vegetarian",
+   "gluten_free",
+   "low_carb"
+  ],
+  "servings": 4,
+  "prep_minutes": 40,
+  "batch_friendly": true,
+  "description": "A chile-relleno-style baked egg casserole with green chiles and cheese.",
+  "description_es": "Pastel de huevo horneado estilo chile relleno con chiles verdes y queso.",
+  "steps": [
+   "Heat the oven to {350F} and butter a baking dish.",
+   "Whisk the eggs with the sour cream, half the cheese, the green chiles and a pinch of salt.",
+   "Pour into the dish, scatter the remaining cheese and bake 25 to 30 minutes until set in the center.",
+   "Rest 5 minutes, cut into squares and serve with salsa."
+  ],
+  "steps_es": [
+   "Calienta el horno a {350F} y enmantequilla una fuente.",
+   "Bate los huevos con la crema agria, la mitad del queso, los chiles verdes y una pizca de sal.",
+   "Vierte en la fuente, esparce el resto del queso y hornea de 25 a 30 minutos hasta que el centro cuaje.",
+   "Deja reposar 5 minutos, corta en cuadrados y sirve con salsa."
+  ],
+  "ingredients": [
+   {
+    "id": "eggs",
+    "qty": 8
+   },
+   {
+    "id": "green_chiles",
+    "qty": 2,
+    "note": "cans, drained",
+    "note_es": "latas, escurridas"
+   },
+   {
+    "id": "cheddar",
+    "qty": 2,
+    "note": "shredded",
+    "note_es": "rallado"
+   },
+   {
+    "id": "sour_cream",
+    "qty": 0.5
+   },
+   {
+    "id": "salsa",
+    "qty": 0.5
+   },
+   {
+    "id": "salt",
+    "qty": 0.5
+   },
+   {
+    "id": "butter",
+    "qty": 1
+   }
+  ],
+  "equipment": [
+   "oven"
+  ],
+  "active_minutes": 10,
+  "photo_url": "https://images.unsplash.com/photo-1792046759141-20fd71b96be5",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/baked-casserole-with-tomato-wedge-oqnFAsrXTso"
+  }
+ },
+ {
+  "slug": "pozole-blanco",
+  "name": "Quick Chicken Pozole",
+  "meal_type": "dinner",
+  "name_es": "Pozole rápido de pollo",
+  "diet_tags": [
+   "gluten_free",
+   "dairy_free",
+   "high_protein"
+  ],
+  "servings": 4,
+  "prep_minutes": 35,
+  "batch_friendly": true,
+  "description": "A fast hominy soup with shredded chicken, cabbage, radish-free crunch and lime.",
+  "description_es": "Sopa rápida de maíz pozolero con pollo deshebrado, repollo y lima.",
+  "steps": [
+   "Bring the broth to a simmer with the garlic, cumin and chili powder.",
+   "Add the hominy and chicken and simmer 10 minutes.",
+   "Season with salt and the lime juice.",
+   "Serve in bowls topped with shredded cabbage, onion and more lime."
+  ],
+  "steps_es": [
+   "Lleva el caldo a hervor suave con el ajo, el comino y el chile en polvo.",
+   "Agrega el maíz pozolero y el pollo y cocina 10 minutos.",
+   "Sazona con sal y el jugo de lima.",
+   "Sirve en bowls con repollo rallado, cebolla y más lima."
+  ],
+  "ingredients": [
+   {
+    "id": "hominy",
+    "qty": 2,
+    "note": "cans, drained and rinsed",
+    "note_es": "latas, escurridas y enjuagadas"
+   },
+   {
+    "id": "chicken_broth",
+    "qty": 2,
+    "note": "cartons, about 8 cups",
+    "note_es": "cajas, unas 8 tazas"
+   },
+   {
+    "id": "rotisserie_chicken",
+    "qty": 1,
+    "note": "about 2 cups shredded",
+    "note_es": "unas 2 tazas deshebrado"
+   },
+   {
+    "id": "garlic",
+    "qty": 2,
+    "note": "minced",
+    "note_es": "picado"
+   },
+   {
+    "id": "cumin",
+    "qty": 1
+   },
+   {
+    "id": "chili_powder",
+    "qty": 1
+   },
+   {
+    "id": "cabbage",
+    "qty": 0.25,
+    "note": "finely shredded",
+    "note_es": "rallado fino"
+   },
+   {
+    "id": "onion_yellow",
+    "qty": 0.5,
+    "note": "diced",
+    "note_es": "en cubitos"
+   },
+   {
+    "id": "lime",
+    "qty": 2,
+    "note": "juiced and wedged",
+    "note_es": "el jugo y en gajos"
+   },
+   {
+    "id": "salt",
+    "qty": 0.75
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 15,
+  "photo_url": "https://images.unsplash.com/photo-1767032916116-2460bbd4a27d",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/baskets-overflowing-with-colorful-fresh-vegetables-and-fruits-7J9i4Damd2I"
+  }
+ },
+ {
+  "slug": "picadillo",
+  "name": "Cuban-Style Picadillo",
+  "meal_type": "dinner",
+  "name_es": "Picadillo estilo cubano",
+  "diet_tags": [
+   "gluten_free",
+   "dairy_free",
+   "high_protein"
+  ],
+  "servings": 4,
+  "prep_minutes": 35,
+  "batch_friendly": true,
+  "description": "Sweet-savory ground beef with olives and warm spices over rice.",
+  "description_es": "Carne molida agridulce con aceitunas y especias cálidas, sobre arroz.",
+  "steps": [
+   "Cook the rice according to the package directions.",
+   "Sauté the onion and bell pepper in hot oil 5 minutes, add the garlic and cook 1 minute.",
+   "Add the beef and cook 6 minutes, breaking it up, until browned.",
+   "Stir in the tomatoes, cumin, cinnamon and olives; simmer 10 minutes until thick.",
+   "Season with salt and serve over rice."
+  ],
+  "steps_es": [
+   "Cocina el arroz según las instrucciones del paquete.",
+   "Saltea la cebolla y el morrón en aceite caliente 5 minutos, agrega el ajo y cocina 1 minuto.",
+   "Suma la carne y cocina 6 minutos desmenuzándola hasta dorarla.",
+   "Agrega el tomate, el comino, la canela y las aceitunas; cocina 10 minutos a fuego suave hasta que espese.",
+   "Sazona con sal y sirve sobre arroz."
+  ],
+  "ingredients": [
+   {
+    "id": "ground_beef",
+    "qty": 1.25
+   },
+   {
+    "id": "rice_white",
+    "qty": 1.5
+   },
+   {
+    "id": "onion_yellow",
+    "qty": 1,
+    "note": "diced",
+    "note_es": "en cubitos"
+   },
+   {
+    "id": "bell_pepper",
+    "qty": 1,
+    "note": "diced",
+    "note_es": "en cubitos"
+   },
+   {
+    "id": "garlic",
+    "qty": 3,
+    "note": "minced",
+    "note_es": "picado"
+   },
+   {
+    "id": "diced_tomatoes",
+    "qty": 1
+   },
+   {
+    "id": "cumin",
+    "qty": 1
+   },
+   {
+    "id": "cinnamon",
+    "qty": 0.25
+   },
+   {
+    "id": "olives",
+    "qty": 0.5,
+    "note": "halved",
+    "note_es": "a la mitad"
+   },
+   {
+    "id": "vegetable_oil",
+    "qty": 1
+   },
+   {
+    "id": "salt",
+    "qty": 0.5
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 20,
+  "tip": "A handful of raisins is classic here — add them with the tomatoes if you have them.",
+  "tip_es": "Un puñado de pasas es lo clásico: agrégalas con el tomate si tienes.",
+  "photo_url": "https://images.unsplash.com/photo-1771074168439-0083aaac48e7",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/a-bowl-of-rice-chickpeas-and-salad-with-meat-g7WrssBb1Ak"
+  }
+ },
+ {
+  "slug": "mexican-street-corn-chicken",
+  "name": "Elote-Style Chicken Skillet",
+  "meal_type": "dinner",
+  "name_es": "Pollo estilo elote en sartén",
+  "diet_tags": [
+   "gluten_free",
+   "high_protein"
+  ],
+  "servings": 4,
+  "prep_minutes": 30,
+  "batch_friendly": false,
+  "description": "Chicken with charred corn, lime, cotija-style cheese and chili in one skillet.",
+  "description_es": "Pollo con maíz dorado, lima, queso estilo cotija y chile en una sola sartén.",
+  "steps": [
+   "Heat the oil in a large skillet over high heat and char the corn 5 minutes until browned in spots; transfer to a bowl.",
+   "Season the chicken with salt and chili powder, sear 4 minutes per side until cooked through; slice.",
+   "Toss the corn with the sour cream, feta, lime juice and cilantro.",
+   "Serve the sliced chicken topped with the street corn."
+  ],
+  "steps_es": [
+   "Calienta el aceite en una sartén grande a fuego alto y dora el maíz 5 minutos hasta que tenga partes tostadas; pásalo a un tazón.",
+   "Sazona el pollo con sal y chile en polvo, séllalo 4 minutos por lado hasta que esté listo; córtalo en tajadas.",
+   "Mezcla el maíz con la crema agria, el queso feta, el jugo de lima y el cilantro.",
+   "Sirve el pollo en tajadas cubierto con el maíz estilo elote."
+  ],
+  "ingredients": [
+   {
+    "id": "chicken_breast",
+    "qty": 1.25
+   },
+   {
+    "id": "corn_frozen",
+    "qty": 2,
+    "note": "thawed",
+    "note_es": "descongelado"
+   },
+   {
+    "id": "sour_cream",
+    "qty": 0.5
+   },
+   {
+    "id": "feta",
+    "qty": 3,
+    "note": "crumbled, stands in for cotija",
+    "note_es": "desmenuzado, reemplaza al cotija"
+   },
+   {
+    "id": "lime",
+    "qty": 1,
+    "note": "juiced",
+    "note_es": "el jugo"
+   },
+   {
+    "id": "cilantro",
+    "qty": 0.25,
+    "note": "chopped",
+    "note_es": "picado"
+   },
+   {
+    "id": "chili_powder",
+    "qty": 1
+   },
+   {
+    "id": "vegetable_oil",
+    "qty": 1
+   },
+   {
+    "id": "salt",
+    "qty": 0.5
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 20,
+  "photo_url": "https://images.unsplash.com/photo-1787084888948-a57fd00fff47",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/man-serving-herbal-drinks-in-hoi-an-7snnYIQSLbo"
+  }
+ },
+ {
+  "slug": "carne-asada-bowls",
+  "name": "Carne Asada Bowls",
+  "meal_type": "dinner",
+  "name_es": "Bowls de carne asada",
+  "diet_tags": [
+   "gluten_free",
+   "dairy_free",
+   "high_protein"
+  ],
+  "servings": 4,
+  "prep_minutes": 35,
+  "batch_friendly": false,
+  "description": "Lime-cumin marinated steak over rice with beans and pico-style salsa.",
+  "description_es": "Bistec marinado en lima y comino sobre arroz con frijoles y salsa fresca.",
+  "steps": [
+   "Marinate the steak in the lime juice, half the cumin, garlic and a pinch of salt for 10 minutes.",
+   "Cook the rice according to the package directions.",
+   "Sear the steak in a very hot oiled skillet 3 to 4 minutes per side; rest 5 minutes, then slice thin.",
+   "Warm the beans with the remaining cumin.",
+   "Serve the steak over rice with beans, salsa and avocado."
+  ],
+  "steps_es": [
+   "Marina el bistec en el jugo de lima, la mitad del comino, el ajo y una pizca de sal durante 10 minutos.",
+   "Cocina el arroz según las instrucciones del paquete.",
+   "Sella el bistec en una sartén aceitada muy caliente de 3 a 4 minutos por lado; deja reposar 5 minutos y córtalo en tiras finas.",
+   "Calienta los frijoles con el resto del comino.",
+   "Sirve la carne sobre arroz con frijoles, salsa y aguacate."
+  ],
+  "ingredients": [
+   {
+    "id": "steak_sirloin",
+    "qty": 1.25
+   },
+   {
+    "id": "rice_white",
+    "qty": 1.5
+   },
+   {
+    "id": "black_beans",
+    "qty": 1,
+    "note": "drained",
+    "note_es": "escurridos"
+   },
+   {
+    "id": "lime",
+    "qty": 2,
+    "note": "juiced",
+    "note_es": "el jugo"
+   },
+   {
+    "id": "garlic",
+    "qty": 3,
+    "note": "minced",
+    "note_es": "picado"
+   },
+   {
+    "id": "cumin",
+    "qty": 1
+   },
+   {
+    "id": "salsa",
+    "qty": 0.5
+   },
+   {
+    "id": "avocado",
+    "qty": 1,
+    "note": "sliced",
+    "note_es": "en rodajas"
+   },
+   {
+    "id": "vegetable_oil",
+    "qty": 1
+   },
+   {
+    "id": "salt",
+    "qty": 0.75
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 20,
+  "photo_url": "https://images.unsplash.com/photo-1779414518295-b03b6c60921b",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/carne-asada-with-salsas-tortillas-and-pickled-onions-eQ83dvlvi0E"
+  }
+ },
+ {
+  "slug": "sopa-de-tortilla",
+  "name": "Tortilla Soup",
+  "meal_type": "dinner",
+  "name_es": "Sopa de tortilla",
+  "diet_tags": [
+   "gluten_free",
+   "dairy_free"
+  ],
+  "servings": 4,
+  "prep_minutes": 35,
+  "batch_friendly": true,
+  "description": "Tomato-chile broth with chicken, topped with crispy tortilla strips and avocado.",
+  "description_es": "Caldo de tomate y chile con pollo, con tiras de tortilla crocantes y aguacate.",
+  "steps": [
+   "Bake the tortilla strips at {400F} 8 minutes until crisp (or fry them in a little oil).",
+   "Sauté the onion in hot oil 4 minutes, add the garlic, cumin and chili powder and cook 1 minute.",
+   "Add the tomatoes, broth and chicken; simmer 15 minutes.",
+   "Season with salt and lime juice; serve topped with the tortilla strips, avocado and cilantro."
+  ],
+  "steps_es": [
+   "Hornea las tiras de tortilla a {400F} 8 minutos hasta que estén crocantes (o fríelas en un poco de aceite).",
+   "Saltea la cebolla en aceite caliente 4 minutos, agrega el ajo, el comino y el chile en polvo y cocina 1 minuto.",
+   "Suma el tomate, el caldo y el pollo; cocina a fuego suave 15 minutos.",
+   "Sazona con sal y jugo de lima; sirve con las tiras de tortilla, aguacate y cilantro."
+  ],
+  "ingredients": [
+   {
+    "id": "tortilla_corn",
+    "qty": 6,
+    "note": "cut into strips",
+    "note_es": "en tiras"
+   },
+   {
+    "id": "chicken_broth",
+    "qty": 2,
+    "note": "cartons, about 8 cups",
+    "note_es": "cajas, unas 8 tazas"
+   },
+   {
+    "id": "rotisserie_chicken",
+    "qty": 1,
+    "note": "about 2 cups shredded",
+    "note_es": "unas 2 tazas deshebrado"
+   },
+   {
+    "id": "diced_tomatoes",
+    "qty": 2
+   },
+   {
+    "id": "onion_yellow",
+    "qty": 1,
+    "note": "diced",
+    "note_es": "en cubitos"
+   },
+   {
+    "id": "garlic",
+    "qty": 3,
+    "note": "minced",
+    "note_es": "picado"
+   },
+   {
+    "id": "cumin",
+    "qty": 1
+   },
+   {
+    "id": "chili_powder",
+    "qty": 1
+   },
+   {
+    "id": "avocado",
+    "qty": 1,
+    "note": "sliced",
+    "note_es": "en rodajas"
+   },
+   {
+    "id": "cilantro",
+    "qty": 0.25,
+    "note": "chopped",
+    "note_es": "picado"
+   },
+   {
+    "id": "lime",
+    "qty": 1,
+    "note": "juiced",
+    "note_es": "el jugo"
+   },
+   {
+    "id": "vegetable_oil",
+    "qty": 1
+   },
+   {
+    "id": "salt",
+    "qty": 0.75
+   }
+  ],
+  "equipment": [
+   "stovetop",
+   "oven"
+  ],
+  "active_minutes": 20,
+  "photo_url": "https://images.unsplash.com/photo-1786052599180-aea3127970b6",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/plate-of-chili-with-rice-radish-and-a-tortilla-chip-g5rB3Zg4gzI"
+  }
+ },
+ {
+  "slug": "enchiladas-rojas-beef",
+  "name": "Beef Enchiladas Rojas",
+  "meal_type": "dinner",
+  "name_es": "Enchiladas rojas de carne",
+  "diet_tags": [
+   "high_protein"
+  ],
+  "servings": 4,
+  "prep_minutes": 40,
+  "batch_friendly": true,
+  "description": "Ground beef and cheese enchiladas under red sauce, baked until bubbly.",
+  "description_es": "Enchiladas de carne molida y queso bañadas en salsa roja, horneadas hasta burbujear.",
+  "steps": [
+   "Heat the oven to {375F}.",
+   "Brown the beef with the onion in a skillet 6 minutes; stir in the cumin and a pinch of salt.",
+   "Warm the tortillas so they roll without cracking, spread a spoonful of sauce in the dish.",
+   "Fill each tortilla with beef and a little cheese, roll and place seam-side down.",
+   "Cover with the rest of the sauce and cheese and bake 20 minutes until bubbly."
+  ],
+  "steps_es": [
+   "Calienta el horno a {375F}.",
+   "Dora la carne con la cebolla en una sartén 6 minutos; agrega el comino y una pizca de sal.",
+   "Calienta las tortillas para que no se rompan al enrollar y unta una cucharada de salsa en la fuente.",
+   "Rellena cada tortilla con carne y un poco de queso, enrolla y acomoda con la unión hacia abajo.",
+   "Cubre con el resto de la salsa y el queso y hornea 20 minutos hasta que burbujee."
+  ],
+  "ingredients": [
+   {
+    "id": "ground_beef",
+    "qty": 1
+   },
+   {
+    "id": "onion_yellow",
+    "qty": 1,
+    "note": "diced",
+    "note_es": "en cubitos"
+   },
+   {
+    "id": "tortilla_corn",
+    "qty": 12
+   },
+   {
+    "id": "enchilada_sauce",
+    "qty": 2
+   },
+   {
+    "id": "cheddar",
+    "qty": 1.5,
+    "note": "shredded",
+    "note_es": "rallado"
+   },
+   {
+    "id": "cumin",
+    "qty": 1
+   },
+   {
+    "id": "salt",
+    "qty": 0.5
+   }
+  ],
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "active_minutes": 20,
+  "photo_url": "https://images.unsplash.com/photo-1786052600217-992704210ff8",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/plate-of-meat-in-red-sauce-rice-and-a-side-6NtsTM2LsuQ"
+  }
+ },
+ {
+  "slug": "milanesa-chicken",
+  "name": "Crispy Chicken Milanesa",
+  "meal_type": "dinner",
+  "name_es": "Milanesa de pollo crocante",
+  "diet_tags": [
+   "high_protein"
+  ],
+  "servings": 4,
+  "prep_minutes": 30,
+  "batch_friendly": false,
+  "description": "Breaded chicken cutlets, shallow-fried golden, with lime and a quick salad.",
+  "description_es": "Supremas de pollo empanadas, fritas doradas, con lima y ensalada rápida.",
+  "steps": [
+   "Season the chicken with salt and garlic powder; pound to even thickness if thick.",
+   "Set up two plates: beaten egg on one, breadcrumbs mixed with a pinch of salt on the other.",
+   "Dip each piece in egg, then breadcrumbs, pressing so it sticks.",
+   "Fry in hot oil 3 to 4 minutes per side until deep golden and cooked through; drain on paper.",
+   "Serve with lime wedges and the tomato salad."
+  ],
+  "steps_es": [
+   "Sazona el pollo con sal y ajo en polvo; aplanarlo si está muy grueso.",
+   "Arma dos platos: huevo batido en uno, pan rallado con una pizca de sal en el otro.",
+   "Pasa cada pieza por huevo y luego por pan rallado, presionando para que se pegue.",
+   "Fríe en aceite caliente de 3 a 4 minutos por lado hasta que estén bien doradas y cocidas; escurre sobre papel.",
+   "Sirve con gajos de lima y la ensalada de tomate."
+  ],
+  "ingredients": [
+   {
+    "id": "chicken_breast",
+    "qty": 1.5,
+    "note": "sliced into thin cutlets",
+    "note_es": "en filetes finos"
+   },
+   {
+    "id": "eggs",
+    "qty": 2,
+    "note": "beaten",
+    "note_es": "batidos"
+   },
+   {
+    "id": "breadcrumbs",
+    "qty": 1.5
+   },
+   {
+    "id": "garlic_powder",
+    "qty": 1
+   },
+   {
+    "id": "tomato",
+    "qty": 2,
+    "note": "diced",
+    "note_es": "en cubitos"
+   },
+   {
+    "id": "onion_red",
+    "qty": 0.5,
+    "note": "thinly sliced",
+    "note_es": "en plumas"
+   },
+   {
+    "id": "lime",
+    "qty": 1,
+    "note": "in wedges",
+    "note_es": "en gajos"
+   },
+   {
+    "id": "vegetable_oil",
+    "qty": 6
+   },
+   {
+    "id": "salt",
+    "qty": 0.75
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 22,
+  "tip": "Press the crumbs on firmly and let the breaded chicken rest 5 minutes — the coating stays put.",
+  "tip_es": "Presiona bien el pan rallado y deja reposar 5 minutos: el empanado no se desprende.",
+  "photo_url": "https://images.unsplash.com/photo-1788603907419-c4cac479edc0",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/fried-rice-with-vegetables-dinner-aLRcLRJdro4"
+  }
+ },
+ {
+  "slug": "pastel-de-choclo",
+  "name": "Corn and Beef Pie",
+  "meal_type": "dinner",
+  "name_es": "Pastel de choclo",
+  "diet_tags": [
+   "high_protein"
+  ],
+  "servings": 4,
+  "prep_minutes": 60,
+  "batch_friendly": true,
+  "description": "Sweet corn topping over cumin beef, baked until golden — a South American classic.",
+  "description_es": "Cubierta de maíz dulce sobre carne al comino, horneada hasta dorar.",
+  "steps": [
+   "Sauté the onion in hot oil 4 minutes, add the beef and cook 6 minutes until browned; stir in the cumin, paprika and salt and set aside.",
+   "Blend the corn with the cream until mostly smooth, season with salt.",
+   "Heat the oven to {375F} and butter a baking dish.",
+   "Spread the beef in the dish, scatter the olives and egg slices over it, then pour the corn mixture on top.",
+   "Bake 35 minutes until golden and set; rest 10 minutes before serving."
+  ],
+  "steps_es": [
+   "Saltea la cebolla en aceite caliente 4 minutos, agrega la carne y cocina 6 minutos hasta dorarla; suma el comino, el pimentón y la sal y reserva.",
+   "Licúa el maíz con la crema hasta que esté casi liso y sazona con sal.",
+   "Calienta el horno a {375F} y enmantequilla una fuente.",
+   "Extiende la carne en la fuente, esparce las aceitunas y las rodajas de huevo, y vierte la mezcla de maíz encima.",
+   "Hornea 35 minutos hasta que esté dorado y firme; deja reposar 10 minutos antes de servir."
+  ],
+  "ingredients": [
+   {
+    "id": "ground_beef",
+    "qty": 1.25
+   },
+   {
+    "id": "onion_yellow",
+    "qty": 1,
+    "note": "diced",
+    "note_es": "en cubitos"
+   },
+   {
+    "id": "corn_frozen",
+    "qty": 4,
+    "note": "thawed",
+    "note_es": "descongelado"
+   },
+   {
+    "id": "heavy_cream",
+    "qty": 0.5
+   },
+   {
+    "id": "olives",
+    "qty": 0.5,
+    "note": "halved",
+    "note_es": "a la mitad"
+   },
+   {
+    "id": "eggs",
+    "qty": 2,
+    "note": "hard-boiled and sliced",
+    "note_es": "duros, en rodajas"
+   },
+   {
+    "id": "cumin",
+    "qty": 1
+   },
+   {
+    "id": "smoked_paprika",
+    "qty": 1
+   },
+   {
+    "id": "butter",
+    "qty": 1
+   },
+   {
+    "id": "vegetable_oil",
+    "qty": 1
+   },
+   {
+    "id": "salt",
+    "qty": 0.75
+   }
+  ],
+  "equipment": [
+   "oven",
+   "stovetop",
+   "blender"
+  ],
+  "active_minutes": 25,
+  "photo_url": "https://images.unsplash.com/photo-1792354441702-572e1ffaca2b",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/lasagna-in-glass-baking-dish-RvAmjTUTx5U"
+  }
+ },
+ {
+  "slug": "chicken-mole-bowls",
+  "name": "Easy Mole-Style Chicken",
+  "meal_type": "dinner",
+  "name_es": "Pollo estilo mole fácil",
+  "diet_tags": [
+   "gluten_free",
+   "dairy_free",
+   "high_protein"
+  ],
+  "servings": 4,
+  "prep_minutes": 35,
+  "batch_friendly": true,
+  "description": "A simplified mole — cocoa, chili and peanut — simmered with chicken over rice.",
+  "description_es": "Un mole simplificado (cacao, chile y maní) cocido con pollo, sobre arroz.",
+  "steps": [
+   "Cook the rice according to the package directions.",
+   "Sauté the onion 4 minutes, add the garlic, chili powder and cinnamon and cook 1 minute.",
+   "Stir in the tomatoes and peanut butter and simmer 5 minutes.",
+   "Blend the sauce until smooth, return to the pan, add the chicken and simmer 10 minutes.",
+   "Serve over rice with sesame seeds."
+  ],
+  "steps_es": [
+   "Cocina el arroz según las instrucciones del paquete.",
+   "Saltea la cebolla 4 minutos, agrega el ajo, el chile en polvo y la canela y cocina 1 minuto.",
+   "Suma el tomate y la mantequilla de maní y cocina 5 minutos a fuego suave.",
+   "Licúa la salsa hasta que esté lisa, devuélvela a la sartén, agrega el pollo y cocina 10 minutos.",
+   "Sirve sobre arroz con semillas de sésamo."
+  ],
+  "ingredients": [
+   {
+    "id": "chicken_thigh",
+    "qty": 1.5,
+    "note": "cut into chunks",
+    "note_es": "en trozos"
+   },
+   {
+    "id": "rice_white",
+    "qty": 1.5
+   },
+   {
+    "id": "onion_yellow",
+    "qty": 1,
+    "note": "diced",
+    "note_es": "en cubitos"
+   },
+   {
+    "id": "garlic",
+    "qty": 3,
+    "note": "minced",
+    "note_es": "picado"
+   },
+   {
+    "id": "chili_powder",
+    "qty": 2
+   },
+   {
+    "id": "cinnamon",
+    "qty": 0.25
+   },
+   {
+    "id": "diced_tomatoes",
+    "qty": 1
+   },
+   {
+    "id": "peanut_butter",
+    "qty": 3
+   },
+   {
+    "id": "sesame_seeds",
+    "qty": 1
+   },
+   {
+    "id": "vegetable_oil",
+    "qty": 1
+   },
+   {
+    "id": "salt",
+    "qty": 0.5
+   }
+  ],
+  "equipment": [
+   "stovetop",
+   "blender"
+  ],
+  "active_minutes": 20,
+  "tip": "A teaspoon of cocoa powder stirred into the sauce deepens the mole flavor.",
+  "tip_es": "Una cucharadita de cacao en la salsa profundiza el sabor del mole.",
+  "photo_url": "https://images.unsplash.com/photo-1700625916627-16ad4fb0553c",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/a-table-topped-with-plates-of-food-and-a-bowl-of-guacamole-w9LdceJSEu8"
+  }
+ },
+ {
+  "slug": "fish-tacos-cabbage",
+  "name": "Fish Tacos with Lime Slaw",
+  "meal_type": "dinner",
+  "name_es": "Tacos de pescado con ensalada de lima",
+  "diet_tags": [
+   "pescatarian",
+   "dairy_free",
+   "high_protein"
+  ],
+  "servings": 4,
+  "prep_minutes": 30,
+  "batch_friendly": false,
+  "description": "Spiced white fish in warm tortillas with crunchy lime slaw.",
+  "description_es": "Pescado blanco especiado en tortillas tibias con ensalada crujiente de lima.",
+  "steps": [
+   "Toss the slaw mix with the lime juice and a pinch of salt; set aside.",
+   "Season the fish with the chili powder, cumin, garlic powder and salt.",
+   "Cook in hot oiled skillet 3 minutes per side until it flakes; break into large pieces.",
+   "Warm the tortillas and serve the fish inside with the slaw and avocado."
+  ],
+  "steps_es": [
+   "Mezcla la ensalada de repollo con el jugo de lima y una pizca de sal; reserva.",
+   "Sazona el pescado con el chile en polvo, comino, ajo en polvo y sal.",
+   "Cocínalo en una sartén aceitada caliente 3 minutos por lado hasta que se deshoje; córtalo en trozos grandes.",
+   "Calienta las tortillas y sirve el pescado dentro con la ensalada y el aguacate."
+  ],
+  "ingredients": [
+   {
+    "id": "tilapia",
+    "qty": 1.25,
+    "note": "or cod",
+    "note_es": "o bacalao"
+   },
+   {
+    "id": "coleslaw_mix",
+    "qty": 0.75
+   },
+   {
+    "id": "tortilla_corn",
+    "qty": 12
+   },
+   {
+    "id": "lime",
+    "qty": 1,
+    "note": "juiced",
+    "note_es": "el jugo"
+   },
+   {
+    "id": "chili_powder",
+    "qty": 1
+   },
+   {
+    "id": "cumin",
+    "qty": 0.5
+   },
+   {
+    "id": "garlic_powder",
+    "qty": 0.5
+   },
+   {
+    "id": "avocado",
+    "qty": 1,
+    "note": "sliced",
+    "note_es": "en rodajas"
+   },
+   {
+    "id": "vegetable_oil",
+    "qty": 2
+   },
+   {
+    "id": "salt",
+    "qty": 0.75
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 20,
+  "photo_url": "https://images.unsplash.com/photo-1768716575089-7ba787da9afb",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/three-tacos-with-lime-wedges-in-a-white-box-4xwEQ6IIubA"
+  }
+ },
+ {
+  "slug": "yuca-style-potato-stew",
+  "name": "Beef and Potato Stew",
+  "meal_type": "dinner",
+  "name_es": "Estofado de carne y papas",
+  "diet_tags": [
+   "gluten_free",
+   "dairy_free",
+   "high_protein"
+  ],
+  "servings": 4,
+  "prep_minutes": 60,
+  "batch_friendly": true,
+  "description": "A Latin-style beef stew with potatoes, tomatoes and cumin — Sunday food.",
+  "description_es": "Estofado criollo de carne con papas, tomate y comino: comida de domingo.",
+  "steps": [
+   "Season the beef with salt and brown it in hot oil in batches, 4 minutes per batch; set aside.",
+   "Sauté the onion and bell pepper 5 minutes, add the garlic, cumin and oregano and cook 1 minute.",
+   "Return the beef, add the tomatoes, broth and potatoes; bring to a simmer.",
+   "Cover and cook 35 to 40 minutes until the beef and potatoes are tender.",
+   "Serve with cilantro and lime."
+  ],
+  "steps_es": [
+   "Sazona la carne con sal y dórala en aceite caliente en tandas, 4 minutos por tanda; reserva.",
+   "Saltea la cebolla y el morrón 5 minutos, agrega el ajo, el comino y el orégano y cocina 1 minuto.",
+   "Vuelve a poner la carne, suma el tomate, el caldo y las papas; lleva a hervor suave.",
+   "Tapa y cocina de 35 a 40 minutos hasta que la carne y las papas estén tiernas.",
+   "Sirve con cilantro y lima."
+  ],
+  "ingredients": [
+   {
+    "id": "beef_stew",
+    "qty": 1.5
+   },
+   {
+    "id": "potato_russet",
+    "qty": 2,
+    "note": "in large chunks",
+    "note_es": "en trozos grandes"
+   },
+   {
+    "id": "onion_yellow",
+    "qty": 1,
+    "note": "diced",
+    "note_es": "en cubitos"
+   },
+   {
+    "id": "bell_pepper",
+    "qty": 1,
+    "note": "diced",
+    "note_es": "en cubitos"
+   },
+   {
+    "id": "garlic",
+    "qty": 3,
+    "note": "minced",
+    "note_es": "picado"
+   },
+   {
+    "id": "cumin",
+    "qty": 1
+   },
+   {
+    "id": "oregano",
+    "qty": 1
+   },
+   {
+    "id": "diced_tomatoes",
+    "qty": 1
+   },
+   {
+    "id": "beef_broth",
+    "qty": 1,
+    "note": "about 3 cups",
+    "note_es": "unas 3 tazas"
+   },
+   {
+    "id": "cilantro",
+    "qty": 0.25,
+    "note": "chopped",
+    "note_es": "picado"
+   },
+   {
+    "id": "lime",
+    "qty": 1,
+    "note": "in wedges",
+    "note_es": "en gajos"
+   },
+   {
+    "id": "vegetable_oil",
+    "qty": 2
+   },
+   {
+    "id": "salt",
+    "qty": 1
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 20,
+  "photo_url": "https://images.unsplash.com/photo-1775229910950-0b7a99bf8674",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/hearty-stew-with-meat-and-vegetables-in-a-ceramic-pot-icRCFbPR0_0"
+  }
+ },
+ {
+  "slug": "black-bean-quesadillas",
+  "name": "Black Bean Quesadillas",
+  "meal_type": "dinner",
+  "name_es": "Quesadillas de frijoles negros",
+  "diet_tags": [
+   "vegetarian"
+  ],
+  "servings": 4,
+  "prep_minutes": 20,
+  "batch_friendly": false,
+  "description": "Smashed cumin black beans and melted cheese in crisp tortillas.",
+  "description_es": "Frijoles negros machacados al comino y queso derretido en tortillas crocantes.",
+  "steps": [
+   "Mash the beans with the cumin and a pinch of salt until spreadable but chunky.",
+   "Spread beans over half a tortilla, scatter cheese, fold in half.",
+   "Toast in a dry skillet 2 to 3 minutes per side until golden and melty.",
+   "Cut into wedges and serve with salsa and avocado."
+  ],
+  "steps_es": [
+   "Machaca los frijoles con el comino y una pizca de sal hasta que se puedan untar pero con textura.",
+   "Unta frijoles sobre media tortilla, esparce queso y dóblala por la mitad.",
+   "Tuesta en una sartén seca de 2 a 3 minutos por lado hasta que esté dorada y derretida.",
+   "Corta en gajos y sirve con salsa y aguacate."
+  ],
+  "ingredients": [
+   {
+    "id": "black_beans",
+    "qty": 2,
+    "note": "cans, drained",
+    "note_es": "latas, escurridas"
+   },
+   {
+    "id": "tortilla_flour",
+    "qty": 8
+   },
+   {
+    "id": "cheddar",
+    "qty": 2,
+    "note": "shredded",
+    "note_es": "rallado"
+   },
+   {
+    "id": "cumin",
+    "qty": 1
+   },
+   {
+    "id": "salsa",
+    "qty": 0.5
+   },
+   {
+    "id": "avocado",
+    "qty": 1,
+    "note": "sliced",
+    "note_es": "en rodajas"
+   },
+   {
+    "id": "salt",
+    "qty": 0.25
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 15,
+  "photo_url": "https://images.unsplash.com/photo-1771074168434-95cb12896146",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/a-colorful-bowl-of-food-with-rice-chickpeas-and-greens-xe5y6vD8L-M"
+  }
+ },
+ {
+  "slug": "salmon-tacos-mango-style",
+  "name": "Salmon Tacos with Slaw",
+  "meal_type": "dinner",
+  "name_es": "Tacos de salmón con ensalada",
+  "diet_tags": [
+   "pescatarian",
+   "dairy_free",
+   "high_protein"
+  ],
+  "servings": 4,
+  "prep_minutes": 25,
+  "batch_friendly": false,
+  "description": "Chili-rubbed salmon flaked into tortillas with a bright cabbage slaw.",
+  "description_es": "Salmón especiado desmenuzado en tortillas con ensalada de repollo fresca.",
+  "steps": [
+   "Toss the slaw mix with the lime juice, cilantro and a pinch of salt.",
+   "Season the salmon with the chili powder, cumin and salt.",
+   "Cook in hot oiled skillet 3 to 4 minutes per side until it flakes; break into chunks.",
+   "Warm the tortillas and serve the salmon inside with the slaw."
+  ],
+  "steps_es": [
+   "Mezcla la ensalada con el jugo de lima, el cilantro y una pizca de sal.",
+   "Sazona el salmón con el chile en polvo, comino y sal.",
+   "Cocínalo en una sartén aceitada caliente de 3 a 4 minutos por lado hasta que se deshoje; córtalo en trozos.",
+   "Calienta las tortillas y sirve el salmón dentro con la ensalada."
+  ],
+  "ingredients": [
+   {
+    "id": "salmon",
+    "qty": 1.25
+   },
+   {
+    "id": "coleslaw_mix",
+    "qty": 0.75
+   },
+   {
+    "id": "tortilla_corn",
+    "qty": 12
+   },
+   {
+    "id": "lime",
+    "qty": 1,
+    "note": "juiced",
+    "note_es": "el jugo"
+   },
+   {
+    "id": "cilantro",
+    "qty": 0.25,
+    "note": "chopped",
+    "note_es": "picado"
+   },
+   {
+    "id": "chili_powder",
+    "qty": 1
+   },
+   {
+    "id": "cumin",
+    "qty": 0.5
+   },
+   {
+    "id": "vegetable_oil",
+    "qty": 1
+   },
+   {
+    "id": "salt",
+    "qty": 0.5
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 18,
+  "photo_url": "https://images.unsplash.com/photo-1683062332605-4e1209d75346",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/three-tacos-are-sitting-on-a-plate-next-to-a-glass-of-beer-5mpht0M5H0E"
+  }
+ },
+ {
+  "slug": "salsa-verde-pork",
+  "name": "Pork in Salsa Verde",
+  "meal_type": "dinner",
+  "name_es": "Cerdo en salsa verde",
+  "diet_tags": [
+   "gluten_free",
+   "dairy_free",
+   "high_protein"
+  ],
+  "servings": 4,
+  "prep_minutes": 60,
+  "batch_friendly": true,
+  "description": "Tender pork simmered in tomatillo-style salsa verde, served with rice.",
+  "description_es": "Cerdo tierno cocido en salsa verde de tomatillo, servido con arroz.",
+  "steps": [
+   "Cook the rice according to the package directions.",
+   "Season the pork with salt and brown it in hot oil in batches; set aside.",
+   "Sauté the onion 4 minutes, add the garlic and cumin and cook 1 minute.",
+   "Return the pork, add the salsa verde and a splash of water; cover and simmer 35 to 40 minutes until tender.",
+   "Serve over rice with cilantro."
+  ],
+  "steps_es": [
+   "Cocina el arroz según las instrucciones del paquete.",
+   "Sazona el cerdo con sal y dóralo en aceite caliente en tandas; reserva.",
+   "Saltea la cebolla 4 minutos, agrega el ajo y el comino y cocina 1 minuto.",
+   "Vuelve a poner el cerdo, suma la salsa verde y un chorrito de agua; tapa y cocina a fuego suave de 35 a 40 minutos hasta que esté tierno.",
+   "Sirve sobre arroz con cilantro."
+  ],
+  "ingredients": [
+   {
+    "id": "pork_shoulder",
+    "qty": 1.5,
+    "note": "in chunks",
+    "note_es": "en trozos"
+   },
+   {
+    "id": "salsa_verde",
+    "qty": 2
+   },
+   {
+    "id": "rice_white",
+    "qty": 1.5
+   },
+   {
+    "id": "onion_yellow",
+    "qty": 1,
+    "note": "diced",
+    "note_es": "en cubitos"
+   },
+   {
+    "id": "garlic",
+    "qty": 3,
+    "note": "minced",
+    "note_es": "picado"
+   },
+   {
+    "id": "cumin",
+    "qty": 1
+   },
+   {
+    "id": "cilantro",
+    "qty": 0.25,
+    "note": "chopped",
+    "note_es": "picado"
+   },
+   {
+    "id": "vegetable_oil",
+    "qty": 2
+   },
+   {
+    "id": "salt",
+    "qty": 1
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 20,
+  "photo_url": "https://images.unsplash.com/photo-1764158156827-0df193e9783c",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/bowl-of-ramen-with-egg-pork-and-green-onions-iLDoHJrdf5s"
+  }
+ },
+ {
+  "slug": "breakfast-chilaquiles",
+  "name": "Chilaquiles Rojos",
+  "meal_type": "dinner",
+  "name_es": "Chilaquiles rojos",
+  "diet_tags": [
+   "vegetarian",
+   "gluten_free"
+  ],
+  "servings": 4,
+  "prep_minutes": 25,
+  "batch_friendly": false,
+  "description": "Tortilla chips simmered in red sauce, topped with fried eggs, cheese and crema.",
+  "description_es": "Totopos cocidos en salsa roja, con huevos fritos, queso y crema encima.",
+  "steps": [
+   "Warm the enchilada sauce in a large skillet until simmering.",
+   "Add the chips and toss gently 2 minutes until they soften but keep some crunch.",
+   "Fry the eggs in a separate pan to your liking.",
+   "Serve the sauced chips topped with eggs, feta, onion and sour cream."
+  ],
+  "steps_es": [
+   "Calienta la salsa para enchiladas en una sartén grande hasta que hierva suave.",
+   "Agrega los totopos y mezcla suave 2 minutos hasta que se ablanden pero conserven algo de crocancia.",
+   "Fríe los huevos en otra sartén a tu gusto.",
+   "Sirve los totopos con salsa cubiertos con los huevos, el queso feta, la cebolla y la crema."
+  ],
+  "ingredients": [
+   {
+    "id": "tortilla_chips",
+    "qty": 8
+   },
+   {
+    "id": "enchilada_sauce",
+    "qty": 2
+   },
+   {
+    "id": "eggs",
+    "qty": 4
+   },
+   {
+    "id": "feta",
+    "qty": 3,
+    "note": "crumbled",
+    "note_es": "desmenuzado"
+   },
+   {
+    "id": "onion_red",
+    "qty": 0.5,
+    "note": "thinly sliced",
+    "note_es": "en plumas"
+   },
+   {
+    "id": "sour_cream",
+    "qty": 0.5
+   },
+   {
+    "id": "cilantro",
+    "qty": 0.25,
+    "note": "chopped",
+    "note_es": "picado"
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 15,
+  "tip": "Don't simmer the chips long — 2 minutes keeps them saucy outside and crisp inside.",
+  "tip_es": "No cocines los totopos mucho: 2 minutos los dejan suaves por fuera y crocantes por dentro.",
+  "photo_url": "https://images.unsplash.com/photo-1787069789754-636ce94929e5",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/breakfast-spread-with-croissants-and-fruit-wrWGGlnN3kg"
+  }
+ },
+ {
+  "slug": "peruvian-chicken-rice",
+  "name": "Peruvian-Style Chicken and Rice",
+  "meal_type": "dinner",
+  "name_es": "Arroz con pollo a la peruana",
+  "diet_tags": [
+   "gluten_free",
+   "dairy_free",
+   "high_protein"
+  ],
+  "servings": 4,
+  "prep_minutes": 50,
+  "batch_friendly": true,
+  "description": "Green cilantro rice with seasoned chicken thighs — a simplified arroz verde.",
+  "description_es": "Arroz verde al cilantro con muslos de pollo sazonados: un arroz verde simplificado.",
+  "steps": [
+   "Blend the cilantro, spinach and half a cup of broth into a green purée.",
+   "Season the chicken with salt and cumin and brown it in hot oil 4 minutes per side; set aside.",
+   "Sauté the onion and garlic 4 minutes, stir in the rice to coat, add the green purée and remaining broth.",
+   "Nestle the chicken back in, cover and cook 20 minutes until the rice is tender; rest 5 and serve."
+  ],
+  "steps_es": [
+   "Licúa el cilantro, la espinaca y media taza de caldo hasta tener un puré verde.",
+   "Sazona el pollo con sal y comino y dóralo en aceite caliente 4 minutos por lado; reserva.",
+   "Saltea la cebolla y el ajo 4 minutos, suma el arroz para cubrirlo, agrega el puré verde y el resto del caldo.",
+   "Acomoda el pollo de nuevo, tapa y cocina 20 minutos hasta que el arroz esté tierno; deja reposar 5 y sirve."
+  ],
+  "ingredients": [
+   {
+    "id": "chicken_thigh",
+    "qty": 1.5
+   },
+   {
+    "id": "rice_white",
+    "qty": 1.5
+   },
+   {
+    "id": "cilantro",
+    "qty": 1,
+    "note": "packed bunch",
+    "note_es": "un atado"
+   },
+   {
+    "id": "spinach",
+    "qty": 2
+   },
+   {
+    "id": "chicken_broth",
+    "qty": 1,
+    "note": "about 3 cups, partial carton",
+    "note_es": "unas 3 tazas"
+   },
+   {
+    "id": "onion_yellow",
+    "qty": 1,
+    "note": "diced",
+    "note_es": "en cubitos"
+   },
+   {
+    "id": "garlic",
+    "qty": 3,
+    "note": "minced",
+    "note_es": "picado"
+   },
+   {
+    "id": "cumin",
+    "qty": 1
+   },
+   {
+    "id": "peas_frozen",
+    "qty": 1
+   },
+   {
+    "id": "vegetable_oil",
+    "qty": 2
+   },
+   {
+    "id": "salt",
+    "qty": 0.75
+   }
+  ],
+  "equipment": [
+   "stovetop",
+   "blender"
+  ],
+  "active_minutes": 25,
+  "photo_url": "https://images.unsplash.com/photo-1762631383378-115f2d4cbe07",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/healthy-bowl-with-chicken-rice-beans-and-corn-6XDDOrCMs64"
+  }
+ },
+ {
+  "slug": "bean-tostada-stacks",
+  "name": "Crunchy Bean Tostadas",
+  "meal_type": "dinner",
+  "name_es": "Tostadas de frijoles crocantes",
+  "diet_tags": [
+   "vegetarian"
+  ],
+  "servings": 4,
+  "prep_minutes": 25,
+  "batch_friendly": false,
+  "description": "Fried-crisp tortillas layered with refried beans, cheese, lettuce and salsa.",
+  "description_es": "Tortillas crocantes con capas de frijoles refritos, queso, lechuga y salsa.",
+  "steps": [
+   "Fry the tortillas in shallow hot oil 1 to 2 minutes per side until crisp; drain on paper and sprinkle with salt.",
+   "Warm the refried beans in a small pot with a splash of water until spreadable.",
+   "Spread beans on each tortilla, top with cheese, lettuce, tomato and salsa.",
+   "Serve right away while the tortilla is still crunchy."
+  ],
+  "steps_es": [
+   "Fríe las tortillas en poco aceite caliente de 1 a 2 minutos por lado hasta que estén crocantes; escurre sobre papel y espolvorea con sal.",
+   "Calienta los frijoles refritos en una ollita con un chorrito de agua hasta que se puedan untar.",
+   "Unta frijoles en cada tortilla y cubre con queso, lechuga, tomate y salsa.",
+   "Sirve enseguida mientras la tortilla sigue crocante."
+  ],
+  "ingredients": [
+   {
+    "id": "tortilla_corn",
+    "qty": 8
+   },
+   {
+    "id": "refried_beans",
+    "qty": 2,
+    "note": "cans",
+    "note_es": "latas"
+   },
+   {
+    "id": "cheddar",
+    "qty": 1.5,
+    "note": "shredded",
+    "note_es": "rallado"
+   },
+   {
+    "id": "romaine",
+    "qty": 2,
+    "note": "shredded",
+    "note_es": "en tiras"
+   },
+   {
+    "id": "tomato",
+    "qty": 2,
+    "note": "diced",
+    "note_es": "en cubitos"
+   },
+   {
+    "id": "salsa",
+    "qty": 0.5
+   },
+   {
+    "id": "vegetable_oil",
+    "qty": 6
+   },
+   {
+    "id": "salt",
+    "qty": 0.5
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 18,
+  "photo_url": "https://images.unsplash.com/photo-1771308354374-3d9ad8970483",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/a-neon-sign-advertising-tacos-at-night-7UxRDi7Z9KA"
+  }
+ },
+ {
+  "slug": "albondigas-soup",
+  "name": "Meatball Soup (Albondigas)",
+  "meal_type": "dinner",
+  "name_es": "Sopa de albóndigas",
+  "diet_tags": [
+   "gluten_free",
+   "dairy_free"
+  ],
+  "servings": 4,
+  "prep_minutes": 45,
+  "batch_friendly": true,
+  "description": "Minted beef meatballs in a tomato-vegetable broth with potatoes and carrots.",
+  "description_es": "Albóndigas de carne con menta en caldo de tomate y verduras con papas y zanahorias.",
+  "steps": [
+   "Mix the beef with the rice, egg, half the garlic and a pinch of salt; form small meatballs.",
+   "Sauté the onion in hot oil 4 minutes in a deep pot, add the remaining garlic and tomato paste and cook 1 minute.",
+   "Add the broth, tomatoes, potatoes and carrots; simmer 10 minutes.",
+   "Slide in the meatballs gently and simmer 15 minutes until cooked through.",
+   "Season with salt and serve with lime."
+  ],
+  "steps_es": [
+   "Mezcla la carne con el arroz, el huevo, la mitad del ajo y una pizca de sal; forma albóndigas chicas.",
+   "Saltea la cebolla en aceite caliente 4 minutos en una olla profunda, agrega el resto del ajo y la pasta de tomate y cocina 1 minuto.",
+   "Suma el caldo, el tomate, las papas y las zanahorias; cocina a fuego suave 10 minutos.",
+   "Desliza las albóndigas con cuidado y cocina 15 minutos hasta que estén listas.",
+   "Sazona con sal y sirve con lima."
+  ],
+  "ingredients": [
+   {
+    "id": "ground_beef",
+    "qty": 1.25
+   },
+   {
+    "id": "rice_white",
+    "qty": 0.25,
+    "note": "uncooked, goes in the meatballs",
+    "note_es": "crudo, va en las albóndigas"
+   },
+   {
+    "id": "eggs",
+    "qty": 1
+   },
+   {
+    "id": "beef_broth",
+    "qty": 1,
+    "note": "carton, 4 cups",
+    "note_es": "caja, 4 tazas"
+   },
+   {
+    "id": "diced_tomatoes",
+    "qty": 1
+   },
+   {
+    "id": "potato_russet",
+    "qty": 1,
+    "note": "in cubes",
+    "note_es": "en cubos"
+   },
+   {
+    "id": "carrot",
+    "qty": 2,
+    "note": "sliced",
+    "note_es": "en rodajas"
+   },
+   {
+    "id": "onion_yellow",
+    "qty": 1,
+    "note": "diced",
+    "note_es": "en cubitos"
+   },
+   {
+    "id": "garlic",
+    "qty": 3,
+    "note": "minced",
+    "note_es": "picado"
+   },
+   {
+    "id": "tomato_paste",
+    "qty": 1
+   },
+   {
+    "id": "lime",
+    "qty": 1,
+    "note": "in wedges",
+    "note_es": "en gajos"
+   },
+   {
+    "id": "vegetable_oil",
+    "qty": 1
+   },
+   {
+    "id": "salt",
+    "qty": 0.75
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 25,
+  "photo_url": "https://images.unsplash.com/photo-1784429611794-aecb6ebaef48",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/spicy-hot-pot-broth-with-various-ingredients-on-a-table-U_jfjAxoD4g"
+  }
+ }
+]

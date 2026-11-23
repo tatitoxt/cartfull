@@ -1,0 +1,230 @@
+[
+ {
+  "id": "fish_sauce",
+  "name": "Fish sauce",
+  "name_es": "Salsa de pescado",
+  "aisle": "condiments",
+  "unit": "tbsp",
+  "pkg_qty": 24,
+  "pkg_cents": 349,
+  "pkg_label": "12 oz bottle",
+  "kind": "fish",
+  "staple": false,
+  "spicy": false,
+  "allergens": [
+   "fish"
+  ]
+ },
+ {
+  "id": "hoisin",
+  "name": "Hoisin sauce",
+  "name_es": "Salsa hoisin",
+  "aisle": "condiments",
+  "unit": "tbsp",
+  "pkg_qty": 18,
+  "pkg_cents": 329,
+  "pkg_label": "8.5 oz jar",
+  "kind": "plant",
+  "staple": false,
+  "spicy": false,
+  "allergens": [
+   "soy",
+   "gluten"
+  ]
+ },
+ {
+  "id": "miso_paste",
+  "name": "Miso paste",
+  "name_es": "Pasta de miso",
+  "aisle": "condiments",
+  "unit": "tbsp",
+  "pkg_qty": 16,
+  "pkg_cents": 449,
+  "pkg_label": "8 oz tub",
+  "kind": "plant",
+  "staple": false,
+  "spicy": false,
+  "allergens": [
+   "soy"
+  ]
+ },
+ {
+  "id": "gochujang",
+  "name": "Gochujang",
+  "name_es": "Gochujang (pasta picante coreana)",
+  "aisle": "condiments",
+  "unit": "tbsp",
+  "pkg_qty": 16,
+  "pkg_cents": 499,
+  "pkg_label": "16 oz tub",
+  "kind": "plant",
+  "staple": false,
+  "spicy": true,
+  "allergens": [
+   "soy",
+   "gluten"
+  ]
+ },
+ {
+  "id": "rice_noodles",
+  "name": "Rice noodles",
+  "name_es": "Fideos de arroz",
+  "aisle": "pantry",
+  "unit": "oz",
+  "pkg_qty": 14,
+  "pkg_cents": 299,
+  "pkg_label": "14 oz pack",
+  "kind": "plant",
+  "staple": false,
+  "spicy": false,
+  "allergens": []
+ },
+ {
+  "id": "sesame_seeds",
+  "name": "Sesame seeds",
+  "name_es": "Semillas de sésamo",
+  "aisle": "spices",
+  "unit": "tbsp",
+  "pkg_qty": 16,
+  "pkg_cents": 249,
+  "pkg_label": "2 oz jar",
+  "kind": "plant",
+  "staple": false,
+  "spicy": false,
+  "allergens": [
+   "sesame"
+  ]
+ },
+ {
+  "id": "tahini",
+  "name": "Tahini",
+  "name_es": "Tahini (pasta de sésamo)",
+  "aisle": "condiments",
+  "unit": "tbsp",
+  "pkg_qty": 16,
+  "pkg_cents": 599,
+  "pkg_label": "16 oz jar",
+  "kind": "plant",
+  "staple": false,
+  "spicy": false,
+  "allergens": [
+   "sesame"
+  ]
+ },
+ {
+  "id": "olives",
+  "name": "Olives",
+  "name_es": "Aceitunas",
+  "aisle": "canned",
+  "unit": "cup",
+  "pkg_qty": 1.7,
+  "pkg_cents": 299,
+  "pkg_label": "6 oz can",
+  "kind": "plant",
+  "staple": false,
+  "spicy": false,
+  "allergens": []
+ },
+ {
+  "id": "polenta",
+  "name": "Polenta",
+  "name_es": "Polenta",
+  "aisle": "pantry",
+  "unit": "cup",
+  "pkg_qty": 4,
+  "pkg_cents": 299,
+  "pkg_label": "1 lb bag",
+  "kind": "plant",
+  "staple": false,
+  "spicy": false,
+  "allergens": []
+ },
+ {
+  "id": "orzo",
+  "name": "Orzo",
+  "name_es": "Orzo (pasta en forma de arroz)",
+  "aisle": "pantry",
+  "unit": "oz",
+  "pkg_qty": 16,
+  "pkg_cents": 189,
+  "pkg_label": "1 lb box",
+  "kind": "plant",
+  "staple": false,
+  "spicy": false,
+  "allergens": [
+   "gluten"
+  ]
+ },
+ {
+  "id": "ricotta",
+  "name": "Ricotta",
+  "name_es": "Ricota",
+  "aisle": "dairy",
+  "unit": "cup",
+  "pkg_qty": 2,
+  "pkg_cents": 399,
+  "pkg_label": "15 oz tub",
+  "kind": "dairy",
+  "staple": false,
+  "spicy": false,
+  "allergens": [
+   "dairy"
+  ]
+ },
+ {
+  "id": "chorizo",
+  "name": "Chorizo",
+  "name_es": "Chorizo",
+  "aisle": "meat",
+  "unit": "each",
+  "pkg_qty": 1,
+  "pkg_cents": 399,
+  "pkg_label": "11 oz pack",
+  "kind": "pork",
+  "staple": false,
+  "spicy": true,
+  "allergens": []
+ },
+ {
+  "id": "hominy",
+  "name": "Hominy",
+  "name_es": "Maíz pozolero",
+  "aisle": "canned",
+  "unit": "can",
+  "pkg_qty": 1,
+  "pkg_cents": 129,
+  "pkg_label": "15 oz can",
+  "kind": "plant",
+  "staple": false,
+  "spicy": false,
+  "allergens": []
+ },
+ {
+  "id": "masarepa",
+  "name": "Masarepa",
+  "name_es": "Harina de maíz precocida",
+  "aisle": "pantry",
+  "unit": "cup",
+  "pkg_qty": 4,
+  "pkg_cents": 329,
+  "pkg_label": "2 lb bag",
+  "kind": "plant",
+  "staple": false,
+  "spicy": false,
+  "allergens": []
+ },
+ {
+  "id": "salsa_verde",
+  "name": "Salsa verde",
+  "name_es": "Salsa verde",
+  "aisle": "canned",
+  "unit": "cup",
+  "pkg_qty": 2,
+  "pkg_cents": 299,
+  "pkg_label": "16 oz jar",
+  "kind": "plant",
+  "staple": false,
+  "spicy": true,
+  "allergens": []
+ }
+]
