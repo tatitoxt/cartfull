@@ -143,8 +143,9 @@ async function buildWeek(session: Session, planId?: string): Promise<ActionResul
       if (line.have) have.add(line.ingredient.id);
       else have.delete(line.ingredient.id);
     }
-    // Full marks count as pantry stock; only partial rows cap the owned amount.
-    owned = new Map(loaded.cart.lines.filter((l) => !l.have && l.haveQty > 0).map((l) => [l.ingredient.id, l.haveQty]));
+    // Saved stock caps the owned amount, so a plan needing more than the
+    // shopper marked still charges the difference.
+    owned = new Map(loaded.haveQty);
   } else {
     if (plans.length > 0 && !entitlement.active) return fail("paywall", m.actions.trialNext);
     weekStart = targetWeekStart();
@@ -298,7 +299,7 @@ export async function getSwapChoices(planId: string, day: number, slot: MealType
     householdSize: loaded.row.household_size,
     favoriteSlugs: feedback.favorites,
     ratings: feedback.ratings,
-    owned: new Map(loaded.cart.lines.filter((l) => !l.have && l.haveQty > 0).map((l) => [l.ingredient.id, l.haveQty])),
+    owned: new Map(loaded.haveQty),
   });
   return swapOptions(catalog, request, loaded.meals, { day, slot }).map((option) => ({
     slug: option.recipe.slug,
@@ -332,7 +333,7 @@ export async function swapMeal(planId: string, day: number, slot: MealType, slug
 
   const [pantry, feedback] = await Promise.all([getPantry(session), getFeedback(session)]);
   const have = effectiveHave(pantry, loaded);
-  const owned = new Map(loaded.cart.lines.filter((l) => !l.have && l.haveQty > 0).map((l) => [l.ingredient.id, l.haveQty]));
+  const owned = new Map(loaded.haveQty);
   const request = planRequest(profile, have, loaded.row.seed, {
     budgetCents: loaded.row.budget_cents,
     householdSize: loaded.row.household_size,
@@ -504,12 +505,23 @@ export async function deleteAccount(): Promise<ActionResult> {
     // Stop Stripe first: once the account is gone it can no longer cancel itself.
     const { data: sub } = await admin
       .from("subscriptions")
-      .select("stripe_subscription_id, status")
+      .select("stripe_customer_id, stripe_subscription_id, status")
       .eq("user_id", session.userId)
       .maybeSingle();
     if (sub?.stripe_subscription_id && !hasEnded(sub.status)) {
       try {
         await getStripe().subscriptions.cancel(sub.stripe_subscription_id);
+      } catch {
+        return fail("failed", m.account.deleteError);
+      }
+    }
+    // A Checkout tab left open would still be payable after deletion and could
+    // start billing an account that no longer exists.
+    if (sub?.stripe_customer_id) {
+      try {
+        const stripe = getStripe();
+        const open = await stripe.checkout.sessions.list({ customer: sub.stripe_customer_id, status: "open", limit: 10 });
+        for (const openSession of open.data) await stripe.checkout.sessions.expire(openSession.id);
       } catch {
         return fail("failed", m.account.deleteError);
       }

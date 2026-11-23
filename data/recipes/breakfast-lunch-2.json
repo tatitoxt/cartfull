@@ -103,7 +103,9 @@
     "ingredients": [
       {
         "id": "oats",
-        "qty": 2
+        "qty": 2,
+        "note": "certified gluten-free",
+        "note_es": "certificada sin gluten"
       },
       {
         "id": "milk",
@@ -195,7 +197,9 @@
     "ingredients": [
       {
         "id": "oats",
-        "qty": 1.5
+        "qty": 1.5,
+        "note": "certified gluten-free",
+        "note_es": "certificada sin gluten"
       },
       {
         "id": "banana",

@@ -103,6 +103,8 @@ export interface LoadedPlan {
   cart: Cart;
   checked: Set<string>;
   have: Set<string>;
+  /** Saved per-ingredient stock (uncapped), including fully-owned rows. */
+  haveQty: Map<string, number>;
   /** The free first week, or any week while subscribed. */
   viewable: boolean;
   editable: boolean;
@@ -133,7 +135,7 @@ export async function loadPlan(
   const viewable = access.active || isFirst;
   const editable = access.active || (isFirst && !weekIsOver(row.week_start));
   if (!viewable) {
-    return { row, meals: [], cart: { lines: [], totalCents: 0 }, checked: new Set(), have: new Set(), viewable, editable, isFirst };
+    return { row, meals: [], cart: { lines: [], totalCents: 0 }, checked: new Set(), have: new Set(), haveQty: new Map(), viewable, editable, isFirst };
   }
 
   const [{ data: mealRows }, { data: itemRows }] = await Promise.all([
@@ -159,7 +161,7 @@ export async function loadPlan(
     if (item.checked) checked.add(item.ingredient_id as string);
   }
   const cart = buildCart(meals, catalog.ingredients, have, haveQty);
-  return { row, meals, cart, checked, have, viewable, editable, isFirst };
+  return { row, meals, cart, checked, have, haveQty, viewable, editable, isFirst };
 }
 
 /** The planner request that reproduces a household's preferences. */

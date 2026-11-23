@@ -25,11 +25,15 @@
     "ingredients": [
       {
         "id": "oats",
-        "qty": 1
+        "qty": 1,
+        "note": "certified gluten-free",
+        "note_es": "certificada sin gluten"
       },
       {
         "id": "oat_milk",
-        "qty": 1
+        "qty": 1,
+        "note": "certified gluten-free",
+        "note_es": "certificada sin gluten"
       },
       {
         "id": "banana",
@@ -98,11 +102,15 @@
     "ingredients": [
       {
         "id": "oats",
-        "qty": 2
+        "qty": 2,
+        "note": "certified gluten-free",
+        "note_es": "certificada sin gluten"
       },
       {
         "id": "oat_milk",
-        "qty": 2
+        "qty": 2,
+        "note": "certified gluten-free",
+        "note_es": "certificada sin gluten"
       },
       {
         "id": "apple",
@@ -239,7 +247,9 @@
       },
       {
         "id": "oat_milk",
-        "qty": 1
+        "qty": 1,
+        "note": "certified gluten-free",
+        "note_es": "certificada sin gluten"
       },
       {
         "id": "maple_syrup",
