@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { redirect } from "next/navigation";
 import { PricingChoice } from "@/components/pricing-choice";
 import { getEntitlement, getProfile, requireSession } from "@/lib/app/data";
+import { createAdminClient } from "@/lib/supabase/server";
 import { MESSAGES } from "@/lib/i18n/messages";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -20,7 +21,11 @@ export default async function UpgradePage({
   const [entitlement, profile] = await Promise.all([getEntitlement(session), getProfile(session)]);
   const m = MESSAGES[profile.lang];
   if (entitlement.active) redirect("/app/account");
-  const trial = !entitlement.hadSubscription;
+  // A re-registered email gets no second free trial: match what checkout charges.
+  const { data: deleted } = session.email
+    ? await createAdminClient().from("deleted_accounts").select("email").eq("email", session.email.toLowerCase()).maybeSingle()
+    : { data: null };
+  const trial = !entitlement.hadSubscription && !deleted;
 
   return (
     <section className="mx-auto max-w-xl py-4">
