@@ -3544,9 +3544,7 @@
     "slug": "new-england-fish-chowder",
     "name": "New England Fish Chowder",
     "meal_type": "dinner",
-    "diet_tags": [
-      "pescatarian"
-    ],
+    "diet_tags": [],
     "servings": 4,
     "prep_minutes": 40,
     "batch_friendly": true,
