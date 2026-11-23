@@ -540,7 +540,12 @@ export async function getShareLink(planId: string): Promise<string | null> {
 }
 
 /** Token-gated: tick an item on a shared list (no account needed on the other side). */
-export async function checkSharedItem(token: string, ingredientId: string, checked: boolean): Promise<void> {
-  if (!/^[0-9a-f-]{36}$/i.test(token) || !catalog.ingredients.has(ingredientId)) return;
-  await createAdminClient().rpc("check_shared_item", { p_token: token, p_ingredient_id: ingredientId, p_checked: checked });
+export async function checkSharedItem(token: string, ingredientId: string, checked: boolean): Promise<boolean> {
+  if (!/^[0-9a-f-]{36}$/i.test(token) || !catalog.ingredients.has(ingredientId)) return false;
+  const { error } = await createAdminClient().rpc("check_shared_item", {
+    p_token: token,
+    p_ingredient_id: ingredientId,
+    p_checked: checked,
+  });
+  return !error;
 }

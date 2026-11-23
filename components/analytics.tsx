@@ -42,6 +42,8 @@ function Pageviews() {
   const search = useSearchParams();
   useEffect(() => {
     if (!KEY) return;
+    // /share/<token> URLs grant list access: never send the token to analytics.
+    if (pathname.startsWith("/share/")) return;
     start();
     posthog.capture("$pageview", { $current_url: window.location.href });
   }, [pathname, search]);

@@ -10,15 +10,36 @@ alter table public.plan_shares enable row level security;
 -- No table policies: owners reach it through create_plan_share, readers through
 -- the token-gated RPCs below.
 
--- Called by the plan owner; idempotent (one token per plan).
+-- Same rule as can_view_plan, but evaluated for the plan's owner: share-link
+-- callers are anonymous, so the auth.uid() checks inside has_access /
+-- first_plan_id cannot be reused. When a subscription ends, its links die too.
+create function public.share_accessible(pid uuid) returns boolean
+language sql stable security definer set search_path = '' as $$
+  select exists (
+    select 1 from public.plans p
+    where p.id = pid
+      and (
+        exists (
+          select 1 from public.subscriptions s
+          where s.user_id = p.user_id and s.status in ('trialing', 'active')
+        )
+        or p.id = (
+          select fp.id from public.plans fp
+          where fp.user_id = p.user_id
+          order by fp.created_at, fp.id limit 1
+        )
+      )
+  );
+$$;
+
+-- Called by the plan owner; idempotent (one token per plan). can_view_plan
+-- already proves ownership and that the week is not paywalled.
 create or replace function public.create_plan_share(p_plan_id uuid) returns uuid
 language plpgsql security definer set search_path = '' as $$
 declare
   v_token uuid;
 begin
-  if auth.uid() is null or not exists (
-    select 1 from public.plans where id = p_plan_id and user_id = auth.uid()
-  ) then
+  if auth.uid() is null or not public.can_view_plan(p_plan_id) then
     raise exception 'plan not found';
   end if;
   insert into public.plan_shares (plan_id) values (p_plan_id)
@@ -53,19 +74,31 @@ language sql stable security definer set search_path = '' as $$
   from public.plan_shares s
   join public.plans p on p.id = s.plan_id
   left join public.profiles pr on pr.id = p.user_id
-  where s.token = p_token;
+  where s.token = p_token and public.share_accessible(p.id);
 $$;
 
--- Shared viewers may only tick bought items; "have at home" stays owner-only.
+-- Shared viewers may only tick bought items, and only ones actually on this
+-- list (a stray check could pre-tick an ingredient a later swap adds).
+-- "Have at home" stays owner-only.
 create or replace function public.check_shared_item(p_token uuid, p_ingredient_id text, p_checked boolean)
 returns void
 language plpgsql security definer set search_path = '' as $$
 declare
   v_plan uuid;
 begin
-  select s.plan_id into v_plan from public.plan_shares s where s.token = p_token;
+  select s.plan_id into v_plan
+  from public.plan_shares s
+  where s.token = p_token and public.share_accessible(s.plan_id);
   if v_plan is null then
     raise exception 'invalid share link';
+  end if;
+  if not exists (
+    select 1
+    from public.plan_meals m
+    join public.recipe_ingredients ri on ri.recipe_slug = m.recipe_slug
+    where m.plan_id = v_plan and ri.ingredient_id = p_ingredient_id
+  ) then
+    raise exception 'ingredient not on this list';
   end if;
   insert into public.plan_items (plan_id, ingredient_id, checked)
   values (v_plan, p_ingredient_id, p_checked)
@@ -73,7 +106,25 @@ begin
 end;
 $$;
 
+revoke all on function public.share_accessible(uuid) from public, anon;
 revoke all on function public.create_plan_share(uuid) from public, anon;
 grant execute on function public.create_plan_share(uuid) to authenticated;
 grant execute on function public.shared_plan(uuid) to anon, authenticated;
 grant execute on function public.check_shared_item(uuid, text, boolean) to anon, authenticated;
+
+-- Realtime ticks: both sides of the list see checkmarks as they happen. The
+-- read policy keeps item rows of shared plans visible to link holders (the
+-- plan id is an unguessable uuid).
+do $$
+begin
+  alter publication supabase_realtime add table public.plan_items;
+exception when undefined_object then null;
+end $$;
+
+alter table public.plan_items replica identity full;
+
+create policy "shared plans' items are readable through a link"
+  on public.plan_items for select to anon, authenticated
+  using (exists (
+    select 1 from public.plan_shares s where s.plan_id = plan_items.plan_id
+  ));

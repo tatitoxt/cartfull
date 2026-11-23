@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { Logo } from "@/components/logo";
 import { createAdminClient } from "@/lib/supabase/server";
 import { catalog, recipeBySlug } from "@/lib/catalog";
-import { buildCart, packagesFor, soldByWeight } from "@/lib/planner/cart";
+import { buildCart, soldByWeight } from "@/lib/planner/cart";
 import { weekLabel } from "@/lib/app/week";
 import { AISLE_LABELS } from "@/lib/catalog/aisles";
 import { AISLES, type MealType } from "@/lib/catalog/types";
@@ -54,7 +54,8 @@ export default async function SharedPage({ params }: { params: Promise<{ token: 
 
   const lines: SharedLine[] = cart.lines.map((line) => {
     const ing = line.ingredient;
-    const packages = packagesFor(ing, line.qty);
+    // line.packages counts what is left to buy after "have at home" is prorated.
+    const packages = line.packages;
     const buyLabel = packageLabel(ing.pkg_label, lang, units) ?? ing.pkg_label;
     return {
       id: ing.id,
@@ -77,6 +78,7 @@ export default async function SharedPage({ params }: { params: Promise<{ token: 
       <p className="mt-2 text-fg-soft">{m.shared.lead}</p>
       <SharedList
         token={token}
+        planId={shared.plan_id}
         lines={lines}
         aisles={AISLES.map((aisle) => ({ aisle, label: AISLE_LABELS[lang][aisle] }))}
       />

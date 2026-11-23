@@ -7,6 +7,7 @@ import { money, moneyExact } from "@/lib/format";
 import { amount, type Lang } from "@/lib/catalog/localize";
 import { useLocale, useMessages } from "@/lib/i18n/locale-provider";
 import { fill } from "@/lib/i18n/messages";
+import { createClient } from "@/lib/supabase/client";
 
 export interface ListLine {
   id: string;
@@ -129,6 +130,28 @@ export function GroceryList({
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  // Ticks from a shared-list shopper arrive live; local queued changes win.
+  useEffect(() => {
+    const supabase = createClient();
+    const channel = supabase
+      .channel(`grocery-list-${planId}`)
+      .on(
+        "postgres_changes",
+        { event: "*", schema: "public", table: "plan_items", filter: `plan_id=eq.${planId}` },
+        (payload) => {
+          const row = payload.new as { ingredient_id?: string; checked?: boolean };
+          if (typeof row?.ingredient_id !== "string") return;
+          if (readQueue().some((change) => change.id === row.ingredient_id)) return;
+          setLines((list) => list.map((l) => (l.id === row.ingredient_id ? { ...l, checked: row.checked === true } : l)));
+        },
+      )
+      .subscribe();
+    return () => {
+      void supabase.removeChannel(channel);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [planId]);
 
   const change = (next: Change) => {
     setLines((list) => apply(list, next));

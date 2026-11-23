@@ -251,6 +251,7 @@ const en = {
     title: "Shared grocery list",
     lead: "Tick items as they go in the cart \u2014 it updates for everyone with this link.",
     ticked: "in the cart",
+    saveError: "Couldn\u2019t save that tick \u2014 check your connection and try again.",
   },
   consent: {
     title: "A quick note on cookies",
@@ -676,6 +677,7 @@ const es: Messages = {
     title: "Lista de compras compartida",
     lead: "Marca los ítems a medida que van al carrito \u2014 se actualiza para todos los que tengan este link.",
     ticked: "en el carrito",
+    saveError: "No pudimos guardar esa marca \u2014 revisa tu conexión e inténtalo de nuevo.",
   },
   consent: {
     title: "Una nota sobre cookies",
