@@ -358,7 +358,7 @@ export function swapOptions(
   const replaced = (m: MealAssignment) => m.slot === target.slot && m.recipe.slug === current.recipe.slug;
   const others = meals.filter((m) => !replaced(m));
   const repeats = meals.filter(replaced);
-  const currentTotal = buildCart(meals, catalog.ingredients, req.pantry).totalCents;
+  const currentTotal = buildCart(meals, catalog.ingredients, req.pantry, req.owned).totalCents;
   const taken = new Set(meals.filter((m) => m.slot === target.slot).map((m) => m.recipe.slug));
   const random = mulberry32(req.seed ^ hashSeed(`${target.day}:${target.slot}`));
 
@@ -366,7 +366,7 @@ export function swapOptions(
   for (const recipe of eligibleRecipes(catalog, req)) {
     if (recipe.meal_type !== target.slot || taken.has(recipe.slug)) continue;
     const candidates = repeats.map((m) => ({ ...m, recipe }));
-    const totalCents = buildCart([...others, ...candidates], catalog.ingredients, req.pantry).totalCents;
+    const totalCents = buildCart([...others, ...candidates], catalog.ingredients, req.pantry, req.owned).totalCents;
     if (totalCents > req.budgetCents) continue;
     const score =
       timeFit(recipe, req.cookTime) + likeBoost(req, recipe.slug) + random() * 0.3 - (0.8 * (totalCents - currentTotal)) / Math.max(1, req.budgetCents / 7);

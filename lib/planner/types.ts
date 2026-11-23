@@ -15,6 +15,8 @@ export interface PlanRequest {
   includeLunch: boolean;
   /** Ingredient ids the household already has; they cost nothing. */
   pantry: ReadonlySet<string>;
+  /** Units of an ingredient already owned; counts against the need, still unlimited for pantry ids. */
+  owned?: ReadonlyMap<string, number>;
   allergens: readonly Allergen[];
   /** Keys from DISLIKE_OPTIONS. */
   dislikes: readonly string[];

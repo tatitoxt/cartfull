@@ -154,10 +154,8 @@ export async function loadPlan(
   const haveQty = new Map<string, number>();
   for (const item of itemRows ?? []) {
     if (item.have) have.add(item.ingredient_id as string);
-    else {
-      const owned = Number(item.have_qty ?? 0);
-      if (owned > 0) haveQty.set(item.ingredient_id as string, owned);
-    }
+    const owned = Number(item.have_qty ?? 0);
+    if (owned > 0) haveQty.set(item.ingredient_id as string, owned);
     if (item.checked) checked.add(item.ingredient_id as string);
   }
   const cart = buildCart(meals, catalog.ingredients, have, haveQty);

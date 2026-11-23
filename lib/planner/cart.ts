@@ -2,6 +2,7 @@ import type { Ingredient } from "../catalog/types";
 import type { Cart, CartLine, MealAssignment } from "./types";
 
 const EPS = 1e-6;
+const EMPTY_OWNED: ReadonlyMap<string, number> = new Map();
 
 /** Meat and fish priced per pound are bought by weight, in quarter-pound steps. */
 export function soldByWeight(ing: Ingredient): boolean {
@@ -31,7 +32,7 @@ export function buildCart(
   meals: readonly MealAssignment[],
   ingredients: ReadonlyMap<string, Ingredient>,
   have: ReadonlySet<string>,
-  haveQty: ReadonlyMap<string, number> = new Map(),
+  haveQty: ReadonlyMap<string, number> = EMPTY_OWNED,
 ): Cart {
   const byId = new Map<string, { qty: number; usedIn: Set<string> }>();
   for (const meal of meals) {
@@ -49,7 +50,7 @@ export function buildCart(
   for (const [id, { qty, usedIn }] of byId) {
     const ingredient = ingredients.get(id);
     if (!ingredient) throw new Error(`Unknown ingredient "${id}"`);
-    const owned = have.has(id) ? qty : Math.min(haveQty.get(id) ?? 0, qty);
+    const owned = Math.min(haveQty.get(id) ?? (have.has(id) ? qty : 0), qty);
     const isHave = owned >= qty - EPS;
     const buyQty = isHave ? 0 : qty - owned;
     const packages = packagesFor(ingredient, buyQty);
