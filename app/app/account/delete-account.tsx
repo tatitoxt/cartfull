@@ -34,6 +34,16 @@ export function DeleteAccount() {
             start(async () => {
               const result = await deleteAccount();
               if (result.ok) {
+                // Purge the offline copies the service worker saved: the next
+                // person on this browser must not see the deleted account's data.
+                try {
+                  if ("caches" in window) {
+                    const keys = await caches.keys();
+                    await Promise.all(keys.map((key) => caches.delete(key)));
+                  }
+                } catch {
+                  /* best effort */
+                }
                 router.push("/");
                 router.refresh();
               } else setError(result.message);
