@@ -1,6 +1,6 @@
 "use client";
 
-import type { ReactNode } from "react";
+import { useState, type ReactNode } from "react";
 import { ALLERGENS, EQUIPMENT } from "@/lib/catalog/types";
 import {
   BUDGET_MAX_CENTS,
@@ -304,13 +304,26 @@ export function UsualSpendField({ answers, set }: { answers: Answers; set: SetAn
 
 export function MealFields({ answers, set }: { answers: Answers; set: SetAnswers }) {
   const m = useMessages();
+  const [query, setQuery] = useState("");
+  const diets = DIETS.map((value) => ({ value, ...m.preferences.diets[value] }));
+  const needle = query.trim().toLowerCase();
+  const shown = needle ? diets.filter((d) => `${d.label} ${d.hint}`.toLowerCase().includes(needle)) : diets;
   return (
     <div className="space-y-8">
+      <input
+        type="search"
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+        onKeyDown={(e) => { if (e.key === "Enter") e.preventDefault() }}
+        placeholder={m.preferences.dietSearch}
+        aria-label={m.preferences.dietSearch}
+        className="w-full rounded-full bg-surface px-4 py-2.5 text-sm shadow-[inset_0_0_0_1.5px_var(--color-line)] outline-none placeholder:text-fg-faint focus-visible:shadow-[inset_0_0_0_2px_var(--color-accent)]"
+      />
       <ChoiceCards
         legend={m.preferences.howEat}
         name="diet"
         value={answers.diet}
-        options={DIETS.map((value) => ({ value, ...m.preferences.diets[value] }))}
+        options={shown}
         onChange={(diet) => set({ diet })}
       />
       <ChoiceCards

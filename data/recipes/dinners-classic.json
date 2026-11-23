@@ -3,7 +3,9 @@
     "slug": "ground-beef-tacos-with-lime-cabbage-slaw",
     "name": "Ground Beef Tacos with Lime Cabbage Slaw",
     "meal_type": "dinner",
-    "diet_tags": [],
+    "diet_tags": [
+      "gluten_free"
+    ],
     "servings": 4,
     "prep_minutes": 20,
     "batch_friendly": false,
@@ -171,7 +173,9 @@
     "slug": "smoked-sausage-cabbage-potato-skillet",
     "name": "Smoked Sausage, Cabbage and Potato Skillet",
     "meal_type": "dinner",
-    "diet_tags": [],
+    "diet_tags": [
+      "gluten_free"
+    ],
     "servings": 4,
     "prep_minutes": 30,
     "batch_friendly": false,
@@ -615,7 +619,8 @@
     "name": "Skillet Pork Chops with Green Beans and Potatoes",
     "meal_type": "dinner",
     "diet_tags": [
-      "high_protein"
+      "high_protein",
+      "gluten_free"
     ],
     "servings": 4,
     "prep_minutes": 30,
@@ -796,7 +801,9 @@
     "slug": "sloppy-joes-with-quick-coleslaw",
     "name": "Sloppy Joes with Quick Coleslaw",
     "meal_type": "dinner",
-    "diet_tags": [],
+    "diet_tags": [
+      "gluten_free"
+    ],
     "servings": 4,
     "prep_minutes": 20,
     "batch_friendly": false,
@@ -1159,7 +1166,8 @@
     "name": "Sheet-Pan Drumsticks with Potatoes and Carrots",
     "meal_type": "dinner",
     "diet_tags": [
-      "high_protein"
+      "high_protein",
+      "gluten_free"
     ],
     "servings": 4,
     "prep_minutes": 45,
@@ -1244,7 +1252,8 @@
     "name": "One-Pot Turkey Taco Rice",
     "meal_type": "dinner",
     "diet_tags": [
-      "high_protein"
+      "high_protein",
+      "gluten_free"
     ],
     "servings": 4,
     "prep_minutes": 30,
@@ -1413,7 +1422,8 @@
     "name": "Chicken Tortilla Soup with Black Beans",
     "meal_type": "dinner",
     "diet_tags": [
-      "high_protein"
+      "high_protein",
+      "gluten_free"
     ],
     "servings": 4,
     "prep_minutes": 35,
@@ -1605,7 +1615,8 @@
     "name": "One-Pan Chicken Thighs and Rice with Peas",
     "meal_type": "dinner",
     "diet_tags": [
-      "high_protein"
+      "high_protein",
+      "gluten_free"
     ],
     "servings": 4,
     "prep_minutes": 40,
@@ -1702,7 +1713,8 @@
     "name": "Sheet-Pan Pork Tenderloin with Sweet Potatoes",
     "meal_type": "dinner",
     "diet_tags": [
-      "high_protein"
+      "high_protein",
+      "gluten_free"
     ],
     "servings": 4,
     "prep_minutes": 45,
@@ -1889,7 +1901,9 @@
     "slug": "red-beans-and-rice-with-smoked-sausage",
     "name": "Red Beans and Rice with Smoked Sausage",
     "meal_type": "dinner",
-    "diet_tags": [],
+    "diet_tags": [
+      "gluten_free"
+    ],
     "servings": 4,
     "prep_minutes": 45,
     "batch_friendly": true,
@@ -2188,7 +2202,8 @@
     "name": "Classic Beef and Bean Chili",
     "meal_type": "dinner",
     "diet_tags": [
-      "high_protein"
+      "high_protein",
+      "gluten_free"
     ],
     "servings": 4,
     "prep_minutes": 60,
@@ -2301,7 +2316,8 @@
     "name": "Slow Cooker Pulled Pork Sandwiches",
     "meal_type": "dinner",
     "diet_tags": [
-      "high_protein"
+      "high_protein",
+      "gluten_free"
     ],
     "servings": 4,
     "prep_minutes": 450,
@@ -2394,7 +2410,8 @@
     "name": "Roast Chicken with Potatoes and Carrots",
     "meal_type": "dinner",
     "diet_tags": [
-      "high_protein"
+      "high_protein",
+      "gluten_free"
     ],
     "servings": 4,
     "prep_minutes": 100,

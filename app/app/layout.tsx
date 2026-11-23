@@ -12,7 +12,7 @@ export default async function AppLayout({ children }: { children: React.ReactNod
   const session = await requireSession();
   const profile = await getProfile(session);
   return (
-    <div className="mx-auto min-h-dvh w-full max-w-3xl px-5 pb-28 pt-5 sm:pb-12">
+    <div className="mx-auto min-h-dvh w-full max-w-3xl px-5 pb-32 pt-5">
       <header className="flex items-center justify-between gap-4">
         <Link href="/app/plan" aria-label={MESSAGES[profile.lang].common.thisWeek}>
           <Logo />

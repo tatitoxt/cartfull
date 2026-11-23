@@ -37,16 +37,16 @@ export default async function RecipePage({ params }: { params: Promise<{ slug: s
       </Link>
       <h1 className="mt-2 text-4xl sm:text-5xl">{text.name}</h1>
       <p className="mt-3 max-w-xl text-fg-soft">{text.description}</p>
-      <p className="tnum mt-4 flex flex-wrap gap-x-5 gap-y-1 text-sm">
-        <span className="font-semibold text-accent-deep">
+      <ul className="tnum mt-4 flex flex-wrap gap-2 text-sm">
+        <li className="rounded-full bg-accent-soft px-3 py-1 font-semibold text-accent-deep">
           {m.recipe.serving.replace("{amount}", moneyExact(Math.round(recipeCentsPerServing(recipe, catalog.ingredients)), profile.lang))}
-        </span>
-        <span className="text-fg-soft">{m.common.min.replace("{count}", String(recipe.prep_minutes))}</span>
-        <span className="text-fg-soft">{m.recipe.serves.replace("{count}", String(servings))}</span>
+        </li>
+        <li className="rounded-full bg-budget-soft px-3 py-1 font-semibold text-budget">{m.common.min.replace("{count}", String(recipe.prep_minutes))}</li>
+        <li className="rounded-full bg-spend-soft px-3 py-1 font-semibold text-spend">{m.recipe.serves.replace("{count}", String(servings))}</li>
         {recipe.active_minutes !== undefined && (
-          <span className="text-fg-soft">{m.recipe.active.replace("{count}", String(recipe.active_minutes))}</span>
+          <li className="rounded-full bg-surface px-3 py-1 font-semibold text-fg-soft shadow-[inset_0_0_0_1.5px_var(--color-line)]">{m.recipe.active.replace("{count}", String(recipe.active_minutes))}</li>
         )}
-      </p>
+      </ul>
       {(() => {
         const nutrition = nutritionPerServing(recipe);
         return nutrition ? (

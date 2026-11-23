@@ -83,6 +83,7 @@ const en = {
     spendPlaceholder: "e.g. 180",
     perWeek: "${amount} a week",
     howEat: "How do you eat?",
+    dietSearch: "Search a way of eating",
     cookTime: "How much time do you have to cook?",
     dinners: "Dinners are always planned. Add more?",
     lunches: "Lunches",
@@ -107,8 +108,10 @@ const en = {
     diets: {
       none: { label: "No preference", hint: "A bit of everything" },
       vegetarian: { label: "Vegetarian", hint: "No meat, no chicken, no fish · vegetarian" },
+      vegan: { label: "Vegan", hint: "No meat, fish, eggs or dairy · plants only" },
       pescatarian: { label: "Pescatarian", hint: "Fish and seafood, no meat, no chicken · pescatarian" },
       keto: { label: "Keto", hint: "Less rice, bread, pasta and potatoes · low carb" },
+      gluten_free: { label: "Gluten free", hint: "No bread, pasta or flour with gluten · celiac friendly" },
       high_protein: { label: "High protein", hint: "More meat, eggs, fish and dairy · more protein (30 g+ per dinner)" },
     },
     cookTimes: {
@@ -471,6 +474,7 @@ const es: Messages = {
     spendPlaceholder: "p. ej., 180",
     perWeek: "${amount} por semana",
     howEat: "¿Cómo te alimentas?",
+    dietSearch: "Busca una forma de comer",
     cookTime: "¿Cuánto tiempo tienes para cocinar?",
     dinners: "Siempre planificamos las cenas. ¿Quieres agregar algo más?",
     lunches: "Almuerzos",
@@ -495,8 +499,10 @@ const es: Messages = {
     diets: {
       none: { label: "Sin preferencia", hint: "Un poco de todo" },
       vegetarian: { label: "Vegetariana", hint: "Sin carne, sin pollo, sin pescado · vegetariana" },
+      vegan: { label: "Vegana", hint: "Sin carne, pescado, huevos ni lácteos · solo plantas" },
       pescatarian: { label: "Pescetariana", hint: "Pescado y mariscos, sin carne, sin pollo · pescetariana" },
       keto: { label: "Keto", hint: "Menos arroz, pan, pasta y papas · pocos carbohidratos" },
+      gluten_free: { label: "Sin gluten", hint: "Sin pan, pasta ni harina con gluten · apto celíacos" },
       high_protein: { label: "Alta en proteína", hint: "Más carne, huevo, pescado y lácteos · más proteína (30 g+ por cena)" },
     },
     cookTimes: {

@@ -1,6 +1,6 @@
 import type { Allergen, Equipment, Ingredient, MealType, Recipe } from "../catalog/types";
 
-export const DIETS = ["none", "vegetarian", "pescatarian", "keto", "high_protein"] as const;
+export const DIETS = ["none", "vegetarian", "vegan", "pescatarian", "keto", "gluten_free", "high_protein"] as const;
 export type Diet = (typeof DIETS)[number];
 
 export const COOK_TIMES = ["fast", "normal", "batch"] as const;

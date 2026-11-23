@@ -5,7 +5,9 @@
     "meal_type": "dinner",
     "diet_tags": [
       "vegetarian",
-      "pescatarian"
+      "pescatarian",
+      "vegan",
+      "gluten_free"
     ],
     "servings": 4,
     "prep_minutes": 40,
@@ -111,7 +113,8 @@
     "meal_type": "dinner",
     "diet_tags": [
       "vegetarian",
-      "pescatarian"
+      "pescatarian",
+      "vegan"
     ],
     "servings": 4,
     "prep_minutes": 40,
@@ -221,7 +224,8 @@
     "meal_type": "dinner",
     "diet_tags": [
       "vegetarian",
-      "pescatarian"
+      "pescatarian",
+      "vegan"
     ],
     "servings": 4,
     "prep_minutes": 45,
@@ -318,7 +322,8 @@
     "meal_type": "dinner",
     "diet_tags": [
       "vegetarian",
-      "pescatarian"
+      "pescatarian",
+      "vegan"
     ],
     "servings": 6,
     "prep_minutes": 45,
@@ -411,7 +416,9 @@
     "meal_type": "dinner",
     "diet_tags": [
       "vegetarian",
-      "pescatarian"
+      "pescatarian",
+      "vegan",
+      "gluten_free"
     ],
     "servings": 4,
     "prep_minutes": 40,
@@ -529,7 +536,8 @@
     "meal_type": "dinner",
     "diet_tags": [
       "vegetarian",
-      "pescatarian"
+      "pescatarian",
+      "vegan"
     ],
     "servings": 4,
     "prep_minutes": 70,
@@ -619,7 +627,8 @@
     "meal_type": "dinner",
     "diet_tags": [
       "vegetarian",
-      "pescatarian"
+      "pescatarian",
+      "vegan"
     ],
     "servings": 4,
     "prep_minutes": 40,
@@ -729,7 +738,9 @@
     "meal_type": "dinner",
     "diet_tags": [
       "vegetarian",
-      "pescatarian"
+      "pescatarian",
+      "vegan",
+      "gluten_free"
     ],
     "servings": 4,
     "prep_minutes": 30,
@@ -812,7 +823,8 @@
     "meal_type": "dinner",
     "diet_tags": [
       "vegetarian",
-      "pescatarian"
+      "pescatarian",
+      "vegan"
     ],
     "servings": 4,
     "prep_minutes": 40,
@@ -925,7 +937,8 @@
     "diet_tags": [
       "vegetarian",
       "keto",
-      "pescatarian"
+      "pescatarian",
+      "vegan"
     ],
     "servings": 4,
     "prep_minutes": 35,
@@ -1024,7 +1037,8 @@
     "name": "Sausage, Kale and Cauliflower Soup",
     "meal_type": "dinner",
     "diet_tags": [
-      "keto"
+      "keto",
+      "gluten_free"
     ],
     "servings": 4,
     "prep_minutes": 40,
@@ -1114,7 +1128,8 @@
     "meal_type": "dinner",
     "diet_tags": [
       "keto",
-      "high_protein"
+      "high_protein",
+      "gluten_free"
     ],
     "servings": 4,
     "prep_minutes": 45,
@@ -1209,7 +1224,8 @@
     "name": "Cabbage and Smoked Sausage Soup",
     "meal_type": "dinner",
     "diet_tags": [
-      "keto"
+      "keto",
+      "gluten_free"
     ],
     "servings": 4,
     "prep_minutes": 40,
@@ -1315,7 +1331,8 @@
     "meal_type": "dinner",
     "diet_tags": [
       "keto",
-      "high_protein"
+      "high_protein",
+      "gluten_free"
     ],
     "servings": 4,
     "prep_minutes": 50,
@@ -1619,7 +1636,8 @@
     "name": "White Chicken Chili",
     "meal_type": "dinner",
     "diet_tags": [
-      "high_protein"
+      "high_protein",
+      "gluten_free"
     ],
     "servings": 4,
     "prep_minutes": 45,
@@ -1736,7 +1754,8 @@
     "name": "Beef Taco Soup",
     "meal_type": "dinner",
     "diet_tags": [
-      "high_protein"
+      "high_protein",
+      "gluten_free"
     ],
     "servings": 6,
     "prep_minutes": 35,
@@ -1834,7 +1853,9 @@
     "slug": "stuffed-pepper-soup",
     "name": "Stuffed Pepper Soup",
     "meal_type": "dinner",
-    "diet_tags": [],
+    "diet_tags": [
+      "gluten_free"
+    ],
     "servings": 6,
     "prep_minutes": 45,
     "batch_friendly": true,
@@ -1933,7 +1954,9 @@
     "slug": "albondigas-mexican-meatball-soup",
     "name": "Albondigas (Mexican Meatball Soup)",
     "meal_type": "dinner",
-    "diet_tags": [],
+    "diet_tags": [
+      "gluten_free"
+    ],
     "servings": 4,
     "prep_minutes": 55,
     "batch_friendly": true,
@@ -2490,7 +2513,9 @@
     "slug": "hamburger-vegetable-soup",
     "name": "Hamburger Vegetable Soup",
     "meal_type": "dinner",
-    "diet_tags": [],
+    "diet_tags": [
+      "gluten_free"
+    ],
     "servings": 6,
     "prep_minutes": 45,
     "batch_friendly": true,
@@ -2687,7 +2712,9 @@
     "slug": "smoked-sausage-lentil-stew",
     "name": "Smoked Sausage and Lentil Stew",
     "meal_type": "dinner",
-    "diet_tags": [],
+    "diet_tags": [
+      "gluten_free"
+    ],
     "servings": 4,
     "prep_minutes": 50,
     "batch_friendly": true,
@@ -2800,7 +2827,9 @@
     "slug": "ham-hash-brown-casserole",
     "name": "Ham and Cheddar Hash Brown Casserole",
     "meal_type": "dinner",
-    "diet_tags": [],
+    "diet_tags": [
+      "gluten_free"
+    ],
     "servings": 6,
     "prep_minutes": 65,
     "batch_friendly": true,
