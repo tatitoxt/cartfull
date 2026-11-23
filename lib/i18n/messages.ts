@@ -243,6 +243,7 @@ const en = {
     enjoy: "All done",
     ingredients: "Ingredients",
     step: "Step {step} of {total}",
+    timerDone: "Time! \u2014 tap to reset",
   },
   consent: {
     title: "A quick note on cookies",
@@ -660,6 +661,7 @@ const es: Messages = {
     enjoy: "Terminaste",
     ingredients: "Ingredientes",
     step: "Paso {step} de {total}",
+    timerDone: "\u00a1Tiempo! \u2014 toca para reiniciar",
   },
   consent: {
     title: "Una nota sobre cookies",
