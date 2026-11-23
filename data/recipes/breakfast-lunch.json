@@ -123,7 +123,7 @@
     "description_es": "Avena remojada toda la noche con leche, yogur, manzana y canela: cuatro desayunos listos para llevar.",
     "steps_es": [
       "Lava las manzanas, córtalas en cuartos, quítales el centro y pícalas en cubos pequeños, con cáscara.",
-      "En un tazón grande, mezcla la avena, la leche, el yogur, el jarabe de arce, la canela y la sal hasta que no queden partes secas ni grumos de yogur.",
+      "En un tazón grande, mezcla la avena, la leche, el yogur, el jarabe de maple, la canela y la sal hasta que no queden partes secas ni grumos de yogur.",
       "Incorpora casi toda la manzana y reserva un puñado para poner encima.",
       "Reparte en frascos o recipientes con tapa, uno por porción, y pon encima la manzana reservada.",
       "Tapa y refrigera al menos 8 horas o toda la noche, hasta que la avena absorba el líquido y quede blanda y espesa.",
@@ -322,7 +322,7 @@
         "qty": 4
       }
     ],
-    "name_es": "Panqueques esponjosos con jarabe de arce",
+    "name_es": "Panqueques esponjosos con jarabe de maple",
     "description_es": "Panqueques altos hechos desde cero con ingredientes de despensa; los que sobran se congelan y se recalientan en minutos.",
     "steps_es": [
       "Derrite la mantequilla en una sartén grande a fuego bajo, cerca de 1 minuto, y pásala a una taza. Limpia apenas la sartén; ahí vas a cocinar.",
@@ -333,7 +333,7 @@
       "Vierte cucharones pequeños de masa, dejando espacio entre ellos, y cocina unos 2 minutos, hasta que revienten burbujas en la superficie y los bordes se vean secos.",
       "Voltea con una espátula y cocina de 1 a 2 minutos más, hasta que estén dorados por ambos lados y esponjosos en el centro.",
       "Repite con el resto de la masa, untando la sartén con mantequilla entre tandas y bajando un poco el fuego si se doran muy rápido.",
-      "Sirve apilados, con el jarabe de arce por encima."
+      "Sirve apilados, con el jarabe de maple por encima."
     ],
     "equipment": [
       "stovetop"
@@ -410,7 +410,7 @@
       "Derrite la mantequilla en una sartén antiadherente a fuego medio hasta que haga espuma, cerca de 1 minuto.",
       "Rompe los huevos en la sartén, separados entre sí, y fríelos unos 3 minutos, hasta que la clara esté bien cuajada y la yema siga blanda. Si prefieres la yema firme, voltéalos y cocina 1 minuto más.",
       "Unta el aguacate sobre las tostadas y pon un huevo sobre cada rebanada.",
-      "Espolvorea con la pimienta negra y el chile en hojuelas y sirve de inmediato."
+      "Espolvorea con la pimienta negra y las hojuelas de chile y sirve de inmediato."
     ],
     "equipment": [
       "stovetop"
@@ -991,7 +991,7 @@
       }
     ],
     "name_es": "Tostadas francesas con canela",
-    "description_es": "Pan remojado en una mezcla de huevo, canela y vainilla, dorado en mantequilla y servido con jarabe de arce.",
+    "description_es": "Pan remojado en una mezcla de huevo, canela y vainilla, dorado en mantequilla y servido con jarabe de maple.",
     "steps_es": [
       "En un plato hondo y ancho, bate los huevos, la leche, la canela y la vainilla hasta que la mezcla quede lisa, sin hilos de clara.",
       "Derrite la mitad de la mantequilla en una sartén grande a fuego medio hasta que haga espuma, cerca de 1 minuto.",
@@ -999,7 +999,7 @@
       "Acomoda las rebanadas en la sartén y cocina de 2 a 3 minutos, hasta que estén bien doradas por abajo.",
       "Voltea y cocina de 2 a 3 minutos más, hasta que estén doradas y el centro se sienta esponjoso y no húmedo. Pásalas a un plato.",
       "Vuelve a batir la mezcla (la canela flota), derrite el resto de la mantequilla y cocina el pan restante de la misma manera.",
-      "Sirve calientes con el jarabe de arce."
+      "Sirve calientes con el jarabe de maple."
     ],
     "equipment": [
       "stovetop"
@@ -1310,8 +1310,8 @@
         "qty": 0.25
       }
     ],
-    "name_es": "Ensalada de pollo asado en hojas de lechuga",
-    "description_es": "Pollo asado desmenuzado con un aderezo cremoso de limón y mostaza, servido en hojas crujientes de lechuga romana.",
+    "name_es": "Ensalada de pollo rostizado en hojas de lechuga",
+    "description_es": "Pollo rostizado desmenuzado con un aderezo cremoso de limón y mostaza, servido en hojas crujientes de lechuga romana.",
     "steps_es": [
       "Separa la carne del pollo con las manos, descarta la piel y los huesos, y desmenúzala o pícala en trozos del tamaño de un bocado.",
       "Pica el apio en cubos, corta la cebolla verde en rodajas finas y exprime el limón.",
@@ -1471,7 +1471,7 @@
       "Calienta el aceite en una sartén grande a fuego medio-alto hasta que brille. Agrega el pollo en una sola capa y cocina 8 minutos, revolviendo cada 2 minutos, hasta que esté dorado y bien cocido: {165F} por dentro y sin partes rosadas en el trozo más grande. Pásalo a un plato.",
       "Escurre y enjuaga los frijoles. Ponlos con el maíz en la misma sartén a fuego medio y cocina 3 minutos, revolviendo y raspando lo dorado del fondo, hasta que estén calientes.",
       "Reparte el arroz en recipientes, uno por porción, y cubre con el pollo, los frijoles con maíz, la salsa y el cheddar.",
-      "Corta el limón verde en gajos y exprímelos sobre los tazones, o pon un gajo en cada uno. Deja enfriar, tapa y refrigera hasta 4 días."
+      "Corta la lima en gajos y exprímelos sobre los tazones, o pon un gajo en cada uno. Deja enfriar, tapa y refrigera hasta 4 días."
     ],
     "equipment": [
       "stovetop"
