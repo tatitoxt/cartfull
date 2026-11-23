@@ -16,6 +16,8 @@ export async function GET(_request: NextRequest, { params }: { params: Promise<{
 
   const hex = (data.image as string).replace(/^\\x/, "");
   return new NextResponse(Buffer.from(hex, "hex"), {
-    headers: { "Content-Type": data.mime as string, "Cache-Control": "private, max-age=300" },
+    // no-store: the photo must be re-authorized on every view — a cached copy
+    // would stay readable in the same browser after sign-out.
+    headers: { "Content-Type": data.mime as string, "Cache-Control": "no-store" },
   });
 }
