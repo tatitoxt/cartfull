@@ -30,6 +30,10 @@ export default async function AccountPage({ searchParams }: { searchParams: Prom
     allergens: profile.allergens,
     dislikes: profile.dislikes,
     pantry: [...pantry],
+    country: profile.country,
+    lang: profile.lang,
+    units: profile.units,
+    equipment: profile.equipment,
   };
 
   const price = entitlement.interval === "annual" ? `${PRICING.annual.label} a year` : `${PRICING.monthly.label} a month`;

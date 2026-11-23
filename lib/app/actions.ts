@@ -73,6 +73,10 @@ async function saveAnswers(session: Session, answers: Answers, markOnboarded: bo
     include_lunch: answers.include_lunch,
     allergens: answers.allergens,
     dislikes: answers.dislikes,
+    country: answers.country,
+    lang: answers.lang,
+    units: answers.units,
+    equipment: answers.equipment,
   };
   if (markOnboarded) {
     update.onboarded_at = new Date().toISOString();
