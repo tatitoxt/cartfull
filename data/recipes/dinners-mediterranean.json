@@ -205,7 +205,7 @@
    },
    {
     "id": "vegetable_broth",
-    "qty": 1,
+    "qty": 4,
     "note": "carton, 4 cups",
     "note_es": "caja, 4 tazas"
    },
@@ -663,16 +663,16 @@
   "description": "One-pan orzo with chicken, lemon, spinach and feta.",
   "description_es": "Orzo en una sola sartén con pollo, limón, espinaca y feta.",
   "steps": [
-   "Season the chicken with salt and sear in hot olive oil 4 minutes per side; set aside.",
+   "Season the chicken with salt and sear in hot olive oil 4 minutes per side until golden; set aside.",
    "Toast the orzo in the same pan 2 minutes, add the garlic and cook 30 seconds.",
    "Pour in the broth and simmer 8 minutes, stirring, until the orzo is tender.",
-   "Stir in the lemon juice, spinach and feta; slice the chicken and serve it on top."
+   "Return the chicken to the pan, stir in the lemon juice, spinach and feta and cook 2 minutes until the chicken is cooked through; slice and serve on top."
   ],
   "steps_es": [
-   "Sazona el pollo con sal y séllalo en aceite de oliva caliente 4 minutos por lado; reserva.",
+   "Sazona el pollo con sal y séllalo en aceite de oliva caliente 4 minutos por lado hasta dorarlo; reserva.",
    "Tuesta el orzo en la misma sartén 2 minutos, agrega el ajo y cocina 30 segundos.",
    "Vierte el caldo y cocina a fuego suave 8 minutos revolviendo, hasta que el orzo esté tierno.",
-   "Suma el jugo de limón, la espinaca y el feta; corta el pollo en tajadas y sírvelo encima."
+   "Vuelve a colocar el pollo en la sartén, agrega el jugo de limón, la espinaca y el feta y cocina 2 minutos hasta que el pollo esté bien cocido; córtalo en tajadas y sirve encima."
   ],
   "ingredients": [
    {
@@ -685,7 +685,7 @@
    },
    {
     "id": "chicken_broth",
-    "qty": 1,
+    "qty": 2,
     "note": "about 2.5 cups, partial carton",
     "note_es": "unas 2.5 tazas"
    },
@@ -868,7 +868,7 @@
    },
    {
     "id": "vegetable_broth",
-    "qty": 1,
+    "qty": 6,
     "note": "carton, 4 cups",
     "note_es": "caja, 4 tazas"
    },
@@ -928,13 +928,13 @@
   "steps": [
    "Sear the mushrooms in olive oil 6 minutes until browned; add the onion and cook 4 minutes.",
    "Stir in the garlic and tomato paste 1 minute, add the tomatoes and simmer 15 minutes until thick; season with salt.",
-   "Meanwhile whisk the polenta into 4 cups of boiling salted water; simmer 15 minutes, whisking, until thick.",
+   "Meanwhile cook the polenta in boiling salted water following the package ratio (about 4 cups of water per cup of polenta), simmering and whisking until thick.",
    "Serve the ragu over the polenta."
   ],
   "steps_es": [
    "Dora los champiñones en aceite de oliva 6 minutos hasta que estén dorados; agrega la cebolla y cocina 4 minutos.",
    "Suma el ajo y la pasta de tomate 1 minuto, agrega el tomate y cocina 15 minutos a fuego suave hasta que espese; sazona con sal.",
-   "Mientras, vierte la polenta en lluvia sobre 4 tazas de agua hirviendo con sal; cocina 15 minutos revolviendo hasta que espese.",
+   "Mientras tanto cocina la polenta en agua hirviendo con sal siguiendo la proporción del paquete (unas 4 tazas de agua por taza de polenta), hirviendo a fuego lento y batiendo hasta que espese.",
    "Sirve el ragú sobre la polenta."
   ],
   "ingredients": [
@@ -1190,13 +1190,13 @@
    "Sauté the garlic in olive oil 1 minute, add the tomatoes and simmer 8 minutes until slightly thick.",
    "Add the beans with a splash of water and simmer 8 minutes more, mashing a few to thicken.",
    "Stir in the spinach until it wilts and season with salt.",
-   "Serve over toasted bread with olive oil on top."
+   "Serve with olive oil drizzled on top."
   ],
   "steps_es": [
    "Saltea el ajo en aceite de oliva 1 minuto, agrega el tomate y cocina 8 minutos a fuego suave hasta que espese un poco.",
    "Suma los porotos con un chorrito de agua y cocina 8 minutos más, machacando algunos para espesar.",
    "Incorpora la espinaca hasta que se ablande y sazona con sal.",
-   "Sirve sobre pan tostado con un chorrito de aceite de oliva."
+   "Sirve con un chorrito de aceite de oliva por encima."
   ],
   "ingredients": [
    {
@@ -1218,12 +1218,6 @@
    {
     "id": "spinach",
     "qty": 3
-   },
-   {
-    "id": "bread",
-    "qty": 8,
-    "note": "toasted",
-    "note_es": "tostado"
    },
    {
     "id": "olive_oil",
@@ -1338,8 +1332,7 @@
    "pescatarian",
    "gluten_free",
    "dairy_free",
-   "high_protein",
-   "low_carb"
+   "high_protein"
   ],
   "servings": 4,
   "prep_minutes": 25,
@@ -1906,7 +1899,7 @@
     "qty": 8
    },
    {
-    "id": "chicken_broth",
+    "id": "vegetable_broth",
     "qty": 1,
     "note": "about 2.5 cups, partial carton",
     "note_es": "unas 2.5 tazas"
@@ -1986,7 +1979,7 @@
    },
    {
     "id": "vegetable_broth",
-    "qty": 1,
+    "qty": 6,
     "note": "carton, 4 cups",
     "note_es": "caja, 4 tazas"
    },
@@ -2268,13 +2261,13 @@
    "Sauté the onion and carrot in olive oil 5 minutes, add the garlic and cook 1 minute.",
    "Add the tomatoes, broth and beans; simmer 15 minutes, mashing a few beans.",
    "Stir in the kale and cook 5 minutes until tender.",
-   "Season with salt and serve with olive oil and crusty bread."
+   "Season with salt and serve with olive oil on top."
   ],
   "steps_es": [
    "Saltea la cebolla y la zanahoria en aceite de oliva 5 minutos, agrega el ajo y cocina 1 minuto.",
    "Suma el tomate, el caldo y los porotos; cocina 15 minutos a fuego suave, machacando algunos porotos.",
    "Incorpora el kale y cocina 5 minutos hasta que esté tierno.",
-   "Sazona con sal y sirve con aceite de oliva y pan duro."
+   "Sazona con sal y sirve con un chorrito de aceite de oliva."
   ],
   "ingredients": [
    {
@@ -2295,7 +2288,7 @@
    },
    {
     "id": "vegetable_broth",
-    "qty": 1,
+    "qty": 6,
     "note": "carton, 4 cups",
     "note_es": "caja, 4 tazas"
    },
@@ -2316,12 +2309,6 @@
     "qty": 3,
     "note": "minced",
     "note_es": "picado"
-   },
-   {
-    "id": "bread",
-    "qty": 8,
-    "note": "for serving",
-    "note_es": "para acompañar"
    },
    {
     "id": "olive_oil",
@@ -2349,7 +2336,8 @@
   "name_es": "Tortitas de garbanzo con yogur",
   "diet_tags": [
    "vegetarian",
-   "dairy_free"
+   "dairy_free",
+   "vegan"
   ],
   "servings": 4,
   "prep_minutes": 30,
@@ -2359,14 +2347,14 @@
   "steps": [
    "Mash the chickpeas with the garlic, cumin, flour and salt into a chunky paste; form 8 patties.",
    "Fry in hot oil 3 to 4 minutes per side until crisp and golden.",
-   "Stir the yogurt with the lemon juice and a pinch of salt.",
-   "Serve the patties in pitas with the yogurt, tomato and cucumber."
+   "Whisk the tahini with the lemon juice and 2 tablespoons of water into a creamy sauce; season with salt.",
+   "Serve the patties in pitas with the sauce, tomato and cucumber."
   ],
   "steps_es": [
    "Machaca los garbanzos con el ajo, el comino, la harina y la sal hasta formar una pasta rústica; arma 8 tortitas.",
    "Fríelas en aceite caliente de 3 a 4 minutos por lado hasta que estén crocantes y doradas.",
-   "Mezcla el yogur con el jugo de limón y una pizca de sal.",
-   "Sirve las tortitas en pitas con el yogur, el tomate y el pepino."
+   "Bate el tahini con el jugo de limón y 2 cucharadas de agua hasta tener una salsa cremosa; sazona con sal.",
+   "Sirve las hamburguesitas en pitas con la salsa, el tomate y el pepino."
   ],
   "ingredients": [
    {
@@ -2387,17 +2375,13 @@
    },
    {
     "id": "flour",
-    "qty": 3
+    "qty": 0.19
    },
    {
     "id": "pita",
     "qty": 4,
     "note": "halved",
     "note_es": "a la mitad"
-   },
-   {
-    "id": "greek_yogurt",
-    "qty": 0.75
    },
    {
     "id": "lemon",
@@ -2424,6 +2408,10 @@
    {
     "id": "salt",
     "qty": 0.75
+   },
+   {
+    "id": "tahini",
+    "qty": 3
    }
   ],
   "equipment": [

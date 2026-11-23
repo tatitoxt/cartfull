@@ -156,7 +156,7 @@
    },
    {
     "id": "brown_sugar",
-    "qty": 2
+    "qty": 0.13
    },
    {
     "id": "garlic",
@@ -248,7 +248,7 @@
    },
    {
     "id": "sugar",
-    "qty": 1
+    "qty": 0.06
    },
    {
     "id": "green_onion",
@@ -423,7 +423,7 @@
    },
    {
     "id": "sugar",
-    "qty": 3
+    "qty": 0.2
    },
    {
     "id": "vinegar_rice",
@@ -500,7 +500,7 @@
    },
    {
     "id": "chicken_broth",
-    "qty": 2,
+    "qty": 4,
     "note": "cartons, about 8 cups",
     "note_es": "cajas, unas 8 tazas"
    },
@@ -555,7 +555,6 @@
   "meal_type": "dinner",
   "name_es": "Pollo al curry rojo tailandés",
   "diet_tags": [
-   "gluten_free",
    "dairy_free",
    "high_protein"
   ],
@@ -609,7 +608,7 @@
    },
    {
     "id": "brown_sugar",
-    "qty": 1
+    "qty": 0.06
    },
    {
     "id": "lime",
@@ -820,10 +819,8 @@
   "name_es": "Salmón glaseado con miso",
   "diet_tags": [
    "pescatarian",
-   "gluten_free",
    "dairy_free",
-   "high_protein",
-   "low_carb"
+   "high_protein"
   ],
   "servings": 4,
   "prep_minutes": 25,
@@ -855,7 +852,7 @@
    },
    {
     "id": "brown_sugar",
-    "qty": 2
+    "qty": 0.13
    },
    {
     "id": "vinegar_rice",
@@ -896,7 +893,6 @@
   "name_es": "Salmón teriyaki al horno",
   "diet_tags": [
    "pescatarian",
-   "gluten_free",
    "dairy_free",
    "high_protein"
   ],
@@ -938,7 +934,7 @@
    },
    {
     "id": "sugar",
-    "qty": 2
+    "qty": 0.13
    },
    {
     "id": "vinegar_rice",
@@ -1038,7 +1034,7 @@
    },
    {
     "id": "sugar",
-    "qty": 2
+    "qty": 0.13
    },
    {
     "id": "vinegar_rice",
@@ -1138,7 +1134,7 @@
    },
    {
     "id": "sugar",
-    "qty": 1
+    "qty": 0.06
    },
    {
     "id": "stir_fry_veg_frozen",
@@ -1179,7 +1175,6 @@
   "meal_type": "dinner",
   "name_es": "Pad thai simple",
   "diet_tags": [
-   "gluten_free",
    "dairy_free"
   ],
   "servings": 4,
@@ -1222,7 +1217,7 @@
    },
    {
     "id": "sugar",
-    "qty": 3
+    "qty": 0.2
    },
    {
     "id": "vinegar_rice",
@@ -1308,7 +1303,7 @@
    },
    {
     "id": "sugar",
-    "qty": 3
+    "qty": 0.2
    },
    {
     "id": "vinegar_rice",
@@ -1400,7 +1395,7 @@
    },
    {
     "id": "brown_sugar",
-    "qty": 4
+    "qty": 0.25
    },
    {
     "id": "garlic",
@@ -1472,7 +1467,7 @@
   "ingredients": [
    {
     "id": "chicken_broth",
-    "qty": 1,
+    "qty": 4,
     "note": "carton, 4 cups",
     "note_es": "caja, 4 tazas"
    },
@@ -1510,7 +1505,7 @@
    },
    {
     "id": "sugar",
-    "qty": 1
+    "qty": 0.06
    },
    {
     "id": "lime",
@@ -1544,7 +1539,6 @@
   "name_es": "Arroz frito con camarones",
   "diet_tags": [
    "pescatarian",
-   "gluten_free",
    "dairy_free"
   ],
   "servings": 4,
@@ -1725,10 +1719,8 @@
   "meal_type": "dinner",
   "name_es": "Pollo al jengibre y verdeo",
   "diet_tags": [
-   "gluten_free",
    "dairy_free",
-   "high_protein",
-   "low_carb"
+   "high_protein"
   ],
   "servings": 4,
   "prep_minutes": 30,
@@ -1833,7 +1825,7 @@
   "ingredients": [
    {
     "id": "tuna_canned",
-    "qty": 3,
+    "qty": 2,
     "note": "cans, drained",
     "note_es": "latas, escurridas"
    },
@@ -1871,7 +1863,7 @@
    },
    {
     "id": "sugar",
-    "qty": 1
+    "qty": 0.06
    },
    {
     "id": "green_onion",
@@ -2045,7 +2037,7 @@
    },
    {
     "id": "sugar",
-    "qty": 0.5
+    "qty": 0.03
    },
    {
     "id": "sesame_seeds",
@@ -2098,7 +2090,7 @@
   "ingredients": [
    {
     "id": "chicken_broth",
-    "qty": 2,
+    "qty": 4,
     "note": "cartons, about 8 cups",
     "note_es": "cajas, unas 8 tazas"
    },
@@ -2211,7 +2203,7 @@
    },
    {
     "id": "sugar",
-    "qty": 4
+    "qty": 0.25
    },
    {
     "id": "vinegar_rice",
@@ -2413,7 +2405,7 @@
    },
    {
     "id": "sugar",
-    "qty": 1
+    "qty": 0.06
    },
    {
     "id": "green_onion",
@@ -2448,7 +2440,6 @@
   "meal_type": "dinner",
   "name_es": "Muslos de pollo estilo lemongrass",
   "diet_tags": [
-   "gluten_free",
    "dairy_free",
    "high_protein"
   ],
@@ -2490,7 +2481,7 @@
    },
    {
     "id": "sugar",
-    "qty": 3
+    "qty": 0.2
    },
    {
     "id": "lime",
@@ -2591,7 +2582,7 @@
    },
    {
     "id": "sugar",
-    "qty": 2
+    "qty": 0.13
    },
    {
     "id": "cucumber",

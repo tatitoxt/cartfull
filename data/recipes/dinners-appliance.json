@@ -45,7 +45,7 @@
    },
    {
     "id": "brown_sugar",
-    "qty": 3
+    "qty": 0.2
    },
    {
     "id": "smoked_paprika",
@@ -175,13 +175,13 @@
   "description": "Classic beef stew with potatoes and carrots, ready when you walk in the door.",
   "description_es": "Estofado clásico de res con papas y zanahorias, listo cuando llegas a casa.",
   "steps": [
-   "Toss the beef with the flour, salt and pepper until coated.",
+   "Season the beef with the salt and pepper.",
    "Place the beef, potatoes, carrots, onion and garlic in the slow cooker.",
    "Pour in the broth, tomato paste and worcestershire; stir.",
    "Cook on low 8 hours until the beef is fork-tender; stir in the peas at the end."
   ],
   "steps_es": [
-   "Mezcla la carne con la harina, sal y pimienta hasta cubrirla.",
+   "Sazona la carne con la sal y la pimienta.",
    "Coloca la carne, las papas, las zanahorias, la cebolla y el ajo en la olla lenta.",
    "Vierte el caldo, la pasta de tomate y el worcestershire; revuelve.",
    "Cocina a fuego bajo 8 horas hasta que la carne esté tierna; agrega las arvejas al final."
@@ -217,7 +217,7 @@
    },
    {
     "id": "beef_broth",
-    "qty": 1,
+    "qty": 4,
     "note": "carton, 4 cups",
     "note_es": "caja, 4 tazas"
    },
@@ -228,10 +228,6 @@
    {
     "id": "worcestershire",
     "qty": 2
-   },
-   {
-    "id": "flour",
-    "qty": 3
    },
    {
     "id": "peas_frozen",
@@ -367,7 +363,7 @@
    },
    {
     "id": "beef_broth",
-    "qty": 1,
+    "qty": 2,
     "note": "carton, 4 cups",
     "note_es": "caja, 4 tazas"
    },
@@ -465,7 +461,7 @@
    },
    {
     "id": "vegetable_broth",
-    "qty": 2,
+    "qty": 6,
     "note": "cartons, 8 cups",
     "note_es": "cajas, 8 tazas"
    },
@@ -705,8 +701,7 @@
   "diet_tags": [
    "vegetarian",
    "vegan",
-   "dairy_free",
-   "gluten_free"
+   "dairy_free"
   ],
   "servings": 4,
   "prep_minutes": 25,
@@ -777,8 +772,7 @@
    "gluten_free",
    "dairy_free",
    "high_protein",
-   "low_carb",
-   "keto"
+   "low_carb"
   ],
   "servings": 4,
   "prep_minutes": 20,
@@ -806,7 +800,7 @@
    },
    {
     "id": "brown_sugar",
-    "qty": 2
+    "qty": 0.13
    },
    {
     "id": "smoked_paprika",
@@ -976,7 +970,7 @@
    },
    {
     "id": "beef_broth",
-    "qty": 1,
+    "qty": 2,
     "note": "carton, 4 cups",
     "note_es": "caja, 4 tazas"
    },
@@ -1034,7 +1028,7 @@
    },
    {
     "id": "vegetable_broth",
-    "qty": 1,
+    "qty": 4,
     "note": "about 3.5 cups, partial carton",
     "note_es": "unas 3.5 tazas"
    },
@@ -1107,7 +1101,7 @@
    },
    {
     "id": "chicken_broth",
-    "qty": 1,
+    "qty": 2,
     "note": "about 2.5 cups, partial carton",
     "note_es": "unas 2.5 tazas"
    },
@@ -1213,7 +1207,7 @@
    },
    {
     "id": "vegetable_broth",
-    "qty": 1,
+    "qty": 3,
     "note": "carton, 4 cups",
     "note_es": "caja, 4 tazas"
    },
@@ -1394,13 +1388,13 @@
    "Sauté the onion and garlic in butter 4 minutes until soft.",
    "Add everything to the blender with the tomatoes and cream; blend until completely smooth.",
    "Pour into a pot and simmer 5 minutes; season with salt.",
-   "Serve with grilled cheese or crusty bread."
+   "Serve hot, drizzled with more cream if you like."
   ],
   "steps_es": [
    "Saltea la cebolla y el ajo en manteca 4 minutos hasta que estén blandos.",
    "Pasa todo a la licuadora con el tomate y la crema; licúa hasta que esté completamente liso.",
    "Vierte en una olla y cocina a fuego suave 5 minutos; sazona con sal.",
-   "Sirve con sándwich de queso o pan duro."
+   "Sirve caliente, con más crema por encima si quieres."
   ],
   "ingredients": [
    {
@@ -1424,12 +1418,6 @@
    {
     "id": "heavy_cream",
     "qty": 0.5
-   },
-   {
-    "id": "bread",
-    "qty": 8,
-    "note": "for serving",
-    "note_es": "para acompañar"
    },
    {
     "id": "salt",
@@ -1568,7 +1556,7 @@
    },
    {
     "id": "flour",
-    "qty": 3
+    "qty": 0.19
    },
    {
     "id": "pita",
