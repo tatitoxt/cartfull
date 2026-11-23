@@ -514,7 +514,9 @@ export async function deleteAccount(): Promise<ActionResult> {
       }
     }
     // Remember the email so a re-registration doesn't earn a second free trial.
-    if (session.email) {
+    // Only people who actually reached a subscription count: someone who never
+    // subscribed hasn't used a trial and gets their first one like anyone else.
+    if (session.email && sub?.stripe_subscription_id) {
       const { error: markError } = await admin
         .from("deleted_accounts")
         .upsert({ email: session.email.toLowerCase() });
