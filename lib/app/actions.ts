@@ -202,9 +202,10 @@ async function savePlan(
     seed: number;
     meals: MealAssignment[];
     have: ReadonlySet<string>;
+    owned?: ReadonlyMap<string, number>;
   },
 ): Promise<ActionResult | null> {
-  const cart = buildCart(input.meals, catalog.ingredients, input.have);
+  const cart = buildCart(input.meals, catalog.ingredients, input.have, input.owned);
   const { error } = await session.supabase.rpc("save_plan", {
     p_week_start: input.weekStart,
     p_budget_cents: input.budgetCents,
@@ -214,7 +215,7 @@ async function savePlan(
     p_total_cents: cart.totalCents,
     p_seed: input.seed,
     p_meals: input.meals.map((m) => ({ day: m.day, slot: m.slot, recipe_slug: m.recipe.slug, servings: m.servings })),
-    p_items: cart.lines.map((line) => ({ ingredient_id: line.ingredient.id, have: line.have })),
+    p_items: cart.lines.map((line) => ({ ingredient_id: line.ingredient.id, have: line.have, have_qty: line.haveQty })),
   });
   if (!error) return null;
   if (error.code === "42501") return fail("paywall", MESSAGES[lang].actions.trialPlan);
@@ -288,6 +289,7 @@ export async function getSwapChoices(planId: string, day: number, slot: MealType
     householdSize: loaded.row.household_size,
     favoriteSlugs: feedback.favorites,
     ratings: feedback.ratings,
+    owned: new Map(loaded.cart.lines.map((l) => [l.ingredient.id, l.haveQty])),
   });
   return swapOptions(catalog, request, loaded.meals, { day, slot }).map((option) => ({
     slug: option.recipe.slug,
@@ -321,11 +323,13 @@ export async function swapMeal(planId: string, day: number, slot: MealType, slug
 
   const [pantry, feedback] = await Promise.all([getPantry(session), getFeedback(session)]);
   const have = effectiveHave(pantry, loaded);
+  const owned = new Map(loaded.cart.lines.map((l) => [l.ingredient.id, l.haveQty]));
   const request = planRequest(profile, have, loaded.row.seed, {
     budgetCents: loaded.row.budget_cents,
     householdSize: loaded.row.household_size,
     favoriteSlugs: feedback.favorites,
     ratings: feedback.ratings,
+    owned,
   });
   // Re-check on the server: the swap must be allowed for this household and keep the cart in budget.
   const allowed = swapOptions(catalog, request, loaded.meals, { day, slot }, Infinity).some((o) => o.recipe.slug === slug);
@@ -343,6 +347,7 @@ export async function swapMeal(planId: string, day: number, slot: MealType, slug
     seed: loaded.row.seed,
     meals,
     have,
+    owned,
   });
   if (error) return error;
   revalidatePath("/app", "layout");
