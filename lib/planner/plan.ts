@@ -106,8 +106,17 @@ class Week {
     private ingredients: ReadonlyMap<string, Ingredient>,
     private have: ReadonlySet<string>,
     private household: number,
+    private owned: ReadonlyMap<string, number> = new Map(),
   ) {
     this.choice = groups.map(() => null);
+  }
+
+  /** Cart cost of needing `qty` units of `id` after owned stock; pantry ids are free. */
+  private costFor(id: string, qty: number): number {
+    const owned = this.owned.get(id);
+    if (owned !== undefined) return purchaseCents(this.ingredients.get(id)!, Math.max(qty - owned, 0));
+    if (this.have.has(id)) return 0;
+    return purchaseCents(this.ingredients.get(id)!, qty);
   }
 
   private scale(group: Group, recipe: Recipe): number {
@@ -119,10 +128,8 @@ class Week {
     const scale = this.scale(group, recipe);
     let cents = 0;
     for (const ri of recipe.ingredients) {
-      if (this.have.has(ri.id)) continue;
-      const ing = this.ingredients.get(ri.id)!;
       const current = this.qty.get(ri.id) ?? 0;
-      cents += purchaseCents(ing, current + ri.qty * scale) - purchaseCents(ing, current);
+      cents += this.costFor(ri.id, current + ri.qty * scale) - this.costFor(ri.id, current);
     }
     return cents;
   }
@@ -145,11 +152,7 @@ class Week {
 
   totalCents(): number {
     let cents = 0;
-    for (const [id, qty] of this.qty) {
-      if (this.have.has(id)) continue;
-      const ing = this.ingredients.get(id)!;
-      cents += purchaseCents(ing, qty);
-    }
+    for (const [id, qty] of this.qty) cents += this.costFor(id, qty);
     return cents;
   }
 
@@ -278,9 +281,9 @@ function reduceToBudget(ctx: Context, week: Week, budgetCents: number): number {
   return total;
 }
 
-function toPlan(catalog: Catalog, week: Week, have: ReadonlySet<string>): Plan {
+function toPlan(catalog: Catalog, week: Week, req: PlanRequest): Plan {
   const meals = week.meals();
-  const cart = buildCart(meals, catalog.ingredients, have);
+  const cart = buildCart(meals, catalog.ingredients, req.pantry, req.owned);
   return { meals, cart, totalCents: cart.totalCents };
 }
 
@@ -298,12 +301,12 @@ export function generatePlan(catalog: Catalog, req: PlanRequest): Plan {
   const ctx = makeContext(catalog, req, groups);
   let cheapest = Infinity;
   for (const costWeight of COST_WEIGHTS) {
-    const week = new Week(groups, catalog.ingredients, req.pantry, req.householdSize);
+    const week = new Week(groups, catalog.ingredients, req.pantry, req.householdSize, req.owned);
     construct(ctx, week, costWeight);
     const total = reduceToBudget(ctx, week, req.budgetCents);
     cheapest = Math.min(cheapest, total);
     if (total <= req.budgetCents) {
-      const plan = toPlan(catalog, week, req.pantry);
+      const plan = toPlan(catalog, week, req);
       if (plan.totalCents > req.budgetCents) throw new Error("Planner invariant broken: cart exceeds budget");
       return plan;
     }
