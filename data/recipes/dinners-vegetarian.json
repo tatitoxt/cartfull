@@ -6,7 +6,8 @@
     "diet_tags": [
       "vegetarian",
       "high_protein",
-      "pescatarian"
+      "pescatarian",
+      "vegan"
     ],
     "servings": 4,
     "prep_minutes": 50,
@@ -104,7 +105,8 @@
     "diet_tags": [
       "vegetarian",
       "high_protein",
-      "pescatarian"
+      "pescatarian",
+      "vegan"
     ],
     "servings": 4,
     "prep_minutes": 25,
@@ -205,7 +207,9 @@
     "diet_tags": [
       "vegetarian",
       "high_protein",
-      "pescatarian"
+      "pescatarian",
+      "vegan",
+      "gluten_free"
     ],
     "servings": 4,
     "prep_minutes": 45,
@@ -319,7 +323,9 @@
       "vegetarian",
       "keto",
       "high_protein",
-      "pescatarian"
+      "pescatarian",
+      "vegan",
+      "gluten_free"
     ],
     "servings": 4,
     "prep_minutes": 35,
@@ -419,7 +425,8 @@
     "diet_tags": [
       "vegetarian",
       "high_protein",
-      "pescatarian"
+      "pescatarian",
+      "vegan"
     ],
     "servings": 4,
     "prep_minutes": 30,
@@ -534,7 +541,9 @@
     "diet_tags": [
       "vegetarian",
       "high_protein",
-      "pescatarian"
+      "pescatarian",
+      "vegan",
+      "gluten_free"
     ],
     "servings": 4,
     "prep_minutes": 45,
@@ -627,7 +636,8 @@
     "diet_tags": [
       "vegetarian",
       "high_protein",
-      "pescatarian"
+      "pescatarian",
+      "vegan"
     ],
     "servings": 4,
     "prep_minutes": 50,
@@ -743,7 +753,9 @@
       "vegetarian",
       "keto",
       "high_protein",
-      "pescatarian"
+      "pescatarian",
+      "vegan",
+      "gluten_free"
     ],
     "servings": 4,
     "prep_minutes": 70,
@@ -836,7 +848,8 @@
     "diet_tags": [
       "vegetarian",
       "high_protein",
-      "pescatarian"
+      "pescatarian",
+      "vegan"
     ],
     "servings": 4,
     "prep_minutes": 25,
@@ -919,7 +932,9 @@
     "diet_tags": [
       "vegetarian",
       "keto",
-      "pescatarian"
+      "pescatarian",
+      "vegan",
+      "gluten_free"
     ],
     "servings": 4,
     "prep_minutes": 25,
@@ -1026,7 +1041,8 @@
     "diet_tags": [
       "vegetarian",
       "keto",
-      "pescatarian"
+      "pescatarian",
+      "vegan"
     ],
     "servings": 4,
     "prep_minutes": 20,
@@ -1123,7 +1139,8 @@
     "diet_tags": [
       "vegetarian",
       "keto",
-      "pescatarian"
+      "pescatarian",
+      "vegan"
     ],
     "servings": 4,
     "prep_minutes": 20,
@@ -1216,7 +1233,9 @@
     "diet_tags": [
       "vegetarian",
       "keto",
-      "pescatarian"
+      "pescatarian",
+      "vegan",
+      "gluten_free"
     ],
     "servings": 4,
     "prep_minutes": 35,
@@ -1309,7 +1328,9 @@
     "diet_tags": [
       "vegetarian",
       "keto",
-      "pescatarian"
+      "pescatarian",
+      "vegan",
+      "gluten_free"
     ],
     "servings": 4,
     "prep_minutes": 35,
@@ -1398,7 +1419,9 @@
     "meal_type": "dinner",
     "diet_tags": [
       "vegetarian",
-      "pescatarian"
+      "pescatarian",
+      "vegan",
+      "gluten_free"
     ],
     "servings": 4,
     "prep_minutes": 35,
@@ -1510,7 +1533,9 @@
     "meal_type": "dinner",
     "diet_tags": [
       "vegetarian",
-      "pescatarian"
+      "pescatarian",
+      "vegan",
+      "gluten_free"
     ],
     "servings": 4,
     "prep_minutes": 25,
@@ -1606,7 +1631,8 @@
     "meal_type": "dinner",
     "diet_tags": [
       "vegetarian",
-      "pescatarian"
+      "pescatarian",
+      "vegan"
     ],
     "servings": 4,
     "prep_minutes": 30,
@@ -1686,7 +1712,8 @@
     "meal_type": "dinner",
     "diet_tags": [
       "vegetarian",
-      "pescatarian"
+      "pescatarian",
+      "vegan"
     ],
     "servings": 4,
     "prep_minutes": 50,
@@ -1808,7 +1835,9 @@
     "meal_type": "dinner",
     "diet_tags": [
       "vegetarian",
-      "pescatarian"
+      "pescatarian",
+      "vegan",
+      "gluten_free"
     ],
     "servings": 4,
     "prep_minutes": 50,
@@ -1924,7 +1953,8 @@
     "meal_type": "dinner",
     "diet_tags": [
       "vegetarian",
-      "pescatarian"
+      "pescatarian",
+      "vegan"
     ],
     "servings": 4,
     "prep_minutes": 25,
@@ -2004,7 +2034,9 @@
     "meal_type": "dinner",
     "diet_tags": [
       "vegetarian",
-      "pescatarian"
+      "pescatarian",
+      "vegan",
+      "gluten_free"
     ],
     "servings": 4,
     "prep_minutes": 25,
@@ -2092,7 +2124,9 @@
     "meal_type": "dinner",
     "diet_tags": [
       "vegetarian",
-      "pescatarian"
+      "pescatarian",
+      "vegan",
+      "gluten_free"
     ],
     "servings": 4,
     "prep_minutes": 40,
@@ -2202,7 +2236,9 @@
     "meal_type": "dinner",
     "diet_tags": [
       "vegetarian",
-      "pescatarian"
+      "pescatarian",
+      "vegan",
+      "gluten_free"
     ],
     "servings": 4,
     "prep_minutes": 15,
@@ -2298,7 +2334,8 @@
     "meal_type": "dinner",
     "diet_tags": [
       "vegetarian",
-      "pescatarian"
+      "pescatarian",
+      "vegan"
     ],
     "servings": 4,
     "prep_minutes": 30,
@@ -2412,7 +2449,8 @@
     "meal_type": "dinner",
     "diet_tags": [
       "vegetarian",
-      "pescatarian"
+      "pescatarian",
+      "vegan"
     ],
     "servings": 4,
     "prep_minutes": 20,
@@ -2508,7 +2546,8 @@
     "meal_type": "dinner",
     "diet_tags": [
       "vegetarian",
-      "pescatarian"
+      "pescatarian",
+      "vegan"
     ],
     "servings": 4,
     "prep_minutes": 15,
@@ -2610,7 +2649,9 @@
     "meal_type": "dinner",
     "diet_tags": [
       "vegetarian",
-      "pescatarian"
+      "pescatarian",
+      "vegan",
+      "gluten_free"
     ],
     "servings": 4,
     "prep_minutes": 30,
@@ -2720,7 +2761,8 @@
     "meal_type": "dinner",
     "diet_tags": [
       "vegetarian",
-      "pescatarian"
+      "pescatarian",
+      "vegan"
     ],
     "servings": 4,
     "prep_minutes": 20,
@@ -2822,7 +2864,9 @@
     "meal_type": "dinner",
     "diet_tags": [
       "vegetarian",
-      "pescatarian"
+      "pescatarian",
+      "vegan",
+      "gluten_free"
     ],
     "servings": 4,
     "prep_minutes": 20,
@@ -2906,7 +2950,9 @@
     "meal_type": "dinner",
     "diet_tags": [
       "vegetarian",
-      "pescatarian"
+      "pescatarian",
+      "vegan",
+      "gluten_free"
     ],
     "servings": 4,
     "prep_minutes": 40,
