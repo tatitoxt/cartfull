@@ -1,14 +1,9 @@
 import type { Aisle } from "./types";
+import type { Lang } from "./localize";
 
-export const AISLE_LABELS: Record<Aisle, string> = {
-  produce: "Produce",
-  meat: "Meat",
-  seafood: "Seafood",
-  dairy: "Dairy and eggs",
-  bakery: "Bakery",
-  pantry: "Dry goods",
-  canned: "Cans and jars",
-  frozen: "Frozen",
-  condiments: "Oils and sauces",
-  spices: "Spices",
+import { MESSAGES } from "../i18n/messages";
+
+export const AISLE_LABELS: Record<Lang, Record<Aisle, string>> = {
+  en: MESSAGES.en.aisles,
+  es: MESSAGES.es.aisles,
 };

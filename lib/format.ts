@@ -1,22 +1,27 @@
-/** $84 for whole dollars, $84.50 otherwise. */
-export function money(cents: number): string {
-  const dollars = cents / 100;
-  return dollars.toLocaleString("en-US", {
-    style: "currency",
-    currency: "USD",
-    minimumFractionDigits: Number.isInteger(dollars) ? 0 : 2,
-    maximumFractionDigits: 2,
+import type { Lang } from "./catalog/localize";
+import { MESSAGES } from "./i18n/messages";
+
+const numberLocale = (lang: Lang) => lang === "es" ? "es-AR" : "en-US";
+const number = (value: number, lang: Lang, digits: number) =>
+  value.toLocaleString(numberLocale(lang), {
+    minimumFractionDigits: digits,
+    maximumFractionDigits: digits,
   });
+
+/** $84 for whole dollars, $84.50 otherwise. */
+export function money(cents: number, lang: Lang = "en"): string {
+  const dollars = cents / 100;
+  return `$${number(dollars, lang, Number.isInteger(dollars) ? 0 : 2)}`;
 }
 
 /** Always two decimals: $2.10. */
-export function moneyExact(cents: number): string {
-  return (cents / 100).toLocaleString("en-US", { style: "currency", currency: "USD" });
+export function moneyExact(cents: number, lang: Lang = "en"): string {
+  return `$${number(cents / 100, lang, 2)}`;
 }
 
 /** Whole dollars, rounded: $84. */
-export function moneyRound(cents: number): string {
-  return `$${Math.round(cents / 100).toLocaleString("en-US")}`;
+export function moneyRound(cents: number, lang: Lang = "en"): string {
+  return `$${number(Math.round(cents / 100), lang, 0)}`;
 }
 
 const FRACTIONS: [number, string][] = [
@@ -62,5 +67,11 @@ export function unitLabel(unit: string, qty: number): string {
   return qty > 1 ? pair[1] : pair[0];
 }
 
-export const DAY_NAMES = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
-export const DAY_SHORT = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+export const DAY_NAMES = {
+  en: MESSAGES.en.days.full,
+  es: MESSAGES.es.days.full,
+};
+export const DAY_SHORT = {
+  en: MESSAGES.en.days.short,
+  es: MESSAGES.es.days.short,
+};
