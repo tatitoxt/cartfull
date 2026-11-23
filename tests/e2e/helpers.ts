@@ -6,13 +6,20 @@ export const uniqueEmail = (tag: string) => `${tag}-${Date.now()}-${Math.floor(M
 
 export const cents = (text: string | null) => Math.round(Number((text ?? "").replace(/[^0-9.]/g, "")) * 100);
 
+/** Newest message for an address. Listed rather than searched: search trips on addresses with punctuation. */
+async function newestMessageTo(email: string): Promise<{ Text?: string; HTML?: string } | null> {
+  const list = await fetch(`${MAILPIT}/api/v1/messages?limit=100`).then((r) => r.json());
+  const message = (list.messages ?? []).find((m: { To?: { Address: string }[] }) =>
+    m.To?.some((to) => to.Address.toLowerCase() === email.toLowerCase()),
+  );
+  return message ? fetch(`${MAILPIT}/api/v1/message/${message.ID}`).then((r) => r.json()) : null;
+}
+
 /** Reads the six-digit sign-in code from the local mail catcher. */
 export async function signInCode(email: string): Promise<string> {
   for (let attempt = 0; attempt < 40; attempt++) {
-    const search = await fetch(`${MAILPIT}/api/v1/search?query=${encodeURIComponent(`to:${email}`)}`).then((r) => r.json());
-    const message = search.messages?.[0];
-    if (message) {
-      const full = await fetch(`${MAILPIT}/api/v1/message/${message.ID}`).then((r) => r.json());
+    const full = await newestMessageTo(email);
+    if (full) {
       // The link in the same email carries the address, which can hold six digits of its own.
       const prose = String(full.Text ?? "").replace(/\S*[@:/]\S*/g, " ");
       const code = prose.match(/\b(\d{6})\b/)?.[1];
@@ -26,10 +33,8 @@ export async function signInCode(email: string): Promise<string> {
 /** Reads the sign-in link from the newest email sent to this address. */
 export async function signInLink(email: string): Promise<string> {
   for (let attempt = 0; attempt < 40; attempt++) {
-    const search = await fetch(`${MAILPIT}/api/v1/search?query=${encodeURIComponent(`to:${email}`)}`).then((r) => r.json());
-    const message = search.messages?.[0];
-    if (message) {
-      const full = await fetch(`${MAILPIT}/api/v1/message/${message.ID}`).then((r) => r.json());
+    const full = await newestMessageTo(email);
+    if (full) {
       const link = String(full.HTML ?? "").match(/href="([^"]*token_hash=[^"]*)"/)?.[1];
       if (link) return link.replace(/&amp;/g, "&");
     }

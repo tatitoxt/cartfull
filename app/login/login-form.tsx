@@ -27,6 +27,8 @@ export function LoginForm({
   );
 
   const redirectTo = () => `${window.location.origin}/auth/callback?next=${encodeURIComponent(next)}`;
+  // The emailed link names the address it signs in, so the person opening it can be told.
+  const linkTarget = () => `${redirectTo()}&email=${encodeURIComponent(normalizeEmail(email))}`;
 
   async function sendLink(event: React.FormEvent) {
     event.preventDefault();
@@ -37,7 +39,7 @@ export function LoginForm({
     document.cookie = `${REQUESTED_COOKIE}=${encodeURIComponent(normalizeEmail(email))}; path=/auth; max-age=3600; samesite=lax${secure}`;
     const { error } = await createClient().auth.signInWithOtp({
       email: email.trim(),
-      options: { emailRedirectTo: redirectTo(), shouldCreateUser: true },
+      options: { emailRedirectTo: linkTarget(), shouldCreateUser: true },
     });
     setBusy(false);
     if (error) {
