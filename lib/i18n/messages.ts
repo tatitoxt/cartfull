@@ -105,9 +105,9 @@ const en = {
     },
     diets: {
       none: { label: "No preference", hint: "A bit of everything" },
-      vegetarian: { label: "Vegetarian", hint: "No meat or fish" },
-      keto: { label: "Keto", hint: "Low carb, no grains" },
-      high_protein: { label: "High protein", hint: "30 g or more per dinner" },
+      vegetarian: { label: "Vegetarian", hint: "No meat, no chicken, no fish · vegetarian" },
+      keto: { label: "Keto", hint: "Less rice, bread, pasta and potatoes · low carb" },
+      high_protein: { label: "High protein", hint: "More meat, eggs, fish and dairy · more protein (30 g+ per dinner)" },
     },
     cookTimes: {
       fast: { label: "Fast", hint: "On the table in 25 minutes" },
@@ -192,6 +192,13 @@ const en = {
     addBack: "Add back · {amount}",
     addBackLabel: "Add {name} back to the list, {amount}",
     prices: "Prices are estimates for whole packages at a typical US discount grocer. Your receipt will differ.",
+    share: "Share the list",
+    shareTitle: "Cartfull grocery list",
+    shared: "Shared.",
+    shareCopied: "Copied. Send it as a message.",
+    shareError: "Couldn't share from this browser.",
+    shareTotal: "Estimated total {amount}",
+    shareChecked: "already in cart",
   },
   recipe: {
     back: "Back to the week",
@@ -468,9 +475,9 @@ const es: Messages = {
     },
     diets: {
       none: { label: "Sin preferencia", hint: "Un poco de todo" },
-      vegetarian: { label: "Vegetariana", hint: "Sin carne ni pescado" },
-      keto: { label: "Keto", hint: "Pocos carbohidratos, sin cereales" },
-      high_protein: { label: "Alta en proteína", hint: "30 g o más por cena" },
+      vegetarian: { label: "Vegetariana", hint: "Sin carne, sin pollo, sin pescado · vegetariana" },
+      keto: { label: "Keto", hint: "Menos arroz, pan, pasta y papas · pocos carbohidratos" },
+      high_protein: { label: "Alta en proteína", hint: "Más carne, huevo, pescado y lácteos · más proteína (30 g+ por cena)" },
     },
     cookTimes: {
       fast: { label: "Rápido", hint: "Listo en 25 minutos" },
@@ -555,6 +562,13 @@ const es: Messages = {
     addBack: "Agregar · {amount}",
     addBackLabel: "Agregar {name} otra vez a la lista, {amount}",
     prices: "Precios estimados para paquetes completos de un supermercado de descuento típico de EE. UU. Tu recibo puede ser distinto.",
+    share: "Compartir la lista",
+    shareTitle: "Lista del súper Cartfull",
+    shared: "Compartida.",
+    shareCopied: "Copiada. Envíala como mensaje.",
+    shareError: "No se pudo compartir desde este navegador.",
+    shareTotal: "Total estimado {amount}",
+    shareChecked: "ya en el carrito",
   },
   recipe: {
     back: "Volver a la semana",
