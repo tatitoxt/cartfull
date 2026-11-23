@@ -17,15 +17,17 @@ export interface Reminder {
  * ends. Each id changes per week so a dismissed banner re-arms itself.
  */
 export async function getReminders(session: Session, profile: Profile, entitlement: Entitlement): Promise<Reminder[]> {
-  if (!entitlement.active || (!profile.notify_plan && !profile.notify_shopping && !profile.notify_receipt)) return [];
+  if (!profile.notify_plan && !profile.notify_shopping && !profile.notify_receipt) return [];
   const m = MESSAGES[profile.lang].reminders;
   const date = today();
   const plans = await listPlans(session);
+  const firstId = firstPlanId(plans);
   const current = plans.find((p) => p.week_start <= date && !weekIsOver(p.week_start, date));
   const upcoming = plans.find((p) => p.week_start > date);
   const out: Reminder[] = [];
 
-  if (profile.notify_plan && !upcoming && (current ? weekIsOver(addDays(current.week_start, -2), date) : true)) {
+  // Only subscribers can plan ahead, so the nudge is meaningless without one.
+  if (profile.notify_plan && entitlement.active && !upcoming && (current ? weekIsOver(addDays(current.week_start, -2), date) : true)) {
     const end = current ? addDays(current.week_start, 6) : date;
     out.push({
       id: `plan-${targetWeekStart(date)}`,
@@ -38,9 +40,9 @@ export async function getReminders(session: Session, profile: Profile, entitleme
   if (profile.notify_shopping && current) {
     const { cart, checked } = await loadPlan(session, current, {
       active: entitlement.active,
-      firstId: firstPlanId(plans),
+      firstId,
     });
-    const left = cart.lines.filter((line) => !checked.has(line.ingredient.id)).length;
+    const left = cart.lines.filter((line) => !line.have && !checked.has(line.ingredient.id)).length;
     if (left > 0) {
       out.push({
         id: `shopping-${current.id}-${left}`,
@@ -53,7 +55,13 @@ export async function getReminders(session: Session, profile: Profile, entitleme
 
   if (profile.notify_receipt) {
     const finished = plans
-      .filter((p) => weekIsOver(p.week_start, date) && addDays(p.week_start, 13) >= date && p.spent_cents == null)
+      .filter(
+        (p) =>
+          weekIsOver(p.week_start, date) &&
+          addDays(p.week_start, 13) >= date &&
+          p.spent_cents == null &&
+          (entitlement.active || p.id === firstId),
+      )
       .sort((a, b) => b.week_start.localeCompare(a.week_start))[0];
     if (finished) {
       out.push({
