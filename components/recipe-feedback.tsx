@@ -1,8 +1,32 @@
 "use client";
 
-import { useState, useTransition } from "react";
+import { useEffect, useState, useTransition } from "react";
 import { useMessages } from "@/lib/i18n/locale-provider";
+import { fill } from "@/lib/i18n/messages";
 import { setFavorite, setRating } from "@/lib/app/actions";
+
+/** Every heart for the same slug on a page shares one broadcast, so they flip together. */
+const FAV_EVENT = "cartfull:favorite";
+
+function useFavorite(slug: string, initial: boolean): [boolean, (next: boolean) => void] {
+  const [favorite, setFav] = useState(initial);
+  useEffect(() => setFav(initial), [initial, slug]);
+  useEffect(() => {
+    const sync = (event: Event) => {
+      const detail = (event as CustomEvent<{ slug: string; favorite: boolean }>).detail;
+      if (detail?.slug === slug) setFav(detail.favorite);
+    };
+    window.addEventListener(FAV_EVENT, sync);
+    return () => window.removeEventListener(FAV_EVENT, sync);
+  }, [slug]);
+  return [
+    favorite,
+    (next: boolean) => {
+      setFav(next);
+      window.dispatchEvent(new CustomEvent(FAV_EVENT, { detail: { slug, favorite: next } }));
+    },
+  ];
+}
 
 export function RecipeFeedback({ slug, initialFavorite, initialRating }: {
   slug: string;
@@ -10,9 +34,11 @@ export function RecipeFeedback({ slug, initialFavorite, initialRating }: {
   initialRating: number | null;
 }) {
   const m = useMessages();
-  const [favorite, setFav] = useState(initialFavorite);
+  const [favorite, setFav] = useFavorite(slug, initialFavorite);
   const [rating, setRate] = useState(initialRating);
   const [pending, start] = useTransition();
+
+  useEffect(() => setRate(initialRating), [initialRating, slug]);
 
   const toggleFav = () => {
     const next = !favorite;
@@ -23,13 +49,21 @@ export function RecipeFeedback({ slug, initialFavorite, initialRating }: {
     });
   };
 
-  const rate = (value: number) => {
-    const next = value === rating ? null : value;
-    setRate(next);
+  const rate = (value: number | null) => {
+    const previous = rating;
+    setRate(value);
     start(async () => {
-      const result = await setRating(slug, next);
-      if (!result.ok) setRate(rating);
+      const result = await setRating(slug, value);
+      if (!result.ok) setRate(previous);
     });
+  };
+
+  const keys = (event: React.KeyboardEvent<HTMLDivElement>) => {
+    if (event.key !== "ArrowRight" && event.key !== "ArrowLeft") return;
+    event.preventDefault();
+    const delta = event.key === "ArrowRight" ? 1 : -1;
+    const next = Math.min(5, Math.max(1, (rating ?? (delta > 0 ? 0 : 6)) + delta));
+    rate(next);
   };
 
   return (
@@ -49,15 +83,17 @@ export function RecipeFeedback({ slug, initialFavorite, initialRating }: {
         </svg>
         {favorite ? m.recipe.favorited : m.recipe.favorite}
       </button>
-      <div className="flex items-center gap-1" role="radiogroup" aria-label={m.recipe.rating}>
+      <div className="flex items-center gap-1" role="radiogroup" aria-label={m.recipe.rating} onKeyDown={keys}>
         {[1, 2, 3, 4, 5].map((value) => (
           <button
             key={value}
             type="button"
             role="radio"
             aria-checked={rating === value}
+            aria-label={fill(m.recipe.stars, { count: value })}
+            tabIndex={rating === value || (rating === null && value === 1) ? 0 : -1}
             disabled={pending}
-            onClick={() => rate(value)}
+            onClick={() => rate(value === rating ? null : value)}
             data-testid={`rate-${value}`}
             className={`grid size-11 place-items-center text-2xl transition-colors ${rating !== null && value <= rating ? "text-spend" : "text-fg-faint"}`}
           >
@@ -73,7 +109,7 @@ export function RecipeFeedback({ slug, initialFavorite, initialRating }: {
 /** Compact heart used on plan cards. */
 export function FavoriteToggle({ slug, initial }: { slug: string; initial: boolean }) {
   const m = useMessages();
-  const [favorite, setFav] = useState(initial);
+  const [favorite, setFav] = useFavorite(slug, initial);
   const [pending, start] = useTransition();
   return (
     <button

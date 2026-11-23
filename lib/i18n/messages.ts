@@ -213,6 +213,7 @@ const en = {
     favorite: "Save to favorites",
     favorited: "In your favorites",
     rating: "Your rating",
+    stars: "{count} stars",
     rateHint: "Favorites and 4-5 star recipes show up more often in your weeks; 1-2 stars show up less.",
   },
   account: {
@@ -587,6 +588,7 @@ const es: Messages = {
     favorite: "Guardar en favoritos",
     favorited: "En tus favoritos",
     rating: "Tu puntuación",
+    stars: "{count} estrellas",
     rateHint: "Las favoritas y las recetas con 4-5 estrellas aparecen más seguido en tu semana; las de 1-2 estrellas, menos.",
   },
   account: {

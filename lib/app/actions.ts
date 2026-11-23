@@ -349,23 +349,43 @@ export async function swapMeal(planId: string, day: number, slot: MealType, slug
   return { ok: true };
 }
 
+/** Writes one feedback field without reading the other, so overlapping saves don't clobber it. */
+async function saveFeedback(
+  session: Session,
+  slug: string,
+  patch: { favorite?: boolean; rating?: number | null },
+): Promise<string | null> {
+  const { supabase, userId } = session;
+  const fields = { ...patch, updated_at: new Date().toISOString() };
+  const { error: updateError, data: touched } = await supabase
+    .from("recipe_feedback")
+    .update(fields)
+    .eq("user_id", userId)
+    .eq("recipe_slug", slug)
+    .select("recipe_slug");
+  if (updateError) return updateError.message;
+  if (touched?.length) return null;
+  const { error } = await supabase
+    .from("recipe_feedback")
+    .insert({ user_id: userId, recipe_slug: slug, ...patch });
+  if (!error) return null;
+  // A save landing from another device inserted the row first: merge into it.
+  if (error.code === "23505") {
+    const again = await supabase
+      .from("recipe_feedback")
+      .update(fields)
+      .eq("user_id", userId)
+      .eq("recipe_slug", slug);
+    return again.error?.message ?? null;
+  }
+  return error.message;
+}
+
 export async function setFavorite(slug: string, favorite: boolean): Promise<ActionResult> {
   const session = await requireSession();
   const profile = await getProfile(session);
   if (!recipeBySlug(slug)) return fail("invalid", MESSAGES[profile.lang].actions.mealUnavailable);
-  const { data } = await session.supabase
-    .from("recipe_feedback")
-    .select("rating")
-    .eq("user_id", session.userId)
-    .eq("recipe_slug", slug)
-    .maybeSingle();
-  const { error } = await session.supabase.from("recipe_feedback").upsert({
-    user_id: session.userId,
-    recipe_slug: slug,
-    favorite,
-    rating: (data?.rating as number | null) ?? null,
-    updated_at: new Date().toISOString(),
-  });
+  const error = await saveFeedback(session, slug, { favorite });
   if (error) return fail("failed", MESSAGES[profile.lang].actions.saveItem);
   revalidatePath("/app", "layout");
   return { ok: true };
@@ -377,19 +397,7 @@ export async function setRating(slug: string, rating: number | null): Promise<Ac
   if (!recipeBySlug(slug)) return fail("invalid", MESSAGES[profile.lang].actions.mealUnavailable);
   if (rating !== null && (!Number.isInteger(rating) || rating < 1 || rating > 5))
     return fail("invalid", MESSAGES[profile.lang].actions.invalidAnswers);
-  const { data } = await session.supabase
-    .from("recipe_feedback")
-    .select("favorite")
-    .eq("user_id", session.userId)
-    .eq("recipe_slug", slug)
-    .maybeSingle();
-  const { error } = await session.supabase.from("recipe_feedback").upsert({
-    user_id: session.userId,
-    recipe_slug: slug,
-    favorite: (data?.favorite as boolean) ?? false,
-    rating,
-    updated_at: new Date().toISOString(),
-  });
+  const error = await saveFeedback(session, slug, { rating });
   if (error) return fail("failed", MESSAGES[profile.lang].actions.saveItem);
   revalidatePath("/app", "layout");
   return { ok: true };
