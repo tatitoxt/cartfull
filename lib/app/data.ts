@@ -156,6 +156,7 @@ export function planRequest(
     pantry,
     allergens: profile.allergens,
     dislikes: profile.dislikes,
+    equipment: profile.equipment,
     seed,
     ...overrides,
   };

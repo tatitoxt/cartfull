@@ -25,6 +25,7 @@ export async function POST(request: NextRequest) {
       pantry: new Set(body.pantry),
       allergens: body.allergens,
       dislikes: body.dislikes,
+      equipment: body.equipment,
       seed: 1,
     });
     return NextResponse.json(estimate);
