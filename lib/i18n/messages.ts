@@ -111,7 +111,9 @@ const en = {
       vegan: { label: "Vegan", hint: "No meat, fish, eggs or dairy · plants only" },
       pescatarian: { label: "Pescatarian", hint: "Fish and seafood, no meat, no chicken · pescatarian" },
       keto: { label: "Keto", hint: "Less rice, bread, pasta and potatoes · low carb" },
+      low_carb: { label: "Low carb", hint: "Fewer carbs than usual, not as strict as keto" },
       gluten_free: { label: "Gluten free", hint: "No bread, pasta or flour with gluten · celiac friendly" },
+      dairy_free: { label: "Dairy free", hint: "No milk, cheese, butter or yogurt · lactose friendly" },
       high_protein: { label: "High protein", hint: "More meat, eggs, fish and dairy · more protein (30 g+ per dinner)" },
     },
     cookTimes: {
@@ -502,7 +504,9 @@ const es: Messages = {
       vegan: { label: "Vegana", hint: "Sin carne, pescado, huevos ni lácteos · solo plantas" },
       pescatarian: { label: "Pescetariana", hint: "Pescado y mariscos, sin carne, sin pollo · pescetariana" },
       keto: { label: "Keto", hint: "Menos arroz, pan, pasta y papas · pocos carbohidratos" },
+      low_carb: { label: "Baja en carbos", hint: "Menos carbohidratos que lo usual, no tan estricta como keto" },
       gluten_free: { label: "Sin gluten", hint: "Sin pan, pasta ni harina con gluten · apto celíacos" },
+      dairy_free: { label: "Sin lácteos", hint: "Sin leche, queso, manteca ni yogur · apto intolerantes a la lactosa" },
       high_protein: { label: "Alta en proteína", hint: "Más carne, huevo, pescado y lácteos · más proteína (30 g+ por cena)" },
     },
     cookTimes: {

@@ -247,7 +247,7 @@ export function GroceryList({
                             <span className="text-accent-deep"> · {fill(m.list.haveSome, { qty: amount(line.haveQty, line.unit, lang, units) })}</span>
                           )}
                         </span>
-                        <span className="tnum mt-0.5 block w-fit text-sm font-semibold" data-testid="item-price">
+                        <span className="tnum mt-0.5 block w-fit text-sm font-semibold text-spend" data-testid="item-price">
                           {moneyExact(line.cents, lang)}
                         </span>
                       </span>

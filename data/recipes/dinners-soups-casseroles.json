@@ -4,10 +4,11 @@
     "name": "Cuban-Style Black Bean Soup",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian",
+      "dairy_free",
+      "gluten_free",
       "pescatarian",
       "vegan",
-      "gluten_free"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 40,
@@ -112,6 +113,7 @@
     "name": "Pasta e Fagioli",
     "meal_type": "dinner",
     "diet_tags": [
+      "dairy_free",
       "pescatarian",
       "vegan",
       "vegetarian"
@@ -219,6 +221,7 @@
     "name": "Butternut Squash Soup",
     "meal_type": "dinner",
     "diet_tags": [
+      "dairy_free",
       "pescatarian",
       "vegan",
       "vegetarian"
@@ -410,10 +413,11 @@
     "name": "Moroccan-Style Chickpea Stew",
     "meal_type": "dinner",
     "diet_tags": [
-      "vegetarian",
+      "dairy_free",
+      "gluten_free",
       "pescatarian",
       "vegan",
-      "gluten_free"
+      "vegetarian"
     ],
     "servings": 4,
     "prep_minutes": 40,
@@ -813,6 +817,7 @@
     "name": "Tuscan White Bean and Kale Soup",
     "meal_type": "dinner",
     "diet_tags": [
+      "dairy_free",
       "pescatarian",
       "vegan",
       "vegetarian"
@@ -923,6 +928,7 @@
     "meal_type": "dinner",
     "diet_tags": [
       "keto",
+      "low_carb",
       "pescatarian",
       "vegetarian"
     ],
@@ -1023,8 +1029,9 @@
     "name": "Sausage, Kale and Cauliflower Soup",
     "meal_type": "dinner",
     "diet_tags": [
+      "gluten_free",
       "keto",
-      "gluten_free"
+      "low_carb"
     ],
     "servings": 4,
     "prep_minutes": 40,
@@ -1113,9 +1120,10 @@
     "name": "Buffalo Chicken Cauliflower Casserole",
     "meal_type": "dinner",
     "diet_tags": [
-      "keto",
+      "gluten_free",
       "high_protein",
-      "gluten_free"
+      "keto",
+      "low_carb"
     ],
     "servings": 4,
     "prep_minutes": 45,
@@ -1210,8 +1218,10 @@
     "name": "Cabbage and Smoked Sausage Soup",
     "meal_type": "dinner",
     "diet_tags": [
+      "dairy_free",
+      "gluten_free",
       "keto",
-      "gluten_free"
+      "low_carb"
     ],
     "servings": 4,
     "prep_minutes": 40,
@@ -1316,9 +1326,10 @@
     "name": "Jalapeño Popper Chicken Casserole",
     "meal_type": "dinner",
     "diet_tags": [
-      "keto",
+      "gluten_free",
       "high_protein",
-      "gluten_free"
+      "keto",
+      "low_carb"
     ],
     "servings": 4,
     "prep_minutes": 50,
@@ -1407,8 +1418,10 @@
     "name": "Thai Coconut Curry Chicken Soup",
     "meal_type": "dinner",
     "diet_tags": [
+      "dairy_free",
+      "high_protein",
       "keto",
-      "high_protein"
+      "low_carb"
     ],
     "servings": 4,
     "prep_minutes": 30,
@@ -1941,6 +1954,7 @@
     "name": "Albondigas (Mexican Meatball Soup)",
     "meal_type": "dinner",
     "diet_tags": [
+      "dairy_free",
       "gluten_free"
     ],
     "servings": 4,
@@ -2283,6 +2297,7 @@
     "name": "Slow Cooker Green Chile Pork Stew",
     "meal_type": "dinner",
     "diet_tags": [
+      "dairy_free",
       "high_protein"
     ],
     "servings": 6,
@@ -2500,6 +2515,7 @@
     "name": "Hamburger Vegetable Soup",
     "meal_type": "dinner",
     "diet_tags": [
+      "dairy_free",
       "gluten_free"
     ],
     "servings": 6,
@@ -2699,6 +2715,7 @@
     "name": "Smoked Sausage and Lentil Stew",
     "meal_type": "dinner",
     "diet_tags": [
+      "dairy_free",
       "gluten_free"
     ],
     "servings": 4,
@@ -2908,7 +2925,9 @@
     "slug": "ham-and-white-bean-soup",
     "name": "Ham and White Bean Soup",
     "meal_type": "dinner",
-    "diet_tags": [],
+    "diet_tags": [
+      "dairy_free"
+    ],
     "servings": 4,
     "prep_minutes": 35,
     "batch_friendly": true,
@@ -3441,6 +3460,7 @@
     "name": "Chicken and Sausage Gumbo",
     "meal_type": "dinner",
     "diet_tags": [
+      "dairy_free",
       "high_protein"
     ],
     "servings": 6,

@@ -50,8 +50,9 @@ export default async function RecipePage({ params }: { params: Promise<{ slug: s
       {(() => {
         const nutrition = nutritionPerServing(recipe);
         return nutrition ? (
-          <div className="mt-3">
-            <ul className="tnum flex flex-wrap gap-2 text-sm" aria-label={m.recipe.nutritionLabel}>
+          <div className="mt-6">
+            <p className="text-xs font-semibold uppercase tracking-wider text-fg-faint">{m.recipe.nutritionLabel}</p>
+            <ul className="tnum mt-2 flex flex-wrap gap-2 text-sm" aria-label={m.recipe.nutritionLabel}>
               <li className="rounded-full bg-accent-soft px-3 py-1 font-semibold text-accent-deep">{fill(m.recipe.nutritionKcal, { kcal: nutrition.kcal })}</li>
               <li className="rounded-full bg-budget-soft px-3 py-1 font-semibold text-budget">{fill(m.recipe.nutritionProtein, { protein: nutrition.protein })}</li>
               <li className="rounded-full bg-spend-soft px-3 py-1 font-semibold text-spend">{fill(m.recipe.nutritionCarbs, { carbs: nutrition.carbs })}</li>
