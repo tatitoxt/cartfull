@@ -12,11 +12,12 @@
     "batch_friendly": false,
     "description": "Juicy skillet cheeseburgers wrapped in crisp lettuce with tomato, onion and a quick burger sauce.",
     "steps": [
-      "Mix the beef with the garlic powder, salt and pepper and shape into 4 patties.",
-      "Cook the patties in a hot skillet 4 minutes per side.",
-      "Top each patty with a cheese slice and cover 1 minute to melt.",
-      "Stir the mayo and mustard together for the sauce.",
-      "Wrap each burger in large lettuce leaves with tomato, onion and sauce."
+      "Mix the beef with the garlic powder, salt and pepper with your hands just until combined, then shape it into 4 flat patties a little wider than your palm.",
+      "Slice the tomato and onion, separate the largest lettuce leaves, and stir the mayo and mustard together for the sauce.",
+      "Heat a large skillet over medium-high heat for 2 minutes; no oil is needed because the beef releases its own fat.",
+      "Cook the patties 4 minutes without moving them until a dark crust forms, then flip and cook 3 to 4 minutes more until no pink remains in the center ({160F}).",
+      "Lay a cheese slice on each patty, cover the skillet and cook 1 minute until the cheese melts.",
+      "Stack 2 lettuce leaves per burger, add the patty, tomato, onion and a spoonful of sauce, and fold the leaves around it."
     ],
     "ingredients": [
       {
@@ -30,17 +31,20 @@
       {
         "id": "romaine",
         "qty": 2,
-        "note": "large outer leaves for wrapping"
+        "note": "large outer leaves for wrapping",
+        "note_es": "hojas exteriores grandes para envolver"
       },
       {
         "id": "tomato",
         "qty": 1,
-        "note": "sliced"
+        "note": "sliced",
+        "note_es": "en rodajas"
       },
       {
         "id": "onion_yellow",
         "qty": 0.5,
-        "note": "thinly sliced"
+        "note": "thinly sliced",
+        "note_es": "en rodajas finas"
       },
       {
         "id": "mayo",
@@ -63,6 +67,22 @@
         "qty": 0.5
       }
     ],
+    "name_es": "Hamburguesas con queso envueltas en lechuga",
+    "description_es": "Hamburguesas jugosas a la sartén con queso, envueltas en lechuga crujiente con tomate, cebolla y una salsa rápida.",
+    "steps_es": [
+      "Mezcla la carne con el ajo en polvo, la sal y la pimienta con las manos, solo hasta integrar, y forma 4 hamburguesas planas un poco más anchas que la palma de tu mano.",
+      "Corta el tomate y la cebolla en rodajas, separa las hojas más grandes de la lechuga y mezcla la mayonesa con la mostaza para la salsa.",
+      "Calienta una sartén grande a fuego medio-alto durante 2 minutos; no hace falta aceite porque la carne suelta su propia grasa.",
+      "Cocina las hamburguesas 4 minutos sin moverlas hasta que se forme una costra oscura, voltéalas y cocina de 3 a 4 minutos más hasta que el centro ya no esté rosado ({160F}).",
+      "Pon una rebanada de queso sobre cada hamburguesa, tapa la sartén y cocina 1 minuto hasta que el queso se derrita.",
+      "Apila 2 hojas de lechuga por hamburguesa, coloca la carne, el tomate, la cebolla y una cucharada de salsa, y envuelve con las hojas."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 15,
+    "tip": "If the leaves tear, chop the lettuce and serve the patties on top as a burger salad.",
+    "tip_es": "Si las hojas se rompen, pica la lechuga y sirve las hamburguesas encima como ensalada.",
     "photo_url": "https://images.unsplash.com/photo-1764018601476-e5fac1f27893",
     "photo_credit": {
       "name": "Barcello's fusion",
@@ -81,11 +101,12 @@
     "batch_friendly": false,
     "description": "Everything inside an egg roll, minus the wrapper: ground pork and cabbage stir-fried with ginger, garlic and soy.",
     "steps": [
-      "Brown the pork in a large skillet over medium-high heat, breaking it up.",
-      "Stir in the garlic, ginger and carrot and cook 1 minute.",
-      "Add the coleslaw mix, soy sauce and rice vinegar and toss 4 to 5 minutes until just tender.",
-      "Drizzle with sesame oil and sriracha.",
-      "Top with sliced green onions and serve."
+      "Mince the garlic, grate the ginger, shred the carrot on the large holes of a grater and slice the green onions.",
+      "Heat a large skillet or wok over medium-high heat and add the pork; cook 5 to 6 minutes, breaking it up with a spoon, until browned with no pink left.",
+      "Stir in the garlic, ginger and carrot and cook 1 minute until fragrant.",
+      "Add the coleslaw mix, soy sauce and rice vinegar and toss 4 to 5 minutes until the cabbage wilts but still has some crunch.",
+      "Take the pan off the heat, drizzle with the sesame oil and sriracha and toss once more.",
+      "Divide among bowls and top with the green onions."
     ],
     "ingredients": [
       {
@@ -99,22 +120,26 @@
       {
         "id": "carrot",
         "qty": 0.25,
-        "note": "shredded"
+        "note": "shredded",
+        "note_es": "rallada"
       },
       {
         "id": "green_onion",
         "qty": 0.5,
-        "note": "sliced"
+        "note": "sliced",
+        "note_es": "en rodajitas"
       },
       {
         "id": "garlic",
         "qty": 3,
-        "note": "minced"
+        "note": "minced",
+        "note_es": "picado fino"
       },
       {
         "id": "ginger",
         "qty": 1,
-        "note": "grated"
+        "note": "grated",
+        "note_es": "rallado"
       },
       {
         "id": "soy_sauce",
@@ -133,6 +158,22 @@
         "qty": 1
       }
     ],
+    "name_es": "Cerdo con repollo estilo rollito primavera",
+    "description_es": "Todo el relleno de un rollito primavera, sin la masa: cerdo molido y repollo salteados con jengibre, ajo y salsa de soya.",
+    "steps_es": [
+      "Pica fino el ajo, ralla el jengibre, ralla la zanahoria por el lado grueso del rallador y corta el cebollín en rodajitas.",
+      "Calienta una sartén grande o un wok a fuego medio-alto y agrega el cerdo; cocina de 5 a 6 minutos, deshaciéndolo con una cuchara, hasta que esté dorado y sin partes rosadas.",
+      "Agrega el ajo, el jengibre y la zanahoria y cocina 1 minuto hasta que suelten aroma.",
+      "Añade la mezcla de repollo, la salsa de soya y el vinagre de arroz y saltea de 4 a 5 minutos hasta que el repollo se ablande pero siga un poco crujiente.",
+      "Retira la sartén del fuego, rocía con el aceite de sésamo y la sriracha y mezcla una vez más.",
+      "Reparte en tazones y termina con el cebollín."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 18,
+    "tip": "Serve the sriracha at the table if anyone avoids spicy food. Leftovers keep 3 days in the fridge and reheat well in a skillet.",
+    "tip_es": "Sirve la sriracha en la mesa si alguien no come picante. Las sobras duran 3 días en el refrigerador y se recalientan bien en sartén.",
     "photo_url": "https://images.unsplash.com/photo-1597130869926-224e85944619",
     "photo_credit": {
       "name": "ABHISHEK HAJARE",
@@ -152,18 +193,19 @@
     "batch_friendly": false,
     "description": "Golden cauliflower rice stir-fried with chicken, scrambled egg and green onion, ready faster than takeout.",
     "steps": [
-      "Cut the chicken into bite-size pieces and season with salt and turmeric.",
-      "Stir-fry the chicken in the vegetable oil 6 to 7 minutes until cooked through, then set aside.",
-      "Scramble the eggs in the same pan and break them into small pieces.",
-      "Add the garlic, carrot and cauliflower rice and cook 5 minutes.",
-      "Return the chicken, add the soy sauce and sesame oil and toss.",
-      "Top with green onions."
+      "Cut the chicken into bite-size pieces and toss with the salt and turmeric. Mince the garlic, dice the carrot small and slice the green onions.",
+      "Heat the vegetable oil in a large skillet or wok over medium-high heat. Add the chicken in one layer and cook 6 to 7 minutes, stirring now and then, until golden and no longer pink inside; move it to a plate.",
+      "Lower the heat to medium, crack the eggs into the same pan and stir 1 minute until just set, breaking them into small pieces.",
+      "Add the garlic and carrot and cook 1 minute. Turn the heat back to medium-high, add the cauliflower rice and cook 4 to 5 minutes, stirring, until tender and the pan looks dry.",
+      "Return the chicken, add the soy sauce and sesame oil and toss 1 minute until everything is hot.",
+      "Serve topped with the green onions."
     ],
     "ingredients": [
       {
         "id": "chicken_breast",
         "qty": 1.25,
-        "note": "diced"
+        "note": "diced",
+        "note_es": "en cubos"
       },
       {
         "id": "cauliflower_rice",
@@ -176,17 +218,20 @@
       {
         "id": "carrot",
         "qty": 0.25,
-        "note": "finely diced"
+        "note": "finely diced",
+        "note_es": "en cubitos"
       },
       {
         "id": "green_onion",
         "qty": 0.5,
-        "note": "sliced"
+        "note": "sliced",
+        "note_es": "en rodajitas"
       },
       {
         "id": "garlic",
         "qty": 3,
-        "note": "minced"
+        "note": "minced",
+        "note_es": "picado fino"
       },
       {
         "id": "soy_sauce",
@@ -209,6 +254,22 @@
         "qty": 0.5
       }
     ],
+    "name_es": "Arroz frito de coliflor con pollo",
+    "description_es": "Arroz de coliflor dorado y salteado con pollo, huevo revuelto y cebollín, listo más rápido que un pedido a domicilio.",
+    "steps_es": [
+      "Corta el pollo en trozos del tamaño de un bocado y mézclalo con la sal y la cúrcuma. Pica fino el ajo, corta la zanahoria en cubitos y el cebollín en rodajitas.",
+      "Calienta el aceite vegetal en una sartén grande o un wok a fuego medio-alto. Agrega el pollo en una sola capa y cocina de 6 a 7 minutos, revolviendo de vez en cuando, hasta que esté dorado y sin partes rosadas por dentro; pásalo a un plato.",
+      "Baja el fuego a medio, rompe los huevos en la misma sartén y revuelve 1 minuto hasta que apenas cuajen, separándolos en trozos pequeños.",
+      "Agrega el ajo y la zanahoria y cocina 1 minuto. Sube el fuego a medio-alto, añade el arroz de coliflor y cocina de 4 a 5 minutos, revolviendo, hasta que esté tierno y la sartén se vea seca.",
+      "Regresa el pollo a la sartén, agrega la salsa de soya y el aceite de sésamo y mezcla 1 minuto hasta que todo esté caliente.",
+      "Sirve con el cebollín por encima."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 22,
+    "tip": "Frozen riced cauliflower goes in straight from the bag; keep cooking until the water it releases has evaporated.",
+    "tip_es": "El arroz de coliflor congelado va directo de la bolsa a la sartén; cocina hasta que se evapore el agua que suelta.",
     "photo_url": "https://images.unsplash.com/photo-1679735386220-e8888925676e",
     "photo_credit": {
       "name": "Alex Bayev",
@@ -228,18 +289,19 @@
     "batch_friendly": false,
     "description": "Taco-seasoned chicken thighs with peppers, salsa and cauliflower rice under melted cheddar, all in one pan.",
     "steps": [
-      "Cut the chicken into small pieces and toss with the taco seasoning.",
-      "Brown the chicken in the oil 6 to 8 minutes.",
-      "Add the onion and bell pepper and cook 4 minutes.",
-      "Stir in the cauliflower rice and salsa and cook 5 minutes until tender.",
-      "Sprinkle with cheddar, cover and let it melt.",
-      "Finish with cilantro and lime wedges."
+      "Cut the chicken into small bite-size pieces and toss with the taco seasoning. Dice the onion and bell pepper, chop the cilantro and cut the lime into wedges.",
+      "Heat the oil in a large skillet over medium-high heat. Add the chicken and cook 6 to 8 minutes, stirring a few times, until browned and cooked through.",
+      "Add the onion and bell pepper and cook 4 minutes until they soften.",
+      "Stir in the cauliflower rice and salsa, lower the heat to medium and cook 5 minutes, stirring, until the cauliflower is tender and most of the liquid has cooked off.",
+      "Sprinkle the cheddar over the top, cover and cook over low heat 2 minutes until the cheese melts.",
+      "Scatter with the cilantro and serve with the lime wedges."
     ],
     "ingredients": [
       {
         "id": "chicken_thigh",
         "qty": 1.25,
-        "note": "boneless, diced"
+        "note": "boneless, diced",
+        "note_es": "sin hueso, en cubos"
       },
       {
         "id": "cauliflower_rice",
@@ -248,12 +310,14 @@
       {
         "id": "bell_pepper",
         "qty": 1,
-        "note": "diced"
+        "note": "diced",
+        "note_es": "en cubos"
       },
       {
         "id": "onion_yellow",
         "qty": 1,
-        "note": "diced"
+        "note": "diced",
+        "note_es": "en cubos"
       },
       {
         "id": "salsa",
@@ -270,18 +334,36 @@
       {
         "id": "cilantro",
         "qty": 0.5,
-        "note": "chopped"
+        "note": "chopped",
+        "note_es": "picado"
       },
       {
         "id": "lime",
         "qty": 1,
-        "note": "cut in wedges"
+        "note": "cut in wedges",
+        "note_es": "en gajos"
       },
       {
         "id": "olive_oil",
         "qty": 1
       }
     ],
+    "name_es": "Sartén de pollo estilo burrito con arroz de coliflor",
+    "description_es": "Muslos de pollo con sazonador para tacos, pimiento, salsa y arroz de coliflor bajo queso cheddar derretido, todo en una sartén.",
+    "steps_es": [
+      "Corta el pollo en trozos pequeños y mézclalo con el sazonador para tacos. Corta la cebolla y el pimiento en cubos, pica el cilantro y corta la lima en gajos.",
+      "Calienta el aceite en una sartén grande a fuego medio-alto. Agrega el pollo y cocina de 6 a 8 minutos, revolviendo algunas veces, hasta que esté dorado y bien cocido.",
+      "Agrega la cebolla y el pimiento y cocina 4 minutos hasta que se ablanden.",
+      "Incorpora el arroz de coliflor y la salsa, baja el fuego a medio y cocina 5 minutos, revolviendo, hasta que la coliflor esté tierna y casi todo el líquido se haya evaporado.",
+      "Espolvorea el cheddar por encima, tapa y cocina a fuego bajo 2 minutos hasta que el queso se derrita.",
+      "Termina con el cilantro y sirve con los gajos de lima."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 20,
+    "tip": "Keeps 3 days in the fridge; reheat in a skillet over medium heat so the cauliflower does not turn watery.",
+    "tip_es": "Dura 3 días en el refrigerador; recalienta en sartén a fuego medio para que la coliflor no quede aguada.",
     "photo_url": "https://images.unsplash.com/photo-1665332111329-dd9d7fa46c74",
     "photo_credit": {
       "name": "Keesha's Kitchen",
@@ -301,11 +383,11 @@
     "batch_friendly": false,
     "description": "A hearty ground turkey and tomato sauce spooned over tender zucchini noodles with plenty of parmesan.",
     "steps": [
-      "Cut the zucchini into long thin noodles with a spiralizer or vegetable peeler.",
-      "Brown the turkey in the olive oil with the garlic.",
-      "Stir in the crushed tomatoes, tomato paste, Italian seasoning and salt and simmer 12 minutes.",
-      "Saute the zucchini noodles in a second pan 2 to 3 minutes until just tender.",
-      "Top the noodles with the sauce and parmesan."
+      "Cut the zucchini into long thin noodles with a spiralizer, or shave them into wide ribbons with a vegetable peeler, stopping when you reach the seedy core. Mince the garlic.",
+      "Heat the olive oil in a large skillet over medium-high heat. Add the turkey and cook 6 to 7 minutes, breaking it up, until no pink remains; stir in the garlic and cook 30 seconds.",
+      "Stir in the crushed tomatoes, tomato paste, Italian seasoning and salt. When it bubbles, lower the heat to medium-low and simmer 12 minutes, stirring now and then, until thick.",
+      "While the sauce simmers, heat a second, dry skillet over medium-high heat and cook the zucchini noodles 2 to 3 minutes, tossing, until just tender but not limp; pour off any liquid.",
+      "Divide the noodles among plates, spoon the sauce over them and finish with the parmesan."
     ],
     "ingredients": [
       {
@@ -327,7 +409,8 @@
       {
         "id": "garlic",
         "qty": 3,
-        "note": "minced"
+        "note": "minced",
+        "note_es": "picado fino"
       },
       {
         "id": "italian_seasoning",
@@ -346,6 +429,21 @@
         "qty": 1
       }
     ],
+    "name_es": "Boloñesa de pavo con fideos de calabacín",
+    "description_es": "Una salsa sustanciosa de pavo molido y tomate servida sobre fideos tiernos de calabacín con bastante parmesano.",
+    "steps_es": [
+      "Corta el calabacín en fideos largos y finos con un espiralizador, o sácale cintas anchas con un pelador de verduras hasta llegar al centro con semillas. Pica fino el ajo.",
+      "Calienta el aceite de oliva en una sartén grande a fuego medio-alto. Agrega el pavo y cocina de 6 a 7 minutos, deshaciéndolo, hasta que no queden partes rosadas; añade el ajo y cocina 30 segundos.",
+      "Incorpora los tomates triturados, la pasta de tomate, el condimento italiano y la sal. Cuando burbujee, baja el fuego a medio-bajo y cocina 12 minutos, revolviendo de vez en cuando, hasta que espese.",
+      "Mientras se cocina la salsa, calienta una segunda sartén sin aceite a fuego medio-alto y saltea los fideos de calabacín de 2 a 3 minutos, hasta que estén apenas tiernos pero firmes; escurre el líquido que suelten.",
+      "Reparte los fideos en los platos, sirve la salsa encima y termina con el parmesano."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 20,
+    "tip": "The sauce freezes well for 3 months. Cook the zucchini fresh each time; it turns watery when reheated.",
+    "tip_es": "La salsa se congela bien hasta 3 meses. Cocina el calabacín en el momento, porque recalentado suelta agua.",
     "photo_url": "https://images.unsplash.com/photo-1671225548130-7ed32615ff3e",
     "photo_credit": {
       "name": "Sergi Ferrete",
@@ -365,11 +463,13 @@
     "batch_friendly": false,
     "description": "Pan-seared chicken breasts simmered in a lemon, garlic and parmesan cream sauce, served with steamed broccoli.",
     "steps": [
-      "Season the chicken with Italian seasoning, salt and pepper.",
-      "Sear in the olive oil and butter 5 to 6 minutes per side, then set aside.",
-      "Cook the garlic 30 seconds, then add the broth, cream and juice of half the lemon.",
-      "Simmer 4 minutes, stir in the parmesan and return the chicken with the remaining lemon, sliced.",
-      "Steam the broccoli and serve it alongside with the sauce spooned over."
+      "Slice each chicken breast in half horizontally into two thinner cutlets so they cook evenly, and season both sides with the Italian seasoning, salt and pepper. Mince the garlic, juice half the lemon and slice the other half.",
+      "Heat the olive oil and butter in a large skillet over medium-high heat until the butter foams. Cook the chicken 4 to 5 minutes per side until golden and firm to the touch ({165F} inside), then move it to a plate.",
+      "Lower the heat to medium, add the garlic and stir 30 seconds until fragrant. Pour in the broth, cream and lemon juice, scraping up the browned bits from the pan.",
+      "Simmer 4 minutes until the sauce coats the back of a spoon, then stir in the parmesan.",
+      "Meanwhile, put the frozen broccoli in a pot with a splash of water, cover and steam over medium-high heat 4 to 5 minutes until bright green and tender; drain.",
+      "Return the chicken and its juices to the skillet with the lemon slices and warm through 1 minute.",
+      "Serve the chicken with the broccoli and spoon the sauce over both."
     ],
     "ingredients": [
       {
@@ -387,7 +487,8 @@
       {
         "id": "garlic",
         "qty": 4,
-        "note": "minced"
+        "note": "minced",
+        "note_es": "picado fino"
       },
       {
         "id": "lemon",
@@ -422,6 +523,23 @@
         "qty": 0.5
       }
     ],
+    "name_es": "Pollo cremoso al limón y ajo",
+    "description_es": "Pechugas doradas en sartén y terminadas en una salsa cremosa de limón, ajo y parmesano, servidas con brócoli al vapor.",
+    "steps_es": [
+      "Corta cada pechuga por la mitad a lo largo, en dos filetes más delgados, para que se cocinen parejo, y sazona ambos lados con el condimento italiano, la sal y la pimienta. Pica fino el ajo, exprime medio limón y corta la otra mitad en rodajas.",
+      "Calienta el aceite de oliva y la mantequilla en una sartén grande a fuego medio-alto hasta que la mantequilla haga espuma. Cocina el pollo de 4 a 5 minutos por lado hasta que esté dorado y firme al tacto ({165F} por dentro) y pásalo a un plato.",
+      "Baja el fuego a medio, agrega el ajo y revuelve 30 segundos hasta que suelte aroma. Vierte el caldo, la crema y el jugo de limón, raspando lo dorado del fondo de la sartén.",
+      "Cocina a fuego suave 4 minutos hasta que la salsa cubra el dorso de una cuchara y luego incorpora el parmesano.",
+      "Mientras tanto, pon el brócoli congelado en una olla con un chorrito de agua, tapa y cocina al vapor a fuego medio-alto de 4 a 5 minutos hasta que esté verde brillante y tierno; escurre.",
+      "Regresa el pollo con sus jugos a la sartén junto con las rodajas de limón y calienta 1 minuto.",
+      "Sirve el pollo con el brócoli y baña ambos con la salsa."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 22,
+    "tip": "Keep the sauce at a gentle simmer; cream can separate if it boils hard after the lemon goes in.",
+    "tip_es": "Mantén la salsa a fuego suave; la crema puede cortarse si hierve fuerte después de agregar el limón.",
     "photo_url": "https://images.unsplash.com/photo-1586530844517-791ce35ad21d",
     "photo_credit": {
       "name": "Eiliv Aceron",
@@ -440,11 +558,12 @@
     "batch_friendly": true,
     "description": "Browned Italian sausage with zucchini, bell peppers and onion in one skillet; it reheats well for lunches.",
     "steps": [
-      "Slice the sausage into thick coins and brown in the olive oil 6 to 8 minutes.",
-      "Add the onion and bell peppers and cook 5 minutes.",
-      "Add the zucchini, garlic, Italian seasoning and pepper flakes.",
-      "Cook 6 to 8 minutes until the vegetables are tender and the sausage is cooked through.",
-      "Sprinkle with parmesan."
+      "Slice the sausage into thick coins (it is easier while the sausage is very cold). Cut the zucchini into half-moons and the bell peppers into strips, slice the onion and mince the garlic.",
+      "Heat the olive oil in a large skillet over medium-high heat. Add the sausage and cook 6 to 8 minutes, turning the pieces, until browned on both sides.",
+      "Add the onion and bell peppers and cook 5 minutes, stirring, until they start to soften.",
+      "Add the zucchini, garlic, Italian seasoning and pepper flakes and lower the heat to medium.",
+      "Cook 6 to 8 minutes, stirring now and then, until the vegetables are tender and the sausage shows no pink in the center.",
+      "Sprinkle with the parmesan and serve."
     ],
     "ingredients": [
       {
@@ -454,22 +573,26 @@
       {
         "id": "zucchini",
         "qty": 2,
-        "note": "cut in half-moons"
+        "note": "cut in half-moons",
+        "note_es": "en medias lunas"
       },
       {
         "id": "bell_pepper",
         "qty": 2,
-        "note": "cut in strips"
+        "note": "cut in strips",
+        "note_es": "en tiras"
       },
       {
         "id": "onion_yellow",
         "qty": 1,
-        "note": "sliced"
+        "note": "sliced",
+        "note_es": "en tiras"
       },
       {
         "id": "garlic",
         "qty": 3,
-        "note": "minced"
+        "note": "minced",
+        "note_es": "picado fino"
       },
       {
         "id": "olive_oil",
@@ -488,6 +611,22 @@
         "qty": 0.25
       }
     ],
+    "name_es": "Sartén de salchicha italiana, calabacín y pimiento",
+    "description_es": "Salchicha italiana dorada con calabacín, pimientos y cebolla en una sola sartén; se recalienta muy bien para el almuerzo.",
+    "steps_es": [
+      "Corta la salchicha en rodajas gruesas (es más fácil si está bien fría). Corta el calabacín en medias lunas y los pimientos en tiras, corta la cebolla en tiras y pica fino el ajo.",
+      "Calienta el aceite de oliva en una sartén grande a fuego medio-alto. Agrega la salchicha y cocina de 6 a 8 minutos, volteando las rodajas, hasta que se doren por ambos lados.",
+      "Agrega la cebolla y los pimientos y cocina 5 minutos, revolviendo, hasta que empiecen a ablandarse.",
+      "Añade el calabacín, el ajo, el condimento italiano y el chile en hojuelas y baja el fuego a medio.",
+      "Cocina de 6 a 8 minutos, revolviendo de vez en cuando, hasta que las verduras estén tiernas y la salchicha ya no esté rosada en el centro.",
+      "Espolvorea con el parmesano y sirve."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 20,
+    "tip": "Keeps 4 days in the fridge and reheats well in the microwave or a skillet; pack it in containers for lunches.",
+    "tip_es": "Dura 4 días en el refrigerador y se recalienta bien en microondas o sartén; guárdalo en recipientes para el almuerzo.",
     "photo_url": "https://images.unsplash.com/photo-1698843813577-db28459556b0",
     "photo_credit": {
       "name": "Elena Leya",
@@ -506,22 +645,24 @@
     "batch_friendly": false,
     "description": "Salmon fillets and broccoli roasted together on one pan with garlic, butter and lemon.",
     "steps": [
-      "Heat the oven to 425°F.",
-      "Toss the broccoli florets with the olive oil, garlic, salt and pepper on a sheet pan and roast 8 minutes.",
-      "Add the salmon to the pan, dot with butter and top with lemon slices.",
-      "Roast 10 to 12 minutes until the salmon flakes easily.",
-      "Squeeze the remaining lemon over everything."
+      "Heat the oven to {425F}. Cut the broccoli into bite-size florets, mince the garlic and cut half the lemon into thin slices.",
+      "Toss the broccoli on a large sheet pan with the olive oil, garlic, pepper and most of the salt, spread it in one layer and roast 8 minutes.",
+      "Push the broccoli to the sides and lay the salmon in the middle, skin side down. Sprinkle the fish with the remaining salt, dot each fillet with butter and top with the lemon slices.",
+      "Roast 10 to 12 minutes until the salmon flakes easily with a fork and the broccoli is browned at the tips.",
+      "Squeeze the remaining lemon half over everything and serve."
     ],
     "ingredients": [
       {
         "id": "salmon",
         "qty": 1,
-        "note": "4 fillets"
+        "note": "4 fillets",
+        "note_es": "4 filetes"
       },
       {
         "id": "broccoli",
         "qty": 2,
-        "note": "cut in florets"
+        "note": "cut in florets",
+        "note_es": "en ramitos"
       },
       {
         "id": "olive_oil",
@@ -530,7 +671,8 @@
       {
         "id": "garlic",
         "qty": 3,
-        "note": "minced"
+        "note": "minced",
+        "note_es": "picado fino"
       },
       {
         "id": "butter",
@@ -549,6 +691,21 @@
         "qty": 0.5
       }
     ],
+    "name_es": "Salmón al limón con brócoli al horno",
+    "description_es": "Filetes de salmón y brócoli asados juntos en una sola bandeja con ajo, mantequilla y limón.",
+    "steps_es": [
+      "Precalienta el horno a {425F}. Corta el brócoli en ramitos del tamaño de un bocado, pica fino el ajo y corta medio limón en rodajas finas.",
+      "Mezcla el brócoli en una bandeja grande para horno con el aceite de oliva, el ajo, la pimienta y casi toda la sal, distribúyelo en una sola capa y hornea 8 minutos.",
+      "Mueve el brócoli hacia los lados y coloca el salmón en el centro, con la piel hacia abajo. Espolvorea el pescado con el resto de la sal, reparte trocitos de mantequilla sobre cada filete y cubre con las rodajas de limón.",
+      "Hornea de 10 a 12 minutos hasta que el salmón se separe fácilmente con un tenedor y el brócoli tenga las puntas doradas.",
+      "Exprime la otra mitad del limón sobre todo y sirve."
+    ],
+    "equipment": [
+      "oven"
+    ],
+    "active_minutes": 10,
+    "tip": "Flake leftover salmon over a salad the next day and eat it cold; reheated salmon dries out fast.",
+    "tip_es": "Desmenuza el salmón que sobre en una ensalada al día siguiente y cómelo frío; recalentado se seca rápido.",
     "photo_url": "https://images.unsplash.com/photo-1627857638952-642f8cbba8da",
     "photo_credit": {
       "name": "Ben Libby",
@@ -568,11 +725,11 @@
     "batch_friendly": false,
     "description": "Taco-seasoned ground turkey over crisp romaine with tomato, cheddar, avocado, salsa and sour cream; no chips needed.",
     "steps": [
-      "Brown the turkey in a skillet, breaking it up, 7 to 8 minutes.",
-      "Stir in the taco seasoning and a splash of water and simmer 2 minutes.",
-      "Chop the romaine and divide among 4 bowls.",
-      "Top with the turkey, tomato, cheddar and avocado.",
-      "Finish with salsa and sour cream."
+      "Heat a large skillet over medium-high heat and add the turkey; cook 7 to 8 minutes, breaking it up, until browned and no pink remains.",
+      "Stir in the taco seasoning and a splash of water, lower the heat to medium and simmer 2 minutes until the liquid thickens and coats the meat.",
+      "While the turkey cooks, chop the romaine and dice the tomatoes and avocado.",
+      "Divide the romaine among 4 bowls and top with the warm turkey, tomato, cheddar and avocado.",
+      "Finish each bowl with a spoonful of salsa and one of sour cream."
     ],
     "ingredients": [
       {
@@ -586,12 +743,14 @@
       {
         "id": "romaine",
         "qty": 2,
-        "note": "chopped"
+        "note": "chopped",
+        "note_es": "en trozos"
       },
       {
         "id": "tomato",
         "qty": 2,
-        "note": "diced"
+        "note": "diced",
+        "note_es": "en cubos"
       },
       {
         "id": "cheddar",
@@ -600,7 +759,8 @@
       {
         "id": "avocado",
         "qty": 1,
-        "note": "diced"
+        "note": "diced",
+        "note_es": "en cubos"
       },
       {
         "id": "salsa",
@@ -611,6 +771,21 @@
         "qty": 0.5
       }
     ],
+    "name_es": "Ensalada de tacos con pavo",
+    "description_es": "Pavo molido con sazonador para tacos sobre lechuga crujiente con tomate, cheddar, aguacate, salsa y crema agria; sin necesidad de nachos.",
+    "steps_es": [
+      "Calienta una sartén grande a fuego medio-alto y agrega el pavo; cocina de 7 a 8 minutos, deshaciéndolo, hasta que esté dorado y sin partes rosadas.",
+      "Agrega el sazonador para tacos y un chorrito de agua, baja el fuego a medio y cocina 2 minutos hasta que el líquido espese y cubra la carne.",
+      "Mientras se cocina el pavo, corta la lechuga en trozos y el tomate y el aguacate en cubos.",
+      "Reparte la lechuga en 4 tazones y cubre con el pavo caliente, el tomate, el cheddar y el aguacate.",
+      "Termina cada tazón con una cucharada de salsa y otra de crema agria."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 15,
+    "tip": "For lunches, pack the turkey apart from the lettuce and toppings and cut the avocado just before eating.",
+    "tip_es": "Para llevar, guarda el pavo separado de la lechuga y los demás ingredientes y corta el aguacate justo antes de comer.",
     "photo_url": "https://images.unsplash.com/photo-1707080019893-bf8fc3d55f08",
     "photo_credit": {
       "name": "Caroline Ross",
@@ -629,31 +804,36 @@
     "batch_friendly": false,
     "description": "Shrimp, mushrooms and zucchini sauteed in garlic butter with lemon and a pinch of red pepper.",
     "steps": [
-      "Saute the mushrooms and zucchini in the olive oil 5 to 6 minutes until browned.",
-      "Push the vegetables aside and melt the butter with the garlic and pepper flakes.",
-      "Add the shrimp and cook 2 minutes per side until pink.",
-      "Toss everything with the lemon juice and salt."
+      "Thaw the shrimp in a bowl of cold water for about 10 minutes, then drain and pat very dry. Meanwhile slice the mushrooms, dice the zucchini and mince the garlic.",
+      "Heat the olive oil in a large skillet over medium-high heat. Add the mushrooms and zucchini in one layer and cook 5 to 6 minutes, stirring only twice, until browned.",
+      "Push the vegetables to the edges, lower the heat to medium and melt the butter in the middle with the garlic and pepper flakes for 30 seconds.",
+      "Add the shrimp in one layer and cook 2 minutes per side until pink and curled into a loose C shape.",
+      "Squeeze in the juice of the lemon, add the salt, toss everything together and serve right away."
     ],
     "ingredients": [
       {
         "id": "shrimp",
         "qty": 1,
-        "note": "peeled"
+        "note": "peeled",
+        "note_es": "pelados"
       },
       {
         "id": "mushroom",
         "qty": 8,
-        "note": "sliced"
+        "note": "sliced",
+        "note_es": "en láminas"
       },
       {
         "id": "zucchini",
         "qty": 2,
-        "note": "diced"
+        "note": "diced",
+        "note_es": "en cubos"
       },
       {
         "id": "garlic",
         "qty": 5,
-        "note": "minced"
+        "note": "minced",
+        "note_es": "picado fino"
       },
       {
         "id": "butter",
@@ -676,6 +856,21 @@
         "qty": 0.75
       }
     ],
+    "name_es": "Camarones al ajo con champiñones",
+    "description_es": "Camarones, champiñones y calabacín salteados en mantequilla de ajo con limón y un toque de chile.",
+    "steps_es": [
+      "Descongela los camarones en un tazón con agua fría unos 10 minutos, escúrrelos y sécalos muy bien. Mientras tanto, corta los champiñones en láminas, el calabacín en cubos y pica fino el ajo.",
+      "Calienta el aceite de oliva en una sartén grande a fuego medio-alto. Agrega los champiñones y el calabacín en una sola capa y cocina de 5 a 6 minutos, revolviendo solo dos veces, hasta que se doren.",
+      "Mueve las verduras hacia los bordes, baja el fuego a medio y derrite la mantequilla en el centro con el ajo y el chile en hojuelas durante 30 segundos.",
+      "Agrega los camarones en una sola capa y cocina 2 minutos por lado hasta que estén rosados y curvados en forma de C abierta.",
+      "Exprime el jugo del limón, agrega la sal, mezcla todo y sirve de inmediato."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 18,
+    "tip": "Shrimp curled into a tight O are overcooked; take the pan off the heat as soon as they turn pink.",
+    "tip_es": "Si los camarones se cierran como una O ya se pasaron; retira la sartén del fuego apenas se pongan rosados.",
     "photo_url": "https://images.unsplash.com/photo-1659951226926-a75791782250",
     "photo_credit": {
       "name": "Durenne Loris",
@@ -695,27 +890,31 @@
     "batch_friendly": true,
     "description": "Classic tuna casserole comfort with cauliflower instead of noodles, baked under a cheddar and parmesan crust.",
     "steps": [
-      "Heat the oven to 400°F and boil the cauliflower florets 5 minutes, then drain well.",
-      "Stir the cream cheese, sour cream, mustard, garlic powder, salt and pepper together.",
-      "Fold in the drained tuna, celery, cauliflower and 1 cup of the cheddar.",
-      "Spread in a baking dish and top with the remaining cheddar and the parmesan.",
-      "Bake 20 minutes until bubbling and golden."
+      "Heat the oven to {400F} and bring a large pot of water to a boil over high heat. Cut the cauliflower into small florets and dice the celery.",
+      "Boil the cauliflower 5 minutes until a knife goes in with a little resistance, then drain it very well and let it steam dry in the colander for 2 minutes.",
+      "In a large bowl stir the softened cream cheese, sour cream, mustard, garlic powder, salt and pepper until smooth.",
+      "Fold in the drained tuna, celery, cauliflower and two thirds of the cheddar.",
+      "Spread the mixture in a baking dish and top with the remaining cheddar and the parmesan.",
+      "Bake 20 minutes until bubbling at the edges and golden on top; let it stand a couple of minutes before serving."
     ],
     "ingredients": [
       {
         "id": "tuna_canned",
         "qty": 4,
-        "note": "drained"
+        "note": "drained",
+        "note_es": "escurrido"
       },
       {
         "id": "cauliflower",
         "qty": 1,
-        "note": "cut in florets"
+        "note": "cut in florets",
+        "note_es": "en ramitos"
       },
       {
         "id": "cream_cheese",
         "qty": 4,
-        "note": "softened"
+        "note": "softened",
+        "note_es": "a temperatura ambiente"
       },
       {
         "id": "sour_cream",
@@ -732,7 +931,8 @@
       {
         "id": "celery",
         "qty": 2,
-        "note": "diced"
+        "note": "diced",
+        "note_es": "en cubitos"
       },
       {
         "id": "mustard",
@@ -751,6 +951,23 @@
         "qty": 0.5
       }
     ],
+    "name_es": "Cazuela de atún y coliflor con queso",
+    "description_es": "El sabor casero de la cazuela de atún, con coliflor en lugar de fideos, horneada bajo una costra de cheddar y parmesano.",
+    "steps_es": [
+      "Precalienta el horno a {400F} y pon a hervir una olla grande con agua a fuego alto. Corta la coliflor en ramitos pequeños y el apio en cubitos.",
+      "Hierve la coliflor 5 minutos hasta que un cuchillo entre con un poco de resistencia, escúrrela muy bien y déjala secar al vapor en el colador 2 minutos.",
+      "En un tazón grande mezcla el queso crema ablandado, la crema agria, la mostaza, el ajo en polvo, la sal y la pimienta hasta que quede una crema lisa.",
+      "Incorpora el atún escurrido, el apio, la coliflor y dos tercios del cheddar.",
+      "Distribuye la mezcla en una fuente para horno y cubre con el resto del cheddar y el parmesano.",
+      "Hornea 20 minutos hasta que burbujee en los bordes y esté dorado por arriba; deja reposar un par de minutos antes de servir."
+    ],
+    "equipment": [
+      "stovetop",
+      "oven"
+    ],
+    "active_minutes": 15,
+    "tip": "Drain the cauliflower thoroughly or the casserole turns watery. Leftovers keep 3 days in the fridge.",
+    "tip_es": "Escurre muy bien la coliflor o la cazuela quedará aguada. Las sobras duran 3 días en el refrigerador.",
     "photo_url": "https://images.unsplash.com/photo-1654780105295-9227206f11ec",
     "photo_credit": {
       "name": "David Trinks",
@@ -770,11 +987,11 @@
     "batch_friendly": false,
     "description": "Spice-crusted tilapia seared in a hot skillet and served over a crunchy romaine, pepper and feta salad.",
     "steps": [
-      "Mix the paprika, garlic powder, onion powder, thyme, cayenne, salt and pepper and coat the tilapia.",
-      "Sear the fish in 1 tablespoon of the olive oil 3 minutes per side until dark and flaky.",
-      "Chop the romaine, bell pepper and cucumber into a large bowl.",
-      "Dress the salad with the remaining olive oil and the lemon juice and add the feta.",
-      "Serve the fish on top of the salad."
+      "Mix the paprika, garlic powder, onion powder, thyme, cayenne, salt and pepper in a small bowl. Pat the thawed tilapia dry and coat both sides with the spice mix.",
+      "Chop the romaine, dice the bell pepper and cucumber and put them in a large bowl.",
+      "Heat a third of the olive oil in a large skillet over medium-high heat until it shimmers. Cook the fish 3 minutes per side, turning once, until the spices are dark and the flesh flakes easily with a fork.",
+      "Toss the salad with the remaining olive oil and the juice of the lemon, then add the feta.",
+      "Divide the salad among plates and lay the fish on top."
     ],
     "ingredients": [
       {
@@ -784,22 +1001,26 @@
       {
         "id": "romaine",
         "qty": 2,
-        "note": "chopped"
+        "note": "chopped",
+        "note_es": "en trozos"
       },
       {
         "id": "bell_pepper",
         "qty": 1,
-        "note": "diced"
+        "note": "diced",
+        "note_es": "en cubos"
       },
       {
         "id": "cucumber",
         "qty": 1,
-        "note": "diced"
+        "note": "diced",
+        "note_es": "en cubos"
       },
       {
         "id": "feta",
         "qty": 3,
-        "note": "crumbled"
+        "note": "crumbled",
+        "note_es": "desmenuzado"
       },
       {
         "id": "olive_oil",
@@ -838,6 +1059,21 @@
         "qty": 0.5
       }
     ],
+    "name_es": "Ensalada picada con tilapia especiada",
+    "description_es": "Tilapia con costra de especias, sellada en sartén caliente y servida sobre una ensalada crujiente de lechuga, pimiento y feta.",
+    "steps_es": [
+      "Mezcla el pimentón, el ajo en polvo, la cebolla en polvo, el tomillo, la cayena, la sal y la pimienta en un tazón pequeño. Seca bien la tilapia ya descongelada y cubre ambos lados con la mezcla de especias.",
+      "Corta la lechuga en trozos y el pimiento y el pepino en cubos, y ponlos en un tazón grande.",
+      "Calienta un tercio del aceite de oliva en una sartén grande a fuego medio-alto hasta que brille. Cocina el pescado 3 minutos por lado, volteándolo una sola vez, hasta que las especias se oscurezcan y la carne se separe fácilmente con un tenedor.",
+      "Mezcla la ensalada con el resto del aceite de oliva y el jugo del limón y agrega el feta.",
+      "Reparte la ensalada en los platos y coloca el pescado encima."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 15,
+    "tip": "Thaw frozen fillets overnight in the fridge, or for 20 minutes in their sealed bag in a bowl of cold water.",
+    "tip_es": "Descongela los filetes de un día para otro en el refrigerador, o 20 minutos en su bolsa cerrada dentro de un tazón con agua fría.",
     "photo_url": "https://images.unsplash.com/photo-1755632255314-2c8b14ff0226",
     "photo_credit": {
       "name": "David Todd McCarty",
@@ -857,17 +1093,19 @@
     "batch_friendly": false,
     "description": "Cod fillets baked under a golden parmesan crust next to garlicky roasted green beans.",
     "steps": [
-      "Heat the oven to 425°F.",
-      "Toss the green beans with the olive oil, half the garlic powder and half the salt on a sheet pan and roast 8 minutes.",
-      "Spread the mayo over the cod and press on the parmesan mixed with the paprika and remaining garlic powder.",
-      "Add the cod to the pan and bake 12 minutes until golden and flaky.",
-      "Serve with lemon wedges."
+      "Heat the oven to {425F}. Trim the ends off the green beans and cut the lemon into wedges.",
+      "Toss the green beans on a large sheet pan with the olive oil, half the garlic powder and half the salt; spread them out and roast 8 minutes.",
+      "Meanwhile pat the thawed cod dry and season it with the remaining salt. Mix the parmesan with the paprika and the remaining garlic powder.",
+      "Spread the mayo over the top of each fillet and press the parmesan mixture onto it.",
+      "Push the beans aside, add the cod to the pan and bake 12 minutes until the crust is golden and the fish flakes easily with a fork.",
+      "Serve with the lemon wedges."
     ],
     "ingredients": [
       {
         "id": "cod",
         "qty": 1.25,
-        "note": "4 fillets"
+        "note": "4 fillets",
+        "note_es": "4 filetes"
       },
       {
         "id": "parmesan",
@@ -880,7 +1118,8 @@
       {
         "id": "green_beans",
         "qty": 1,
-        "note": "trimmed"
+        "note": "trimmed",
+        "note_es": "sin las puntas"
       },
       {
         "id": "olive_oil",
@@ -897,13 +1136,30 @@
       {
         "id": "lemon",
         "qty": 1,
-        "note": "cut in wedges"
+        "note": "cut in wedges",
+        "note_es": "en gajos"
       },
       {
         "id": "salt",
         "qty": 1
       }
     ],
+    "name_es": "Bacalao con costra de parmesano y ejotes",
+    "description_es": "Filetes de bacalao horneados bajo una costra dorada de parmesano, junto a ejotes asados con ajo.",
+    "steps_es": [
+      "Precalienta el horno a {425F}. Corta las puntas de los ejotes y corta el limón en gajos.",
+      "Mezcla los ejotes en una bandeja grande para horno con el aceite de oliva, la mitad del ajo en polvo y la mitad de la sal; distribúyelos y hornea 8 minutos.",
+      "Mientras tanto, seca bien el bacalao ya descongelado y sazónalo con el resto de la sal. Mezcla el parmesano con el pimentón y el resto del ajo en polvo.",
+      "Unta la mayonesa sobre la parte de arriba de cada filete y presiona encima la mezcla de parmesano.",
+      "Mueve los ejotes hacia un lado, agrega el bacalao a la bandeja y hornea 12 minutos hasta que la costra esté dorada y el pescado se separe fácilmente con un tenedor.",
+      "Sirve con los gajos de limón."
+    ],
+    "equipment": [
+      "oven"
+    ],
+    "active_minutes": 10,
+    "tip": "Any firm white fish works here; swap in tilapia or pollock when it is cheaper and bake thin fillets 2 minutes less.",
+    "tip_es": "Sirve cualquier pescado blanco firme; usa tilapia o abadejo si está más barato y hornea 2 minutos menos los filetes delgados.",
     "photo_url": "https://images.unsplash.com/photo-1595936126366-6e85b4812ca2",
     "photo_credit": {
       "name": "Edward Howell",
@@ -922,10 +1178,12 @@
     "batch_friendly": true,
     "description": "All the flavor of cabbage rolls without the rolling: ground beef and chopped cabbage simmered in tomato sauce.",
     "steps": [
-      "Brown the beef with the onion in the olive oil, then stir in the garlic and paprika.",
-      "Add the chopped cabbage, diced tomatoes, tomato sauce, broth, salt and pepper.",
-      "Cover and simmer 20 minutes, stirring now and then, until the cabbage is tender.",
-      "Taste, adjust the seasoning and serve in bowls."
+      "Dice the onion, mince the garlic and chop the cabbage into bite-size pieces, discarding the hard core.",
+      "Heat the olive oil in a large deep skillet or pot over medium-high heat. Add the beef and onion and cook 6 to 7 minutes, breaking up the meat, until it is browned and the onion is soft.",
+      "Stir in the garlic and paprika and cook 30 seconds until fragrant.",
+      "Add the cabbage, the diced tomatoes with their juice, the tomato sauce, broth, salt and pepper and stir; the cabbage piles high at first but cooks down.",
+      "Bring to a boil, then cover, lower the heat to medium-low and simmer 20 minutes, stirring now and then, until the cabbage is tender.",
+      "Taste, add a little more salt or pepper if it needs it, and serve in bowls."
     ],
     "ingredients": [
       {
@@ -935,17 +1193,20 @@
       {
         "id": "cabbage",
         "qty": 0.5,
-        "note": "chopped"
+        "note": "chopped",
+        "note_es": "en trozos"
       },
       {
         "id": "onion_yellow",
         "qty": 1,
-        "note": "diced"
+        "note": "diced",
+        "note_es": "en cubos"
       },
       {
         "id": "garlic",
         "qty": 3,
-        "note": "minced"
+        "note": "minced",
+        "note_es": "picado fino"
       },
       {
         "id": "diced_tomatoes",
@@ -976,6 +1237,22 @@
         "qty": 0.5
       }
     ],
+    "name_es": "Sartén de carne y repollo en salsa de tomate",
+    "description_es": "Todo el sabor de los rollos de repollo rellenos, sin tener que enrollar: carne molida y repollo cocidos en salsa de tomate.",
+    "steps_es": [
+      "Corta la cebolla en cubos, pica fino el ajo y corta el repollo en trozos del tamaño de un bocado, descartando el centro duro.",
+      "Calienta el aceite de oliva en una sartén grande y honda o en una olla a fuego medio-alto. Agrega la carne y la cebolla y cocina de 6 a 7 minutos, deshaciendo la carne, hasta que esté dorada y la cebolla blanda.",
+      "Agrega el ajo y el pimentón y cocina 30 segundos hasta que suelten aroma.",
+      "Añade el repollo, los tomates en cubos con su jugo, la salsa de tomate, el caldo, la sal y la pimienta y revuelve; al principio el repollo abulta mucho, pero se reduce al cocinarse.",
+      "Lleva a hervor, luego tapa, baja el fuego a medio-bajo y cocina 20 minutos, revolviendo de vez en cuando, hasta que el repollo esté tierno.",
+      "Prueba, agrega un poco más de sal o pimienta si hace falta y sirve en tazones."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 15,
+    "tip": "Tastes even better the next day; keeps 4 days in the fridge or 3 months in the freezer.",
+    "tip_es": "Al día siguiente sabe aún mejor; dura 4 días en el refrigerador o 3 meses en el congelador.",
     "photo_url": "https://images.unsplash.com/photo-1743148601298-655e3d10303e",
     "photo_credit": {
       "name": "András Gal",
@@ -995,11 +1272,12 @@
     "batch_friendly": true,
     "description": "Spice-rubbed pork shoulder cooked low and slow, shredded and piled over tangy slaw and spinach.",
     "steps": [
-      "Rub the pork with the smoked paprika, garlic powder, onion powder, cumin, salt and pepper.",
-      "Place in a slow cooker with the broth and 1 tablespoon of the vinegar and cook on low 8 hours.",
-      "Shred the pork with two forks and moisten with the cooking juices.",
-      "Toss the coleslaw mix with the mayo, mustard and remaining vinegar.",
-      "Divide the spinach and slaw among bowls and top with the pork."
+      "Mix the smoked paprika, garlic powder, onion powder, cumin, salt and pepper and rub the mix all over the pork.",
+      "Put the pork in the slow cooker, pour the broth and half the vinegar around it, cover and cook on low 7 to 8 hours, until the meat falls apart when pressed with a fork.",
+      "Lift the pork into a large bowl and shred it with two forks, discarding any large pieces of fat.",
+      "Stir a few spoonfuls of the cooking juices into the shredded pork until it is moist but not soupy.",
+      "In another bowl toss the coleslaw mix with the mayo, mustard and remaining vinegar until evenly coated.",
+      "Divide the spinach and slaw among bowls and pile the pork on top."
     ],
     "ingredients": [
       {
@@ -1055,6 +1333,22 @@
         "qty": 0.5
       }
     ],
+    "name_es": "Cerdo desmenuzado en olla lenta con ensalada de repollo",
+    "description_es": "Paleta de cerdo con especias cocida a fuego lento, desmenuzada y servida sobre ensalada de repollo y espinaca.",
+    "steps_es": [
+      "Mezcla el pimentón ahumado, el ajo en polvo, la cebolla en polvo, el comino, la sal y la pimienta y frota la mezcla por todo el cerdo.",
+      "Pon el cerdo en la olla de cocción lenta, vierte alrededor el caldo y la mitad del vinagre, tapa y cocina en temperatura baja de 7 a 8 horas, hasta que la carne se deshaga al presionarla con un tenedor.",
+      "Pasa el cerdo a un tazón grande y desmenúzalo con dos tenedores, descartando los trozos grandes de grasa.",
+      "Agrega unas cucharadas del jugo de cocción al cerdo desmenuzado hasta que quede jugoso pero sin caldo.",
+      "En otro tazón mezcla el repollo rallado con la mayonesa, la mostaza y el resto del vinagre hasta cubrirlo de manera uniforme.",
+      "Reparte la espinaca y la ensalada de repollo en tazones y coloca el cerdo encima."
+    ],
+    "equipment": [
+      "slow_cooker"
+    ],
+    "active_minutes": 20,
+    "tip": "Extra pork keeps 4 days in the fridge or 3 months in the freezer; use it in omelets, salads or lettuce wraps.",
+    "tip_es": "El cerdo que sobre dura 4 días en el refrigerador o 3 meses en el congelador; úsalo en omelets, ensaladas o envuelto en lechuga.",
     "photo_url": "https://images.unsplash.com/photo-1622756144420-6877b1b7476e",
     "photo_credit": {
       "name": "Grooveland Designs",
@@ -1074,27 +1368,31 @@
     "batch_friendly": true,
     "description": "Tender chicken and broccoli in a creamy garlic sauce, baked until the cheddar on top is golden and bubbling.",
     "steps": [
-      "Heat the oven to 400°F.",
-      "Cut the chicken into bite-size pieces and brown in a skillet 5 to 6 minutes.",
-      "Stir the cream cheese, sour cream, broth, garlic powder, onion powder, salt and pepper until smooth.",
-      "Combine the chicken, broccoli, sauce and half the cheddar in a baking dish.",
-      "Top with the remaining cheddar and bake 20 minutes until bubbling."
+      "Heat the oven to {400F}. Cut the chicken into bite-size pieces and season with the pepper and half the salt.",
+      "Heat a large nonstick skillet over medium-high heat (no oil is needed) and cook the chicken 5 to 6 minutes, stirring, until lightly golden on the outside; it finishes cooking in the oven.",
+      "In a large bowl stir the softened cream cheese, sour cream, broth, garlic powder, onion powder and remaining salt until smooth.",
+      "Pat the thawed broccoli dry with a towel so the sauce stays thick, then add it to the bowl with the chicken and half the cheddar and mix.",
+      "Spread the mixture in a baking dish, top with the remaining cheddar and bake 20 minutes until the sauce bubbles and the cheese is golden.",
+      "Let it rest a few minutes so the sauce thickens, then serve."
     ],
     "ingredients": [
       {
         "id": "chicken_breast",
         "qty": 1.5,
-        "note": "diced"
+        "note": "diced",
+        "note_es": "en cubos"
       },
       {
         "id": "broccoli_frozen",
         "qty": 4,
-        "note": "thawed"
+        "note": "thawed",
+        "note_es": "ya descongelado"
       },
       {
         "id": "cream_cheese",
         "qty": 4,
-        "note": "softened"
+        "note": "softened",
+        "note_es": "a temperatura ambiente"
       },
       {
         "id": "sour_cream",
@@ -1125,6 +1423,23 @@
         "qty": 0.5
       }
     ],
+    "name_es": "Pollo y brócoli gratinados con queso",
+    "description_es": "Pollo tierno y brócoli en una salsa cremosa de ajo, horneados hasta que el cheddar de arriba queda dorado y burbujeante.",
+    "steps_es": [
+      "Precalienta el horno a {400F}. Corta el pollo en trozos del tamaño de un bocado y sazónalo con la pimienta y la mitad de la sal.",
+      "Calienta una sartén antiadherente grande a fuego medio-alto (no hace falta aceite) y cocina el pollo de 5 a 6 minutos, revolviendo, hasta que esté apenas dorado por fuera; se termina de cocinar en el horno.",
+      "En un tazón grande mezcla el queso crema ablandado, la crema agria, el caldo, el ajo en polvo, la cebolla en polvo y el resto de la sal hasta que quede una crema lisa.",
+      "Seca el brócoli ya descongelado con un paño para que la salsa no se agüe, agrégalo al tazón junto con el pollo y la mitad del cheddar y mezcla.",
+      "Distribuye la mezcla en una fuente para horno, cubre con el resto del cheddar y hornea 20 minutos hasta que la salsa burbujee y el queso esté dorado.",
+      "Deja reposar unos minutos para que la salsa espese y sirve."
+    ],
+    "equipment": [
+      "stovetop",
+      "oven"
+    ],
+    "active_minutes": 15,
+    "tip": "Keeps 4 days in the fridge; reheat single portions in the microwave for about 2 minutes.",
+    "tip_es": "Dura 4 días en el refrigerador; recalienta porciones individuales en el microondas unos 2 minutos.",
     "photo_url": "https://images.unsplash.com/photo-1768204039572-9e62db7b39fd",
     "photo_credit": {
       "name": "Lee Milo",
@@ -1144,32 +1459,37 @@
     "batch_friendly": false,
     "description": "Paprika-rubbed pork chops seared until golden and served over cabbage wilted in butter, garlic and a splash of vinegar.",
     "steps": [
-      "Rub the chops with the smoked paprika, garlic powder, thyme, salt and pepper.",
-      "Sear in the olive oil 4 to 5 minutes per side, then rest on a plate.",
-      "Melt the butter in the same pan and cook the onion 2 minutes.",
-      "Add the cabbage and garlic and cook 6 to 8 minutes until tender, then stir in the vinegar.",
+      "Mix the smoked paprika, garlic powder, thyme, salt and pepper and rub the mix over both sides of the chops. Thinly slice the cabbage and onion and mince the garlic.",
+      "Heat the olive oil in a large skillet over medium-high heat until it shimmers. Sear the chops 4 to 5 minutes per side until deep golden and just firm ({145F} inside), then rest them on a plate.",
+      "Lower the heat to medium, melt the butter in the same pan and cook the onion 2 minutes, scraping up the browned bits.",
+      "Add the cabbage and garlic and cook 6 to 8 minutes, tossing often, until the cabbage is tender and lightly browned.",
+      "Stir in the vinegar and the juices from the plate of chops.",
       "Serve the chops over the cabbage."
     ],
     "ingredients": [
       {
         "id": "pork_chop",
         "qty": 1.75,
-        "note": "4 chops"
+        "note": "4 chops",
+        "note_es": "4 chuletas"
       },
       {
         "id": "cabbage",
         "qty": 0.5,
-        "note": "thinly sliced"
+        "note": "thinly sliced",
+        "note_es": "en tiras finas"
       },
       {
         "id": "onion_yellow",
         "qty": 1,
-        "note": "sliced"
+        "note": "sliced",
+        "note_es": "en tiras"
       },
       {
         "id": "garlic",
         "qty": 3,
-        "note": "minced"
+        "note": "minced",
+        "note_es": "picado fino"
       },
       {
         "id": "butter",
@@ -1204,6 +1524,22 @@
         "qty": 0.5
       }
     ],
+    "name_es": "Chuletas de cerdo con repollo a la mantequilla",
+    "description_es": "Chuletas con pimentón doradas en sartén y servidas sobre repollo salteado en mantequilla, ajo y un toque de vinagre.",
+    "steps_es": [
+      "Mezcla el pimentón ahumado, el ajo en polvo, el tomillo, la sal y la pimienta y frota la mezcla por ambos lados de las chuletas. Corta el repollo y la cebolla en tiras finas y pica fino el ajo.",
+      "Calienta el aceite de oliva en una sartén grande a fuego medio-alto hasta que brille. Dora las chuletas de 4 a 5 minutos por lado hasta que tengan un color dorado intenso y estén apenas firmes ({145F} por dentro) y déjalas reposar en un plato.",
+      "Baja el fuego a medio, derrite la mantequilla en la misma sartén y cocina la cebolla 2 minutos, raspando lo dorado del fondo.",
+      "Agrega el repollo y el ajo y cocina de 6 a 8 minutos, revolviendo seguido, hasta que el repollo esté tierno y ligeramente dorado.",
+      "Incorpora el vinagre y los jugos que soltaron las chuletas en el plato.",
+      "Sirve las chuletas sobre el repollo."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 22,
+    "tip": "Thin chops need only 3 minutes per side; take them off as soon as they feel firm so they stay juicy.",
+    "tip_es": "Las chuletas delgadas solo necesitan 3 minutos por lado; retíralas apenas se sientan firmes para que queden jugosas.",
     "photo_url": "https://images.unsplash.com/photo-1612871689527-2a6145cc9e86",
     "photo_credit": {
       "name": "Junior REIS",
@@ -1223,10 +1559,11 @@
     "batch_friendly": false,
     "description": "Crispy oven-roasted drumsticks rubbed with garlic, paprika and herbs, with buttery lemon green beans.",
     "steps": [
-      "Heat the oven to 425°F.",
-      "Toss the drumsticks with the olive oil, garlic powder, paprika, Italian seasoning, salt and pepper.",
-      "Roast on a sheet pan 35 to 40 minutes, turning once, until crisp and cooked through.",
-      "Simmer the green beans 5 minutes, drain, then toss with the butter, garlic and lemon juice.",
+      "Heat the oven to {425F} and line a sheet pan with foil. Pat the drumsticks dry with paper towels so the skin crisps.",
+      "Toss the drumsticks on the pan with the olive oil, garlic powder, paprika, Italian seasoning, pepper and most of the salt until evenly coated, then space them apart.",
+      "Roast 35 to 40 minutes, turning once halfway, until the skin is crisp and the juices run clear when you pierce the meat near the bone ({165F}).",
+      "About 10 minutes before the chicken is done, bring a pot of water to a boil over high heat. Add the trimmed green beans and cook 5 minutes until bright green and tender but still snappy, then drain.",
+      "Return the pot to low heat and melt the butter with the minced garlic for 30 seconds, then toss in the beans with the juice of the lemon and the remaining salt.",
       "Serve the drumsticks with the green beans."
     ],
     "ingredients": [
@@ -1237,7 +1574,8 @@
       {
         "id": "green_beans",
         "qty": 1,
-        "note": "trimmed"
+        "note": "trimmed",
+        "note_es": "sin las puntas"
       },
       {
         "id": "olive_oil",
@@ -1246,7 +1584,8 @@
       {
         "id": "garlic",
         "qty": 3,
-        "note": "minced"
+        "note": "minced",
+        "note_es": "picado fino"
       },
       {
         "id": "butter",
@@ -1277,6 +1616,23 @@
         "qty": 0.5
       }
     ],
+    "name_es": "Piernas de pollo al ajo y hierbas con ejotes",
+    "description_es": "Piernas de pollo crujientes al horno con ajo, pimentón y hierbas, acompañadas de ejotes con mantequilla y limón.",
+    "steps_es": [
+      "Precalienta el horno a {425F} y forra una bandeja para horno con papel aluminio. Seca las piernas de pollo con toallas de papel para que la piel quede crujiente.",
+      "Mezcla el pollo en la bandeja con el aceite de oliva, el ajo en polvo, el pimentón, el condimento italiano, la pimienta y casi toda la sal hasta cubrirlo de manera uniforme, y separa las piezas entre sí.",
+      "Hornea de 35 a 40 minutos, volteándolas una vez a la mitad, hasta que la piel esté crujiente y los jugos salgan claros al pinchar la carne cerca del hueso ({165F}).",
+      "Unos 10 minutos antes de que el pollo esté listo, pon a hervir una olla con agua a fuego alto. Agrega los ejotes sin las puntas y cocina 5 minutos hasta que estén verde brillante y tiernos pero firmes; escurre.",
+      "Regresa la olla a fuego bajo y derrite la mantequilla con el ajo picado durante 30 segundos; agrega los ejotes con el jugo del limón y el resto de la sal y mezcla.",
+      "Sirve las piernas de pollo con los ejotes."
+    ],
+    "equipment": [
+      "oven",
+      "stovetop"
+    ],
+    "active_minutes": 12,
+    "tip": "Leftover drumsticks keep 3 days in the fridge; eat them cold or crisp them again in a hot oven for 10 minutes.",
+    "tip_es": "Las piernas que sobren duran 3 días en el refrigerador; cómelas frías o vuelve a dorarlas 10 minutos en el horno caliente.",
     "photo_url": "https://images.unsplash.com/photo-1588767768106-1b20e51d9d68",
     "photo_credit": {
       "name": "Ekaterina Novitskaya",
@@ -1295,11 +1651,12 @@
     "batch_friendly": false,
     "description": "Sliced smoked sausage fried with cabbage, onion and green pepper for a cheap, filling one-pan dinner.",
     "steps": [
-      "Slice the sausage into coins and brown in a large skillet 4 to 5 minutes.",
-      "Add the butter, onion and bell pepper and cook 3 minutes.",
-      "Add the cabbage, garlic, smoked paprika and pepper.",
-      "Cook 8 to 10 minutes, stirring, until the cabbage is tender and browned at the edges.",
-      "Stir in the vinegar and serve."
+      "Slice the sausage into coins, chop the cabbage into bite-size pieces, slice the onion, cut the bell pepper into strips and mince the garlic.",
+      "Heat a large skillet over medium-high heat. Add the sausage (no oil is needed) and cook 4 to 5 minutes, turning the pieces, until browned on both sides.",
+      "Add the butter, onion and bell pepper and cook 3 minutes until they start to soften.",
+      "Add the cabbage, garlic, smoked paprika and pepper and stir well.",
+      "Cook 8 to 10 minutes, stirring every couple of minutes, until the cabbage is tender and browned at the edges.",
+      "Stir in the vinegar, scrape up the browned bits from the pan and serve."
     ],
     "ingredients": [
       {
@@ -1309,22 +1666,26 @@
       {
         "id": "cabbage",
         "qty": 0.5,
-        "note": "chopped"
+        "note": "chopped",
+        "note_es": "en trozos"
       },
       {
         "id": "onion_yellow",
         "qty": 1,
-        "note": "sliced"
+        "note": "sliced",
+        "note_es": "en tiras"
       },
       {
         "id": "bell_pepper",
         "qty": 1,
-        "note": "cut in strips"
+        "note": "cut in strips",
+        "note_es": "en tiras"
       },
       {
         "id": "garlic",
         "qty": 2,
-        "note": "minced"
+        "note": "minced",
+        "note_es": "picado fino"
       },
       {
         "id": "butter",
@@ -1343,6 +1704,22 @@
         "qty": 0.5
       }
     ],
+    "name_es": "Sartén de salchicha ahumada, pimiento y repollo",
+    "description_es": "Salchicha ahumada en rodajas salteada con repollo, cebolla y pimiento: una cena económica y rendidora en una sola sartén.",
+    "steps_es": [
+      "Corta la salchicha en rodajas, el repollo en trozos del tamaño de un bocado, la cebolla y el pimiento en tiras, y pica fino el ajo.",
+      "Calienta una sartén grande a fuego medio-alto. Agrega la salchicha (no hace falta aceite) y cocina de 4 a 5 minutos, volteando las rodajas, hasta que se doren por ambos lados.",
+      "Agrega la mantequilla, la cebolla y el pimiento y cocina 3 minutos hasta que empiecen a ablandarse.",
+      "Añade el repollo, el ajo, el pimentón ahumado y la pimienta y revuelve bien.",
+      "Cocina de 8 a 10 minutos, revolviendo cada par de minutos, hasta que el repollo esté tierno y dorado en los bordes.",
+      "Incorpora el vinagre, raspa lo dorado del fondo de la sartén y sirve."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 20,
+    "tip": "The sausage is already salty, so taste before adding any salt. Leftovers keep 4 days in the fridge.",
+    "tip_es": "La salchicha ya es salada, así que prueba antes de agregar sal. Las sobras duran 4 días en el refrigerador.",
     "photo_url": "https://images.unsplash.com/photo-1726177974269-a03507107f71",
     "photo_credit": {
       "name": "Victor Birai",
@@ -1361,11 +1738,11 @@
     "batch_friendly": false,
     "description": "Seared sirloin with broccoli, green beans and bell pepper in a garlic, ginger and soy sauce; no rice required.",
     "steps": [
-      "Cut the steak into bite-size pieces and toss with 1 tablespoon of the soy sauce.",
-      "Sear the beef in the vegetable oil over high heat 2 to 3 minutes, then set aside.",
-      "Stir-fry the broccoli, green beans and bell pepper with a splash of water 5 minutes.",
-      "Add the garlic and ginger and cook 30 seconds.",
-      "Return the beef with the remaining soy sauce and the sesame oil and toss."
+      "Cut the steak across the grain into thin bite-size slices and toss with a third of the soy sauce. Cut the broccoli into small florets, trim the green beans, cut the bell pepper into chunks, mince the garlic and grate the ginger.",
+      "Heat the vegetable oil in a large skillet or wok over high heat until it just starts to smoke. Add the beef in one layer and sear 2 to 3 minutes, turning once, until browned outside but still a little pink inside; move it to a plate.",
+      "Add the broccoli, green beans and bell pepper to the same pan with a splash of water and stir-fry over high heat 5 minutes until bright and tender but still crisp.",
+      "Add the garlic and ginger and stir 30 seconds until fragrant.",
+      "Return the beef and its juices, pour in the remaining soy sauce and the sesame oil and toss 1 minute until glossy and hot."
     ],
     "ingredients": [
       {
@@ -1375,27 +1752,32 @@
       {
         "id": "broccoli",
         "qty": 1,
-        "note": "cut in florets"
+        "note": "cut in florets",
+        "note_es": "en ramitos"
       },
       {
         "id": "green_beans",
         "qty": 0.5,
-        "note": "trimmed"
+        "note": "trimmed",
+        "note_es": "sin las puntas"
       },
       {
         "id": "bell_pepper",
         "qty": 1,
-        "note": "cut in chunks"
+        "note": "cut in chunks",
+        "note_es": "en trozos"
       },
       {
         "id": "garlic",
         "qty": 3,
-        "note": "minced"
+        "note": "minced",
+        "note_es": "picado fino"
       },
       {
         "id": "ginger",
         "qty": 1,
-        "note": "grated"
+        "note": "grated",
+        "note_es": "rallado"
       },
       {
         "id": "soy_sauce",
@@ -1410,6 +1792,21 @@
         "qty": 1
       }
     ],
+    "name_es": "Salteado de res con jengibre y brócoli",
+    "description_es": "Bistec sellado con brócoli, ejotes y pimiento en una salsa de ajo, jengibre y soya; no necesita arroz.",
+    "steps_es": [
+      "Corta el bistec en contra de la fibra, en láminas finas del tamaño de un bocado, y mézclalo con un tercio de la salsa de soya. Corta el brócoli en ramitos pequeños, quita las puntas a los ejotes, corta el pimiento en trozos, pica fino el ajo y ralla el jengibre.",
+      "Calienta el aceite vegetal en una sartén grande o un wok a fuego alto hasta que apenas empiece a humear. Agrega la carne en una sola capa y séllala de 2 a 3 minutos, volteándola una vez, hasta que esté dorada por fuera pero aún un poco rosada por dentro; pásala a un plato.",
+      "Agrega el brócoli, los ejotes y el pimiento a la misma sartén con un chorrito de agua y saltea a fuego alto 5 minutos hasta que tengan color vivo y estén tiernos pero crujientes.",
+      "Añade el ajo y el jengibre y revuelve 30 segundos hasta que suelten aroma.",
+      "Regresa la carne con sus jugos, vierte el resto de la salsa de soya y el aceite de sésamo y mezcla 1 minuto hasta que todo esté brillante y caliente."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 18,
+    "tip": "Put the steak in the freezer for 15 minutes before cutting; firm meat is much easier to slice thin.",
+    "tip_es": "Pon el bistec 15 minutos en el congelador antes de cortarlo; la carne firme se corta en láminas finas mucho más fácil.",
     "photo_url": "https://images.unsplash.com/photo-1760504526069-ff0f8bf6e4ca",
     "photo_credit": {
       "name": "Davis Dai",
@@ -1428,16 +1825,19 @@
     "batch_friendly": false,
     "description": "Pantry pasta with canned tuna, peas, garlic, lemon and parmesan that comes together while the water boils.",
     "steps": [
-      "Boil the pasta until tender, adding the peas for the last 2 minutes, and save a splash of the water.",
-      "Warm the olive oil with the garlic and pepper flakes in the empty pot 1 minute.",
-      "Add the drained tuna, pasta, peas, lemon juice and pasta water and toss.",
-      "Stir in the parmesan, salt and green onions."
+      "Bring a large pot of water to a boil over high heat. Meanwhile mince the garlic, slice the green onions, drain the tuna and juice the lemon.",
+      "Add the pasta to the boiling water and cook for the time on the package, about 8 minutes, until tender but still firm to the bite; add the peas for the last 2 minutes.",
+      "Scoop out a mugful of the cooking water, then drain the pasta and peas.",
+      "Return the empty pot to medium-low heat, add the olive oil, garlic and pepper flakes and cook 1 minute until the garlic smells sweet but has not browned.",
+      "Add the tuna, pasta, peas, lemon juice and a splash of the cooking water and toss 1 minute until glossy, adding more water if it looks dry.",
+      "Take the pot off the heat and stir in the parmesan, salt and green onions."
     ],
     "ingredients": [
       {
         "id": "tuna_canned",
         "qty": 4,
-        "note": "drained"
+        "note": "drained",
+        "note_es": "escurrido"
       },
       {
         "id": "pasta_elbow",
@@ -1450,7 +1850,8 @@
       {
         "id": "garlic",
         "qty": 4,
-        "note": "minced"
+        "note": "minced",
+        "note_es": "picado fino"
       },
       {
         "id": "olive_oil",
@@ -1463,7 +1864,8 @@
       {
         "id": "green_onion",
         "qty": 0.5,
-        "note": "sliced"
+        "note": "sliced",
+        "note_es": "en rodajitas"
       },
       {
         "id": "parmesan",
@@ -1478,6 +1880,22 @@
         "qty": 1
       }
     ],
+    "name_es": "Pasta con atún, limón y ajo",
+    "description_es": "Pasta de despensa con atún en lata, arvejas, ajo, limón y parmesano que se prepara mientras hierve el agua.",
+    "steps_es": [
+      "Pon a hervir una olla grande con agua a fuego alto. Mientras tanto, pica fino el ajo, corta el cebollín en rodajitas, escurre el atún y exprime el limón.",
+      "Agrega la pasta al agua hirviendo y cocina el tiempo que indica el paquete, unos 8 minutos, hasta que esté tierna pero firme al morderla; añade las arvejas los últimos 2 minutos.",
+      "Aparta una taza del agua de cocción y luego escurre la pasta con las arvejas.",
+      "Regresa la olla vacía a fuego medio-bajo, agrega el aceite de oliva, el ajo y el chile en hojuelas y cocina 1 minuto hasta que el ajo suelte aroma sin llegar a dorarse.",
+      "Agrega el atún, la pasta, las arvejas, el jugo de limón y un chorrito del agua de cocción y mezcla 1 minuto hasta que quede brillante; añade más agua si se ve seca.",
+      "Retira la olla del fuego e incorpora el parmesano, la sal y el cebollín."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 10,
+    "tip": "Good cold the next day as a pasta salad; loosen it with a little more lemon juice or olive oil.",
+    "tip_es": "Al día siguiente queda bien fría, como ensalada de pasta; suéltala con un poco más de jugo de limón o aceite de oliva.",
     "photo_url": "https://images.unsplash.com/photo-1666724283327-a9cd945fd5c5",
     "photo_credit": {
       "name": "Danielle Townsend",
@@ -1496,11 +1914,12 @@
     "batch_friendly": false,
     "description": "Spice-rubbed tilapia fillets seared in butter and served over paprika rice with fresh tomato and lemon.",
     "steps": [
-      "Simmer the rice with 3 cups water, 1 teaspoon of the paprika and half the salt, covered, 18 minutes.",
-      "Mix the remaining paprika and salt with the garlic powder, onion powder, oregano, thyme and cayenne and coat the fish.",
-      "Sear the tilapia in the butter 3 to 4 minutes per side.",
-      "Fluff the rice and top with the fish.",
-      "Serve with sliced tomato and lemon wedges."
+      "Put the rice in a pot with twice its volume of water, a third of the paprika and half the salt. Bring to a boil over high heat, then cover, turn the heat to low and cook 15 minutes until the water is absorbed; leave it covered off the heat until serving.",
+      "Mix the remaining paprika and salt with the garlic powder, onion powder, oregano, thyme and cayenne. Pat the thawed tilapia dry and coat both sides with the spice mix.",
+      "Slice the tomatoes and cut the lemon into wedges.",
+      "Melt the butter in a large skillet over medium-high heat until it foams. Cook the fish 3 to 4 minutes per side, turning it once with care, until the crust is dark and the flesh flakes easily with a fork.",
+      "Fluff the rice with a fork, divide it among plates and top with the fish.",
+      "Serve with the sliced tomato and lemon wedges."
     ],
     "ingredients": [
       {
@@ -1518,12 +1937,14 @@
       {
         "id": "tomato",
         "qty": 2,
-        "note": "sliced"
+        "note": "sliced",
+        "note_es": "en rodajas"
       },
       {
         "id": "lemon",
         "qty": 1,
-        "note": "cut in wedges"
+        "note": "cut in wedges",
+        "note_es": "en gajos"
       },
       {
         "id": "paprika",
@@ -1554,6 +1975,22 @@
         "qty": 1.5
       }
     ],
+    "name_es": "Tilapia cajún sobre arroz sazonado",
+    "description_es": "Filetes de tilapia con especias dorados en mantequilla y servidos sobre arroz con pimentón, tomate fresco y limón.",
+    "steps_es": [
+      "Pon el arroz en una olla con el doble de su volumen de agua, un tercio del pimentón y la mitad de la sal. Lleva a hervor a fuego alto, luego tapa, baja el fuego al mínimo y cocina 15 minutos hasta que el agua se absorba; déjalo tapado fuera del fuego hasta servir.",
+      "Mezcla el resto del pimentón y de la sal con el ajo en polvo, la cebolla en polvo, el orégano, el tomillo y la cayena. Seca bien la tilapia ya descongelada y cubre ambos lados con la mezcla de especias.",
+      "Corta los tomates en rodajas y el limón en gajos.",
+      "Derrite la mantequilla en una sartén grande a fuego medio-alto hasta que haga espuma. Cocina el pescado de 3 a 4 minutos por lado, volteándolo una sola vez con cuidado, hasta que la costra esté oscura y la carne se separe fácilmente con un tenedor.",
+      "Suelta el arroz con un tenedor, repártelo en los platos y coloca el pescado encima.",
+      "Sirve con las rodajas de tomate y los gajos de limón."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 15,
+    "tip": "The cayenne makes this spicy; use half, or leave it out, when cooking for kids.",
+    "tip_es": "La cayena lo hace picante; usa la mitad, o no la pongas, si cocinas para niños.",
     "photo_url": "https://images.unsplash.com/photo-1661081090172-f91124f63c51",
     "photo_credit": {
       "name": "Design Wala",
@@ -1572,17 +2009,19 @@
     "batch_friendly": false,
     "description": "Pan-seared salmon glazed with honey, garlic and soy, served with fluffy white rice and steamed broccoli.",
     "steps": [
-      "Simmer the rice with 3 cups water, covered, 18 minutes.",
-      "Sear the salmon in the oil 4 minutes per side.",
-      "Add the honey, soy sauce and garlic to the pan and spoon over the fish 1 to 2 minutes until glossy.",
-      "Steam the broccoli florets 4 to 5 minutes.",
-      "Serve the salmon with the rice and broccoli and drizzle with the glaze."
+      "Put the rice in a pot with twice its volume of water. Bring to a boil over high heat, then cover, turn the heat to low and cook 15 minutes until the water is absorbed; leave it covered off the heat until serving.",
+      "Cut the broccoli into florets and mince the garlic. Stir the honey, soy sauce and garlic together in a small bowl.",
+      "Heat the oil in a large skillet over medium-high heat. Pat the salmon dry, lay it in the pan skin side up and cook 4 minutes until golden underneath, then flip and cook 3 minutes more.",
+      "Lower the heat to medium-low, pour in the honey mixture and spoon it over the fish 1 to 2 minutes, until it thickens into a glossy glaze and the salmon flakes easily with a fork.",
+      "Meanwhile put the broccoli in a pot with a splash of water, cover and steam over medium-high heat 4 to 5 minutes until bright green and a knife slides into the stems.",
+      "Fluff the rice with a fork and serve it with the salmon and broccoli, drizzled with the glaze from the pan."
     ],
     "ingredients": [
       {
         "id": "salmon",
         "qty": 1.25,
-        "note": "4 fillets"
+        "note": "4 fillets",
+        "note_es": "4 filetes"
       },
       {
         "id": "rice_white",
@@ -1591,7 +2030,8 @@
       {
         "id": "broccoli",
         "qty": 1,
-        "note": "cut in florets"
+        "note": "cut in florets",
+        "note_es": "en ramitos"
       },
       {
         "id": "honey",
@@ -1604,13 +2044,30 @@
       {
         "id": "garlic",
         "qty": 3,
-        "note": "minced"
+        "note": "minced",
+        "note_es": "picado fino"
       },
       {
         "id": "vegetable_oil",
         "qty": 1
       }
     ],
+    "name_es": "Salmón con miel y ajo, arroz y brócoli",
+    "description_es": "Salmón dorado en sartén y glaseado con miel, ajo y soya, servido con arroz blanco suelto y brócoli al vapor.",
+    "steps_es": [
+      "Pon el arroz en una olla con el doble de su volumen de agua. Lleva a hervor a fuego alto, luego tapa, baja el fuego al mínimo y cocina 15 minutos hasta que el agua se absorba; déjalo tapado fuera del fuego hasta servir.",
+      "Corta el brócoli en ramitos y pica fino el ajo. Mezcla la miel, la salsa de soya y el ajo en un tazón pequeño.",
+      "Calienta el aceite en una sartén grande a fuego medio-alto. Seca bien el salmón, ponlo en la sartén con la piel hacia arriba y cocina 4 minutos hasta que se dore por debajo; voltéalo y cocina 3 minutos más.",
+      "Baja el fuego a medio-bajo, vierte la mezcla de miel y báñalo con ella de 1 a 2 minutos, hasta que espese como un glaseado brillante y el salmón se separe fácilmente con un tenedor.",
+      "Mientras tanto, pon el brócoli en una olla con un chorrito de agua, tapa y cocina al vapor a fuego medio-alto de 4 a 5 minutos hasta que esté verde brillante y un cuchillo entre fácilmente en los tallos.",
+      "Suelta el arroz con un tenedor y sírvelo con el salmón y el brócoli, bañados con el glaseado de la sartén."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 15,
+    "tip": "Honey burns quickly: turn the heat down before the glaze goes in and take the pan off as soon as it thickens.",
+    "tip_es": "La miel se quema rápido: baja el fuego antes de agregar el glaseado y retira la sartén apenas espese.",
     "photo_url": "https://images.unsplash.com/photo-1675209705883-7aec595f5aa8",
     "photo_credit": {
       "name": "Camara Negra",
@@ -1629,11 +2086,12 @@
     "batch_friendly": true,
     "description": "A big pot of ground turkey chili with kidney and black beans, peppers and tomatoes; better the next day.",
     "steps": [
-      "Brown the turkey with the onion and bell pepper in the olive oil.",
-      "Stir in the garlic, chili powder, cumin and salt and cook 1 minute.",
-      "Add the diced tomatoes, tomato sauce, broth and drained beans.",
-      "Simmer 25 minutes, stirring now and then.",
-      "Taste, adjust the seasoning and serve."
+      "Dice the onion and bell pepper, mince the garlic, and drain and rinse both cans of beans.",
+      "Heat the olive oil in a large pot over medium-high heat. Add the turkey, onion and bell pepper and cook 7 to 8 minutes, breaking up the meat, until it is no longer pink and the vegetables are soft.",
+      "Stir in the garlic, chili powder, cumin and salt and cook 1 minute until fragrant.",
+      "Add the diced tomatoes with their juice, the tomato sauce, broth and beans and bring to a boil.",
+      "Lower the heat to medium-low and simmer uncovered 25 minutes, stirring now and then, until the chili is thick.",
+      "Taste, add a little more salt or chili powder if you like, and serve in bowls."
     ],
     "ingredients": [
       {
@@ -1643,12 +2101,14 @@
       {
         "id": "kidney_beans",
         "qty": 1,
-        "note": "drained"
+        "note": "drained",
+        "note_es": "escurridos"
       },
       {
         "id": "black_beans",
         "qty": 1,
-        "note": "drained"
+        "note": "drained",
+        "note_es": "escurridos"
       },
       {
         "id": "diced_tomatoes",
@@ -1665,17 +2125,20 @@
       {
         "id": "onion_yellow",
         "qty": 1,
-        "note": "diced"
+        "note": "diced",
+        "note_es": "en cubos"
       },
       {
         "id": "bell_pepper",
         "qty": 1,
-        "note": "diced"
+        "note": "diced",
+        "note_es": "en cubos"
       },
       {
         "id": "garlic",
         "qty": 3,
-        "note": "minced"
+        "note": "minced",
+        "note_es": "picado fino"
       },
       {
         "id": "chili_powder",
@@ -1694,6 +2157,22 @@
         "qty": 1
       }
     ],
+    "name_es": "Chili de pavo con dos frijoles",
+    "description_es": "Una olla grande de chili de pavo molido con frijoles rojos y negros, pimiento y tomate; al día siguiente sabe mejor.",
+    "steps_es": [
+      "Corta la cebolla y el pimiento en cubos, pica fino el ajo, y escurre y enjuaga las dos latas de frijoles.",
+      "Calienta el aceite de oliva en una olla grande a fuego medio-alto. Agrega el pavo, la cebolla y el pimiento y cocina de 7 a 8 minutos, deshaciendo la carne, hasta que ya no esté rosada y las verduras estén blandas.",
+      "Agrega el ajo, el chile en polvo, el comino y la sal y cocina 1 minuto hasta que suelten aroma.",
+      "Añade los tomates en cubos con su jugo, la salsa de tomate, el caldo y los frijoles y lleva a hervor.",
+      "Baja el fuego a medio-bajo y cocina sin tapar 25 minutos, revolviendo de vez en cuando, hasta que el chili espese.",
+      "Prueba, agrega un poco más de sal o chile en polvo si quieres y sirve en tazones."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 15,
+    "tip": "Keeps 4 days in the fridge or 3 months in the freezer; freeze single portions for quick lunches.",
+    "tip_es": "Dura 4 días en el refrigerador o 3 meses en el congelador; congela porciones individuales para almuerzos rápidos.",
     "photo_url": "https://images.unsplash.com/photo-1576020956260-490f5c5fc892",
     "photo_credit": {
       "name": "Brooke Lark",
@@ -1712,11 +2191,12 @@
     "batch_friendly": false,
     "description": "Taco-spiced chicken over rice with black beans, corn, peppers and salsa: a burrito you eat with a fork.",
     "steps": [
-      "Simmer the rice with 3 cups water, covered, 18 minutes.",
-      "Coat the chicken with the taco seasoning and cook in the olive oil 5 to 6 minutes per side, then slice.",
-      "Saute the bell pepper 4 minutes and warm the beans and corn.",
-      "Divide the rice among bowls and top with the chicken, beans, corn and pepper.",
-      "Finish with salsa, sour cream, jalapeno and lime."
+      "Put the rice in a pot with twice its volume of water. Bring to a boil over high heat, then cover, turn the heat to low and cook 15 minutes until the water is absorbed; leave it covered off the heat until serving.",
+      "Slice any thick chicken breasts in half horizontally so they cook evenly, then coat both sides with the taco seasoning. Cut the bell pepper into strips, slice the jalapeno, cut the lime into wedges and drain and rinse the beans.",
+      "Heat the olive oil in a large skillet over medium-high heat. Cook the chicken 5 to 6 minutes per side until golden and no longer pink in the thickest part ({165F}); rest it on a board 5 minutes, then slice.",
+      "In the same skillet cook the bell pepper over medium-high heat 4 minutes until tender but still crisp, then add the beans and corn and stir 2 to 3 minutes until hot.",
+      "Fluff the rice with a fork, divide it among bowls and top with the sliced chicken and the pepper, bean and corn mix.",
+      "Finish with the salsa, sour cream, jalapeno and a squeeze of lime."
     ],
     "ingredients": [
       {
@@ -1730,7 +2210,8 @@
       {
         "id": "black_beans",
         "qty": 1,
-        "note": "drained"
+        "note": "drained",
+        "note_es": "escurridos"
       },
       {
         "id": "corn_frozen",
@@ -1739,7 +2220,8 @@
       {
         "id": "bell_pepper",
         "qty": 1,
-        "note": "cut in strips"
+        "note": "cut in strips",
+        "note_es": "en tiras"
       },
       {
         "id": "salsa",
@@ -1756,18 +2238,36 @@
       {
         "id": "jalapeno",
         "qty": 1,
-        "note": "sliced"
+        "note": "sliced",
+        "note_es": "en rodajas"
       },
       {
         "id": "lime",
         "qty": 1,
-        "note": "cut in wedges"
+        "note": "cut in wedges",
+        "note_es": "en gajos"
       },
       {
         "id": "olive_oil",
         "qty": 1
       }
     ],
+    "name_es": "Tazones de burrito con pollo y frijoles negros",
+    "description_es": "Pollo con sazonador para tacos sobre arroz con frijoles negros, maíz, pimiento y salsa: un burrito que se come con tenedor.",
+    "steps_es": [
+      "Pon el arroz en una olla con el doble de su volumen de agua. Lleva a hervor a fuego alto, luego tapa, baja el fuego al mínimo y cocina 15 minutos hasta que el agua se absorba; déjalo tapado fuera del fuego hasta servir.",
+      "Corta las pechugas gruesas por la mitad a lo largo para que se cocinen parejo y cubre ambos lados con el sazonador para tacos. Corta el pimiento en tiras, el jalapeño en rodajas y la lima en gajos, y escurre y enjuaga los frijoles.",
+      "Calienta el aceite de oliva en una sartén grande a fuego medio-alto. Cocina el pollo de 5 a 6 minutos por lado hasta que esté dorado y sin partes rosadas en la zona más gruesa ({165F}); déjalo reposar 5 minutos en una tabla y córtalo en tiras.",
+      "En la misma sartén cocina el pimiento a fuego medio-alto 4 minutos hasta que esté tierno pero crujiente; agrega los frijoles y el maíz y revuelve de 2 a 3 minutos hasta que estén calientes.",
+      "Suelta el arroz con un tenedor, repártelo en tazones y cubre con el pollo en tiras y la mezcla de pimiento, frijoles y maíz.",
+      "Termina con la salsa, la crema agria, el jalapeño y unas gotas de lima."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 20,
+    "tip": "For 4 lunches, pack the rice, chicken and beans together and the cold toppings apart; they keep 3 days in the fridge.",
+    "tip_es": "Para 4 almuerzos, guarda juntos el arroz, el pollo y los frijoles, y aparte lo que va frío; duran 3 días en el refrigerador.",
     "photo_url": "https://images.unsplash.com/photo-1716392976013-66d90cac4411",
     "photo_credit": {
       "name": "AnaCristina Smith",
@@ -1786,11 +2286,11 @@
     "batch_friendly": false,
     "description": "Chicken thighs roasted in one dish with potatoes, cherry tomatoes, garlic, oregano and lemon slices.",
     "steps": [
-      "Heat the oven to 425°F.",
-      "Toss the potato chunks, tomatoes and garlic with half the olive oil, half the oregano and half the salt in a baking dish.",
-      "Rub the chicken with the remaining oil, oregano and salt and nestle it on top.",
-      "Add the lemon slices and roast 35 minutes until the chicken is cooked through and the potatoes are tender.",
-      "Scatter with chopped parsley."
+      "Heat the oven to {425F}. Cut the potatoes into bite-size chunks (no need to peel them), smash the garlic cloves with the flat of a knife, slice the lemons and chop the parsley.",
+      "In a large baking dish toss the potatoes, cherry tomatoes and garlic with half the olive oil, half the oregano and half the salt.",
+      "Rub the chicken with the pepper and the remaining oil, oregano and salt and nestle it on top of the vegetables in one layer.",
+      "Tuck the lemon slices around the chicken and roast 35 minutes, until the chicken is browned and cooked through ({165F}) and a knife slides easily into the potatoes.",
+      "Spoon the juices from the dish over everything and scatter with the parsley."
     ],
     "ingredients": [
       {
@@ -1800,7 +2300,8 @@
       {
         "id": "potato_russet",
         "qty": 1.5,
-        "note": "cut in chunks"
+        "note": "cut in chunks",
+        "note_es": "en trozos"
       },
       {
         "id": "cherry_tomato",
@@ -1809,12 +2310,14 @@
       {
         "id": "lemon",
         "qty": 2,
-        "note": "sliced"
+        "note": "sliced",
+        "note_es": "en rodajas"
       },
       {
         "id": "garlic",
         "qty": 5,
-        "note": "smashed"
+        "note": "smashed",
+        "note_es": "aplastado"
       },
       {
         "id": "olive_oil",
@@ -1827,7 +2330,8 @@
       {
         "id": "parsley",
         "qty": 0.5,
-        "note": "chopped"
+        "note": "chopped",
+        "note_es": "picado"
       },
       {
         "id": "salt",
@@ -1838,6 +2342,21 @@
         "qty": 0.5
       }
     ],
+    "name_es": "Muslos de pollo al limón con papas al horno",
+    "description_es": "Muslos de pollo asados en una sola fuente con papas, tomates cherry, ajo, orégano y rodajas de limón.",
+    "steps_es": [
+      "Precalienta el horno a {425F}. Corta las papas en trozos del tamaño de un bocado (no hace falta pelarlas), aplasta los dientes de ajo con el lado plano de un cuchillo, corta los limones en rodajas y pica el perejil.",
+      "En una fuente grande para horno mezcla las papas, los tomates cherry y el ajo con la mitad del aceite de oliva, la mitad del orégano y la mitad de la sal.",
+      "Frota el pollo con la pimienta y el resto del aceite, el orégano y la sal, y acomódalo sobre las verduras en una sola capa.",
+      "Coloca las rodajas de limón alrededor del pollo y hornea 35 minutos, hasta que el pollo esté dorado y bien cocido ({165F}) y un cuchillo entre fácilmente en las papas.",
+      "Baña todo con los jugos de la fuente y termina con el perejil."
+    ],
+    "equipment": [
+      "oven"
+    ],
+    "active_minutes": 10,
+    "tip": "Keep the potato chunks small: pieces bigger than a bite will still be firm when the chicken is done.",
+    "tip_es": "Corta las papas en trozos pequeños: los que sean más grandes que un bocado seguirán duros cuando el pollo esté listo.",
     "photo_url": "https://images.unsplash.com/photo-1680098021573-b9402ee336ec",
     "photo_credit": {
       "name": "Babs Gorniak",
@@ -1856,10 +2375,12 @@
     "batch_friendly": false,
     "description": "Penne cooked right in a ground beef and tomato sauce, then finished with melted mozzarella and parmesan.",
     "steps": [
-      "Brown the beef with the onion in a deep skillet, then stir in the garlic and Italian seasoning.",
-      "Add the crushed tomatoes, broth, salt and dry penne.",
-      "Cover and simmer 12 to 14 minutes, stirring twice, until the pasta is tender.",
-      "Stir in the mozzarella and top with the parmesan."
+      "Dice the onion and mince the garlic.",
+      "Heat a large deep skillet over medium-high heat. Add the beef and onion and cook 6 minutes, breaking up the meat, until it is browned and the onion is soft; spoon off the extra fat if there is a lot.",
+      "Stir in the garlic and Italian seasoning and cook 30 seconds until fragrant.",
+      "Add the crushed tomatoes, broth, salt and dry penne, stir so the pasta is covered by liquid and bring to a boil.",
+      "Cover, lower the heat to medium-low and simmer 12 to 14 minutes, stirring twice so nothing sticks, until the pasta is tender and the sauce has thickened.",
+      "Take the skillet off the heat, stir in the mozzarella until it melts and sprinkle with the parmesan."
     ],
     "ingredients": [
       {
@@ -1881,12 +2402,14 @@
       {
         "id": "onion_yellow",
         "qty": 1,
-        "note": "diced"
+        "note": "diced",
+        "note_es": "en cubos"
       },
       {
         "id": "garlic",
         "qty": 3,
-        "note": "minced"
+        "note": "minced",
+        "note_es": "picado fino"
       },
       {
         "id": "italian_seasoning",
@@ -1905,6 +2428,22 @@
         "qty": 1
       }
     ],
+    "name_es": "Penne con carne en una sola sartén",
+    "description_es": "Penne cocido directamente en una salsa de carne molida y tomate, terminado con mozzarella derretida y parmesano.",
+    "steps_es": [
+      "Corta la cebolla en cubos y pica fino el ajo.",
+      "Calienta una sartén grande y honda a fuego medio-alto. Agrega la carne y la cebolla y cocina 6 minutos, deshaciendo la carne, hasta que esté dorada y la cebolla blanda; retira con una cuchara el exceso de grasa si hay mucha.",
+      "Agrega el ajo y el condimento italiano y cocina 30 segundos hasta que suelten aroma.",
+      "Añade los tomates triturados, el caldo, la sal y el penne crudo, revuelve para que la pasta quede cubierta de líquido y lleva a hervor.",
+      "Tapa, baja el fuego a medio-bajo y cocina de 12 a 14 minutos, revolviendo dos veces para que no se pegue, hasta que la pasta esté tierna y la salsa haya espesado.",
+      "Retira la sartén del fuego, incorpora la mozzarella hasta que se derrita y espolvorea con el parmesano."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 12,
+    "tip": "The pasta keeps soaking up sauce; add a splash of water or broth when reheating leftovers.",
+    "tip_es": "La pasta sigue absorbiendo salsa; agrega un chorrito de agua o caldo al recalentar las sobras.",
     "photo_url": "https://images.unsplash.com/photo-1630151318557-1b2b20cc8cff",
     "photo_credit": {
       "name": "Konstantinas Ladauskas",
@@ -1923,12 +2462,13 @@
     "batch_friendly": false,
     "description": "Strips of smoky pork tenderloin tossed with caramelized sweet potato cubes and red onion.",
     "steps": [
-      "Cook the sweet potato cubes in half the olive oil, covered, 12 minutes, stirring, until tender and browned.",
-      "Slice the pork into thin strips and toss with the smoked paprika, cumin, thyme, salt and pepper.",
-      "Move the sweet potatoes to a plate and sear the pork in the remaining oil 5 to 6 minutes.",
+      "Peel the sweet potatoes and cut them into small cubes about the width of your thumb. Slice the red onion and mince the garlic.",
+      "Heat half the olive oil in a large skillet over medium heat. Add the sweet potatoes, cover and cook 12 minutes, stirring every few minutes, until tender when pierced and browned in spots.",
+      "Meanwhile slice the pork into thin strips and toss with the smoked paprika, cumin, thyme, salt and pepper.",
+      "Move the sweet potatoes to a plate. Raise the heat to medium-high, add the remaining oil and sear the pork 5 to 6 minutes, stirring a few times, until browned and no longer pink inside.",
       "Add the garlic and half the red onion and cook 1 minute.",
-      "Return the sweet potatoes, add the vinegar and toss.",
-      "Top with the remaining sliced red onion."
+      "Return the sweet potatoes, add the vinegar and toss 1 minute until everything is hot.",
+      "Serve topped with the remaining raw red onion."
     ],
     "ingredients": [
       {
@@ -1938,17 +2478,20 @@
       {
         "id": "sweet_potato",
         "qty": 1.5,
-        "note": "peeled and cubed"
+        "note": "peeled and cubed",
+        "note_es": "sin cáscara, en cubos"
       },
       {
         "id": "onion_red",
         "qty": 1,
-        "note": "sliced"
+        "note": "sliced",
+        "note_es": "en tiras finas"
       },
       {
         "id": "garlic",
         "qty": 3,
-        "note": "minced"
+        "note": "minced",
+        "note_es": "picado fino"
       },
       {
         "id": "olive_oil",
@@ -1979,6 +2522,23 @@
         "qty": 0.5
       }
     ],
+    "name_es": "Sartén de lomo de cerdo y camote",
+    "description_es": "Tiras de lomo de cerdo con pimentón ahumado, mezcladas con cubos de camote caramelizado y cebolla morada.",
+    "steps_es": [
+      "Pela el camote y córtalo en cubos pequeños, más o menos del ancho de tu pulgar. Corta la cebolla morada en tiras finas y pica fino el ajo.",
+      "Calienta la mitad del aceite de oliva en una sartén grande a fuego medio. Agrega el camote, tapa y cocina 12 minutos, revolviendo cada pocos minutos, hasta que esté tierno al pincharlo y dorado en partes.",
+      "Mientras tanto, corta el cerdo en tiras finas y mézclalo con el pimentón ahumado, el comino, el tomillo, la sal y la pimienta.",
+      "Pasa el camote a un plato. Sube el fuego a medio-alto, agrega el resto del aceite y dora el cerdo de 5 a 6 minutos, revolviendo algunas veces, hasta que esté dorado y sin partes rosadas por dentro.",
+      "Agrega el ajo y la mitad de la cebolla morada y cocina 1 minuto.",
+      "Regresa el camote a la sartén, añade el vinagre y mezcla 1 minuto hasta que todo esté caliente.",
+      "Sirve con el resto de la cebolla morada cruda por encima."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 25,
+    "tip": "Soak the raw onion slices in cold water for 5 minutes if you want a milder bite.",
+    "tip_es": "Remoja la cebolla cruda en agua fría 5 minutos si prefieres un sabor más suave.",
     "photo_url": "https://images.unsplash.com/photo-1636407715708-a097fdcef57a",
     "photo_credit": {
       "name": "Nico M.",
@@ -1997,10 +2557,11 @@
     "batch_friendly": false,
     "description": "Budget drumsticks and potato wedges roasted together in a smoky paprika and garlic rub until crisp.",
     "steps": [
-      "Heat the oven to 425°F.",
-      "Cut the potatoes into wedges.",
-      "Toss the drumsticks and potatoes with the olive oil, both paprikas, garlic powder, onion powder, salt and pepper.",
-      "Spread on a sheet pan and roast 40 minutes, turning once, until the chicken is crisp and cooked through."
+      "Heat the oven to {425F} and line a large sheet pan with foil.",
+      "Scrub the potatoes and cut each one lengthwise into 8 wedges. Pat the drumsticks dry with paper towels so the skin crisps.",
+      "On the pan, toss the drumsticks and potatoes with the olive oil, both paprikas, the garlic powder, onion powder, salt and pepper until evenly coated.",
+      "Spread everything in one layer, potatoes cut side down, with space between the pieces.",
+      "Roast 40 minutes, turning the chicken and potatoes once halfway, until the skin is crisp, the juices run clear near the bone ({165F}) and the wedges are golden and tender."
     ],
     "ingredients": [
       {
@@ -2010,7 +2571,8 @@
       {
         "id": "potato_russet",
         "qty": 2,
-        "note": "cut in wedges"
+        "note": "cut in wedges",
+        "note_es": "en gajos"
       },
       {
         "id": "olive_oil",
@@ -2041,6 +2603,21 @@
         "qty": 0.5
       }
     ],
+    "name_es": "Piernas de pollo al pimentón con papas al horno",
+    "description_es": "Piernas de pollo económicas y gajos de papa asados juntos con pimentón ahumado y ajo hasta quedar crujientes.",
+    "steps_es": [
+      "Precalienta el horno a {425F} y forra una bandeja grande para horno con papel aluminio.",
+      "Lava bien las papas y corta cada una a lo largo en 8 gajos. Seca las piernas de pollo con toallas de papel para que la piel quede crujiente.",
+      "En la bandeja, mezcla el pollo y las papas con el aceite de oliva, los dos tipos de pimentón, el ajo en polvo, la cebolla en polvo, la sal y la pimienta hasta cubrir todo de manera uniforme.",
+      "Distribuye todo en una sola capa, con el lado cortado de las papas hacia abajo y espacio entre las piezas.",
+      "Hornea 40 minutos, volteando el pollo y las papas una vez a la mitad, hasta que la piel esté crujiente, los jugos salgan claros cerca del hueso ({165F}) y los gajos estén dorados y tiernos."
+    ],
+    "equipment": [
+      "oven"
+    ],
+    "active_minutes": 10,
+    "tip": "A crowded pan steams the potatoes instead of crisping them; split everything between two pans if it does not fit in one layer.",
+    "tip_es": "Si la bandeja queda muy llena, las papas se cuecen al vapor y no se doran; usa dos bandejas si no cabe todo en una sola capa.",
     "photo_url": "https://images.unsplash.com/photo-1705088295364-6e98d62a3146",
     "photo_credit": {
       "name": "Gourmet Lenz",
@@ -2059,18 +2636,20 @@
     "batch_friendly": true,
     "description": "Chicken simmered in a creamy spiced tomato sauce from pantry staples, served over white rice.",
     "steps": [
-      "Simmer the rice with 3 cups water, covered, 18 minutes.",
-      "Toss the diced chicken with the yogurt, half the curry powder and the salt.",
-      "Brown the chicken in the butter 6 minutes, then add the onion, garlic and ginger and cook 3 minutes.",
-      "Stir in the remaining curry powder, cumin, paprika, tomato sauce and tomato paste and simmer 12 minutes.",
-      "Stir in the cream and heat through.",
-      "Serve over the rice."
+      "Put the rice in a pot with twice its volume of water. Bring to a boil over high heat, then cover, turn the heat to low and cook 15 minutes until the water is absorbed; leave it covered off the heat until serving.",
+      "Cut the chicken into bite-size pieces and toss with the yogurt, half the curry powder and the salt. Dice the onion, mince the garlic and grate the ginger.",
+      "Melt the butter in a large deep skillet over medium-high heat. Add the chicken and cook 6 minutes, stirring a few times, until lightly browned.",
+      "Add the onion, garlic and ginger and cook 3 minutes until the onion softens.",
+      "Stir in the remaining curry powder, the cumin and paprika, then the tomato sauce and tomato paste. Lower the heat to medium-low and simmer 12 minutes, stirring now and then, until the sauce thickens and the chicken is cooked through.",
+      "Stir in the cream and heat 1 to 2 minutes over low heat without letting it boil hard.",
+      "Fluff the rice with a fork and serve the chicken and sauce over it."
     ],
     "ingredients": [
       {
         "id": "chicken_breast",
         "qty": 1.5,
-        "note": "diced"
+        "note": "diced",
+        "note_es": "en cubos"
       },
       {
         "id": "rice_white",
@@ -2095,17 +2674,20 @@
       {
         "id": "onion_yellow",
         "qty": 1,
-        "note": "diced"
+        "note": "diced",
+        "note_es": "en cubos"
       },
       {
         "id": "garlic",
         "qty": 4,
-        "note": "minced"
+        "note": "minced",
+        "note_es": "picado fino"
       },
       {
         "id": "ginger",
         "qty": 1,
-        "note": "grated"
+        "note": "grated",
+        "note_es": "rallado"
       },
       {
         "id": "butter",
@@ -2128,6 +2710,23 @@
         "qty": 1
       }
     ],
+    "name_es": "Pollo tikka masala rápido con arroz",
+    "description_es": "Pollo cocido en una salsa cremosa de tomate y especias hecha con básicos de la despensa, servido sobre arroz blanco.",
+    "steps_es": [
+      "Pon el arroz en una olla con el doble de su volumen de agua. Lleva a hervor a fuego alto, luego tapa, baja el fuego al mínimo y cocina 15 minutos hasta que el agua se absorba; déjalo tapado fuera del fuego hasta servir.",
+      "Corta el pollo en trozos del tamaño de un bocado y mézclalo con el yogur, la mitad del curry en polvo y la sal. Corta la cebolla en cubos, pica fino el ajo y ralla el jengibre.",
+      "Derrite la mantequilla en una sartén grande y honda a fuego medio-alto. Agrega el pollo y cocina 6 minutos, revolviendo algunas veces, hasta que esté ligeramente dorado.",
+      "Agrega la cebolla, el ajo y el jengibre y cocina 3 minutos hasta que la cebolla se ablande.",
+      "Incorpora el resto del curry en polvo, el comino y el pimentón, y luego la salsa de tomate y la pasta de tomate. Baja el fuego a medio-bajo y cocina 12 minutos, revolviendo de vez en cuando, hasta que la salsa espese y el pollo esté bien cocido.",
+      "Agrega la crema y calienta de 1 a 2 minutos a fuego bajo, sin dejar que hierva fuerte.",
+      "Suelta el arroz con un tenedor y sirve el pollo con su salsa encima."
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 25,
+    "tip": "The sauce keeps 4 days in the fridge or 3 months in the freezer; cook fresh rice when you serve it again.",
+    "tip_es": "La salsa dura 4 días en el refrigerador o 3 meses en el congelador; prepara arroz nuevo cuando la vuelvas a servir.",
     "photo_url": "https://images.unsplash.com/photo-1788462613018-40916ff6415c",
     "photo_credit": {
       "name": "gabbiistudios",
