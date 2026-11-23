@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Instrument_Sans } from "next/font/google";
 import { Analytics } from "@/components/analytics";
+import { ConsentBanner } from "@/components/consent-banner";
 import { ServiceWorker } from "@/components/service-worker";
 import { WholeResponses } from "@/components/whole-responses";
 import { siteUrl } from "@/lib/env";
@@ -63,6 +64,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <WholeResponses />
         <LocaleProvider key={`${locale.country}-${locale.lang}-${locale.units}`} initial={locale}>
           {children}
+          <ConsentBanner />
         </LocaleProvider>
         <Analytics />
         <ServiceWorker />

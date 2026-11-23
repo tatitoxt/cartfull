@@ -18,6 +18,13 @@ export default function TermsPage() {
         you report spending.
       </p>
 
+      <h2>Built with software, including AI</h2>
+      <p>
+        Meal plans, recipe text, ingredient details and nutrition figures are generated algorithmically, in part with AI
+        assistance. They can be wrong: always check the label on what you buy and use your judgment when cooking for
+        people with allergies or medical conditions.
+      </p>
+
       <h2>Prices are estimates</h2>
       <p>
         Grocery prices shown in Cartfull are estimates based on typical US shelf prices. They are not quotes or offers from
