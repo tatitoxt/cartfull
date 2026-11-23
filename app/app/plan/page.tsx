@@ -28,7 +28,7 @@ export default async function PlanPage() {
     return (
       <section className="py-10">
         <h1 className="text-4xl">{m.plan.firstTitle}</h1>
-        <p className="mt-3 max-w-md text-ink-soft">{m.plan.firstLead}</p>
+        <p className="mt-3 max-w-md text-fg-soft">{m.plan.firstLead}</p>
         <PlanActions mode="first" />
       </section>
     );
@@ -40,9 +40,9 @@ export default async function PlanPage() {
   if (!viewable) {
     return (
       <section className="py-10">
-        <p className="text-sm font-semibold uppercase tracking-wider text-green">{fill(m.common.weekOf, { date: weekLabel(row.week_start, lang) })}</p>
+        <p className="text-sm font-semibold uppercase tracking-wider text-accent">{fill(m.common.weekOf, { date: weekLabel(row.week_start, lang) })}</p>
         <h1 className="mt-2 text-4xl">{m.plan.subscriptionEnded}</h1>
-        <p className="mt-3 max-w-md text-ink-soft">
+        <p className="mt-3 max-w-md text-fg-soft">
           {fill(m.plan.savedWeeks, { count: plans.length })}
         </p>
         <Link href="/app/upgrade" className="btn btn-cta mt-6">
@@ -61,7 +61,7 @@ export default async function PlanPage() {
   return (
     <>
       <section aria-labelledby="week-title">
-        <p className="text-sm font-semibold uppercase tracking-wider text-green">{fill(m.common.weekOf, { date: weekLabel(row.week_start, lang) })}</p>
+        <p className="text-sm font-semibold uppercase tracking-wider text-accent">{fill(m.common.weekOf, { date: weekLabel(row.week_start, lang) })}</p>
         <h1 id="week-title" className="mt-2 text-4xl sm:text-5xl">
           {over ? m.plan.lastWeek : m.plan.thisWeek}, {m.plan.planned}
         </h1>
@@ -75,24 +75,24 @@ export default async function PlanPage() {
           {editable && !over && <PlanActions mode="regenerate" planId={row.id} />}
         </div>
         {cart.totalCents > row.budget_cents && (
-          <p role="status" className="mt-5 rounded-2xl bg-yellow-soft p-4 shadow-[inset_0_0_0_1.5px_var(--color-yellow)]">
+          <p role="status" className="mt-5 rounded-2xl bg-over-soft p-4 shadow-[inset_0_0_0_1.5px_var(--color-over)]">
             {fill(m.plan.overChanged, { amount: money(cart.totalCents - row.budget_cents, lang) })}
           </p>
         )}
       </section>
 
       {(canPlanNext || over) && (
-        <section className="mt-8 rounded-card bg-mint-soft p-5" aria-label={m.plan.nextWeek}>
+        <section className="mt-8 rounded-card bg-accent-soft p-5" aria-label={m.plan.nextWeek}>
           {entitlement.active ? (
             <>
               <h2 className="text-2xl">{m.plan.readyNext}</h2>
-              <p className="mt-1 text-ink-soft">{m.plan.nextLead}</p>
+              <p className="mt-1 text-fg-soft">{m.plan.nextLead}</p>
               <PlanActions mode="next" />
             </>
           ) : (
             <>
               <h2 className="text-2xl">{m.plan.freeWeek}</h2>
-              <p className="mt-1 text-ink-soft">
+              <p className="mt-1 text-fg-soft">
                 {entitlement.hadSubscription
                   ? m.plan.subscribeAgain
                   : m.plan.freeTrial}
@@ -130,11 +130,11 @@ export default async function PlanPage() {
                       {dinner.recipe.name_es && lang === "es" ? dinner.recipe.name_es : dinner.recipe.name}
                     </Link>
                   </h3>
-                  <p className="mt-2 text-ink-soft">{lang === "es" && dinner.recipe.description_es ? dinner.recipe.description_es : dinner.recipe.description}</p>
+                  <p className="mt-2 text-fg-soft">{lang === "es" && dinner.recipe.description_es ? dinner.recipe.description_es : dinner.recipe.description}</p>
                   <p className="tnum mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm">
-                    <span className="font-semibold text-tomato-deep">{fill(m.plan.perServing, { amount: moneyExact(perServing(dinner), lang) })}</span>
-                    <span className="text-ink-soft">{fill(m.common.min, { count: dinner.recipe.prep_minutes })}</span>
-                    <span className="text-ink-soft">{fill(m.recipe.serves, { count: dinner.servings })}</span>
+                    <span className="font-semibold text-accent-deep">{fill(m.plan.perServing, { amount: moneyExact(perServing(dinner), lang) })}</span>
+                    <span className="text-fg-soft">{fill(m.common.min, { count: dinner.recipe.prep_minutes })}</span>
+                    <span className="text-fg-soft">{fill(m.recipe.serves, { count: dinner.servings })}</span>
                   </p>
                   {editable && !over && (
                   <SwapButton planId={row.id} day={day} slot="dinner" currentName={dinner.recipe.name_es && lang === "es" ? dinner.recipe.name_es : dinner.recipe.name} />
@@ -148,11 +148,11 @@ export default async function PlanPage() {
                   <li key={meal.slot} className="flex items-center gap-3 py-3">
                     <Photo url={meal.recipe.photo_url} alt="" ratio={1} sizes="56px" className="size-14 shrink-0 rounded-xl" />
                     <div className="min-w-0 flex-1">
-                      <p className="text-xs font-semibold uppercase tracking-wider text-ink-faint">{m.plan.slot[meal.slot]}</p>
+                      <p className="text-xs font-semibold uppercase tracking-wider text-fg-faint">{m.plan.slot[meal.slot]}</p>
                       <Link href={`/app/recipe/${meal.recipe.slug}?plan=${row.id}`} className="block truncate font-semibold hover:underline">
                           {meal.recipe.name_es && lang === "es" ? meal.recipe.name_es : meal.recipe.name}
                       </Link>
-                      <p className="tnum text-sm text-ink-soft">
+                      <p className="tnum text-sm text-fg-soft">
                         {fill(m.plan.perServing, { amount: moneyExact(perServing(meal), lang) })} · {fill(m.common.min, { count: meal.recipe.prep_minutes })}
                       </p>
                     </div>
@@ -167,7 +167,7 @@ export default async function PlanPage() {
         ))}
       </ol>
 
-      <p className="mt-10 text-sm text-ink-faint">
+      <p className="mt-10 text-sm text-fg-faint">
         {m.plan.prices}
       </p>
     </>

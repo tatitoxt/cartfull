@@ -17,7 +17,7 @@ export function AppNav() {
   return (
     <nav
       aria-label={m.nav.label}
-      className="fixed inset-x-0 bottom-0 z-20 border-t border-line bg-paper/95 pb-[env(safe-area-inset-bottom)] backdrop-blur sm:static sm:border-0 sm:bg-transparent sm:pb-0"
+      className="fixed inset-x-0 bottom-0 z-20 border-t border-line bg-bg/95 pb-[env(safe-area-inset-bottom)] backdrop-blur sm:static sm:border-0 sm:bg-transparent sm:pb-0"
     >
       <ul className="mx-auto grid max-w-3xl grid-cols-4 sm:flex sm:gap-1">
         {items.map((item) => {
@@ -28,7 +28,7 @@ export function AppNav() {
                 href={item.href}
                 aria-current={active ? "page" : undefined}
                 className={`flex min-h-16 flex-col items-center justify-center gap-1 text-xs font-semibold sm:min-h-11 sm:flex-row sm:rounded-full sm:px-4 sm:text-sm ${
-                  active ? "text-green-deep sm:bg-mint-soft" : "text-ink-soft hover:text-ink"
+                  active ? "text-accent-deep sm:bg-accent-soft" : "text-fg-soft hover:text-fg"
                 }`}
               >
                 <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" className="sm:hidden">

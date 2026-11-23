@@ -121,12 +121,12 @@ export function GroceryList({
   return (
     <div className="mt-7">
       <BudgetMeter totalCents={total} budgetCents={budgetCents} />
-      <p className="tnum mt-3 text-sm text-ink-soft" aria-live="polite">
+      <p className="tnum mt-3 text-sm text-fg-soft" aria-live="polite">
         <span data-testid="in-cart-count">{inCart.length}</span>
         {fill(m.list.inCart, { checked: "", total: toBuy.length, amount: moneyExact(inCartCents, lang) })}
       </p>
       {(offline || failed) && (
-        <p role="status" className="mt-4 rounded-2xl bg-yellow-soft px-4 py-3 text-sm shadow-[inset_0_0_0_1.5px_var(--color-yellow)]">
+        <p role="status" className="mt-4 rounded-2xl bg-spend-soft px-4 py-3 text-sm shadow-[inset_0_0_0_1.5px_var(--color-spend)]">
           {offline ? m.list.offline : m.list.unsynced}
         </p>
       )}
@@ -138,9 +138,9 @@ export function GroceryList({
           const subtotal = group.reduce((sum, l) => sum + l.cents, 0);
           return (
             <section key={aisle} aria-labelledby={`aisle-${aisle}`} data-testid="aisle">
-              <h2 id={`aisle-${aisle}`} className="flex items-baseline justify-between gap-3 border-b border-ink pb-2 text-xl">
+              <h2 id={`aisle-${aisle}`} className="flex items-baseline justify-between gap-3 border-b border-fg pb-2 text-xl">
                 {label}
-                <span className="tnum font-sans text-sm font-semibold text-ink-soft">{moneyExact(subtotal, lang)}</span>
+                <span className="tnum font-sans text-sm font-semibold text-fg-soft">{moneyExact(subtotal, lang)}</span>
               </h2>
               <ul className="divide-y divide-line">
                 {group.map((line) => (
@@ -151,11 +151,11 @@ export function GroceryList({
                         checked={line.checked}
                         disabled={!editable}
                         onChange={(e) => change({ id: line.id, checked: e.target.checked })}
-                        className="size-6 shrink-0 rounded-md accent-[var(--color-green)]"
+                        className="size-6 shrink-0 rounded-md accent-[var(--color-accent)]"
                       />
-                      <span className={`min-w-0 flex-1 ${line.checked ? "text-ink-faint line-through" : ""}`}>
+                      <span className={`min-w-0 flex-1 ${line.checked ? "text-fg-faint line-through" : ""}`}>
                         <span className="block font-semibold leading-tight">{line.name}</span>
-                        <span className="tnum block text-sm text-ink-soft">
+                        <span className="tnum block text-sm text-fg-soft">
                           {fill(m.list.needBuy, { need: line.need, buy: line.buy })}
                         </span>
                       </span>
@@ -167,7 +167,7 @@ export function GroceryList({
                       <button
                         type="button"
                         onClick={() => change({ id: line.id, have: true })}
-                        className="min-h-11 shrink-0 rounded-full px-3 text-sm font-semibold text-green-deep shadow-[inset_0_0_0_1.5px_var(--color-line)] hover:bg-paper-deep"
+                        className="min-h-11 shrink-0 rounded-full px-3 text-sm font-semibold text-accent-deep shadow-[inset_0_0_0_1.5px_var(--color-line)] hover:bg-bg-deep"
                         aria-label={fill(m.list.alreadyHave, { name: line.name })}
                         data-testid="have-button"
                       >
@@ -183,12 +183,12 @@ export function GroceryList({
 
         {haveLines.length > 0 && (
           <section aria-labelledby="have-title">
-            <h2 id="have-title" className="border-b border-line pb-2 text-xl text-ink-soft">
+            <h2 id="have-title" className="border-b border-line pb-2 text-xl text-fg-soft">
               {m.list.alreadyHome}
             </h2>
             <ul className="divide-y divide-line">
               {haveLines.map((line) => (
-                <li key={line.id} className="flex min-h-14 items-center gap-3 py-2 text-ink-soft" data-testid="have-item">
+                <li key={line.id} className="flex min-h-14 items-center gap-3 py-2 text-fg-soft" data-testid="have-item">
                   <span className="min-w-0 flex-1">
                     <span className="block font-medium leading-tight">{line.name}</span>
                     <span className="tnum block text-sm">{fill(m.list.need, { need: line.need })}</span>
@@ -209,7 +209,7 @@ export function GroceryList({
           </section>
         )}
       </div>
-      <p className="mt-10 text-sm text-ink-faint">
+      <p className="mt-10 text-sm text-fg-faint">
         {m.list.prices}
       </p>
     </div>

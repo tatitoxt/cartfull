@@ -22,9 +22,9 @@ export function CountryPreferences({ answers, set }: { answers: Answers; set: (p
             return (
               <label
                 key={option.code}
-                className={`flex min-h-16 cursor-pointer items-center gap-3 rounded-2xl px-4 py-3 transition-colors has-[:focus-visible]:outline has-[:focus-visible]:outline-3 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-green ${
+                className={`flex min-h-16 cursor-pointer items-center gap-3 rounded-2xl px-4 py-3 transition-colors has-[:focus-visible]:outline has-[:focus-visible]:outline-3 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-accent ${
                   selected
-                    ? "bg-mint-soft shadow-[inset_0_0_0_2px_var(--color-green)]"
+                    ? "bg-accent-soft shadow-[inset_0_0_0_2px_var(--color-accent)]"
                     : "bg-surface shadow-[inset_0_0_0_1.5px_var(--color-line)]"
                 }`}
               >
@@ -38,7 +38,7 @@ export function CountryPreferences({ answers, set }: { answers: Answers; set: (p
                 />
                 <span
                   aria-hidden="true"
-                  className={`grid size-5 shrink-0 place-items-center rounded-full ${selected ? "bg-green" : "shadow-[inset_0_0_0_1.5px_var(--color-ink-faint)]"}`}
+                  className={`grid size-5 shrink-0 place-items-center rounded-full ${selected ? "bg-accent" : "shadow-[inset_0_0_0_1.5px_var(--color-fg-faint)]"}`}
                 >
                   {selected && <span className="size-2 rounded-full bg-white" />}
                 </span>
@@ -56,7 +56,7 @@ export function CountryPreferences({ answers, set }: { answers: Answers; set: (p
               <label
                 key={lang}
                 className={`inline-flex min-h-11 cursor-pointer items-center rounded-full px-4 text-sm font-medium ${
-                  answers.lang === lang ? "bg-mint-soft text-green-deep shadow-[inset_0_0_0_2px_var(--color-green)]" : "bg-surface shadow-[inset_0_0_0_1.5px_var(--color-line)]"
+                  answers.lang === lang ? "bg-accent-soft text-accent-deep shadow-[inset_0_0_0_2px_var(--color-accent)]" : "bg-surface shadow-[inset_0_0_0_1.5px_var(--color-line)]"
                 }`}
               >
                 <input
@@ -79,7 +79,7 @@ export function CountryPreferences({ answers, set }: { answers: Answers; set: (p
               <label
                 key={units}
                 className={`inline-flex min-h-11 cursor-pointer items-center rounded-full px-4 text-sm font-medium ${
-                  answers.units === units ? "bg-mint-soft text-green-deep shadow-[inset_0_0_0_2px_var(--color-green)]" : "bg-surface shadow-[inset_0_0_0_1.5px_var(--color-line)]"
+                  answers.units === units ? "bg-accent-soft text-accent-deep shadow-[inset_0_0_0_2px_var(--color-accent)]" : "bg-surface shadow-[inset_0_0_0_1.5px_var(--color-line)]"
                 }`}
               >
                 <input

@@ -77,24 +77,24 @@ export function Calculator({ planned, copy, cta }: { planned: number[]; copy: La
 
       <dl className="mt-6 grid grid-cols-2 gap-4 border-t border-line pt-5" aria-live="polite">
         <div>
-          <dt className="text-sm text-ink-soft">{copy.planned}</dt>
-          <dd className="tnum mt-1 font-display text-4xl font-semibold text-green-deep" data-testid="calc-planned">
+          <dt className="text-sm text-fg-soft">{copy.planned}</dt>
+          <dd className="tnum mt-1 font-display text-4xl font-semibold text-accent-deep" data-testid="calc-planned">
             ${Math.round(plannedDollars)}
           </dd>
         </div>
         <div>
-          <dt className="text-sm text-ink-soft">{copy.monthly}</dt>
-          <dd className="tnum mt-1 font-display text-4xl font-semibold text-tomato-deep" data-testid="calc-monthly">
+          <dt className="text-sm text-fg-soft">{copy.monthly}</dt>
+          <dd className="tnum mt-1 font-display text-4xl font-semibold text-accent-deep" data-testid="calc-monthly">
             ${monthly.toLocaleString("en-US")}
           </dd>
         </div>
       </dl>
-      <p className="tnum mt-3 min-h-6 text-ink-soft">{weekly > 0 ? fill(copy.yearly, { amount: `$${yearly.toLocaleString("en-US")}` }) : copy.lean}</p>
+      <p className="tnum mt-3 min-h-6 text-fg-soft">{weekly > 0 ? fill(copy.yearly, { amount: `$${yearly.toLocaleString("en-US")}` }) : copy.lean}</p>
 
       <Link href={href} className="btn btn-cta mt-5 w-full" onClick={() => track("cta_clicked", { place: "calculator", people, spend })} data-testid="calc-cta">
         {cta}
       </Link>
-      <p className="mt-4 text-xs leading-relaxed text-ink-faint">{copy.footnote}</p>
+      <p className="mt-4 text-xs leading-relaxed text-fg-faint">{copy.footnote}</p>
     </section>
   );
 }

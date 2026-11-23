@@ -80,12 +80,12 @@ export function SettingsForm({
           <div className="mt-5">{section.body}</div>
         </section>
       ))}
-      <div className="sticky bottom-20 z-10 flex flex-wrap items-center gap-3 rounded-card bg-paper/95 py-3 backdrop-blur sm:bottom-4">
+      <div className="sticky bottom-20 z-10 flex flex-wrap items-center gap-3 rounded-card bg-bg/95 py-3 backdrop-blur sm:bottom-4">
         <button type="submit" className="btn btn-primary" disabled={pending || !dirty} data-testid="save-settings">
           {pending ? m.common.saving : m.common.save}
         </button>
         {message && (
-          <p role={message.ok ? "status" : "alert"} className={`text-sm font-medium ${message.ok ? "text-green-deep" : "text-tomato-deep"}`}>
+          <p role={message.ok ? "status" : "alert"} className={`text-sm font-medium ${message.ok ? "text-accent-deep" : "text-over-deep"}`}>
             {message.text}
           </p>
         )}

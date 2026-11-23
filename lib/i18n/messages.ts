@@ -220,6 +220,14 @@ const en = {
     saveSuccess: "Saved. Your next plan uses these. Tap “New mix” on the plan to apply them to this week.",
     signOut: "Sign out",
     help: "Need help or want your data deleted? Email",
+    appearance: {
+      title: "Appearance",
+      theme: "Theme",
+      themes: { dark: "Dark", light: "Light", auto: "Automatic" },
+      accent: "Accent color",
+      accents: { lime: "Lime", verde: "Green", celeste: "Sky", violeta: "Violet" },
+      note: "Looks are kept on this device.",
+    },
     billing: {
       trialEnds: "Free trial, ends {date}. You won’t be charged.",
       trialThen: "Free trial until {date}, then {price}.",
@@ -575,6 +583,14 @@ const es: Messages = {
     saveSuccess: "Guardado. Tu próximo plan usará estas opciones. Toca «Nueva combinación» en el plan para aplicarlas a esta semana.",
     signOut: "Cerrar sesión",
     help: "¿Necesitas ayuda o quieres borrar tus datos? Escribe a",
+    appearance: {
+      title: "Apariencia",
+      theme: "Tema",
+      themes: { dark: "Oscuro", light: "Claro", auto: "Automático" },
+      accent: "Color de acento",
+      accents: { lime: "Lima", verde: "Verde", celeste: "Celeste", violeta: "Violeta" },
+      note: "La apariencia se guarda en este dispositivo.",
+    },
     billing: {
       trialEnds: "Prueba gratis, termina el {date}. No se te cobrará.",
       trialThen: "Prueba gratis hasta el {date}, luego {price}.",
