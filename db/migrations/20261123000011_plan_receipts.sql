@@ -20,3 +20,6 @@ create policy "replace receipt of a viewable plan" on public.plan_receipts for u
   using (public.can_view_plan(plan_id)) with check (public.can_view_plan(plan_id));
 create policy "remove receipt of a viewable plan" on public.plan_receipts for delete
   using (public.can_view_plan(plan_id));
+
+grant select, insert, update, delete on public.plan_receipts to authenticated;
+grant all on public.plan_receipts to service_role;
