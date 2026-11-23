@@ -1,0 +1,2700 @@
+[
+ {
+  "slug": "honey-sesame-chicken-stir-fry",
+  "name": "Honey Sesame Chicken Stir-Fry",
+  "meal_type": "dinner",
+  "name_es": "Pollo salteado con miel y sésamo",
+  "diet_tags": [
+   "high_protein",
+   "dairy_free"
+  ],
+  "servings": 4,
+  "prep_minutes": 30,
+  "batch_friendly": false,
+  "description": "Crispy chicken bites tossed in a glossy honey-soy sauce with broccoli, served over rice with sesame seeds.",
+  "description_es": "Trozos de pollo crocantes en salsa brillante de miel y soja con brócoli, sobre arroz con sésamo.",
+  "steps": [
+   "Cook the rice according to the package directions and keep it warm.",
+   "Toss the chicken pieces with the cornstarch, salt and pepper until evenly coated.",
+   "Heat the oil in a large skillet over medium-high heat and cook the chicken 6 to 8 minutes until golden and cooked through; transfer to a plate.",
+   "Stir-fry the broccoli in the same pan 3 minutes with a splash of water until crisp-tender.",
+   "Return the chicken, add the soy sauce, honey, vinegar, garlic and ginger, and toss 2 minutes until the sauce coats everything.",
+   "Serve over rice, drizzled with sesame oil and sprinkled with sesame seeds."
+  ],
+  "steps_es": [
+   "Cocina el arroz según las instrucciones del paquete y mantenlo tibio.",
+   "Mezcla los trozos de pollo con la maicena, sal y pimienta hasta cubrirlos parejo.",
+   "Calienta el aceite en una sartén grande a fuego medio-alto y cocina el pollo de 6 a 8 minutos hasta dorarlo; reserva en un plato.",
+   "Saltea el brócoli en la misma sartén 3 minutos con un chorrito de agua hasta que esté firme pero tierno.",
+   "Vuelve a poner el pollo, agrega la soja, miel, vinagre, ajo y jengibre, y mezcla 2 minutos hasta que la salsa cubra todo.",
+   "Sirve sobre arroz, con un chorrito de aceite de sésamo y semillas por encima."
+  ],
+  "ingredients": [
+   {
+    "id": "chicken_thigh",
+    "qty": 1.25,
+    "note": "cut into bite-size pieces",
+    "note_es": "en cubos chicos"
+   },
+   {
+    "id": "rice_white",
+    "qty": 1.5
+   },
+   {
+    "id": "broccoli_frozen",
+    "qty": 3
+   },
+   {
+    "id": "soy_sauce",
+    "qty": 4
+   },
+   {
+    "id": "honey",
+    "qty": 3
+   },
+   {
+    "id": "vinegar_rice",
+    "qty": 1
+   },
+   {
+    "id": "garlic",
+    "qty": 3,
+    "note": "minced",
+    "note_es": "picado"
+   },
+   {
+    "id": "ginger",
+    "qty": 1,
+    "note": "grated",
+    "note_es": "rallado"
+   },
+   {
+    "id": "sesame_oil",
+    "qty": 1
+   },
+   {
+    "id": "sesame_seeds",
+    "qty": 1
+   },
+   {
+    "id": "cornstarch",
+    "qty": 2
+   },
+   {
+    "id": "vegetable_oil",
+    "qty": 2
+   },
+   {
+    "id": "salt",
+    "qty": 0.5
+   },
+   {
+    "id": "black_pepper",
+    "qty": 0.5
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 22,
+  "tip": "For extra crispy chicken, don't crowd the pan — cook it in two batches.",
+  "tip_es": "Para un pollo más crocante, no llenes la sartén: cocínalo en dos tandas.",
+  "photo_url": "https://images.unsplash.com/photo-1788601299617-3052a7c8fa70",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/noodles-with-vegetables-in-black-bowl-t2XScZ1IGH0"
+  }
+ },
+ {
+  "slug": "quick-beef-broccoli",
+  "name": "Quick Beef and Broccoli",
+  "meal_type": "dinner",
+  "name_es": "Res con brócoli rápido",
+  "diet_tags": [
+   "high_protein",
+   "dairy_free"
+  ],
+  "servings": 4,
+  "prep_minutes": 25,
+  "batch_friendly": false,
+  "description": "Thin-sliced beef and broccoli in a savory garlic-soy sauce over rice — faster than takeout.",
+  "description_es": "Láminas finas de res con brócoli en salsa de ajo y soja sobre arroz, más rápido que el delivery.",
+  "steps": [
+   "Cook the rice according to the package directions.",
+   "Stir the soy sauce, brown sugar, garlic, ginger, cornstarch and half a cup of water in a small bowl.",
+   "Heat the oil in a large skillet over high heat and sear the beef in a single layer 2 to 3 minutes per side until browned; transfer to a plate.",
+   "Add the broccoli and a splash of water, cover and steam 2 minutes.",
+   "Return the beef, pour in the sauce and cook 1 to 2 minutes until glossy and thickened.",
+   "Serve over the rice."
+  ],
+  "steps_es": [
+   "Cocina el arroz según las instrucciones del paquete.",
+   "Mezcla la soja, el azúcar morena, ajo, jengibre, maicena y media taza de agua en un tazón chico.",
+   "Calienta el aceite en una sartén grande a fuego alto y dora la res en una sola capa de 2 a 3 minutos por lado; reserva en un plato.",
+   "Agrega el brócoli con un chorrito de agua, tapa y cocina al vapor 2 minutos.",
+   "Vuelve a poner la res, vierte la salsa y cocina 1 a 2 minutos hasta que espese y brille.",
+   "Sirve sobre el arroz."
+  ],
+  "ingredients": [
+   {
+    "id": "steak_sirloin",
+    "qty": 1,
+    "note": "thinly sliced against the grain",
+    "note_es": "en láminas finas a contraveta"
+   },
+   {
+    "id": "broccoli_frozen",
+    "qty": 3.5
+   },
+   {
+    "id": "rice_white",
+    "qty": 1.5
+   },
+   {
+    "id": "soy_sauce",
+    "qty": 5
+   },
+   {
+    "id": "brown_sugar",
+    "qty": 0.13
+   },
+   {
+    "id": "garlic",
+    "qty": 3,
+    "note": "minced",
+    "note_es": "picado"
+   },
+   {
+    "id": "ginger",
+    "qty": 1,
+    "note": "grated",
+    "note_es": "rallado"
+   },
+   {
+    "id": "cornstarch",
+    "qty": 1
+   },
+   {
+    "id": "vegetable_oil",
+    "qty": 2
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 20,
+  "tip": "Freeze the beef for 20 minutes before slicing — it cuts much thinner.",
+  "tip_es": "Congela la res 20 minutos antes de cortarla: salen láminas mucho más finas.",
+  "photo_url": "https://images.unsplash.com/photo-1764850685940-4e8f06190cb9",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/stir-fried-broccoli-with-chili-flakes-and-garlic-twJcB5sLvkw"
+  }
+ },
+ {
+  "slug": "vegetable-lo-mein",
+  "name": "Vegetable Lo Mein",
+  "meal_type": "dinner",
+  "name_es": "Lo mein de verduras",
+  "diet_tags": [
+   "vegetarian",
+   "vegan"
+  ],
+  "servings": 4,
+  "prep_minutes": 25,
+  "batch_friendly": false,
+  "description": "Chewy noodles tossed with stir-fried vegetables in a sesame-soy sauce.",
+  "description_es": "Fideos elásticos salteados con verduras en salsa de sésamo y soja.",
+  "steps": [
+   "Cook the noodles according to the package directions, drain and rinse briefly.",
+   "Heat the oil in a large skillet or wok over high heat and stir-fry the vegetables and garlic 4 to 5 minutes until crisp-tender.",
+   "Add the noodles, soy sauce, sesame oil, vinegar and sugar, and toss 2 minutes until everything is coated and hot.",
+   "Scatter the green onions over the top and serve."
+  ],
+  "steps_es": [
+   "Cocina los fideos según las instrucciones del paquete, escúrrelos y enjuágalos brevemente.",
+   "Calienta el aceite en una sartén grande o wok a fuego alto y saltea las verduras con el ajo de 4 a 5 minutos hasta que estén firmes pero tiernas.",
+   "Agrega los fideos, la soja, el aceite de sésamo, el vinagre y el azúcar, y mezcla 2 minutos hasta que todo esté cubierto y caliente.",
+   "Esparce la cebolla de verdeo por encima y sirve."
+  ],
+  "ingredients": [
+   {
+    "id": "pasta_spaghetti",
+    "qty": 12,
+    "note": "or lo mein noodles",
+    "note_es": "o fideos para lo mein"
+   },
+   {
+    "id": "stir_fry_veg_frozen",
+    "qty": 4
+   },
+   {
+    "id": "garlic",
+    "qty": 3,
+    "note": "minced",
+    "note_es": "picado"
+   },
+   {
+    "id": "soy_sauce",
+    "qty": 5
+   },
+   {
+    "id": "sesame_oil",
+    "qty": 2
+   },
+   {
+    "id": "vinegar_rice",
+    "qty": 1
+   },
+   {
+    "id": "sugar",
+    "qty": 0.06
+   },
+   {
+    "id": "green_onion",
+    "qty": 3,
+    "note": "sliced",
+    "note_es": "en rodajas"
+   },
+   {
+    "id": "vegetable_oil",
+    "qty": 2
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 20,
+  "tip": "Any noodles work here — spaghetti is a great stand-in for lo mein noodles.",
+  "tip_es": "Cualquier fideo funciona: el espagueti reemplaza muy bien al lo mein.",
+  "photo_url": "https://images.unsplash.com/photo-1774717530911-2ceb99449f7a",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/glass-noodles-with-chicken-and-vegetables-in-a-bowl-96jPnoBCMGg"
+  }
+ },
+ {
+  "slug": "easy-chicken-fried-rice",
+  "name": "Easy Chicken Fried Rice",
+  "meal_type": "dinner",
+  "name_es": "Arroz frito con pollo fácil",
+  "diet_tags": [
+   "dairy_free"
+  ],
+  "servings": 4,
+  "prep_minutes": 25,
+  "batch_friendly": true,
+  "description": "Day-old rice wok-fried with chicken, eggs, peas and carrots in soy sauce.",
+  "description_es": "Arroz del día anterior salteado con pollo, huevos, arvejas y zanahoria en salsa de soja.",
+  "steps": [
+   "Heat 1 tablespoon of oil in a large skillet over high heat and scramble the eggs 1 minute until just set; transfer to a plate.",
+   "Add the remaining oil and cook the chicken 5 to 6 minutes until cooked through; transfer to the plate.",
+   "Stir-fry the onion, carrot and peas 3 minutes, then add the garlic and cook 30 seconds.",
+   "Add the rice, breaking up clumps, and fry 3 minutes until hot and a little crisp.",
+   "Return the chicken and eggs, add the soy sauce and sesame oil, toss 1 minute and serve."
+  ],
+  "steps_es": [
+   "Calienta 1 cucharada de aceite en una sartén grande a fuego alto y revuelve los huevos 1 minuto hasta que cuajen; reserva en un plato.",
+   "Agrega el resto del aceite y cocina el pollo de 5 a 6 minutos hasta que esté listo; reserva con los huevos.",
+   "Saltea la cebolla, zanahoria y arvejas 3 minutos, agrega el ajo y cocina 30 segundos.",
+   "Agrega el arroz, desarmando los grumos, y fríe 3 minutos hasta que esté caliente y apenas crocante.",
+   "Vuelve a poner el pollo y los huevos, agrega la soja y el aceite de sésamo, mezcla 1 minuto y sirve."
+  ],
+  "ingredients": [
+   {
+    "id": "rice_white",
+    "qty": 2,
+    "note": "cooked and chilled, day-old is best",
+    "note_es": "cocido y frío, ideal de un día para otro"
+   },
+   {
+    "id": "chicken_breast",
+    "qty": 1,
+    "note": "cut into small cubes",
+    "note_es": "en cubitos"
+   },
+   {
+    "id": "eggs",
+    "qty": 3
+   },
+   {
+    "id": "peas_frozen",
+    "qty": 1
+   },
+   {
+    "id": "carrot",
+    "qty": 2,
+    "note": "diced",
+    "note_es": "en cubitos"
+   },
+   {
+    "id": "onion_yellow",
+    "qty": 1,
+    "note": "diced",
+    "note_es": "en cubitos"
+   },
+   {
+    "id": "garlic",
+    "qty": 2,
+    "note": "minced",
+    "note_es": "picado"
+   },
+   {
+    "id": "soy_sauce",
+    "qty": 4
+   },
+   {
+    "id": "sesame_oil",
+    "qty": 1
+   },
+   {
+    "id": "vegetable_oil",
+    "qty": 3
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 22,
+  "tip": "Cold, dry rice fries best — spread fresh rice on a tray for 15 minutes if you must make it now.",
+  "tip_es": "El arroz frío y seco se fríe mejor; si lo haces recién, extiéndelo en una bandeja 15 minutos.",
+  "photo_url": "https://images.unsplash.com/photo-1603496987674-79600a000f55",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/fried-chicken-on-yellow-rice-77ItGP98s6g"
+  }
+ },
+ {
+  "slug": "teriyaki-chicken-bowls",
+  "name": "Teriyaki Chicken Bowls",
+  "meal_type": "dinner",
+  "name_es": "Bowls de pollo teriyaki",
+  "diet_tags": [
+   "high_protein",
+   "dairy_free"
+  ],
+  "servings": 4,
+  "prep_minutes": 30,
+  "batch_friendly": true,
+  "description": "Sweet-savory teriyaki chicken over rice with quick-pickled cucumber and carrots.",
+  "description_es": "Pollo teriyaki agridulce sobre arroz con pepino y zanahoria encurtidos rápidos.",
+  "steps": [
+   "Cook the rice according to the package directions.",
+   "Stir the soy sauce, sugar, vinegar, garlic and ginger in a small bowl to make the teriyaki sauce.",
+   "Toss the cucumber and carrot with a pinch of salt and a tablespoon of the sauce; set aside to pickle lightly.",
+   "Heat the oil in a large skillet over medium-high heat and cook the chicken 6 to 7 minutes until golden and cooked through.",
+   "Pour in the rest of the sauce and simmer 2 minutes until it thickens and glazes the chicken.",
+   "Serve over rice with the pickled vegetables and green onion."
+  ],
+  "steps_es": [
+   "Cocina el arroz según las instrucciones del paquete.",
+   "Mezcla la soja, azúcar, vinagre, ajo y jengibre en un tazón chico para armar la salsa teriyaki.",
+   "Mezcla el pepino y la zanahoria con una pizca de sal y una cucharada de la salsa; reserva para encurtir suavemente.",
+   "Calienta el aceite en una sartén grande a fuego medio-alto y cocina el pollo de 6 a 7 minutos hasta dorarlo.",
+   "Vierte el resto de la salsa y cocina 2 minutos hasta que espese y glasee el pollo.",
+   "Sirve sobre arroz con las verduras encurtidas y la cebolla de verdeo."
+  ],
+  "ingredients": [
+   {
+    "id": "chicken_thigh",
+    "qty": 1.25,
+    "note": "cut into bite-size pieces",
+    "note_es": "en cubos chicos"
+   },
+   {
+    "id": "rice_white",
+    "qty": 1.5
+   },
+   {
+    "id": "cucumber",
+    "qty": 1,
+    "note": "thinly sliced",
+    "note_es": "en láminas finas"
+   },
+   {
+    "id": "carrot",
+    "qty": 2,
+    "note": "grated",
+    "note_es": "rallada"
+   },
+   {
+    "id": "soy_sauce",
+    "qty": 6
+   },
+   {
+    "id": "sugar",
+    "qty": 0.2
+   },
+   {
+    "id": "vinegar_rice",
+    "qty": 2
+   },
+   {
+    "id": "garlic",
+    "qty": 2,
+    "note": "minced",
+    "note_es": "picado"
+   },
+   {
+    "id": "ginger",
+    "qty": 1,
+    "note": "grated",
+    "note_es": "rallado"
+   },
+   {
+    "id": "green_onion",
+    "qty": 3,
+    "note": "sliced",
+    "note_es": "en rodajas"
+   },
+   {
+    "id": "vegetable_oil",
+    "qty": 1
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 22,
+  "tip": "Double the sauce and keep half in the fridge for a faster dinner next week.",
+  "tip_es": "Haz el doble de salsa y guarda la mitad en la heladera: la próxima cena sale más rápido.",
+  "photo_url": "https://images.unsplash.com/photo-1783788357923-649e29b7b006",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/two-grilled-chicken-skewers-with-an-egg-yolk-dip-tKJ1T1Vvvnw"
+  }
+ },
+ {
+  "slug": "simple-ramen-egg-bowls",
+  "name": "Simple Ramen and Egg Bowls",
+  "meal_type": "dinner",
+  "name_es": "Bowls de ramen con huevo",
+  "diet_tags": [
+   "dairy_free"
+  ],
+  "servings": 4,
+  "prep_minutes": 20,
+  "batch_friendly": false,
+  "description": "Upgrade instant ramen with a soft egg, greens and a savory soy-ginger broth.",
+  "description_es": "Ramen instantáneo mejorado con huevo blando, verdes y un caldo sabroso de soja y jengibre.",
+  "steps": [
+   "Bring the broth to a simmer with the garlic, ginger and soy sauce in a pot over medium heat.",
+   "Add the ramen noodles and cook 3 minutes until just tender.",
+   "Lower to a gentle simmer, crack in the eggs spaced apart and poach 3 to 4 minutes until the whites set.",
+   "Stir in the spinach until wilted.",
+   "Ladle into bowls and top with green onion and a few drops of sesame oil."
+  ],
+  "steps_es": [
+   "Lleva el caldo a hervor suave con el ajo, jengibre y soja en una olla a fuego medio.",
+   "Agrega los fideos de ramen y cocina 3 minutos hasta que estén tiernos.",
+   "Baja el fuego, casca los huevos en puntos separados y cocina 3 a 4 minutos hasta que la clara cuaje.",
+   "Agrega la espinaca y mezcla hasta que se ablande.",
+   "Sirve en bowls con cebolla de verdeo y unas gotas de aceite de sésamo."
+  ],
+  "ingredients": [
+   {
+    "id": "ramen",
+    "qty": 4,
+    "note": "seasoning packets discarded",
+    "note_es": "sin los sobres de condimento"
+   },
+   {
+    "id": "chicken_broth",
+    "qty": 4,
+    "note": "cartons, about 8 cups",
+    "note_es": "cajas, unas 8 tazas"
+   },
+   {
+    "id": "eggs",
+    "qty": 4
+   },
+   {
+    "id": "spinach",
+    "qty": 3
+   },
+   {
+    "id": "green_onion",
+    "qty": 4,
+    "note": "sliced",
+    "note_es": "en rodajas"
+   },
+   {
+    "id": "soy_sauce",
+    "qty": 3
+   },
+   {
+    "id": "garlic",
+    "qty": 2,
+    "note": "smashed",
+    "note_es": "machacado"
+   },
+   {
+    "id": "ginger",
+    "qty": 1
+   },
+   {
+    "id": "sesame_oil",
+    "qty": 1
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 15,
+  "tip": "Stir in leftover rotisserie chicken or tofu to make it a fuller meal.",
+  "tip_es": "Agrega restos de pollo rostizado o tofu para hacerlo más completo.",
+  "photo_url": "https://images.unsplash.com/photo-1779453873118-0321c47aa1fd",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/a-bowl-of-ramen-with-pork-eggs-and-green-onions-bfzAPllbqb0"
+  }
+ },
+ {
+  "slug": "thai-red-curry-chicken",
+  "name": "Thai Red Curry Chicken",
+  "meal_type": "dinner",
+  "name_es": "Pollo al curry rojo tailandés",
+  "diet_tags": [
+   "dairy_free",
+   "high_protein"
+  ],
+  "servings": 4,
+  "prep_minutes": 30,
+  "batch_friendly": true,
+  "description": "Chicken and bell peppers simmered in a creamy red curry coconut sauce over rice.",
+  "description_es": "Pollo y morrones en una cremosa salsa de curry rojo con leche de coco, sobre arroz.",
+  "steps": [
+   "Cook the rice according to the package directions.",
+   "Heat the oil in a large skillet over medium-high heat and brown the chicken 4 minutes; it does not need to cook through.",
+   "Add the curry paste and cook 1 minute until fragrant, stirring constantly.",
+   "Pour in the coconut milk, soy sauce, brown sugar and the bell pepper; simmer 10 minutes until the chicken is cooked and the sauce thickens slightly.",
+   "Stir in the lime juice and serve over rice with cilantro."
+  ],
+  "steps_es": [
+   "Cocina el arroz según las instrucciones del paquete.",
+   "Calienta el aceite en una sartén grande a fuego medio-alto y dora el pollo 4 minutos; no hace falta que se cocine del todo.",
+   "Agrega la pasta de curry y cocina 1 minuto revolviendo hasta que largue aroma.",
+   "Vierte la leche de coco, soja y azúcar morena junto con el morrón; cocina a fuego suave 10 minutos hasta que el pollo esté listo y la salsa espese un poco.",
+   "Agrega el jugo de lima y sirve sobre arroz con cilantro."
+  ],
+  "ingredients": [
+   {
+    "id": "chicken_thigh",
+    "qty": 1.25,
+    "note": "cut into strips",
+    "note_es": "en tiras"
+   },
+   {
+    "id": "curry_paste",
+    "qty": 3
+   },
+   {
+    "id": "coconut_milk",
+    "qty": 1
+   },
+   {
+    "id": "bell_pepper",
+    "qty": 2,
+    "note": "sliced",
+    "note_es": "en tiras"
+   },
+   {
+    "id": "rice_white",
+    "qty": 1.5
+   },
+   {
+    "id": "soy_sauce",
+    "qty": 1
+   },
+   {
+    "id": "brown_sugar",
+    "qty": 0.06
+   },
+   {
+    "id": "lime",
+    "qty": 1,
+    "note": "juiced",
+    "note_es": "el jugo"
+   },
+   {
+    "id": "cilantro",
+    "qty": 0.25,
+    "note": "chopped",
+    "note_es": "picado"
+   },
+   {
+    "id": "vegetable_oil",
+    "qty": 1
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 20,
+  "tip": "Add a handful of frozen peas in the last 2 minutes for extra color.",
+  "tip_es": "Agrega un puñado de arvejas congeladas en los últimos 2 minutos para más color.",
+  "photo_url": "https://images.unsplash.com/photo-1764304733301-3a9f335f0c67",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/chicken-curry-in-a-white-bowl-with-sauce-VtNLbOAeO68"
+  }
+ },
+ {
+  "slug": "vegetable-curry-tofu",
+  "name": "Vegetable Curry with Tofu",
+  "meal_type": "dinner",
+  "name_es": "Curry de verduras con tofu",
+  "diet_tags": [
+   "vegetarian",
+   "vegan",
+   "gluten_free",
+   "dairy_free"
+  ],
+  "servings": 4,
+  "prep_minutes": 30,
+  "batch_friendly": true,
+  "description": "Golden tofu and vegetables in a mild coconut curry over rice.",
+  "description_es": "Tofu dorado y verduras en un curry suave de coco, sobre arroz.",
+  "steps": [
+   "Cook the rice according to the package directions.",
+   "Heat the oil in a large skillet over medium-high heat and brown the tofu cubes 6 to 8 minutes, turning once; transfer to a plate.",
+   "Add the onion and cook 3 minutes, then stir in the curry paste and ginger and cook 1 minute.",
+   "Pour in the coconut milk with the cauliflower, cover and simmer 8 minutes until tender.",
+   "Return the tofu, warm through 2 minutes, season with salt and serve over rice."
+  ],
+  "steps_es": [
+   "Cocina el arroz según las instrucciones del paquete.",
+   "Calienta el aceite en una sartén grande a fuego medio-alto y dora los cubos de tofu de 6 a 8 minutos, dándolos vuelta una vez; reserva en un plato.",
+   "Agrega la cebolla y cocina 3 minutos, luego suma la pasta de curry y el jengibre y cocina 1 minuto.",
+   "Vierte la leche de coco con la coliflor, tapa y cocina a fuego suave 8 minutos hasta que esté tierna.",
+   "Vuelve a poner el tofu, calienta 2 minutos, sazona con sal y sirve sobre arroz."
+  ],
+  "ingredients": [
+   {
+    "id": "tofu",
+    "qty": 2,
+    "note": "pressed and cubed",
+    "note_es": "escurrido y en cubos"
+   },
+   {
+    "id": "curry_paste",
+    "qty": 3
+   },
+   {
+    "id": "coconut_milk",
+    "qty": 1
+   },
+   {
+    "id": "cauliflower",
+    "qty": 1,
+    "note": "cut into small florets",
+    "note_es": "en floretes chicos"
+   },
+   {
+    "id": "onion_yellow",
+    "qty": 1,
+    "note": "sliced",
+    "note_es": "en tiras"
+   },
+   {
+    "id": "ginger",
+    "qty": 1,
+    "note": "grated",
+    "note_es": "rallado"
+   },
+   {
+    "id": "rice_white",
+    "qty": 1.5
+   },
+   {
+    "id": "vegetable_oil",
+    "qty": 2
+   },
+   {
+    "id": "salt",
+    "qty": 0.5
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 22,
+  "tip": "Press the tofu under a plate with a can on top for 10 minutes so it crisps instead of steaming.",
+  "tip_es": "Prensa el tofu bajo un plato con una lata encima 10 minutos para que se dore en vez de hervirse.",
+  "photo_url": "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/green-vegetable-on-white-ceramic-plate-PqsImnjuElM"
+  }
+ },
+ {
+  "slug": "pork-gyoza-salad-bowls",
+  "name": "Pork and Cabbage Skillet",
+  "meal_type": "dinner",
+  "name_es": "Cerdo salteado con repollo",
+  "diet_tags": [
+   "dairy_free",
+   "low_carb",
+   "high_protein"
+  ],
+  "servings": 4,
+  "prep_minutes": 25,
+  "batch_friendly": false,
+  "description": "Ground pork stir-fried with cabbage, garlic and ginger — all the flavors of dumplings without the folding.",
+  "description_es": "Cerdo molido salteado con repollo, ajo y jengibre: todo el sabor de las empanaditas sin armarlas.",
+  "steps": [
+   "Heat the oil in a large skillet over medium-high heat and cook the pork 5 to 6 minutes, breaking it up, until browned.",
+   "Add the garlic, ginger and cabbage; stir-fry 5 minutes until the cabbage wilts.",
+   "Pour in the soy sauce, vinegar and sesame oil and toss 1 minute.",
+   "Top with green onion and serve as is or over rice."
+  ],
+  "steps_es": [
+   "Calienta el aceite en una sartén grande a fuego medio-alto y cocina el cerdo de 5 a 6 minutos desmenuzándolo, hasta dorarlo.",
+   "Agrega el ajo, jengibre y repollo; saltea 5 minutos hasta que el repollo se ablande.",
+   "Vierte la soja, el vinagre y el aceite de sésamo y mezcla 1 minuto.",
+   "Termina con la cebolla de verdeo y sirve solo o sobre arroz."
+  ],
+  "ingredients": [
+   {
+    "id": "ground_pork",
+    "qty": 1.25
+   },
+   {
+    "id": "cabbage",
+    "qty": 0.5,
+    "note": "shredded",
+    "note_es": "rallado"
+   },
+   {
+    "id": "garlic",
+    "qty": 3,
+    "note": "minced",
+    "note_es": "picado"
+   },
+   {
+    "id": "ginger",
+    "qty": 1,
+    "note": "grated",
+    "note_es": "rallado"
+   },
+   {
+    "id": "soy_sauce",
+    "qty": 4
+   },
+   {
+    "id": "vinegar_rice",
+    "qty": 2
+   },
+   {
+    "id": "sesame_oil",
+    "qty": 1
+   },
+   {
+    "id": "green_onion",
+    "qty": 3,
+    "note": "sliced",
+    "note_es": "en rodajas"
+   },
+   {
+    "id": "vegetable_oil",
+    "qty": 1
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 18,
+  "tip": "A spoonful of sriracha stirred in at the end makes it taste like spicy dumpling filling.",
+  "tip_es": "Una cucharada de sriracha al final le da gusto a relleno de empanadita picante.",
+  "photo_url": "https://images.unsplash.com/photo-1564834724105-918b73d1b9e0",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/bowl-of-cooked-food-H6iSwrAOMG0"
+  }
+ },
+ {
+  "slug": "miso-glazed-salmon",
+  "name": "Miso-Glazed Salmon",
+  "meal_type": "dinner",
+  "name_es": "Salmón glaseado con miso",
+  "diet_tags": [
+   "pescatarian",
+   "dairy_free",
+   "high_protein"
+  ],
+  "servings": 4,
+  "prep_minutes": 25,
+  "batch_friendly": false,
+  "description": "Broiled salmon with a sweet miso glaze, served with rice and cucumbers.",
+  "description_es": "Salmón al grill con glaseado dulce de miso, con arroz y pepino.",
+  "steps": [
+   "Stir the miso, brown sugar, vinegar and soy sauce into a glaze in a small bowl.",
+   "Place the salmon on a lined baking sheet, brush with half the glaze and let it sit 5 minutes.",
+   "Broil 5 to 7 minutes, brushing once more with glaze, until the salmon flakes and the top is caramelized.",
+   "Serve over rice with the cucumber dressed in a little rice vinegar."
+  ],
+  "steps_es": [
+   "Mezcla el miso, azúcar morena, vinagre y soja en un tazón chico para armar el glaseado.",
+   "Coloca el salmón en una placa con papel, píntalo con la mitad del glaseado y déjalo reposar 5 minutos.",
+   "Cocina al grill 5 a 7 minutos, pintándolo una vez más, hasta que el salmón se deshoje y la superficie se caramelice.",
+   "Sirve sobre arroz con el pepino aliñado con un poco de vinagre de arroz."
+  ],
+  "ingredients": [
+   {
+    "id": "salmon",
+    "qty": 1.25,
+    "note": "in 4 fillets",
+    "note_es": "en 4 filetes"
+   },
+   {
+    "id": "miso_paste",
+    "qty": 3
+   },
+   {
+    "id": "brown_sugar",
+    "qty": 0.13
+   },
+   {
+    "id": "vinegar_rice",
+    "qty": 2
+   },
+   {
+    "id": "soy_sauce",
+    "qty": 1
+   },
+   {
+    "id": "rice_white",
+    "qty": 1.5
+   },
+   {
+    "id": "cucumber",
+    "qty": 1,
+    "note": "sliced",
+    "note_es": "en rodajas"
+   }
+  ],
+  "equipment": [
+   "oven",
+   "stovetop"
+  ],
+  "active_minutes": 15,
+  "tip": "Watch the broiler — the sugar in the glaze goes from caramelized to burnt fast.",
+  "tip_es": "Vigila el grill: el azúcar del glaseado pasa de caramelizado a quemado muy rápido.",
+  "photo_url": "https://images.unsplash.com/photo-1780805664262-c0845e033149",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/fresh-poke-bowl-and-sushi-rolls-on-a-dark-counter-WSOEjfTZwQY"
+  }
+ },
+ {
+  "slug": "sheet-pan-teriyaki-salmon",
+  "name": "Sheet Pan Teriyaki Salmon",
+  "meal_type": "dinner",
+  "name_es": "Salmón teriyaki al horno",
+  "diet_tags": [
+   "pescatarian",
+   "dairy_free",
+   "high_protein"
+  ],
+  "servings": 4,
+  "prep_minutes": 30,
+  "batch_friendly": false,
+  "description": "Salmon and green beans roasted together with a homemade teriyaki glaze.",
+  "description_es": "Salmón y judías verdes horneados juntos con glaseado teriyaki casero.",
+  "steps": [
+   "Heat the oven to {400F} and line a sheet pan with parchment.",
+   "Stir the soy sauce, sugar, vinegar, garlic and ginger in a small bowl.",
+   "Place the salmon on the pan with the green beans around it, brush everything with oil and season the beans with salt.",
+   "Roast 12 to 14 minutes, brushing the salmon with sauce twice, until it flakes easily.",
+   "Serve over rice with sesame seeds scattered on top."
+  ],
+  "steps_es": [
+   "Calienta el horno a {400F} y forra una placa con papel.",
+   "Mezcla la soja, azúcar, vinagre, ajo y jengibre en un tazón chico.",
+   "Coloca el salmón en la placa con las judías verdes alrededor, pinta todo con aceite y sazona las judías con sal.",
+   "Hornea 12 a 14 minutos, pintando el salmón con la salsa dos veces, hasta que se deshoje fácilmente.",
+   "Sirve sobre arroz con semillas de sésamo por encima."
+  ],
+  "ingredients": [
+   {
+    "id": "salmon",
+    "qty": 1.25,
+    "note": "in 4 fillets",
+    "note_es": "en 4 filetes"
+   },
+   {
+    "id": "green_beans",
+    "qty": 3,
+    "note": "trimmed",
+    "note_es": "sin puntas"
+   },
+   {
+    "id": "soy_sauce",
+    "qty": 5
+   },
+   {
+    "id": "sugar",
+    "qty": 0.13
+   },
+   {
+    "id": "vinegar_rice",
+    "qty": 1
+   },
+   {
+    "id": "garlic",
+    "qty": 2,
+    "note": "minced",
+    "note_es": "picado"
+   },
+   {
+    "id": "ginger",
+    "qty": 1,
+    "note": "grated",
+    "note_es": "rallado"
+   },
+   {
+    "id": "rice_white",
+    "qty": 1.5
+   },
+   {
+    "id": "sesame_seeds",
+    "qty": 1
+   },
+   {
+    "id": "vegetable_oil",
+    "qty": 1
+   },
+   {
+    "id": "salt",
+    "qty": 0.5
+   }
+  ],
+  "equipment": [
+   "oven"
+  ],
+  "active_minutes": 15,
+  "tip": "Line the pan — teriyaki glaze bakes on hard and parchment saves the cleanup.",
+  "tip_es": "Forra la placa: el glaseado teriyaki se pega fuerte y el papel te ahorra el lavado.",
+  "photo_url": "https://images.unsplash.com/photo-1766701753139-352e46e51c01",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/roast-vegetables-including-carrots-and-brussels-sprouts-on-table-JYnuDMMq68Q"
+  }
+ },
+ {
+  "slug": "korean-style-beef-bowls",
+  "name": "Korean-Style Beef Bowls",
+  "meal_type": "dinner",
+  "name_es": "Bowls de res estilo coreano",
+  "diet_tags": [
+   "high_protein",
+   "dairy_free"
+  ],
+  "servings": 4,
+  "prep_minutes": 25,
+  "batch_friendly": true,
+  "description": "Ground beef in a quick bulgogi-style sauce with cucumber kimchi over rice.",
+  "description_es": "Carne molida en salsa estilo bulgogi con pepino tipo kimchi sobre arroz.",
+  "steps": [
+   "Cook the rice according to the package directions.",
+   "Toss the cucumber with the vinegar, half the sugar and a pinch of salt; set aside.",
+   "Heat the oil in a large skillet over high heat and cook the beef 5 to 6 minutes, breaking it up, until browned.",
+   "Stir in the soy sauce, gochujang, remaining sugar, garlic and ginger and cook 2 minutes until glossy.",
+   "Serve over rice with the cucumber and green onion, drizzled with sesame oil."
+  ],
+  "steps_es": [
+   "Cocina el arroz según las instrucciones del paquete.",
+   "Mezcla el pepino con el vinagre, la mitad del azúcar y una pizca de sal; reserva.",
+   "Calienta el aceite en una sartén grande a fuego alto y cocina la carne de 5 a 6 minutos desmenuzándola, hasta dorarla.",
+   "Agrega la soja, el gochujang, el resto del azúcar, el ajo y el jengibre y cocina 2 minutos hasta que brille.",
+   "Sirve sobre arroz con el pepino y la cebolla de verdeo, con un chorrito de aceite de sésamo."
+  ],
+  "ingredients": [
+   {
+    "id": "ground_beef",
+    "qty": 1.25
+   },
+   {
+    "id": "rice_white",
+    "qty": 1.5
+   },
+   {
+    "id": "cucumber",
+    "qty": 1,
+    "note": "thinly sliced",
+    "note_es": "en láminas finas"
+   },
+   {
+    "id": "gochujang",
+    "qty": 2
+   },
+   {
+    "id": "soy_sauce",
+    "qty": 4
+   },
+   {
+    "id": "sugar",
+    "qty": 0.13
+   },
+   {
+    "id": "vinegar_rice",
+    "qty": 2
+   },
+   {
+    "id": "garlic",
+    "qty": 3,
+    "note": "minced",
+    "note_es": "picado"
+   },
+   {
+    "id": "ginger",
+    "qty": 1,
+    "note": "grated",
+    "note_es": "rallado"
+   },
+   {
+    "id": "green_onion",
+    "qty": 3,
+    "note": "sliced",
+    "note_es": "en rodajas"
+   },
+   {
+    "id": "sesame_oil",
+    "qty": 1
+   },
+   {
+    "id": "vegetable_oil",
+    "qty": 1
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 18,
+  "tip": "Gochujang heat varies by brand — start with 1 tablespoon and add more to taste.",
+  "tip_es": "El picor del gochujang varía según la marca: empieza con 1 cucharada y ajusta a gusto.",
+  "photo_url": "https://images.unsplash.com/photo-1635363638580-c2809d049eee",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/a-bowl-of-food-with-a-spoon-in-it-w_2vlvTgk7E"
+  }
+ },
+ {
+  "slug": "peanut-chicken-noodles",
+  "name": "Peanut Chicken Noodles",
+  "meal_type": "dinner",
+  "name_es": "Fideos con pollo y maní",
+  "diet_tags": [
+   "high_protein",
+   "dairy_free"
+  ],
+  "servings": 4,
+  "prep_minutes": 25,
+  "batch_friendly": false,
+  "description": "Noodles and chicken in a creamy peanut-lime sauce with crunchy vegetables.",
+  "description_es": "Fideos con pollo en salsa cremosa de maní y lima con verduras crocantes.",
+  "steps": [
+   "Cook the noodles according to the package directions, drain and rinse.",
+   "Whisk the peanut butter, soy sauce, lime juice, sugar and a quarter cup of warm water into a sauce.",
+   "Heat the oil in a large skillet over medium-high heat and cook the chicken 6 minutes until cooked through.",
+   "Add the vegetables and stir-fry 3 minutes until crisp-tender.",
+   "Add the noodles and sauce, toss 2 minutes until coated and hot, then serve with peanuts and cilantro."
+  ],
+  "steps_es": [
+   "Cocina los fideos según las instrucciones del paquete, escúrrelos y enjuágalos.",
+   "Bate la mantequilla de maní, soja, jugo de lima, azúcar y un cuarto de taza de agua tibia para armar la salsa.",
+   "Calienta el aceite en una sartén grande a fuego medio-alto y cocina el pollo 6 minutos hasta que esté listo.",
+   "Agrega las verduras y saltea 3 minutos hasta que estén firmes pero tiernas.",
+   "Suma los fideos y la salsa, mezcla 2 minutos hasta cubrir y calentar todo, y sirve con maní y cilantro."
+  ],
+  "ingredients": [
+   {
+    "id": "pasta_spaghetti",
+    "qty": 12
+   },
+   {
+    "id": "chicken_breast",
+    "qty": 1,
+    "note": "cut into strips",
+    "note_es": "en tiras"
+   },
+   {
+    "id": "peanut_butter",
+    "qty": 4
+   },
+   {
+    "id": "soy_sauce",
+    "qty": 4
+   },
+   {
+    "id": "lime",
+    "qty": 1,
+    "note": "juiced",
+    "note_es": "el jugo"
+   },
+   {
+    "id": "sugar",
+    "qty": 0.06
+   },
+   {
+    "id": "stir_fry_veg_frozen",
+    "qty": 3
+   },
+   {
+    "id": "peanuts",
+    "qty": 0.25,
+    "note": "chopped",
+    "note_es": "picados"
+   },
+   {
+    "id": "cilantro",
+    "qty": 0.25,
+    "note": "chopped",
+    "note_es": "picado"
+   },
+   {
+    "id": "vegetable_oil",
+    "qty": 2
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 20,
+  "tip": "Warm water loosens the peanut butter into a silky sauce — add a splash more if it seizes.",
+  "tip_es": "El agua tibia ablanda la mantequilla de maní hasta una salsa sedosa; agrega un chorrito más si se corta.",
+  "photo_url": "https://images.unsplash.com/photo-1783196736270-d08d63485303",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/a-plate-of-shrimp-noodles-with-red-bell-peppers-0HHs0Etbq24"
+  }
+ },
+ {
+  "slug": "simple-pad-thai",
+  "name": "Simple Pad Thai",
+  "meal_type": "dinner",
+  "name_es": "Pad thai simple",
+  "diet_tags": [
+   "dairy_free"
+  ],
+  "servings": 4,
+  "prep_minutes": 30,
+  "batch_friendly": false,
+  "description": "Rice noodles with chicken, egg and peanuts in a tangy-sweet tamarind-style sauce.",
+  "description_es": "Fideos de arroz con pollo, huevo y maní en salsa agridulce estilo tamarindo.",
+  "steps": [
+   "Soak the rice noodles in hot tap water 15 minutes until pliable; drain.",
+   "Whisk the fish sauce, sugar, vinegar and soy sauce in a small bowl.",
+   "Heat the oil in a large skillet over high heat and cook the chicken 5 minutes until cooked through; push to one side.",
+   "Scramble the eggs in the empty space 1 minute, then add the noodles and sauce.",
+   "Toss 3 to 4 minutes until the noodles are tender and coated; serve with peanuts, green onion and lime."
+  ],
+  "steps_es": [
+   "Remoja los fideos de arroz en agua caliente de la canilla 15 minutos hasta que se ablanden; escúrrelos.",
+   "Bate la salsa de pescado, azúcar, vinagre y soja en un tazón chico.",
+   "Calienta el aceite en una sartén grande a fuego alto y cocina el pollo 5 minutos hasta que esté listo; corre todo a un lado.",
+   "Revuelve los huevos en el espacio libre 1 minuto, luego agrega los fideos y la salsa.",
+   "Mezcla 3 a 4 minutos hasta que los fideos estén tiernos y cubiertos; sirve con maní, cebolla de verdeo y lima."
+  ],
+  "ingredients": [
+   {
+    "id": "rice_noodles",
+    "qty": 10
+   },
+   {
+    "id": "chicken_breast",
+    "qty": 1,
+    "note": "thinly sliced",
+    "note_es": "en láminas finas"
+   },
+   {
+    "id": "eggs",
+    "qty": 2
+   },
+   {
+    "id": "fish_sauce",
+    "qty": 3
+   },
+   {
+    "id": "sugar",
+    "qty": 0.2
+   },
+   {
+    "id": "vinegar_rice",
+    "qty": 2
+   },
+   {
+    "id": "soy_sauce",
+    "qty": 1
+   },
+   {
+    "id": "peanuts",
+    "qty": 0.5,
+    "note": "chopped",
+    "note_es": "picados"
+   },
+   {
+    "id": "green_onion",
+    "qty": 3,
+    "note": "sliced",
+    "note_es": "en rodajas"
+   },
+   {
+    "id": "lime",
+    "qty": 1,
+    "note": "in wedges",
+    "note_es": "en gajos"
+   },
+   {
+    "id": "vegetable_oil",
+    "qty": 2
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 22,
+  "tip": "If the noodles clump, add a splash of water and keep tossing — they'll relax.",
+  "tip_es": "Si los fideos se apelmazan, agrega un chorrito de agua y sigue mezclando: se sueltan.",
+  "photo_url": "https://images.unsplash.com/photo-1788927791589-aa6d59e892e5",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/pad-thai-bowls-with-scrambled-eggs-cTUHI-LMR2Y"
+  }
+ },
+ {
+  "slug": "sweet-chili-shrimp",
+  "name": "Sweet Chili Shrimp",
+  "meal_type": "dinner",
+  "name_es": "Camarones agridulces picantes",
+  "diet_tags": [
+   "pescatarian",
+   "gluten_free",
+   "dairy_free",
+   "high_protein"
+  ],
+  "servings": 4,
+  "prep_minutes": 20,
+  "batch_friendly": false,
+  "description": "Seared shrimp glazed in a quick sweet chili-lime sauce over rice.",
+  "description_es": "Camarones sellados glaseados en salsa agridulce de lima, sobre arroz.",
+  "steps": [
+   "Cook the rice according to the package directions.",
+   "Stir the sugar, vinegar, sriracha, fish sauce and garlic in a small bowl.",
+   "Pat the shrimp dry, season with salt and sear in hot oil 2 minutes per side until pink.",
+   "Pour in the sauce, toss 1 minute until it coats the shrimp and serve over rice with green onion."
+  ],
+  "steps_es": [
+   "Cocina el arroz según las instrucciones del paquete.",
+   "Mezcla el azúcar, vinagre, sriracha, salsa de pescado y ajo en un tazón chico.",
+   "Seca los camarones, sazónalos con sal y dóralos en aceite caliente 2 minutos por lado hasta que estén rosados.",
+   "Vierte la salsa, mezcla 1 minuto hasta que cubra los camarones y sirve sobre arroz con cebolla de verdeo."
+  ],
+  "ingredients": [
+   {
+    "id": "shrimp",
+    "qty": 1.25,
+    "note": "peeled and deveined",
+    "note_es": "pelados y limpios"
+   },
+   {
+    "id": "rice_white",
+    "qty": 1.5
+   },
+   {
+    "id": "sugar",
+    "qty": 0.2
+   },
+   {
+    "id": "vinegar_rice",
+    "qty": 2
+   },
+   {
+    "id": "sriracha",
+    "qty": 1
+   },
+   {
+    "id": "fish_sauce",
+    "qty": 1
+   },
+   {
+    "id": "garlic",
+    "qty": 2,
+    "note": "minced",
+    "note_es": "picado"
+   },
+   {
+    "id": "green_onion",
+    "qty": 3,
+    "note": "sliced",
+    "note_es": "en rodajas"
+   },
+   {
+    "id": "vegetable_oil",
+    "qty": 1
+   },
+   {
+    "id": "salt",
+    "qty": 0.5
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 15,
+  "tip": "Pat the shrimp very dry so they sear instead of steaming.",
+  "tip_es": "Seca bien los camarones para que se doren en vez de hervirse.",
+  "photo_url": "https://images.unsplash.com/photo-1768326119244-6b7055143e5f",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/a-bowl-of-rice-with-toppings-chili-oil-and-chopsticks-EXfWNPsiu8s"
+  }
+ },
+ {
+  "slug": "mongolian-beef-noodles",
+  "name": "Mongolian Beef Noodles",
+  "meal_type": "dinner",
+  "name_es": "Fideos con res estilo mongol",
+  "diet_tags": [
+   "dairy_free",
+   "high_protein"
+  ],
+  "servings": 4,
+  "prep_minutes": 30,
+  "batch_friendly": false,
+  "description": "Crisp-edged beef and noodles in a sweet soy-garlic glaze.",
+  "description_es": "Res de bordes crocantes con fideos en glaseado dulce de soja y ajo.",
+  "steps": [
+   "Cook the noodles according to the package directions, drain and rinse.",
+   "Toss the beef with the cornstarch and let it sit 5 minutes.",
+   "Heat the oil in a large skillet over high heat and sear the beef 3 to 4 minutes until crisp at the edges; transfer to a plate.",
+   "Stir the soy sauce, brown sugar, garlic, ginger and half a cup of water, add to the pan and simmer 2 minutes.",
+   "Return the beef and add the noodles, toss until coated and serve with green onion."
+  ],
+  "steps_es": [
+   "Cocina los fideos según las instrucciones del paquete, escúrrelos y enjuágalos.",
+   "Mezcla la res con la maicena y déjala reposar 5 minutos.",
+   "Calienta el aceite en una sartén grande a fuego alto y dora la res de 3 a 4 minutos hasta que los bordes estén crocantes; reserva en un plato.",
+   "Mezcla la soja, azúcar morena, ajo, jengibre y media taza de agua, vierte en la sartén y cocina a fuego suave 2 minutos.",
+   "Vuelve a poner la res, agrega los fideos, mezcla hasta cubrir y sirve con cebolla de verdeo."
+  ],
+  "ingredients": [
+   {
+    "id": "steak_sirloin",
+    "qty": 1,
+    "note": "thinly sliced",
+    "note_es": "en láminas finas"
+   },
+   {
+    "id": "pasta_spaghetti",
+    "qty": 12
+   },
+   {
+    "id": "soy_sauce",
+    "qty": 6
+   },
+   {
+    "id": "brown_sugar",
+    "qty": 0.25
+   },
+   {
+    "id": "garlic",
+    "qty": 3,
+    "note": "minced",
+    "note_es": "picado"
+   },
+   {
+    "id": "ginger",
+    "qty": 1,
+    "note": "grated",
+    "note_es": "rallado"
+   },
+   {
+    "id": "cornstarch",
+    "qty": 2
+   },
+   {
+    "id": "green_onion",
+    "qty": 4,
+    "note": "in 2-inch pieces",
+    "note_es": "en tramos de 5 cm"
+   },
+   {
+    "id": "vegetable_oil",
+    "qty": 2
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 22,
+  "tip": "The cornstarch coating is what gives the beef those crispy edges — don't skip it.",
+  "tip_es": "La maicena es lo que deja los bordes crocantes de la res: no la saltees.",
+  "photo_url": "https://images.unsplash.com/photo-1780246330541-f4e329c5b588",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/a-bowl-of-stir-fried-noodles-and-a-chocolate-milkshake-b_zDR-OuCcQ"
+  }
+ },
+ {
+  "slug": "coconut-chicken-soup",
+  "name": "Coconut Chicken Soup",
+  "meal_type": "dinner",
+  "name_es": "Sopa de pollo y coco",
+  "diet_tags": [
+   "gluten_free",
+   "dairy_free"
+  ],
+  "servings": 4,
+  "prep_minutes": 30,
+  "batch_friendly": true,
+  "description": "A fragrant coconut-lime soup with chicken and mushrooms, like a simple tom kha.",
+  "description_es": "Sopa fragante de coco y lima con pollo y champiñones, como un tom kha simple.",
+  "steps": [
+   "Bring the broth, ginger and lemongrass-free aromatics (garlic) to a simmer in a pot over medium heat.",
+   "Add the coconut milk and mushrooms; simmer 5 minutes.",
+   "Add the chicken and simmer 6 to 8 minutes until cooked through.",
+   "Stir in the fish sauce, sugar and lime juice; season to taste.",
+   "Ladle into bowls and top with cilantro."
+  ],
+  "steps_es": [
+   "Lleva el caldo con el jengibre y el ajo a hervor suave en una olla a fuego medio.",
+   "Agrega la leche de coco y los champiñones; cocina 5 minutos.",
+   "Suma el pollo y cocina de 6 a 8 minutos hasta que esté listo.",
+   "Agrega la salsa de pescado, azúcar y jugo de lima; ajusta a gusto.",
+   "Sirve en bowls con cilantro."
+  ],
+  "ingredients": [
+   {
+    "id": "chicken_broth",
+    "qty": 4,
+    "note": "carton, 4 cups",
+    "note_es": "caja, 4 tazas"
+   },
+   {
+    "id": "coconut_milk",
+    "qty": 1
+   },
+   {
+    "id": "chicken_breast",
+    "qty": 1,
+    "note": "thinly sliced",
+    "note_es": "en láminas finas"
+   },
+   {
+    "id": "mushroom",
+    "qty": 2,
+    "note": "sliced",
+    "note_es": "en láminas"
+   },
+   {
+    "id": "ginger",
+    "qty": 2,
+    "note": "in coins",
+    "note_es": "en rodajas"
+   },
+   {
+    "id": "garlic",
+    "qty": 2,
+    "note": "smashed",
+    "note_es": "machacado"
+   },
+   {
+    "id": "fish_sauce",
+    "qty": 2
+   },
+   {
+    "id": "sugar",
+    "qty": 0.06
+   },
+   {
+    "id": "lime",
+    "qty": 1,
+    "note": "juiced",
+    "note_es": "el jugo"
+   },
+   {
+    "id": "cilantro",
+    "qty": 0.25,
+    "note": "chopped",
+    "note_es": "picado"
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 15,
+  "tip": "Don't boil hard after adding the chicken — a gentle simmer keeps it tender.",
+  "tip_es": "No hiervas fuerte después de agregar el pollo: el fuego suave lo mantiene tierno.",
+  "photo_url": "https://images.unsplash.com/photo-1618449840665-9ed506d73a34",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/black-ceramic-bowl-with-soup-0wn-DdavPa4"
+  }
+ },
+ {
+  "slug": "shrimp-fried-rice",
+  "name": "Shrimp Fried Rice",
+  "meal_type": "dinner",
+  "name_es": "Arroz frito con camarones",
+  "diet_tags": [
+   "pescatarian",
+   "dairy_free"
+  ],
+  "servings": 4,
+  "prep_minutes": 25,
+  "batch_friendly": false,
+  "description": "Garlicky shrimp fried rice with peas, carrots and egg ribbons.",
+  "description_es": "Arroz frito con camarones al ajo, arvejas, zanahoria y tiritas de huevo.",
+  "steps": [
+   "Heat 1 tablespoon of oil in a large skillet over high heat and scramble the eggs 1 minute; transfer to a plate.",
+   "Add 1 more tablespoon of oil and cook the shrimp 2 minutes per side until pink; transfer to the plate.",
+   "Stir-fry the carrots and peas 3 minutes in the remaining oil, then add the garlic and cook 30 seconds.",
+   "Add the rice and fry 3 minutes until hot, breaking up clumps.",
+   "Return the shrimp and eggs with the soy sauce and sesame oil, toss 1 minute and serve."
+  ],
+  "steps_es": [
+   "Calienta 1 cucharada de aceite en una sartén grande a fuego alto y revuelve los huevos 1 minuto; reserva en un plato.",
+   "Agrega 1 cucharada más y cocina los camarones 2 minutos por lado hasta que estén rosados; reserva con los huevos.",
+   "Saltea la zanahoria y las arvejas 3 minutos en el aceite restante, agrega el ajo y cocina 30 segundos.",
+   "Suma el arroz y fríe 3 minutos hasta que esté caliente, desarmando los grumos.",
+   "Vuelve a poner los camarones y los huevos con la soja y el aceite de sésamo, mezcla 1 minuto y sirve."
+  ],
+  "ingredients": [
+   {
+    "id": "shrimp",
+    "qty": 1,
+    "note": "peeled and deveined",
+    "note_es": "pelados y limpios"
+   },
+   {
+    "id": "rice_white",
+    "qty": 2,
+    "note": "cooked and chilled",
+    "note_es": "cocido y frío"
+   },
+   {
+    "id": "eggs",
+    "qty": 2
+   },
+   {
+    "id": "peas_frozen",
+    "qty": 1
+   },
+   {
+    "id": "carrot",
+    "qty": 2,
+    "note": "diced",
+    "note_es": "en cubitos"
+   },
+   {
+    "id": "garlic",
+    "qty": 3,
+    "note": "minced",
+    "note_es": "picado"
+   },
+   {
+    "id": "soy_sauce",
+    "qty": 4
+   },
+   {
+    "id": "sesame_oil",
+    "qty": 1
+   },
+   {
+    "id": "vegetable_oil",
+    "qty": 3
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 20,
+  "photo_url": "https://images.unsplash.com/photo-1788603907442-253dd51b1aec",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/fried-rice-with-mixed-vegetables-OZXQcw8W4H0"
+  }
+ },
+ {
+  "slug": "hoisin-chicken-lettuce-wraps",
+  "name": "Hoisin Chicken Lettuce Wraps",
+  "meal_type": "dinner",
+  "name_es": "Pollo hoisin en hojas de lechuga",
+  "diet_tags": [
+   "dairy_free",
+   "low_carb",
+   "high_protein"
+  ],
+  "servings": 4,
+  "prep_minutes": 25,
+  "batch_friendly": false,
+  "description": "Savory ground chicken with hoisin and water-crisp vegetables, served in crunchy lettuce cups.",
+  "description_es": "Pollo molido con hoisin y verduras crocantes en hojas frescas de lechuga.",
+  "steps": [
+   "Heat the oil in a large skillet over medium-high heat and cook the chicken 5 to 6 minutes, breaking it up, until browned.",
+   "Add the garlic, ginger and carrot; cook 3 minutes until the carrot softens.",
+   "Stir in the hoisin, soy sauce and vinegar and cook 1 minute until glossy.",
+   "Spoon the filling into lettuce leaves and top with green onion and peanuts."
+  ],
+  "steps_es": [
+   "Calienta el aceite en una sartén grande a fuego medio-alto y cocina el pollo de 5 a 6 minutos desmenuzándolo, hasta dorarlo.",
+   "Agrega el ajo, jengibre y zanahoria; cocina 3 minutos hasta que la zanahoria se ablande.",
+   "Suma el hoisin, la soja y el vinagre y cocina 1 minuto hasta que brille.",
+   "Sirve el relleno en hojas de lechuga con cebolla de verdeo y maní."
+  ],
+  "ingredients": [
+   {
+    "id": "ground_turkey",
+    "qty": 1.25,
+    "note": "or ground chicken",
+    "note_es": "o pollo molido"
+   },
+   {
+    "id": "hoisin",
+    "qty": 4
+   },
+   {
+    "id": "soy_sauce",
+    "qty": 2
+   },
+   {
+    "id": "vinegar_rice",
+    "qty": 1
+   },
+   {
+    "id": "garlic",
+    "qty": 3,
+    "note": "minced",
+    "note_es": "picado"
+   },
+   {
+    "id": "ginger",
+    "qty": 1,
+    "note": "grated",
+    "note_es": "rallado"
+   },
+   {
+    "id": "carrot",
+    "qty": 2,
+    "note": "grated",
+    "note_es": "rallada"
+   },
+   {
+    "id": "romaine",
+    "qty": 1,
+    "note": "separated into leaves",
+    "note_es": "hojas separadas"
+   },
+   {
+    "id": "green_onion",
+    "qty": 3,
+    "note": "sliced",
+    "note_es": "en rodajas"
+   },
+   {
+    "id": "peanuts",
+    "qty": 0.25,
+    "note": "chopped",
+    "note_es": "picados"
+   },
+   {
+    "id": "vegetable_oil",
+    "qty": 1
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 15,
+  "photo_url": "https://images.unsplash.com/photo-1787273670681-b1886c2807a3",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/fried-spring-rolls-on-plate-5L-7s-OSjlo"
+  }
+ },
+ {
+  "slug": "ginger-scallion-chicken",
+  "name": "Ginger Scallion Chicken",
+  "meal_type": "dinner",
+  "name_es": "Pollo al jengibre y verdeo",
+  "diet_tags": [
+   "dairy_free",
+   "high_protein"
+  ],
+  "servings": 4,
+  "prep_minutes": 30,
+  "batch_friendly": false,
+  "description": "Poached-style skillet chicken with a bright ginger-scallion sauce over rice.",
+  "description_es": "Pollo tierno con salsa fresca de jengibre y verdeo, sobre arroz.",
+  "steps": [
+   "Cook the rice according to the package directions.",
+   "Season the chicken with salt and sear in hot oil 4 minutes per side until cooked through; let it rest, then slice.",
+   "Combine the ginger, green onion, soy sauce, sesame oil and vinegar in a heatproof bowl.",
+   "Heat 2 tablespoons of oil until shimmering and pour it carefully over the ginger mixture — it will sizzle.",
+   "Serve the sliced chicken over rice, spooned with the ginger sauce."
+  ],
+  "steps_es": [
+   "Cocina el arroz según las instrucciones del paquete.",
+   "Sazona el pollo con sal y dóralo en aceite caliente 4 minutos por lado hasta que esté listo; déjalo reposar y córtalo en tajadas.",
+   "Combina el jengibre, la cebolla de verdeo, la soja, el aceite de sésamo y el vinagre en un tazón resistente al calor.",
+   "Calienta 2 cucharadas de aceite hasta que brille y viértelo con cuidado sobre la mezcla de jengibre: va a chisporrotear.",
+   "Sirve el pollo en tajadas sobre el arroz con la salsa de jengibre por encima."
+  ],
+  "ingredients": [
+   {
+    "id": "chicken_breast",
+    "qty": 1.5
+   },
+   {
+    "id": "rice_white",
+    "qty": 1.5
+   },
+   {
+    "id": "ginger",
+    "qty": 3,
+    "note": "finely grated",
+    "note_es": "rallado fino"
+   },
+   {
+    "id": "green_onion",
+    "qty": 6,
+    "note": "thinly sliced",
+    "note_es": "en láminas finas"
+   },
+   {
+    "id": "soy_sauce",
+    "qty": 3
+   },
+   {
+    "id": "sesame_oil",
+    "qty": 1
+   },
+   {
+    "id": "vinegar_rice",
+    "qty": 1
+   },
+   {
+    "id": "vegetable_oil",
+    "qty": 3
+   },
+   {
+    "id": "salt",
+    "qty": 0.5
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 20,
+  "tip": "The hot oil poured over the ginger sauce is the magic — it blooms the flavors instantly.",
+  "tip_es": "El aceite caliente sobre la salsa de jengibre es la clave: despierta todos los sabores al instante.",
+  "photo_url": "https://images.unsplash.com/photo-1787691684812-365ed2c7daf4",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/cook-preparing-street-food-in-shanghai-rJHnZX2FH9s"
+  }
+ },
+ {
+  "slug": "spicy-tuna-sushi-bowls",
+  "name": "Spicy Tuna Sushi Bowls",
+  "meal_type": "dinner",
+  "name_es": "Bowls de sushi con atún picante",
+  "diet_tags": [
+   "pescatarian",
+   "dairy_free",
+   "high_protein"
+  ],
+  "servings": 4,
+  "prep_minutes": 20,
+  "batch_friendly": false,
+  "description": "Deconstructed sushi bowls with spicy tuna, cucumber, avocado and seasoned rice.",
+  "description_es": "Bowls de sushi desarmados con atún picante, pepino, aguacate y arroz sazonado.",
+  "steps": [
+   "Cook the rice, then fold in the vinegar, sugar and a pinch of salt while warm.",
+   "Drain the tuna and mix it with the mayo, sriracha and half the green onion.",
+   "Divide the rice between bowls and top with the tuna, cucumber and avocado.",
+   "Drizzle with soy sauce and finish with the remaining green onion and sesame seeds."
+  ],
+  "steps_es": [
+   "Cocina el arroz y mézclalo aún tibio con el vinagre, el azúcar y una pizca de sal.",
+   "Escurre el atún y mézclalo con la mayonesa, el sriracha y la mitad de la cebolla de verdeo.",
+   "Reparte el arroz en bowls y cubre con el atún, el pepino y el aguacate.",
+   "Riega con soja y termina con el resto del verdeo y las semillas de sésamo."
+  ],
+  "ingredients": [
+   {
+    "id": "tuna_canned",
+    "qty": 2,
+    "note": "cans, drained",
+    "note_es": "latas, escurridas"
+   },
+   {
+    "id": "rice_white",
+    "qty": 1.5
+   },
+   {
+    "id": "avocado",
+    "qty": 1,
+    "note": "sliced",
+    "note_es": "en rodajas"
+   },
+   {
+    "id": "cucumber",
+    "qty": 1,
+    "note": "diced",
+    "note_es": "en cubitos"
+   },
+   {
+    "id": "mayo",
+    "qty": 3
+   },
+   {
+    "id": "sriracha",
+    "qty": 2
+   },
+   {
+    "id": "soy_sauce",
+    "qty": 3
+   },
+   {
+    "id": "vinegar_rice",
+    "qty": 2
+   },
+   {
+    "id": "sugar",
+    "qty": 0.06
+   },
+   {
+    "id": "green_onion",
+    "qty": 3,
+    "note": "sliced",
+    "note_es": "en rodajas"
+   },
+   {
+    "id": "sesame_seeds",
+    "qty": 1
+   },
+   {
+    "id": "salt",
+    "qty": 0.25
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 15,
+  "tip": "Sushi bowls taste best with the rice slightly warm, not fridge-cold.",
+  "tip_es": "Estos bowls saben mejor con el arroz apenas tibio, no frío de heladera.",
+  "photo_url": "https://images.unsplash.com/photo-1780805663576-48cdd496138d",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/fresh-colorful-poke-bowl-on-a-round-wooden-table-H-DKnqVDOUk"
+  }
+ },
+ {
+  "slug": "five-spice-pork-tenderloin",
+  "name": "Soy-Glazed Pork Tenderloin",
+  "meal_type": "dinner",
+  "name_es": "Lomo de cerdo glaseado con soja",
+  "diet_tags": [
+   "high_protein",
+   "dairy_free",
+   "low_carb"
+  ],
+  "servings": 4,
+  "prep_minutes": 35,
+  "batch_friendly": true,
+  "description": "Roasted pork tenderloin with a five-spice style soy glaze and roasted broccoli.",
+  "description_es": "Lomo de cerdo al horno con glaseado de soja especiado y brócoli asado.",
+  "steps": [
+   "Heat the oven to {425F} and line a sheet pan with parchment.",
+   "Whisk the soy sauce, honey, garlic, ginger and chili powder into a glaze.",
+   "Place the pork on the pan with the broccoli alongside, toss the broccoli with oil and salt.",
+   "Roast 18 to 22 minutes, brushing the pork with glaze twice, until the thickest part reaches 145F inside.",
+   "Rest 5 minutes, slice and serve with the broccoli and pan juices."
+  ],
+  "steps_es": [
+   "Calienta el horno a {425F} y forra una placa con papel.",
+   "Bate la soja, miel, ajo, jengibre y chile en polvo para armar el glaseado.",
+   "Coloca el lomo en la placa con el brócoli al lado, mezcla el brócoli con aceite y sal.",
+   "Hornea de 18 a 22 minutos, pintando el lomo dos veces, hasta que el centro marque 145F por dentro.",
+   "Deja reposar 5 minutos, corta en tajadas y sirve con el brócoli y los jugos de la placa."
+  ],
+  "ingredients": [
+   {
+    "id": "pork_tenderloin",
+    "qty": 1.5
+   },
+   {
+    "id": "broccoli_frozen",
+    "qty": 3,
+    "note": "thawed",
+    "note_es": "descongelado"
+   },
+   {
+    "id": "soy_sauce",
+    "qty": 5
+   },
+   {
+    "id": "honey",
+    "qty": 2
+   },
+   {
+    "id": "garlic",
+    "qty": 2,
+    "note": "minced",
+    "note_es": "picado"
+   },
+   {
+    "id": "ginger",
+    "qty": 1,
+    "note": "grated",
+    "note_es": "rallado"
+   },
+   {
+    "id": "chili_powder",
+    "qty": 0.5
+   },
+   {
+    "id": "vegetable_oil",
+    "qty": 1
+   },
+   {
+    "id": "salt",
+    "qty": 0.5
+   }
+  ],
+  "equipment": [
+   "oven"
+  ],
+  "active_minutes": 15,
+  "tip": "A thermometer takes the guesswork out — 145F inside means juicy, not dry.",
+  "tip_es": "Un termómetro te salva el plato: 145F por dentro es jugoso, no seco.",
+  "photo_url": "https://images.unsplash.com/photo-1784902540665-f6ab6dfef921",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/cooked-chicken-rice-and-vegetables-with-various-spices-P53oXx7TcXI"
+  }
+ },
+ {
+  "slug": "vegetable-tempura-rice-bowls",
+  "name": "Crispy Vegetable Rice Bowls",
+  "meal_type": "dinner",
+  "name_es": "Bowls de verduras crocantes",
+  "diet_tags": [
+   "vegetarian",
+   "vegan",
+   "dairy_free"
+  ],
+  "servings": 4,
+  "prep_minutes": 30,
+  "batch_friendly": false,
+  "description": "Cornstarch-crisped vegetables over rice with a soy-ginger dipping sauce.",
+  "description_es": "Verduras crocantes de maicena sobre arroz con salsa de soja y jengibre.",
+  "steps": [
+   "Cook the rice according to the package directions.",
+   "Stir the soy sauce, vinegar, ginger and a pinch of sugar in a small bowl for the sauce.",
+   "Toss the vegetables with the cornstarch and a pinch of salt until lightly coated.",
+   "Heat the oil in a large skillet over medium-high heat and fry the vegetables in two batches 4 to 5 minutes until crisp; drain on paper.",
+   "Serve over rice with the dipping sauce and sesame seeds."
+  ],
+  "steps_es": [
+   "Cocina el arroz según las instrucciones del paquete.",
+   "Mezcla la soja, el vinagre, el jengibre y una pizca de azúcar en un tazón chico para la salsa.",
+   "Cubre las verduras con la maicena y una pizca de sal hasta que queden apenas recubiertas.",
+   "Calienta el aceite en una sartén grande a fuego medio-alto y fríe las verduras en dos tandas de 4 a 5 minutos hasta que estén crocantes; escúrrelas sobre papel.",
+   "Sirve sobre arroz con la salsa y semillas de sésamo."
+  ],
+  "ingredients": [
+   {
+    "id": "rice_white",
+    "qty": 1.5
+   },
+   {
+    "id": "stir_fry_veg_frozen",
+    "qty": 5,
+    "note": "thawed and patted dry",
+    "note_es": "descongeladas y bien secas"
+   },
+   {
+    "id": "cornstarch",
+    "qty": 4
+   },
+   {
+    "id": "soy_sauce",
+    "qty": 4
+   },
+   {
+    "id": "vinegar_rice",
+    "qty": 2
+   },
+   {
+    "id": "ginger",
+    "qty": 1,
+    "note": "grated",
+    "note_es": "rallado"
+   },
+   {
+    "id": "sugar",
+    "qty": 0.03
+   },
+   {
+    "id": "sesame_seeds",
+    "qty": 1
+   },
+   {
+    "id": "vegetable_oil",
+    "qty": 4
+   },
+   {
+    "id": "salt",
+    "qty": 0.5
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 25,
+  "photo_url": "https://images.unsplash.com/photo-1761315413537-b7bf6248050e",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/fresh-spring-rolls-filled-with-vegetables-and-avocado-kJ2Kmqs3FX8"
+  }
+ },
+ {
+  "slug": "egg-drop-soup",
+  "name": "Egg Drop Soup with Noodles",
+  "meal_type": "dinner",
+  "name_es": "Sopa de huevo con fideos",
+  "diet_tags": [
+   "dairy_free"
+  ],
+  "servings": 4,
+  "prep_minutes": 15,
+  "batch_friendly": false,
+  "description": "Silky egg ribbons in a ginger-scallion broth with quick noodles.",
+  "description_es": "Tiras sedosas de huevo en caldo de jengibre y verdeo con fideos rápidos.",
+  "steps": [
+   "Bring the broth to a simmer with the ginger, garlic and soy sauce.",
+   "Add the ramen noodles and cook 2 minutes.",
+   "Stir the broth in a circle and drizzle the beaten eggs in slowly — they form ribbons as they set.",
+   "Add the spinach and sesame oil, cook 30 seconds and serve with green onion."
+  ],
+  "steps_es": [
+   "Lleva el caldo a hervor suave con el jengibre, el ajo y la soja.",
+   "Agrega los fideos de ramen y cocina 2 minutos.",
+   "Revuelve el caldo en círculos y vierte los huevos batidos en hilo lento: forman tiras al cuajar.",
+   "Suma la espinaca y el aceite de sésamo, cocina 30 segundos y sirve con cebolla de verdeo."
+  ],
+  "ingredients": [
+   {
+    "id": "chicken_broth",
+    "qty": 4,
+    "note": "cartons, about 8 cups",
+    "note_es": "cajas, unas 8 tazas"
+   },
+   {
+    "id": "ramen",
+    "qty": 4,
+    "note": "seasoning packets discarded",
+    "note_es": "sin los sobres"
+   },
+   {
+    "id": "eggs",
+    "qty": 4,
+    "note": "beaten",
+    "note_es": "batidos"
+   },
+   {
+    "id": "ginger",
+    "qty": 1,
+    "note": "grated",
+    "note_es": "rallado"
+   },
+   {
+    "id": "garlic",
+    "qty": 2,
+    "note": "minced",
+    "note_es": "picado"
+   },
+   {
+    "id": "spinach",
+    "qty": 2
+   },
+   {
+    "id": "soy_sauce",
+    "qty": 2
+   },
+   {
+    "id": "sesame_oil",
+    "qty": 1
+   },
+   {
+    "id": "green_onion",
+    "qty": 4,
+    "note": "sliced",
+    "note_es": "en rodajas"
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 10,
+  "tip": "Pour the eggs slowly while stirring — fast pouring makes clumps, not ribbons.",
+  "tip_es": "Vierte los huevos lento mientras revuelves: rápido hace grumos, no tiras.",
+  "photo_url": "https://images.unsplash.com/photo-1701480253822-1842236c9a97",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/a-bowl-of-soup-with-noodles-meat-and-vegetables-_33r6H_hiz4"
+  }
+ },
+ {
+  "slug": "orange-chicken",
+  "name": "Easy Orange Chicken",
+  "meal_type": "dinner",
+  "name_es": "Pollo a la naranja fácil",
+  "diet_tags": [
+   "dairy_free"
+  ],
+  "servings": 4,
+  "prep_minutes": 35,
+  "batch_friendly": false,
+  "description": "Crispy chicken tossed in a sticky orange glaze with rice and steamed broccoli.",
+  "description_es": "Pollo crocante en glaseado pegajoso de naranja con arroz y brócoli al vapor.",
+  "steps": [
+   "Cook the rice according to the package directions.",
+   "Toss the chicken with the cornstarch and a pinch of salt until coated.",
+   "Whisk the soy sauce, sugar, vinegar, garlic and ginger with the juice squeezed from the lime (or an orange if you have one).",
+   "Heat the oil in a large skillet over medium-high heat and cook the chicken 7 minutes until golden and cooked through.",
+   "Pour in the sauce and toss 2 minutes until thick and sticky.",
+   "Serve over rice with broccoli and green onion."
+  ],
+  "steps_es": [
+   "Cocina el arroz según las instrucciones del paquete.",
+   "Mezcla el pollo con la maicena y una pizca de sal hasta cubrirlo.",
+   "Bate la soja, azúcar, vinagre, ajo y jengibre con el jugo exprimido de la lima (o una naranja si tienes).",
+   "Calienta el aceite en una sartén grande a fuego medio-alto y cocina el pollo 7 minutos hasta que esté dorado y listo.",
+   "Vierte la salsa y mezcla 2 minutos hasta que espese y quede pegajosa.",
+   "Sirve sobre arroz con brócoli y cebolla de verdeo."
+  ],
+  "ingredients": [
+   {
+    "id": "chicken_thigh",
+    "qty": 1.5,
+    "note": "cut into bite-size pieces",
+    "note_es": "en cubos chicos"
+   },
+   {
+    "id": "rice_white",
+    "qty": 1.5
+   },
+   {
+    "id": "broccoli_frozen",
+    "qty": 3
+   },
+   {
+    "id": "cornstarch",
+    "qty": 3
+   },
+   {
+    "id": "soy_sauce",
+    "qty": 4
+   },
+   {
+    "id": "sugar",
+    "qty": 0.25
+   },
+   {
+    "id": "vinegar_rice",
+    "qty": 3
+   },
+   {
+    "id": "lime",
+    "qty": 1,
+    "note": "juiced",
+    "note_es": "el jugo"
+   },
+   {
+    "id": "garlic",
+    "qty": 2,
+    "note": "minced",
+    "note_es": "picado"
+   },
+   {
+    "id": "ginger",
+    "qty": 1,
+    "note": "grated",
+    "note_es": "rallado"
+   },
+   {
+    "id": "green_onion",
+    "qty": 3,
+    "note": "sliced",
+    "note_es": "en rodajas"
+   },
+   {
+    "id": "vegetable_oil",
+    "qty": 2
+   },
+   {
+    "id": "salt",
+    "qty": 0.5
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 25,
+  "photo_url": "https://images.unsplash.com/photo-1758979690131-11e2aa0b142b",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/chicken-stir-fry-with-noodles-and-vegetables-in-a-bowl-kTROrGtnm7U"
+  }
+ },
+ {
+  "slug": "tofu-broccoli-stir-fry",
+  "name": "Tofu and Broccoli Stir-Fry",
+  "meal_type": "dinner",
+  "name_es": "Tofu salteado con brócoli",
+  "diet_tags": [
+   "vegetarian",
+   "vegan",
+   "dairy_free"
+  ],
+  "servings": 4,
+  "prep_minutes": 25,
+  "batch_friendly": false,
+  "description": "Crispy tofu and broccoli in a garlicky soy sauce over rice.",
+  "description_es": "Tofu crocante y brócoli en salsa de ajo y soja, sobre arroz.",
+  "steps": [
+   "Cook the rice according to the package directions.",
+   "Toss the tofu cubes with the cornstarch and a pinch of salt.",
+   "Heat the oil in a large skillet over medium-high heat and fry the tofu 6 to 8 minutes, turning, until golden on most sides; transfer to a plate.",
+   "Stir-fry the broccoli 3 minutes with a splash of water until crisp-tender, then add the garlic.",
+   "Return the tofu, add the soy sauce, sesame oil and vinegar, toss 2 minutes and serve over rice."
+  ],
+  "steps_es": [
+   "Cocina el arroz según las instrucciones del paquete.",
+   "Mezcla los cubos de tofu con la maicena y una pizca de sal.",
+   "Calienta el aceite en una sartén grande a fuego medio-alto y fríe el tofu de 6 a 8 minutos, dándolo vuelta, hasta que esté dorado; reserva en un plato.",
+   "Saltea el brócoli 3 minutos con un chorrito de agua hasta que esté firme pero tierno, luego agrega el ajo.",
+   "Vuelve a poner el tofu, suma la soja, el aceite de sésamo y el vinagre, mezcla 2 minutos y sirve sobre arroz."
+  ],
+  "ingredients": [
+   {
+    "id": "tofu",
+    "qty": 2,
+    "note": "pressed and cubed",
+    "note_es": "escurrido y en cubos"
+   },
+   {
+    "id": "broccoli_frozen",
+    "qty": 3
+   },
+   {
+    "id": "rice_white",
+    "qty": 1.5
+   },
+   {
+    "id": "cornstarch",
+    "qty": 3
+   },
+   {
+    "id": "garlic",
+    "qty": 3,
+    "note": "minced",
+    "note_es": "picado"
+   },
+   {
+    "id": "soy_sauce",
+    "qty": 4
+   },
+   {
+    "id": "sesame_oil",
+    "qty": 1
+   },
+   {
+    "id": "vinegar_rice",
+    "qty": 1
+   },
+   {
+    "id": "vegetable_oil",
+    "qty": 2
+   },
+   {
+    "id": "salt",
+    "qty": 0.5
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 20,
+  "photo_url": "https://images.unsplash.com/photo-1585032226651-759b368d7246",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/stir-fried-noodles-with-vegetables-wEBg_pYtynw"
+  }
+ },
+ {
+  "slug": "kimchi-fried-rice",
+  "name": "Kimchi-Style Fried Rice",
+  "meal_type": "dinner",
+  "name_es": "Arroz frito estilo kimchi",
+  "diet_tags": [
+   "vegetarian",
+   "vegan",
+   "dairy_free"
+  ],
+  "servings": 4,
+  "prep_minutes": 20,
+  "batch_friendly": true,
+  "description": "Spicy-sour fried rice with quick-pickled cabbage standing in for kimchi.",
+  "description_es": "Arroz frito agripicante con repollo encurtido rápido haciendo de kimchi.",
+  "steps": [
+   "Toss the cabbage with the vinegar, half the sugar and a pinch of salt; squeeze it gently and set aside 10 minutes.",
+   "Stir-fry the onion and carrot in hot oil 3 minutes.",
+   "Add the rice and the cabbage with its juices; fry 4 minutes until hot and a little crisp at the edges.",
+   "Stir in the gochujang, soy sauce and remaining sugar; toss 2 minutes.",
+   "Serve with a fried egg on top if you like, and green onion."
+  ],
+  "steps_es": [
+   "Mezcla el repollo con el vinagre, la mitad del azúcar y una pizca de sal; apriétalo suave y déjalo 10 minutos.",
+   "Saltea la cebolla y la zanahoria en aceite caliente 3 minutos.",
+   "Agrega el arroz y el repollo con su jugo; fríe 4 minutos hasta que esté caliente y apenas crocante en los bordes.",
+   "Suma el gochujang, la soja y el resto del azúcar; mezcla 2 minutos.",
+   "Sirve con un huevo frito encima si quieres, y cebolla de verdeo."
+  ],
+  "ingredients": [
+   {
+    "id": "cabbage",
+    "qty": 0.25,
+    "note": "shredded",
+    "note_es": "rallado"
+   },
+   {
+    "id": "rice_white",
+    "qty": 2,
+    "note": "cooked and chilled",
+    "note_es": "cocido y frío"
+   },
+   {
+    "id": "onion_yellow",
+    "qty": 1,
+    "note": "diced",
+    "note_es": "en cubitos"
+   },
+   {
+    "id": "carrot",
+    "qty": 1,
+    "note": "grated",
+    "note_es": "rallada"
+   },
+   {
+    "id": "gochujang",
+    "qty": 2
+   },
+   {
+    "id": "soy_sauce",
+    "qty": 2
+   },
+   {
+    "id": "vinegar_rice",
+    "qty": 3
+   },
+   {
+    "id": "sugar",
+    "qty": 0.06
+   },
+   {
+    "id": "green_onion",
+    "qty": 3,
+    "note": "sliced",
+    "note_es": "en rodajas"
+   },
+   {
+    "id": "vegetable_oil",
+    "qty": 2
+   },
+   {
+    "id": "salt",
+    "qty": 0.25
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 18,
+  "tip": "Real kimchi works even better — swap it 1:1 for the pickled cabbage when you have it.",
+  "tip_es": "El kimchi de verdad funciona aún mejor: cámbialo 1 a 1 por el repollo encurtido cuando tengas.",
+  "photo_url": "https://images.unsplash.com/photo-1771384552858-feb0574f958d",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/a-delicious-meal-of-grilled-salmon-with-rice-and-vegetables-fahnPDK0GQA"
+  }
+ },
+ {
+  "slug": "lemongrass-style-chicken",
+  "name": "Lemongrass-Style Chicken Thighs",
+  "meal_type": "dinner",
+  "name_es": "Muslos de pollo estilo lemongrass",
+  "diet_tags": [
+   "dairy_free",
+   "high_protein"
+  ],
+  "servings": 4,
+  "prep_minutes": 30,
+  "batch_friendly": false,
+  "description": "Caramelized chicken thighs with a fragrant garlic-lime-soy marinade.",
+  "description_es": "Muslos de pollo caramelizados en adobo fragante de ajo, lima y soja.",
+  "steps": [
+   "Whisk the soy sauce, sugar, fish sauce, lime juice, garlic, ginger and turmeric into a marinade; toss with the chicken and rest 10 minutes.",
+   "Cook the rice according to the package directions.",
+   "Heat the oil in a large skillet over medium-high heat and cook the chicken 6 to 7 minutes, letting the marinade caramelize into browned bits.",
+   "Serve over rice with cucumber and cilantro."
+  ],
+  "steps_es": [
+   "Bate la soja, azúcar, salsa de pescado, jugo de lima, ajo, jengibre y cúrcuma para armar el adobo; mezcla con el pollo y déjalo 10 minutos.",
+   "Cocina el arroz según las instrucciones del paquete.",
+   "Calienta el aceite en una sartén grande a fuego medio-alto y cocina el pollo de 6 a 7 minutos, dejando que el adobo se caramelice en trocitos dorados.",
+   "Sirve sobre arroz con pepino y cilantro."
+  ],
+  "ingredients": [
+   {
+    "id": "chicken_thigh",
+    "qty": 1.5,
+    "note": "boneless, cut into chunks",
+    "note_es": "sin hueso, en trozos"
+   },
+   {
+    "id": "rice_white",
+    "qty": 1.5
+   },
+   {
+    "id": "soy_sauce",
+    "qty": 4
+   },
+   {
+    "id": "fish_sauce",
+    "qty": 2
+   },
+   {
+    "id": "sugar",
+    "qty": 0.2
+   },
+   {
+    "id": "lime",
+    "qty": 1,
+    "note": "juiced",
+    "note_es": "el jugo"
+   },
+   {
+    "id": "garlic",
+    "qty": 3,
+    "note": "minced",
+    "note_es": "picado"
+   },
+   {
+    "id": "ginger",
+    "qty": 1,
+    "note": "grated",
+    "note_es": "rallado"
+   },
+   {
+    "id": "turmeric",
+    "qty": 0.5
+   },
+   {
+    "id": "cucumber",
+    "qty": 1,
+    "note": "sliced",
+    "note_es": "en rodajas"
+   },
+   {
+    "id": "cilantro",
+    "qty": 0.25,
+    "note": "chopped",
+    "note_es": "picado"
+   },
+   {
+    "id": "vegetable_oil",
+    "qty": 1
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 18,
+  "photo_url": "https://images.unsplash.com/photo-1617636423451-0db0119c14cd",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/roasted-chicken-on-brown-wooden-chopping-board-lUPk_iciOA4"
+  }
+ },
+ {
+  "slug": "cold-sesame-noodles",
+  "name": "Cold Sesame Noodles",
+  "meal_type": "dinner",
+  "name_es": "Fideos fríos al sésamo",
+  "diet_tags": [
+   "vegetarian",
+   "vegan",
+   "dairy_free"
+  ],
+  "servings": 4,
+  "prep_minutes": 20,
+  "batch_friendly": true,
+  "description": "Chilled noodles in a creamy sesame-peanut sauce with cucumber — great make-ahead.",
+  "description_es": "Fideos fríos en salsa cremosa de sésamo y maní con pepino; ideal para preparar antes.",
+  "steps": [
+   "Cook the noodles according to the package directions, drain and rinse under cold water until chilled.",
+   "Whisk the peanut butter, soy sauce, sesame oil, vinegar, sugar and 3 tablespoons of warm water into a smooth sauce.",
+   "Toss the noodles with the sauce and half the cucumber.",
+   "Top with the rest of the cucumber, green onion and sesame seeds; serve cold."
+  ],
+  "steps_es": [
+   "Cocina los fideos según las instrucciones del paquete, escúrrelos y enjuágalos con agua fría hasta que se enfríen.",
+   "Bate la mantequilla de maní, soja, aceite de sésamo, vinagre, azúcar y 3 cucharadas de agua tibia hasta tener una salsa lisa.",
+   "Mezcla los fideos con la salsa y la mitad del pepino.",
+   "Cubre con el resto del pepino, la cebolla de verdeo y el sésamo; sirve frío."
+  ],
+  "ingredients": [
+   {
+    "id": "pasta_spaghetti",
+    "qty": 12
+   },
+   {
+    "id": "peanut_butter",
+    "qty": 5
+   },
+   {
+    "id": "soy_sauce",
+    "qty": 5
+   },
+   {
+    "id": "sesame_oil",
+    "qty": 2
+   },
+   {
+    "id": "vinegar_rice",
+    "qty": 2
+   },
+   {
+    "id": "sugar",
+    "qty": 0.13
+   },
+   {
+    "id": "cucumber",
+    "qty": 1,
+    "note": "cut into matchsticks",
+    "note_es": "en bastoncitos"
+   },
+   {
+    "id": "green_onion",
+    "qty": 3,
+    "note": "sliced",
+    "note_es": "en rodajas"
+   },
+   {
+    "id": "sesame_seeds",
+    "qty": 1
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 15,
+  "tip": "These hold 2 days in the fridge — loosen with a splash of water before serving.",
+  "tip_es": "Durante 2 días aguantan en la heladera; ablanda con un chorrito de agua antes de servir.",
+  "photo_url": "https://images.unsplash.com/photo-1791620050949-cb89234fbb42",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/cold-somen-noodles-in-bamboo-basket-qdkg7DbnSl4"
+  }
+ },
+ {
+  "slug": "chicken-chow-mein",
+  "name": "Chicken Chow Mein",
+  "meal_type": "dinner",
+  "name_es": "Chow mein de pollo",
+  "diet_tags": [
+   "dairy_free",
+   "high_protein"
+  ],
+  "servings": 4,
+  "prep_minutes": 30,
+  "batch_friendly": false,
+  "description": "Crisped noodles with chicken, cabbage and bean-sprout crunch in a light soy sauce.",
+  "description_es": "Fideos crocantes con pollo, repollo y verduras en salsa suave de soja.",
+  "steps": [
+   "Cook the noodles 1 minute less than the package says; drain and pat dry.",
+   "Heat 1 tablespoon of oil in a large skillet over high heat and fry the noodles 3 minutes until crisp in spots; transfer to a plate.",
+   "Add the remaining oil and cook the chicken 5 minutes until cooked through.",
+   "Add the cabbage, carrot and garlic; stir-fry 3 minutes until wilted.",
+   "Return the noodles with the soy sauce, oyster-style hoisin and sesame oil; toss 2 minutes and serve."
+  ],
+  "steps_es": [
+   "Cocina los fideos 1 minuto menos de lo que dice el paquete; escúrrelos y sécalos.",
+   "Calienta 1 cucharada de aceite en una sartén grande a fuego alto y fríe los fideos 3 minutos hasta que tengan partes crocantes; reserva en un plato.",
+   "Agrega el resto del aceite y cocina el pollo 5 minutos hasta que esté listo.",
+   "Suma el repollo, la zanahoria y el ajo; saltea 3 minutos hasta que se ablande.",
+   "Vuelve a poner los fideos con la soja, el hoisin y el aceite de sésamo; mezcla 2 minutos y sirve."
+  ],
+  "ingredients": [
+   {
+    "id": "pasta_spaghetti",
+    "qty": 12
+   },
+   {
+    "id": "chicken_thigh",
+    "qty": 1,
+    "note": "thinly sliced",
+    "note_es": "en láminas finas"
+   },
+   {
+    "id": "cabbage",
+    "qty": 0.25,
+    "note": "shredded",
+    "note_es": "rallado"
+   },
+   {
+    "id": "carrot",
+    "qty": 1,
+    "note": "cut into matchsticks",
+    "note_es": "en bastoncitos"
+   },
+   {
+    "id": "garlic",
+    "qty": 2,
+    "note": "minced",
+    "note_es": "picado"
+   },
+   {
+    "id": "soy_sauce",
+    "qty": 4
+   },
+   {
+    "id": "hoisin",
+    "qty": 2
+   },
+   {
+    "id": "sesame_oil",
+    "qty": 1
+   },
+   {
+    "id": "vegetable_oil",
+    "qty": 3
+   }
+  ],
+  "equipment": [
+   "stovetop"
+  ],
+  "active_minutes": 22,
+  "photo_url": "https://images.unsplash.com/photo-1772729219154-2f5d5ddd732b",
+  "photo_credit": {
+   "name": "Unsplash contributor",
+   "url": "https://unsplash.com/photos/a-plate-of-delicious-noodles-with-vegetables-and-mushrooms-OPFPUjdi9BI"
+  }
+ }
+]
