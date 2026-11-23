@@ -74,6 +74,17 @@ test.describe("budget to plan to list to savings to subscription", () => {
     await page.getByRole("link", { name: "Open grocery list" }).click();
     await expect(page.getByTestId("list-item").first()).toBeVisible();
     await expect.poll(() => page.evaluate(async () => Boolean(await caches.match("/app/list")))).toBe(true);
+    // A check-off made with a connection is in the saved copy too, not only the page as first opened.
+    await expect(page.getByTestId("in-cart-count")).toHaveText("1");
+    await page.getByTestId("list-item").nth(2).getByRole("checkbox").check();
+    await expect
+      .poll(() =>
+        page.evaluate(async () => {
+          const saved = await caches.match("/app/list");
+          return /data-testid="in-cart-count"[^>]*>(<!-- -->)?2/.test((await saved?.text()) ?? "");
+        }),
+      )
+      .toBe(true);
     await page.waitForLoadState("networkidle");
     const total = await page.getByTestId("cart-total").textContent();
 
@@ -81,16 +92,16 @@ test.describe("budget to plan to list to savings to subscription", () => {
     await page.reload();
     await expect(page.getByTestId("list-item").first()).toBeVisible();
     await expect(page.getByTestId("cart-total")).toHaveText(total ?? "");
-    await expect(page.getByTestId("in-cart-count")).toHaveText("1");
-    await page.getByTestId("list-item").nth(3).getByRole("checkbox").check();
     await expect(page.getByTestId("in-cart-count")).toHaveText("2");
+    await page.getByTestId("list-item").nth(3).getByRole("checkbox").check();
+    await expect(page.getByTestId("in-cart-count")).toHaveText("3");
 
     // Back online, the queued change reaches the account.
     await context.setOffline(false);
     await expect(page.getByRole("status").filter({ hasText: /offline/i })).toHaveCount(0);
     await page.waitForLoadState("networkidle");
     await page.reload();
-    await expect(page.getByTestId("in-cart-count")).toHaveText("2");
+    await expect(page.getByTestId("in-cart-count")).toHaveText("3");
   });
 
   test("savings compare the week with the usual spend and accept a receipt", async ({ page }) => {
@@ -129,7 +140,11 @@ test.describe("budget to plan to list to savings to subscription", () => {
 
   test("a subscriber can plan the next week", async ({ page }) => {
     await page.goto("/app/plan");
+    // Wait for the new week to be saved. What the screen shows next depends on the weekday:
+    // on a weekend the week in progress stays up, so the heading alone proves nothing.
+    const saved = page.waitForResponse((r) => r.request().method() === "POST" && r.url().includes("/app/plan"));
     await page.getByTestId("plan-next").click();
+    expect((await saved).ok()).toBe(true);
     await expect(page.getByRole("heading", { level: 1 })).toContainText("This week", { timeout: 20_000 });
     await expect(page.getByTestId("plan-day")).toHaveCount(7);
     expect(cents(await page.getByTestId("cart-total").textContent())).toBeLessThanOrEqual(BUDGET * 100);
