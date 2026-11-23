@@ -57,6 +57,13 @@ function StepTimer({ seconds, resetKey }: { seconds: number; resetKey: number })
   };
 
   useEffect(() => {
+    return () => {
+      audio.current?.close().catch(() => {});
+      audio.current = null;
+    };
+  }, []);
+
+  useEffect(() => {
     setLeft(seconds);
     setRunning(false);
   }, [seconds, resetKey]);
