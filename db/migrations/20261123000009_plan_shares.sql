@@ -80,14 +80,24 @@ $$;
 -- Same rule as can_edit_plan, evaluated for the plan's owner: ticking items is
 -- a write, so a link must stop working when the owner's free week locks, not
 -- just when viewing does.
-create function public.share_editable(pid uuid) returns boolean
+create or replace function public.share_editable(pid uuid) returns boolean
 language sql stable security definer set search_path = '' as $$
   select exists (
     select 1 from public.plans p
     where p.id = pid
       and (
-        public.has_access(p.user_id)
-        or (p.id = public.first_plan_id(p.user_id) and current_date < p.week_start + 7)
+        exists (
+          select 1 from public.subscriptions s
+          where s.user_id = p.user_id and s.status in ('trialing', 'active')
+        )
+        or (
+          p.id = (
+            select fp.id from public.plans fp
+            where fp.user_id = p.user_id
+            order by fp.created_at, fp.id limit 1
+          )
+          and current_date < p.week_start + 7
+        )
       )
   );
 $$;
