@@ -204,7 +204,7 @@
     }
   },
   {
-    "slug": "berry-banana-smoothies",
+    "slug": "berry-banana-yogurt-smoothies",
     "name": "Berry Banana Smoothies",
     "meal_type": "breakfast",
     "diet_tags": [
@@ -350,7 +350,7 @@
     }
   },
   {
-    "slug": "avocado-toast",
+    "slug": "avocado-toast-with-fried-eggs",
     "name": "Avocado Toast",
     "meal_type": "breakfast",
     "diet_tags": [
