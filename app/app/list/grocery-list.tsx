@@ -137,8 +137,8 @@ export function GroceryList({
       } else {
         throw new Error("no share");
       }
-    } catch (error) {
-      if (error instanceof DOMException && error.name === "AbortError") return;
+    } catch {
+      // AbortError covers a cancelled sheet and "no share targets"; copying works for both.
       try {
         await navigator.clipboard.writeText(text);
         setShareNote(m.list.shareCopied);
