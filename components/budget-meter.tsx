@@ -1,54 +1,56 @@
 "use client";
 
-import { money, moneyRound } from "@/lib/format";
 import { useLocale, useMessages } from "@/lib/i18n/locale-provider";
+import { money } from "@/lib/format";
 import { fill } from "@/lib/i18n/messages";
 
-/** Cart total against the weekly budget. Lime marks money kept; red warns when over. */
-export function BudgetMeter({ totalCents, budgetCents }: { totalCents: number; budgetCents: number }) {
-  const { lang } = useLocale();
+export function BudgetMeter({
+  budgetCents,
+  totalCents,
+  highlight,
+}: {
+  budgetCents: number;
+  totalCents: number;
+  /** Emphasis label for under/over budget. */
+  highlight?: string;
+}) {
   const m = useMessages();
+  const { lang } = useLocale();
   const over = totalCents > budgetCents;
   const left = Math.abs(budgetCents - totalCents);
-  const percent = Math.min(100, (totalCents / budgetCents) * 100);
+  const pct = Math.min(100, Math.round((totalCents / budgetCents) * 100));
   return (
-    <div data-testid="budget-meter">
-      <div className="flex items-end justify-between gap-4">
+    <div className="glass rounded-card p-4">
+      <div className="flex items-end justify-between gap-3">
         <p>
-          <span className="block text-sm font-medium text-fg-soft">{m.budgetMeter.estimated}</span>
-          <span className="tnum font-display text-4xl font-semibold leading-none" data-testid="cart-total">
+          <span className="block text-xs uppercase tracking-wide text-fg-soft">{m.budgetMeter.estimated}</span>
+          <span className="tnum mt-0.5 block text-3xl font-semibold leading-none" data-testid="cart-total">
             {money(totalCents, lang)}
           </span>
         </p>
         <p className="text-right">
-          <span className="block text-sm font-medium text-fg-soft">{over ? m.budgetMeter.over : m.budgetMeter.under}</span>
-          <span
-            className={`tnum font-display text-3xl font-semibold leading-none ${over ? "text-over-deep" : "text-accent-deep"}`}
-            data-testid="budget-left"
-          >
-            {money(left, lang)}
+          <span className="tnum block text-xl font-semibold text-budget" data-testid="budget">
+            {money(budgetCents, lang)}
+          </span>
+          <span className="block text-xs text-fg-soft" data-testid="budget-left">
+            {over ? m.budgetMeter.over : m.budgetMeter.under} {money(left, lang)}
+            {highlight ? ` · ${highlight}` : ""}
           </span>
         </p>
       </div>
       <div
-        className="mt-4 h-2.5 overflow-hidden rounded-full bg-line"
         role="meter"
-        aria-label={m.budgetMeter.aria}
+        aria-valuenow={totalCents}
         aria-valuemin={0}
-        aria-valuemax={budgetCents / 100}
-        aria-valuenow={Math.round(totalCents) / 100}
-        aria-valuetext={fill(m.budgetMeter.meterValue, {
-          total: money(totalCents, lang),
-          budget: moneyRound(budgetCents, lang),
-        })}
+        aria-valuemax={budgetCents}
+        aria-label={fill(m.budgetMeter.meterValue, { total: money(totalCents, lang), budget: money(budgetCents, lang) })}
+        className="mt-3 h-1.5 overflow-hidden rounded-full bg-fg-faint/30"
       >
-        <div className={`h-full rounded-full ${over ? "bg-over" : "bg-accent"}`} style={{ width: `${percent}%` }} />
+        <div
+          className="h-full rounded-full"
+          style={{ width: `${Math.max(2, pct)}%`, background: over ? "var(--color-warn)" : "var(--color-accent)" }}
+        />
       </div>
-      <p className="tnum mt-2 text-sm text-fg-soft">
-        {m.budgetMeter.weeklyPrefix}
-        <span className="font-semibold text-budget" data-testid="budget">{moneyRound(budgetCents, lang)}</span>
-        {m.budgetMeter.weeklySuffix}
-      </p>
     </div>
   );
 }

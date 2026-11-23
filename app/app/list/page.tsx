@@ -43,7 +43,11 @@ export default async function ListPage() {
       need: amount(line.qty, ing.unit, lang, units),
       buy: soldByWeight(ing) ? amount(packages, "lb", lang, units) : packages > 1 ? `${packages} × ${buyLabel}` : buyLabel,
       cents: line.cents,
+      fullCents: line.fullCents,
       have: line.have,
+      qty: line.qty,
+      unit: ing.unit,
+      haveQty: line.haveQty,
       checked: checked.has(ing.id),
     };
   });

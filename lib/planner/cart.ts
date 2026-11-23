@@ -31,6 +31,7 @@ export function buildCart(
   meals: readonly MealAssignment[],
   ingredients: ReadonlyMap<string, Ingredient>,
   have: ReadonlySet<string>,
+  haveQty: ReadonlyMap<string, number> = new Map(),
 ): Cart {
   const byId = new Map<string, { qty: number; usedIn: Set<string> }>();
   for (const meal of meals) {
@@ -48,11 +49,13 @@ export function buildCart(
   for (const [id, { qty, usedIn }] of byId) {
     const ingredient = ingredients.get(id);
     if (!ingredient) throw new Error(`Unknown ingredient "${id}"`);
-    const packages = packagesFor(ingredient, qty);
-    const cents = purchaseCents(ingredient, qty);
-    const isHave = have.has(id);
+    const owned = have.has(id) ? qty : Math.min(haveQty.get(id) ?? 0, qty);
+    const isHave = owned >= qty - EPS;
+    const buyQty = isHave ? 0 : qty - owned;
+    const packages = packagesFor(ingredient, buyQty);
+    const cents = purchaseCents(ingredient, buyQty);
     if (!isHave) totalCents += cents;
-    lines.push({ ingredient, qty, packages, cents, have: isHave, usedIn: [...usedIn] });
+    lines.push({ ingredient, qty, packages, cents, fullCents: purchaseCents(ingredient, qty), have: isHave, haveQty: owned, usedIn: [...usedIn] });
   }
   lines.sort((a, b) => a.ingredient.name.localeCompare(b.ingredient.name));
   return { lines, totalCents };

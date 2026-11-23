@@ -38,7 +38,7 @@ export default async function SavingsPage() {
 
   return (
     <>
-      <section aria-labelledby="saved-title" className="glass rounded-card bg-accent-soft p-5">
+      <section aria-labelledby="saved-title" className="glass rounded-card bg-accent-soft p-4">
         <h1 id="saved-title" className="text-sm font-semibold uppercase tracking-wider text-accent-deep">
           {saved >= 0 ? m.savings.saved : m.savings.over}
         </h1>
@@ -66,7 +66,7 @@ export default async function SavingsPage() {
       <h2 className="mt-10 text-2xl">{m.savings.weekByWeek}</h2>
       <ol className="mt-4 space-y-4">
         {summary.weeks.map((week) => (
-          <li key={week.id} className="rounded-card bg-surface p-5 shadow-[inset_0_0_0_1.5px_var(--color-line)]" data-testid="savings-week">
+          <li key={week.id} className="rounded-card bg-surface p-4 shadow-[inset_0_0_0_1.5px_var(--color-line)]" data-testid="savings-week">
             <div className="flex items-baseline justify-between gap-4">
               <h3 className="text-xl">{fill(m.common.weekOf, { date: weekLabel(week.weekStart, lang) })}</h3>
               <p className={`tnum shrink-0 font-semibold ${week.savedCents >= 0 ? "text-accent-deep" : "text-over-deep"}`} data-testid="week-saved">

@@ -45,6 +45,15 @@ export function SpendForm({ planId, spentCents }: { planId: string; spentCents: 
       <label htmlFor={id} className="text-sm font-medium">
         {m.savings.spendPrompt}
       </label>
+      <p className="mt-1 flex items-start gap-1.5 text-xs text-fg-soft">
+        <span
+          aria-hidden="true"
+          className="mt-px flex size-4 shrink-0 items-center justify-center rounded-full text-[10px] font-bold shadow-[inset_0_0_0_1px_var(--color-line)]"
+        >
+          ?
+        </span>
+        {m.savings.spendHint}
+      </p>
       <div className="mt-2 flex flex-wrap items-center gap-2">
         <div className="relative w-36">
           <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-fg-soft">$</span>

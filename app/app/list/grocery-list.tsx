@@ -4,8 +4,8 @@ import { useEffect, useMemo, useState } from "react";
 import { keepForOffline } from "@/components/service-worker";
 import { setItemState } from "@/lib/app/actions";
 import { money, moneyExact } from "@/lib/format";
-import type { Lang } from "@/lib/catalog/localize";
-import { useMessages } from "@/lib/i18n/locale-provider";
+import { amount, type Lang } from "@/lib/catalog/localize";
+import { useLocale, useMessages } from "@/lib/i18n/locale-provider";
 import { fill } from "@/lib/i18n/messages";
 
 export interface ListLine {
@@ -15,11 +15,17 @@ export interface ListLine {
   need: string;
   buy: string;
   cents: number;
+  /** Shelf cost in cents when nothing of the line is owned yet. */
+  fullCents: number;
+  qty: number;
+  unit: string;
+  /** Units of `qty` already at home. */
+  haveQty: number;
   have: boolean;
   checked: boolean;
 }
 
-type Change = { id: string; checked?: boolean; have?: boolean };
+type Change = { id: string; checked?: boolean; have?: boolean; haveQty?: number };
 
 /**
  * The list keeps working in the store with no signal: changes apply on screen
@@ -41,6 +47,7 @@ export function GroceryList({
   lang: Lang;
 }) {
   const m = useMessages();
+  const { units } = useLocale();
   const queueKey = `cartfull.list.${planId}.queue`;
   const [lines, setLines] = useState(initial);
   const [offline, setOffline] = useState(false);
@@ -56,15 +63,22 @@ export function GroceryList({
   };
 
   const apply = (list: ListLine[], change: Change) =>
-    list.map((line) =>
-      line.id === change.id
-        ? {
-            ...line,
-            have: change.have ?? line.have,
-            checked: change.have ? false : (change.checked ?? line.checked),
-          }
-        : line,
-    );
+    list.map((line) => {
+      if (line.id !== change.id) return line;
+      let { have, checked, haveQty } = line;
+      if (typeof change.haveQty === "number") {
+        haveQty = Math.max(0, Math.min(change.haveQty, line.qty));
+        have = haveQty >= line.qty - 1e-6;
+        if (have) checked = false;
+      } else if (typeof change.have === "boolean") {
+        have = change.have;
+        haveQty = have ? line.qty : 0;
+        if (have) checked = false;
+      }
+      if (typeof change.checked === "boolean") checked = change.checked;
+      const cents = have || line.qty <= 0 ? 0 : Math.round((line.fullCents * Math.max(0, line.qty - haveQty)) / line.qty);
+      return { ...line, have, checked, haveQty, cents };
+    });
 
   const flush = async () => {
     let queue = readQueue();
@@ -72,7 +86,7 @@ export function GroceryList({
     while (queue.length) {
       const [change] = queue;
       try {
-        const result = await setItemState(planId, change.id, { checked: change.checked, have: change.have });
+        const result = await setItemState(planId, change.id, { checked: change.checked, have: change.have, haveQty: change.haveQty });
         if (!result.ok && result.code === "failed") throw new Error(result.message);
       } catch {
         setFailed(true);
@@ -183,10 +197,14 @@ export function GroceryList({
                 {label}
                 <span className="tnum font-sans text-sm font-semibold text-fg-soft">{moneyExact(subtotal, lang)}</span>
               </h2>
-              <ul className="divide-y divide-line">
+              <ul className="mt-2 space-y-2">
                 {group.map((line) => (
-                  <li key={line.id} className="flex items-center gap-3 py-1.5" data-testid="list-item">
-                    <label className="flex min-h-12 flex-1 cursor-pointer items-center gap-3">
+                  <li
+                    key={line.id}
+                    className="flex items-center gap-3 rounded-2xl bg-surface px-3 py-2 shadow-[inset_0_0_0_1.5px_var(--color-line)]"
+                    data-testid="list-item"
+                  >
+                    <label className="flex min-h-11 flex-1 cursor-pointer items-center gap-3">
                       <span className="relative size-6 shrink-0">
                         <input
                           type="checkbox"
@@ -212,22 +230,37 @@ export function GroceryList({
                         <span className="block font-semibold leading-tight">{line.name}</span>
                         <span className="tnum block text-sm text-fg-soft">
                           {fill(m.list.needBuy, { need: line.need, buy: line.buy })}
+                          {line.haveQty > 0 && (
+                            <span className="text-accent-deep"> · {fill(m.list.haveSome, { qty: amount(line.haveQty, line.unit, lang, units) })}</span>
+                          )}
+                        </span>
+                        <span className="tnum mt-0.5 block w-fit text-sm font-semibold" data-testid="item-price">
+                          {moneyExact(line.cents, lang)}
                         </span>
                       </span>
                     </label>
-                    <span className="tnum w-16 shrink-0 text-right font-semibold" data-testid="item-price">
-                      {moneyExact(line.cents, lang)}
-                    </span>
                     {editable && (
-                      <button
-                        type="button"
-                        onClick={() => change({ id: line.id, have: true })}
-                        className="min-h-11 shrink-0 rounded-full px-3 text-sm font-semibold text-accent-deep shadow-[inset_0_0_0_1.5px_var(--color-line)] hover:bg-bg-deep"
-                        aria-label={fill(m.list.alreadyHave, { name: line.name })}
-                        data-testid="have-button"
-                      >
-                        {m.list.haveButton}
-                      </button>
+                      <span className="flex shrink-0 items-center gap-1">
+                        {line.haveQty > 0 && (
+                          <button
+                            type="button"
+                            onClick={() => change({ id: line.id, haveQty: line.haveQty - 1 })}
+                            className="flex size-8 items-center justify-center rounded-full text-base font-bold text-fg-soft shadow-[inset_0_0_0_1.5px_var(--color-line)] hover:text-fg"
+                            aria-label={fill(m.list.haveLess, { name: line.name })}
+                          >
+                            −
+                          </button>
+                        )}
+                        <button
+                          type="button"
+                          onClick={() => change({ id: line.id, haveQty: line.haveQty + (line.qty <= 1 ? line.qty : 1) })}
+                          className="flex size-8 items-center justify-center rounded-full text-base font-bold text-accent-deep shadow-[inset_0_0_0_1.5px_var(--color-accent)] hover:bg-bg-deep"
+                          aria-label={fill(m.list.haveAdd, { name: line.name })}
+                          data-testid="have-button"
+                        >
+                          +
+                        </button>
+                      </span>
                     )}
                   </li>
                 ))}
@@ -241,9 +274,13 @@ export function GroceryList({
             <h2 id="have-title" className="border-b border-line pb-2 text-xl text-fg-soft">
               {m.list.alreadyHome}
             </h2>
-            <ul className="divide-y divide-line">
+            <ul className="mt-2 space-y-2">
               {haveLines.map((line) => (
-                <li key={line.id} className="flex min-h-14 items-center gap-3 py-2 text-fg-soft" data-testid="have-item">
+                <li
+                  key={line.id}
+                  className="flex min-h-11 items-center gap-3 rounded-2xl bg-surface px-3 py-2 text-fg-soft shadow-[inset_0_0_0_1.5px_var(--color-line)]"
+                  data-testid="have-item"
+                >
                   <span className="min-w-0 flex-1">
                     <span className="block font-medium leading-tight">{line.name}</span>
                     <span className="tnum block text-sm">{fill(m.list.need, { need: line.need })}</span>
@@ -251,11 +288,11 @@ export function GroceryList({
                   {editable && (
                     <button
                       type="button"
-                      onClick={() => change({ id: line.id, have: false })}
+                      onClick={() => change({ id: line.id, haveQty: 0 })}
                       className="min-h-11 shrink-0 rounded-full px-3 text-sm font-semibold underline underline-offset-4"
-                      aria-label={fill(m.list.addBackLabel, { name: line.name, amount: moneyExact(line.cents, lang) })}
+                      aria-label={fill(m.list.addBackLabel, { name: line.name, amount: moneyExact(line.fullCents, lang) })}
                     >
-                      {fill(m.list.addBack, { amount: moneyExact(line.cents, lang) })}
+                      {fill(m.list.addBack, { amount: moneyExact(line.fullCents, lang) })}
                     </button>
                   )}
                 </li>

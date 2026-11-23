@@ -90,7 +90,7 @@ describe("grocery cart", () => {
     expect(cart.totalCents).toBe(610);
     const rice = cart.lines.find((l) => l.ingredient.id === "rice")!;
     expect(rice.have).toBe(true);
-    expect(rice.cents).toBe(250); // price is kept so "add back" can show it
+    expect(rice.fullCents).toBe(250); // price is kept so "add back" can show it
   });
 
   it("scales quantities to the household, not the recipe's servings", () => {
