@@ -1,5 +1,6 @@
 import { z } from "zod";
-import { ALLERGENS } from "../catalog/types";
+import { ALLERGENS, EQUIPMENT } from "../catalog/types";
+import { COUNTRY_CODES } from "../i18n/countries";
 import { DISLIKE_KEYS } from "../planner/dislikes";
 import { COOK_TIMES, DIETS } from "../planner/types";
 
@@ -13,6 +14,10 @@ export const DEFAULTS = {
   cook_time: "normal",
   include_breakfast: false,
   include_lunch: false,
+  country: "US",
+  lang: "en",
+  units: "imperial",
+  equipment: ["stovetop", "oven", "microwave"],
 } as const;
 
 /** Rough weekly grocery spend for a US household that does not plan, used when the shopper skips the question. */
@@ -31,6 +36,10 @@ export const answersSchema = z.object({
   allergens: z.array(z.enum(ALLERGENS)).max(ALLERGENS.length),
   dislikes: z.array(z.string().refine((key) => DISLIKE_KEYS.includes(key))).max(DISLIKE_KEYS.length),
   pantry: z.array(z.string().regex(/^[a-z][a-z0-9_]*$/)).max(400),
+  country: z.enum(COUNTRY_CODES).default(DEFAULTS.country),
+  lang: z.enum(["en", "es"]).default(DEFAULTS.lang),
+  units: z.enum(["imperial", "metric"]).default(DEFAULTS.units),
+  equipment: z.array(z.enum(EQUIPMENT)).max(EQUIPMENT.length).default([...DEFAULTS.equipment]),
 });
 
 export type Answers = z.infer<typeof answersSchema>;
@@ -47,6 +56,13 @@ export interface Profile {
   include_lunch: boolean;
   allergens: Answers["allergens"];
   dislikes: string[];
+  country: string;
+  lang: Answers["lang"];
+  units: Answers["units"];
+  equipment: Answers["equipment"];
+  notify_plan: boolean;
+  notify_shopping: boolean;
+  notify_receipt: boolean;
   onboarded_at: string | null;
 }
 
