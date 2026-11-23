@@ -1,5 +1,5 @@
 import { expect, test, type Cookie } from "@playwright/test";
-import { ageWeeks, cents, onboard, uniqueEmail } from "./helpers";
+import { ageWeeks, cents, onboard, setSubscriptionStatus, uniqueEmail } from "./helpers";
 
 test.describe.configure({ mode: "serial" });
 
@@ -68,11 +68,12 @@ test.describe("budget to plan to list to savings to subscription", () => {
   });
 
   test("the grocery list opens and takes check-offs without a connection", async ({ page, context }) => {
-    await page.goto("/app/list");
+    // Reaching the list by tapping through the app, with no page load, still saves it.
+    await page.goto("/app/plan");
     await page.evaluate(() => navigator.serviceWorker.ready.then(() => undefined));
-    // A second visit, now through the service worker, saves the page on the device.
-    await page.reload();
+    await page.getByRole("link", { name: "Open grocery list" }).click();
     await expect(page.getByTestId("list-item").first()).toBeVisible();
+    await expect.poll(() => page.evaluate(async () => Boolean(await caches.match("/app/list")))).toBe(true);
     await page.waitForLoadState("networkidle");
     const total = await page.getByTestId("cart-total").textContent();
 
@@ -135,6 +136,14 @@ test.describe("budget to plan to list to savings to subscription", () => {
 
     await page.goto("/app/savings");
     await expect(page.getByTestId("savings-week")).toHaveCount(2);
+  });
+
+  test("a failed renewal leads to the billing portal, not to a second subscription", async ({ page }) => {
+    await setSubscriptionStatus(email, "past_due");
+    const checkout = await page.request.post("/api/stripe/checkout", { form: { interval: "annual" }, maxRedirects: 0 });
+    expect(checkout.status()).toBe(303);
+    expect(checkout.headers().location).toContain("/portal");
+    await setSubscriptionStatus(email, "trialing");
   });
 
   test("the customer portal is reachable and a cancellation removes access", async ({ page }) => {
