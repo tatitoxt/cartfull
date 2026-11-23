@@ -210,6 +210,10 @@ const en = {
     method: "Method",
     photoBy: "Photo by",
     onUnsplash: "on Unsplash",
+    favorite: "Save to favorites",
+    favorited: "In your favorites",
+    rating: "Your rating",
+    rateHint: "Favorites and 4-5 star recipes show up more often in your weeks; 1-2 stars show up less.",
   },
   account: {
     title: "Account",
@@ -580,6 +584,10 @@ const es: Messages = {
     method: "Preparación",
     photoBy: "Foto de",
     onUnsplash: "en Unsplash",
+    favorite: "Guardar en favoritos",
+    favorited: "En tus favoritos",
+    rating: "Tu puntuación",
+    rateHint: "Las favoritas y las recetas con 4-5 estrellas aparecen más seguido en tu semana; las de 1-2 estrellas, menos.",
   },
   account: {
     title: "Cuenta",

@@ -4,7 +4,8 @@ import { notFound } from "next/navigation";
 import { Photo } from "@/components/photo";
 import { catalog, recipeBySlug } from "@/lib/catalog";
 import { recipeCentsPerServing } from "@/lib/catalog/cost";
-import { getProfile, requireSession } from "@/lib/app/data";
+import { getFeedback, getProfile, requireSession } from "@/lib/app/data";
+import { RecipeFeedback } from "@/components/recipe-feedback";
 import { amount, ingredientName, ingredientNote, recipeText } from "@/lib/catalog/localize";
 import { moneyExact } from "@/lib/format";
 import { MESSAGES } from "@/lib/i18n/messages";
@@ -21,7 +22,7 @@ export default async function RecipePage({ params }: { params: Promise<{ slug: s
   const recipe = recipeBySlug(slug);
   if (!recipe) notFound();
   const session = await requireSession(`/app/recipe/${slug}`);
-  const profile = await getProfile(session);
+  const [profile, feedback] = await Promise.all([getProfile(session), getFeedback(session)]);
   const servings = profile.household_size;
   const scale = servings / recipe.servings;
   const m = MESSAGES[profile.lang];
@@ -44,6 +45,7 @@ export default async function RecipePage({ params }: { params: Promise<{ slug: s
           <span className="text-fg-soft">{m.recipe.active.replace("{count}", String(recipe.active_minutes))}</span>
         )}
       </p>
+      <RecipeFeedback slug={slug} initialFavorite={feedback.favorites.has(slug)} initialRating={feedback.ratings.get(slug) ?? null} />
       {recipe.equipment && recipe.equipment.length > 0 && (
         <p className="mt-3 text-sm text-fg-soft">
           {m.recipe.equipment}: {recipe.equipment.map((item) => m.preferences.equipment[item]).join(", ")}

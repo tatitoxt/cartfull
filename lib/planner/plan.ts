@@ -206,9 +206,17 @@ function makeContext(catalog: Catalog, req: PlanRequest, groups: Group[]): Conte
   return { catalog, req, bySlot, jitter, protein, targetCents };
 }
 
+/** What the household already told us: favorites get a lift, ratings tilt up or down. */
+export function likeBoost(req: PlanRequest, slug: string): number {
+  let boost = req.favoriteSlugs?.has(slug) ? 0.6 : 0;
+  const rating = req.ratings?.get(slug);
+  if (rating) boost += (rating - 3) * 0.25;
+  return boost;
+}
+
 /** How much the household should like this recipe in this spot, before cost. */
 function preference(ctx: Context, week: Week, index: number, recipe: Recipe): number {
-  let score = timeFit(recipe, ctx.req.cookTime) + (ctx.jitter.get(recipe.slug) ?? 0);
+  let score = timeFit(recipe, ctx.req.cookTime) + (ctx.jitter.get(recipe.slug) ?? 0) + likeBoost(ctx.req, recipe.slug);
   if (ctx.req.avoidSlugs?.has(recipe.slug)) score -= 0.6;
   if (week.groups[index].slot === "dinner") {
     const kind = ctx.protein.get(recipe.slug);
@@ -361,7 +369,7 @@ export function swapOptions(
     const totalCents = buildCart([...others, ...candidates], catalog.ingredients, req.pantry).totalCents;
     if (totalCents > req.budgetCents) continue;
     const score =
-      timeFit(recipe, req.cookTime) + random() * 0.3 - (0.8 * (totalCents - currentTotal)) / Math.max(1, req.budgetCents / 7);
+      timeFit(recipe, req.cookTime) + likeBoost(req, recipe.slug) + random() * 0.3 - (0.8 * (totalCents - currentTotal)) / Math.max(1, req.budgetCents / 7);
     options.push({ recipe, totalCents, deltaCents: totalCents - currentTotal, score });
   }
   options.sort((a, b) => b.score - a.score || a.recipe.slug.localeCompare(b.recipe.slug));
