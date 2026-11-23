@@ -26,6 +26,7 @@ export function CountryPreferences({ answers, set }: { answers: Answers; set: (p
           type="search"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
+          onKeyDown={(e) => { if (e.key === "Enter") e.preventDefault() }}
           placeholder={m.onboarding.countrySearch}
           className="mt-3 w-full rounded-full bg-surface px-4 py-2.5 text-sm shadow-[inset_0_0_0_1.5px_var(--color-line)] outline-none placeholder:text-fg-faint focus-visible:shadow-[inset_0_0_0_2px_var(--color-accent)]"
         />
