@@ -71,11 +71,13 @@ export default async function PlanPage() {
         <div className="mt-5">
           <BudgetMeter totalCents={cart.totalCents} budgetCents={row.budget_cents} />
         </div>
-        <div className="mt-5 flex flex-wrap gap-3">
-          <Link href="/app/list" className="btn btn-primary">
-            {m.plan.openList}
-          </Link>
+        <div className="mt-4 flex flex-wrap gap-3">
           {editable && !over && <PlanActions mode="regenerate" planId={row.id} />}
+          {entitlement.active && (canPlanNext || over) && (
+            <a href="#next-week" className="btn btn-primary">
+              {m.plan.planNext}
+            </a>
+          )}
         </div>
         {cart.totalCents > row.budget_cents && (
           <p role="status" className="mt-5 rounded-2xl bg-over-soft p-4 shadow-[inset_0_0_0_1.5px_var(--color-over)]">
@@ -85,7 +87,7 @@ export default async function PlanPage() {
       </section>
 
       {(canPlanNext || over) && (
-        <section className="mt-8 rounded-card bg-accent-soft p-5" aria-label={m.plan.nextWeek}>
+        <section id="next-week" className="mt-8 rounded-card bg-accent-soft p-5" aria-label={m.plan.nextWeek}>
           {entitlement.active ? (
             <>
               <h2 className="text-2xl">{m.plan.readyNext}</h2>
@@ -108,10 +110,10 @@ export default async function PlanPage() {
         </section>
       )}
 
-      <ol className="mt-8 space-y-7">
+      <ol className="mt-7 space-y-6">
         {days.map(({ name, dinner, others }, day) => (
           <li key={name} data-testid="plan-day">
-            <h2 className="flex items-baseline gap-3 text-2xl">
+            <h2 className="flex items-baseline gap-3 text-xl">
               {name}
               <span className="h-px flex-1 bg-line" aria-hidden="true" />
             </h2>
@@ -129,7 +131,7 @@ export default async function PlanPage() {
                 </Link>
                 <div>
                   <div className="flex items-start gap-1">
-                    <h3 className="text-2xl leading-tight">
+                    <h3 className="text-xl leading-tight">
                       <Link href={`/app/recipe/${dinner.recipe.slug}?plan=${row.id}`} className="hover:underline" data-testid="dinner-name">
                         {dinner.recipe.name_es && lang === "es" ? dinner.recipe.name_es : dinner.recipe.name}
                       </Link>

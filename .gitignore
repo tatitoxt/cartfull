@@ -47,3 +47,5 @@ next-env.d.ts
 /e2e/.tmp
 supabase/.temp
 supabase/.branches
+scripts/screenshot-*.mjs
+scripts/shoot-*.mjs

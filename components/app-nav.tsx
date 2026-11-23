@@ -4,39 +4,51 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useMessages } from "@/lib/i18n/locale-provider";
 
-/** Tabs along the bottom on phones, inline in the header on wider screens. */
+const PATHS: Record<string, string> = {
+  plan: "M2 7.5 12 2l10 5.5M4.8 9.8V22h14.4V9.8M8.8 22v-6.4h6.4V22",
+  list: "M5 4h14l-1.5 18h-11L5 4ZM8.4 4a3.6 3.6 0 0 1 7.2 0",
+  savings: "M12 2.6v18.8M17 7.2H9.8a2.9 2.9 0 0 0 0 5.8h4.4a2.9 2.9 0 0 1 0 5.8H6.6",
+  account: "M12 12a4.4 4.4 0 1 0 0-8.8 4.4 4.4 0 0 0 0 8.8ZM3.6 21.2a8.4 8.4 0 0 1 16.8 0",
+};
+
 export function AppNav() {
-  const pathname = usePathname();
   const m = useMessages();
+  const pathname = usePathname();
   const items = [
-    { href: "/app/plan", label: m.nav.plan, icon: "M4 6h16M4 12h16M4 18h10" },
-    { href: "/app/list", label: m.nav.list, icon: "M4 5h2l2.2 10h9.3L20 8H8.5M10 19.5h.01M17 19.5h.01" },
-    { href: "/app/savings", label: m.nav.savings, icon: "M4 17l5-5 4 3 7-8M15 7h5v5" },
-    { href: "/app/account", label: m.nav.account, icon: "M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM4.5 20a7.5 7.5 0 0 1 15 0" },
-  ];
+    { key: "plan", label: m.nav.plan, href: "/app" },
+    { key: "list", label: m.nav.list, href: "/app/list" },
+    { key: "savings", label: m.nav.savings, href: "/app/savings" },
+    { key: "account", label: m.nav.account, href: "/app/account" },
+  ] as const;
   return (
-    <nav
-      aria-label={m.nav.label}
-      className="fixed inset-x-0 bottom-0 z-20 border-t border-line bg-bg/95 pb-[env(safe-area-inset-bottom)] backdrop-blur sm:static sm:border-0 sm:bg-transparent sm:pb-0"
-    >
-      <ul className="mx-auto grid max-w-3xl grid-cols-4 sm:flex sm:gap-1">
+    <nav className="fixed inset-x-0 bottom-0 z-10 px-4 pb-3 pt-1" aria-label="App">
+      <ul className="glass mx-auto flex max-w-md gap-1 rounded-full p-1.5">
         {items.map((item) => {
-          const active = pathname.startsWith(item.href);
+          const active = item.href === "/app" ? pathname === item.href : pathname.startsWith(item.href);
           return (
-            <li key={item.href}>
-              <Link
-                href={item.href}
-                aria-current={active ? "page" : undefined}
-                className={`flex min-h-16 flex-col items-center justify-center gap-1 text-xs font-semibold sm:min-h-11 sm:flex-row sm:rounded-full sm:px-4 sm:text-sm ${
-                  active ? "text-accent-deep sm:bg-accent-soft" : "text-fg-soft hover:text-fg"
-                }`}
+          <li key={item.key} className="flex-1">
+            <Link
+              href={item.href}
+              aria-current={active ? "page" : undefined}
+              className={`flex min-h-10 items-center justify-center gap-1.5 rounded-full px-2 text-sm font-semibold transition-colors ${
+                active ? "bg-fg text-bg" : "text-fg-soft hover:text-fg"
+              }`}
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={1.8}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="size-4.5 shrink-0"
+                aria-hidden="true"
               >
-                <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" className="sm:hidden">
-                  <path d={item.icon} fill="none" stroke="currentColor" strokeWidth={active ? 2.2 : 1.8} strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-                {item.label}
-              </Link>
-            </li>
+                <path d={PATHS[item.key]} />
+              </svg>
+              {item.label}
+            </Link>
+          </li>
           );
         })}
       </ul>

@@ -406,7 +406,7 @@ export async function setRating(slug: string, rating: number | null): Promise<Ac
 export async function setItemState(
   planId: string,
   ingredientId: string,
-  change: { checked?: boolean; have?: boolean },
+  change: { checked?: boolean; have?: boolean; haveQty?: number },
 ): Promise<ActionResult> {
   const session = await requireSession();
   const profile = await getProfile(session);
@@ -414,13 +414,20 @@ export async function setItemState(
   const ingredient = catalog.ingredients.get(ingredientId);
   const loaded = await editablePlan(session, planId);
   if (!loaded) return fail("locked", m.actions.locked);
-  if (!ingredient || !loaded.cart.lines.some((l) => l.ingredient.id === ingredientId))
-    return fail("invalid", m.actions.itemMissing);
+  const line = ingredient ? loaded.cart.lines.find((l) => l.ingredient.id === ingredientId) : undefined;
+  if (!ingredient || !line) return fail("invalid", m.actions.itemMissing);
 
-  const update: Record<string, boolean> = {};
+  const update: Record<string, boolean | number> = {};
   if (typeof change.checked === "boolean") update.checked = change.checked;
-  if (typeof change.have === "boolean") {
+  if (typeof change.haveQty === "number" && Number.isFinite(change.haveQty)) {
+    const owned = Math.max(0, Math.min(change.haveQty, line.qty));
+    update.have_qty = owned;
+    const full = owned >= line.qty - 1e-6;
+    update.have = full;
+    if (full) update.checked = false;
+  } else if (typeof change.have === "boolean") {
     update.have = change.have;
+    update.have_qty = change.have ? line.qty : 0;
     if (change.have) update.checked = false;
   }
   if (!Object.keys(update).length) return { ok: true };
@@ -431,15 +438,19 @@ export async function setItemState(
     .upsert({ plan_id: planId, ingredient_id: ingredientId, ...update }, { onConflict: "plan_id,ingredient_id" });
   if (error) return fail("failed", m.actions.saveItem);
 
-  if (typeof change.have === "boolean") {
+  const ownershipChanged = typeof change.have === "boolean" || typeof change.haveQty === "number";
+  if (ownershipChanged) {
     const have = new Set(loaded.have);
-    if (change.have) have.add(ingredientId);
+    const fracs = new Map(loaded.cart.lines.map((l) => [l.ingredient.id, l.haveQty]));
+    const owned = update.have === true ? line.qty : Number(update.have_qty ?? 0);
+    fracs.set(ingredientId, owned);
+    if (update.have === true) have.add(ingredientId);
     else have.delete(ingredientId);
-    const total = buildCart(loaded.meals, catalog.ingredients, have).totalCents;
+    const total = buildCart(loaded.meals, catalog.ingredients, have, fracs).totalCents;
     await supabase.from("plans").update({ total_cents: total }).eq("id", planId);
-    // Long-lasting basics are remembered for future weeks.
+    // Long-lasting basics are remembered for future weeks, only once fully owned.
     if (ingredient.staple) {
-      if (change.have) await supabase.from("pantry_items").upsert({ user_id: userId, ingredient_id: ingredientId });
+      if (update.have === true) await supabase.from("pantry_items").upsert({ user_id: userId, ingredient_id: ingredientId });
       else await supabase.from("pantry_items").delete().eq("user_id", userId).eq("ingredient_id", ingredientId);
     }
   }

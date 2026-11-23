@@ -43,10 +43,14 @@ export interface CartLine {
   qty: number;
   /** Packages to buy: whole numbers, or pounds in quarter steps for by-weight items. */
   packages: number;
-  /** Shelf cost of those packages, in cents. */
+  /** Shelf cost of the packages still to buy, in cents. */
   cents: number;
+  /** Shelf cost of the whole line when nothing is owned, in cents. */
+  fullCents: number;
   /** Already at home: listed but not counted in the total. */
   have: boolean;
+  /** Units of `qty` already at home; a partial amount prices only the rest. */
+  haveQty: number;
   usedIn: string[];
 }
 

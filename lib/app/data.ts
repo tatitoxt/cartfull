@@ -138,7 +138,7 @@ export async function loadPlan(
 
   const [{ data: mealRows }, { data: itemRows }] = await Promise.all([
     session.supabase.from("plan_meals").select("day, slot, recipe_slug, servings").eq("plan_id", row.id),
-    session.supabase.from("plan_items").select("ingredient_id, checked, have").eq("plan_id", row.id),
+    session.supabase.from("plan_items").select("ingredient_id, checked, have, have_qty").eq("plan_id", row.id),
   ]);
 
   const order: MealType[] = ["breakfast", "lunch", "dinner"];
@@ -151,11 +151,16 @@ export async function loadPlan(
 
   const have = new Set<string>();
   const checked = new Set<string>();
+  const haveQty = new Map<string, number>();
   for (const item of itemRows ?? []) {
     if (item.have) have.add(item.ingredient_id as string);
+    else {
+      const owned = Number(item.have_qty ?? 0);
+      if (owned > 0) haveQty.set(item.ingredient_id as string, owned);
+    }
     if (item.checked) checked.add(item.ingredient_id as string);
   }
-  const cart = buildCart(meals, catalog.ingredients, have);
+  const cart = buildCart(meals, catalog.ingredients, have, haveQty);
   return { row, meals, cart, checked, have, viewable, editable, isFirst };
 }
 

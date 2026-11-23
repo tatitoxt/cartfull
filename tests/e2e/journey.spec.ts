@@ -56,7 +56,12 @@ test.describe("budget to plan to list to savings to subscription", () => {
 
     const second = page.getByTestId("list-item").nth(1);
     const price = cents(await second.getByTestId("item-price").textContent());
-    await second.getByTestId("have-button").click();
+    const name = (await second.innerText()).split("\n")[0];
+    const target = page.getByTestId("list-item").filter({ hasText: name });
+    // "+" adds what you have at home one unit at a time; keep tapping until the line is fully owned.
+    for (let i = 0; i < 30 && (await target.isVisible().catch(() => false)); i++) {
+      await target.getByTestId("have-button").click();
+    }
     await expect(page.getByTestId("have-item").first()).toBeVisible();
     await expect.poll(async () => cents(await total.textContent())).toBe(planTotal - price);
 
@@ -71,7 +76,7 @@ test.describe("budget to plan to list to savings to subscription", () => {
     // Reaching the list by tapping through the app, with no page load, still saves it.
     await page.goto("/app/plan");
     await page.evaluate(() => navigator.serviceWorker.ready.then(() => undefined));
-    await page.getByRole("link", { name: "Open grocery list" }).click();
+    await page.getByRole("link", { name: "List" }).click();
     await expect(page.getByTestId("list-item").first()).toBeVisible();
     await expect.poll(() => page.evaluate(async () => Boolean(await caches.match("/app/list")))).toBe(true);
     // A check-off made with a connection is in the saved copy too, not only the page as first opened.
