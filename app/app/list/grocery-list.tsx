@@ -5,6 +5,9 @@ import { BudgetMeter } from "@/components/budget-meter";
 import { keepForOffline } from "@/components/service-worker";
 import { setItemState } from "@/lib/app/actions";
 import { moneyExact } from "@/lib/format";
+import type { Lang } from "@/lib/catalog/localize";
+import { useMessages } from "@/lib/i18n/locale-provider";
+import { fill } from "@/lib/i18n/messages";
 
 export interface ListLine {
   id: string;
@@ -29,13 +32,16 @@ export function GroceryList({
   lines: initial,
   aisles,
   editable,
+  lang,
 }: {
   planId: string;
   budgetCents: number;
   lines: ListLine[];
   aisles: { aisle: string; label: string }[];
   editable: boolean;
+  lang: Lang;
 }) {
+  const m = useMessages();
   const queueKey = `cartfull.list.${planId}.queue`;
   const [lines, setLines] = useState(initial);
   const [offline, setOffline] = useState(false);
@@ -116,12 +122,12 @@ export function GroceryList({
     <div className="mt-7">
       <BudgetMeter totalCents={total} budgetCents={budgetCents} />
       <p className="tnum mt-3 text-sm text-ink-soft" aria-live="polite">
-        <span data-testid="in-cart-count">{inCart.length}</span> of {toBuy.length} items in your cart ·{" "}
-        {moneyExact(inCartCents)} so far
+        <span data-testid="in-cart-count">{inCart.length}</span>
+        {fill(m.list.inCart, { checked: "", total: toBuy.length, amount: moneyExact(inCartCents, lang) })}
       </p>
       {(offline || failed) && (
         <p role="status" className="mt-4 rounded-2xl bg-yellow-soft px-4 py-3 text-sm shadow-[inset_0_0_0_1.5px_var(--color-yellow)]">
-          {offline ? "You're offline. Keep checking things off; changes sync when you're back." : "Some changes haven't synced yet. We'll keep trying."}
+          {offline ? m.list.offline : m.list.unsynced}
         </p>
       )}
 
@@ -134,7 +140,7 @@ export function GroceryList({
             <section key={aisle} aria-labelledby={`aisle-${aisle}`} data-testid="aisle">
               <h2 id={`aisle-${aisle}`} className="flex items-baseline justify-between gap-3 border-b border-ink pb-2 text-xl">
                 {label}
-                <span className="tnum font-sans text-sm font-semibold text-ink-soft">{moneyExact(subtotal)}</span>
+                <span className="tnum font-sans text-sm font-semibold text-ink-soft">{moneyExact(subtotal, lang)}</span>
               </h2>
               <ul className="divide-y divide-line">
                 {group.map((line) => (
@@ -150,22 +156,22 @@ export function GroceryList({
                       <span className={`min-w-0 flex-1 ${line.checked ? "text-ink-faint line-through" : ""}`}>
                         <span className="block font-semibold leading-tight">{line.name}</span>
                         <span className="tnum block text-sm text-ink-soft">
-                          Need {line.need} · buy {line.buy}
+                          {fill(m.list.needBuy, { need: line.need, buy: line.buy })}
                         </span>
                       </span>
                     </label>
                     <span className="tnum w-16 shrink-0 text-right font-semibold" data-testid="item-price">
-                      {moneyExact(line.cents)}
+                      {moneyExact(line.cents, lang)}
                     </span>
                     {editable && (
                       <button
                         type="button"
                         onClick={() => change({ id: line.id, have: true })}
                         className="min-h-11 shrink-0 rounded-full px-3 text-sm font-semibold text-green-deep shadow-[inset_0_0_0_1.5px_var(--color-line)] hover:bg-paper-deep"
-                        aria-label={`I already have ${line.name}`}
+                        aria-label={fill(m.list.alreadyHave, { name: line.name })}
                         data-testid="have-button"
                       >
-                        Have it
+                        {m.list.haveButton}
                       </button>
                     )}
                   </li>
@@ -178,23 +184,23 @@ export function GroceryList({
         {haveLines.length > 0 && (
           <section aria-labelledby="have-title">
             <h2 id="have-title" className="border-b border-line pb-2 text-xl text-ink-soft">
-              Already at home
+              {m.list.alreadyHome}
             </h2>
             <ul className="divide-y divide-line">
               {haveLines.map((line) => (
                 <li key={line.id} className="flex min-h-14 items-center gap-3 py-2 text-ink-soft" data-testid="have-item">
                   <span className="min-w-0 flex-1">
                     <span className="block font-medium leading-tight">{line.name}</span>
-                    <span className="tnum block text-sm">Need {line.need}</span>
+                    <span className="tnum block text-sm">{fill(m.list.need, { need: line.need })}</span>
                   </span>
                   {editable && (
                     <button
                       type="button"
                       onClick={() => change({ id: line.id, have: false })}
                       className="min-h-11 shrink-0 rounded-full px-3 text-sm font-semibold underline underline-offset-4"
-                      aria-label={`Add ${line.name} back to the list, ${moneyExact(line.cents)}`}
+                      aria-label={fill(m.list.addBackLabel, { name: line.name, amount: moneyExact(line.cents, lang) })}
                     >
-                      Add back · {moneyExact(line.cents)}
+                      {fill(m.list.addBack, { amount: moneyExact(line.cents, lang) })}
                     </button>
                   )}
                 </li>
@@ -204,7 +210,7 @@ export function GroceryList({
         )}
       </div>
       <p className="mt-10 text-sm text-ink-faint">
-        Prices are estimates for whole packages at a typical US discount grocer. Your receipt will differ.
+        {m.list.prices}
       </p>
     </div>
   );

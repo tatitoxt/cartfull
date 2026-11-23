@@ -78,14 +78,14 @@ export function Landing({ locale }: { locale: Locale }) {
                   {t.sample.title}
                 </h2>
                 <p className="mt-3 text-lg text-ink-soft">
-                  {fill(t.sample.lead, { people: sample.people, budget: moneyRound(sample.budgetCents) })}
+                  {fill(t.sample.lead, { people: sample.people, budget: moneyRound(sample.budgetCents, locale) })}
                 </p>
               </div>
               <p className="tnum" data-testid="sample-total">
                 <span className="block text-sm font-medium text-ink-soft">{t.sample.cart}</span>
-                <span className="font-display text-5xl font-semibold leading-none">{moneyExact(sample.totalCents)}</span>
+                <span className="font-display text-5xl font-semibold leading-none">{moneyExact(sample.totalCents, locale)}</span>
                 <span className="ml-3 font-semibold text-tomato-deep">
-                  {moneyExact(sample.budgetCents - sample.totalCents)} {t.sample.under}
+                  {moneyExact(sample.budgetCents - sample.totalCents, locale)} {t.sample.under}
                 </span>
               </p>
             </div>
@@ -103,7 +103,7 @@ export function Landing({ locale }: { locale: Locale }) {
                   <h3 className={`mt-1 leading-tight ${index === 0 ? "text-2xl lg:text-3xl" : "text-lg"}`}>{dinner.name}</h3>
                   <p className="tnum mt-1 text-sm">
                     <span className="font-semibold text-tomato-deep">
-                      {moneyExact(dinner.centsPerServing)} {t.sample.serving}
+                      {moneyExact(dinner.centsPerServing, locale)} {t.sample.serving}
                     </span>
                     <span className="text-ink-soft"> · {dinner.minutes} min</span>
                   </p>
@@ -143,7 +143,7 @@ export function Landing({ locale }: { locale: Locale }) {
             </ul>
           </div>
           <div className="lg:pt-2">
-            <PricingChoice mode="landing" copy={t.pricing} />
+            <PricingChoice mode="landing" copy={t.pricing} landingLang={locale} />
           </div>
         </section>
 

@@ -1,5 +1,6 @@
 import { ImageResponse } from "next/og";
 import type { NextRequest } from "next/server";
+import { MESSAGES, fill } from "@/lib/i18n/messages";
 
 export const runtime = "edge";
 
@@ -13,6 +14,10 @@ export function GET(request: NextRequest) {
   const params = request.nextUrl.searchParams;
   const saved = clamp(params.get("saved"), 99999);
   const weeks = clamp(params.get("weeks"), 520) || 1;
+  const lang = params.get("lang") === "es" ? "es" : "en";
+  const numberLocale = lang === "es" ? "es-ES" : "en-US";
+  const m = MESSAGES[lang];
+  const cardWeeks = fill(m.savings.cardWeeks, { count: weeks.toLocaleString(numberLocale), unit: weeks === 1 ? m.savings.week : m.savings.weeks });
 
   return new ImageResponse(
     (
@@ -30,19 +35,19 @@ export function GET(request: NextRequest) {
         }}
       >
         <div style={{ display: "flex", fontSize: 40, color: "#95D5B2", fontFamily: "sans-serif", letterSpacing: 4 }}>
-          SAVED ON GROCERIES
+          {m.savings.cardTitle}
         </div>
         <div style={{ display: "flex", flexDirection: "column" }}>
           <div style={{ display: "flex", fontSize: 300, fontWeight: 700, lineHeight: 1, color: "#E9C46A" }}>
-            ${saved.toLocaleString("en-US")}
+            ${saved.toLocaleString(numberLocale)}
           </div>
           <div style={{ display: "flex", fontSize: 56, marginTop: 24, fontFamily: "sans-serif" }}>
-            in {weeks} {weeks === 1 ? "week" : "weeks"} of planned dinners
+            {cardWeeks}
           </div>
         </div>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", fontFamily: "sans-serif" }}>
           <div style={{ display: "flex", fontSize: 64, fontWeight: 700 }}>Cartfull</div>
-          <div style={{ display: "flex", fontSize: 32, color: "#95D5B2" }}>Tell us your budget. We plan the week.</div>
+          <div style={{ display: "flex", fontSize: 32, color: "#95D5B2" }}>{m.savings.cardTagline}</div>
         </div>
       </div>
     ),
