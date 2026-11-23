@@ -140,9 +140,20 @@ export interface WeekRecap {
 export async function weekRecaps(session: Session, planIds: string[]): Promise<Map<string, WeekRecap>> {
   const recaps = new Map<string, WeekRecap>();
   if (!planIds.length) return recaps;
-  const [{ data: mealRows }, { data: itemRows }] = await Promise.all([
-    session.supabase.from("plan_meals").select("plan_id, day, slot, recipe_slug, servings, leftover").in("plan_id", planIds),
-    session.supabase.from("plan_items").select("plan_id, checked, have").in("plan_id", planIds),
+  // PostgREST caps responses at 1,000 rows, so longer histories are paged.
+  const page = async <T,>(run: (from: number, to: number) => PromiseLike<{ data: T[] | null }>): Promise<T[]> => {
+    const rows: T[] = [];
+    for (let from = 0; ; from += 1000) {
+      const { data } = await run(from, from + 999);
+      if (!data?.length) break;
+      rows.push(...data);
+      if (data.length < 1000) break;
+    }
+    return rows;
+  };
+  const [mealRows, itemRows] = await Promise.all([
+    page((from, to) => session.supabase.from("plan_meals").select("plan_id, day, slot, recipe_slug, servings, leftover").in("plan_id", planIds).range(from, to)),
+    page((from, to) => session.supabase.from("plan_items").select("plan_id, ingredient_id, checked, have").in("plan_id", planIds).range(from, to)),
   ]);
   const order: MealType[] = ["breakfast", "lunch", "dinner"];
   const mealsByPlan = new Map<string, MealAssignment[]>();
@@ -150,7 +161,7 @@ export async function weekRecaps(session: Session, planIds: string[]): Promise<M
     recaps.set(id, { meals: 0, leftovers: 0, groceries: 0, bought: 0, atHome: 0 });
     mealsByPlan.set(id, []);
   }
-  for (const row of mealRows ?? []) {
+  for (const row of mealRows) {
     const recap = recaps.get(row.plan_id as string);
     const recipe = recipeBySlug(row.recipe_slug as string);
     if (!recap || !recipe) continue;
@@ -164,14 +175,20 @@ export async function weekRecaps(session: Session, planIds: string[]): Promise<M
       leftover: Boolean(row.leftover),
     });
   }
+  const lineIdsByPlan = new Map<string, Set<string>>();
   for (const [id, meals] of mealsByPlan) {
     meals.sort((a, b) => a.day - b.day || order.indexOf(a.slot) - order.indexOf(b.slot));
     // Leftover meals need no shopping; their lines are skipped by the cart.
-    recaps.get(id)!.groceries = buildCart(meals, catalog.ingredients, new Set(), new Map()).lines.length;
+    const cart = buildCart(meals, catalog.ingredients, new Set(), new Map());
+    recaps.get(id)!.groceries = cart.lines.length;
+    lineIdsByPlan.set(id, new Set(cart.lines.map((l) => l.ingredient.id)));
   }
-  for (const row of itemRows ?? []) {
+  for (const row of itemRows) {
     const recap = recaps.get(row.plan_id as string);
-    if (!recap) continue;
+    const lineIds = lineIdsByPlan.get(row.plan_id as string);
+    // Rows can outlive the cart: a meal that became leftovers frees its
+    // ingredients, and a fully owned item drops off the list.
+    if (!recap || !lineIds?.has(row.ingredient_id as string)) continue;
     if (row.checked) recap.bought += 1;
     if (row.have) recap.atHome += 1;
   }
