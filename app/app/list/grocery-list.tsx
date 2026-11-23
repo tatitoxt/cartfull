@@ -46,6 +46,7 @@ export function GroceryList({
   const [lines, setLines] = useState(initial);
   const [offline, setOffline] = useState(false);
   const [failed, setFailed] = useState(false);
+  const [shareNote, setShareNote] = useState("");
 
   const readQueue = (): Change[] => {
     try {
@@ -118,6 +119,35 @@ export function GroceryList({
   const inCartCents = inCart.reduce((sum, l) => sum + l.cents, 0);
   const haveLines = lines.filter((l) => l.have);
 
+  const share = async () => {
+    const groups = aisles
+      .map(({ aisle, label }) => {
+        const items = toBuy.filter((l) => l.aisle === aisle);
+        if (!items.length) return "";
+        const rows = items.map((l) => `${l.checked ? "✓" : "□"} ${l.name} — ${l.buy}${l.checked ? ` (${m.list.shareChecked})` : ""}`);
+        return `${label}\n${rows.join("\n")}`;
+      })
+      .filter(Boolean)
+      .join("\n\n");
+    const text = `${m.list.shareTitle}\n${fill(m.list.shareTotal, { amount: moneyExact(total, lang) })}\n\n${groups}`;
+    try {
+      if (navigator.share) {
+        await navigator.share({ title: m.list.shareTitle, text });
+        setShareNote(m.list.shared);
+      } else {
+        throw new Error("no share");
+      }
+    } catch (error) {
+      if (error instanceof DOMException && error.name === "AbortError") return;
+      try {
+        await navigator.clipboard.writeText(text);
+        setShareNote(m.list.shareCopied);
+      } catch {
+        setShareNote(m.list.shareError);
+      }
+    }
+  };
+
   return (
     <div className="mt-7">
       <BudgetMeter totalCents={total} budgetCents={budgetCents} />
@@ -125,6 +155,16 @@ export function GroceryList({
         <span data-testid="in-cart-count">{inCart.length}</span>
         {fill(m.list.inCart, { checked: "", total: toBuy.length, amount: moneyExact(inCartCents, lang) })}
       </p>
+      <div className="mt-3 flex items-center gap-3">
+        <button type="button" className="btn btn-quiet" onClick={share} data-testid="share-list">
+          {m.list.share}
+        </button>
+        {shareNote && (
+          <span role="status" className="text-sm text-fg-soft">
+            {shareNote}
+          </span>
+        )}
+      </div>
       {(offline || failed) && (
         <p role="status" className="mt-4 rounded-2xl bg-spend-soft px-4 py-3 text-sm shadow-[inset_0_0_0_1.5px_var(--color-spend)]">
           {offline ? m.list.offline : m.list.unsynced}
