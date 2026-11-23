@@ -5,10 +5,12 @@
 import { readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { recipeCentsPerServing } from "../lib/catalog/cost";
+import { packageLabel } from "../lib/catalog/localize";
 import {
   AISLES,
   ALLERGENS,
   DIET_TAGS,
+  EQUIPMENT,
   MEAL_TYPES,
   MEAT_KINDS,
   type Ingredient,
@@ -19,6 +21,10 @@ const root = join(__dirname, "..", "data");
 const errors: string[] = [];
 const err = (where: string, msg: string) => errors.push(`${where}: ${msg}`);
 const readJson = <T>(path: string): T => JSON.parse(readFileSync(path, "utf8")) as T;
+/** Requires the Spanish text, equipment and timing fields on every ingredient and recipe. */
+const strict = process.argv.includes("--strict");
+const TEMP_TOKEN = /\{(\d{2,3})F\}/g;
+const LOOSE_TEMP = /\d\s*°|\bdegrees\b|\bgrados\b/i;
 
 const ingredients = new Map<string, Ingredient>();
 for (const file of readdirSync(root).filter((f) => /^ingredients.*\.json$/.test(f))) {
@@ -30,6 +36,9 @@ for (const file of readdirSync(root).filter((f) => /^ingredients.*\.json$/.test(
     if (!(ing.pkg_qty > 0) || !(ing.pkg_cents > 0)) err(where, "pkg_qty and pkg_cents must be > 0");
     if (!ing.name || !ing.unit || !ing.pkg_label) err(where, "name, unit and pkg_label are required");
     for (const a of ing.allergens ?? []) if (!ALLERGENS.includes(a)) err(where, `unknown allergen ${a}`);
+    if (strict && !ing.name_es) err(where, "name_es is required");
+    if (ing.pkg_label && packageLabel(ing.pkg_label, "es", "metric") === null)
+      err(where, `pkg_label "${ing.pkg_label}" is not in a form that can be shown in grams (see docs)`);
     ingredients.set(ing.id, ing);
   }
 }
@@ -59,7 +68,36 @@ for (const file of readdirSync(recipeDir).filter((f) => f.endsWith(".json"))) {
       err(where, "prep_minutes must be 5-480");
     if (typeof r.batch_friendly !== "boolean") err(where, "batch_friendly must be boolean");
     if (!r.description || r.description.length > 140) err(where, "description is required, max 140 chars");
-    if (!Array.isArray(r.steps) || r.steps.length < 3 || r.steps.length > 7) err(where, "3-7 steps required");
+    const detailed =
+      strict || [r.name_es, r.description_es, r.steps_es, r.equipment, r.active_minutes].some((v) => v !== undefined);
+    if (!Array.isArray(r.steps) || r.steps.length < 3 || r.steps.length > (detailed ? 10 : 7))
+      err(where, detailed ? "4-10 steps required" : "3-7 steps required");
+    if (detailed) {
+      if (!r.name_es || r.name_es.length > 60) err(where, "name_es is required, max 60 chars");
+      if (!r.description_es || r.description_es.length > 170) err(where, "description_es is required, max 170 chars");
+      if (!Array.isArray(r.steps) || r.steps.length < 4) err(where, "4-10 steps required");
+      if (!Array.isArray(r.steps_es) || r.steps_es.length !== r.steps?.length)
+        err(where, "steps_es must have one entry per step");
+      if (!Array.isArray(r.equipment) || r.equipment.some((e) => !EQUIPMENT.includes(e)))
+        err(where, `equipment must be a subset of ${EQUIPMENT.join(", ")}`);
+      if (!Number.isInteger(r.active_minutes) || r.active_minutes! < 3 || r.active_minutes! > r.prep_minutes)
+        err(where, "active_minutes must be 3 or more and no more than prep_minutes");
+      if (Boolean(r.tip) !== Boolean(r.tip_es)) err(where, "tip and tip_es go together");
+      if ((r.tip?.length ?? 0) > 160 || (r.tip_es?.length ?? 0) > 190) err(where, "tip is too long");
+      (r.steps ?? []).forEach((step, i) => {
+        const es = r.steps_es?.[i] ?? "";
+        const temps = [...step.matchAll(TEMP_TOKEN)].map((m) => m[1]).join(",");
+        if (temps !== [...es.matchAll(TEMP_TOKEN)].map((m) => m[1]).join(","))
+          err(where, `step ${i + 1}: steps and steps_es must carry the same {…F} temperatures`);
+        for (const text of [step, es])
+          if (LOOSE_TEMP.test(text.replace(TEMP_TOKEN, "")))
+            err(where, `step ${i + 1}: write temperatures as {425F}, not as plain text`);
+      });
+      if ((r.equipment ?? []).includes("oven") && !(r.steps ?? []).some((s) => TEMP_TOKEN.test(s) || /broil/i.test(s)))
+        err(where, "oven recipes must give the oven temperature");
+      for (const ri of r.ingredients ?? [])
+        if (Boolean(ri.note) !== Boolean(ri.note_es)) err(where, `note and note_es go together (${ri.id})`);
+    }
     if (!Array.isArray(r.ingredients) || r.ingredients.length < 2 || r.ingredients.length > 15) {
       err(where, "2-15 ingredients required");
       continue;
