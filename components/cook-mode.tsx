@@ -34,6 +34,27 @@ function StepTimer({ seconds, resetKey }: { seconds: number; resetKey: number })
   const [running, setRunning] = useState(false);
 
   const endAt = useRef(0);
+  const audio = useRef<AudioContext | null>(null);
+
+  const alarm = () => {
+    try {
+      audio.current ??= new AudioContext();
+      const ctx = audio.current;
+      for (let i = 0; i < 3; i++) {
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.connect(gain).connect(ctx.destination);
+        osc.frequency.value = 880;
+        gain.gain.setValueAtTime(0.3, ctx.currentTime + i * 0.35);
+        gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + i * 0.35 + 0.25);
+        osc.start(ctx.currentTime + i * 0.35);
+        osc.stop(ctx.currentTime + i * 0.35 + 0.25);
+      }
+    } catch {
+      /* audio unsupported */
+    }
+    navigator.vibrate?.([200, 100, 200, 100, 300]);
+  };
 
   useEffect(() => {
     setLeft(seconds);
@@ -48,11 +69,25 @@ function StepTimer({ seconds, resetKey }: { seconds: number; resetKey: number })
     return () => clearInterval(id);
   }, [running]);
 
+  // Ring + vibrate when the countdown reaches zero while running.
+  useEffect(() => {
+    if (left <= 0 && running) {
+      setRunning(false);
+      alarm();
+    }
+  }, [left, running]);
+
   const toggle = () => {
     if (left <= 0) {
       setLeft(seconds);
       setRunning(false);
       return;
+    }
+    try {
+      audio.current ??= new AudioContext();
+      audio.current.resume();
+    } catch {
+      /* audio unsupported */
     }
     if (!running) endAt.current = Date.now() + left * 1000;
     setRunning((r) => !r);
