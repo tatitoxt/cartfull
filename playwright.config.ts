@@ -30,7 +30,16 @@ export default defineConfig({
   forbidOnly: Boolean(process.env.CI),
   retries: process.env.CI ? 1 : 0,
   reporter: process.env.CI ? [["github"], ["html", { open: "never" }]] : "list",
-  use: { baseURL, trace: "retain-on-failure", screenshot: "only-on-failure" },
+  use: {
+    baseURL,
+    trace: "retain-on-failure",
+    screenshot: "only-on-failure",
+    // The consent banner would otherwise cover the onboarding CTAs it overlaps.
+    storageState: {
+      cookies: [],
+      origins: [{ origin: baseURL, localStorage: [{ name: "cartfull:consent", value: "all" }] }],
+    },
+  },
   projects: [
     { name: "mobile", use: { ...devices["Pixel 7"] } },
     { name: "desktop", use: { ...devices["Desktop Chrome"] }, testMatch: /landing\.spec\.ts/ },
