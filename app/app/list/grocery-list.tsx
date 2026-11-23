@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { keepForOffline } from "@/components/service-worker";
 import { setItemState } from "@/lib/app/actions";
-import { money, moneyExact, moneyRound } from "@/lib/format";
+import { money, moneyExact } from "@/lib/format";
 import type { Lang } from "@/lib/catalog/localize";
 import { useMessages } from "@/lib/i18n/locale-provider";
 import { fill } from "@/lib/i18n/messages";
@@ -273,7 +273,7 @@ export function GroceryList({
           </span>
         </p>
         <p className={`tnum shrink-0 rounded-full px-3 py-1.5 text-sm font-semibold ${over ? "bg-over-soft text-over-deep" : "bg-accent-soft text-accent-deep"}`}>
-          {over ? m.budgetMeter.over : m.budgetMeter.under} {moneyRound(left, lang)}
+          {over ? m.budgetMeter.over : m.budgetMeter.under} {money(left, lang)}
         </p>
       </div>
       <p className="mt-8 text-sm text-fg-faint">
