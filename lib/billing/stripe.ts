@@ -30,6 +30,11 @@ export function priceId(interval: BillingInterval): string {
   return id;
 }
 
+/** Coupon id for the first-month offer, or null when the offer is off. */
+export function firstMonthCouponId(): string | null {
+  return process.env.STRIPE_COUPON_FIRST_MONTH || null;
+}
+
 export function intervalForPrice(id: string | null | undefined): BillingInterval | null {
   if (id && id === process.env.STRIPE_PRICE_ANNUAL) return "annual";
   if (id && id === process.env.STRIPE_PRICE_MONTHLY) return "monthly";

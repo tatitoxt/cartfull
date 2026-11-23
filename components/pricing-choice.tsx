@@ -18,11 +18,14 @@ export function PricingChoice({
   trial = true,
   copy = LANDING.en.pricing,
   landingLang,
+  introCents,
 }: {
   mode: "landing" | "checkout";
   trial?: boolean;
   copy?: LandingCopy["pricing"];
   landingLang?: Lang;
+  /** First-month offer price in cents for new monthly subscribers. */
+  introCents?: number;
 }) {
   const [interval, setInterval] = useState<BillingInterval>("annual");
   const annual = interval === "annual";
@@ -38,7 +41,13 @@ export function PricingChoice({
     : m.billing.yearlyNote.replace("{amount}", moneyExact(Math.round(PRICING.annual.cents / 12), lang));
   const annualPrice = lang === "es" ? moneyExact(PRICING.annual.cents, lang) : PRICING.annual.label;
   const monthlyPrice = lang === "es" ? moneyExact(PRICING.monthly.cents, lang) : PRICING.monthly.label;
-  const monthlyNote = mode === "landing" ? copy.monthlyNote : m.billing.monthlyNote;
+  const intro = mode === "checkout" && trial && introCents != null;
+  const introPrice = intro ? moneyExact(introCents, lang) : null;
+  const monthlyNote = mode === "landing"
+    ? copy.monthlyNote
+    : intro
+    ? m.billing.firstMonthNote.replace("{intro}", introPrice ?? "").replace("{price}", monthlyPrice)
+    : m.billing.monthlyNote;
 
   return (
     <div className="mt-8">
@@ -62,9 +71,12 @@ export function PricingChoice({
 
       <p className="mt-6 flex items-baseline gap-2" aria-live="polite">
         <span className="tnum font-display text-6xl font-semibold leading-none" data-testid="price">
-          {annual ? annualPrice : monthlyPrice}
+          {annual ? annualPrice : intro ? introPrice : monthlyPrice}
         </span>
         <span className="text-fg-soft">{annual ? perYear : perMonth}</span>
+        {intro && !annual && (
+          <span className="tnum text-xl text-fg-faint line-through">{monthlyPrice}</span>
+        )}
       </p>
       <p className="tnum mt-2 text-fg-soft">
         {annual ? yearlyNote : monthlyNote}
@@ -89,6 +101,11 @@ export function PricingChoice({
                 ? `${annualPrice} ${lang === "es" ? "al año" : "a year"}`
                 : `${monthlyPrice} ${lang === "es" ? "al mes" : "a month"}`,
             })
+            : trial && intro && !annual
+            ? m.billing.termsIntro
+                .replace("{days}", String(TRIAL_DAYS))
+                .replace("{intro}", introPrice ?? "")
+                .replace("{price}", monthlyPrice)
             : trial
             ? m.billing.termsTrial
                 .replace("{days}", String(TRIAL_DAYS))

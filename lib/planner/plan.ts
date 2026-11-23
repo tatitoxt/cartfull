@@ -368,7 +368,7 @@ export function swapOptions(
   const options: (SwapOption & { score: number })[] = [];
   for (const recipe of eligibleRecipes(catalog, req)) {
     if (recipe.meal_type !== target.slot || taken.has(recipe.slug)) continue;
-    const candidates = repeats.map((m) => ({ ...m, recipe }));
+    const candidates = repeats.map((m) => ({ ...m, recipe, leftover: false }));
     const totalCents = buildCart([...others, ...candidates], catalog.ingredients, req.pantry, req.owned).totalCents;
     if (totalCents > req.budgetCents) continue;
     const score =
