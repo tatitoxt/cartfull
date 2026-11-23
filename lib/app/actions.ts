@@ -128,6 +128,7 @@ async function buildWeek(session: Session, planId?: string): Promise<ActionResul
   let weekStart: string;
   let seed: number;
   const have = new Set(pantry);
+  let owned: ReadonlyMap<string, number> | undefined;
   if (existing) {
     const loaded = await loadPlan(session, existing, { active: entitlement.active, firstId });
     if (!loaded.editable) return fail("paywall", m.actions.trialPlan);
@@ -138,6 +139,7 @@ async function buildWeek(session: Session, planId?: string): Promise<ActionResul
       if (line.have) have.add(line.ingredient.id);
       else have.delete(line.ingredient.id);
     }
+    owned = new Map(loaded.cart.lines.map((l) => [l.ingredient.id, l.haveQty]));
   } else {
     if (plans.length > 0 && !entitlement.active) return fail("paywall", m.actions.trialNext);
     weekStart = targetWeekStart();
@@ -157,6 +159,7 @@ async function buildWeek(session: Session, planId?: string): Promise<ActionResul
     avoidSlugs,
     favoriteSlugs: feedback.favorites,
     ratings: feedback.ratings,
+    owned,
   });
   let plan;
   try {
@@ -176,6 +179,7 @@ async function buildWeek(session: Session, planId?: string): Promise<ActionResul
     seed,
     meals: plan.meals,
     have,
+    owned,
   });
   if (error) return error;
 
