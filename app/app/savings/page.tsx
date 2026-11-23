@@ -38,11 +38,11 @@ export default async function SavingsPage() {
 
   return (
     <>
-      <section aria-labelledby="saved-title" className="glass rounded-card bg-accent-soft p-6 sm:p-8">
+      <section aria-labelledby="saved-title" className="glass rounded-card bg-accent-soft p-5">
         <h1 id="saved-title" className="text-sm font-semibold uppercase tracking-wider text-accent-deep">
           {saved >= 0 ? m.savings.saved : m.savings.over}
         </h1>
-        <p className="tnum mt-2 font-display text-7xl font-semibold leading-none" data-testid="total-saved">
+        <p className="tnum mt-1.5 font-display text-5xl font-semibold leading-none" data-testid="total-saved">
           {moneyRound(Math.abs(saved), lang)}
         </p>
         <p className="tnum mt-3 text-fg-soft">
@@ -50,7 +50,7 @@ export default async function SavingsPage() {
           {summary.weeks.length > 1 && saved > 0 && <> {fill(m.savings.average, { amount: moneyRound(summary.averageSavedCents, lang) })}</>}
         </p>
         {saved > 0 && (
-          <p className="tnum mt-5 max-w-sm text-fg-soft">
+          <p className="tnum mt-4 max-w-sm text-sm text-fg-soft">
             {fill(m.savings.pace, { amount: moneyRound(summary.yearlyPaceCents, lang) })}
           </p>
         )}

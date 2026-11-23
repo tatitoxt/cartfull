@@ -1,10 +1,9 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { BudgetMeter } from "@/components/budget-meter";
 import { keepForOffline } from "@/components/service-worker";
 import { setItemState } from "@/lib/app/actions";
-import { moneyExact } from "@/lib/format";
+import { money, moneyExact, moneyRound } from "@/lib/format";
 import type { Lang } from "@/lib/catalog/localize";
 import { useMessages } from "@/lib/i18n/locale-provider";
 import { fill } from "@/lib/i18n/messages";
@@ -148,10 +147,12 @@ export function GroceryList({
     }
   };
 
+  const over = total > budgetCents;
+  const left = Math.abs(budgetCents - total);
+
   return (
-    <div className="mt-7">
-      <BudgetMeter totalCents={total} budgetCents={budgetCents} />
-      <p className="tnum mt-3 text-sm text-fg-soft" aria-live="polite">
+    <div className="mt-4">
+      <p className="tnum text-sm text-fg-soft" aria-live="polite">
         <span data-testid="in-cart-count">{inCart.length}</span>
         {fill(m.list.inCart, { checked: "", total: toBuy.length, amount: moneyExact(inCartCents, lang) })}
       </p>
@@ -171,7 +172,7 @@ export function GroceryList({
         </p>
       )}
 
-      <div className="mt-8 space-y-9">
+      <div className="mt-6 space-y-7">
         {aisles.map(({ aisle, label }) => {
           const group = toBuy.filter((l) => l.aisle === aisle);
           if (!group.length) return null;
@@ -184,15 +185,29 @@ export function GroceryList({
               </h2>
               <ul className="divide-y divide-line">
                 {group.map((line) => (
-                  <li key={line.id} className="flex items-center gap-3 py-2" data-testid="list-item">
-                    <label className="flex min-h-14 flex-1 cursor-pointer items-center gap-3">
-                      <input
-                        type="checkbox"
-                        checked={line.checked}
-                        disabled={!editable}
-                        onChange={(e) => change({ id: line.id, checked: e.target.checked })}
-                        className="size-6 shrink-0 rounded-md accent-[var(--color-accent)]"
-                      />
+                  <li key={line.id} className="flex items-center gap-3 py-1.5" data-testid="list-item">
+                    <label className="flex min-h-12 flex-1 cursor-pointer items-center gap-3">
+                      <span className="relative size-6 shrink-0">
+                        <input
+                          type="checkbox"
+                          checked={line.checked}
+                          disabled={!editable}
+                          onChange={(e) => change({ id: line.id, checked: e.target.checked })}
+                          className="peer size-6 appearance-none rounded-full border-2 border-fg-faint bg-transparent transition-colors checked:border-accent checked:bg-accent disabled:opacity-50"
+                        />
+                        <svg
+                          viewBox="0 0 12 12"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth={2.5}
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          className="pointer-events-none absolute inset-0 m-auto size-3.5 text-on-accent opacity-0 transition-opacity peer-checked:opacity-100"
+                          aria-hidden="true"
+                        >
+                          <path d="M2 6.5 4.8 9.2 10 3" />
+                        </svg>
+                      </span>
                       <span className={`min-w-0 flex-1 ${line.checked ? "text-fg-faint line-through" : ""}`}>
                         <span className="block font-semibold leading-tight">{line.name}</span>
                         <span className="tnum block text-sm text-fg-soft">
@@ -249,7 +264,19 @@ export function GroceryList({
           </section>
         )}
       </div>
-      <p className="mt-10 text-sm text-fg-faint">
+
+      <div className="mt-7 flex items-center justify-between gap-4 rounded-card bg-surface p-4 shadow-[inset_0_0_0_1.5px_var(--color-line)]">
+        <p>
+          <span className="block text-sm text-fg-soft">{m.budgetMeter.estimated}</span>
+          <span className="tnum text-xl font-semibold" data-testid="cart-total">
+            {money(total, lang)}
+          </span>
+        </p>
+        <p className={`tnum shrink-0 rounded-full px-3 py-1.5 text-sm font-semibold ${over ? "bg-over-soft text-over-deep" : "bg-accent-soft text-accent-deep"}`}>
+          {over ? m.budgetMeter.over : m.budgetMeter.under} {moneyRound(left, lang)}
+        </p>
+      </div>
+      <p className="mt-8 text-sm text-fg-faint">
         {m.list.prices}
       </p>
     </div>

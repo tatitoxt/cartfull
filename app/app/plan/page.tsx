@@ -65,13 +65,13 @@ export default async function PlanPage() {
     <>
       <section aria-labelledby="week-title">
         <p className="text-sm font-semibold uppercase tracking-wider text-accent">{fill(m.common.weekOf, { date: weekLabel(row.week_start, lang) })}</p>
-        <h1 id="week-title" className="mt-2 text-4xl sm:text-5xl">
+        <h1 id="week-title" className="mt-1.5 text-3xl sm:text-4xl">
           {over ? m.plan.lastWeek : m.plan.thisWeek}, {m.plan.planned}
         </h1>
-        <div className="mt-7">
+        <div className="mt-5">
           <BudgetMeter totalCents={cart.totalCents} budgetCents={row.budget_cents} />
         </div>
-        <div className="mt-6 flex flex-wrap gap-3">
+        <div className="mt-5 flex flex-wrap gap-3">
           <Link href="/app/list" className="btn btn-primary">
             {m.plan.openList}
           </Link>
@@ -108,7 +108,7 @@ export default async function PlanPage() {
         </section>
       )}
 
-      <ol className="mt-10 space-y-10">
+      <ol className="mt-8 space-y-7">
         {days.map(({ name, dinner, others }, day) => (
           <li key={name} data-testid="plan-day">
             <h2 className="flex items-baseline gap-3 text-2xl">
@@ -116,12 +116,12 @@ export default async function PlanPage() {
               <span className="h-px flex-1 bg-line" aria-hidden="true" />
             </h2>
             {dinner && (
-              <article className="mt-4 grid gap-4 sm:grid-cols-[minmax(0,5fr)_minmax(0,6fr)] sm:items-center">
+              <article className="mt-3 grid gap-3 sm:grid-cols-[minmax(0,5fr)_minmax(0,6fr)] sm:items-center">
                 <Link href={`/app/recipe/${dinner.recipe.slug}?plan=${row.id}`} className="block overflow-hidden rounded-card">
                   <Photo
                     url={dinner.recipe.photo_url}
                     alt={dinner.recipe.name_es && lang === "es" ? dinner.recipe.name_es : dinner.recipe.name}
-                    ratio={day === 0 ? 4 / 3 : 3 / 2}
+                    ratio={day === 0 ? 3 / 2 : 2}
                     sizes="(min-width: 640px) 320px, 100vw"
                     priority={day === 0}
                     className="h-full w-full"
@@ -129,14 +129,14 @@ export default async function PlanPage() {
                 </Link>
                 <div>
                   <div className="flex items-start gap-1">
-                    <h3 className="text-[1.6rem] leading-tight">
+                    <h3 className="text-2xl leading-tight">
                       <Link href={`/app/recipe/${dinner.recipe.slug}?plan=${row.id}`} className="hover:underline" data-testid="dinner-name">
                         {dinner.recipe.name_es && lang === "es" ? dinner.recipe.name_es : dinner.recipe.name}
                       </Link>
                     </h3>
                     <FavoriteToggle slug={dinner.recipe.slug} initial={feedback.favorites.has(dinner.recipe.slug)} />
                   </div>
-                  <p className="mt-2 text-fg-soft">{lang === "es" && dinner.recipe.description_es ? dinner.recipe.description_es : dinner.recipe.description}</p>
+                  <p className="mt-1.5 line-clamp-2 text-sm text-fg-soft">{lang === "es" && dinner.recipe.description_es ? dinner.recipe.description_es : dinner.recipe.description}</p>
                   <p className="tnum mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-sm">
                     <span className="font-semibold text-accent-deep">{fill(m.plan.perServing, { amount: moneyExact(perServing(dinner), lang) })}</span>
                     <span className="text-fg-soft">{fill(m.common.min, { count: dinner.recipe.prep_minutes })}</span>
