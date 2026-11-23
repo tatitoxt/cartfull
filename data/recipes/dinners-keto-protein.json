@@ -1,0 +1,2137 @@
+[
+  {
+    "slug": "lettuce-wrap-cheeseburgers",
+    "name": "Lettuce-Wrap Cheeseburgers",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "keto",
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 20,
+    "batch_friendly": false,
+    "description": "Juicy skillet cheeseburgers wrapped in crisp lettuce with tomato, onion and a quick burger sauce.",
+    "steps": [
+      "Mix the beef with the garlic powder, salt and pepper and shape into 4 patties.",
+      "Cook the patties in a hot skillet 4 minutes per side.",
+      "Top each patty with a cheese slice and cover 1 minute to melt.",
+      "Stir the mayo and mustard together for the sauce.",
+      "Wrap each burger in large lettuce leaves with tomato, onion and sauce."
+    ],
+    "ingredients": [
+      {
+        "id": "ground_beef",
+        "qty": 1.5
+      },
+      {
+        "id": "cheese_slices",
+        "qty": 4
+      },
+      {
+        "id": "romaine",
+        "qty": 2,
+        "note": "large outer leaves for wrapping"
+      },
+      {
+        "id": "tomato",
+        "qty": 1,
+        "note": "sliced"
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 0.5,
+        "note": "thinly sliced"
+      },
+      {
+        "id": "mayo",
+        "qty": 2
+      },
+      {
+        "id": "mustard",
+        "qty": 1
+      },
+      {
+        "id": "garlic_powder",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.5
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1764018601476-e5fac1f27893",
+    "photo_credit": {
+      "name": "Barcello's fusion",
+      "url": "https://unsplash.com/photos/a-lettuce-wrapped-burger-with-tomato-and-onion-rMs9zl7Ckuc"
+    }
+  },
+  {
+    "slug": "pork-egg-roll-in-a-bowl",
+    "name": "Pork Egg Roll in a Bowl",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "keto"
+    ],
+    "servings": 4,
+    "prep_minutes": 20,
+    "batch_friendly": false,
+    "description": "Everything inside an egg roll, minus the wrapper: ground pork and cabbage stir-fried with ginger, garlic and soy.",
+    "steps": [
+      "Brown the pork in a large skillet over medium-high heat, breaking it up.",
+      "Stir in the garlic, ginger and carrot and cook 1 minute.",
+      "Add the coleslaw mix, soy sauce and rice vinegar and toss 4 to 5 minutes until just tender.",
+      "Drizzle with sesame oil and sriracha.",
+      "Top with sliced green onions and serve."
+    ],
+    "ingredients": [
+      {
+        "id": "ground_pork",
+        "qty": 1.25
+      },
+      {
+        "id": "coleslaw_mix",
+        "qty": 1
+      },
+      {
+        "id": "carrot",
+        "qty": 0.25,
+        "note": "shredded"
+      },
+      {
+        "id": "green_onion",
+        "qty": 0.5,
+        "note": "sliced"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced"
+      },
+      {
+        "id": "ginger",
+        "qty": 1,
+        "note": "grated"
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 3
+      },
+      {
+        "id": "vinegar_rice",
+        "qty": 1
+      },
+      {
+        "id": "sesame_oil",
+        "qty": 1
+      },
+      {
+        "id": "sriracha",
+        "qty": 1
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1597130869926-224e85944619",
+    "photo_credit": {
+      "name": "ABHISHEK HAJARE",
+      "url": "https://unsplash.com/photos/green-and-brown-vegetable-salad-6XcZ2NQmRqY"
+    }
+  },
+  {
+    "slug": "chicken-cauliflower-fried-rice",
+    "name": "Chicken Cauliflower Fried Rice",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "keto",
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 25,
+    "batch_friendly": false,
+    "description": "Golden cauliflower rice stir-fried with chicken, scrambled egg and green onion, ready faster than takeout.",
+    "steps": [
+      "Cut the chicken into bite-size pieces and season with salt and turmeric.",
+      "Stir-fry the chicken in the vegetable oil 6 to 7 minutes until cooked through, then set aside.",
+      "Scramble the eggs in the same pan and break them into small pieces.",
+      "Add the garlic, carrot and cauliflower rice and cook 5 minutes.",
+      "Return the chicken, add the soy sauce and sesame oil and toss.",
+      "Top with green onions."
+    ],
+    "ingredients": [
+      {
+        "id": "chicken_breast",
+        "qty": 1.25,
+        "note": "diced"
+      },
+      {
+        "id": "cauliflower_rice",
+        "qty": 4
+      },
+      {
+        "id": "eggs",
+        "qty": 3
+      },
+      {
+        "id": "carrot",
+        "qty": 0.25,
+        "note": "finely diced"
+      },
+      {
+        "id": "green_onion",
+        "qty": 0.5,
+        "note": "sliced"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced"
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 3
+      },
+      {
+        "id": "sesame_oil",
+        "qty": 1
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 1
+      },
+      {
+        "id": "turmeric",
+        "qty": 0.5
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1679735386220-e8888925676e",
+    "photo_credit": {
+      "name": "Alex Bayev",
+      "url": "https://unsplash.com/photos/a-plate-of-food-with-chopsticks-next-to-it-7oER79aCOys"
+    }
+  },
+  {
+    "slug": "chicken-burrito-cauliflower-rice-skillet",
+    "name": "Chicken Burrito Cauliflower Rice Skillet",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "keto",
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 30,
+    "batch_friendly": false,
+    "description": "Taco-seasoned chicken thighs with peppers, salsa and cauliflower rice under melted cheddar, all in one pan.",
+    "steps": [
+      "Cut the chicken into small pieces and toss with the taco seasoning.",
+      "Brown the chicken in the oil 6 to 8 minutes.",
+      "Add the onion and bell pepper and cook 4 minutes.",
+      "Stir in the cauliflower rice and salsa and cook 5 minutes until tender.",
+      "Sprinkle with cheddar, cover and let it melt.",
+      "Finish with cilantro and lime wedges."
+    ],
+    "ingredients": [
+      {
+        "id": "chicken_thigh",
+        "qty": 1.25,
+        "note": "boneless, diced"
+      },
+      {
+        "id": "cauliflower_rice",
+        "qty": 3
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "note": "diced"
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced"
+      },
+      {
+        "id": "salsa",
+        "qty": 0.5
+      },
+      {
+        "id": "taco_seasoning",
+        "qty": 2
+      },
+      {
+        "id": "cheddar",
+        "qty": 1
+      },
+      {
+        "id": "cilantro",
+        "qty": 0.5,
+        "note": "chopped"
+      },
+      {
+        "id": "lime",
+        "qty": 1,
+        "note": "cut in wedges"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1665332111329-dd9d7fa46c74",
+    "photo_credit": {
+      "name": "Keesha's Kitchen",
+      "url": "https://unsplash.com/photos/a-bowl-of-food-9VKY7SXjHXE"
+    }
+  },
+  {
+    "slug": "turkey-bolognese-zucchini-noodles",
+    "name": "Turkey Bolognese Zucchini Noodles",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "keto",
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 30,
+    "batch_friendly": false,
+    "description": "A hearty ground turkey and tomato sauce spooned over tender zucchini noodles with plenty of parmesan.",
+    "steps": [
+      "Cut the zucchini into long thin noodles with a spiralizer or vegetable peeler.",
+      "Brown the turkey in the olive oil with the garlic.",
+      "Stir in the crushed tomatoes, tomato paste, Italian seasoning and salt and simmer 12 minutes.",
+      "Saute the zucchini noodles in a second pan 2 to 3 minutes until just tender.",
+      "Top the noodles with the sauce and parmesan."
+    ],
+    "ingredients": [
+      {
+        "id": "ground_turkey",
+        "qty": 1.25
+      },
+      {
+        "id": "zucchini",
+        "qty": 4
+      },
+      {
+        "id": "crushed_tomatoes",
+        "qty": 1
+      },
+      {
+        "id": "tomato_paste",
+        "qty": 1
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1.5
+      },
+      {
+        "id": "parmesan",
+        "qty": 0.5
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1671225548130-7ed32615ff3e",
+    "photo_credit": {
+      "name": "Sergi Ferrete",
+      "url": "https://unsplash.com/photos/a-wooden-bowl-filled-with-pasta-and-vegetables-qdizmyoK3ig"
+    }
+  },
+  {
+    "slug": "creamy-lemon-garlic-chicken-skillet",
+    "name": "Creamy Lemon Garlic Chicken Skillet",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "keto",
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 30,
+    "batch_friendly": false,
+    "description": "Pan-seared chicken breasts simmered in a lemon, garlic and parmesan cream sauce, served with steamed broccoli.",
+    "steps": [
+      "Season the chicken with Italian seasoning, salt and pepper.",
+      "Sear in the olive oil and butter 5 to 6 minutes per side, then set aside.",
+      "Cook the garlic 30 seconds, then add the broth, cream and juice of half the lemon.",
+      "Simmer 4 minutes, stir in the parmesan and return the chicken with the remaining lemon, sliced.",
+      "Steam the broccoli and serve it alongside with the sauce spooned over."
+    ],
+    "ingredients": [
+      {
+        "id": "chicken_breast",
+        "qty": 1.5
+      },
+      {
+        "id": "heavy_cream",
+        "qty": 0.75
+      },
+      {
+        "id": "chicken_broth",
+        "qty": 0.5
+      },
+      {
+        "id": "garlic",
+        "qty": 4,
+        "note": "minced"
+      },
+      {
+        "id": "lemon",
+        "qty": 1
+      },
+      {
+        "id": "parmesan",
+        "qty": 0.25
+      },
+      {
+        "id": "butter",
+        "qty": 1
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1
+      },
+      {
+        "id": "broccoli_frozen",
+        "qty": 4
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.5
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1586530844517-791ce35ad21d",
+    "photo_credit": {
+      "name": "Eiliv Aceron",
+      "url": "https://unsplash.com/photos/cooked-food-on-black-ceramic-plate-ashL5eH-osc"
+    }
+  },
+  {
+    "slug": "italian-sausage-zucchini-pepper-skillet",
+    "name": "Italian Sausage, Zucchini & Pepper Skillet",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "keto"
+    ],
+    "servings": 4,
+    "prep_minutes": 30,
+    "batch_friendly": true,
+    "description": "Browned Italian sausage with zucchini, bell peppers and onion in one skillet; it reheats well for lunches.",
+    "steps": [
+      "Slice the sausage into thick coins and brown in the olive oil 6 to 8 minutes.",
+      "Add the onion and bell peppers and cook 5 minutes.",
+      "Add the zucchini, garlic, Italian seasoning and pepper flakes.",
+      "Cook 6 to 8 minutes until the vegetables are tender and the sausage is cooked through.",
+      "Sprinkle with parmesan."
+    ],
+    "ingredients": [
+      {
+        "id": "sausage_italian",
+        "qty": 1.25
+      },
+      {
+        "id": "zucchini",
+        "qty": 2,
+        "note": "cut in half-moons"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 2,
+        "note": "cut in strips"
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "sliced"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1
+      },
+      {
+        "id": "red_pepper_flakes",
+        "qty": 0.25
+      },
+      {
+        "id": "parmesan",
+        "qty": 0.25
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1698843813577-db28459556b0",
+    "photo_credit": {
+      "name": "Elena Leya",
+      "url": "https://unsplash.com/photos/a-pan-filled-with-food-sitting-on-top-of-a-table-H-D-0UOgzMc"
+    }
+  },
+  {
+    "slug": "sheet-pan-lemon-salmon-broccoli",
+    "name": "Sheet-Pan Lemon Salmon & Broccoli",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "keto"
+    ],
+    "servings": 4,
+    "prep_minutes": 25,
+    "batch_friendly": false,
+    "description": "Salmon fillets and broccoli roasted together on one pan with garlic, butter and lemon.",
+    "steps": [
+      "Heat the oven to 425°F.",
+      "Toss the broccoli florets with the olive oil, garlic, salt and pepper on a sheet pan and roast 8 minutes.",
+      "Add the salmon to the pan, dot with butter and top with lemon slices.",
+      "Roast 10 to 12 minutes until the salmon flakes easily.",
+      "Squeeze the remaining lemon over everything."
+    ],
+    "ingredients": [
+      {
+        "id": "salmon",
+        "qty": 1,
+        "note": "4 fillets"
+      },
+      {
+        "id": "broccoli",
+        "qty": 2,
+        "note": "cut in florets"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced"
+      },
+      {
+        "id": "butter",
+        "qty": 1
+      },
+      {
+        "id": "lemon",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.5
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1627857638952-642f8cbba8da",
+    "photo_credit": {
+      "name": "Ben Libby",
+      "url": "https://unsplash.com/photos/brown-bread-on-white-ceramic-plate-xJBeGxiSYBE"
+    }
+  },
+  {
+    "slug": "turkey-taco-salad-bowls",
+    "name": "Turkey Taco Salad Bowls",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "keto",
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 20,
+    "batch_friendly": false,
+    "description": "Taco-seasoned ground turkey over crisp romaine with tomato, cheddar, avocado, salsa and sour cream; no chips needed.",
+    "steps": [
+      "Brown the turkey in a skillet, breaking it up, 7 to 8 minutes.",
+      "Stir in the taco seasoning and a splash of water and simmer 2 minutes.",
+      "Chop the romaine and divide among 4 bowls.",
+      "Top with the turkey, tomato, cheddar and avocado.",
+      "Finish with salsa and sour cream."
+    ],
+    "ingredients": [
+      {
+        "id": "ground_turkey",
+        "qty": 1.25
+      },
+      {
+        "id": "taco_seasoning",
+        "qty": 2
+      },
+      {
+        "id": "romaine",
+        "qty": 2,
+        "note": "chopped"
+      },
+      {
+        "id": "tomato",
+        "qty": 2,
+        "note": "diced"
+      },
+      {
+        "id": "cheddar",
+        "qty": 1
+      },
+      {
+        "id": "avocado",
+        "qty": 1,
+        "note": "diced"
+      },
+      {
+        "id": "salsa",
+        "qty": 0.5
+      },
+      {
+        "id": "sour_cream",
+        "qty": 0.5
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1707080019893-bf8fc3d55f08",
+    "photo_credit": {
+      "name": "Caroline Ross",
+      "url": "https://unsplash.com/photos/a-white-bowl-filled-with-lettuce-and-meat-D1u7ibM8vKU"
+    }
+  },
+  {
+    "slug": "garlic-butter-shrimp-mushroom-skillet",
+    "name": "Garlic Butter Shrimp & Mushroom Skillet",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "keto"
+    ],
+    "servings": 4,
+    "prep_minutes": 20,
+    "batch_friendly": false,
+    "description": "Shrimp, mushrooms and zucchini sauteed in garlic butter with lemon and a pinch of red pepper.",
+    "steps": [
+      "Saute the mushrooms and zucchini in the olive oil 5 to 6 minutes until browned.",
+      "Push the vegetables aside and melt the butter with the garlic and pepper flakes.",
+      "Add the shrimp and cook 2 minutes per side until pink.",
+      "Toss everything with the lemon juice and salt."
+    ],
+    "ingredients": [
+      {
+        "id": "shrimp",
+        "qty": 1,
+        "note": "peeled"
+      },
+      {
+        "id": "mushroom",
+        "qty": 8,
+        "note": "sliced"
+      },
+      {
+        "id": "zucchini",
+        "qty": 2,
+        "note": "diced"
+      },
+      {
+        "id": "garlic",
+        "qty": 5,
+        "note": "minced"
+      },
+      {
+        "id": "butter",
+        "qty": 3
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1
+      },
+      {
+        "id": "lemon",
+        "qty": 1
+      },
+      {
+        "id": "red_pepper_flakes",
+        "qty": 0.25
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1659951226926-a75791782250",
+    "photo_credit": {
+      "name": "Durenne Loris",
+      "url": "https://unsplash.com/photos/a-pan-of-food-aEHCeaGSgKA"
+    }
+  },
+  {
+    "slug": "cheesy-tuna-cauliflower-casserole",
+    "name": "Cheesy Tuna Cauliflower Casserole",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "keto",
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 40,
+    "batch_friendly": true,
+    "description": "Classic tuna casserole comfort with cauliflower instead of noodles, baked under a cheddar and parmesan crust.",
+    "steps": [
+      "Heat the oven to 400°F and boil the cauliflower florets 5 minutes, then drain well.",
+      "Stir the cream cheese, sour cream, mustard, garlic powder, salt and pepper together.",
+      "Fold in the drained tuna, celery, cauliflower and 1 cup of the cheddar.",
+      "Spread in a baking dish and top with the remaining cheddar and the parmesan.",
+      "Bake 20 minutes until bubbling and golden."
+    ],
+    "ingredients": [
+      {
+        "id": "tuna_canned",
+        "qty": 4,
+        "note": "drained"
+      },
+      {
+        "id": "cauliflower",
+        "qty": 1,
+        "note": "cut in florets"
+      },
+      {
+        "id": "cream_cheese",
+        "qty": 4,
+        "note": "softened"
+      },
+      {
+        "id": "sour_cream",
+        "qty": 0.5
+      },
+      {
+        "id": "cheddar",
+        "qty": 1.5
+      },
+      {
+        "id": "parmesan",
+        "qty": 0.25
+      },
+      {
+        "id": "celery",
+        "qty": 2,
+        "note": "diced"
+      },
+      {
+        "id": "mustard",
+        "qty": 1
+      },
+      {
+        "id": "garlic_powder",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.5
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1654780105295-9227206f11ec",
+    "photo_credit": {
+      "name": "David Trinks",
+      "url": "https://unsplash.com/photos/a-casserole-dish-sitting-on-a-stove-top-UN1mx680neg"
+    }
+  },
+  {
+    "slug": "blackened-tilapia-chopped-salad",
+    "name": "Blackened Tilapia Chopped Salad",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "keto",
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 20,
+    "batch_friendly": false,
+    "description": "Spice-crusted tilapia seared in a hot skillet and served over a crunchy romaine, pepper and feta salad.",
+    "steps": [
+      "Mix the paprika, garlic powder, onion powder, thyme, cayenne, salt and pepper and coat the tilapia.",
+      "Sear the fish in 1 tablespoon of the olive oil 3 minutes per side until dark and flaky.",
+      "Chop the romaine, bell pepper and cucumber into a large bowl.",
+      "Dress the salad with the remaining olive oil and the lemon juice and add the feta.",
+      "Serve the fish on top of the salad."
+    ],
+    "ingredients": [
+      {
+        "id": "tilapia",
+        "qty": 1.25
+      },
+      {
+        "id": "romaine",
+        "qty": 2,
+        "note": "chopped"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "note": "diced"
+      },
+      {
+        "id": "cucumber",
+        "qty": 1,
+        "note": "diced"
+      },
+      {
+        "id": "feta",
+        "qty": 3,
+        "note": "crumbled"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 3
+      },
+      {
+        "id": "lemon",
+        "qty": 1
+      },
+      {
+        "id": "paprika",
+        "qty": 2
+      },
+      {
+        "id": "garlic_powder",
+        "qty": 1
+      },
+      {
+        "id": "onion_powder",
+        "qty": 1
+      },
+      {
+        "id": "thyme",
+        "qty": 0.5
+      },
+      {
+        "id": "cayenne",
+        "qty": 0.5
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.5
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1755632255314-2c8b14ff0226",
+    "photo_credit": {
+      "name": "David Todd McCarty",
+      "url": "https://unsplash.com/photos/grilled-fish-atop-a-fresh-green-salad-VRJpZd8i2U4"
+    }
+  },
+  {
+    "slug": "parmesan-crusted-cod-green-beans",
+    "name": "Parmesan-Crusted Cod with Green Beans",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "keto",
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 25,
+    "batch_friendly": false,
+    "description": "Cod fillets baked under a golden parmesan crust next to garlicky roasted green beans.",
+    "steps": [
+      "Heat the oven to 425°F.",
+      "Toss the green beans with the olive oil, half the garlic powder and half the salt on a sheet pan and roast 8 minutes.",
+      "Spread the mayo over the cod and press on the parmesan mixed with the paprika and remaining garlic powder.",
+      "Add the cod to the pan and bake 12 minutes until golden and flaky.",
+      "Serve with lemon wedges."
+    ],
+    "ingredients": [
+      {
+        "id": "cod",
+        "qty": 1.25,
+        "note": "4 fillets"
+      },
+      {
+        "id": "parmesan",
+        "qty": 0.5
+      },
+      {
+        "id": "mayo",
+        "qty": 2
+      },
+      {
+        "id": "green_beans",
+        "qty": 1,
+        "note": "trimmed"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1
+      },
+      {
+        "id": "garlic_powder",
+        "qty": 1
+      },
+      {
+        "id": "paprika",
+        "qty": 0.5
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "note": "cut in wedges"
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1595936126366-6e85b4812ca2",
+    "photo_credit": {
+      "name": "Edward Howell",
+      "url": "https://unsplash.com/photos/fried-fish-with-green-vegetable-on-white-ceramic-bowl-mvlWXqxjaJ4"
+    }
+  },
+  {
+    "slug": "unstuffed-cabbage-roll-skillet",
+    "name": "Unstuffed Cabbage Roll Skillet",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "keto"
+    ],
+    "servings": 4,
+    "prep_minutes": 35,
+    "batch_friendly": true,
+    "description": "All the flavor of cabbage rolls without the rolling: ground beef and chopped cabbage simmered in tomato sauce.",
+    "steps": [
+      "Brown the beef with the onion in the olive oil, then stir in the garlic and paprika.",
+      "Add the chopped cabbage, diced tomatoes, tomato sauce, broth, salt and pepper.",
+      "Cover and simmer 20 minutes, stirring now and then, until the cabbage is tender.",
+      "Taste, adjust the seasoning and serve in bowls."
+    ],
+    "ingredients": [
+      {
+        "id": "ground_beef",
+        "qty": 1
+      },
+      {
+        "id": "cabbage",
+        "qty": 0.5,
+        "note": "chopped"
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced"
+      },
+      {
+        "id": "diced_tomatoes",
+        "qty": 1
+      },
+      {
+        "id": "tomato_sauce",
+        "qty": 1
+      },
+      {
+        "id": "beef_broth",
+        "qty": 0.5
+      },
+      {
+        "id": "paprika",
+        "qty": 1
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.5
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1743148601298-655e3d10303e",
+    "photo_credit": {
+      "name": "András Gal",
+      "url": "https://unsplash.com/photos/delicious-stew-simmers-in-a-large-pot-UkwpejZLgGI"
+    }
+  },
+  {
+    "slug": "slow-cooker-pulled-pork-slaw-bowls",
+    "name": "Slow-Cooker Pulled Pork Slaw Bowls",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "keto",
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 480,
+    "batch_friendly": true,
+    "description": "Spice-rubbed pork shoulder cooked low and slow, shredded and piled over tangy slaw and spinach.",
+    "steps": [
+      "Rub the pork with the smoked paprika, garlic powder, onion powder, cumin, salt and pepper.",
+      "Place in a slow cooker with the broth and 1 tablespoon of the vinegar and cook on low 8 hours.",
+      "Shred the pork with two forks and moisten with the cooking juices.",
+      "Toss the coleslaw mix with the mayo, mustard and remaining vinegar.",
+      "Divide the spinach and slaw among bowls and top with the pork."
+    ],
+    "ingredients": [
+      {
+        "id": "pork_shoulder",
+        "qty": 2.5
+      },
+      {
+        "id": "coleslaw_mix",
+        "qty": 1
+      },
+      {
+        "id": "spinach",
+        "qty": 4
+      },
+      {
+        "id": "mayo",
+        "qty": 3
+      },
+      {
+        "id": "vinegar_cider",
+        "qty": 2
+      },
+      {
+        "id": "mustard",
+        "qty": 1
+      },
+      {
+        "id": "chicken_broth",
+        "qty": 0.5
+      },
+      {
+        "id": "smoked_paprika",
+        "qty": 2
+      },
+      {
+        "id": "garlic_powder",
+        "qty": 1
+      },
+      {
+        "id": "onion_powder",
+        "qty": 1
+      },
+      {
+        "id": "cumin",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 1.5
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.5
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1622756144420-6877b1b7476e",
+    "photo_credit": {
+      "name": "Grooveland Designs",
+      "url": "https://unsplash.com/photos/cooked-food-on-stainless-steel-bowl-8kkTIumkHxU"
+    }
+  },
+  {
+    "slug": "cheesy-chicken-broccoli-bake",
+    "name": "Cheesy Chicken Broccoli Bake",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "keto",
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 40,
+    "batch_friendly": true,
+    "description": "Tender chicken and broccoli in a creamy garlic sauce, baked until the cheddar on top is golden and bubbling.",
+    "steps": [
+      "Heat the oven to 400°F.",
+      "Cut the chicken into bite-size pieces and brown in a skillet 5 to 6 minutes.",
+      "Stir the cream cheese, sour cream, broth, garlic powder, onion powder, salt and pepper until smooth.",
+      "Combine the chicken, broccoli, sauce and half the cheddar in a baking dish.",
+      "Top with the remaining cheddar and bake 20 minutes until bubbling."
+    ],
+    "ingredients": [
+      {
+        "id": "chicken_breast",
+        "qty": 1.5,
+        "note": "diced"
+      },
+      {
+        "id": "broccoli_frozen",
+        "qty": 4,
+        "note": "thawed"
+      },
+      {
+        "id": "cream_cheese",
+        "qty": 4,
+        "note": "softened"
+      },
+      {
+        "id": "sour_cream",
+        "qty": 0.5
+      },
+      {
+        "id": "chicken_broth",
+        "qty": 0.25
+      },
+      {
+        "id": "cheddar",
+        "qty": 1.5
+      },
+      {
+        "id": "garlic_powder",
+        "qty": 1
+      },
+      {
+        "id": "onion_powder",
+        "qty": 0.5
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.5
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1768204039572-9e62db7b39fd",
+    "photo_credit": {
+      "name": "Lee Milo",
+      "url": "https://unsplash.com/photos/broccoli-and-cheese-gratin-in-a-white-dish-rShpgs9ThwI"
+    }
+  },
+  {
+    "slug": "pan-seared-pork-chops-buttered-cabbage",
+    "name": "Pan-Seared Pork Chops with Buttered Cabbage",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "keto",
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 25,
+    "batch_friendly": false,
+    "description": "Paprika-rubbed pork chops seared until golden and served over cabbage wilted in butter, garlic and a splash of vinegar.",
+    "steps": [
+      "Rub the chops with the smoked paprika, garlic powder, thyme, salt and pepper.",
+      "Sear in the olive oil 4 to 5 minutes per side, then rest on a plate.",
+      "Melt the butter in the same pan and cook the onion 2 minutes.",
+      "Add the cabbage and garlic and cook 6 to 8 minutes until tender, then stir in the vinegar.",
+      "Serve the chops over the cabbage."
+    ],
+    "ingredients": [
+      {
+        "id": "pork_chop",
+        "qty": 1.75,
+        "note": "4 chops"
+      },
+      {
+        "id": "cabbage",
+        "qty": 0.5,
+        "note": "thinly sliced"
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "sliced"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced"
+      },
+      {
+        "id": "butter",
+        "qty": 3
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1
+      },
+      {
+        "id": "vinegar_cider",
+        "qty": 1
+      },
+      {
+        "id": "smoked_paprika",
+        "qty": 1
+      },
+      {
+        "id": "garlic_powder",
+        "qty": 1
+      },
+      {
+        "id": "thyme",
+        "qty": 0.5
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.5
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1612871689527-2a6145cc9e86",
+    "photo_credit": {
+      "name": "Junior REIS",
+      "url": "https://unsplash.com/photos/fried-food-on-white-ceramic-plate-G3giNPjjB18"
+    }
+  },
+  {
+    "slug": "garlic-herb-drumsticks-green-beans",
+    "name": "Garlic Herb Drumsticks with Green Beans",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "keto",
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 45,
+    "batch_friendly": false,
+    "description": "Crispy oven-roasted drumsticks rubbed with garlic, paprika and herbs, with buttery lemon green beans.",
+    "steps": [
+      "Heat the oven to 425°F.",
+      "Toss the drumsticks with the olive oil, garlic powder, paprika, Italian seasoning, salt and pepper.",
+      "Roast on a sheet pan 35 to 40 minutes, turning once, until crisp and cooked through.",
+      "Simmer the green beans 5 minutes, drain, then toss with the butter, garlic and lemon juice.",
+      "Serve the drumsticks with the green beans."
+    ],
+    "ingredients": [
+      {
+        "id": "chicken_drumstick",
+        "qty": 3
+      },
+      {
+        "id": "green_beans",
+        "qty": 1,
+        "note": "trimmed"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced"
+      },
+      {
+        "id": "butter",
+        "qty": 1
+      },
+      {
+        "id": "lemon",
+        "qty": 1
+      },
+      {
+        "id": "garlic_powder",
+        "qty": 1
+      },
+      {
+        "id": "paprika",
+        "qty": 1
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 2
+      },
+      {
+        "id": "salt",
+        "qty": 1.5
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.5
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1588767768106-1b20e51d9d68",
+    "photo_credit": {
+      "name": "Ekaterina Novitskaya",
+      "url": "https://unsplash.com/photos/fried-chicken-on-clear-glass-plate-jMKxaakIKfQ"
+    }
+  },
+  {
+    "slug": "smoked-sausage-pepper-cabbage-skillet",
+    "name": "Smoked Sausage, Pepper & Cabbage Skillet",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "keto"
+    ],
+    "servings": 4,
+    "prep_minutes": 25,
+    "batch_friendly": false,
+    "description": "Sliced smoked sausage fried with cabbage, onion and green pepper for a cheap, filling one-pan dinner.",
+    "steps": [
+      "Slice the sausage into coins and brown in a large skillet 4 to 5 minutes.",
+      "Add the butter, onion and bell pepper and cook 3 minutes.",
+      "Add the cabbage, garlic, smoked paprika and pepper.",
+      "Cook 8 to 10 minutes, stirring, until the cabbage is tender and browned at the edges.",
+      "Stir in the vinegar and serve."
+    ],
+    "ingredients": [
+      {
+        "id": "sausage_smoked",
+        "qty": 1
+      },
+      {
+        "id": "cabbage",
+        "qty": 0.5,
+        "note": "chopped"
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "sliced"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "note": "cut in strips"
+      },
+      {
+        "id": "garlic",
+        "qty": 2,
+        "note": "minced"
+      },
+      {
+        "id": "butter",
+        "qty": 2
+      },
+      {
+        "id": "vinegar_cider",
+        "qty": 1
+      },
+      {
+        "id": "smoked_paprika",
+        "qty": 0.5
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.5
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1726177974269-a03507107f71",
+    "photo_credit": {
+      "name": "Victor Birai",
+      "url": "https://unsplash.com/photos/a-wooden-spoon-in-a-pot-of-food-Rc1iuBwnb0A"
+    }
+  },
+  {
+    "slug": "ginger-beef-broccoli-stir-fry",
+    "name": "Ginger Beef & Broccoli Stir-Fry",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "keto"
+    ],
+    "servings": 4,
+    "prep_minutes": 20,
+    "batch_friendly": false,
+    "description": "Seared sirloin with broccoli, green beans and bell pepper in a garlic, ginger and soy sauce; no rice required.",
+    "steps": [
+      "Cut the steak into bite-size pieces and toss with 1 tablespoon of the soy sauce.",
+      "Sear the beef in the vegetable oil over high heat 2 to 3 minutes, then set aside.",
+      "Stir-fry the broccoli, green beans and bell pepper with a splash of water 5 minutes.",
+      "Add the garlic and ginger and cook 30 seconds.",
+      "Return the beef with the remaining soy sauce and the sesame oil and toss."
+    ],
+    "ingredients": [
+      {
+        "id": "steak_sirloin",
+        "qty": 1
+      },
+      {
+        "id": "broccoli",
+        "qty": 1,
+        "note": "cut in florets"
+      },
+      {
+        "id": "green_beans",
+        "qty": 0.5,
+        "note": "trimmed"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "note": "cut in chunks"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced"
+      },
+      {
+        "id": "ginger",
+        "qty": 1,
+        "note": "grated"
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 3
+      },
+      {
+        "id": "sesame_oil",
+        "qty": 1
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 1
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1760504526069-ff0f8bf6e4ca",
+    "photo_credit": {
+      "name": "Davis Dai",
+      "url": "https://unsplash.com/photos/beef-and-broccoli-stir-fry-with-vegetables-on-a-red-plate-qKPKDb4_W24"
+    }
+  },
+  {
+    "slug": "lemon-garlic-tuna-pasta",
+    "name": "Lemon Garlic Tuna Pasta",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 20,
+    "batch_friendly": false,
+    "description": "Pantry pasta with canned tuna, peas, garlic, lemon and parmesan that comes together while the water boils.",
+    "steps": [
+      "Boil the pasta until tender, adding the peas for the last 2 minutes, and save a splash of the water.",
+      "Warm the olive oil with the garlic and pepper flakes in the empty pot 1 minute.",
+      "Add the drained tuna, pasta, peas, lemon juice and pasta water and toss.",
+      "Stir in the parmesan, salt and green onions."
+    ],
+    "ingredients": [
+      {
+        "id": "tuna_canned",
+        "qty": 4,
+        "note": "drained"
+      },
+      {
+        "id": "pasta_elbow",
+        "qty": 12
+      },
+      {
+        "id": "peas_frozen",
+        "qty": 1
+      },
+      {
+        "id": "garlic",
+        "qty": 4,
+        "note": "minced"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 3
+      },
+      {
+        "id": "lemon",
+        "qty": 1
+      },
+      {
+        "id": "green_onion",
+        "qty": 0.5,
+        "note": "sliced"
+      },
+      {
+        "id": "parmesan",
+        "qty": 0.5
+      },
+      {
+        "id": "red_pepper_flakes",
+        "qty": 0.5
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1666724283327-a9cd945fd5c5",
+    "photo_credit": {
+      "name": "Danielle Townsend",
+      "url": "https://unsplash.com/photos/a-plate-of-food-qzyzPxeKiRA"
+    }
+  },
+  {
+    "slug": "cajun-tilapia-seasoned-rice",
+    "name": "Cajun Tilapia over Seasoned Rice",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 30,
+    "batch_friendly": false,
+    "description": "Spice-rubbed tilapia fillets seared in butter and served over paprika rice with fresh tomato and lemon.",
+    "steps": [
+      "Simmer the rice with 3 cups water, 1 teaspoon of the paprika and half the salt, covered, 18 minutes.",
+      "Mix the remaining paprika and salt with the garlic powder, onion powder, oregano, thyme and cayenne and coat the fish.",
+      "Sear the tilapia in the butter 3 to 4 minutes per side.",
+      "Fluff the rice and top with the fish.",
+      "Serve with sliced tomato and lemon wedges."
+    ],
+    "ingredients": [
+      {
+        "id": "tilapia",
+        "qty": 1.5
+      },
+      {
+        "id": "rice_white",
+        "qty": 1.5
+      },
+      {
+        "id": "butter",
+        "qty": 2
+      },
+      {
+        "id": "tomato",
+        "qty": 2,
+        "note": "sliced"
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "note": "cut in wedges"
+      },
+      {
+        "id": "paprika",
+        "qty": 3
+      },
+      {
+        "id": "garlic_powder",
+        "qty": 1
+      },
+      {
+        "id": "onion_powder",
+        "qty": 1
+      },
+      {
+        "id": "oregano",
+        "qty": 0.5
+      },
+      {
+        "id": "thyme",
+        "qty": 0.5
+      },
+      {
+        "id": "cayenne",
+        "qty": 0.5
+      },
+      {
+        "id": "salt",
+        "qty": 1.5
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1661081090172-f91124f63c51",
+    "photo_credit": {
+      "name": "Design Wala",
+      "url": "https://unsplash.com/photos/a-plate-of-food-lDbGDnNe0CI"
+    }
+  },
+  {
+    "slug": "honey-garlic-salmon-rice-broccoli",
+    "name": "Honey Garlic Salmon with Rice & Broccoli",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 25,
+    "batch_friendly": false,
+    "description": "Pan-seared salmon glazed with honey, garlic and soy, served with fluffy white rice and steamed broccoli.",
+    "steps": [
+      "Simmer the rice with 3 cups water, covered, 18 minutes.",
+      "Sear the salmon in the oil 4 minutes per side.",
+      "Add the honey, soy sauce and garlic to the pan and spoon over the fish 1 to 2 minutes until glossy.",
+      "Steam the broccoli florets 4 to 5 minutes.",
+      "Serve the salmon with the rice and broccoli and drizzle with the glaze."
+    ],
+    "ingredients": [
+      {
+        "id": "salmon",
+        "qty": 1.25,
+        "note": "4 fillets"
+      },
+      {
+        "id": "rice_white",
+        "qty": 1.5
+      },
+      {
+        "id": "broccoli",
+        "qty": 1,
+        "note": "cut in florets"
+      },
+      {
+        "id": "honey",
+        "qty": 2
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 3
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced"
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 1
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1675209705883-7aec595f5aa8",
+    "photo_credit": {
+      "name": "Camara Negra",
+      "url": "https://unsplash.com/photos/a-black-plate-topped-with-salmon-and-broccoli-RZV1-tNbHy4"
+    }
+  },
+  {
+    "slug": "turkey-two-bean-chili",
+    "name": "Turkey & Two-Bean Chili",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 45,
+    "batch_friendly": true,
+    "description": "A big pot of ground turkey chili with kidney and black beans, peppers and tomatoes; better the next day.",
+    "steps": [
+      "Brown the turkey with the onion and bell pepper in the olive oil.",
+      "Stir in the garlic, chili powder, cumin and salt and cook 1 minute.",
+      "Add the diced tomatoes, tomato sauce, broth and drained beans.",
+      "Simmer 25 minutes, stirring now and then.",
+      "Taste, adjust the seasoning and serve."
+    ],
+    "ingredients": [
+      {
+        "id": "ground_turkey",
+        "qty": 1.25
+      },
+      {
+        "id": "kidney_beans",
+        "qty": 1,
+        "note": "drained"
+      },
+      {
+        "id": "black_beans",
+        "qty": 1,
+        "note": "drained"
+      },
+      {
+        "id": "diced_tomatoes",
+        "qty": 1
+      },
+      {
+        "id": "tomato_sauce",
+        "qty": 1
+      },
+      {
+        "id": "chicken_broth",
+        "qty": 1
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "note": "diced"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced"
+      },
+      {
+        "id": "chili_powder",
+        "qty": 3
+      },
+      {
+        "id": "cumin",
+        "qty": 2
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1576020956260-490f5c5fc892",
+    "photo_credit": {
+      "name": "Brooke Lark",
+      "url": "https://unsplash.com/photos/cooked-viand-on-white-container-kFYjbRnklo4"
+    }
+  },
+  {
+    "slug": "chicken-black-bean-burrito-bowls",
+    "name": "Chicken & Black Bean Burrito Bowls",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 30,
+    "batch_friendly": false,
+    "description": "Taco-spiced chicken over rice with black beans, corn, peppers and salsa: a burrito you eat with a fork.",
+    "steps": [
+      "Simmer the rice with 3 cups water, covered, 18 minutes.",
+      "Coat the chicken with the taco seasoning and cook in the olive oil 5 to 6 minutes per side, then slice.",
+      "Saute the bell pepper 4 minutes and warm the beans and corn.",
+      "Divide the rice among bowls and top with the chicken, beans, corn and pepper.",
+      "Finish with salsa, sour cream, jalapeno and lime."
+    ],
+    "ingredients": [
+      {
+        "id": "chicken_breast",
+        "qty": 1.25
+      },
+      {
+        "id": "rice_white",
+        "qty": 1.5
+      },
+      {
+        "id": "black_beans",
+        "qty": 1,
+        "note": "drained"
+      },
+      {
+        "id": "corn_frozen",
+        "qty": 1
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "note": "cut in strips"
+      },
+      {
+        "id": "salsa",
+        "qty": 0.5
+      },
+      {
+        "id": "sour_cream",
+        "qty": 0.25
+      },
+      {
+        "id": "taco_seasoning",
+        "qty": 2
+      },
+      {
+        "id": "jalapeno",
+        "qty": 1,
+        "note": "sliced"
+      },
+      {
+        "id": "lime",
+        "qty": 1,
+        "note": "cut in wedges"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1716392976013-66d90cac4411",
+    "photo_credit": {
+      "name": "AnaCristina Smith",
+      "url": "https://unsplash.com/photos/a-plate-of-chicken-black-beans-corn-and-salsa-cIXQYJ8V0Gw"
+    }
+  },
+  {
+    "slug": "lemon-chicken-thigh-potato-bake",
+    "name": "Lemon Chicken Thigh & Potato Bake",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 45,
+    "batch_friendly": false,
+    "description": "Chicken thighs roasted in one dish with potatoes, cherry tomatoes, garlic, oregano and lemon slices.",
+    "steps": [
+      "Heat the oven to 425°F.",
+      "Toss the potato chunks, tomatoes and garlic with half the olive oil, half the oregano and half the salt in a baking dish.",
+      "Rub the chicken with the remaining oil, oregano and salt and nestle it on top.",
+      "Add the lemon slices and roast 35 minutes until the chicken is cooked through and the potatoes are tender.",
+      "Scatter with chopped parsley."
+    ],
+    "ingredients": [
+      {
+        "id": "chicken_thigh",
+        "qty": 2
+      },
+      {
+        "id": "potato_russet",
+        "qty": 1.5,
+        "note": "cut in chunks"
+      },
+      {
+        "id": "cherry_tomato",
+        "qty": 0.5
+      },
+      {
+        "id": "lemon",
+        "qty": 2,
+        "note": "sliced"
+      },
+      {
+        "id": "garlic",
+        "qty": 5,
+        "note": "smashed"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2
+      },
+      {
+        "id": "oregano",
+        "qty": 2
+      },
+      {
+        "id": "parsley",
+        "qty": 0.5,
+        "note": "chopped"
+      },
+      {
+        "id": "salt",
+        "qty": 1.5
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.5
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1680098021573-b9402ee336ec",
+    "photo_credit": {
+      "name": "Babs Gorniak",
+      "url": "https://unsplash.com/photos/two-bowls-of-food-with-lemons-meat-and-vegetables-xgDsiUC5p-w"
+    }
+  },
+  {
+    "slug": "one-pot-beef-penne-skillet",
+    "name": "One-Pot Beef & Penne Skillet",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 25,
+    "batch_friendly": false,
+    "description": "Penne cooked right in a ground beef and tomato sauce, then finished with melted mozzarella and parmesan.",
+    "steps": [
+      "Brown the beef with the onion in a deep skillet, then stir in the garlic and Italian seasoning.",
+      "Add the crushed tomatoes, broth, salt and dry penne.",
+      "Cover and simmer 12 to 14 minutes, stirring twice, until the pasta is tender.",
+      "Stir in the mozzarella and top with the parmesan."
+    ],
+    "ingredients": [
+      {
+        "id": "ground_beef",
+        "qty": 1
+      },
+      {
+        "id": "pasta_penne",
+        "qty": 12
+      },
+      {
+        "id": "crushed_tomatoes",
+        "qty": 1
+      },
+      {
+        "id": "beef_broth",
+        "qty": 2
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 2
+      },
+      {
+        "id": "mozzarella",
+        "qty": 1
+      },
+      {
+        "id": "parmesan",
+        "qty": 0.25
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1630151318557-1b2b20cc8cff",
+    "photo_credit": {
+      "name": "Konstantinas Ladauskas",
+      "url": "https://unsplash.com/photos/pasta-dish-on-white-ceramic-bowl-OCccmmmZxhU"
+    }
+  },
+  {
+    "slug": "pork-tenderloin-sweet-potato-skillet",
+    "name": "Pork Tenderloin & Sweet Potato Skillet",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 35,
+    "batch_friendly": false,
+    "description": "Strips of smoky pork tenderloin tossed with caramelized sweet potato cubes and red onion.",
+    "steps": [
+      "Cook the sweet potato cubes in half the olive oil, covered, 12 minutes, stirring, until tender and browned.",
+      "Slice the pork into thin strips and toss with the smoked paprika, cumin, thyme, salt and pepper.",
+      "Move the sweet potatoes to a plate and sear the pork in the remaining oil 5 to 6 minutes.",
+      "Add the garlic and half the red onion and cook 1 minute.",
+      "Return the sweet potatoes, add the vinegar and toss.",
+      "Top with the remaining sliced red onion."
+    ],
+    "ingredients": [
+      {
+        "id": "pork_tenderloin",
+        "qty": 1.5
+      },
+      {
+        "id": "sweet_potato",
+        "qty": 1.5,
+        "note": "peeled and cubed"
+      },
+      {
+        "id": "onion_red",
+        "qty": 1,
+        "note": "sliced"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2
+      },
+      {
+        "id": "vinegar_cider",
+        "qty": 1
+      },
+      {
+        "id": "smoked_paprika",
+        "qty": 1
+      },
+      {
+        "id": "cumin",
+        "qty": 1
+      },
+      {
+        "id": "thyme",
+        "qty": 0.5
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.5
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1636407715708-a097fdcef57a",
+    "photo_credit": {
+      "name": "Nico M.",
+      "url": "https://unsplash.com/photos/a-plate-of-food-on-a-wooden-table-yicKRIphU1c"
+    }
+  },
+  {
+    "slug": "sheet-pan-paprika-drumsticks-potatoes",
+    "name": "Sheet-Pan Paprika Drumsticks & Potatoes",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 45,
+    "batch_friendly": false,
+    "description": "Budget drumsticks and potato wedges roasted together in a smoky paprika and garlic rub until crisp.",
+    "steps": [
+      "Heat the oven to 425°F.",
+      "Cut the potatoes into wedges.",
+      "Toss the drumsticks and potatoes with the olive oil, both paprikas, garlic powder, onion powder, salt and pepper.",
+      "Spread on a sheet pan and roast 40 minutes, turning once, until the chicken is crisp and cooked through."
+    ],
+    "ingredients": [
+      {
+        "id": "chicken_drumstick",
+        "qty": 3
+      },
+      {
+        "id": "potato_russet",
+        "qty": 2,
+        "note": "cut in wedges"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2
+      },
+      {
+        "id": "paprika",
+        "qty": 2
+      },
+      {
+        "id": "smoked_paprika",
+        "qty": 1
+      },
+      {
+        "id": "garlic_powder",
+        "qty": 1
+      },
+      {
+        "id": "onion_powder",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 1.5
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.5
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1705088295364-6e98d62a3146",
+    "photo_credit": {
+      "name": "Gourmet Lenz",
+      "url": "https://unsplash.com/photos/a-plate-of-food-that-includes-chicken-potatoes-and-coleslaw-zlob_4tPETs"
+    }
+  },
+  {
+    "slug": "weeknight-chicken-tikka-masala-rice",
+    "name": "Weeknight Chicken Tikka Masala with Rice",
+    "meal_type": "dinner",
+    "diet_tags": [
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 40,
+    "batch_friendly": true,
+    "description": "Chicken simmered in a creamy spiced tomato sauce from pantry staples, served over white rice.",
+    "steps": [
+      "Simmer the rice with 3 cups water, covered, 18 minutes.",
+      "Toss the diced chicken with the yogurt, half the curry powder and the salt.",
+      "Brown the chicken in the butter 6 minutes, then add the onion, garlic and ginger and cook 3 minutes.",
+      "Stir in the remaining curry powder, cumin, paprika, tomato sauce and tomato paste and simmer 12 minutes.",
+      "Stir in the cream and heat through.",
+      "Serve over the rice."
+    ],
+    "ingredients": [
+      {
+        "id": "chicken_breast",
+        "qty": 1.5,
+        "note": "diced"
+      },
+      {
+        "id": "rice_white",
+        "qty": 1.5
+      },
+      {
+        "id": "tomato_sauce",
+        "qty": 1
+      },
+      {
+        "id": "tomato_paste",
+        "qty": 2
+      },
+      {
+        "id": "heavy_cream",
+        "qty": 0.5
+      },
+      {
+        "id": "greek_yogurt",
+        "qty": 0.5
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced"
+      },
+      {
+        "id": "garlic",
+        "qty": 4,
+        "note": "minced"
+      },
+      {
+        "id": "ginger",
+        "qty": 1,
+        "note": "grated"
+      },
+      {
+        "id": "butter",
+        "qty": 2
+      },
+      {
+        "id": "curry_powder",
+        "qty": 3
+      },
+      {
+        "id": "cumin",
+        "qty": 1
+      },
+      {
+        "id": "paprika",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      }
+    ],
+    "photo_url": "https://images.unsplash.com/photo-1788462613018-40916ff6415c",
+    "photo_credit": {
+      "name": "gabbiistudios",
+      "url": "https://unsplash.com/photos/chicken-tikka-masala-dinner-plate-7ZGOtqVZtAk"
+    }
+  }
+]
