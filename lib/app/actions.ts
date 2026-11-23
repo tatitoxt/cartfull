@@ -92,6 +92,9 @@ async function saveAnswers(session: Session, answers: Answers, markOnboarded: bo
     lang: answers.lang,
     units: answers.units,
     equipment: answers.equipment,
+    notify_plan: answers.notify_plan,
+    notify_shopping: answers.notify_shopping,
+    notify_receipt: answers.notify_receipt,
   };
   if (markOnboarded) {
     update.onboarded_at = new Date().toISOString();

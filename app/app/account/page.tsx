@@ -41,6 +41,9 @@ export default async function AccountPage({ searchParams }: { searchParams: Prom
     lang: profile.lang,
     units: profile.units,
     equipment: profile.equipment,
+    notify_plan: profile.notify_plan,
+    notify_shopping: profile.notify_shopping,
+    notify_receipt: profile.notify_receipt,
   };
 
   const price = entitlement.interval === "annual"

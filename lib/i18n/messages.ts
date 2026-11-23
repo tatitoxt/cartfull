@@ -304,6 +304,15 @@ const en = {
       ended: "Your subscription has ended.",
       freeWeek: "You’re on the free first week. Try everything free for {days} days.",
     },
+    reminders: {
+      title: "Reminders",
+      plan: "Time to plan",
+      planHint: "When the week is almost over and nothing is planned after.",
+      shopping: "List left over",
+      shoppingHint: "When the week has started and items are still unchecked.",
+      receipt: "Log what you spent",
+      receiptHint: "When the week wraps up without a real total.",
+    },
   },
   savings: {
     title: "Savings",
@@ -406,6 +415,14 @@ const en = {
     wait: "This takes a few seconds. Keep this page open.",
     waitLong: "This is taking longer than usual. Your card is safe. Refresh in a minute, or check Account.",
     goAccount: "Go to Account",
+  },
+  reminders: {
+    planText: "Your week ends {date} — plan the next one.",
+    planCta: "Plan next week",
+    shoppingText: "{count} left on this week’s list.",
+    shoppingCta: "Open the list",
+    receiptText: "Week {week} is over — what did you really spend?",
+    receiptCta: "Add the total",
   },
   misc: {
     notFound: "That page isn’t on the list",
@@ -747,6 +764,15 @@ const es: Messages = {
       ended: "Tu suscripción terminó.",
       freeWeek: "Estás usando la primera semana gratis. Prueba todo sin costo durante {days} días.",
     },
+    reminders: {
+      title: "Recordatorios",
+      plan: "Hora de planear",
+      planHint: "Cuando la semana casi termina y no hay nada planeado después.",
+      shopping: "Lista pendiente",
+      shoppingHint: "Cuando la semana empezó y quedan ítems sin marcar.",
+      receipt: "Anota lo que gastaste",
+      receiptHint: "Cuando la semana termina sin el total real.",
+    },
   },
   savings: {
     title: "Ahorros",
@@ -849,6 +875,14 @@ const es: Messages = {
     wait: "Tardará unos segundos. Mantén esta página abierta.",
     waitLong: "Está tardando más de lo habitual. Tu tarjeta está a salvo. Actualiza en un minuto o revisa Cuenta.",
     goAccount: "Ir a Cuenta",
+  },
+  reminders: {
+    planText: "Tu semana termina el {date} — planea la siguiente.",
+    planCta: "Planear la semana",
+    shoppingText: "Quedan {count} en la lista de esta semana.",
+    shoppingCta: "Abrir la lista",
+    receiptText: "La semana {week} terminó — ¿cuánto gastaste de verdad?",
+    receiptCta: "Anotar el total",
   },
   misc: {
     notFound: "Esta página no está en la lista",

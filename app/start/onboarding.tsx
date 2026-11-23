@@ -41,6 +41,9 @@ function initialAnswers(staples: string[], params: URLSearchParams, initialCount
     allergens: [],
     dislikes: [],
     pantry: staples,
+    notify_plan: false,
+    notify_shopping: false,
+    notify_receipt: false,
   };
   const number = (key: string) => {
     const value = Number(params.get(key));
