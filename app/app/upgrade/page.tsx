@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { redirect } from "next/navigation";
 import { PricingChoice } from "@/components/pricing-choice";
 import { getEntitlement, getProfile, requireSession } from "@/lib/app/data";
+import { INTRO_MONTHLY_CENTS } from "@/lib/billing/plans";
+import { firstMonthCouponId } from "@/lib/billing/stripe";
 import { createAdminClient } from "@/lib/supabase/server";
 import { MESSAGES } from "@/lib/i18n/messages";
 
@@ -43,7 +45,7 @@ export default async function UpgradePage({
           {m.billing.error}
         </p>
       )}
-      <PricingChoice mode="checkout" trial={trial} />
+      <PricingChoice mode="checkout" trial={trial} introCents={trial && firstMonthCouponId() ? INTRO_MONTHLY_CENTS : undefined} />
     </section>
   );
 }

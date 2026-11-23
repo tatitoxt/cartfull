@@ -1,7 +1,7 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { siteUrl } from "@/lib/env";
 import { TRIAL_DAYS, hasAccess, hasEnded, type BillingInterval } from "@/lib/billing/plans";
-import { getStripe, priceId } from "@/lib/billing/stripe";
+import { getStripe, priceId, firstMonthCouponId } from "@/lib/billing/stripe";
 import { createAdminClient, createClient } from "@/lib/supabase/server";
 
 export async function POST(request: NextRequest) {
@@ -58,13 +58,17 @@ export async function POST(request: NextRequest) {
     usedBefore = !!deleted;
   }
   const trial = usedBefore ? undefined : TRIAL_DAYS;
+  // First-month offer: monthly plan only, first-time subscribers only. A
+  // once-duration coupon lands on the invoice right after the free trial.
+  const introCoupon = interval === "monthly" && !usedBefore ? firstMonthCouponId() : null;
   const session = await stripe.checkout.sessions.create({
     mode: "subscription",
     customer: customerId,
     client_reference_id: user.id,
     line_items: [{ price: priceId(interval), quantity: 1 }],
     subscription_data: { trial_period_days: trial, metadata: { user_id: user.id } },
-    allow_promotion_codes: true,
+    // Stripe rejects discounts + allow_promotion_codes together.
+    ...(introCoupon ? { discounts: [{ coupon: introCoupon }] } : { allow_promotion_codes: true }),
     success_url: `${siteUrl}/app/welcome?session_id={CHECKOUT_SESSION_ID}`,
     cancel_url: `${siteUrl}/app/upgrade?canceled=1`,
   });

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const KEY = "cartfull:trial-banner-dismissed";
 
@@ -20,13 +20,16 @@ export function TrialBanner({
   ctaLabel: string;
   closeLabel: string;
 }) {
-  const [dismissed, setDismissed] = useState(() => {
+  // Read localStorage after mount only: reading it during the first client
+  // render would disagree with the server-rendered banner and break hydration.
+  const [dismissed, setDismissed] = useState(false);
+  useEffect(() => {
     try {
-      return localStorage.getItem(KEY) === trialEnd;
+      if (localStorage.getItem(KEY) === trialEnd) setDismissed(true);
     } catch {
-      return false;
+      /* private mode */
     }
-  });
+  }, [trialEnd]);
   if (dismissed) return null;
 
   const close = () => {
@@ -41,7 +44,7 @@ export function TrialBanner({
   return (
     <div className="mt-5 flex items-center justify-between gap-3 rounded-full border border-violet-400/40 bg-violet-400/10 px-4 py-2.5 text-sm">
       <Link href="/app/upgrade" className="flex min-w-0 items-center justify-between gap-3 flex-1">
-        <span className="truncate text-foreground">{endsLabel}</span>
+        <span className="text-foreground">{endsLabel}</span>
         <span className="shrink-0 font-semibold text-violet-300">{ctaLabel} →</span>
       </Link>
       <button

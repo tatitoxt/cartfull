@@ -5,6 +5,9 @@ export const PRICING = {
   annual: { cents: 4999, label: "$49.99", per: "year", perMonthLabel: "$4.17" },
 } as const;
 
+/** First month's price for new monthly subscribers (rest at full price). */
+export const INTRO_MONTHLY_CENTS = 499;
+
 export type BillingInterval = keyof typeof PRICING;
 
 /** Share of the monthly price saved by paying yearly, as a whole percent. */
