@@ -246,6 +246,7 @@ const en = {
     enjoy: "All done",
     ingredients: "Ingredients",
     step: "Step {step} of {total}",
+    timerDone: "Time! \u2014 tap to reset",
   },
   shared: {
     title: "Shared grocery list",
@@ -672,6 +673,7 @@ const es: Messages = {
     enjoy: "Terminaste",
     ingredients: "Ingredientes",
     step: "Paso {step} de {total}",
+    timerDone: "\u00a1Tiempo! \u2014 toca para reiniciar",
   },
   shared: {
     title: "Lista de compras compartida",
