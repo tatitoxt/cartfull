@@ -25,7 +25,11 @@ let removals = 0;
 
 function removeKeptPages() {
   removals += 1;
-  return caches.delete(PAGES);
+  // Every version's page cache, not just this worker's: a stale copy kept by an
+  // older worker must not survive sign-in either.
+  return caches
+    .keys()
+    .then((keys) => Promise.all(keys.filter((key) => key.startsWith("cartfull-pages-")).map((key) => caches.delete(key))));
 }
 
 const keptOffline = (path) => path === "/app/plan" || path === "/app/list" || path.startsWith("/app/recipe/");
