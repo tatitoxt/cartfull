@@ -187,3 +187,14 @@ grant execute on function public.save_plan(date, integer, integer, integer, text
 -- the RPC for updates instead of subscribing to plan_items.
 drop policy if exists "shared plans' items are readable through a link" on public.plan_items;
 drop function if exists public.plan_item_share_visible(uuid);
+
+-- Atomic estimate bumps: add/removeExtraItem adjust the saved total instead
+-- of rewriting it from a possibly stale snapshot, so two tabs adding extras
+-- can't lose each other's cost.
+create or replace function public.adjust_plan_total(p_plan_id uuid, p_delta integer) returns void
+language sql security invoker set search_path = '' as $$
+  update public.plans set total_cents = total_cents + p_delta where id = p_plan_id;
+$$;
+
+revoke execute on function public.adjust_plan_total(uuid, integer) from public, anon;
+grant execute on function public.adjust_plan_total(uuid, integer) to authenticated;

@@ -133,9 +133,11 @@ async function buildWeek(session: Session, planId?: string): Promise<ActionResul
   let seed: number;
   const have = new Set(pantry);
   let owned: ReadonlyMap<string, number> | undefined;
+  let extrasCents = 0;
   if (existing) {
     const loaded = await loadPlan(session, existing, { active: entitlement.active, firstId });
     if (!loaded.editable) return fail("paywall", m.actions.trialPlan);
+    extrasCents = loaded.extrasCents;
     weekStart = existing.week_start;
     seed = (existing.seed + 1) | 0;
     // What the shopper told us on this week's list wins over the saved pantry.
@@ -167,6 +169,9 @@ async function buildWeek(session: Session, planId?: string): Promise<ActionResul
     ratings: feedback.ratings,
     owned,
   });
+  // Hand-added extras stay on the list, so the meals must fit what's left.
+  const fullBudgetCents = request.budgetCents;
+  request.budgetCents = Math.max(0, request.budgetCents - extrasCents);
   let plan;
   try {
     plan = generatePlan(catalog, request);
@@ -178,7 +183,7 @@ async function buildWeek(session: Session, planId?: string): Promise<ActionResul
 
   const error = await savePlan(session, profile.lang, {
     weekStart,
-    budgetCents: request.budgetCents,
+    budgetCents: fullBudgetCents,
     usualSpendCents: profile.usual_spend_cents ?? typicalSpendCents(profile.household_size),
     householdSize: profile.household_size,
     diet: profile.diet,
@@ -307,6 +312,8 @@ export async function getSwapChoices(planId: string, day: number, slot: MealType
     ratings: feedback.ratings,
     owned: new Map(loaded.haveQty),
   });
+  // Extras stay priced on top of the cart, so swaps must fit the remainder.
+  request.budgetCents = Math.max(0, request.budgetCents - loaded.extrasCents);
   return swapOptions(catalog, request, loaded.meals, { day, slot }).map((option) => ({
     slug: option.recipe.slug,
     name: (profile.lang === "es" && option.recipe.name_es) || option.recipe.name,
@@ -347,6 +354,7 @@ export async function swapMeal(planId: string, day: number, slot: MealType, slug
     ratings: feedback.ratings,
     owned,
   });
+  request.budgetCents = Math.max(0, request.budgetCents - loaded.extrasCents);
   // Re-check on the server: the swap must be allowed for this household and keep the cart in budget.
   const allowed = swapOptions(catalog, request, loaded.meals, { day, slot }, Infinity).some((o) => o.recipe.slug === slug);
   if (!allowed) return fail("invalid", m.actions.swapBudget);
@@ -474,19 +482,18 @@ export async function addExtraItem(planId: string, ingredientId: string): Promis
   }
   if (loaded.extras.size >= MAX_EXTRAS) return fail("failed", m.actions.saveItem);
   // A stale row can survive from a meal that left the cart (save_plan never
-  // deletes): promote it to an extra and reset its tick/stock so it reads as
-  // something to buy, not something already owned.
+  // deletes): promote it to an extra. The saved stock (have/have_qty) is kept
+  // so the amount comes back if the meal returns; the tick resets since
+  // re-adding means buying another package.
   const { error } = await session.supabase
     .from("plan_items")
     .upsert(
-      { plan_id: planId, ingredient_id: ingredientId, extra: true, checked: false, have: false, have_qty: 0 },
+      { plan_id: planId, ingredient_id: ingredientId, extra: true, checked: false },
       { onConflict: "plan_id,ingredient_id" },
     );
   if (error) return fail("failed", m.actions.saveItem);
-  await session.supabase
-    .from("plans")
-    .update({ total_cents: loaded.cart.totalCents + loaded.extrasCents + ingredient.pkg_cents })
-    .eq("id", planId);
+  // Atomic bump: another tab may be changing extras at the same time.
+  await session.supabase.rpc("adjust_plan_total", { p_plan_id: planId, p_delta: ingredient.pkg_cents });
   revalidatePath("/app", "layout");
   return { ok: true };
 }
@@ -506,10 +513,7 @@ export async function removeExtraItem(planId: string, ingredientId: string): Pro
     .eq("extra", true);
   if (error) return fail("failed", m.actions.saveItem);
   const removed = loaded.extras.has(ingredientId) ? catalog.ingredients.get(ingredientId)?.pkg_cents ?? 0 : 0;
-  await session.supabase
-    .from("plans")
-    .update({ total_cents: loaded.cart.totalCents + loaded.extrasCents - removed })
-    .eq("id", planId);
+  await session.supabase.rpc("adjust_plan_total", { p_plan_id: planId, p_delta: -removed });
   revalidatePath("/app", "layout");
   return { ok: true };
 }
