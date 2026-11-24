@@ -198,3 +198,59 @@ $$;
 
 revoke execute on function public.adjust_plan_total(uuid, integer) from public, anon;
 grant execute on function public.adjust_plan_total(uuid, integer) to authenticated;
+
+-- Add/remove an extra and adjust the saved estimate in one statement so two
+-- tabs doing the same thing can't charge or refund a package twice. The price
+-- only moves when the ingredient is not already a cart line (a meal needing
+-- it prices it once in total_cents via save_plan).
+create or replace function public.add_plan_extra(p_plan_id uuid, p_ingredient_id text) returns void
+language plpgsql security invoker set search_path = '' as $$
+declare
+  v_touched integer;
+begin
+  insert into public.plan_items (plan_id, ingredient_id, extra, checked)
+  values (p_plan_id, p_ingredient_id, true, false)
+  on conflict (plan_id, ingredient_id) do update
+    set extra = true, checked = false
+    where not public.plan_items.extra;
+  get diagnostics v_touched = row_count;
+  if v_touched > 0 and not exists (
+    select 1 from public.plan_meals m
+    join public.recipe_ingredients ri on ri.recipe_slug = m.recipe_slug
+    where m.plan_id = p_plan_id and ri.ingredient_id = p_ingredient_id and not m.leftover
+  ) then
+    perform public.adjust_plan_total(p_plan_id, (
+      select g.pkg_cents from public.ingredients g where g.id = p_ingredient_id));
+  end if;
+end;
+$$;
+
+create or replace function public.remove_plan_extra(p_plan_id uuid, p_ingredient_id text) returns void
+language plpgsql security invoker set search_path = '' as $$
+declare
+  v_touched integer;
+begin
+  -- An ingredient a meal still needs stays a cart line: just drop the flag.
+  if exists (
+    select 1 from public.plan_meals m
+    join public.recipe_ingredients ri on ri.recipe_slug = m.recipe_slug
+    where m.plan_id = p_plan_id and ri.ingredient_id = p_ingredient_id and not m.leftover
+  ) then
+    update public.plan_items set extra = false
+    where plan_id = p_plan_id and ingredient_id = p_ingredient_id and extra;
+    return;
+  end if;
+  delete from public.plan_items
+  where plan_id = p_plan_id and ingredient_id = p_ingredient_id and extra;
+  get diagnostics v_touched = row_count;
+  if v_touched > 0 then
+    perform public.adjust_plan_total(p_plan_id, -(
+      select g.pkg_cents from public.ingredients g where g.id = p_ingredient_id));
+  end if;
+end;
+$$;
+
+revoke execute on function public.add_plan_extra(uuid, text) from public, anon;
+revoke execute on function public.remove_plan_extra(uuid, text) from public, anon;
+grant execute on function public.add_plan_extra(uuid, text) to authenticated;
+grant execute on function public.remove_plan_extra(uuid, text) to authenticated;
