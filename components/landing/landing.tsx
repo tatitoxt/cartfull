@@ -7,6 +7,7 @@ import { moneyExact, moneyRound } from "@/lib/format";
 import { LANDING, fill, type Locale } from "@/lib/i18n/landing";
 import { plannedWeekByHousehold, sampleWeek } from "@/lib/landing/sample";
 import { Calculator } from "./calculator";
+import { Reveal } from "./reveal";
 
 /** A real app screenshot dressed as a phone. */
 function Phone({ src, alt, className = "", priority = false }: { src: string; alt: string; className?: string; priority?: boolean }) {
@@ -14,9 +15,11 @@ function Phone({ src, alt, className = "", priority = false }: { src: string; al
     <div
       className={`rounded-[2.9rem] bg-[#101010] p-2 shadow-[inset_0_0_0_1px_rgb(255_255_255/0.09),inset_0_1px_1px_rgb(255_255_255/0.18),0_32px_64px_-32px_rgb(0_0_0/0.85)] ${className}`}
     >
-      <div className="relative overflow-hidden rounded-[2.4rem]">
-        <Image src={src} alt={alt} width={376} height={780} priority={priority} className="h-auto w-full" />
-        <div aria-hidden="true" className="absolute left-1/2 top-2.5 h-[1.4rem] w-[6.2rem] -translate-x-1/2 rounded-full bg-black shadow-[0_0_0_1px_rgb(255_255_255/0.06)]" />
+      <div className="relative overflow-hidden rounded-[2.4rem] bg-black">
+        <div className="relative h-7">
+          <div aria-hidden="true" className="absolute left-1/2 top-1.5 h-4 w-[5.5rem] -translate-x-1/2 rounded-full bg-[#1b1b1b] shadow-[0_0_0_1px_rgb(255_255_255/0.06)]" />
+        </div>
+        <Image src={src} alt={alt} width={376} height={788} priority={priority} className="h-auto w-full" />
       </div>
     </div>
   );
@@ -71,12 +74,12 @@ export function Landing({ locale }: { locale: Locale }) {
           </div>
           <div className="rise relative mx-auto w-full max-w-sm lg:max-w-lg">
             <div className="grid grid-cols-[57%_43%]">
-              <Phone src="/landing/plan.png" alt={t.inside.shots[0].alt} priority className="relative z-10" />
-              <div aria-hidden="true" className="relative z-0 -ml-[38%] mt-14">
+              <Phone src="/landing/plan.png" alt={t.inside.shots[0].alt} priority className="relative z-10 -rotate-3" />
+              <div aria-hidden="true" className="relative z-0 -ml-[38%] mt-14 rotate-[4deg]">
                 <Phone src="/landing/list.png" alt="" />
               </div>
             </div>
-            <div className="absolute -left-3 top-[42%] z-20 rounded-card bg-surface px-4 py-3 shadow-[inset_0_0_0_1.5px_var(--color-line),0_16px_40px_-20px_rgb(0_0_0/0.7)] backdrop-blur sm:-left-8">
+            <div className="floaty absolute -left-3 top-[42%] z-20 rounded-card bg-surface px-4 py-3 shadow-[inset_0_0_0_1.5px_var(--color-line),0_16px_40px_-20px_rgb(0_0_0/0.7)] backdrop-blur sm:-left-8">
               <p className="text-xs font-medium text-fg-soft">{t.hero.chips.cart}</p>
               <p className="tnum font-display text-2xl font-semibold leading-tight">$82.42</p>
               <p className="tnum text-sm font-semibold text-accent-deep">$92.58 {t.hero.chips.under}</p>
@@ -136,21 +139,23 @@ export function Landing({ locale }: { locale: Locale }) {
             <ol className="mt-10 grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 lg:grid-cols-5">
               {sample.dinners.map((dinner, index) => (
                 <li key={dinner.name} className={index === 0 ? "col-span-2 sm:col-span-1 lg:col-span-2 lg:row-span-2" : ""} data-testid="sample-dinner">
-                  <Photo
-                    url={dinner.photoUrl}
-                    alt=""
-                    ratio={index === 0 ? 1 : 4 / 3}
-                    sizes={index === 0 ? "(min-width: 1024px) 470px, 100vw" : "(min-width: 1024px) 225px, 50vw"}
-                    className="w-full rounded-card"
-                  />
-                  <p className="mt-3 text-xs font-semibold uppercase tracking-wider text-accent">{t.sample.days[index]}</p>
-                  <h3 className={`mt-1 leading-tight ${index === 0 ? "text-2xl lg:text-3xl" : "text-lg"}`}>{dinner.name}</h3>
-                  <p className="tnum mt-1 text-sm">
-                    <span className="font-semibold text-accent-deep">
-                      {moneyExact(dinner.centsPerServing, locale)} {t.sample.serving}
-                    </span>
-                    <span className="text-fg-soft"> · {dinner.minutes} min</span>
-                  </p>
+                  <Reveal delay={index * 80}>
+                    <Photo
+                      url={dinner.photoUrl}
+                      alt=""
+                      ratio={index === 0 ? 1 : 4 / 3}
+                      sizes={index === 0 ? "(min-width: 1024px) 470px, 100vw" : "(min-width: 1024px) 225px, 50vw"}
+                      className="w-full rounded-card"
+                    />
+                    <p className="mt-3 text-xs font-semibold uppercase tracking-wider text-accent">{t.sample.days[index]}</p>
+                    <h3 className={`mt-1 leading-tight ${index === 0 ? "text-2xl lg:text-3xl" : "text-lg"}`}>{dinner.name}</h3>
+                    <p className="tnum mt-1 text-sm">
+                      <span className="font-semibold text-accent-deep">
+                        {moneyExact(dinner.centsPerServing, locale)} {t.sample.serving}
+                      </span>
+                      <span className="text-fg-soft"> · {dinner.minutes} min</span>
+                    </p>
+                  </Reveal>
                 </li>
               ))}
             </ol>
@@ -161,10 +166,12 @@ export function Landing({ locale }: { locale: Locale }) {
           <h2 id="inside-title" className="max-w-xl text-4xl sm:text-5xl">{t.inside.title}</h2>
           <p className="mt-3 max-w-xl text-lg text-fg-soft">{t.inside.lead}</p>
           <ul className="mt-10 grid grid-cols-2 gap-5 sm:gap-7 lg:grid-cols-4">
-            {t.inside.shots.map((shot) => (
+            {t.inside.shots.map((shot, index) => (
               <li key={shot.src}>
-                <Phone src={shot.src} alt={shot.alt} />
-                <p className="mt-4 text-sm font-semibold text-fg-soft">{shot.caption}</p>
+                <Reveal delay={index * 90}>
+                  <Phone src={shot.src} alt={shot.alt} />
+                  <p className="mt-4 text-sm font-semibold text-fg-soft">{shot.caption}</p>
+                </Reveal>
               </li>
             ))}
           </ul>

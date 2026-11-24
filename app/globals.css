@@ -287,6 +287,31 @@
   animation: rise 520ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
 }
 
+.reveal {
+  opacity: 0;
+  transform: translateY(20px) scale(0.95);
+  transition:
+    opacity 0.5s ease,
+    transform 0.6s cubic-bezier(0.18, 0.9, 0.28, 1.15);
+}
+.reveal.is-in {
+  opacity: 1;
+  transform: none;
+}
+
+@keyframes floaty {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+.floaty {
+  animation: floaty 4.5s ease-in-out infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
