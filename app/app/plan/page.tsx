@@ -38,7 +38,8 @@ export default async function PlanPage() {
     );
   }
 
-  const { row, meals, cart, editable, viewable } = current;
+  const { row, meals, cart, editable, viewable, extrasCents } = current;
+  const estimateCents = cart.totalCents + extrasCents;
   const over = weekIsOver(row.week_start);
 
   if (!viewable) {
@@ -70,7 +71,7 @@ export default async function PlanPage() {
           {over ? m.plan.lastWeek : m.plan.thisWeek}, {m.plan.planned}
         </h1>
         <div className="mt-5">
-          <BudgetMeter totalCents={cart.totalCents} budgetCents={row.budget_cents} />
+          <BudgetMeter totalCents={estimateCents} budgetCents={row.budget_cents} />
         </div>
         <div className="mt-4 flex flex-wrap gap-3">
           {editable && !over && <PlanActions mode="regenerate" planId={row.id} />}
@@ -80,9 +81,9 @@ export default async function PlanPage() {
             </a>
           )}
         </div>
-        {cart.totalCents > row.budget_cents && (
+        {estimateCents > row.budget_cents && (
           <p role="status" className="mt-5 rounded-2xl bg-over-soft p-4 shadow-[inset_0_0_0_1.5px_var(--color-over)]">
-            {fill(m.plan.overChanged, { amount: money(cart.totalCents - row.budget_cents, lang) })}
+            {fill(m.plan.overChanged, { amount: money(estimateCents - row.budget_cents, lang) })}
           </p>
         )}
       </section>

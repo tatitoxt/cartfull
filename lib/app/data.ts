@@ -109,6 +109,8 @@ export interface LoadedPlan {
   haveQty: Map<string, number>;
   /** Ingredients added by hand, outside what the meals asked for. */
   extras: Set<string>;
+  /** Full price of the extras that are not already cart lines. */
+  extrasCents: number;
   /** The free first week, or any week while subscribed. */
   viewable: boolean;
   editable: boolean;
@@ -216,7 +218,7 @@ export async function loadPlan(
   const viewable = access.active || isFirst;
   const editable = access.active || (isFirst && !weekIsOver(row.week_start));
   if (!viewable) {
-    return { row, meals: [], cart: { lines: [], totalCents: 0 }, checked: new Set(), have: new Set(), haveQty: new Map(), extras: new Set(), viewable, editable, isFirst };
+    return { row, meals: [], cart: { lines: [], totalCents: 0 }, checked: new Set(), have: new Set(), haveQty: new Map(), extras: new Set(), extrasCents: 0, viewable, editable, isFirst };
   }
 
   const [{ data: mealRows }, { data: itemRows }] = await Promise.all([
@@ -251,7 +253,12 @@ export async function loadPlan(
     if (item.extra) extras.add(item.ingredient_id as string);
   }
   const cart = buildCart(meals, catalog.ingredients, have, haveQty);
-  return { row, meals, cart, checked, have, haveQty, extras, viewable, editable, isFirst };
+  const lineIds = new Set(cart.lines.map((l) => l.ingredient.id));
+  let extrasCents = 0;
+  for (const id of extras) {
+    if (!lineIds.has(id)) extrasCents += catalog.ingredients.get(id)?.pkg_cents ?? 0;
+  }
+  return { row, meals, cart, checked, have, haveQty, extras, extrasCents, viewable, editable, isFirst };
 }
 
 /** The planner request that reproduces a household's preferences. */

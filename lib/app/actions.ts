@@ -473,10 +473,20 @@ export async function addExtraItem(planId: string, ingredientId: string): Promis
     return { ok: true };
   }
   if (loaded.extras.size >= MAX_EXTRAS) return fail("failed", m.actions.saveItem);
+  // A stale row can survive from a meal that left the cart (save_plan never
+  // deletes): promote it to an extra and reset its tick/stock so it reads as
+  // something to buy, not something already owned.
   const { error } = await session.supabase
     .from("plan_items")
-    .insert({ plan_id: planId, ingredient_id: ingredientId, extra: true });
+    .upsert(
+      { plan_id: planId, ingredient_id: ingredientId, extra: true, checked: false, have: false, have_qty: 0 },
+      { onConflict: "plan_id,ingredient_id" },
+    );
   if (error) return fail("failed", m.actions.saveItem);
+  await session.supabase
+    .from("plans")
+    .update({ total_cents: loaded.cart.totalCents + loaded.extrasCents + ingredient.pkg_cents })
+    .eq("id", planId);
   revalidatePath("/app", "layout");
   return { ok: true };
 }
@@ -495,6 +505,11 @@ export async function removeExtraItem(planId: string, ingredientId: string): Pro
     .eq("ingredient_id", ingredientId)
     .eq("extra", true);
   if (error) return fail("failed", m.actions.saveItem);
+  const removed = loaded.extras.has(ingredientId) ? catalog.ingredients.get(ingredientId)?.pkg_cents ?? 0 : 0;
+  await session.supabase
+    .from("plans")
+    .update({ total_cents: loaded.cart.totalCents + loaded.extrasCents - removed })
+    .eq("id", planId);
   revalidatePath("/app", "layout");
   return { ok: true };
 }
@@ -558,7 +573,7 @@ export async function setItemState(
     fracs.set(ingredientId, owned);
     if (update.have === true) have.add(ingredientId);
     else have.delete(ingredientId);
-    const total = buildCart(loaded.meals, catalog.ingredients, have, fracs).totalCents;
+    const total = buildCart(loaded.meals, catalog.ingredients, have, fracs).totalCents + loaded.extrasCents;
     await supabase.from("plans").update({ total_cents: total }).eq("id", planId);
     // Long-lasting basics are remembered for future weeks, only once fully owned.
     if (ingredient.staple) {
@@ -670,6 +685,14 @@ export async function getShareLink(planId: string): Promise<string | null> {
   const { data, error } = await session.supabase.rpc("create_plan_share", { p_plan_id: planId });
   if (error || !data) return null;
   return `${siteUrl}/share/${data}`;
+}
+
+/** Token-gated: latest tick states for the shared view's polling (no account needed). */
+export async function sharedChecks(token: string): Promise<Record<string, boolean>> {
+  if (!/^[0-9a-f-]{36}$/i.test(token)) return {};
+  const { data } = await createAdminClient().rpc("shared_plan", { p_token: token });
+  const items = (data as { items?: { ingredient_id: string; checked: boolean }[] } | null)?.items ?? [];
+  return Object.fromEntries(items.map((i) => [i.ingredient_id, i.checked]));
 }
 
 /** Token-gated: tick an item on a shared list (no account needed on the other side). */

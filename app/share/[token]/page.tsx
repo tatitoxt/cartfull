@@ -95,7 +95,6 @@ export default async function SharedPage({ params }: { params: Promise<{ token: 
       <p className="mt-2 text-fg-soft">{m.shared.lead}</p>
       <SharedList
         token={token}
-        planId={shared.plan_id}
         lines={lines}
         aisles={AISLES.map((aisle) => ({ aisle, label: AISLE_LABELS[lang][aisle] }))}
       />
