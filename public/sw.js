@@ -11,7 +11,7 @@
  */
 // Bump when precached assets (icons, /offline) or caching behavior change, so
 // the new worker installs, re-precaches and drops the old caches on activate.
-const VERSION = "v4";
+const VERSION = "v5";
 const STATIC = `cartfull-static-${VERSION}`;
 const PAGES = `cartfull-pages-${VERSION}`;
 const PHOTOS = `cartfull-photos-${VERSION}`;
