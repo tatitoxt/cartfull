@@ -9,12 +9,12 @@
  *   screen is shown, so they never outlive the person they belong to.
  * - API, auth and non-GET requests are never answered from here.
  */
-// Bump when precached assets (icons, /offline) change, so the new worker
-// installs and re-precaches. Only the static cache is versioned: pages and
-// photos must survive deploys or the offline list is lost right when it
-// matters.
-const VERSION = "v5";
-const STATIC = `cartfull-static-${VERSION}`;
+// No versioned cache names: a versioned cache gets deleted on activate, and
+// with it the hashed JS chunks the saved offline pages still reference — the
+// list would open offline but never hydrate. Static entries are content-hashed
+// (or overwritten by re-precaching /offline and the icons on install), so an
+// unversioned cache is correct; pages and photos must survive deploys anyway.
+const STATIC = "cartfull-static";
 const PAGES = "cartfull-pages";
 const PHOTOS = "cartfull-photos";
 const PHOTO_LIMIT = 80;
