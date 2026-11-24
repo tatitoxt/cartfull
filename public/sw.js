@@ -9,7 +9,9 @@
  *   screen is shown, so they never outlive the person they belong to.
  * - API, auth and non-GET requests are never answered from here.
  */
-const VERSION = "v1";
+// Bump when precached assets (icons, /offline) or caching behavior change, so
+// the new worker installs, re-precaches and drops the old caches on activate.
+const VERSION = "v2";
 const STATIC = `cartfull-static-${VERSION}`;
 const PAGES = `cartfull-pages-${VERSION}`;
 const PHOTOS = `cartfull-photos-${VERSION}`;
