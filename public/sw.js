@@ -9,12 +9,14 @@
  *   screen is shown, so they never outlive the person they belong to.
  * - API, auth and non-GET requests are never answered from here.
  */
-// Bump when precached assets (icons, /offline) or caching behavior change, so
-// the new worker installs, re-precaches and drops the old caches on activate.
-const VERSION = "v4";
-const STATIC = `cartfull-static-${VERSION}`;
-const PAGES = `cartfull-pages-${VERSION}`;
-const PHOTOS = `cartfull-photos-${VERSION}`;
+// No versioned cache names: a versioned cache gets deleted on activate, and
+// with it the hashed JS chunks the saved offline pages still reference — the
+// list would open offline but never hydrate. Static entries are content-hashed
+// (or overwritten by re-precaching /offline and the icons on install), so an
+// unversioned cache is correct; pages and photos must survive deploys anyway.
+const STATIC = "cartfull-static";
+const PAGES = "cartfull-pages";
+const PHOTOS = "cartfull-photos";
 const PHOTO_LIMIT = 80;
 const OFFLINE_URL = "/offline";
 const PRECACHE = [OFFLINE_URL, "/icons/icon-192.png", "/icons/icon.svg"];
@@ -29,7 +31,7 @@ function removeKeptPages() {
   // older worker must not survive sign-in either.
   return caches
     .keys()
-    .then((keys) => Promise.all(keys.filter((key) => key.startsWith("cartfull-pages-")).map((key) => caches.delete(key))));
+    .then((keys) => Promise.all(keys.filter((key) => key.startsWith("cartfull-pages")).map((key) => caches.delete(key))));
 }
 
 const keptOffline = (path) => path === "/app/plan" || path === "/app/list" || path.startsWith("/app/recipe/");
