@@ -318,27 +318,31 @@ export async function getSwapChoices(planId: string, day: number, slot: MealType
     ratings: feedback.ratings,
     owned,
   });
+  const currentCents = loaded.cart.totalCents + loaded.extrasCents;
   return swapOptions(catalog, request, loaded.meals, { day, slot }, Infinity)
-    .filter((option) => withinBudget(loaded, option.recipe, have, owned, { day, slot }))
+    .map((option) => ({ option, estimate: swapEstimate(loaded, option.recipe, have, owned, { day, slot }) }))
+    .filter(({ estimate }) => estimate <= loaded.row.budget_cents)
     .slice(0, 6)
-    .map((option) => ({
+    .map(({ option, estimate }) => ({
       slug: option.recipe.slug,
       name: (profile.lang === "es" && option.recipe.name_es) || option.recipe.name,
       photoUrl: option.recipe.photo_url,
       prepMinutes: option.recipe.prep_minutes,
-      totalCents: option.totalCents,
-      deltaCents: option.deltaCents,
+      // Quote the real estimate (cart + remaining extras), not the cart alone:
+      // a swap that absorbs a hand-added item can cost less than the cart says.
+      totalCents: estimate,
+      deltaCents: estimate - currentCents,
     }));
 }
 
-/** True estimate if `recipe` replaced `target`: new cart + extras it does not absorb. */
-function withinBudget(
+/** True week estimate if `recipe` replaced `target`: new cart + extras it does not absorb. */
+function swapEstimate(
   loaded: LoadedPlan,
   recipe: Recipe,
   have: ReadonlySet<string>,
   owned: ReadonlyMap<string, number>,
   target: { day: number; slot: MealType },
-): boolean {
+): number {
   const current = loaded.meals.find((m) => m.day === target.day && m.slot === target.slot)!;
   const replaced = (m: MealAssignment) => m.slot === target.slot && m.recipe.slug === current.recipe.slug;
   const next = loaded.meals.map((m) => (replaced(m) ? { ...m, recipe, leftover: false } : m));
@@ -348,7 +352,7 @@ function withinBudget(
   for (const id of loaded.extras) {
     if (!ids.has(id)) extras += catalog.ingredients.get(id)?.pkg_cents ?? 0;
   }
-  return cart.totalCents + extras <= loaded.row.budget_cents;
+  return cart.totalCents + extras;
 }
 
 function effectiveHave(pantry: ReadonlySet<string>, loaded: { cart: { lines: { have: boolean; ingredient: { id: string } }[] } }) {
@@ -385,7 +389,7 @@ export async function swapMeal(planId: string, day: number, slot: MealType, slug
   // the week (cart + remaining extras) inside the budget.
   const allowed =
     swapOptions(catalog, request, loaded.meals, { day, slot }, Infinity).some((o) => o.recipe.slug === slug) &&
-    withinBudget(loaded, recipe, have, owned, { day, slot });
+    swapEstimate(loaded, recipe, have, owned, { day, slot }) <= loaded.row.budget_cents;
   if (!allowed) return fail("invalid", m.actions.swapBudget);
 
   const meals = loaded.meals.map((m) =>
