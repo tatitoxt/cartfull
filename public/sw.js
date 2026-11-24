@@ -9,12 +9,14 @@
  *   screen is shown, so they never outlive the person they belong to.
  * - API, auth and non-GET requests are never answered from here.
  */
-// Bump when precached assets (icons, /offline) or caching behavior change, so
-// the new worker installs, re-precaches and drops the old caches on activate.
+// Bump when precached assets (icons, /offline) change, so the new worker
+// installs and re-precaches. Only the static cache is versioned: pages and
+// photos must survive deploys or the offline list is lost right when it
+// matters.
 const VERSION = "v5";
 const STATIC = `cartfull-static-${VERSION}`;
-const PAGES = `cartfull-pages-${VERSION}`;
-const PHOTOS = `cartfull-photos-${VERSION}`;
+const PAGES = "cartfull-pages";
+const PHOTOS = "cartfull-photos";
 const PHOTO_LIMIT = 80;
 const OFFLINE_URL = "/offline";
 const PRECACHE = [OFFLINE_URL, "/icons/icon-192.png", "/icons/icon.svg"];
@@ -29,7 +31,7 @@ function removeKeptPages() {
   // older worker must not survive sign-in either.
   return caches
     .keys()
-    .then((keys) => Promise.all(keys.filter((key) => key.startsWith("cartfull-pages-")).map((key) => caches.delete(key))));
+    .then((keys) => Promise.all(keys.filter((key) => key.startsWith("cartfull-pages")).map((key) => caches.delete(key))));
 }
 
 const keptOffline = (path) => path === "/app/plan" || path === "/app/list" || path.startsWith("/app/recipe/");
