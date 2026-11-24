@@ -1,2428 +1,2428 @@
 [
- {
-  "slug": "creamy-tomato-penne",
-  "name": "Creamy Tomato Penne",
-  "meal_type": "dinner",
-  "name_es": "Penne en salsa cremosa de tomate",
-  "diet_tags": [
-   "vegetarian"
-  ],
-  "servings": 4,
-  "prep_minutes": 25,
-  "batch_friendly": false,
-  "description": "Penne in a silky tomato-cream sauce with garlic and parmesan.",
-  "description_es": "Penne en una salsa sedosa de tomate y crema con ajo y parmesano.",
-  "steps": [
-   "Cook the penne in salted water according to the package; save a cup of the water before draining.",
-   "Sauté the garlic in olive oil 1 minute, add the crushed tomatoes and simmer 8 minutes.",
-   "Stir in the cream and simmer 2 minutes until it turns coral.",
-   "Toss in the pasta with a splash of its water until coated, then the parmesan and basil.",
-   "Season with salt and serve."
-  ],
-  "steps_es": [
-   "Cocina el penne en agua con sal según el paquete; guarda una taza del agua antes de escurrir.",
-   "Saltea el ajo en aceite de oliva 1 minuto, agrega el tomate triturado y cocina 8 minutos a fuego suave.",
-   "Suma la crema y cocina 2 minutos hasta que tome color coral.",
-   "Mezcla la pasta con un chorrito de su agua hasta cubrir, luego el parmesano y la albahaca.",
-   "Sazona con sal y sirve."
-  ],
-  "ingredients": [
-   {
-    "id": "pasta_penne",
-    "qty": 16
-   },
-   {
-    "id": "crushed_tomatoes",
-    "qty": 1
-   },
-   {
-    "id": "heavy_cream",
-    "qty": 0.75
-   },
-   {
-    "id": "garlic",
-    "qty": 3,
-    "note": "minced",
-    "note_es": "picado"
-   },
-   {
-    "id": "parmesan",
-    "qty": 0.5,
-    "note": "grated",
-    "note_es": "rallado"
-   },
-   {
-    "id": "basil",
-    "qty": 0.25,
-    "note": "chopped",
-    "note_es": "picada"
-   },
-   {
-    "id": "olive_oil",
-    "qty": 2
-   },
-   {
-    "id": "salt",
-    "qty": 0.75
-   }
-  ],
-  "equipment": [
-   "stovetop"
-  ],
-  "active_minutes": 18,
-  "tip": "Pasta water is liquid gold — it makes the sauce cling to every piece.",
-  "tip_es": "El agua de la pasta es oro líquido: hace que la salsa se pegue a cada pieza.",
-  "photo_url": "https://images.unsplash.com/photo-1776810250123-119d15036790",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/penne-pasta-with-tomato-sauce-and-herbs-on-a-plate-DiA_t7Fz7lw"
+  {
+    "slug": "creamy-tomato-penne",
+    "name": "Creamy Tomato Penne",
+    "meal_type": "dinner",
+    "name_es": "Penne en salsa cremosa de tomate",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 4,
+    "prep_minutes": 25,
+    "batch_friendly": false,
+    "description": "Penne in a silky tomato-cream sauce with garlic and parmesan.",
+    "description_es": "Penne en una salsa sedosa de tomate y crema con ajo y parmesano.",
+    "steps": [
+      "Cook the penne in salted water according to the package; save a cup of the water before draining.",
+      "Sauté the garlic in olive oil 1 minute, add the crushed tomatoes and simmer 8 minutes.",
+      "Stir in the cream and simmer 2 minutes until it turns coral.",
+      "Toss in the pasta with a splash of its water until coated, then the parmesan and basil.",
+      "Season with salt and serve."
+    ],
+    "steps_es": [
+      "Cocina el penne en agua con sal según el paquete; guarda una taza del agua antes de escurrir.",
+      "Saltea el ajo en aceite de oliva 1 minuto, agrega el tomate triturado y cocina 8 minutos a fuego suave.",
+      "Suma la crema y cocina 2 minutos hasta que tome color coral.",
+      "Mezcla la pasta con un chorrito de su agua hasta cubrir, luego el parmesano y la albahaca.",
+      "Sazona con sal y sirve."
+    ],
+    "ingredients": [
+      {
+        "id": "pasta_penne",
+        "qty": 16
+      },
+      {
+        "id": "crushed_tomatoes",
+        "qty": 1
+      },
+      {
+        "id": "heavy_cream",
+        "qty": 0.75
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "parmesan",
+        "qty": 0.5,
+        "note": "grated",
+        "note_es": "rallado"
+      },
+      {
+        "id": "basil",
+        "qty": 0.25,
+        "note": "chopped",
+        "note_es": "picada"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      }
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 18,
+    "tip": "Pasta water is liquid gold — it makes the sauce cling to every piece.",
+    "tip_es": "El agua de la pasta es oro líquido: hace que la salsa se pegue a cada pieza.",
+    "photo_url": "https://images.unsplash.com/photo-1776810250123-119d15036790",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/penne-pasta-with-tomato-sauce-and-herbs-on-a-plate-DiA_t7Fz7lw"
+    }
+  },
+  {
+    "slug": "garlic-butter-shrimp-pasta",
+    "name": "Garlic Butter Shrimp Pasta",
+    "meal_type": "dinner",
+    "name_es": "Pasta de camarones al ajo",
+    "diet_tags": [
+      "pescatarian",
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 20,
+    "batch_friendly": false,
+    "description": "Spaghetti with shrimp seared in garlic butter, lemon and parsley.",
+    "description_es": "Espagueti con camarones sellados en manteca de ajo, limón y perejil.",
+    "steps": [
+      "Cook the spaghetti in salted water; save a cup of the water before draining.",
+      "Sear the shrimp in hot olive oil 2 minutes per side until pink; transfer to a plate.",
+      "Melt the butter with the garlic and red pepper flakes 1 minute.",
+      "Return the shrimp with the pasta, lemon juice and a splash of pasta water; toss 1 minute.",
+      "Finish with parsley and serve."
+    ],
+    "steps_es": [
+      "Cocina el espagueti en agua con sal; guarda una taza del agua antes de escurrir.",
+      "Sella los camarones en aceite de oliva caliente 2 minutos por lado hasta que estén rosados; reserva en un plato.",
+      "Derrite la manteca con el ajo y el ají molido 1 minuto.",
+      "Vuelve a poner los camarones con la pasta, el jugo de limón y un chorrito del agua de cocción; mezcla 1 minuto.",
+      "Termina con perejil y sirve."
+    ],
+    "ingredients": [
+      {
+        "id": "pasta_spaghetti",
+        "qty": 16
+      },
+      {
+        "id": "shrimp",
+        "qty": 1,
+        "note": "peeled and deveined",
+        "note_es": "pelados y limpios"
+      },
+      {
+        "id": "butter",
+        "qty": 4
+      },
+      {
+        "id": "garlic",
+        "qty": 4,
+        "note": "thinly sliced",
+        "note_es": "en láminas"
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "note": "juiced",
+        "note_es": "el jugo"
+      },
+      {
+        "id": "red_pepper_flakes",
+        "qty": 0.5
+      },
+      {
+        "id": "parsley",
+        "qty": 0.25,
+        "note": "chopped",
+        "note_es": "picado"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      }
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 15,
+    "photo_url": "https://images.unsplash.com/photo-1781086917723-dbe2d7ef85dc",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/a-bowl-of-creamy-shrimp-pasta-with-parsley-abi8eXOlUUg"
+    }
+  },
+  {
+    "slug": "easy-risotto-mushroom",
+    "name": "Easy Mushroom Risotto",
+    "meal_type": "dinner",
+    "name_es": "Risotto fácil de champiñones",
+    "diet_tags": [
+      "vegetarian",
+      "gluten_free"
+    ],
+    "servings": 4,
+    "prep_minutes": 45,
+    "batch_friendly": false,
+    "description": "Creamy stovetop risotto with golden mushrooms and parmesan.",
+    "description_es": "Risotto cremoso a la sartén con champiñones dorados y parmesano.",
+    "steps": [
+      "Warm the broth in a pot and keep it at a low simmer.",
+      "Sear the mushrooms in olive oil 5 minutes until golden; set aside.",
+      "Soften the onion in butter 4 minutes, add the rice and toast 1 minute.",
+      "Add broth one ladle at a time, stirring, letting each absorb before the next — about 20 minutes until creamy and al dente.",
+      "Stir in the mushrooms and parmesan, season with salt and serve."
+    ],
+    "steps_es": [
+      "Calienta el caldo en una olla y mantenlo a fuego suave.",
+      "Dora los champiñones en aceite de oliva 5 minutos hasta que estén dorados; reserva.",
+      "Ablanda la cebolla en manteca 4 minutos, agrega el arroz y tuéstalo 1 minuto.",
+      "Suma el caldo de a cucharón, revolviendo, dejando que cada uno se absorba antes del siguiente: unos 20 minutos hasta que esté cremoso y al dente.",
+      "Agrega los champiñones y el parmesano, sazona con sal y sirve."
+    ],
+    "ingredients": [
+      {
+        "id": "rice_white",
+        "qty": 1.5,
+        "note": "or arborio if you have it",
+        "note_es": "o arborio si tienes"
+      },
+      {
+        "id": "mushroom",
+        "qty": 3,
+        "note": "sliced",
+        "note_es": "en láminas"
+      },
+      {
+        "id": "vegetable_broth",
+        "qty": 4,
+        "note": "carton, 4 cups",
+        "note_es": "caja, 4 tazas"
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "finely diced",
+        "note_es": "en cubitos chicos"
+      },
+      {
+        "id": "butter",
+        "qty": 3
+      },
+      {
+        "id": "parmesan",
+        "qty": 0.75,
+        "note": "grated",
+        "note_es": "rallado"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      }
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 35,
+    "tip": "You don't have to stir constantly — just often, and keep the broth warm.",
+    "tip_es": "No hace falta revolver sin parar: solo seguido, y mantén el caldo tibio.",
+    "photo_url": "https://images.unsplash.com/photo-1767974971366-6f8483512f84",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/a-small-bowl-of-food-with-green-garnish-vZjNuZmHNVU"
+    }
+  },
+  {
+    "slug": "gnocchi-pesto",
+    "name": "Gnocchi with Pesto",
+    "meal_type": "dinner",
+    "name_es": "Ñoquis con pesto",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 4,
+    "prep_minutes": 15,
+    "batch_friendly": false,
+    "description": "Pillowy gnocchi tossed in basil pesto with cherry tomatoes and parmesan.",
+    "description_es": "Ñoquis suaves mezclados con pesto de albahaca, tomates cherry y parmesano.",
+    "steps": [
+      "Boil the gnocchi in salted water; they float when done, about 2 to 3 minutes.",
+      "Sauté the cherry tomatoes in olive oil 3 minutes until they slump.",
+      "Toss the gnocchi with the pesto and a splash of the cooking water until glossy.",
+      "Add the tomatoes and serve with parmesan on top."
+    ],
+    "steps_es": [
+      "Hierve los ñoquis en agua con sal; suben a la superficie cuando están listos, unos 2 a 3 minutos.",
+      "Saltea los tomates cherry en aceite de oliva 3 minutos hasta que se ablanden.",
+      "Mezcla los ñoquis con el pesto y un chorrito del agua de cocción hasta que brillen.",
+      "Agrega los tomates y sirve con parmesano por encima."
+    ],
+    "ingredients": [
+      {
+        "id": "gnocchi",
+        "qty": 32,
+        "note": "two 16 oz packs",
+        "note_es": "dos paquetes de 16 oz"
+      },
+      {
+        "id": "pesto",
+        "qty": 6
+      },
+      {
+        "id": "cherry_tomato",
+        "qty": 2,
+        "note": "halved",
+        "note_es": "a la mitad"
+      },
+      {
+        "id": "parmesan",
+        "qty": 0.5,
+        "note": "grated",
+        "note_es": "rallado"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      }
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 12,
+    "photo_url": "https://images.unsplash.com/photo-1786918518069-5794f204a520",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/caprese-salad-stack-with-pesto-UNxf3gqxs7s"
+    }
+  },
+  {
+    "slug": "baked-ziti-style-penne",
+    "name": "Baked Ziti-Style Penne",
+    "meal_type": "dinner",
+    "name_es": "Penne al horno estilo ziti",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 4,
+    "prep_minutes": 45,
+    "batch_friendly": true,
+    "description": "Pasta baked under marinara, ricotta and a golden mozzarella top.",
+    "description_es": "Pasta horneada con marinara, ricota y una tapa dorada de mozzarella.",
+    "steps": [
+      "Heat the oven to {375F} and cook the penne 2 minutes less than the package; drain.",
+      "Stir the pasta with the marinara and the ricotta in the baking dish.",
+      "Scatter the mozzarella and parmesan over the top.",
+      "Bake 25 minutes until bubbly and browned in spots; rest 5 minutes and serve."
+    ],
+    "steps_es": [
+      "Calienta el horno a {375F} y cocina el penne 2 minutos menos de lo que dice el paquete; escúrrelo.",
+      "Mezcla la pasta con la marinara y la ricota en la fuente para horno.",
+      "Esparce la mozzarella y el parmesano por encima.",
+      "Hornea 25 minutos hasta que burbujee y se dore en partes; deja reposar 5 minutos y sirve."
+    ],
+    "ingredients": [
+      {
+        "id": "pasta_penne",
+        "qty": 16
+      },
+      {
+        "id": "marinara",
+        "qty": 2
+      },
+      {
+        "id": "ricotta",
+        "qty": 1
+      },
+      {
+        "id": "mozzarella",
+        "qty": 2,
+        "note": "shredded",
+        "note_es": "rallada"
+      },
+      {
+        "id": "parmesan",
+        "qty": 0.5,
+        "note": "grated",
+        "note_es": "rallado"
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      }
+    ],
+    "equipment": [
+      "oven",
+      "stovetop"
+    ],
+    "active_minutes": 15,
+    "photo_url": "https://images.unsplash.com/photo-1777333033313-e6d72e7fadc5",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/a-fork-lifts-penne-pasta-coated-in-red-sauce-0CHWRa_ZqJ4"
+    }
+  },
+  {
+    "slug": "sausage-peppers-penne",
+    "name": "Sausage and Peppers Pasta",
+    "meal_type": "dinner",
+    "name_es": "Pasta con salchicha y morrones",
+    "diet_tags": [
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 30,
+    "batch_friendly": false,
+    "description": "Italian sausage with peppers and onion in a light tomato sauce over penne.",
+    "description_es": "Salchicha italiana con morrones y cebolla en salsa liviana de tomate sobre penne.",
+    "steps": [
+      "Cook the penne in salted water; save a cup of the water before draining.",
+      "Brown the sausage in a large skillet 5 minutes, breaking it up; transfer to a plate.",
+      "Sauté the peppers and onion in the same pan 6 minutes until soft, add the garlic 1 minute.",
+      "Return the sausage with the diced tomatoes; simmer 8 minutes.",
+      "Toss with the pasta and a splash of its water; serve with parmesan."
+    ],
+    "steps_es": [
+      "Cocina el penne en agua con sal; guarda una taza del agua antes de escurrir.",
+      "Dora la salchicha en una sartén grande 5 minutos desmenuzándola; reserva en un plato.",
+      "Saltea los morrones y la cebolla en la misma sartén 6 minutos hasta que estén blandos, agrega el ajo 1 minuto.",
+      "Vuelve a poner la salchicha con el tomate en cubos; cocina 8 minutos a fuego suave.",
+      "Mezcla con la pasta y un chorrito de su agua; sirve con parmesano."
+    ],
+    "ingredients": [
+      {
+        "id": "sausage_italian",
+        "qty": 1,
+        "note": "casings removed",
+        "note_es": "sin la piel"
+      },
+      {
+        "id": "pasta_penne",
+        "qty": 16
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 2,
+        "note": "sliced",
+        "note_es": "en tiras"
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "sliced",
+        "note_es": "en tiras"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "diced_tomatoes",
+        "qty": 1
+      },
+      {
+        "id": "parmesan",
+        "qty": 0.5,
+        "note": "grated",
+        "note_es": "rallado"
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      }
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 25,
+    "photo_url": "https://images.unsplash.com/photo-1612929633738-8fe44f7ec841",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/pasta-dish-on-black-plate-pbc2wXbQYpI"
+    }
+  },
+  {
+    "slug": "greek-chicken-bowls",
+    "name": "Greek Chicken Bowls",
+    "meal_type": "dinner",
+    "name_es": "Bowls griegos de pollo",
+    "diet_tags": [
+      "gluten_free",
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 30,
+    "batch_friendly": true,
+    "description": "Lemon-oregano chicken over rice with cucumber, tomato, olives and feta.",
+    "description_es": "Pollo al limón y orégano sobre arroz con pepino, tomate, aceitunas y feta.",
+    "steps": [
+      "Cook the rice according to the package directions.",
+      "Toss the chicken with the olive oil, lemon juice, oregano, garlic and salt; rest 10 minutes.",
+      "Sear in a hot skillet 5 to 6 minutes until golden and cooked through; slice.",
+      "Serve over rice with cucumber, tomato, olives, feta and a drizzle of olive oil."
+    ],
+    "steps_es": [
+      "Cocina el arroz según las instrucciones del paquete.",
+      "Mezcla el pollo con el aceite de oliva, jugo de limón, orégano, ajo y sal; déjalo 10 minutos.",
+      "Séllalo en una sartén caliente de 5 a 6 minutos hasta que esté dorado y listo; córtalo en tajadas.",
+      "Sirve sobre arroz con pepino, tomate, aceitunas, feta y un chorrito de aceite de oliva."
+    ],
+    "ingredients": [
+      {
+        "id": "chicken_thigh",
+        "qty": 1.5
+      },
+      {
+        "id": "rice_white",
+        "qty": 1.5
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "note": "juiced",
+        "note_es": "el jugo"
+      },
+      {
+        "id": "oregano",
+        "qty": 1
+      },
+      {
+        "id": "garlic",
+        "qty": 2,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "cucumber",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "cherry_tomato",
+        "qty": 1,
+        "note": "halved",
+        "note_es": "a la mitad"
+      },
+      {
+        "id": "olives",
+        "qty": 0.5
+      },
+      {
+        "id": "feta",
+        "qty": 3,
+        "note": "crumbled",
+        "note_es": "desmenuzado"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 3
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      }
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 20,
+    "photo_url": "https://images.unsplash.com/photo-1782177261793-823b94aa0555",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/outdoor-table-with-breakfast-fresh-fruit-and-iced-coffee-0jVZkTGmRNs"
+    }
+  },
+  {
+    "slug": "greek-turkey-pitas",
+    "name": "Greek Turkey Pitas",
+    "meal_type": "dinner",
+    "name_es": "Pitas griegas de pavo",
+    "diet_tags": [
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 25,
+    "batch_friendly": false,
+    "description": "Spiced ground turkey in warm pitas with cucumber-yogurt sauce and salad.",
+    "description_es": "Pavo molido especiado en pitas tibias con salsa de yogur y pepino y ensalada.",
+    "steps": [
+      "Stir the yogurt with half the garlic, the lemon juice, cucumber and a pinch of salt for the sauce.",
+      "Cook the turkey in hot oil 6 minutes, breaking it up; add the remaining garlic, cumin, oregano and salt and cook 2 minutes.",
+      "Warm the pitas 20 seconds per side in a dry skillet.",
+      "Fill each pita with turkey, sauce, tomato and onion."
+    ],
+    "steps_es": [
+      "Mezcla el yogur con la mitad del ajo, el jugo de limón, el pepino y una pizca de sal para la salsa.",
+      "Cocina el pavo en aceite caliente 6 minutos desmenuzándolo; agrega el resto del ajo, comino, orégano y sal y cocina 2 minutos.",
+      "Calienta las pitas 20 segundos por lado en una sartén seca.",
+      "Rellena cada pita con el pavo, la salsa, el tomate y la cebolla."
+    ],
+    "ingredients": [
+      {
+        "id": "ground_turkey",
+        "qty": 1.25
+      },
+      {
+        "id": "pita",
+        "qty": 4,
+        "note": "halved to make pockets",
+        "note_es": "a la mitad para hacer bolsillos"
+      },
+      {
+        "id": "greek_yogurt",
+        "qty": 0.75
+      },
+      {
+        "id": "cucumber",
+        "qty": 0.5,
+        "note": "grated and squeezed",
+        "note_es": "rallado y escurrido"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "lemon",
+        "qty": 0.5,
+        "note": "juiced",
+        "note_es": "el jugo"
+      },
+      {
+        "id": "cumin",
+        "qty": 0.5
+      },
+      {
+        "id": "oregano",
+        "qty": 1
+      },
+      {
+        "id": "tomato",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "onion_red",
+        "qty": 0.5,
+        "note": "thinly sliced",
+        "note_es": "en plumas"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      }
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 20,
+    "photo_url": "https://images.unsplash.com/photo-1777716003985-68fed08d0c7e",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/a-platter-of-grilled-meats-with-rice-and-pita-bread-2j17J8psiTw"
+    }
+  },
+  {
+    "slug": "lemon-chicken-orzo",
+    "name": "Lemon Chicken Orzo",
+    "meal_type": "dinner",
+    "name_es": "Orzo con pollo al limón",
+    "diet_tags": [
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 30,
+    "batch_friendly": false,
+    "description": "One-pan orzo with chicken, lemon, spinach and feta.",
+    "description_es": "Orzo en una sola sartén con pollo, limón, espinaca y feta.",
+    "steps": [
+      "Season the chicken with salt and sear in hot olive oil 4 minutes per side until golden; set aside.",
+      "Toast the orzo in the same pan 2 minutes, add the garlic and cook 30 seconds.",
+      "Pour in the broth and simmer 8 minutes, stirring, until the orzo is tender.",
+      "Return the chicken to the pan, stir in the lemon juice, spinach and feta and cook 2 minutes until the chicken is cooked through; slice and serve on top."
+    ],
+    "steps_es": [
+      "Sazona el pollo con sal y séllalo en aceite de oliva caliente 4 minutos por lado hasta dorarlo; reserva.",
+      "Tuesta el orzo en la misma sartén 2 minutos, agrega el ajo y cocina 30 segundos.",
+      "Vierte el caldo y cocina a fuego suave 8 minutos revolviendo, hasta que el orzo esté tierno.",
+      "Vuelve a colocar el pollo en la sartén, agrega el jugo de limón, la espinaca y el feta y cocina 2 minutos hasta que el pollo esté bien cocido; córtalo en tajadas y sirve encima."
+    ],
+    "ingredients": [
+      {
+        "id": "chicken_breast",
+        "qty": 1.25
+      },
+      {
+        "id": "orzo",
+        "qty": 8
+      },
+      {
+        "id": "chicken_broth",
+        "qty": 2,
+        "note": "about 2.5 cups, partial carton",
+        "note_es": "unas 2.5 tazas"
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "note": "juiced",
+        "note_es": "el jugo"
+      },
+      {
+        "id": "spinach",
+        "qty": 3
+      },
+      {
+        "id": "feta",
+        "qty": 3,
+        "note": "crumbled",
+        "note_es": "desmenuzado"
+      },
+      {
+        "id": "garlic",
+        "qty": 2,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      }
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 22,
+    "photo_url": "https://images.unsplash.com/photo-1757972367438-581ad5e299f5",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/creamy-gnocchi-with-chicken-and-herbs-JQMGHY9KLFU"
+    }
+  },
+  {
+    "slug": "caprese-chicken-skillet",
+    "name": "Caprese Chicken Skillet",
+    "meal_type": "dinner",
+    "name_es": "Pollo caprese en sartén",
+    "diet_tags": [
+      "gluten_free",
+      "low_carb",
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 30,
+    "batch_friendly": false,
+    "description": "Seared chicken topped with tomato, mozzarella and basil, finished under the broiler.",
+    "description_es": "Pollo sellado cubierto con tomate, mozzarella y albahaca, gratinado al grill.",
+    "steps": [
+      "Heat the oven broiler. Season the chicken with salt and Italian seasoning.",
+      "Sear in hot olive oil in an oven-safe skillet 4 minutes per side until golden and nearly cooked.",
+      "Top each piece with tomato slices and mozzarella.",
+      "Broil 3 minutes until the cheese melts and bubbles.",
+      "Serve with basil and a drizzle of balsamic."
+    ],
+    "steps_es": [
+      "Calienta el grill del horno. Sazona el pollo con sal y condimento italiano.",
+      "Séllalo en aceite de oliva caliente en una sartén apta para horno 4 minutos por lado hasta que esté dorado.",
+      "Cubre cada pieza con rodajas de tomate y mozzarella.",
+      "Cocina al grill 3 minutos hasta que el queso se derrita y burbujee.",
+      "Sirve con albahaca y un chorrito de balsámico."
+    ],
+    "ingredients": [
+      {
+        "id": "chicken_breast",
+        "qty": 1.5
+      },
+      {
+        "id": "tomato",
+        "qty": 2,
+        "note": "sliced",
+        "note_es": "en rodajas"
+      },
+      {
+        "id": "mozzarella",
+        "qty": 1.5,
+        "note": "shredded or sliced",
+        "note_es": "rallada o en rodajas"
+      },
+      {
+        "id": "basil",
+        "qty": 0.25,
+        "note": "leaves",
+        "note_es": "hojas"
+      },
+      {
+        "id": "vinegar_balsamic",
+        "qty": 2
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      }
+    ],
+    "equipment": [
+      "oven",
+      "stovetop"
+    ],
+    "active_minutes": 18,
+    "photo_url": "https://images.unsplash.com/photo-1769458313937-b5ad8f84942e",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/caprese-salad-with-fresh-tomatoes-mozzarella-and-basil-vJ-qtXoD-V8"
+    }
+  },
+  {
+    "slug": "minestrone-easy",
+    "name": "Easy Minestrone",
+    "meal_type": "dinner",
+    "name_es": "Minestrone fácil",
+    "diet_tags": [
+      "vegetarian",
+      "vegan",
+      "dairy_free"
+    ],
+    "servings": 4,
+    "prep_minutes": 40,
+    "batch_friendly": true,
+    "description": "A hearty tomato-bean-vegetable soup with small pasta.",
+    "description_es": "Sopa abundante de tomate, porotos y verduras con fideos chicos.",
+    "steps": [
+      "Sauté the onion, carrot and celery in olive oil 6 minutes until soft, add the garlic and cook 1 minute.",
+      "Add the tomatoes, broth, beans, oregano and a pinch of salt; simmer 15 minutes.",
+      "Add the pasta and cook 8 minutes until tender.",
+      "Stir in the spinach until it wilts, season and serve."
+    ],
+    "steps_es": [
+      "Saltea la cebolla, zanahoria y apio en aceite de oliva 6 minutos hasta que estén blandos, agrega el ajo y cocina 1 minuto.",
+      "Suma el tomate, el caldo, los porotos, el orégano y una pizca de sal; cocina 15 minutos a fuego suave.",
+      "Agrega los fideos y cocina 8 minutos hasta que estén tiernos.",
+      "Incorpora la espinaca hasta que se ablande, sazona y sirve."
+    ],
+    "ingredients": [
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "carrot",
+        "qty": 2,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "celery",
+        "qty": 2,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "diced_tomatoes",
+        "qty": 2
+      },
+      {
+        "id": "vegetable_broth",
+        "qty": 6,
+        "note": "carton, 4 cups",
+        "note_es": "caja, 4 tazas"
+      },
+      {
+        "id": "kidney_beans",
+        "qty": 1,
+        "note": "drained",
+        "note_es": "escurridos"
+      },
+      {
+        "id": "pasta_elbow",
+        "qty": 4
+      },
+      {
+        "id": "spinach",
+        "qty": 2
+      },
+      {
+        "id": "oregano",
+        "qty": 1
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      }
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 20,
+    "photo_url": "https://images.unsplash.com/photo-1725483990685-820291c0fca1",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/a-pot-of-vegetable-soup-sitting-on-a-stove-top-TDKvBUSkcTs"
+    }
+  },
+  {
+    "slug": "polenta-mushroom-ragu",
+    "name": "Polenta with Mushroom Ragu",
+    "meal_type": "dinner",
+    "name_es": "Polenta con ragú de champiñones",
+    "diet_tags": [
+      "vegetarian",
+      "vegan",
+      "gluten_free",
+      "dairy_free"
+    ],
+    "servings": 4,
+    "prep_minutes": 35,
+    "batch_friendly": true,
+    "description": "Creamy polenta topped with a rich tomato-mushroom ragu.",
+    "description_es": "Polenta cremosa cubierta con un rico ragú de tomate y champiñones.",
+    "steps": [
+      "Sear the mushrooms in olive oil 6 minutes until browned; add the onion and cook 4 minutes.",
+      "Stir in the garlic and tomato paste 1 minute, add the tomatoes and simmer 15 minutes until thick; season with salt.",
+      "Meanwhile cook the polenta in boiling salted water following the package ratio (about 4 cups of water per cup of polenta), simmering and whisking until thick.",
+      "Serve the ragu over the polenta."
+    ],
+    "steps_es": [
+      "Dora los champiñones en aceite de oliva 6 minutos hasta que estén dorados; agrega la cebolla y cocina 4 minutos.",
+      "Suma el ajo y la pasta de tomate 1 minuto, agrega el tomate y cocina 15 minutos a fuego suave hasta que espese; sazona con sal.",
+      "Mientras tanto cocina la polenta en agua hirviendo con sal siguiendo la proporción del paquete (unas 4 tazas de agua por taza de polenta), hirviendo a fuego lento y batiendo hasta que espese.",
+      "Sirve el ragú sobre la polenta."
+    ],
+    "ingredients": [
+      {
+        "id": "polenta",
+        "qty": 1,
+        "note": "with 4 cups water",
+        "note_es": "con 4 tazas de agua"
+      },
+      {
+        "id": "mushroom",
+        "qty": 3,
+        "note": "sliced",
+        "note_es": "en láminas"
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "tomato_paste",
+        "qty": 2
+      },
+      {
+        "id": "crushed_tomatoes",
+        "qty": 1
+      },
+      {
+        "id": "olive_oil",
+        "qty": 3
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      }
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 30,
+    "photo_url": "https://images.unsplash.com/photo-1778851182989-ea3f9d2d280b",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/polenta-with-creamy-spinach-and-tomato-sauce-42X1cpCtSQA"
+    }
+  },
+  {
+    "slug": "tuscan-chicken-pasta",
+    "name": "Tuscan-Style Chicken Pasta",
+    "meal_type": "dinner",
+    "name_es": "Pasta con pollo toscano",
+    "diet_tags": [
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 30,
+    "batch_friendly": false,
+    "description": "Chicken in a creamy garlic sauce with spinach and tomatoes over pasta.",
+    "description_es": "Pollo en salsa cremosa de ajo con espinaca y tomates sobre pasta.",
+    "steps": [
+      "Cook the pasta in salted water; save a cup of the water before draining.",
+      "Season the chicken with salt and Italian seasoning, sear in olive oil 4 minutes per side; slice.",
+      "Sauté the garlic 1 minute, add the cream and tomatoes; simmer 4 minutes until slightly thick.",
+      "Stir in the spinach until wilted, return the chicken and pasta, toss and serve with parmesan."
+    ],
+    "steps_es": [
+      "Cocina la pasta en agua con sal; guarda una taza del agua antes de escurrir.",
+      "Sazona el pollo con sal y condimento italiano, séllalo en aceite de oliva 4 minutos por lado; córtalo en tajadas.",
+      "Saltea el ajo 1 minuto, agrega la crema y los tomates; cocina 4 minutos hasta que espese un poco.",
+      "Suma la espinaca hasta que se ablande, vuelve a poner el pollo y la pasta, mezcla y sirve con parmesano."
+    ],
+    "ingredients": [
+      {
+        "id": "pasta_penne",
+        "qty": 12
+      },
+      {
+        "id": "chicken_breast",
+        "qty": 1.25
+      },
+      {
+        "id": "heavy_cream",
+        "qty": 0.75
+      },
+      {
+        "id": "cherry_tomato",
+        "qty": 1,
+        "note": "halved",
+        "note_es": "a la mitad"
+      },
+      {
+        "id": "spinach",
+        "qty": 3
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "parmesan",
+        "qty": 0.5,
+        "note": "grated",
+        "note_es": "rallado"
+      },
+      {
+        "id": "italian_seasoning",
+        "qty": 1
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      }
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 25,
+    "photo_url": "https://images.unsplash.com/photo-1781802768049-c14dd5b37bf3",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/pasta-sauce-and-hot-dogs-cooking-on-a-kitchen-stove-WpqGmuCovwg"
+    }
+  },
+  {
+    "slug": "ratatouille-rice",
+    "name": "Ratatouille over Rice",
+    "meal_type": "dinner",
+    "name_es": "Ratatouille sobre arroz",
+    "diet_tags": [
+      "vegetarian",
+      "vegan",
+      "gluten_free",
+      "dairy_free"
+    ],
+    "servings": 4,
+    "prep_minutes": 45,
+    "batch_friendly": true,
+    "description": "Stewed eggplant, zucchini and tomatoes in herbs — simple and colorful.",
+    "description_es": "Berenjena, calabacín y tomate guisados en hierbas: simple y colorido.",
+    "steps": [
+      "Cook the rice according to the package directions.",
+      "Sauté the eggplant in olive oil 6 minutes until golden; set aside.",
+      "Add the onion and peppers 5 minutes, then the zucchini and garlic 4 minutes.",
+      "Return the eggplant with the tomatoes, thyme and salt; simmer 15 minutes until saucy.",
+      "Serve over rice with basil."
+    ],
+    "steps_es": [
+      "Cocina el arroz según las instrucciones del paquete.",
+      "Saltea la berenjena en aceite de oliva 6 minutos hasta que esté dorada; reserva.",
+      "Agrega la cebolla y los morrones 5 minutos, luego el calabacín y el ajo 4 minutos.",
+      "Vuelve a poner la berenjena con el tomate, el tomillo y la sal; cocina 15 minutos a fuego suave hasta que esté suave y con salsa.",
+      "Sirve sobre arroz con albahaca."
+    ],
+    "ingredients": [
+      {
+        "id": "eggplant",
+        "qty": 1,
+        "note": "in 1-inch cubes",
+        "note_es": "en cubos de 2.5 cm"
+      },
+      {
+        "id": "zucchini",
+        "qty": 2,
+        "note": "in half-moons",
+        "note_es": "en medias lunas"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 2,
+        "note": "in chunks",
+        "note_es": "en trozos"
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "sliced",
+        "note_es": "en tiras"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "crushed_tomatoes",
+        "qty": 1
+      },
+      {
+        "id": "thyme",
+        "qty": 0.5
+      },
+      {
+        "id": "basil",
+        "qty": 0.25,
+        "note": "chopped",
+        "note_es": "picada"
+      },
+      {
+        "id": "rice_white",
+        "qty": 1.5
+      },
+      {
+        "id": "olive_oil",
+        "qty": 4
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      }
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 30,
+    "photo_url": "https://images.unsplash.com/photo-1788603907308-58eb4325dce1",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/fried-rice-with-vegetables-on-plate-5Fii0b2wc3I"
+    }
+  },
+  {
+    "slug": "white-bean-tomato-stew",
+    "name": "White Bean and Tomato Stew",
+    "meal_type": "dinner",
+    "name_es": "Guiso de porotos blancos y tomate",
+    "diet_tags": [
+      "vegetarian",
+      "vegan",
+      "gluten_free",
+      "dairy_free"
+    ],
+    "servings": 4,
+    "prep_minutes": 30,
+    "batch_friendly": true,
+    "description": "Rustic Italian beans stewed with tomato, garlic and rosemary, over toast.",
+    "description_es": "Porotos blancos guisados con tomate, ajo y romero, sobre pan tostado.",
+    "steps": [
+      "Sauté the garlic in olive oil 1 minute, add the tomatoes and simmer 8 minutes until slightly thick.",
+      "Add the beans with a splash of water and simmer 8 minutes more, mashing a few to thicken.",
+      "Stir in the spinach until it wilts and season with salt.",
+      "Serve with olive oil drizzled on top."
+    ],
+    "steps_es": [
+      "Saltea el ajo en aceite de oliva 1 minuto, agrega el tomate y cocina 8 minutos a fuego suave hasta que espese un poco.",
+      "Suma los porotos con un chorrito de agua y cocina 8 minutos más, machacando algunos para espesar.",
+      "Incorpora la espinaca hasta que se ablande y sazona con sal.",
+      "Sirve con un chorrito de aceite de oliva por encima."
+    ],
+    "ingredients": [
+      {
+        "id": "white_beans",
+        "qty": 3,
+        "note": "cans, drained",
+        "note_es": "latas, escurridas"
+      },
+      {
+        "id": "diced_tomatoes",
+        "qty": 1
+      },
+      {
+        "id": "garlic",
+        "qty": 4,
+        "note": "thinly sliced",
+        "note_es": "en láminas"
+      },
+      {
+        "id": "spinach",
+        "qty": 3
+      },
+      {
+        "id": "olive_oil",
+        "qty": 3
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      }
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 18,
+    "photo_url": "https://images.unsplash.com/photo-1759392773285-0f86affdf1df",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/bowl-of-braised-pork-knuckle-with-green-beans-K2O7ApS6Y4w"
+    }
+  },
+  {
+    "slug": "chicken-parmesan-easy",
+    "name": "Easy Chicken Parmesan",
+    "meal_type": "dinner",
+    "name_es": "Pollo a la parmesana fácil",
+    "diet_tags": [
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 40,
+    "batch_friendly": false,
+    "description": "Breaded chicken baked with marinara and mozzarella, over spaghetti.",
+    "description_es": "Pollo empanado horneado con marinara y mozzarella, sobre espagueti.",
+    "steps": [
+      "Heat the oven to {425F}. Season the chicken with salt.",
+      "Dip each piece in beaten egg then breadcrumbs, pressing to coat.",
+      "Arrange on an oiled sheet pan and bake 15 minutes.",
+      "Top with marinara and mozzarella and bake 5 minutes more until melted.",
+      "Meanwhile cook the spaghetti; serve the chicken over it with parmesan."
+    ],
+    "steps_es": [
+      "Calienta el horno a {425F}. Sazona el pollo con sal.",
+      "Pasa cada pieza por huevo batido y luego por pan rallado, presionando para que se pegue.",
+      "Acomoda en una placa aceitada y hornea 15 minutos.",
+      "Cubre con marinara y mozzarella y hornea 5 minutos más hasta que se derrita.",
+      "Mientras, cocina el espagueti; sirve el pollo encima con parmesano."
+    ],
+    "ingredients": [
+      {
+        "id": "chicken_breast",
+        "qty": 1.5,
+        "note": "sliced into thin cutlets",
+        "note_es": "en filetes finos"
+      },
+      {
+        "id": "eggs",
+        "qty": 2,
+        "note": "beaten",
+        "note_es": "batidos"
+      },
+      {
+        "id": "breadcrumbs",
+        "qty": 1.5
+      },
+      {
+        "id": "marinara",
+        "qty": 2
+      },
+      {
+        "id": "mozzarella",
+        "qty": 2,
+        "note": "shredded",
+        "note_es": "rallada"
+      },
+      {
+        "id": "pasta_spaghetti",
+        "qty": 12
+      },
+      {
+        "id": "parmesan",
+        "qty": 0.5,
+        "note": "grated",
+        "note_es": "rallado"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      }
+    ],
+    "equipment": [
+      "oven",
+      "stovetop"
+    ],
+    "active_minutes": 25,
+    "photo_url": "https://images.unsplash.com/photo-1774828893338-50fd6c5f3062",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/gnocchi-with-meat-sauce-red-wine-and-parmesan-cheese-R_-17QeZi6U"
+    }
+  },
+  {
+    "slug": "lemon-garlic-cod",
+    "name": "Lemon Garlic Cod",
+    "meal_type": "dinner",
+    "name_es": "Bacalao al limón y ajo",
+    "diet_tags": [
+      "pescatarian",
+      "gluten_free",
+      "dairy_free",
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 25,
+    "batch_friendly": false,
+    "description": "Cod fillets baked with lemon, garlic and olives — light and fast.",
+    "description_es": "Filetes de bacalao al horno con limón, ajo y aceitunas: liviano y rápido.",
+    "steps": [
+      "Heat the oven to {400F} and line a sheet pan with parchment.",
+      "Arrange the cod on the pan, drizzle with olive oil and top with the garlic, lemon slices and olives.",
+      "Season with salt and bake 12 to 14 minutes until the fish flakes.",
+      "Serve over rice with the pan juices and parsley."
+    ],
+    "steps_es": [
+      "Calienta el horno a {400F} y forra una placa con papel.",
+      "Acomoda el bacalao en la placa, riega con aceite de oliva y cubre con el ajo, las rodajas de limón y las aceitunas.",
+      "Sazona con sal y hornea de 12 a 14 minutos hasta que el pescado se deshoje.",
+      "Sirve sobre arroz con los jugos de la placa y perejil."
+    ],
+    "ingredients": [
+      {
+        "id": "cod",
+        "qty": 1.5,
+        "note": "in 4 fillets",
+        "note_es": "en 4 filetes"
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "note": "half sliced, half juiced",
+        "note_es": "mitad en rodajas, mitad el jugo"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "olives",
+        "qty": 0.5,
+        "note": "halved",
+        "note_es": "a la mitad"
+      },
+      {
+        "id": "parsley",
+        "qty": 0.25,
+        "note": "chopped",
+        "note_es": "picado"
+      },
+      {
+        "id": "rice_white",
+        "qty": 1.5
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      }
+    ],
+    "equipment": [
+      "oven"
+    ],
+    "active_minutes": 12,
+    "photo_url": "https://images.unsplash.com/photo-1707056503922-91c9ebaf0774",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/a-pan-filled-with-meat-and-vegetables-next-to-garlic-nLdvS9zn4x4"
+    }
+  },
+  {
+    "slug": "cacio-e-pepe-beans",
+    "name": "Cacio e Pepe Beans",
+    "meal_type": "dinner",
+    "name_es": "Porotos cacio e pepe",
+    "diet_tags": [
+      "vegetarian",
+      "gluten_free"
+    ],
+    "servings": 4,
+    "prep_minutes": 20,
+    "batch_friendly": false,
+    "description": "White beans in a peppery parmesan-butter sauce — Rome on a budget.",
+    "description_es": "Porotos blancos en salsa pimentera de manteca y parmesano: Roma con presupuesto.",
+    "steps": [
+      "Toast the black pepper in butter 1 minute until fragrant.",
+      "Add the beans with a splash of water and warm 4 minutes, mashing a few to thicken.",
+      "Off the heat, stir in the parmesan until creamy.",
+      "Serve in bowls with more pepper and parmesan on top."
+    ],
+    "steps_es": [
+      "Tuesta la pimienta negra en manteca 1 minuto hasta que largue aroma.",
+      "Agrega los porotos con un chorrito de agua y calienta 4 minutos, machacando algunos para espesar.",
+      "Fuera del fuego, incorpora el parmesano hasta que esté cremoso.",
+      "Sirve en bowls con más pimienta y parmesano por encima."
+    ],
+    "ingredients": [
+      {
+        "id": "white_beans",
+        "qty": 3,
+        "note": "cans, drained",
+        "note_es": "latas, escurridas"
+      },
+      {
+        "id": "parmesan",
+        "qty": 1,
+        "note": "finely grated",
+        "note_es": "rallado fino"
+      },
+      {
+        "id": "butter",
+        "qty": 3
+      },
+      {
+        "id": "black_pepper",
+        "qty": 1.5,
+        "note": "freshly cracked is best",
+        "note_es": "recién molida es ideal"
+      },
+      {
+        "id": "salt",
+        "qty": 0.25
+      }
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 12,
+    "tip": "Take the pan off the heat before the cheese goes in or it clumps.",
+    "tip_es": "Retira la sartén del fuego antes de agregar el queso o se apelotonan los grumos.",
+    "photo_url": "https://images.unsplash.com/photo-1770678724670-155587ca1bb7",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/a-fork-and-spoon-twirling-pasta-on-a-white-plate-FAvytOu3Cig"
+    }
+  },
+  {
+    "slug": "spinach-ricotta-stuffed-shells",
+    "name": "Stuffed Shells-Style Pasta",
+    "meal_type": "dinner",
+    "name_es": "Pasta rellena de espinaca y ricota",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 4,
+    "prep_minutes": 50,
+    "batch_friendly": true,
+    "description": "Ricotta-spinach filling under marinara and mozzarella — simplified stuffed shells.",
+    "description_es": "Relleno de ricota y espinaca bajo marinara y mozzarella: conchiglioni simplificados.",
+    "steps": [
+      "Heat the oven to {375F} and cook the pasta 2 minutes less than the package; drain.",
+      "Squeeze the spinach dry and mix it with the ricotta, half the mozzarella, the parmesan and a pinch of salt.",
+      "Fold the filling through the pasta in a baking dish.",
+      "Cover with marinara and the remaining mozzarella; bake 25 minutes until bubbly."
+    ],
+    "steps_es": [
+      "Calienta el horno a {375F} y cocina la pasta 2 minutos menos de lo que dice el paquete; escúrrela.",
+      "Escurre bien la espinaca y mézclala con la ricota, la mitad de la mozzarella, el parmesano y una pizca de sal.",
+      "Mezcla el relleno con la pasta en una fuente para horno.",
+      "Cubre con marinara y el resto de la mozzarella; hornea 25 minutos hasta que burbujee."
+    ],
+    "ingredients": [
+      {
+        "id": "pasta_penne",
+        "qty": 16,
+        "note": "or large shells if available",
+        "note_es": "o conchiglioni si hay"
+      },
+      {
+        "id": "ricotta",
+        "qty": 2
+      },
+      {
+        "id": "spinach_frozen",
+        "qty": 2,
+        "note": "thawed and squeezed dry",
+        "note_es": "descongelada y bien escurrida"
+      },
+      {
+        "id": "mozzarella",
+        "qty": 2,
+        "note": "shredded",
+        "note_es": "rallada"
+      },
+      {
+        "id": "parmesan",
+        "qty": 0.5,
+        "note": "grated",
+        "note_es": "rallado"
+      },
+      {
+        "id": "marinara",
+        "qty": 2
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      }
+    ],
+    "equipment": [
+      "oven",
+      "stovetop"
+    ],
+    "active_minutes": 20,
+    "photo_url": "https://images.unsplash.com/photo-1788464730134-333936411dc2",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/baked-spinach-and-cheese-casserole-avoA6dZXjyw"
+    }
+  },
+  {
+    "slug": "shrimp-puttanesca",
+    "name": "Shrimp Puttanesca",
+    "meal_type": "dinner",
+    "name_es": "Camarones a la puttanesca",
+    "diet_tags": [
+      "pescatarian",
+      "dairy_free",
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 25,
+    "batch_friendly": false,
+    "description": "Briny tomato-olive sauce with shrimp over spaghetti.",
+    "description_es": "Salsa marinera de tomate y aceitunas con camarones sobre espagueti.",
+    "steps": [
+      "Cook the spaghetti in salted water; save a cup of the water before draining.",
+      "Sauté the garlic and red pepper flakes in olive oil 1 minute, add the tomatoes and olives; simmer 10 minutes.",
+      "Add the shrimp and simmer 3 to 4 minutes until pink and cooked.",
+      "Toss with the pasta and a splash of its water; serve with parsley."
+    ],
+    "steps_es": [
+      "Cocina el espagueti en agua con sal; guarda una taza del agua antes de escurrir.",
+      "Saltea el ajo y el ají molido en aceite de oliva 1 minuto, agrega el tomate y las aceitunas; cocina 10 minutos a fuego suave.",
+      "Suma los camarones y cocina 3 a 4 minutos hasta que estén rosados y listos.",
+      "Mezcla con la pasta y un chorrito de su agua; sirve con perejil."
+    ],
+    "ingredients": [
+      {
+        "id": "pasta_spaghetti",
+        "qty": 16
+      },
+      {
+        "id": "shrimp",
+        "qty": 1,
+        "note": "peeled and deveined",
+        "note_es": "pelados y limpios"
+      },
+      {
+        "id": "crushed_tomatoes",
+        "qty": 1
+      },
+      {
+        "id": "olives",
+        "qty": 0.75,
+        "note": "halved",
+        "note_es": "a la mitad"
+      },
+      {
+        "id": "garlic",
+        "qty": 4,
+        "note": "thinly sliced",
+        "note_es": "en láminas"
+      },
+      {
+        "id": "red_pepper_flakes",
+        "qty": 0.5
+      },
+      {
+        "id": "parsley",
+        "qty": 0.25,
+        "note": "chopped",
+        "note_es": "picado"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      }
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 20,
+    "photo_url": "https://images.unsplash.com/photo-1762631178192-f331d9549fc9",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/spaghetti-with-shrimp-and-a-flower-garnish-kfFKc9jtB0s"
+    }
+  },
+  {
+    "slug": "mediterranean-chickpea-bowls",
+    "name": "Mediterranean Chickpea Bowls",
+    "meal_type": "dinner",
+    "name_es": "Bowls mediterráneos de garbanzos",
+    "diet_tags": [
+      "vegetarian",
+      "vegan",
+      "gluten_free",
+      "dairy_free"
+    ],
+    "servings": 4,
+    "prep_minutes": 25,
+    "batch_friendly": true,
+    "description": "Warm spiced chickpeas over rice with cucumber, tomato, olives and tahini drizzle.",
+    "description_es": "Garbanzos tibios especiados sobre arroz con pepino, tomate, aceitunas y tahini.",
+    "steps": [
+      "Cook the rice according to the package directions.",
+      "Whisk the tahini with the lemon juice, half the garlic, 3 tablespoons of water and a pinch of salt into a drizzle.",
+      "Warm the chickpeas in olive oil with the cumin, paprika and remaining garlic 5 minutes until coated.",
+      "Serve over rice with cucumber, tomato, olives and the tahini drizzle."
+    ],
+    "steps_es": [
+      "Cocina el arroz según las instrucciones del paquete.",
+      "Bate el tahini con el jugo de limón, la mitad del ajo, 3 cucharadas de agua y una pizca de sal hasta lograr una salsa.",
+      "Calienta los garbanzos en aceite de oliva con el comino, el pimentón y el resto del ajo 5 minutos hasta cubrirlos.",
+      "Sirve sobre arroz con pepino, tomate, aceitunas y la salsa de tahini."
+    ],
+    "ingredients": [
+      {
+        "id": "chickpeas",
+        "qty": 3,
+        "note": "cans, drained",
+        "note_es": "latas, escurridos"
+      },
+      {
+        "id": "rice_white",
+        "qty": 1.5
+      },
+      {
+        "id": "tahini",
+        "qty": 3
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "note": "juiced",
+        "note_es": "el jugo"
+      },
+      {
+        "id": "garlic",
+        "qty": 2,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "cumin",
+        "qty": 1
+      },
+      {
+        "id": "smoked_paprika",
+        "qty": 1
+      },
+      {
+        "id": "cucumber",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "cherry_tomato",
+        "qty": 1,
+        "note": "halved",
+        "note_es": "a la mitad"
+      },
+      {
+        "id": "olives",
+        "qty": 0.5
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      }
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 15,
+    "photo_url": "https://images.unsplash.com/photo-1680405531955-8b4981bb1b0c",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/a-white-bowl-filled-with-food-on-top-of-a-wooden-table-V3OnqusloQE"
+    }
+  },
+  {
+    "slug": "pasta-aglio-olio-broccoli",
+    "name": "Pasta Aglio e Olio with Broccoli",
+    "meal_type": "dinner",
+    "name_es": "Pasta aglio e olio con brócoli",
+    "diet_tags": [
+      "vegetarian",
+      "vegan",
+      "dairy_free"
+    ],
+    "servings": 4,
+    "prep_minutes": 20,
+    "batch_friendly": false,
+    "description": "Garlic-oil spaghetti with chili flakes and roasted-flavored broccoli.",
+    "description_es": "Espagueti en aceite de ajo con ají molido y brócoli dorado.",
+    "steps": [
+      "Cook the spaghetti in salted water; save a cup of the water before draining.",
+      "Sear the broccoli in olive oil 5 minutes until charred at the edges; set aside.",
+      "Warm the garlic and red pepper flakes in the remaining oil 1 minute until golden.",
+      "Toss in the pasta and broccoli with a splash of pasta water; serve with more pepper flakes."
+    ],
+    "steps_es": [
+      "Cocina el espagueti en agua con sal; guarda una taza del agua antes de escurrir.",
+      "Dora el brócoli en aceite de oliva 5 minutos hasta que tenga bordes tostados; reserva.",
+      "Calienta el ajo y el ají molido en el aceite restante 1 minuto hasta que se dore.",
+      "Mezcla la pasta y el brócoli con un chorrito del agua de cocción; sirve con más ají molido."
+    ],
+    "ingredients": [
+      {
+        "id": "pasta_spaghetti",
+        "qty": 16
+      },
+      {
+        "id": "broccoli_frozen",
+        "qty": 4,
+        "note": "thawed and patted dry",
+        "note_es": "descongelado y bien seco"
+      },
+      {
+        "id": "garlic",
+        "qty": 5,
+        "note": "thinly sliced",
+        "note_es": "en láminas"
+      },
+      {
+        "id": "red_pepper_flakes",
+        "qty": 1
+      },
+      {
+        "id": "olive_oil",
+        "qty": 5
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      }
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 15,
+    "photo_url": "https://images.unsplash.com/photo-1770351203577-501cf0b074f9",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/two-servings-of-macaroni-and-cheese-with-salad-JtQBpcam1hQ"
+    }
+  },
+  {
+    "slug": "eggplant-parmesan-skillet",
+    "name": "Skillet Eggplant Parmesan",
+    "meal_type": "dinner",
+    "name_es": "Berenjena a la parmesana en sartén",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 4,
+    "prep_minutes": 45,
+    "batch_friendly": true,
+    "description": "Layered eggplant, marinara and mozzarella baked in one skillet.",
+    "description_es": "Capas de berenjena, marinara y mozzarella horneadas en una sartén.",
+    "steps": [
+      "Heat the oven to {400F}.",
+      "Salt the eggplant slices and fry in batches in hot olive oil 3 minutes per side until golden; drain on paper.",
+      "In an oven-safe skillet, layer sauce, eggplant, mozzarella and parmesan, repeating twice.",
+      "Bake 20 minutes until bubbly and browned; rest 10 minutes and serve."
+    ],
+    "steps_es": [
+      "Calienta el horno a {400F}.",
+      "Sala las rodajas de berenjena y fríelas en tandas en aceite de oliva caliente 3 minutos por lado hasta que estén doradas; escurre sobre papel.",
+      "En una sartén apta para horno, arma capas de salsa, berenjena, mozzarella y parmesano, repitiendo dos veces.",
+      "Hornea 20 minutos hasta que burbujee y se dore; deja reposar 10 minutos y sirve."
+    ],
+    "ingredients": [
+      {
+        "id": "eggplant",
+        "qty": 2,
+        "note": "sliced into rounds",
+        "note_es": "en rodajas"
+      },
+      {
+        "id": "marinara",
+        "qty": 2
+      },
+      {
+        "id": "mozzarella",
+        "qty": 2,
+        "note": "shredded",
+        "note_es": "rallada"
+      },
+      {
+        "id": "parmesan",
+        "qty": 0.5,
+        "note": "grated",
+        "note_es": "rallado"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 6
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      }
+    ],
+    "equipment": [
+      "oven",
+      "stovetop"
+    ],
+    "active_minutes": 30,
+    "photo_url": "https://images.unsplash.com/photo-1779738193253-3a271577f723",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/a-bowl-of-gnocchi-with-eggplant-sage-and-creamy-sauce-L7i7rEKc9Ng"
+    }
+  },
+  {
+    "slug": "salmon-orzo-lemon",
+    "name": "Salmon with Lemon Orzo",
+    "meal_type": "dinner",
+    "name_es": "Salmón con orzo al limón",
+    "diet_tags": [
+      "pescatarian",
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 30,
+    "batch_friendly": false,
+    "description": "Seared salmon over buttery lemon orzo with peas.",
+    "description_es": "Salmón sellado sobre orzo mantecoso al limón con arvejas.",
+    "steps": [
+      "Season the salmon with salt and sear in hot olive oil 3 to 4 minutes per side; set aside.",
+      "Toast the orzo in butter 2 minutes, add the garlic and cook 30 seconds.",
+      "Add the broth and simmer 8 minutes until the orzo is tender, stirring in the peas for the last 2.",
+      "Stir in the lemon juice and serve the salmon on top."
+    ],
+    "steps_es": [
+      "Sazona el salmón con sal y séllalo en aceite de oliva caliente de 3 a 4 minutos por lado; reserva.",
+      "Tuesta el orzo en manteca 2 minutos, agrega el ajo y cocina 30 segundos.",
+      "Vierte el caldo y cocina a fuego suave 8 minutos hasta que el orzo esté tierno, sumando las arvejas en los últimos 2.",
+      "Agrega el jugo de limón y sirve el salmón encima."
+    ],
+    "ingredients": [
+      {
+        "id": "salmon",
+        "qty": 1.25,
+        "note": "in 4 fillets",
+        "note_es": "en 4 filetes"
+      },
+      {
+        "id": "orzo",
+        "qty": 8
+      },
+      {
+        "id": "vegetable_broth",
+        "qty": 1,
+        "note": "about 2.5 cups, partial carton",
+        "note_es": "unas 2.5 tazas"
+      },
+      {
+        "id": "peas_frozen",
+        "qty": 1
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "note": "juiced",
+        "note_es": "el jugo"
+      },
+      {
+        "id": "butter",
+        "qty": 2
+      },
+      {
+        "id": "garlic",
+        "qty": 2,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      }
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 20,
+    "photo_url": "https://images.unsplash.com/photo-1574484284002-952d92456975",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/salmon-in-creamy-sauce-dinner-ND3edEmzcdQ"
+    }
+  },
+  {
+    "slug": "tomato-basil-tortellini",
+    "name": "Tortellini in Tomato-Basil Broth",
+    "meal_type": "dinner",
+    "name_es": "Tortellini en caldo de tomate y albahaca",
+    "diet_tags": [
+      "vegetarian"
+    ],
+    "servings": 4,
+    "prep_minutes": 25,
+    "batch_friendly": true,
+    "description": "Cheese tortellini simmered in a light tomato-basil broth.",
+    "description_es": "Tortellini de queso cocidos en un caldo liviano de tomate y albahaca.",
+    "steps": [
+      "Sauté the garlic in olive oil 1 minute, add the tomatoes and broth; simmer 8 minutes.",
+      "Add the tortellini and cook 4 minutes until tender.",
+      "Stir in the spinach until wilted and the basil.",
+      "Serve with parmesan on top."
+    ],
+    "steps_es": [
+      "Saltea el ajo en aceite de oliva 1 minuto, agrega el tomate y el caldo; cocina 8 minutos a fuego suave.",
+      "Suma los tortellini y cocina 4 minutos hasta que estén tiernos.",
+      "Incorpora la espinaca hasta que se ablande y la albahaca.",
+      "Sirve con parmesano por encima."
+    ],
+    "ingredients": [
+      {
+        "id": "tortellini",
+        "qty": 20
+      },
+      {
+        "id": "diced_tomatoes",
+        "qty": 1
+      },
+      {
+        "id": "vegetable_broth",
+        "qty": 6,
+        "note": "carton, 4 cups",
+        "note_es": "caja, 4 tazas"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "spinach",
+        "qty": 2
+      },
+      {
+        "id": "basil",
+        "qty": 0.25,
+        "note": "chopped",
+        "note_es": "picada"
+      },
+      {
+        "id": "parmesan",
+        "qty": 0.5,
+        "note": "grated",
+        "note_es": "rallado"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      }
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 15,
+    "photo_url": "https://images.unsplash.com/photo-1784751722792-83189db3ca61",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/fresh-caprese-salad-with-sliced-tomatoes-mozzarella-pesto-and-basil-2qsJ_jZ7aTQ"
+    }
+  },
+  {
+    "slug": "sicilian-cauliflower-pasta",
+    "name": "Sicilian-Style Cauliflower Pasta",
+    "meal_type": "dinner",
+    "name_es": "Pasta siciliana con coliflor",
+    "diet_tags": [
+      "vegetarian",
+      "vegan",
+      "dairy_free"
+    ],
+    "servings": 4,
+    "prep_minutes": 35,
+    "batch_friendly": false,
+    "description": "Golden cauliflower with garlic, chili and breadcrumbs over pasta.",
+    "description_es": "Coliflor dorada con ajo, ají y pan rallado crocante sobre pasta.",
+    "steps": [
+      "Cook the pasta in salted water; save a cup of the water before draining.",
+      "Sear the cauliflower in olive oil 8 minutes until deep golden and tender; add the garlic and pepper flakes 1 minute.",
+      "Toss with the pasta and a splash of its water.",
+      "Toast the breadcrumbs in a dry pan 2 minutes until crisp and scatter over the top."
+    ],
+    "steps_es": [
+      "Cocina la pasta en agua con sal; guarda una taza del agua antes de escurrir.",
+      "Dora la coliflor en aceite de oliva 8 minutos hasta que esté bien dorada y tierna; agrega el ajo y el ají 1 minuto.",
+      "Mezcla con la pasta y un chorrito de su agua.",
+      "Tuesta el pan rallado en una sartén seca 2 minutos hasta que esté crocante y espárcelo por encima."
+    ],
+    "ingredients": [
+      {
+        "id": "cauliflower",
+        "qty": 1,
+        "note": "in small florets",
+        "note_es": "en floretes chicos"
+      },
+      {
+        "id": "pasta_spaghetti",
+        "qty": 16
+      },
+      {
+        "id": "garlic",
+        "qty": 4,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "red_pepper_flakes",
+        "qty": 0.5
+      },
+      {
+        "id": "breadcrumbs",
+        "qty": 0.5
+      },
+      {
+        "id": "olive_oil",
+        "qty": 4
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      }
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 25,
+    "photo_url": "https://images.unsplash.com/photo-1767065584295-e5879ad624c2",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/fork-lifting-cheesy-lasagna-from-white-bowl-q6V1AvFZl3o"
+    }
+  },
+  {
+    "slug": "greek-lemon-potatoes-chicken",
+    "name": "Greek Lemon Potatoes and Chicken",
+    "meal_type": "dinner",
+    "name_es": "Pollo y papas al limón griego",
+    "diet_tags": [
+      "gluten_free",
+      "dairy_free",
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 60,
+    "batch_friendly": true,
+    "description": "Chicken thighs roasted over lemon-oregano potatoes — a taverna classic.",
+    "description_es": "Muslos de pollo horneados sobre papas al limón y orégano: clásico de taberna.",
+    "steps": [
+      "Heat the oven to {400F}.",
+      "Toss the potato wedges with the olive oil, lemon juice, oregano, garlic and salt in a baking dish.",
+      "Season the chicken with salt and nestle it on top of the potatoes.",
+      "Roast 45 to 50 minutes until the chicken is browned and the potatoes are tender and glazed.",
+      "Serve with the pan juices spooned over."
+    ],
+    "steps_es": [
+      "Calienta el horno a {400F}.",
+      "Mezcla las papas en gajos con el aceite de oliva, el jugo de limón, el orégano, el ajo y la sal en una fuente.",
+      "Sazona el pollo con sal y acomódalo sobre las papas.",
+      "Hornea de 45 a 50 minutos hasta que el pollo esté dorado y las papas tiernas y glaseadas.",
+      "Sirve con los jugos de la fuente por encima."
+    ],
+    "ingredients": [
+      {
+        "id": "chicken_thigh",
+        "qty": 2,
+        "note": "bone-in, skin-on",
+        "note_es": "con hueso y piel"
+      },
+      {
+        "id": "potato_russet",
+        "qty": 3,
+        "note": "cut into wedges",
+        "note_es": "en gajos"
+      },
+      {
+        "id": "lemon",
+        "qty": 2,
+        "note": "juiced",
+        "note_es": "el jugo"
+      },
+      {
+        "id": "garlic",
+        "qty": 4,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "oregano",
+        "qty": 1
+      },
+      {
+        "id": "olive_oil",
+        "qty": 4
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      }
+    ],
+    "equipment": [
+      "oven"
+    ],
+    "active_minutes": 15,
+    "photo_url": "https://images.unsplash.com/photo-1708782342502-0ae2053682c2",
+    "photo_credit": {
+      "name": "Rimsha Noor",
+      "url": "https://unsplash.com/photos/a-roasted-chicken-in-a-bowl-with-potatoes-and-parsley-sW_ouGvUJgk"
+    }
+  },
+  {
+    "slug": "pesto-chicken-pasta",
+    "name": "Pesto Chicken Pasta",
+    "meal_type": "dinner",
+    "name_es": "Pasta con pollo y pesto",
+    "diet_tags": [
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 25,
+    "batch_friendly": false,
+    "description": "Seared chicken and penne tossed in basil pesto with cherry tomatoes.",
+    "description_es": "Pollo sellado y penne mezclados en pesto de albahaca con tomates cherry.",
+    "steps": [
+      "Cook the penne in salted water; save a cup of the water before draining.",
+      "Season the chicken with salt and sear in hot olive oil 4 minutes per side; slice.",
+      "Toss the pasta with the pesto and a splash of pasta water until glossy.",
+      "Add the chicken and tomatoes and serve with parmesan."
+    ],
+    "steps_es": [
+      "Cocina el penne en agua con sal; guarda una taza del agua antes de escurrir.",
+      "Sazona el pollo con sal y séllalo en aceite de oliva caliente 4 minutos por lado; córtalo en tajadas.",
+      "Mezcla la pasta con el pesto y un chorrito del agua de cocción hasta que brille.",
+      "Agrega el pollo y los tomates y sirve con parmesano."
+    ],
+    "ingredients": [
+      {
+        "id": "pasta_penne",
+        "qty": 16
+      },
+      {
+        "id": "chicken_breast",
+        "qty": 1.25
+      },
+      {
+        "id": "pesto",
+        "qty": 6
+      },
+      {
+        "id": "cherry_tomato",
+        "qty": 1,
+        "note": "halved",
+        "note_es": "a la mitad"
+      },
+      {
+        "id": "parmesan",
+        "qty": 0.5,
+        "note": "grated",
+        "note_es": "rallado"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      }
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 18,
+    "photo_url": "https://images.unsplash.com/photo-1767065583952-e932c354bca6",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/cheesy-lasagna-being-lifted-with-a-fork--BHFKS0kk-U"
+    }
+  },
+  {
+    "slug": "white-bean-kale-soup",
+    "name": "White Bean and Kale Soup",
+    "meal_type": "dinner",
+    "name_es": "Sopa de porotos blancos y kale",
+    "diet_tags": [
+      "vegetarian",
+      "vegan",
+      "gluten_free",
+      "dairy_free"
+    ],
+    "servings": 4,
+    "prep_minutes": 35,
+    "batch_friendly": true,
+    "description": "A garlicky bean and kale soup in tomato broth — ribollita-style.",
+    "description_es": "Sopa de porotos y kale al ajo en caldo de tomate: estilo ribollita.",
+    "steps": [
+      "Sauté the onion and carrot in olive oil 5 minutes, add the garlic and cook 1 minute.",
+      "Add the tomatoes, broth and beans; simmer 15 minutes, mashing a few beans.",
+      "Stir in the kale and cook 5 minutes until tender.",
+      "Season with salt and serve with olive oil on top."
+    ],
+    "steps_es": [
+      "Saltea la cebolla y la zanahoria en aceite de oliva 5 minutos, agrega el ajo y cocina 1 minuto.",
+      "Suma el tomate, el caldo y los porotos; cocina 15 minutos a fuego suave, machacando algunos porotos.",
+      "Incorpora el kale y cocina 5 minutos hasta que esté tierno.",
+      "Sazona con sal y sirve con un chorrito de aceite de oliva."
+    ],
+    "ingredients": [
+      {
+        "id": "white_beans",
+        "qty": 3,
+        "note": "cans, drained",
+        "note_es": "latas, escurridas"
+      },
+      {
+        "id": "kale",
+        "qty": 1,
+        "note": "leaves stripped and chopped",
+        "note_es": "hojas sin tallo, picadas"
+      },
+      {
+        "id": "diced_tomatoes",
+        "qty": 1
+      },
+      {
+        "id": "vegetable_broth",
+        "qty": 6,
+        "note": "carton, 4 cups",
+        "note_es": "caja, 4 tazas"
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "carrot",
+        "qty": 2,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 3
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      }
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 18,
+    "photo_url": "https://images.unsplash.com/photo-1721314678207-8b7bd43e677b",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/a-plate-of-food-on-a-red-and-white-table-cloth-xGUGTo8779I"
+    }
+  },
+  {
+    "slug": "falafel-style-chickpea-patties",
+    "name": "Chickpea Patties with Yogurt",
+    "meal_type": "dinner",
+    "name_es": "Tortitas de garbanzo con yogur",
+    "diet_tags": [
+      "vegetarian",
+      "dairy_free",
+      "vegan"
+    ],
+    "servings": 4,
+    "prep_minutes": 30,
+    "batch_friendly": true,
+    "description": "Crispy falafel-style chickpea patties in pitas with lemon yogurt.",
+    "description_es": "Tortitas crocantes de garbanzo estilo falafel en pitas con yogur al limón.",
+    "steps": [
+      "Mash the chickpeas with the garlic, cumin, flour and salt into a chunky paste; form 8 patties.",
+      "Fry in hot oil 3 to 4 minutes per side until crisp and golden.",
+      "Whisk the tahini with the lemon juice and 2 tablespoons of water into a creamy sauce; season with salt.",
+      "Serve the patties in pitas with the sauce, tomato and cucumber."
+    ],
+    "steps_es": [
+      "Machaca los garbanzos con el ajo, el comino, la harina y la sal hasta formar una pasta rústica; arma 8 tortitas.",
+      "Fríelas en aceite caliente de 3 a 4 minutos por lado hasta que estén crocantes y doradas.",
+      "Bate el tahini con el jugo de limón y 2 cucharadas de agua hasta tener una salsa cremosa; sazona con sal.",
+      "Sirve las hamburguesitas en pitas con la salsa, el tomate y el pepino."
+    ],
+    "ingredients": [
+      {
+        "id": "chickpeas",
+        "qty": 3,
+        "note": "cans, drained",
+        "note_es": "latas, escurridos"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "cumin",
+        "qty": 1
+      },
+      {
+        "id": "flour",
+        "qty": 0.19
+      },
+      {
+        "id": "pita",
+        "qty": 4,
+        "note": "halved",
+        "note_es": "a la mitad"
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "note": "juiced",
+        "note_es": "el jugo"
+      },
+      {
+        "id": "tomato",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "cucumber",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 4
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      },
+      {
+        "id": "tahini",
+        "qty": 3
+      }
+    ],
+    "equipment": [
+      "stovetop"
+    ],
+    "active_minutes": 25,
+    "tip": "Chill the mixture 15 minutes before shaping — the patties hold together much better.",
+    "tip_es": "Enfría la mezcla 15 minutos antes de armar: las tortitas se sostienen mucho mejor.",
+    "photo_url": "https://images.unsplash.com/photo-1603360946369-dc9bb6258143",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/grilled-meat-skewers-with-fries-WHtVB-RiW2I"
+    }
   }
- },
- {
-  "slug": "garlic-butter-shrimp-pasta",
-  "name": "Garlic Butter Shrimp Pasta",
-  "meal_type": "dinner",
-  "name_es": "Pasta de camarones al ajo",
-  "diet_tags": [
-   "pescatarian",
-   "high_protein"
-  ],
-  "servings": 4,
-  "prep_minutes": 20,
-  "batch_friendly": false,
-  "description": "Spaghetti with shrimp seared in garlic butter, lemon and parsley.",
-  "description_es": "Espagueti con camarones sellados en manteca de ajo, limón y perejil.",
-  "steps": [
-   "Cook the spaghetti in salted water; save a cup of the water before draining.",
-   "Sear the shrimp in hot olive oil 2 minutes per side until pink; transfer to a plate.",
-   "Melt the butter with the garlic and red pepper flakes 1 minute.",
-   "Return the shrimp with the pasta, lemon juice and a splash of pasta water; toss 1 minute.",
-   "Finish with parsley and serve."
-  ],
-  "steps_es": [
-   "Cocina el espagueti en agua con sal; guarda una taza del agua antes de escurrir.",
-   "Sella los camarones en aceite de oliva caliente 2 minutos por lado hasta que estén rosados; reserva en un plato.",
-   "Derrite la manteca con el ajo y el ají molido 1 minuto.",
-   "Vuelve a poner los camarones con la pasta, el jugo de limón y un chorrito del agua de cocción; mezcla 1 minuto.",
-   "Termina con perejil y sirve."
-  ],
-  "ingredients": [
-   {
-    "id": "pasta_spaghetti",
-    "qty": 16
-   },
-   {
-    "id": "shrimp",
-    "qty": 1,
-    "note": "peeled and deveined",
-    "note_es": "pelados y limpios"
-   },
-   {
-    "id": "butter",
-    "qty": 4
-   },
-   {
-    "id": "garlic",
-    "qty": 4,
-    "note": "thinly sliced",
-    "note_es": "en láminas"
-   },
-   {
-    "id": "lemon",
-    "qty": 1,
-    "note": "juiced",
-    "note_es": "el jugo"
-   },
-   {
-    "id": "red_pepper_flakes",
-    "qty": 0.5
-   },
-   {
-    "id": "parsley",
-    "qty": 0.25,
-    "note": "chopped",
-    "note_es": "picado"
-   },
-   {
-    "id": "olive_oil",
-    "qty": 2
-   },
-   {
-    "id": "salt",
-    "qty": 0.75
-   }
-  ],
-  "equipment": [
-   "stovetop"
-  ],
-  "active_minutes": 15,
-  "photo_url": "https://images.unsplash.com/photo-1781086917723-dbe2d7ef85dc",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/a-bowl-of-creamy-shrimp-pasta-with-parsley-abi8eXOlUUg"
-  }
- },
- {
-  "slug": "easy-risotto-mushroom",
-  "name": "Easy Mushroom Risotto",
-  "meal_type": "dinner",
-  "name_es": "Risotto fácil de champiñones",
-  "diet_tags": [
-   "vegetarian",
-   "gluten_free"
-  ],
-  "servings": 4,
-  "prep_minutes": 45,
-  "batch_friendly": false,
-  "description": "Creamy stovetop risotto with golden mushrooms and parmesan.",
-  "description_es": "Risotto cremoso a la sartén con champiñones dorados y parmesano.",
-  "steps": [
-   "Warm the broth in a pot and keep it at a low simmer.",
-   "Sear the mushrooms in olive oil 5 minutes until golden; set aside.",
-   "Soften the onion in butter 4 minutes, add the rice and toast 1 minute.",
-   "Add broth one ladle at a time, stirring, letting each absorb before the next — about 20 minutes until creamy and al dente.",
-   "Stir in the mushrooms and parmesan, season with salt and serve."
-  ],
-  "steps_es": [
-   "Calienta el caldo en una olla y mantenlo a fuego suave.",
-   "Dora los champiñones en aceite de oliva 5 minutos hasta que estén dorados; reserva.",
-   "Ablanda la cebolla en manteca 4 minutos, agrega el arroz y tuéstalo 1 minuto.",
-   "Suma el caldo de a cucharón, revolviendo, dejando que cada uno se absorba antes del siguiente: unos 20 minutos hasta que esté cremoso y al dente.",
-   "Agrega los champiñones y el parmesano, sazona con sal y sirve."
-  ],
-  "ingredients": [
-   {
-    "id": "rice_white",
-    "qty": 1.5,
-    "note": "or arborio if you have it",
-    "note_es": "o arborio si tienes"
-   },
-   {
-    "id": "mushroom",
-    "qty": 3,
-    "note": "sliced",
-    "note_es": "en láminas"
-   },
-   {
-    "id": "vegetable_broth",
-    "qty": 4,
-    "note": "carton, 4 cups",
-    "note_es": "caja, 4 tazas"
-   },
-   {
-    "id": "onion_yellow",
-    "qty": 1,
-    "note": "finely diced",
-    "note_es": "en cubitos chicos"
-   },
-   {
-    "id": "butter",
-    "qty": 3
-   },
-   {
-    "id": "parmesan",
-    "qty": 0.75,
-    "note": "grated",
-    "note_es": "rallado"
-   },
-   {
-    "id": "olive_oil",
-    "qty": 2
-   },
-   {
-    "id": "salt",
-    "qty": 0.5
-   }
-  ],
-  "equipment": [
-   "stovetop"
-  ],
-  "active_minutes": 35,
-  "tip": "You don't have to stir constantly — just often, and keep the broth warm.",
-  "tip_es": "No hace falta revolver sin parar: solo seguido, y mantén el caldo tibio.",
-  "photo_url": "https://images.unsplash.com/photo-1767974971366-6f8483512f84",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/a-small-bowl-of-food-with-green-garnish-vZjNuZmHNVU"
-  }
- },
- {
-  "slug": "gnocchi-pesto",
-  "name": "Gnocchi with Pesto",
-  "meal_type": "dinner",
-  "name_es": "Ñoquis con pesto",
-  "diet_tags": [
-   "vegetarian"
-  ],
-  "servings": 4,
-  "prep_minutes": 15,
-  "batch_friendly": false,
-  "description": "Pillowy gnocchi tossed in basil pesto with cherry tomatoes and parmesan.",
-  "description_es": "Ñoquis suaves mezclados con pesto de albahaca, tomates cherry y parmesano.",
-  "steps": [
-   "Boil the gnocchi in salted water; they float when done, about 2 to 3 minutes.",
-   "Sauté the cherry tomatoes in olive oil 3 minutes until they slump.",
-   "Toss the gnocchi with the pesto and a splash of the cooking water until glossy.",
-   "Add the tomatoes and serve with parmesan on top."
-  ],
-  "steps_es": [
-   "Hierve los ñoquis en agua con sal; suben a la superficie cuando están listos, unos 2 a 3 minutos.",
-   "Saltea los tomates cherry en aceite de oliva 3 minutos hasta que se ablanden.",
-   "Mezcla los ñoquis con el pesto y un chorrito del agua de cocción hasta que brillen.",
-   "Agrega los tomates y sirve con parmesano por encima."
-  ],
-  "ingredients": [
-   {
-    "id": "gnocchi",
-    "qty": 32,
-    "note": "two 16 oz packs",
-    "note_es": "dos paquetes de 16 oz"
-   },
-   {
-    "id": "pesto",
-    "qty": 6
-   },
-   {
-    "id": "cherry_tomato",
-    "qty": 2,
-    "note": "halved",
-    "note_es": "a la mitad"
-   },
-   {
-    "id": "parmesan",
-    "qty": 0.5,
-    "note": "grated",
-    "note_es": "rallado"
-   },
-   {
-    "id": "olive_oil",
-    "qty": 1
-   },
-   {
-    "id": "salt",
-    "qty": 0.5
-   }
-  ],
-  "equipment": [
-   "stovetop"
-  ],
-  "active_minutes": 12,
-  "photo_url": "https://images.unsplash.com/photo-1786918518069-5794f204a520",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/caprese-salad-stack-with-pesto-UNxf3gqxs7s"
-  }
- },
- {
-  "slug": "baked-ziti-style-penne",
-  "name": "Baked Ziti-Style Penne",
-  "meal_type": "dinner",
-  "name_es": "Penne al horno estilo ziti",
-  "diet_tags": [
-   "vegetarian"
-  ],
-  "servings": 4,
-  "prep_minutes": 45,
-  "batch_friendly": true,
-  "description": "Pasta baked under marinara, ricotta and a golden mozzarella top.",
-  "description_es": "Pasta horneada con marinara, ricota y una tapa dorada de mozzarella.",
-  "steps": [
-   "Heat the oven to {375F} and cook the penne 2 minutes less than the package; drain.",
-   "Stir the pasta with the marinara and the ricotta in the baking dish.",
-   "Scatter the mozzarella and parmesan over the top.",
-   "Bake 25 minutes until bubbly and browned in spots; rest 5 minutes and serve."
-  ],
-  "steps_es": [
-   "Calienta el horno a {375F} y cocina el penne 2 minutos menos de lo que dice el paquete; escúrrelo.",
-   "Mezcla la pasta con la marinara y la ricota en la fuente para horno.",
-   "Esparce la mozzarella y el parmesano por encima.",
-   "Hornea 25 minutos hasta que burbujee y se dore en partes; deja reposar 5 minutos y sirve."
-  ],
-  "ingredients": [
-   {
-    "id": "pasta_penne",
-    "qty": 16
-   },
-   {
-    "id": "marinara",
-    "qty": 2
-   },
-   {
-    "id": "ricotta",
-    "qty": 1
-   },
-   {
-    "id": "mozzarella",
-    "qty": 2,
-    "note": "shredded",
-    "note_es": "rallada"
-   },
-   {
-    "id": "parmesan",
-    "qty": 0.5,
-    "note": "grated",
-    "note_es": "rallado"
-   },
-   {
-    "id": "salt",
-    "qty": 0.5
-   }
-  ],
-  "equipment": [
-   "oven",
-   "stovetop"
-  ],
-  "active_minutes": 15,
-  "photo_url": "https://images.unsplash.com/photo-1777333033313-e6d72e7fadc5",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/a-fork-lifts-penne-pasta-coated-in-red-sauce-0CHWRa_ZqJ4"
-  }
- },
- {
-  "slug": "sausage-peppers-penne",
-  "name": "Sausage and Peppers Pasta",
-  "meal_type": "dinner",
-  "name_es": "Pasta con salchicha y morrones",
-  "diet_tags": [
-   "high_protein"
-  ],
-  "servings": 4,
-  "prep_minutes": 30,
-  "batch_friendly": false,
-  "description": "Italian sausage with peppers and onion in a light tomato sauce over penne.",
-  "description_es": "Salchicha italiana con morrones y cebolla en salsa liviana de tomate sobre penne.",
-  "steps": [
-   "Cook the penne in salted water; save a cup of the water before draining.",
-   "Brown the sausage in a large skillet 5 minutes, breaking it up; transfer to a plate.",
-   "Sauté the peppers and onion in the same pan 6 minutes until soft, add the garlic 1 minute.",
-   "Return the sausage with the diced tomatoes; simmer 8 minutes.",
-   "Toss with the pasta and a splash of its water; serve with parmesan."
-  ],
-  "steps_es": [
-   "Cocina el penne en agua con sal; guarda una taza del agua antes de escurrir.",
-   "Dora la salchicha en una sartén grande 5 minutos desmenuzándola; reserva en un plato.",
-   "Saltea los morrones y la cebolla en la misma sartén 6 minutos hasta que estén blandos, agrega el ajo 1 minuto.",
-   "Vuelve a poner la salchicha con el tomate en cubos; cocina 8 minutos a fuego suave.",
-   "Mezcla con la pasta y un chorrito de su agua; sirve con parmesano."
-  ],
-  "ingredients": [
-   {
-    "id": "sausage_italian",
-    "qty": 1,
-    "note": "casings removed",
-    "note_es": "sin la piel"
-   },
-   {
-    "id": "pasta_penne",
-    "qty": 16
-   },
-   {
-    "id": "bell_pepper",
-    "qty": 2,
-    "note": "sliced",
-    "note_es": "en tiras"
-   },
-   {
-    "id": "onion_yellow",
-    "qty": 1,
-    "note": "sliced",
-    "note_es": "en tiras"
-   },
-   {
-    "id": "garlic",
-    "qty": 3,
-    "note": "minced",
-    "note_es": "picado"
-   },
-   {
-    "id": "diced_tomatoes",
-    "qty": 1
-   },
-   {
-    "id": "parmesan",
-    "qty": 0.5,
-    "note": "grated",
-    "note_es": "rallado"
-   },
-   {
-    "id": "salt",
-    "qty": 0.5
-   }
-  ],
-  "equipment": [
-   "stovetop"
-  ],
-  "active_minutes": 25,
-  "photo_url": "https://images.unsplash.com/photo-1612929633738-8fe44f7ec841",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/pasta-dish-on-black-plate-pbc2wXbQYpI"
-  }
- },
- {
-  "slug": "greek-chicken-bowls",
-  "name": "Greek Chicken Bowls",
-  "meal_type": "dinner",
-  "name_es": "Bowls griegos de pollo",
-  "diet_tags": [
-   "gluten_free",
-   "high_protein"
-  ],
-  "servings": 4,
-  "prep_minutes": 30,
-  "batch_friendly": true,
-  "description": "Lemon-oregano chicken over rice with cucumber, tomato, olives and feta.",
-  "description_es": "Pollo al limón y orégano sobre arroz con pepino, tomate, aceitunas y feta.",
-  "steps": [
-   "Cook the rice according to the package directions.",
-   "Toss the chicken with the olive oil, lemon juice, oregano, garlic and salt; rest 10 minutes.",
-   "Sear in a hot skillet 5 to 6 minutes until golden and cooked through; slice.",
-   "Serve over rice with cucumber, tomato, olives, feta and a drizzle of olive oil."
-  ],
-  "steps_es": [
-   "Cocina el arroz según las instrucciones del paquete.",
-   "Mezcla el pollo con el aceite de oliva, jugo de limón, orégano, ajo y sal; déjalo 10 minutos.",
-   "Séllalo en una sartén caliente de 5 a 6 minutos hasta que esté dorado y listo; córtalo en tajadas.",
-   "Sirve sobre arroz con pepino, tomate, aceitunas, feta y un chorrito de aceite de oliva."
-  ],
-  "ingredients": [
-   {
-    "id": "chicken_thigh",
-    "qty": 1.5
-   },
-   {
-    "id": "rice_white",
-    "qty": 1.5
-   },
-   {
-    "id": "lemon",
-    "qty": 1,
-    "note": "juiced",
-    "note_es": "el jugo"
-   },
-   {
-    "id": "oregano",
-    "qty": 1
-   },
-   {
-    "id": "garlic",
-    "qty": 2,
-    "note": "minced",
-    "note_es": "picado"
-   },
-   {
-    "id": "cucumber",
-    "qty": 1,
-    "note": "diced",
-    "note_es": "en cubitos"
-   },
-   {
-    "id": "cherry_tomato",
-    "qty": 1,
-    "note": "halved",
-    "note_es": "a la mitad"
-   },
-   {
-    "id": "olives",
-    "qty": 0.5
-   },
-   {
-    "id": "feta",
-    "qty": 3,
-    "note": "crumbled",
-    "note_es": "desmenuzado"
-   },
-   {
-    "id": "olive_oil",
-    "qty": 3
-   },
-   {
-    "id": "salt",
-    "qty": 0.75
-   }
-  ],
-  "equipment": [
-   "stovetop"
-  ],
-  "active_minutes": 20,
-  "photo_url": "https://images.unsplash.com/photo-1782177261793-823b94aa0555",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/outdoor-table-with-breakfast-fresh-fruit-and-iced-coffee-0jVZkTGmRNs"
-  }
- },
- {
-  "slug": "greek-turkey-pitas",
-  "name": "Greek Turkey Pitas",
-  "meal_type": "dinner",
-  "name_es": "Pitas griegas de pavo",
-  "diet_tags": [
-   "high_protein"
-  ],
-  "servings": 4,
-  "prep_minutes": 25,
-  "batch_friendly": false,
-  "description": "Spiced ground turkey in warm pitas with cucumber-yogurt sauce and salad.",
-  "description_es": "Pavo molido especiado en pitas tibias con salsa de yogur y pepino y ensalada.",
-  "steps": [
-   "Stir the yogurt with half the garlic, the lemon juice, cucumber and a pinch of salt for the sauce.",
-   "Cook the turkey in hot oil 6 minutes, breaking it up; add the remaining garlic, cumin, oregano and salt and cook 2 minutes.",
-   "Warm the pitas 20 seconds per side in a dry skillet.",
-   "Fill each pita with turkey, sauce, tomato and onion."
-  ],
-  "steps_es": [
-   "Mezcla el yogur con la mitad del ajo, el jugo de limón, el pepino y una pizca de sal para la salsa.",
-   "Cocina el pavo en aceite caliente 6 minutos desmenuzándolo; agrega el resto del ajo, comino, orégano y sal y cocina 2 minutos.",
-   "Calienta las pitas 20 segundos por lado en una sartén seca.",
-   "Rellena cada pita con el pavo, la salsa, el tomate y la cebolla."
-  ],
-  "ingredients": [
-   {
-    "id": "ground_turkey",
-    "qty": 1.25
-   },
-   {
-    "id": "pita",
-    "qty": 4,
-    "note": "halved to make pockets",
-    "note_es": "a la mitad para hacer bolsillos"
-   },
-   {
-    "id": "greek_yogurt",
-    "qty": 0.75
-   },
-   {
-    "id": "cucumber",
-    "qty": 0.5,
-    "note": "grated and squeezed",
-    "note_es": "rallado y escurrido"
-   },
-   {
-    "id": "garlic",
-    "qty": 3,
-    "note": "minced",
-    "note_es": "picado"
-   },
-   {
-    "id": "lemon",
-    "qty": 0.5,
-    "note": "juiced",
-    "note_es": "el jugo"
-   },
-   {
-    "id": "cumin",
-    "qty": 0.5
-   },
-   {
-    "id": "oregano",
-    "qty": 1
-   },
-   {
-    "id": "tomato",
-    "qty": 1,
-    "note": "diced",
-    "note_es": "en cubitos"
-   },
-   {
-    "id": "onion_red",
-    "qty": 0.5,
-    "note": "thinly sliced",
-    "note_es": "en plumas"
-   },
-   {
-    "id": "olive_oil",
-    "qty": 1
-   },
-   {
-    "id": "salt",
-    "qty": 0.75
-   }
-  ],
-  "equipment": [
-   "stovetop"
-  ],
-  "active_minutes": 20,
-  "photo_url": "https://images.unsplash.com/photo-1777716003985-68fed08d0c7e",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/a-platter-of-grilled-meats-with-rice-and-pita-bread-2j17J8psiTw"
-  }
- },
- {
-  "slug": "lemon-chicken-orzo",
-  "name": "Lemon Chicken Orzo",
-  "meal_type": "dinner",
-  "name_es": "Orzo con pollo al limón",
-  "diet_tags": [
-   "high_protein"
-  ],
-  "servings": 4,
-  "prep_minutes": 30,
-  "batch_friendly": false,
-  "description": "One-pan orzo with chicken, lemon, spinach and feta.",
-  "description_es": "Orzo en una sola sartén con pollo, limón, espinaca y feta.",
-  "steps": [
-   "Season the chicken with salt and sear in hot olive oil 4 minutes per side until golden; set aside.",
-   "Toast the orzo in the same pan 2 minutes, add the garlic and cook 30 seconds.",
-   "Pour in the broth and simmer 8 minutes, stirring, until the orzo is tender.",
-   "Return the chicken to the pan, stir in the lemon juice, spinach and feta and cook 2 minutes until the chicken is cooked through; slice and serve on top."
-  ],
-  "steps_es": [
-   "Sazona el pollo con sal y séllalo en aceite de oliva caliente 4 minutos por lado hasta dorarlo; reserva.",
-   "Tuesta el orzo en la misma sartén 2 minutos, agrega el ajo y cocina 30 segundos.",
-   "Vierte el caldo y cocina a fuego suave 8 minutos revolviendo, hasta que el orzo esté tierno.",
-   "Vuelve a colocar el pollo en la sartén, agrega el jugo de limón, la espinaca y el feta y cocina 2 minutos hasta que el pollo esté bien cocido; córtalo en tajadas y sirve encima."
-  ],
-  "ingredients": [
-   {
-    "id": "chicken_breast",
-    "qty": 1.25
-   },
-   {
-    "id": "orzo",
-    "qty": 8
-   },
-   {
-    "id": "chicken_broth",
-    "qty": 2,
-    "note": "about 2.5 cups, partial carton",
-    "note_es": "unas 2.5 tazas"
-   },
-   {
-    "id": "lemon",
-    "qty": 1,
-    "note": "juiced",
-    "note_es": "el jugo"
-   },
-   {
-    "id": "spinach",
-    "qty": 3
-   },
-   {
-    "id": "feta",
-    "qty": 3,
-    "note": "crumbled",
-    "note_es": "desmenuzado"
-   },
-   {
-    "id": "garlic",
-    "qty": 2,
-    "note": "minced",
-    "note_es": "picado"
-   },
-   {
-    "id": "olive_oil",
-    "qty": 2
-   },
-   {
-    "id": "salt",
-    "qty": 0.75
-   }
-  ],
-  "equipment": [
-   "stovetop"
-  ],
-  "active_minutes": 22,
-  "photo_url": "https://images.unsplash.com/photo-1757972367438-581ad5e299f5",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/creamy-gnocchi-with-chicken-and-herbs-JQMGHY9KLFU"
-  }
- },
- {
-  "slug": "caprese-chicken-skillet",
-  "name": "Caprese Chicken Skillet",
-  "meal_type": "dinner",
-  "name_es": "Pollo caprese en sartén",
-  "diet_tags": [
-   "gluten_free",
-   "low_carb",
-   "high_protein"
-  ],
-  "servings": 4,
-  "prep_minutes": 30,
-  "batch_friendly": false,
-  "description": "Seared chicken topped with tomato, mozzarella and basil, finished under the broiler.",
-  "description_es": "Pollo sellado cubierto con tomate, mozzarella y albahaca, gratinado al grill.",
-  "steps": [
-   "Heat the oven broiler. Season the chicken with salt and Italian seasoning.",
-   "Sear in hot olive oil in an oven-safe skillet 4 minutes per side until golden and nearly cooked.",
-   "Top each piece with tomato slices and mozzarella.",
-   "Broil 3 minutes until the cheese melts and bubbles.",
-   "Serve with basil and a drizzle of balsamic."
-  ],
-  "steps_es": [
-   "Calienta el grill del horno. Sazona el pollo con sal y condimento italiano.",
-   "Séllalo en aceite de oliva caliente en una sartén apta para horno 4 minutos por lado hasta que esté dorado.",
-   "Cubre cada pieza con rodajas de tomate y mozzarella.",
-   "Cocina al grill 3 minutos hasta que el queso se derrita y burbujee.",
-   "Sirve con albahaca y un chorrito de balsámico."
-  ],
-  "ingredients": [
-   {
-    "id": "chicken_breast",
-    "qty": 1.5
-   },
-   {
-    "id": "tomato",
-    "qty": 2,
-    "note": "sliced",
-    "note_es": "en rodajas"
-   },
-   {
-    "id": "mozzarella",
-    "qty": 1.5,
-    "note": "shredded or sliced",
-    "note_es": "rallada o en rodajas"
-   },
-   {
-    "id": "basil",
-    "qty": 0.25,
-    "note": "leaves",
-    "note_es": "hojas"
-   },
-   {
-    "id": "vinegar_balsamic",
-    "qty": 2
-   },
-   {
-    "id": "italian_seasoning",
-    "qty": 1
-   },
-   {
-    "id": "olive_oil",
-    "qty": 2
-   },
-   {
-    "id": "salt",
-    "qty": 0.75
-   }
-  ],
-  "equipment": [
-   "oven",
-   "stovetop"
-  ],
-  "active_minutes": 18,
-  "photo_url": "https://images.unsplash.com/photo-1769458313937-b5ad8f84942e",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/caprese-salad-with-fresh-tomatoes-mozzarella-and-basil-vJ-qtXoD-V8"
-  }
- },
- {
-  "slug": "minestrone-easy",
-  "name": "Easy Minestrone",
-  "meal_type": "dinner",
-  "name_es": "Minestrone fácil",
-  "diet_tags": [
-   "vegetarian",
-   "vegan",
-   "dairy_free"
-  ],
-  "servings": 4,
-  "prep_minutes": 40,
-  "batch_friendly": true,
-  "description": "A hearty tomato-bean-vegetable soup with small pasta.",
-  "description_es": "Sopa abundante de tomate, porotos y verduras con fideos chicos.",
-  "steps": [
-   "Sauté the onion, carrot and celery in olive oil 6 minutes until soft, add the garlic and cook 1 minute.",
-   "Add the tomatoes, broth, beans, oregano and a pinch of salt; simmer 15 minutes.",
-   "Add the pasta and cook 8 minutes until tender.",
-   "Stir in the spinach until it wilts, season and serve."
-  ],
-  "steps_es": [
-   "Saltea la cebolla, zanahoria y apio en aceite de oliva 6 minutos hasta que estén blandos, agrega el ajo y cocina 1 minuto.",
-   "Suma el tomate, el caldo, los porotos, el orégano y una pizca de sal; cocina 15 minutos a fuego suave.",
-   "Agrega los fideos y cocina 8 minutos hasta que estén tiernos.",
-   "Incorpora la espinaca hasta que se ablande, sazona y sirve."
-  ],
-  "ingredients": [
-   {
-    "id": "onion_yellow",
-    "qty": 1,
-    "note": "diced",
-    "note_es": "en cubitos"
-   },
-   {
-    "id": "carrot",
-    "qty": 2,
-    "note": "diced",
-    "note_es": "en cubitos"
-   },
-   {
-    "id": "celery",
-    "qty": 2,
-    "note": "diced",
-    "note_es": "en cubitos"
-   },
-   {
-    "id": "garlic",
-    "qty": 3,
-    "note": "minced",
-    "note_es": "picado"
-   },
-   {
-    "id": "diced_tomatoes",
-    "qty": 2
-   },
-   {
-    "id": "vegetable_broth",
-    "qty": 6,
-    "note": "carton, 4 cups",
-    "note_es": "caja, 4 tazas"
-   },
-   {
-    "id": "kidney_beans",
-    "qty": 1,
-    "note": "drained",
-    "note_es": "escurridos"
-   },
-   {
-    "id": "pasta_elbow",
-    "qty": 4
-   },
-   {
-    "id": "spinach",
-    "qty": 2
-   },
-   {
-    "id": "oregano",
-    "qty": 1
-   },
-   {
-    "id": "olive_oil",
-    "qty": 2
-   },
-   {
-    "id": "salt",
-    "qty": 0.75
-   }
-  ],
-  "equipment": [
-   "stovetop"
-  ],
-  "active_minutes": 20,
-  "photo_url": "https://images.unsplash.com/photo-1725483990685-820291c0fca1",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/a-pot-of-vegetable-soup-sitting-on-a-stove-top-TDKvBUSkcTs"
-  }
- },
- {
-  "slug": "polenta-mushroom-ragu",
-  "name": "Polenta with Mushroom Ragu",
-  "meal_type": "dinner",
-  "name_es": "Polenta con ragú de champiñones",
-  "diet_tags": [
-   "vegetarian",
-   "vegan",
-   "gluten_free",
-   "dairy_free"
-  ],
-  "servings": 4,
-  "prep_minutes": 35,
-  "batch_friendly": true,
-  "description": "Creamy polenta topped with a rich tomato-mushroom ragu.",
-  "description_es": "Polenta cremosa cubierta con un rico ragú de tomate y champiñones.",
-  "steps": [
-   "Sear the mushrooms in olive oil 6 minutes until browned; add the onion and cook 4 minutes.",
-   "Stir in the garlic and tomato paste 1 minute, add the tomatoes and simmer 15 minutes until thick; season with salt.",
-   "Meanwhile cook the polenta in boiling salted water following the package ratio (about 4 cups of water per cup of polenta), simmering and whisking until thick.",
-   "Serve the ragu over the polenta."
-  ],
-  "steps_es": [
-   "Dora los champiñones en aceite de oliva 6 minutos hasta que estén dorados; agrega la cebolla y cocina 4 minutos.",
-   "Suma el ajo y la pasta de tomate 1 minuto, agrega el tomate y cocina 15 minutos a fuego suave hasta que espese; sazona con sal.",
-   "Mientras tanto cocina la polenta en agua hirviendo con sal siguiendo la proporción del paquete (unas 4 tazas de agua por taza de polenta), hirviendo a fuego lento y batiendo hasta que espese.",
-   "Sirve el ragú sobre la polenta."
-  ],
-  "ingredients": [
-   {
-    "id": "polenta",
-    "qty": 1,
-    "note": "with 4 cups water",
-    "note_es": "con 4 tazas de agua"
-   },
-   {
-    "id": "mushroom",
-    "qty": 3,
-    "note": "sliced",
-    "note_es": "en láminas"
-   },
-   {
-    "id": "onion_yellow",
-    "qty": 1,
-    "note": "diced",
-    "note_es": "en cubitos"
-   },
-   {
-    "id": "garlic",
-    "qty": 3,
-    "note": "minced",
-    "note_es": "picado"
-   },
-   {
-    "id": "tomato_paste",
-    "qty": 2
-   },
-   {
-    "id": "crushed_tomatoes",
-    "qty": 1
-   },
-   {
-    "id": "olive_oil",
-    "qty": 3
-   },
-   {
-    "id": "salt",
-    "qty": 0.75
-   }
-  ],
-  "equipment": [
-   "stovetop"
-  ],
-  "active_minutes": 30,
-  "photo_url": "https://images.unsplash.com/photo-1778851182989-ea3f9d2d280b",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/polenta-with-creamy-spinach-and-tomato-sauce-42X1cpCtSQA"
-  }
- },
- {
-  "slug": "tuscan-chicken-pasta",
-  "name": "Tuscan-Style Chicken Pasta",
-  "meal_type": "dinner",
-  "name_es": "Pasta con pollo toscano",
-  "diet_tags": [
-   "high_protein"
-  ],
-  "servings": 4,
-  "prep_minutes": 30,
-  "batch_friendly": false,
-  "description": "Chicken in a creamy garlic sauce with spinach and tomatoes over pasta.",
-  "description_es": "Pollo en salsa cremosa de ajo con espinaca y tomates sobre pasta.",
-  "steps": [
-   "Cook the pasta in salted water; save a cup of the water before draining.",
-   "Season the chicken with salt and Italian seasoning, sear in olive oil 4 minutes per side; slice.",
-   "Sauté the garlic 1 minute, add the cream and tomatoes; simmer 4 minutes until slightly thick.",
-   "Stir in the spinach until wilted, return the chicken and pasta, toss and serve with parmesan."
-  ],
-  "steps_es": [
-   "Cocina la pasta en agua con sal; guarda una taza del agua antes de escurrir.",
-   "Sazona el pollo con sal y condimento italiano, séllalo en aceite de oliva 4 minutos por lado; córtalo en tajadas.",
-   "Saltea el ajo 1 minuto, agrega la crema y los tomates; cocina 4 minutos hasta que espese un poco.",
-   "Suma la espinaca hasta que se ablande, vuelve a poner el pollo y la pasta, mezcla y sirve con parmesano."
-  ],
-  "ingredients": [
-   {
-    "id": "pasta_penne",
-    "qty": 12
-   },
-   {
-    "id": "chicken_breast",
-    "qty": 1.25
-   },
-   {
-    "id": "heavy_cream",
-    "qty": 0.75
-   },
-   {
-    "id": "cherry_tomato",
-    "qty": 1,
-    "note": "halved",
-    "note_es": "a la mitad"
-   },
-   {
-    "id": "spinach",
-    "qty": 3
-   },
-   {
-    "id": "garlic",
-    "qty": 3,
-    "note": "minced",
-    "note_es": "picado"
-   },
-   {
-    "id": "parmesan",
-    "qty": 0.5,
-    "note": "grated",
-    "note_es": "rallado"
-   },
-   {
-    "id": "italian_seasoning",
-    "qty": 1
-   },
-   {
-    "id": "olive_oil",
-    "qty": 2
-   },
-   {
-    "id": "salt",
-    "qty": 0.75
-   }
-  ],
-  "equipment": [
-   "stovetop"
-  ],
-  "active_minutes": 25,
-  "photo_url": "https://images.unsplash.com/photo-1781802768049-c14dd5b37bf3",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/pasta-sauce-and-hot-dogs-cooking-on-a-kitchen-stove-WpqGmuCovwg"
-  }
- },
- {
-  "slug": "ratatouille-rice",
-  "name": "Ratatouille over Rice",
-  "meal_type": "dinner",
-  "name_es": "Ratatouille sobre arroz",
-  "diet_tags": [
-   "vegetarian",
-   "vegan",
-   "gluten_free",
-   "dairy_free"
-  ],
-  "servings": 4,
-  "prep_minutes": 45,
-  "batch_friendly": true,
-  "description": "Stewed eggplant, zucchini and tomatoes in herbs — simple and colorful.",
-  "description_es": "Berenjena, calabacín y tomate guisados en hierbas: simple y colorido.",
-  "steps": [
-   "Cook the rice according to the package directions.",
-   "Sauté the eggplant in olive oil 6 minutes until golden; set aside.",
-   "Add the onion and peppers 5 minutes, then the zucchini and garlic 4 minutes.",
-   "Return the eggplant with the tomatoes, thyme and salt; simmer 15 minutes until saucy.",
-   "Serve over rice with basil."
-  ],
-  "steps_es": [
-   "Cocina el arroz según las instrucciones del paquete.",
-   "Saltea la berenjena en aceite de oliva 6 minutos hasta que esté dorada; reserva.",
-   "Agrega la cebolla y los morrones 5 minutos, luego el calabacín y el ajo 4 minutos.",
-   "Vuelve a poner la berenjena con el tomate, el tomillo y la sal; cocina 15 minutos a fuego suave hasta que esté suave y con salsa.",
-   "Sirve sobre arroz con albahaca."
-  ],
-  "ingredients": [
-   {
-    "id": "eggplant",
-    "qty": 1,
-    "note": "in 1-inch cubes",
-    "note_es": "en cubos de 2.5 cm"
-   },
-   {
-    "id": "zucchini",
-    "qty": 2,
-    "note": "in half-moons",
-    "note_es": "en medias lunas"
-   },
-   {
-    "id": "bell_pepper",
-    "qty": 2,
-    "note": "in chunks",
-    "note_es": "en trozos"
-   },
-   {
-    "id": "onion_yellow",
-    "qty": 1,
-    "note": "sliced",
-    "note_es": "en tiras"
-   },
-   {
-    "id": "garlic",
-    "qty": 3,
-    "note": "minced",
-    "note_es": "picado"
-   },
-   {
-    "id": "crushed_tomatoes",
-    "qty": 1
-   },
-   {
-    "id": "thyme",
-    "qty": 0.5
-   },
-   {
-    "id": "basil",
-    "qty": 0.25,
-    "note": "chopped",
-    "note_es": "picada"
-   },
-   {
-    "id": "rice_white",
-    "qty": 1.5
-   },
-   {
-    "id": "olive_oil",
-    "qty": 4
-   },
-   {
-    "id": "salt",
-    "qty": 0.75
-   }
-  ],
-  "equipment": [
-   "stovetop"
-  ],
-  "active_minutes": 30,
-  "photo_url": "https://images.unsplash.com/photo-1788603907308-58eb4325dce1",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/fried-rice-with-vegetables-on-plate-5Fii0b2wc3I"
-  }
- },
- {
-  "slug": "white-bean-tomato-stew",
-  "name": "White Bean and Tomato Stew",
-  "meal_type": "dinner",
-  "name_es": "Guiso de porotos blancos y tomate",
-  "diet_tags": [
-   "vegetarian",
-   "vegan",
-   "gluten_free",
-   "dairy_free"
-  ],
-  "servings": 4,
-  "prep_minutes": 30,
-  "batch_friendly": true,
-  "description": "Rustic Italian beans stewed with tomato, garlic and rosemary, over toast.",
-  "description_es": "Porotos blancos guisados con tomate, ajo y romero, sobre pan tostado.",
-  "steps": [
-   "Sauté the garlic in olive oil 1 minute, add the tomatoes and simmer 8 minutes until slightly thick.",
-   "Add the beans with a splash of water and simmer 8 minutes more, mashing a few to thicken.",
-   "Stir in the spinach until it wilts and season with salt.",
-   "Serve with olive oil drizzled on top."
-  ],
-  "steps_es": [
-   "Saltea el ajo en aceite de oliva 1 minuto, agrega el tomate y cocina 8 minutos a fuego suave hasta que espese un poco.",
-   "Suma los porotos con un chorrito de agua y cocina 8 minutos más, machacando algunos para espesar.",
-   "Incorpora la espinaca hasta que se ablande y sazona con sal.",
-   "Sirve con un chorrito de aceite de oliva por encima."
-  ],
-  "ingredients": [
-   {
-    "id": "white_beans",
-    "qty": 3,
-    "note": "cans, drained",
-    "note_es": "latas, escurridas"
-   },
-   {
-    "id": "diced_tomatoes",
-    "qty": 1
-   },
-   {
-    "id": "garlic",
-    "qty": 4,
-    "note": "thinly sliced",
-    "note_es": "en láminas"
-   },
-   {
-    "id": "spinach",
-    "qty": 3
-   },
-   {
-    "id": "olive_oil",
-    "qty": 3
-   },
-   {
-    "id": "salt",
-    "qty": 0.5
-   }
-  ],
-  "equipment": [
-   "stovetop"
-  ],
-  "active_minutes": 18,
-  "photo_url": "https://images.unsplash.com/photo-1759392773285-0f86affdf1df",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/bowl-of-braised-pork-knuckle-with-green-beans-K2O7ApS6Y4w"
-  }
- },
- {
-  "slug": "chicken-parmesan-easy",
-  "name": "Easy Chicken Parmesan",
-  "meal_type": "dinner",
-  "name_es": "Pollo a la parmesana fácil",
-  "diet_tags": [
-   "high_protein"
-  ],
-  "servings": 4,
-  "prep_minutes": 40,
-  "batch_friendly": false,
-  "description": "Breaded chicken baked with marinara and mozzarella, over spaghetti.",
-  "description_es": "Pollo empanado horneado con marinara y mozzarella, sobre espagueti.",
-  "steps": [
-   "Heat the oven to {425F}. Season the chicken with salt.",
-   "Dip each piece in beaten egg then breadcrumbs, pressing to coat.",
-   "Arrange on an oiled sheet pan and bake 15 minutes.",
-   "Top with marinara and mozzarella and bake 5 minutes more until melted.",
-   "Meanwhile cook the spaghetti; serve the chicken over it with parmesan."
-  ],
-  "steps_es": [
-   "Calienta el horno a {425F}. Sazona el pollo con sal.",
-   "Pasa cada pieza por huevo batido y luego por pan rallado, presionando para que se pegue.",
-   "Acomoda en una placa aceitada y hornea 15 minutos.",
-   "Cubre con marinara y mozzarella y hornea 5 minutos más hasta que se derrita.",
-   "Mientras, cocina el espagueti; sirve el pollo encima con parmesano."
-  ],
-  "ingredients": [
-   {
-    "id": "chicken_breast",
-    "qty": 1.5,
-    "note": "sliced into thin cutlets",
-    "note_es": "en filetes finos"
-   },
-   {
-    "id": "eggs",
-    "qty": 2,
-    "note": "beaten",
-    "note_es": "batidos"
-   },
-   {
-    "id": "breadcrumbs",
-    "qty": 1.5
-   },
-   {
-    "id": "marinara",
-    "qty": 2
-   },
-   {
-    "id": "mozzarella",
-    "qty": 2,
-    "note": "shredded",
-    "note_es": "rallada"
-   },
-   {
-    "id": "pasta_spaghetti",
-    "qty": 12
-   },
-   {
-    "id": "parmesan",
-    "qty": 0.5,
-    "note": "grated",
-    "note_es": "rallado"
-   },
-   {
-    "id": "olive_oil",
-    "qty": 2
-   },
-   {
-    "id": "salt",
-    "qty": 0.75
-   }
-  ],
-  "equipment": [
-   "oven",
-   "stovetop"
-  ],
-  "active_minutes": 25,
-  "photo_url": "https://images.unsplash.com/photo-1774828893338-50fd6c5f3062",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/gnocchi-with-meat-sauce-red-wine-and-parmesan-cheese-R_-17QeZi6U"
-  }
- },
- {
-  "slug": "lemon-garlic-cod",
-  "name": "Lemon Garlic Cod",
-  "meal_type": "dinner",
-  "name_es": "Bacalao al limón y ajo",
-  "diet_tags": [
-   "pescatarian",
-   "gluten_free",
-   "dairy_free",
-   "high_protein"
-  ],
-  "servings": 4,
-  "prep_minutes": 25,
-  "batch_friendly": false,
-  "description": "Cod fillets baked with lemon, garlic and olives — light and fast.",
-  "description_es": "Filetes de bacalao al horno con limón, ajo y aceitunas: liviano y rápido.",
-  "steps": [
-   "Heat the oven to {400F} and line a sheet pan with parchment.",
-   "Arrange the cod on the pan, drizzle with olive oil and top with the garlic, lemon slices and olives.",
-   "Season with salt and bake 12 to 14 minutes until the fish flakes.",
-   "Serve over rice with the pan juices and parsley."
-  ],
-  "steps_es": [
-   "Calienta el horno a {400F} y forra una placa con papel.",
-   "Acomoda el bacalao en la placa, riega con aceite de oliva y cubre con el ajo, las rodajas de limón y las aceitunas.",
-   "Sazona con sal y hornea de 12 a 14 minutos hasta que el pescado se deshoje.",
-   "Sirve sobre arroz con los jugos de la placa y perejil."
-  ],
-  "ingredients": [
-   {
-    "id": "cod",
-    "qty": 1.5,
-    "note": "in 4 fillets",
-    "note_es": "en 4 filetes"
-   },
-   {
-    "id": "lemon",
-    "qty": 1,
-    "note": "half sliced, half juiced",
-    "note_es": "mitad en rodajas, mitad el jugo"
-   },
-   {
-    "id": "garlic",
-    "qty": 3,
-    "note": "minced",
-    "note_es": "picado"
-   },
-   {
-    "id": "olives",
-    "qty": 0.5,
-    "note": "halved",
-    "note_es": "a la mitad"
-   },
-   {
-    "id": "parsley",
-    "qty": 0.25,
-    "note": "chopped",
-    "note_es": "picado"
-   },
-   {
-    "id": "rice_white",
-    "qty": 1.5
-   },
-   {
-    "id": "olive_oil",
-    "qty": 2
-   },
-   {
-    "id": "salt",
-    "qty": 0.75
-   }
-  ],
-  "equipment": [
-   "oven"
-  ],
-  "active_minutes": 12,
-  "photo_url": "https://images.unsplash.com/photo-1707056503922-91c9ebaf0774",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/a-pan-filled-with-meat-and-vegetables-next-to-garlic-nLdvS9zn4x4"
-  }
- },
- {
-  "slug": "cacio-e-pepe-beans",
-  "name": "Cacio e Pepe Beans",
-  "meal_type": "dinner",
-  "name_es": "Porotos cacio e pepe",
-  "diet_tags": [
-   "vegetarian",
-   "gluten_free"
-  ],
-  "servings": 4,
-  "prep_minutes": 20,
-  "batch_friendly": false,
-  "description": "White beans in a peppery parmesan-butter sauce — Rome on a budget.",
-  "description_es": "Porotos blancos en salsa pimentera de manteca y parmesano: Roma con presupuesto.",
-  "steps": [
-   "Toast the black pepper in butter 1 minute until fragrant.",
-   "Add the beans with a splash of water and warm 4 minutes, mashing a few to thicken.",
-   "Off the heat, stir in the parmesan until creamy.",
-   "Serve in bowls with more pepper and parmesan on top."
-  ],
-  "steps_es": [
-   "Tuesta la pimienta negra en manteca 1 minuto hasta que largue aroma.",
-   "Agrega los porotos con un chorrito de agua y calienta 4 minutos, machacando algunos para espesar.",
-   "Fuera del fuego, incorpora el parmesano hasta que esté cremoso.",
-   "Sirve en bowls con más pimienta y parmesano por encima."
-  ],
-  "ingredients": [
-   {
-    "id": "white_beans",
-    "qty": 3,
-    "note": "cans, drained",
-    "note_es": "latas, escurridas"
-   },
-   {
-    "id": "parmesan",
-    "qty": 1,
-    "note": "finely grated",
-    "note_es": "rallado fino"
-   },
-   {
-    "id": "butter",
-    "qty": 3
-   },
-   {
-    "id": "black_pepper",
-    "qty": 1.5,
-    "note": "freshly cracked is best",
-    "note_es": "recién molida es ideal"
-   },
-   {
-    "id": "salt",
-    "qty": 0.25
-   }
-  ],
-  "equipment": [
-   "stovetop"
-  ],
-  "active_minutes": 12,
-  "tip": "Take the pan off the heat before the cheese goes in or it clumps.",
-  "tip_es": "Retira la sartén del fuego antes de agregar el queso o se apelotonan los grumos.",
-  "photo_url": "https://images.unsplash.com/photo-1770678724670-155587ca1bb7",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/a-fork-and-spoon-twirling-pasta-on-a-white-plate-FAvytOu3Cig"
-  }
- },
- {
-  "slug": "spinach-ricotta-stuffed-shells",
-  "name": "Stuffed Shells-Style Pasta",
-  "meal_type": "dinner",
-  "name_es": "Pasta rellena de espinaca y ricota",
-  "diet_tags": [
-   "vegetarian"
-  ],
-  "servings": 4,
-  "prep_minutes": 50,
-  "batch_friendly": true,
-  "description": "Ricotta-spinach filling under marinara and mozzarella — simplified stuffed shells.",
-  "description_es": "Relleno de ricota y espinaca bajo marinara y mozzarella: conchiglioni simplificados.",
-  "steps": [
-   "Heat the oven to {375F} and cook the pasta 2 minutes less than the package; drain.",
-   "Squeeze the spinach dry and mix it with the ricotta, half the mozzarella, the parmesan and a pinch of salt.",
-   "Fold the filling through the pasta in a baking dish.",
-   "Cover with marinara and the remaining mozzarella; bake 25 minutes until bubbly."
-  ],
-  "steps_es": [
-   "Calienta el horno a {375F} y cocina la pasta 2 minutos menos de lo que dice el paquete; escúrrela.",
-   "Escurre bien la espinaca y mézclala con la ricota, la mitad de la mozzarella, el parmesano y una pizca de sal.",
-   "Mezcla el relleno con la pasta en una fuente para horno.",
-   "Cubre con marinara y el resto de la mozzarella; hornea 25 minutos hasta que burbujee."
-  ],
-  "ingredients": [
-   {
-    "id": "pasta_penne",
-    "qty": 16,
-    "note": "or large shells if available",
-    "note_es": "o conchiglioni si hay"
-   },
-   {
-    "id": "ricotta",
-    "qty": 2
-   },
-   {
-    "id": "spinach_frozen",
-    "qty": 2,
-    "note": "thawed and squeezed dry",
-    "note_es": "descongelada y bien escurrida"
-   },
-   {
-    "id": "mozzarella",
-    "qty": 2,
-    "note": "shredded",
-    "note_es": "rallada"
-   },
-   {
-    "id": "parmesan",
-    "qty": 0.5,
-    "note": "grated",
-    "note_es": "rallado"
-   },
-   {
-    "id": "marinara",
-    "qty": 2
-   },
-   {
-    "id": "salt",
-    "qty": 0.5
-   }
-  ],
-  "equipment": [
-   "oven",
-   "stovetop"
-  ],
-  "active_minutes": 20,
-  "photo_url": "https://images.unsplash.com/photo-1788464730134-333936411dc2",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/baked-spinach-and-cheese-casserole-avoA6dZXjyw"
-  }
- },
- {
-  "slug": "shrimp-puttanesca",
-  "name": "Shrimp Puttanesca",
-  "meal_type": "dinner",
-  "name_es": "Camarones a la puttanesca",
-  "diet_tags": [
-   "pescatarian",
-   "dairy_free",
-   "high_protein"
-  ],
-  "servings": 4,
-  "prep_minutes": 25,
-  "batch_friendly": false,
-  "description": "Briny tomato-olive sauce with shrimp over spaghetti.",
-  "description_es": "Salsa marinera de tomate y aceitunas con camarones sobre espagueti.",
-  "steps": [
-   "Cook the spaghetti in salted water; save a cup of the water before draining.",
-   "Sauté the garlic and red pepper flakes in olive oil 1 minute, add the tomatoes and olives; simmer 10 minutes.",
-   "Add the shrimp and simmer 3 to 4 minutes until pink and cooked.",
-   "Toss with the pasta and a splash of its water; serve with parsley."
-  ],
-  "steps_es": [
-   "Cocina el espagueti en agua con sal; guarda una taza del agua antes de escurrir.",
-   "Saltea el ajo y el ají molido en aceite de oliva 1 minuto, agrega el tomate y las aceitunas; cocina 10 minutos a fuego suave.",
-   "Suma los camarones y cocina 3 a 4 minutos hasta que estén rosados y listos.",
-   "Mezcla con la pasta y un chorrito de su agua; sirve con perejil."
-  ],
-  "ingredients": [
-   {
-    "id": "pasta_spaghetti",
-    "qty": 16
-   },
-   {
-    "id": "shrimp",
-    "qty": 1,
-    "note": "peeled and deveined",
-    "note_es": "pelados y limpios"
-   },
-   {
-    "id": "crushed_tomatoes",
-    "qty": 1
-   },
-   {
-    "id": "olives",
-    "qty": 0.75,
-    "note": "halved",
-    "note_es": "a la mitad"
-   },
-   {
-    "id": "garlic",
-    "qty": 4,
-    "note": "thinly sliced",
-    "note_es": "en láminas"
-   },
-   {
-    "id": "red_pepper_flakes",
-    "qty": 0.5
-   },
-   {
-    "id": "parsley",
-    "qty": 0.25,
-    "note": "chopped",
-    "note_es": "picado"
-   },
-   {
-    "id": "olive_oil",
-    "qty": 2
-   },
-   {
-    "id": "salt",
-    "qty": 0.5
-   }
-  ],
-  "equipment": [
-   "stovetop"
-  ],
-  "active_minutes": 20,
-  "photo_url": "https://images.unsplash.com/photo-1762631178192-f331d9549fc9",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/spaghetti-with-shrimp-and-a-flower-garnish-kfFKc9jtB0s"
-  }
- },
- {
-  "slug": "mediterranean-chickpea-bowls",
-  "name": "Mediterranean Chickpea Bowls",
-  "meal_type": "dinner",
-  "name_es": "Bowls mediterráneos de garbanzos",
-  "diet_tags": [
-   "vegetarian",
-   "vegan",
-   "gluten_free",
-   "dairy_free"
-  ],
-  "servings": 4,
-  "prep_minutes": 25,
-  "batch_friendly": true,
-  "description": "Warm spiced chickpeas over rice with cucumber, tomato, olives and tahini drizzle.",
-  "description_es": "Garbanzos tibios especiados sobre arroz con pepino, tomate, aceitunas y tahini.",
-  "steps": [
-   "Cook the rice according to the package directions.",
-   "Whisk the tahini with the lemon juice, half the garlic, 3 tablespoons of water and a pinch of salt into a drizzle.",
-   "Warm the chickpeas in olive oil with the cumin, paprika and remaining garlic 5 minutes until coated.",
-   "Serve over rice with cucumber, tomato, olives and the tahini drizzle."
-  ],
-  "steps_es": [
-   "Cocina el arroz según las instrucciones del paquete.",
-   "Bate el tahini con el jugo de limón, la mitad del ajo, 3 cucharadas de agua y una pizca de sal hasta lograr una salsa.",
-   "Calienta los garbanzos en aceite de oliva con el comino, el pimentón y el resto del ajo 5 minutos hasta cubrirlos.",
-   "Sirve sobre arroz con pepino, tomate, aceitunas y la salsa de tahini."
-  ],
-  "ingredients": [
-   {
-    "id": "chickpeas",
-    "qty": 3,
-    "note": "cans, drained",
-    "note_es": "latas, escurridos"
-   },
-   {
-    "id": "rice_white",
-    "qty": 1.5
-   },
-   {
-    "id": "tahini",
-    "qty": 3
-   },
-   {
-    "id": "lemon",
-    "qty": 1,
-    "note": "juiced",
-    "note_es": "el jugo"
-   },
-   {
-    "id": "garlic",
-    "qty": 2,
-    "note": "minced",
-    "note_es": "picado"
-   },
-   {
-    "id": "cumin",
-    "qty": 1
-   },
-   {
-    "id": "smoked_paprika",
-    "qty": 1
-   },
-   {
-    "id": "cucumber",
-    "qty": 1,
-    "note": "diced",
-    "note_es": "en cubitos"
-   },
-   {
-    "id": "cherry_tomato",
-    "qty": 1,
-    "note": "halved",
-    "note_es": "a la mitad"
-   },
-   {
-    "id": "olives",
-    "qty": 0.5
-   },
-   {
-    "id": "olive_oil",
-    "qty": 2
-   },
-   {
-    "id": "salt",
-    "qty": 0.75
-   }
-  ],
-  "equipment": [
-   "stovetop"
-  ],
-  "active_minutes": 15,
-  "photo_url": "https://images.unsplash.com/photo-1680405531955-8b4981bb1b0c",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/a-white-bowl-filled-with-food-on-top-of-a-wooden-table-V3OnqusloQE"
-  }
- },
- {
-  "slug": "pasta-aglio-olio-broccoli",
-  "name": "Pasta Aglio e Olio with Broccoli",
-  "meal_type": "dinner",
-  "name_es": "Pasta aglio e olio con brócoli",
-  "diet_tags": [
-   "vegetarian",
-   "vegan",
-   "dairy_free"
-  ],
-  "servings": 4,
-  "prep_minutes": 20,
-  "batch_friendly": false,
-  "description": "Garlic-oil spaghetti with chili flakes and roasted-flavored broccoli.",
-  "description_es": "Espagueti en aceite de ajo con ají molido y brócoli dorado.",
-  "steps": [
-   "Cook the spaghetti in salted water; save a cup of the water before draining.",
-   "Sear the broccoli in olive oil 5 minutes until charred at the edges; set aside.",
-   "Warm the garlic and red pepper flakes in the remaining oil 1 minute until golden.",
-   "Toss in the pasta and broccoli with a splash of pasta water; serve with more pepper flakes."
-  ],
-  "steps_es": [
-   "Cocina el espagueti en agua con sal; guarda una taza del agua antes de escurrir.",
-   "Dora el brócoli en aceite de oliva 5 minutos hasta que tenga bordes tostados; reserva.",
-   "Calienta el ajo y el ají molido en el aceite restante 1 minuto hasta que se dore.",
-   "Mezcla la pasta y el brócoli con un chorrito del agua de cocción; sirve con más ají molido."
-  ],
-  "ingredients": [
-   {
-    "id": "pasta_spaghetti",
-    "qty": 16
-   },
-   {
-    "id": "broccoli_frozen",
-    "qty": 4,
-    "note": "thawed and patted dry",
-    "note_es": "descongelado y bien seco"
-   },
-   {
-    "id": "garlic",
-    "qty": 5,
-    "note": "thinly sliced",
-    "note_es": "en láminas"
-   },
-   {
-    "id": "red_pepper_flakes",
-    "qty": 1
-   },
-   {
-    "id": "olive_oil",
-    "qty": 5
-   },
-   {
-    "id": "salt",
-    "qty": 0.75
-   }
-  ],
-  "equipment": [
-   "stovetop"
-  ],
-  "active_minutes": 15,
-  "photo_url": "https://images.unsplash.com/photo-1770351203577-501cf0b074f9",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/two-servings-of-macaroni-and-cheese-with-salad-JtQBpcam1hQ"
-  }
- },
- {
-  "slug": "eggplant-parmesan-skillet",
-  "name": "Skillet Eggplant Parmesan",
-  "meal_type": "dinner",
-  "name_es": "Berenjena a la parmesana en sartén",
-  "diet_tags": [
-   "vegetarian"
-  ],
-  "servings": 4,
-  "prep_minutes": 45,
-  "batch_friendly": true,
-  "description": "Layered eggplant, marinara and mozzarella baked in one skillet.",
-  "description_es": "Capas de berenjena, marinara y mozzarella horneadas en una sartén.",
-  "steps": [
-   "Heat the oven to {400F}.",
-   "Salt the eggplant slices and fry in batches in hot olive oil 3 minutes per side until golden; drain on paper.",
-   "In an oven-safe skillet, layer sauce, eggplant, mozzarella and parmesan, repeating twice.",
-   "Bake 20 minutes until bubbly and browned; rest 10 minutes and serve."
-  ],
-  "steps_es": [
-   "Calienta el horno a {400F}.",
-   "Sala las rodajas de berenjena y fríelas en tandas en aceite de oliva caliente 3 minutos por lado hasta que estén doradas; escurre sobre papel.",
-   "En una sartén apta para horno, arma capas de salsa, berenjena, mozzarella y parmesano, repitiendo dos veces.",
-   "Hornea 20 minutos hasta que burbujee y se dore; deja reposar 10 minutos y sirve."
-  ],
-  "ingredients": [
-   {
-    "id": "eggplant",
-    "qty": 2,
-    "note": "sliced into rounds",
-    "note_es": "en rodajas"
-   },
-   {
-    "id": "marinara",
-    "qty": 2
-   },
-   {
-    "id": "mozzarella",
-    "qty": 2,
-    "note": "shredded",
-    "note_es": "rallada"
-   },
-   {
-    "id": "parmesan",
-    "qty": 0.5,
-    "note": "grated",
-    "note_es": "rallado"
-   },
-   {
-    "id": "olive_oil",
-    "qty": 6
-   },
-   {
-    "id": "salt",
-    "qty": 1
-   }
-  ],
-  "equipment": [
-   "oven",
-   "stovetop"
-  ],
-  "active_minutes": 30,
-  "photo_url": "https://images.unsplash.com/photo-1779738193253-3a271577f723",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/a-bowl-of-gnocchi-with-eggplant-sage-and-creamy-sauce-L7i7rEKc9Ng"
-  }
- },
- {
-  "slug": "salmon-orzo-lemon",
-  "name": "Salmon with Lemon Orzo",
-  "meal_type": "dinner",
-  "name_es": "Salmón con orzo al limón",
-  "diet_tags": [
-   "pescatarian",
-   "high_protein"
-  ],
-  "servings": 4,
-  "prep_minutes": 30,
-  "batch_friendly": false,
-  "description": "Seared salmon over buttery lemon orzo with peas.",
-  "description_es": "Salmón sellado sobre orzo mantecoso al limón con arvejas.",
-  "steps": [
-   "Season the salmon with salt and sear in hot olive oil 3 to 4 minutes per side; set aside.",
-   "Toast the orzo in butter 2 minutes, add the garlic and cook 30 seconds.",
-   "Add the broth and simmer 8 minutes until the orzo is tender, stirring in the peas for the last 2.",
-   "Stir in the lemon juice and serve the salmon on top."
-  ],
-  "steps_es": [
-   "Sazona el salmón con sal y séllalo en aceite de oliva caliente de 3 a 4 minutos por lado; reserva.",
-   "Tuesta el orzo en manteca 2 minutos, agrega el ajo y cocina 30 segundos.",
-   "Vierte el caldo y cocina a fuego suave 8 minutos hasta que el orzo esté tierno, sumando las arvejas en los últimos 2.",
-   "Agrega el jugo de limón y sirve el salmón encima."
-  ],
-  "ingredients": [
-   {
-    "id": "salmon",
-    "qty": 1.25,
-    "note": "in 4 fillets",
-    "note_es": "en 4 filetes"
-   },
-   {
-    "id": "orzo",
-    "qty": 8
-   },
-   {
-    "id": "vegetable_broth",
-    "qty": 1,
-    "note": "about 2.5 cups, partial carton",
-    "note_es": "unas 2.5 tazas"
-   },
-   {
-    "id": "peas_frozen",
-    "qty": 1
-   },
-   {
-    "id": "lemon",
-    "qty": 1,
-    "note": "juiced",
-    "note_es": "el jugo"
-   },
-   {
-    "id": "butter",
-    "qty": 2
-   },
-   {
-    "id": "garlic",
-    "qty": 2,
-    "note": "minced",
-    "note_es": "picado"
-   },
-   {
-    "id": "olive_oil",
-    "qty": 1
-   },
-   {
-    "id": "salt",
-    "qty": 0.75
-   }
-  ],
-  "equipment": [
-   "stovetop"
-  ],
-  "active_minutes": 20,
-  "photo_url": "https://images.unsplash.com/photo-1574484284002-952d92456975",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/salmon-in-creamy-sauce-dinner-ND3edEmzcdQ"
-  }
- },
- {
-  "slug": "tomato-basil-tortellini",
-  "name": "Tortellini in Tomato-Basil Broth",
-  "meal_type": "dinner",
-  "name_es": "Tortellini en caldo de tomate y albahaca",
-  "diet_tags": [
-   "vegetarian"
-  ],
-  "servings": 4,
-  "prep_minutes": 25,
-  "batch_friendly": true,
-  "description": "Cheese tortellini simmered in a light tomato-basil broth.",
-  "description_es": "Tortellini de queso cocidos en un caldo liviano de tomate y albahaca.",
-  "steps": [
-   "Sauté the garlic in olive oil 1 minute, add the tomatoes and broth; simmer 8 minutes.",
-   "Add the tortellini and cook 4 minutes until tender.",
-   "Stir in the spinach until wilted and the basil.",
-   "Serve with parmesan on top."
-  ],
-  "steps_es": [
-   "Saltea el ajo en aceite de oliva 1 minuto, agrega el tomate y el caldo; cocina 8 minutos a fuego suave.",
-   "Suma los tortellini y cocina 4 minutos hasta que estén tiernos.",
-   "Incorpora la espinaca hasta que se ablande y la albahaca.",
-   "Sirve con parmesano por encima."
-  ],
-  "ingredients": [
-   {
-    "id": "tortellini",
-    "qty": 20
-   },
-   {
-    "id": "diced_tomatoes",
-    "qty": 1
-   },
-   {
-    "id": "vegetable_broth",
-    "qty": 6,
-    "note": "carton, 4 cups",
-    "note_es": "caja, 4 tazas"
-   },
-   {
-    "id": "garlic",
-    "qty": 3,
-    "note": "minced",
-    "note_es": "picado"
-   },
-   {
-    "id": "spinach",
-    "qty": 2
-   },
-   {
-    "id": "basil",
-    "qty": 0.25,
-    "note": "chopped",
-    "note_es": "picada"
-   },
-   {
-    "id": "parmesan",
-    "qty": 0.5,
-    "note": "grated",
-    "note_es": "rallado"
-   },
-   {
-    "id": "olive_oil",
-    "qty": 1
-   },
-   {
-    "id": "salt",
-    "qty": 0.5
-   }
-  ],
-  "equipment": [
-   "stovetop"
-  ],
-  "active_minutes": 15,
-  "photo_url": "https://images.unsplash.com/photo-1784751722792-83189db3ca61",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/fresh-caprese-salad-with-sliced-tomatoes-mozzarella-pesto-and-basil-2qsJ_jZ7aTQ"
-  }
- },
- {
-  "slug": "sicilian-cauliflower-pasta",
-  "name": "Sicilian-Style Cauliflower Pasta",
-  "meal_type": "dinner",
-  "name_es": "Pasta siciliana con coliflor",
-  "diet_tags": [
-   "vegetarian",
-   "vegan",
-   "dairy_free"
-  ],
-  "servings": 4,
-  "prep_minutes": 35,
-  "batch_friendly": false,
-  "description": "Golden cauliflower with garlic, chili and breadcrumbs over pasta.",
-  "description_es": "Coliflor dorada con ajo, ají y pan rallado crocante sobre pasta.",
-  "steps": [
-   "Cook the pasta in salted water; save a cup of the water before draining.",
-   "Sear the cauliflower in olive oil 8 minutes until deep golden and tender; add the garlic and pepper flakes 1 minute.",
-   "Toss with the pasta and a splash of its water.",
-   "Toast the breadcrumbs in a dry pan 2 minutes until crisp and scatter over the top."
-  ],
-  "steps_es": [
-   "Cocina la pasta en agua con sal; guarda una taza del agua antes de escurrir.",
-   "Dora la coliflor en aceite de oliva 8 minutos hasta que esté bien dorada y tierna; agrega el ajo y el ají 1 minuto.",
-   "Mezcla con la pasta y un chorrito de su agua.",
-   "Tuesta el pan rallado en una sartén seca 2 minutos hasta que esté crocante y espárcelo por encima."
-  ],
-  "ingredients": [
-   {
-    "id": "cauliflower",
-    "qty": 1,
-    "note": "in small florets",
-    "note_es": "en floretes chicos"
-   },
-   {
-    "id": "pasta_spaghetti",
-    "qty": 16
-   },
-   {
-    "id": "garlic",
-    "qty": 4,
-    "note": "minced",
-    "note_es": "picado"
-   },
-   {
-    "id": "red_pepper_flakes",
-    "qty": 0.5
-   },
-   {
-    "id": "breadcrumbs",
-    "qty": 0.5
-   },
-   {
-    "id": "olive_oil",
-    "qty": 4
-   },
-   {
-    "id": "salt",
-    "qty": 0.75
-   }
-  ],
-  "equipment": [
-   "stovetop"
-  ],
-  "active_minutes": 25,
-  "photo_url": "https://images.unsplash.com/photo-1767065584295-e5879ad624c2",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/fork-lifting-cheesy-lasagna-from-white-bowl-q6V1AvFZl3o"
-  }
- },
- {
-  "slug": "greek-lemon-potatoes-chicken",
-  "name": "Greek Lemon Potatoes and Chicken",
-  "meal_type": "dinner",
-  "name_es": "Pollo y papas al limón griego",
-  "diet_tags": [
-   "gluten_free",
-   "dairy_free",
-   "high_protein"
-  ],
-  "servings": 4,
-  "prep_minutes": 60,
-  "batch_friendly": true,
-  "description": "Chicken thighs roasted over lemon-oregano potatoes — a taverna classic.",
-  "description_es": "Muslos de pollo horneados sobre papas al limón y orégano: clásico de taberna.",
-  "steps": [
-   "Heat the oven to {400F}.",
-   "Toss the potato wedges with the olive oil, lemon juice, oregano, garlic and salt in a baking dish.",
-   "Season the chicken with salt and nestle it on top of the potatoes.",
-   "Roast 45 to 50 minutes until the chicken is browned and the potatoes are tender and glazed.",
-   "Serve with the pan juices spooned over."
-  ],
-  "steps_es": [
-   "Calienta el horno a {400F}.",
-   "Mezcla las papas en gajos con el aceite de oliva, el jugo de limón, el orégano, el ajo y la sal en una fuente.",
-   "Sazona el pollo con sal y acomódalo sobre las papas.",
-   "Hornea de 45 a 50 minutos hasta que el pollo esté dorado y las papas tiernas y glaseadas.",
-   "Sirve con los jugos de la fuente por encima."
-  ],
-  "ingredients": [
-   {
-    "id": "chicken_thigh",
-    "qty": 2,
-    "note": "bone-in, skin-on",
-    "note_es": "con hueso y piel"
-   },
-   {
-    "id": "potato_russet",
-    "qty": 3,
-    "note": "cut into wedges",
-    "note_es": "en gajos"
-   },
-   {
-    "id": "lemon",
-    "qty": 2,
-    "note": "juiced",
-    "note_es": "el jugo"
-   },
-   {
-    "id": "garlic",
-    "qty": 4,
-    "note": "minced",
-    "note_es": "picado"
-   },
-   {
-    "id": "oregano",
-    "qty": 1
-   },
-   {
-    "id": "olive_oil",
-    "qty": 4
-   },
-   {
-    "id": "salt",
-    "qty": 1
-   }
-  ],
-  "equipment": [
-   "oven"
-  ],
-  "active_minutes": 15,
-  "photo_url": "https://images.unsplash.com/photo-1782174177294-872d77096f77",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/sunset-dinner-table-with-food-by-the-water-in-fira-tZSOcPXsA8s"
-  }
- },
- {
-  "slug": "pesto-chicken-pasta",
-  "name": "Pesto Chicken Pasta",
-  "meal_type": "dinner",
-  "name_es": "Pasta con pollo y pesto",
-  "diet_tags": [
-   "high_protein"
-  ],
-  "servings": 4,
-  "prep_minutes": 25,
-  "batch_friendly": false,
-  "description": "Seared chicken and penne tossed in basil pesto with cherry tomatoes.",
-  "description_es": "Pollo sellado y penne mezclados en pesto de albahaca con tomates cherry.",
-  "steps": [
-   "Cook the penne in salted water; save a cup of the water before draining.",
-   "Season the chicken with salt and sear in hot olive oil 4 minutes per side; slice.",
-   "Toss the pasta with the pesto and a splash of pasta water until glossy.",
-   "Add the chicken and tomatoes and serve with parmesan."
-  ],
-  "steps_es": [
-   "Cocina el penne en agua con sal; guarda una taza del agua antes de escurrir.",
-   "Sazona el pollo con sal y séllalo en aceite de oliva caliente 4 minutos por lado; córtalo en tajadas.",
-   "Mezcla la pasta con el pesto y un chorrito del agua de cocción hasta que brille.",
-   "Agrega el pollo y los tomates y sirve con parmesano."
-  ],
-  "ingredients": [
-   {
-    "id": "pasta_penne",
-    "qty": 16
-   },
-   {
-    "id": "chicken_breast",
-    "qty": 1.25
-   },
-   {
-    "id": "pesto",
-    "qty": 6
-   },
-   {
-    "id": "cherry_tomato",
-    "qty": 1,
-    "note": "halved",
-    "note_es": "a la mitad"
-   },
-   {
-    "id": "parmesan",
-    "qty": 0.5,
-    "note": "grated",
-    "note_es": "rallado"
-   },
-   {
-    "id": "olive_oil",
-    "qty": 1
-   },
-   {
-    "id": "salt",
-    "qty": 0.5
-   }
-  ],
-  "equipment": [
-   "stovetop"
-  ],
-  "active_minutes": 18,
-  "photo_url": "https://images.unsplash.com/photo-1767065583952-e932c354bca6",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/cheesy-lasagna-being-lifted-with-a-fork--BHFKS0kk-U"
-  }
- },
- {
-  "slug": "white-bean-kale-soup",
-  "name": "White Bean and Kale Soup",
-  "meal_type": "dinner",
-  "name_es": "Sopa de porotos blancos y kale",
-  "diet_tags": [
-   "vegetarian",
-   "vegan",
-   "gluten_free",
-   "dairy_free"
-  ],
-  "servings": 4,
-  "prep_minutes": 35,
-  "batch_friendly": true,
-  "description": "A garlicky bean and kale soup in tomato broth — ribollita-style.",
-  "description_es": "Sopa de porotos y kale al ajo en caldo de tomate: estilo ribollita.",
-  "steps": [
-   "Sauté the onion and carrot in olive oil 5 minutes, add the garlic and cook 1 minute.",
-   "Add the tomatoes, broth and beans; simmer 15 minutes, mashing a few beans.",
-   "Stir in the kale and cook 5 minutes until tender.",
-   "Season with salt and serve with olive oil on top."
-  ],
-  "steps_es": [
-   "Saltea la cebolla y la zanahoria en aceite de oliva 5 minutos, agrega el ajo y cocina 1 minuto.",
-   "Suma el tomate, el caldo y los porotos; cocina 15 minutos a fuego suave, machacando algunos porotos.",
-   "Incorpora el kale y cocina 5 minutos hasta que esté tierno.",
-   "Sazona con sal y sirve con un chorrito de aceite de oliva."
-  ],
-  "ingredients": [
-   {
-    "id": "white_beans",
-    "qty": 3,
-    "note": "cans, drained",
-    "note_es": "latas, escurridas"
-   },
-   {
-    "id": "kale",
-    "qty": 1,
-    "note": "leaves stripped and chopped",
-    "note_es": "hojas sin tallo, picadas"
-   },
-   {
-    "id": "diced_tomatoes",
-    "qty": 1
-   },
-   {
-    "id": "vegetable_broth",
-    "qty": 6,
-    "note": "carton, 4 cups",
-    "note_es": "caja, 4 tazas"
-   },
-   {
-    "id": "onion_yellow",
-    "qty": 1,
-    "note": "diced",
-    "note_es": "en cubitos"
-   },
-   {
-    "id": "carrot",
-    "qty": 2,
-    "note": "diced",
-    "note_es": "en cubitos"
-   },
-   {
-    "id": "garlic",
-    "qty": 3,
-    "note": "minced",
-    "note_es": "picado"
-   },
-   {
-    "id": "olive_oil",
-    "qty": 3
-   },
-   {
-    "id": "salt",
-    "qty": 0.75
-   }
-  ],
-  "equipment": [
-   "stovetop"
-  ],
-  "active_minutes": 18,
-  "photo_url": "https://images.unsplash.com/photo-1721314678207-8b7bd43e677b",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/a-plate-of-food-on-a-red-and-white-table-cloth-xGUGTo8779I"
-  }
- },
- {
-  "slug": "falafel-style-chickpea-patties",
-  "name": "Chickpea Patties with Yogurt",
-  "meal_type": "dinner",
-  "name_es": "Tortitas de garbanzo con yogur",
-  "diet_tags": [
-   "vegetarian",
-   "dairy_free",
-   "vegan"
-  ],
-  "servings": 4,
-  "prep_minutes": 30,
-  "batch_friendly": true,
-  "description": "Crispy falafel-style chickpea patties in pitas with lemon yogurt.",
-  "description_es": "Tortitas crocantes de garbanzo estilo falafel en pitas con yogur al limón.",
-  "steps": [
-   "Mash the chickpeas with the garlic, cumin, flour and salt into a chunky paste; form 8 patties.",
-   "Fry in hot oil 3 to 4 minutes per side until crisp and golden.",
-   "Whisk the tahini with the lemon juice and 2 tablespoons of water into a creamy sauce; season with salt.",
-   "Serve the patties in pitas with the sauce, tomato and cucumber."
-  ],
-  "steps_es": [
-   "Machaca los garbanzos con el ajo, el comino, la harina y la sal hasta formar una pasta rústica; arma 8 tortitas.",
-   "Fríelas en aceite caliente de 3 a 4 minutos por lado hasta que estén crocantes y doradas.",
-   "Bate el tahini con el jugo de limón y 2 cucharadas de agua hasta tener una salsa cremosa; sazona con sal.",
-   "Sirve las hamburguesitas en pitas con la salsa, el tomate y el pepino."
-  ],
-  "ingredients": [
-   {
-    "id": "chickpeas",
-    "qty": 3,
-    "note": "cans, drained",
-    "note_es": "latas, escurridos"
-   },
-   {
-    "id": "garlic",
-    "qty": 3,
-    "note": "minced",
-    "note_es": "picado"
-   },
-   {
-    "id": "cumin",
-    "qty": 1
-   },
-   {
-    "id": "flour",
-    "qty": 0.19
-   },
-   {
-    "id": "pita",
-    "qty": 4,
-    "note": "halved",
-    "note_es": "a la mitad"
-   },
-   {
-    "id": "lemon",
-    "qty": 1,
-    "note": "juiced",
-    "note_es": "el jugo"
-   },
-   {
-    "id": "tomato",
-    "qty": 1,
-    "note": "diced",
-    "note_es": "en cubitos"
-   },
-   {
-    "id": "cucumber",
-    "qty": 1,
-    "note": "diced",
-    "note_es": "en cubitos"
-   },
-   {
-    "id": "vegetable_oil",
-    "qty": 4
-   },
-   {
-    "id": "salt",
-    "qty": 0.75
-   },
-   {
-    "id": "tahini",
-    "qty": 3
-   }
-  ],
-  "equipment": [
-   "stovetop"
-  ],
-  "active_minutes": 25,
-  "tip": "Chill the mixture 15 minutes before shaping — the patties hold together much better.",
-  "tip_es": "Enfría la mezcla 15 minutos antes de armar: las tortitas se sostienen mucho mejor.",
-  "photo_url": "https://images.unsplash.com/photo-1603360946369-dc9bb6258143",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/grilled-meat-skewers-with-fries-WHtVB-RiW2I"
-  }
- }
 ]

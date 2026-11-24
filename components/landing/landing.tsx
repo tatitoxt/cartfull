@@ -12,10 +12,11 @@ import { Calculator } from "./calculator";
 function Phone({ src, alt, className = "", priority = false }: { src: string; alt: string; className?: string; priority?: boolean }) {
   return (
     <div
-      className={`overflow-hidden rounded-[2.2rem] bg-bg-deep p-1.5 shadow-[inset_0_0_0_1.5px_var(--color-line),0_32px_64px_-32px_rgb(0_0_0/0.8)] ${className}`}
+      className={`rounded-[2.9rem] bg-[#101010] p-2 shadow-[inset_0_0_0_1px_rgb(255_255_255/0.09),inset_0_1px_1px_rgb(255_255_255/0.18),0_32px_64px_-32px_rgb(0_0_0/0.85)] ${className}`}
     >
-      <div className="overflow-hidden rounded-[1.8rem]">
-        <Image src={src} alt={alt} width={376} height={844} priority={priority} className="h-auto w-full" />
+      <div className="relative overflow-hidden rounded-[2.4rem]">
+        <Image src={src} alt={alt} width={376} height={780} priority={priority} className="h-auto w-full" />
+        <div aria-hidden="true" className="absolute left-1/2 top-2.5 h-[1.4rem] w-[6.2rem] -translate-x-1/2 rounded-full bg-black shadow-[0_0_0_1px_rgb(255_255_255/0.06)]" />
       </div>
     </div>
   );
