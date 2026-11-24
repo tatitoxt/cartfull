@@ -19,7 +19,7 @@ function Phone({ src, alt, className = "", priority = false }: { src: string; al
         <div className="relative h-7">
           <div aria-hidden="true" className="absolute left-1/2 top-1.5 h-4 w-[5.5rem] -translate-x-1/2 rounded-full bg-[#1b1b1b] shadow-[0_0_0_1px_rgb(255_255_255/0.06)]" />
         </div>
-        <Image src={src} alt={alt} width={376} height={788} priority={priority} className="h-auto w-full" />
+        <Image src={src} alt={alt} width={376} height={760} priority={priority} className="h-auto w-full" />
       </div>
     </div>
   );
@@ -73,9 +73,9 @@ export function Landing({ locale }: { locale: Locale }) {
             </div>
           </div>
           <div className="rise relative mx-auto w-full max-w-sm lg:max-w-lg">
-            <div className="grid grid-cols-[57%_43%]">
+            <div className="grid grid-cols-[62%_38%]">
               <Phone src="/landing/plan.png" alt={t.inside.shots[0].alt} priority className="relative z-10 -rotate-3" />
-              <div aria-hidden="true" className="relative z-0 -ml-[38%] mt-14 rotate-[4deg]">
+              <div aria-hidden="true" className="relative z-0 -ml-[28%] mt-14 rotate-[4deg]">
                 <Phone src="/landing/list.png" alt="" />
               </div>
             </div>
