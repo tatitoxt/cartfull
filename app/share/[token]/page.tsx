@@ -20,7 +20,7 @@ type SharedPlan = {
   budget_cents: number;
   lang: Lang;
   units: Units;
-  items: { ingredient_id: string; checked: boolean; have: boolean; have_qty: number }[];
+  items: { ingredient_id: string; checked: boolean; have: boolean; have_qty: number; extra?: boolean }[];
   meals: { day: number; slot: MealType; slug: string; servings: number; leftover?: boolean }[];
 };
 
@@ -68,6 +68,22 @@ export default async function SharedPage({ params }: { params: Promise<{ token: 
       have: line.have,
     };
   });
+  // Hand-added extras come through as items but are not cart lines.
+  const lineIds = new Set(lines.map((l) => l.id));
+  for (const item of shared.items) {
+    if (!item.extra || lineIds.has(item.ingredient_id)) continue;
+    const ing = catalog.ingredients.get(item.ingredient_id);
+    if (!ing) continue;
+    lines.push({
+      id: ing.id,
+      name: ingredientName(ing, lang),
+      aisle: ing.aisle,
+      need: "",
+      buy: packageLabel(ing.pkg_label, lang, units) ?? ing.pkg_label,
+      checked: item.checked,
+      have: false,
+    });
+  }
 
   return (
     <div className="mx-auto w-full max-w-xl px-5 py-6">

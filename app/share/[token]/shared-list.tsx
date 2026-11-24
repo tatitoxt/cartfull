@@ -102,7 +102,7 @@ export function SharedList({
                         {line.name}
                       </span>
                       <span className={`mt-0.5 block text-sm text-fg-soft ${line.checked ? "line-through decoration-accent" : ""}`}>
-                        {line.need} · {line.buy}
+                        {[line.need, line.buy].filter(Boolean).join(" · ")}
                       </span>
                     </span>
                   </button>

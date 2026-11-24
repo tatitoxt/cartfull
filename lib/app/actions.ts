@@ -458,6 +458,47 @@ export async function setRating(slug: string, rating: number | null): Promise<Ac
   return { ok: true };
 }
 
+const MAX_EXTRAS = 40;
+
+/** Adds a hand-picked catalog ingredient (wine, dish soap) to a week's list. */
+export async function addExtraItem(planId: string, ingredientId: string): Promise<ActionResult> {
+  const session = await requireSession();
+  const profile = await getProfile(session);
+  const m = MESSAGES[profile.lang];
+  const ingredient = catalog.ingredients.get(ingredientId);
+  const loaded = await editablePlan(session, planId);
+  if (!ingredient || !loaded) return fail("invalid", m.actions.itemMissing);
+  // Already needed by a meal, or already an extra: nothing to add.
+  if (loaded.extras.has(ingredientId) || loaded.cart.lines.some((l) => l.ingredient.id === ingredientId)) {
+    return { ok: true };
+  }
+  if (loaded.extras.size >= MAX_EXTRAS) return fail("failed", m.actions.saveItem);
+  const { error } = await session.supabase
+    .from("plan_items")
+    .insert({ plan_id: planId, ingredient_id: ingredientId, extra: true });
+  if (error) return fail("failed", m.actions.saveItem);
+  revalidatePath("/app", "layout");
+  return { ok: true };
+}
+
+/** Takes a hand-added ingredient back off the week's list. */
+export async function removeExtraItem(planId: string, ingredientId: string): Promise<ActionResult> {
+  const session = await requireSession();
+  const profile = await getProfile(session);
+  const m = MESSAGES[profile.lang];
+  const loaded = await editablePlan(session, planId);
+  if (!loaded) return fail("locked", m.actions.locked);
+  const { error } = await session.supabase
+    .from("plan_items")
+    .delete()
+    .eq("plan_id", planId)
+    .eq("ingredient_id", ingredientId)
+    .eq("extra", true);
+  if (error) return fail("failed", m.actions.saveItem);
+  revalidatePath("/app", "layout");
+  return { ok: true };
+}
+
 export async function setItemState(
   planId: string,
   ingredientId: string,
@@ -470,7 +511,23 @@ export async function setItemState(
   const loaded = await editablePlan(session, planId);
   if (!loaded) return fail("locked", m.actions.locked);
   const line = ingredient ? loaded.cart.lines.find((l) => l.ingredient.id === ingredientId) : undefined;
-  if (!ingredient || !line) return fail("invalid", m.actions.itemMissing);
+  if (!ingredient) return fail("invalid", m.actions.itemMissing);
+
+  // Extras aren't cart lines: they only support the bought tick.
+  if (!line) {
+    if (!loaded.extras.has(ingredientId) || typeof change.checked !== "boolean") {
+      return fail("invalid", m.actions.itemMissing);
+    }
+    const { error } = await session.supabase
+      .from("plan_items")
+      .update({ checked: change.checked })
+      .eq("plan_id", planId)
+      .eq("ingredient_id", ingredientId)
+      .eq("extra", true);
+    if (error) return fail("failed", m.actions.saveItem);
+    revalidatePath("/app", "layout");
+    return { ok: true };
+  }
 
   const update: Record<string, boolean | number> = {};
   if (typeof change.checked === "boolean") update.checked = change.checked;

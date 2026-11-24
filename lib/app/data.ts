@@ -107,6 +107,8 @@ export interface LoadedPlan {
   have: Set<string>;
   /** Saved per-ingredient stock (uncapped), including fully-owned rows. */
   haveQty: Map<string, number>;
+  /** Ingredients added by hand, outside what the meals asked for. */
+  extras: Set<string>;
   /** The free first week, or any week while subscribed. */
   viewable: boolean;
   editable: boolean;
@@ -153,7 +155,7 @@ export async function weekRecaps(session: Session, planIds: string[]): Promise<M
   };
   const [mealRows, itemRows] = await Promise.all([
     page((from, to) => session.supabase.from("plan_meals").select("plan_id, day, slot, recipe_slug, servings, leftover").in("plan_id", planIds).range(from, to)),
-    page((from, to) => session.supabase.from("plan_items").select("plan_id, ingredient_id, checked, have").in("plan_id", planIds).range(from, to)),
+    page((from, to) => session.supabase.from("plan_items").select("plan_id, ingredient_id, checked, have, extra").in("plan_id", planIds).range(from, to)),
   ]);
   const order: MealType[] = ["breakfast", "lunch", "dinner"];
   const mealsByPlan = new Map<string, MealAssignment[]>();
@@ -183,6 +185,16 @@ export async function weekRecaps(session: Session, planIds: string[]): Promise<M
     recaps.get(id)!.groceries = cart.lines.length;
     lineIdsByPlan.set(id, new Set(cart.lines.map((l) => l.ingredient.id)));
   }
+  // Extras are hand-added lines: they count toward the week's groceries too.
+  for (const row of itemRows) {
+    if (!row.extra) continue;
+    const id = row.plan_id as string;
+    const lineIds = lineIdsByPlan.get(id);
+    if (lineIds && !lineIds.has(row.ingredient_id as string)) {
+      lineIds.add(row.ingredient_id as string);
+      recaps.get(id)!.groceries += 1;
+    }
+  }
   for (const row of itemRows) {
     const recap = recaps.get(row.plan_id as string);
     const lineIds = lineIdsByPlan.get(row.plan_id as string);
@@ -204,12 +216,12 @@ export async function loadPlan(
   const viewable = access.active || isFirst;
   const editable = access.active || (isFirst && !weekIsOver(row.week_start));
   if (!viewable) {
-    return { row, meals: [], cart: { lines: [], totalCents: 0 }, checked: new Set(), have: new Set(), haveQty: new Map(), viewable, editable, isFirst };
+    return { row, meals: [], cart: { lines: [], totalCents: 0 }, checked: new Set(), have: new Set(), haveQty: new Map(), extras: new Set(), viewable, editable, isFirst };
   }
 
   const [{ data: mealRows }, { data: itemRows }] = await Promise.all([
     session.supabase.from("plan_meals").select("day, slot, recipe_slug, servings, leftover").eq("plan_id", row.id),
-    session.supabase.from("plan_items").select("ingredient_id, checked, have, have_qty").eq("plan_id", row.id),
+    session.supabase.from("plan_items").select("ingredient_id, checked, have, have_qty, extra").eq("plan_id", row.id),
   ]);
 
   const order: MealType[] = ["breakfast", "lunch", "dinner"];
@@ -230,14 +242,16 @@ export async function loadPlan(
   const have = new Set<string>();
   const checked = new Set<string>();
   const haveQty = new Map<string, number>();
+  const extras = new Set<string>();
   for (const item of itemRows ?? []) {
     if (item.have) have.add(item.ingredient_id as string);
     const owned = Number(item.have_qty ?? 0);
     if (owned > 0) haveQty.set(item.ingredient_id as string, owned);
     if (item.checked) checked.add(item.ingredient_id as string);
+    if (item.extra) extras.add(item.ingredient_id as string);
   }
   const cart = buildCart(meals, catalog.ingredients, have, haveQty);
-  return { row, meals, cart, checked, have, haveQty, viewable, editable, isFirst };
+  return { row, meals, cart, checked, have, haveQty, extras, viewable, editable, isFirst };
 }
 
 /** The planner request that reproduces a household's preferences. */

@@ -9,6 +9,8 @@ export const AISLES = [
   "frozen",
   "condiments",
   "spices",
+  "beverages",
+  "household",
 ] as const;
 export type Aisle = (typeof AISLES)[number];
 
@@ -33,7 +35,8 @@ export type IngredientKind =
   | "fish"
   | "shellfish"
   | "egg"
-  | "dairy";
+  | "dairy"
+  | "other";
 
 export const MEAT_KINDS: readonly IngredientKind[] = [
   "poultry",

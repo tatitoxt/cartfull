@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { keepForOffline } from "@/components/service-worker";
-import { getShareLink, setItemState } from "@/lib/app/actions";
+import { addExtraItem, getShareLink, removeExtraItem, setItemState } from "@/lib/app/actions";
 import { money, moneyExact } from "@/lib/format";
 import { amount, type Lang } from "@/lib/catalog/localize";
 import { useLocale, useMessages } from "@/lib/i18n/locale-provider";
@@ -28,6 +28,16 @@ export interface ListLine {
   haveQty: number;
   have: boolean;
   checked: boolean;
+  /** Hand-added item: no "have" tracking, removable. */
+  extra: boolean;
+}
+
+export interface AddableItem {
+  id: string;
+  name: string;
+  aisle: string;
+  buy: string;
+  cents: number;
 }
 
 type Change = { id: string; checked?: boolean; have?: boolean; haveQty?: number };
@@ -40,6 +50,7 @@ export function GroceryList({
   planId,
   budgetCents,
   lines: initial,
+  addable,
   aisles,
   editable,
   lang,
@@ -47,6 +58,7 @@ export function GroceryList({
   planId: string;
   budgetCents: number;
   lines: ListLine[];
+  addable: AddableItem[];
   aisles: { aisle: string; label: string }[];
   editable: boolean;
   lang: Lang;
@@ -58,6 +70,8 @@ export function GroceryList({
   const [offline, setOffline] = useState(false);
   const [failed, setFailed] = useState(false);
   const [shareNote, setShareNote] = useState("");
+  const [extraQuery, setExtraQuery] = useState("");
+  const [extraNote, setExtraNote] = useState("");
 
   const readQueue = (): Change[] => {
     try {
@@ -158,6 +172,35 @@ export function GroceryList({
     localStorage.setItem(queueKey, JSON.stringify([...readQueue(), next]));
     if (navigator.onLine) void flush();
   };
+
+  const addExtra = async (item: AddableItem) => {
+    setExtraQuery("");
+    setExtraNote(m.list.extraAdded);
+    setLines((list) => [
+      ...list,
+      {
+        id: item.id, name: item.name, aisle: item.aisle, need: "", buy: item.buy,
+        cents: item.cents, fullCents: item.cents, qty: 1, unit: "each",
+        pkgQty: 1, pkgCents: item.cents, byWeight: false, haveQty: 0,
+        have: false, checked: false, extra: true,
+      },
+    ]);
+    const result = await addExtraItem(planId, item.id);
+    if (!result.ok) setExtraNote(m.list.extraError);
+  };
+
+  const removeExtra = async (id: string) => {
+    setLines((list) => list.filter((l) => l.id !== id));
+    const result = await removeExtraItem(planId, id);
+    if (!result.ok) setExtraNote(m.list.extraError);
+  };
+
+  const onList = useMemo(() => new Set(lines.map((l) => l.id)), [lines]);
+  const matches = useMemo(() => {
+    const q = extraQuery.trim().toLowerCase();
+    if (!q) return [];
+    return addable.filter((i) => !onList.has(i.id) && i.name.toLowerCase().includes(q)).slice(0, 8);
+  }, [extraQuery, addable, onList]);
 
   const total = useMemo(() => lines.reduce((sum, l) => sum + (l.have ? 0 : l.cents), 0), [lines]);
   const toBuy = lines.filter((l) => !l.have);
@@ -293,7 +336,7 @@ export function GroceryList({
                       <span className={`min-w-0 flex-1 ${line.checked ? "text-fg-soft line-through decoration-accent decoration-2" : ""}`}>
                         <span className="block font-semibold leading-tight">{line.name}</span>
                         <span className="tnum block text-sm text-fg-soft">
-                          {fill(m.list.needBuy, { need: line.need, buy: line.buy })}
+                          {line.extra ? line.buy : fill(m.list.needBuy, { need: line.need, buy: line.buy })}
                           {line.haveQty > 0 && (
                             <span className="text-accent-deep"> · {fill(m.list.haveSome, { qty: amount(line.haveQty, line.unit, lang, units) })}</span>
                           )}
@@ -303,7 +346,19 @@ export function GroceryList({
                         </span>
                       </span>
                     </label>
-                    {editable && (
+                    {editable && line.extra && (
+                      <button
+                        type="button"
+                        onClick={() => void removeExtra(line.id)}
+                        aria-label={fill(m.list.extraRemove, { name: line.name })}
+                        className="flex size-8 shrink-0 items-center justify-center rounded-full text-fg-faint shadow-[inset_0_0_0_1.5px_var(--color-line)] transition-colors hover:text-over-deep"
+                      >
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true">
+                          <path d="M1 1l10 10M11 1L1 11" />
+                        </svg>
+                      </button>
+                    )}
+                    {editable && !line.extra && (
                       <span className="flex shrink-0 items-center gap-1">
                         {line.haveQty > 0 && (
                           <button
@@ -365,6 +420,47 @@ export function GroceryList({
           </section>
         )}
       </div>
+
+      {editable && (
+        <section className="mt-7" aria-labelledby="extras-title">
+          <h2 id="extras-title" className="text-xl">
+            {m.list.extraAdd}
+          </h2>
+          <input
+            type="search"
+            value={extraQuery}
+            onChange={(e) => setExtraQuery(e.target.value)}
+            placeholder={m.list.extraPlaceholder}
+            className="mt-3 w-full rounded-2xl bg-surface px-4 py-3 shadow-[inset_0_0_0_1.5px_var(--color-line)] placeholder:text-fg-faint focus:outline focus:outline-2 focus:outline-accent"
+            aria-label={m.list.extraAdd}
+          />
+          {extraQuery.trim() !== "" && (
+            <ul className="mt-2 space-y-2">
+              {matches.map((item) => (
+                <li key={item.id}>
+                  <button
+                    type="button"
+                    onClick={() => void addExtra(item)}
+                    className="flex w-full items-center justify-between gap-3 rounded-2xl bg-surface px-4 py-3 text-left shadow-[inset_0_0_0_1.5px_var(--color-line)] transition-colors hover:bg-bg-deep"
+                  >
+                    <span>
+                      <span className="block font-semibold leading-tight">{item.name}</span>
+                      <span className="tnum block text-sm text-fg-soft">{item.buy}</span>
+                    </span>
+                    <span className="tnum text-sm font-semibold text-spend">{moneyExact(item.cents, lang)}</span>
+                  </button>
+                </li>
+              ))}
+              {!matches.length && (
+                <li className="px-1 py-2 text-sm text-fg-soft">{m.list.extraEmpty}</li>
+              )}
+            </ul>
+          )}
+          {extraNote && (
+            <p role="status" className="mt-2 text-sm text-fg-soft">{extraNote}</p>
+          )}
+        </section>
+      )}
 
       <div className="mt-7 flex items-center justify-between gap-4 rounded-card bg-surface p-4 shadow-[inset_0_0_0_1.5px_var(--color-line)]">
         <p>
