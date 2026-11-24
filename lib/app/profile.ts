@@ -29,7 +29,14 @@ export function typicalSpendCents(householdSize: number): number {
 
 export const answersSchema = z.object({
   weekly_budget_cents: z.number().int().min(BUDGET_MIN_CENTS).max(BUDGET_MAX_CENTS),
-  usual_spend_cents: z.number().int().min(1000).max(300000).nullable(),
+  usual_spend_cents: z
+    .number()
+    .int()
+    .min(0)
+    .max(300000)
+    .nullable()
+    // Enter-submit can bypass the field's blur clamp: floor it here too.
+    .transform((v) => (v === null ? null : Math.max(1000, v))),
   household_size: z.number().int().min(1).max(8),
   diet: z.enum(DIETS),
   cook_time: z.enum(COOK_TIMES),

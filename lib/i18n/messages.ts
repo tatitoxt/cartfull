@@ -216,6 +216,12 @@ const en = {
     shareError: "Couldn't share from this browser.",
     shareTotal: "Estimated total {amount}",
     shareChecked: "already in cart",
+    extraAdd: "Add anything else",
+    extraPlaceholder: "Wine, soap, paper towels…",
+    extraEmpty: "Nothing in the catalog matches that yet.",
+    extraRemove: "Remove {name} from the list",
+    extraAdded: "Added to the list",
+    extraError: "Couldn’t update the extras. Try again.",
   },
   recipe: {
     back: "Back to the week",
@@ -443,6 +449,7 @@ const en = {
   aisles: {
     produce: "Produce", meat: "Meat", seafood: "Seafood", dairy: "Dairy and eggs", bakery: "Bakery",
     pantry: "Dry goods", canned: "Cans and jars", frozen: "Frozen", condiments: "Oils and sauces", spices: "Spices",
+    beverages: "Beverages", household: "Household",
   },
   days: {
     full: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
@@ -676,6 +683,12 @@ const es: Messages = {
     shareError: "No se pudo compartir desde este navegador.",
     shareTotal: "Total estimado {amount}",
     shareChecked: "ya en el carrito",
+    extraAdd: "Agrega lo que falte",
+    extraPlaceholder: "Vino, jabón, papel de cocina…",
+    extraEmpty: "Eso todavía no está en el catálogo.",
+    extraRemove: "Quitar {name} de la lista",
+    extraAdded: "Agregado a la lista",
+    extraError: "No pudimos actualizar los extras. Inténtalo de nuevo.",
   },
   recipe: {
     back: "Volver a la semana",
@@ -904,6 +917,7 @@ const es: Messages = {
     produce: "Frutas y verduras", meat: "Carnes", seafood: "Pescados y mariscos", dairy: "Lácteos y huevos",
     bakery: "Panadería", pantry: "Almacén", canned: "Enlatados y frascos", frozen: "Congelados",
     condiments: "Aceites y salsas", spices: "Especias",
+    beverages: "Bebidas", household: "Hogar y limpieza",
   },
   days: {
     full: ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"],

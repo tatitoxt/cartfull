@@ -4,7 +4,7 @@ import { revalidatePath } from "next/cache";
 import { cookies } from "next/headers";
 import { captureServer } from "../analytics/server";
 import { catalog, recipeBySlug } from "../catalog";
-import { MEAL_TYPES, type MealType } from "../catalog/types";
+import { MEAL_TYPES, type MealType, type Recipe } from "../catalog/types";
 import { buildCart } from "../planner/cart";
 import { generatePlan, hashSeed, swapOptions } from "../planner/plan";
 import { BudgetTooLowError, NotEnoughRecipesError, type MealAssignment } from "../planner/types";
@@ -18,6 +18,7 @@ import {
   loadPlan,
   planRequest,
   requireSession,
+  type LoadedPlan,
   type Session,
 } from "./data";
 import { answersSchema, typicalSpendCents, type Answers } from "./profile";
@@ -139,9 +140,11 @@ async function buildWeek(session: Session, planId?: string): Promise<ActionResul
   let seed: number;
   const have = new Set(pantry);
   let owned: ReadonlyMap<string, number> | undefined;
+  let extrasCents = 0;
   if (existing) {
     const loaded = await loadPlan(session, existing, { active: entitlement.active, firstId });
     if (!loaded.editable) return fail("paywall", m.actions.trialPlan);
+    extrasCents = loaded.extrasCents;
     weekStart = existing.week_start;
     seed = (existing.seed + 1) | 0;
     // What the shopper told us on this week's list wins over the saved pantry.
@@ -173,6 +176,13 @@ async function buildWeek(session: Session, planId?: string): Promise<ActionResul
     ratings: feedback.ratings,
     owned,
   });
+  // Hand-added extras stay on the list, so the meals must fit what's left.
+  const fullBudgetCents = request.budgetCents;
+  request.budgetCents = Math.max(0, request.budgetCents - extrasCents);
+  if (request.budgetCents <= 0) {
+    // The extras alone already eat the budget.
+    return plannerFailure(new BudgetTooLowError(fullBudgetCents, extrasCents), profile.lang)!;
+  }
   let plan;
   try {
     plan = generatePlan(catalog, request);
@@ -184,7 +194,7 @@ async function buildWeek(session: Session, planId?: string): Promise<ActionResul
 
   const error = await savePlan(session, profile.lang, {
     weekStart,
-    budgetCents: request.budgetCents,
+    budgetCents: fullBudgetCents,
     usualSpendCents: profile.usual_spend_cents ?? typicalSpendCents(profile.household_size),
     householdSize: profile.household_size,
     diet: profile.diet,
@@ -306,21 +316,49 @@ export async function getSwapChoices(planId: string, day: number, slot: MealType
   if (!loaded || !loaded.meals.some((m) => m.day === day && m.slot === slot)) return [];
   const [profile, pantry, feedback] = await Promise.all([getProfile(session), getPantry(session), getFeedback(session)]);
   const have = effectiveHave(pantry, loaded);
+  const owned = new Map(loaded.haveQty);
   const request = planRequest(profile, have, loaded.row.seed, {
     budgetCents: loaded.row.budget_cents,
     householdSize: loaded.row.household_size,
     favoriteSlugs: feedback.favorites,
     ratings: feedback.ratings,
-    owned: new Map(loaded.haveQty),
+    owned,
   });
-  return swapOptions(catalog, request, loaded.meals, { day, slot }).map((option) => ({
-    slug: option.recipe.slug,
-    name: (profile.lang === "es" && option.recipe.name_es) || option.recipe.name,
-    photoUrl: option.recipe.photo_url,
-    prepMinutes: option.recipe.prep_minutes,
-    totalCents: option.totalCents,
-    deltaCents: option.deltaCents,
-  }));
+  const currentCents = loaded.cart.totalCents + loaded.extrasCents;
+  return swapOptions(catalog, request, loaded.meals, { day, slot }, Infinity)
+    .map((option) => ({ option, estimate: swapEstimate(loaded, option.recipe, have, owned, { day, slot }) }))
+    .filter(({ estimate }) => estimate <= loaded.row.budget_cents)
+    .slice(0, 6)
+    .map(({ option, estimate }) => ({
+      slug: option.recipe.slug,
+      name: (profile.lang === "es" && option.recipe.name_es) || option.recipe.name,
+      photoUrl: option.recipe.photo_url,
+      prepMinutes: option.recipe.prep_minutes,
+      // Quote the real estimate (cart + remaining extras), not the cart alone:
+      // a swap that absorbs a hand-added item can cost less than the cart says.
+      totalCents: estimate,
+      deltaCents: estimate - currentCents,
+    }));
+}
+
+/** True week estimate if `recipe` replaced `target`: new cart + extras it does not absorb. */
+function swapEstimate(
+  loaded: LoadedPlan,
+  recipe: Recipe,
+  have: ReadonlySet<string>,
+  owned: ReadonlyMap<string, number>,
+  target: { day: number; slot: MealType },
+): number {
+  const current = loaded.meals.find((m) => m.day === target.day && m.slot === target.slot)!;
+  const replaced = (m: MealAssignment) => m.slot === target.slot && m.recipe.slug === current.recipe.slug;
+  const next = loaded.meals.map((m) => (replaced(m) ? { ...m, recipe, leftover: false } : m));
+  const cart = buildCart(next, catalog.ingredients, have, owned);
+  const ids = new Set(cart.lines.map((l) => l.ingredient.id));
+  let extras = 0;
+  for (const id of loaded.extras) {
+    if (!ids.has(id)) extras += catalog.ingredients.get(id)?.pkg_cents ?? 0;
+  }
+  return cart.totalCents + extras;
 }
 
 function effectiveHave(pantry: ReadonlySet<string>, loaded: { cart: { lines: { have: boolean; ingredient: { id: string } }[] } }) {
@@ -353,8 +391,11 @@ export async function swapMeal(planId: string, day: number, slot: MealType, slug
     ratings: feedback.ratings,
     owned,
   });
-  // Re-check on the server: the swap must be allowed for this household and keep the cart in budget.
-  const allowed = swapOptions(catalog, request, loaded.meals, { day, slot }, Infinity).some((o) => o.recipe.slug === slug);
+  // Re-check on the server: the swap must be allowed for this household and keep
+  // the week (cart + remaining extras) inside the budget.
+  const allowed =
+    swapOptions(catalog, request, loaded.meals, { day, slot }, Infinity).some((o) => o.recipe.slug === slug) &&
+    swapEstimate(loaded, recipe, have, owned, { day, slot }) <= loaded.row.budget_cents;
   if (!allowed) return fail("invalid", m.actions.swapBudget);
 
   const meals = loaded.meals.map((m) =>
@@ -464,6 +505,49 @@ export async function setRating(slug: string, rating: number | null): Promise<Ac
   return { ok: true };
 }
 
+const MAX_EXTRAS = 40;
+
+/** Adds a hand-picked catalog ingredient (wine, dish soap) to a week's list. */
+export async function addExtraItem(planId: string, ingredientId: string): Promise<ActionResult> {
+  const session = await requireSession();
+  const profile = await getProfile(session);
+  const m = MESSAGES[profile.lang];
+  const ingredient = catalog.ingredients.get(ingredientId);
+  const loaded = await editablePlan(session, planId);
+  if (!ingredient || !loaded) return fail("invalid", m.actions.itemMissing);
+  // Already needed by a meal, or already an extra: nothing to add.
+  if (loaded.extras.has(ingredientId) || loaded.cart.lines.some((l) => l.ingredient.id === ingredientId)) {
+    return { ok: true };
+  }
+  if (loaded.extras.size >= MAX_EXTRAS) return fail("failed", m.actions.saveItem);
+  // One statement: promotes a stale row (kept stock) or inserts a new one,
+  // and bumps the saved estimate — all idempotent, so concurrent tabs can't
+  // charge the same package twice.
+  const { error } = await session.supabase.rpc("add_plan_extra", {
+    p_plan_id: planId,
+    p_ingredient_id: ingredientId,
+  });
+  if (error) return fail("failed", m.actions.saveItem);
+  revalidatePath("/app", "layout");
+  return { ok: true };
+}
+
+/** Takes a hand-added ingredient back off the week's list. */
+export async function removeExtraItem(planId: string, ingredientId: string): Promise<ActionResult> {
+  const session = await requireSession();
+  const profile = await getProfile(session);
+  const m = MESSAGES[profile.lang];
+  const loaded = await editablePlan(session, planId);
+  if (!loaded) return fail("locked", m.actions.locked);
+  const { error } = await session.supabase.rpc("remove_plan_extra", {
+    p_plan_id: planId,
+    p_ingredient_id: ingredientId,
+  });
+  if (error) return fail("failed", m.actions.saveItem);
+  revalidatePath("/app", "layout");
+  return { ok: true };
+}
+
 export async function setItemState(
   planId: string,
   ingredientId: string,
@@ -476,7 +560,23 @@ export async function setItemState(
   const loaded = await editablePlan(session, planId);
   if (!loaded) return fail("locked", m.actions.locked);
   const line = ingredient ? loaded.cart.lines.find((l) => l.ingredient.id === ingredientId) : undefined;
-  if (!ingredient || !line) return fail("invalid", m.actions.itemMissing);
+  if (!ingredient) return fail("invalid", m.actions.itemMissing);
+
+  // Extras aren't cart lines: they only support the bought tick.
+  if (!line) {
+    if (!loaded.extras.has(ingredientId) || typeof change.checked !== "boolean") {
+      return fail("invalid", m.actions.itemMissing);
+    }
+    const { error } = await session.supabase
+      .from("plan_items")
+      .update({ checked: change.checked })
+      .eq("plan_id", planId)
+      .eq("ingredient_id", ingredientId)
+      .eq("extra", true);
+    if (error) return fail("failed", m.actions.saveItem);
+    revalidatePath("/app", "layout");
+    return { ok: true };
+  }
 
   const update: Record<string, boolean | number> = {};
   if (typeof change.checked === "boolean") update.checked = change.checked;
@@ -507,7 +607,7 @@ export async function setItemState(
     fracs.set(ingredientId, owned);
     if (update.have === true) have.add(ingredientId);
     else have.delete(ingredientId);
-    const total = buildCart(loaded.meals, catalog.ingredients, have, fracs).totalCents;
+    const total = buildCart(loaded.meals, catalog.ingredients, have, fracs).totalCents + loaded.extrasCents;
     await supabase.from("plans").update({ total_cents: total }).eq("id", planId);
     // Long-lasting basics are remembered for future weeks, only once fully owned.
     if (ingredient.staple) {
@@ -619,6 +719,14 @@ export async function getShareLink(planId: string): Promise<string | null> {
   const { data, error } = await session.supabase.rpc("create_plan_share", { p_plan_id: planId });
   if (error || !data) return null;
   return `${siteUrl}/share/${data}`;
+}
+
+/** Token-gated: latest tick states for the shared view's polling (no account needed). */
+export async function sharedChecks(token: string): Promise<Record<string, boolean>> {
+  if (!/^[0-9a-f-]{36}$/i.test(token)) return {};
+  const { data } = await createAdminClient().rpc("shared_plan", { p_token: token });
+  const items = (data as { items?: { ingredient_id: string; checked: boolean }[] } | null)?.items ?? [];
+  return Object.fromEntries(items.map((i) => [i.ingredient_id, i.checked]));
 }
 
 /** Token-gated: tick an item on a shared list (no account needed on the other side). */

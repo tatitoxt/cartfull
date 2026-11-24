@@ -5,6 +5,7 @@ import { weekIsOver, weekLabel } from "@/lib/app/week";
 import { AISLE_LABELS } from "@/lib/catalog/aisles";
 import { AISLES } from "@/lib/catalog/types";
 import { packagesFor, soldByWeight } from "@/lib/planner/cart";
+import { catalog } from "@/lib/catalog";
 import { amount, ingredientName, packageLabel } from "@/lib/catalog/localize";
 import { MESSAGES, fill } from "@/lib/i18n/messages";
 import { GroceryList, type ListLine } from "./grocery-list";
@@ -31,7 +32,7 @@ export default async function ListPage() {
     );
   }
 
-  const { row, cart, checked, editable } = current;
+  const { row, cart, checked, editable, extras } = current;
   const lines: ListLine[] = cart.lines.map((line) => {
     const ing = line.ingredient;
     const packages = packagesFor(ing, line.qty);
@@ -52,8 +53,43 @@ export default async function ListPage() {
       byWeight: soldByWeight(ing),
       haveQty: line.haveQty,
       checked: checked.has(ing.id),
+      extra: false,
     };
   });
+  // Hand-added items sit beside the cart lines: one package each, full price.
+  for (const id of extras) {
+    const ing = catalog.ingredients.get(id);
+    if (!ing || lines.some((l) => l.id === id)) continue;
+    lines.push({
+      id: ing.id,
+      name: ingredientName(ing, lang),
+      aisle: ing.aisle,
+      need: "",
+      buy: packageLabel(ing.pkg_label, lang, units) ?? ing.pkg_label,
+      cents: ing.pkg_cents,
+      fullCents: ing.pkg_cents,
+      have: false,
+      qty: 1,
+      unit: "each",
+      pkgQty: 1,
+      pkgCents: ing.pkg_cents,
+      byWeight: false,
+      haveQty: 0,
+      checked: checked.has(ing.id),
+      extra: true,
+    });
+  }
+  const onList = new Set(lines.map((l) => l.id));
+  const addable = [...catalog.ingredients.values()]
+    .filter((ing) => !onList.has(ing.id))
+    .map((ing) => ({
+      id: ing.id,
+      name: ingredientName(ing, lang),
+      aisle: ing.aisle,
+      buy: packageLabel(ing.pkg_label, lang, units) ?? ing.pkg_label,
+      cents: ing.pkg_cents,
+    }))
+    .sort((a, b) => a.name.localeCompare(b.name));
 
   return (
     <>
@@ -63,6 +99,7 @@ export default async function ListPage() {
         planId={row.id}
         budgetCents={row.budget_cents}
         lines={lines}
+        addable={addable}
         aisles={AISLES.map((aisle) => ({ aisle, label: AISLE_LABELS[lang][aisle] }))}
         editable={editable && !weekIsOver(row.week_start)}
         lang={lang}

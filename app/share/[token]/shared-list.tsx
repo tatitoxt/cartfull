@@ -1,9 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { checkSharedItem } from "@/lib/app/actions";
+import { checkSharedItem, sharedChecks } from "@/lib/app/actions";
 import { useMessages } from "@/lib/i18n/locale-provider";
-import { createClient } from "@/lib/supabase/client";
 
 export interface SharedLine {
   id: string;
@@ -18,12 +17,10 @@ export interface SharedLine {
 /** The shopper's view: tap an item to tick it off; ticks sync live for everyone. */
 export function SharedList({
   token,
-  planId,
   lines: initial,
   aisles,
 }: {
   token: string;
-  planId: string;
   lines: SharedLine[];
   aisles: { aisle: string; label: string }[];
 }) {
@@ -31,24 +28,23 @@ export function SharedList({
   const [lines, setLines] = useState(initial);
   const [note, setNote] = useState("");
 
+  // Link holders cannot read plan_items directly (row security), so ticks
+  // sync by polling the token-checked view every few seconds.
   useEffect(() => {
-    const supabase = createClient();
-    const channel = supabase
-      .channel(`shared-list-${planId}`)
-      .on(
-        "postgres_changes",
-        { event: "*", schema: "public", table: "plan_items", filter: `plan_id=eq.${planId}` },
-        (payload) => {
-          const row = payload.new as { ingredient_id?: string; checked?: boolean };
-          if (typeof row?.ingredient_id !== "string") return;
-          setLines((list) => list.map((l) => (l.id === row.ingredient_id ? { ...l, checked: row.checked === true } : l)));
-        },
-      )
-      .subscribe();
-    return () => {
-      void supabase.removeChannel(channel);
+    let live = true;
+    const sync = async () => {
+      if (document.visibilityState !== "visible") return;
+      const checks = await sharedChecks(token);
+      if (!live) return;
+      setLines((list) => list.map((l) => (l.id in checks ? { ...l, checked: checks[l.id] } : l)));
     };
-  }, [planId]);
+    const timer = setInterval(() => void sync(), 5000);
+    void sync();
+    return () => {
+      live = false;
+      clearInterval(timer);
+    };
+  }, [token]);
 
   const toggle = async (id: string) => {
     const line = lines.find((l) => l.id === id);
@@ -102,7 +98,7 @@ export function SharedList({
                         {line.name}
                       </span>
                       <span className={`mt-0.5 block text-sm text-fg-soft ${line.checked ? "line-through decoration-accent" : ""}`}>
-                        {line.need} · {line.buy}
+                        {[line.need, line.buy].filter(Boolean).join(" · ")}
                       </span>
                     </span>
                   </button>
