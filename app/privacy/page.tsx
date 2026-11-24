@@ -18,7 +18,12 @@ export default function PrivacyPage() {
           dislikes and pantry items.
         </li>
         <li>
-          <strong>Plans:</strong> the weeks we plan for you, your grocery list state, and the spend totals you enter.
+          <strong>Plans:</strong> the weeks we plan for you, your grocery list state, the spend totals you enter and the
+          receipt photos you attach.
+        </li>
+        <li>
+          <strong>Shared lists:</strong> when you share a live link, that list becomes readable by anyone who has the link,
+          without an account, until the link expires or is removed. Nothing else on your account is shared.
         </li>
         <li>
           <strong>Billing:</strong> your subscription status and Stripe customer ID. Card details go to Stripe and never
@@ -61,9 +66,10 @@ export default function PrivacyPage() {
 
       <h2>Keeping and deleting</h2>
       <p>
-        We keep your data while your account is open. Email{" "}
-        <a href="mailto:hello@cartfull.app">hello@cartfull.app</a> to get a copy, correct it, or delete your account and
-        its data. We may keep billing records as the law requires.
+        We keep your data while your account is open. You can delete your account and all of its data yourself from
+        Account &rarr; Delete account, and email{" "}
+        <a href="mailto:hello@cartfull.app">hello@cartfull.app</a> to get a copy or correct it. We may keep billing records
+        as the law requires.
       </p>
 
       <h2>Your rights</h2>

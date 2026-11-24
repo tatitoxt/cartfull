@@ -10,6 +10,26 @@ const en = {
     lead: "Tell us your weekly grocery budget. We plan the week, price the cart, and show you what you saved.",
     cta: "Plan my week",
     note: "First week free. No card needed.",
+    chips: { cart: "Estimated cart", under: "under budget" },
+  },
+  strip: ["300+ recipes, priced per package", "Works offline in the store", "English & Spanish", "Shared live grocery list"],
+  inside: {
+    title: "The app itself",
+    lead: "No stock mockups — this is Cartfull running on a phone.",
+    shots: [
+      { src: "/landing/plan.png", alt: "Weekly plan with an estimated cart total under budget", caption: "The week, planned to your number" },
+      { src: "/landing/list.png", alt: "Grocery list grouped by aisle with prices", caption: "A priced list, sorted by aisle" },
+      { src: "/landing/savings.png", alt: "Savings tracker showing money kept week by week", caption: "Savings you can see and share" },
+      { src: "/landing/recipe.png", alt: "Recipe page with cost, time and nutrition per serving", caption: "Every recipe priced per serving" },
+    ],
+    features: [
+      { title: "A list you can share live", body: "Send a link and someone else checks items off while you watch — no account needed on their side." },
+      { title: "Cook mode with step timers", body: "Big-type steps, one screen at a time, timers that start themselves and ring when done." },
+      { title: "Wine, bread, dish soap", body: "Add anything the meals didn't ask for. Extras count in the budget and ride on the shared list." },
+      { title: "Nine diets, real exclusions", body: "Vegan, vegetarian, pescatarian, keto, gluten-free, dairy-free and more — plus allergens and dislikes." },
+      { title: "Leftovers are a plan", body: "Mark a meal as leftovers and its ingredients leave the cart. The week adjusts instantly." },
+      { title: "Receipts prove it", body: "Snap your receipt, enter what you really spent, and watch the running total stay honest." },
+    ],
   },
   calc: {
     title: "See what a planned week could save you",
@@ -102,6 +122,26 @@ const es: LandingCopy = {
     lead: "Dinos cuánto puedes gastar en el súper esta semana. Planificamos el menú, calculamos el carrito y te mostramos cuánto ahorraste.",
     cta: "Planificar mi semana",
     note: "Primera semana gratis. Sin tarjeta.",
+    chips: { cart: "Carrito estimado", under: "por debajo" },
+  },
+  strip: ["Más de 300 recetas, con precio por paquete", "Funciona sin señal en el súper", "Español e inglés", "Lista compartida en vivo"],
+  inside: {
+    title: "La app, tal cual",
+    lead: "Sin mockups de stock — esto es Cartfull corriendo en un teléfono.",
+    shots: [
+      { src: "/landing/plan.png", alt: "Plan semanal con total de carrito por debajo del presupuesto", caption: "La semana, ajustada a tu número" },
+      { src: "/landing/list.png", alt: "Lista de compras ordenada por pasillo con precios", caption: "Una lista con precios, por pasillo" },
+      { src: "/landing/savings.png", alt: "Ahorro acumulado semana a semana", caption: "Ahorro que se ve y se comparte" },
+      { src: "/landing/recipe.png", alt: "Receta con costo, tiempo y nutrición por porción", caption: "Cada receta con precio por porción" },
+    ],
+    features: [
+      { title: "Lista compartida en vivo", body: "Manda un link y otra persona tacha contigo en el súper — sin cuenta del otro lado." },
+      { title: "Modo cocina con timers", body: "Pasos en letra grande, uno por pantalla, con timers que arrancan solos y suenan al terminar." },
+      { title: "Vino, pan, jabón", body: "Agrega lo que las comidas no pidieron. Los extras cuentan en el presupuesto y van en la lista compartida." },
+      { title: "Nueve dietas, exclusiones reales", body: "Vegana, vegetariana, pescatariana, keto, sin gluten, sin lácteos y más — más alérgenos y gustos." },
+      { title: "Las sobras también planifican", body: "Marca una comida como sobras y sus ingredientes salen del carrito al instante." },
+      { title: "El recibo manda", body: "Saca foto del recibo, anota lo que gastaste de verdad y el ahorro queda honesto." },
+    ],
   },
   calc: {
     title: "Mira cuánto podrías ahorrar con una semana planificada",

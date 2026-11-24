@@ -9,7 +9,9 @@
  *   screen is shown, so they never outlive the person they belong to.
  * - API, auth and non-GET requests are never answered from here.
  */
-const VERSION = "v1";
+// Bump when precached assets (icons, /offline) or caching behavior change, so
+// the new worker installs, re-precaches and drops the old caches on activate.
+const VERSION = "v2";
 const STATIC = `cartfull-static-${VERSION}`;
 const PAGES = `cartfull-pages-${VERSION}`;
 const PHOTOS = `cartfull-photos-${VERSION}`;
@@ -23,7 +25,11 @@ let removals = 0;
 
 function removeKeptPages() {
   removals += 1;
-  return caches.delete(PAGES);
+  // Every version's page cache, not just this worker's: a stale copy kept by an
+  // older worker must not survive sign-in either.
+  return caches
+    .keys()
+    .then((keys) => Promise.all(keys.filter((key) => key.startsWith("cartfull-pages-")).map((key) => caches.delete(key))));
 }
 
 const keptOffline = (path) => path === "/app/plan" || path === "/app/list" || path.startsWith("/app/recipe/");
