@@ -2,17 +2,17 @@ export function LogoMark({ size = 28 }: { size?: number }) {
   return (
     <svg width={size} height={size} viewBox="0 0 512 512" aria-hidden="true">
       <rect width="512" height="512" rx="132" fill="#A8E24B" />
-      <path d="M268 212c4-52 44-88 96-88 0 54-40 88-96 88Z" fill="#2E4A06" />
       <path
-        d="M96 158h46l40 178a28 28 0 0 0 27 21h122a28 28 0 0 0 27-21l32-124H182"
+        d="M112 146h42l38 171a26 26 0 0 0 25 19.5h129a26 26 0 0 0 25-19.5l28.5-113.5H186"
         fill="none"
         stroke="#141A06"
-        strokeWidth="36"
+        strokeWidth="34"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
-      <circle cx="229" cy="404" r="27" fill="#141A06" />
-      <circle cx="331" cy="404" r="27" fill="#141A06" />
+      <circle cx="231" cy="392" r="26" fill="#141A06" />
+      <circle cx="340" cy="392" r="26" fill="#141A06" />
+      <path d="M292 156c0-38 28-65 67-65 0 39-28 65-67 65Z" fill="#2E4A06" />
     </svg>
   );
 }
