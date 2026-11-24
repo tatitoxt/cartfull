@@ -65,8 +65,18 @@ export default function TermsPage() {
           If you cancel later you keep access until the end of the period you paid for.
         </li>
         <li>Payments are handled by Stripe. We do not store your card number.</li>
+        <li>
+          Introductory or promotional prices may be offered from time to time; the price that applies to you is the one
+          shown at checkout, and renewals after a promotion are at the regular plan price.
+        </li>
         <li>If we change the price we will tell you by email before your next renewal.</li>
       </ul>
+
+      <h2>Shared lists</h2>
+      <p>
+        You can share a grocery list with a live link. Anyone who has the link can view the list and check items off,
+        without an account. Share links only with people you trust, and remove a link when the shop is done.
+      </p>
 
       <h2>Fair use</h2>
       <p>

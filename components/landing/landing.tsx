@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Logo } from "@/components/logo";
 import { Photo } from "@/components/photo";
@@ -6,6 +7,19 @@ import { moneyExact, moneyRound } from "@/lib/format";
 import { LANDING, fill, type Locale } from "@/lib/i18n/landing";
 import { plannedWeekByHousehold, sampleWeek } from "@/lib/landing/sample";
 import { Calculator } from "./calculator";
+
+/** A real app screenshot dressed as a phone. */
+function Phone({ src, alt, className = "", priority = false }: { src: string; alt: string; className?: string; priority?: boolean }) {
+  return (
+    <div
+      className={`overflow-hidden rounded-[2.2rem] bg-bg-deep p-1.5 shadow-[inset_0_0_0_1.5px_var(--color-line),0_32px_64px_-32px_rgb(0_0_0/0.8)] ${className}`}
+    >
+      <div className="overflow-hidden rounded-[1.8rem]">
+        <Image src={src} alt={alt} width={376} height={844} priority={priority} className="h-auto w-full" />
+      </div>
+    </div>
+  );
+}
 
 export function Landing({ locale }: { locale: Locale }) {
   const t = LANDING[locale];
@@ -38,8 +52,12 @@ export function Landing({ locale }: { locale: Locale }) {
       </header>
 
       <main id="main">
-        <section className="mx-auto grid w-full max-w-6xl gap-10 px-5 pb-16 pt-8 lg:grid-cols-[minmax(0,6fr)_minmax(0,5fr)] lg:items-center lg:gap-14 lg:pt-14">
-          <div className="rise">
+        <section className="relative mx-auto grid w-full max-w-6xl gap-10 px-5 pb-16 pt-8 lg:grid-cols-[minmax(0,6fr)_minmax(0,5fr)] lg:items-center lg:gap-14 lg:pt-14">
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute -top-24 right-0 h-[34rem] w-[34rem] rounded-full bg-accent opacity-[0.07] blur-3xl"
+          />
+          <div className="rise relative">
             <p className="text-sm font-semibold uppercase tracking-wider text-accent">{t.hero.eyebrow}</p>
             <h1 className="mt-4 text-[2.75rem] sm:text-6xl lg:text-7xl">{t.hero.title}</h1>
             <p className="mt-6 max-w-xl text-lg text-fg-soft sm:text-xl">{t.hero.lead}</p>
@@ -50,7 +68,32 @@ export function Landing({ locale }: { locale: Locale }) {
               <p className="text-sm text-fg-soft">{t.hero.note}</p>
             </div>
           </div>
-          <Calculator planned={planned} copy={t.calc} cta={t.hero.cta} />
+          <div className="rise relative mx-auto w-full max-w-sm lg:max-w-lg">
+            <div className="grid grid-cols-[57%_43%]">
+              <Phone src="/landing/plan.png" alt={t.inside.shots[0].alt} priority className="relative z-10" />
+              <div aria-hidden="true" className="relative z-0 -ml-[38%] mt-14">
+                <Phone src="/landing/list.png" alt="" />
+              </div>
+            </div>
+            <div className="absolute -left-3 top-[42%] z-20 rounded-card bg-surface px-4 py-3 shadow-[inset_0_0_0_1.5px_var(--color-line),0_16px_40px_-20px_rgb(0_0_0/0.7)] backdrop-blur sm:-left-8">
+              <p className="text-xs font-medium text-fg-soft">{t.hero.chips.cart}</p>
+              <p className="tnum font-display text-2xl font-semibold leading-tight">$82.42</p>
+              <p className="tnum text-sm font-semibold text-accent-deep">$92.58 {t.hero.chips.under}</p>
+            </div>
+          </div>
+        </section>
+
+        <section aria-label="Cartfull at a glance" className="border-y border-line">
+          <ul className="mx-auto flex w-full max-w-6xl flex-wrap items-center gap-x-3 gap-y-2 px-5 py-5">
+            {t.strip.map((line) => (
+              <li
+                key={line}
+                className="rounded-full bg-surface px-4 py-2 text-sm font-medium text-fg-soft shadow-[inset_0_0_0_1px_var(--color-line)]"
+              >
+                {line}
+              </li>
+            ))}
+          </ul>
         </section>
 
         <section id="how" className="border-y border-line bg-bg-deep">
@@ -113,6 +156,27 @@ export function Landing({ locale }: { locale: Locale }) {
           </section>
         )}
 
+        <section aria-labelledby="inside-title" className="mx-auto w-full max-w-6xl px-5 py-16 sm:py-20">
+          <h2 id="inside-title" className="max-w-xl text-4xl sm:text-5xl">{t.inside.title}</h2>
+          <p className="mt-3 max-w-xl text-lg text-fg-soft">{t.inside.lead}</p>
+          <ul className="mt-10 grid grid-cols-2 gap-5 sm:gap-7 lg:grid-cols-4">
+            {t.inside.shots.map((shot) => (
+              <li key={shot.src}>
+                <Phone src={shot.src} alt={shot.alt} />
+                <p className="mt-4 text-sm font-semibold text-fg-soft">{shot.caption}</p>
+              </li>
+            ))}
+          </ul>
+          <dl className="mt-14 grid gap-x-10 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
+            {t.inside.features.map((item) => (
+              <div key={item.title} className="border-t border-line pt-4">
+                <dt className="font-display text-xl font-semibold">{item.title}</dt>
+                <dd className="mt-2 text-fg-soft">{item.body}</dd>
+              </div>
+            ))}
+          </dl>
+        </section>
+
         <section className="bg-accent-deep text-bg">
           <div className="mx-auto w-full max-w-6xl px-5 py-16 sm:py-20">
             <h2 className="max-w-2xl text-4xl sm:text-5xl">{t.why.title}</h2>
@@ -127,7 +191,14 @@ export function Landing({ locale }: { locale: Locale }) {
           </div>
         </section>
 
-        <section id="pricing" className="mx-auto grid w-full max-w-6xl gap-10 px-5 py-16 sm:py-20 lg:grid-cols-2 lg:gap-16">
+        <section aria-labelledby="calc-heading" className="mx-auto grid w-full max-w-6xl gap-10 px-5 py-16 sm:py-20 lg:grid-cols-2 lg:items-center lg:gap-16">
+          <div>
+            <h2 id="calc-heading" className="text-4xl sm:text-5xl">{t.calc.title}</h2>
+          </div>
+          <Calculator planned={planned} copy={t.calc} cta={t.hero.cta} />
+        </section>
+
+        <section id="pricing" className="mx-auto grid w-full max-w-6xl gap-10 border-t border-line px-5 py-16 sm:py-20 lg:grid-cols-2 lg:gap-16">
           <div>
             <h2 className="text-4xl sm:text-5xl">{t.pricing.title}</h2>
             <p className="mt-4 text-lg text-fg-soft">{t.pricing.lead}</p>
