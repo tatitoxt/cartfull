@@ -93,6 +93,12 @@ async function saveAnswers(session: Session, answers: Answers, markOnboarded: bo
     units: answers.units,
     equipment: answers.equipment,
   };
+  // Onboarding never shows reminder switches, so it must not wipe them.
+  if (!markOnboarded) {
+    update.notify_plan = answers.notify_plan;
+    update.notify_shopping = answers.notify_shopping;
+    update.notify_receipt = answers.notify_receipt;
+  }
   if (markOnboarded) {
     update.onboarded_at = new Date().toISOString();
     const utm = await readUtm();

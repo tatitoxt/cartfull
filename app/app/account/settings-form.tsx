@@ -9,6 +9,7 @@ import {
   MealFields,
   PantryFields,
   UsualSpendField,
+  Toggle,
 } from "@/components/preferences";
 import { saveSettings } from "@/lib/app/actions";
 import type { PantryGroups } from "@/lib/app/pantry";
@@ -62,6 +63,28 @@ export function SettingsForm({
     { id: "meals", title: m.account.meals, body: <MealFields answers={answers} set={set} /> },
     { id: "avoid", title: m.account.leaveOut, body: <AvoidFields answers={answers} set={set} dislikeOptions={dislikeOptions} /> },
     { id: "kitchen", title: m.account.kitchen, body: <PantryFields answers={answers} set={set} pantry={pantry} /> },
+    { id: "reminders", title: m.account.reminders.title, body: (
+        <div className="space-y-3">
+          <Toggle
+            label={m.account.reminders.plan}
+            hint={m.account.reminders.planHint}
+            checked={answers.notify_plan}
+            onChange={(notify_plan) => set({ notify_plan })}
+          />
+          <Toggle
+            label={m.account.reminders.shopping}
+            hint={m.account.reminders.shoppingHint}
+            checked={answers.notify_shopping}
+            onChange={(notify_shopping) => set({ notify_shopping })}
+          />
+          <Toggle
+            label={m.account.reminders.receipt}
+            hint={m.account.reminders.receiptHint}
+            checked={answers.notify_receipt}
+            onChange={(notify_receipt) => set({ notify_receipt })}
+          />
+        </div>
+      ) },
   ];
 
   return (

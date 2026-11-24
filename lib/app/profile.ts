@@ -42,6 +42,9 @@ export const answersSchema = z.object({
   lang: z.enum(["en", "es"]).default(DEFAULTS.lang),
   units: z.enum(["imperial", "metric"]).default(DEFAULTS.units),
   equipment: z.array(z.enum(EQUIPMENT)).max(EQUIPMENT.length).default([...DEFAULTS.equipment]),
+  notify_plan: z.boolean().default(false),
+  notify_shopping: z.boolean().default(false),
+  notify_receipt: z.boolean().default(false),
 });
 
 export type Answers = z.infer<typeof answersSchema>;
