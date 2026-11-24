@@ -294,7 +294,13 @@ export function UsualSpendField({ answers, set }: { answers: Answers; set: SetAn
           value={answers.usual_spend_cents === null ? "" : String(Math.round(answers.usual_spend_cents / 100))}
           onChange={(e) => {
             const digits = e.target.value.replace(/\D/g, "").slice(0, 4);
-            set({ usual_spend_cents: digits ? Math.max(10, Number(digits)) * 100 : null });
+            set({ usual_spend_cents: digits ? Number(digits) * 100 : null });
+          }}
+          onBlur={() => {
+            // The $10 floor applies once typing ends, not per keystroke.
+            if (answers.usual_spend_cents !== null && answers.usual_spend_cents < 1000) {
+              set({ usual_spend_cents: 1000 });
+            }
           }}
         />
       </div>

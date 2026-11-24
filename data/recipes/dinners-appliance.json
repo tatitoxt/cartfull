@@ -1,1778 +1,1778 @@
 [
- {
-  "slug": "slow-cooker-pulled-pork",
-  "name": "Slow Cooker Pulled Pork",
-  "meal_type": "dinner",
-  "name_es": "Cerdo desmenuzado en olla lenta",
-  "diet_tags": [
-   "gluten_free",
-   "dairy_free",
-   "high_protein"
-  ],
-  "servings": 6,
-  "prep_minutes": 480,
-  "batch_friendly": true,
-  "description": "Set-and-forget pork shoulder that shreds itself, for sandwiches, tacos or rice bowls.",
-  "description_es": "Paletilla de cerdo que se cocina sola y se desmenuza, para sándwiches, tacos o bowls.",
-  "steps": [
-   "Season the pork with the salt, paprika, cumin and brown sugar.",
-   "Place the onion and garlic in the slow cooker, set the pork on top and add half a cup of water.",
-   "Cook on low 8 hours until the pork shreds easily with a fork.",
-   "Shred it in the pot, toss with the juices and serve."
-  ],
-  "steps_es": [
-   "Sazona el cerdo con la sal, el pimentón, el comino y el azúcar morena.",
-   "Coloca la cebolla y el ajo en la olla lenta, pon el cerdo encima y agrega media taza de agua.",
-   "Cocina a fuego bajo 8 horas hasta que el cerdo se desmenuce fácil con el tenedor.",
-   "Desmenúzalo en la olla, mézclalo con sus jugos y sirve."
-  ],
-  "ingredients": [
-   {
-    "id": "pork_shoulder",
-    "qty": 3
-   },
-   {
-    "id": "onion_yellow",
-    "qty": 1,
-    "note": "sliced",
-    "note_es": "en tiras"
-   },
-   {
-    "id": "garlic",
-    "qty": 4,
-    "note": "smashed",
-    "note_es": "machacado"
-   },
-   {
-    "id": "brown_sugar",
-    "qty": 0.2
-   },
-   {
-    "id": "smoked_paprika",
-    "qty": 2
-   },
-   {
-    "id": "cumin",
-    "qty": 1
-   },
-   {
-    "id": "salt",
-    "qty": 1.5
-   }
-  ],
-  "equipment": [
-   "slow_cooker"
-  ],
-  "active_minutes": 15,
-  "tip": "Leftovers crisp beautifully under the broiler — instant carnitas.",
-  "tip_es": "Los restos quedan crocantes bajo el grill: carnitas instantáneas.",
-  "photo_url": "https://images.unsplash.com/photo-1679744034962-c0650a2a20b3",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/a-person-holding-a-sandwich-in-their-hand-q6bnRITHmEY"
+  {
+    "slug": "slow-cooker-pulled-pork",
+    "name": "Slow Cooker Pulled Pork",
+    "meal_type": "dinner",
+    "name_es": "Cerdo desmenuzado en olla lenta",
+    "diet_tags": [
+      "gluten_free",
+      "dairy_free",
+      "high_protein"
+    ],
+    "servings": 6,
+    "prep_minutes": 480,
+    "batch_friendly": true,
+    "description": "Set-and-forget pork shoulder that shreds itself, for sandwiches, tacos or rice bowls.",
+    "description_es": "Paletilla de cerdo que se cocina sola y se desmenuza, para sándwiches, tacos o bowls.",
+    "steps": [
+      "Season the pork with the salt, paprika, cumin and brown sugar.",
+      "Place the onion and garlic in the slow cooker, set the pork on top and add half a cup of water.",
+      "Cook on low 8 hours until the pork shreds easily with a fork.",
+      "Shred it in the pot, toss with the juices and serve."
+    ],
+    "steps_es": [
+      "Sazona el cerdo con la sal, el pimentón, el comino y el azúcar morena.",
+      "Coloca la cebolla y el ajo en la olla lenta, pon el cerdo encima y agrega media taza de agua.",
+      "Cocina a fuego bajo 8 horas hasta que el cerdo se desmenuce fácil con el tenedor.",
+      "Desmenúzalo en la olla, mézclalo con sus jugos y sirve."
+    ],
+    "ingredients": [
+      {
+        "id": "pork_shoulder",
+        "qty": 3
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "sliced",
+        "note_es": "en tiras"
+      },
+      {
+        "id": "garlic",
+        "qty": 4,
+        "note": "smashed",
+        "note_es": "machacado"
+      },
+      {
+        "id": "brown_sugar",
+        "qty": 0.2
+      },
+      {
+        "id": "smoked_paprika",
+        "qty": 2
+      },
+      {
+        "id": "cumin",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 1.5
+      }
+    ],
+    "equipment": [
+      "slow_cooker"
+    ],
+    "active_minutes": 15,
+    "tip": "Leftovers crisp beautifully under the broiler — instant carnitas.",
+    "tip_es": "Los restos quedan crocantes bajo el grill: carnitas instantáneas.",
+    "photo_url": "https://images.unsplash.com/photo-1679744034962-c0650a2a20b3",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/a-person-holding-a-sandwich-in-their-hand-q6bnRITHmEY"
+    }
+  },
+  {
+    "slug": "slow-cooker-chicken-chili",
+    "name": "Slow Cooker Chicken Chili",
+    "meal_type": "dinner",
+    "name_es": "Chili de pollo en olla lenta",
+    "diet_tags": [
+      "gluten_free",
+      "dairy_free",
+      "high_protein"
+    ],
+    "servings": 6,
+    "prep_minutes": 360,
+    "batch_friendly": true,
+    "description": "White-bean chicken chili that cooks itself — dump and walk away.",
+    "description_es": "Chili de pollo con porotos blancos que se cocina solo: todo adentro y listo.",
+    "steps": [
+      "Place the chicken, beans, chiles, tomatoes, onion, garlic and spices in the slow cooker with a pinch of salt.",
+      "Cook on low 6 hours.",
+      "Shred the chicken right in the pot with two forks and stir everything together.",
+      "Serve with your favorite toppings."
+    ],
+    "steps_es": [
+      "Coloca el pollo, los porotos, los chiles, el tomate, la cebolla, el ajo y las especias en la olla lenta con una pizca de sal.",
+      "Cocina a fuego bajo 6 horas.",
+      "Deshebra el pollo dentro de la olla con dos tenedores y mezcla todo.",
+      "Sirve con tus toppings favoritos."
+    ],
+    "ingredients": [
+      {
+        "id": "chicken_breast",
+        "qty": 2
+      },
+      {
+        "id": "white_beans",
+        "qty": 3,
+        "note": "cans, drained",
+        "note_es": "latas, escurridos"
+      },
+      {
+        "id": "green_chiles",
+        "qty": 2,
+        "note": "cans",
+        "note_es": "latas"
+      },
+      {
+        "id": "diced_tomatoes",
+        "qty": 1
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "cumin",
+        "qty": 2
+      },
+      {
+        "id": "oregano",
+        "qty": 1
+      },
+      {
+        "id": "chili_powder",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      }
+    ],
+    "equipment": [
+      "slow_cooker"
+    ],
+    "active_minutes": 10,
+    "photo_url": "https://images.unsplash.com/photo-1764314108477-f026172e32a9",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/hearty-stew-with-chunks-of-meat-and-red-chili-peppers-a-p0M2ZTlj0"
+    }
+  },
+  {
+    "slug": "slow-cooker-beef-stew",
+    "name": "Slow Cooker Beef Stew",
+    "meal_type": "dinner",
+    "name_es": "Estofado de res en olla lenta",
+    "diet_tags": [
+      "gluten_free",
+      "dairy_free",
+      "high_protein"
+    ],
+    "servings": 6,
+    "prep_minutes": 480,
+    "batch_friendly": true,
+    "description": "Classic beef stew with potatoes and carrots, ready when you walk in the door.",
+    "description_es": "Estofado clásico de res con papas y zanahorias, listo cuando llegas a casa.",
+    "steps": [
+      "Season the beef with the salt and pepper.",
+      "Place the beef, potatoes, carrots, onion and garlic in the slow cooker.",
+      "Pour in the broth, tomato paste and worcestershire; stir.",
+      "Cook on low 8 hours until the beef is fork-tender; stir in the peas at the end."
+    ],
+    "steps_es": [
+      "Sazona la carne con la sal y la pimienta.",
+      "Coloca la carne, las papas, las zanahorias, la cebolla y el ajo en la olla lenta.",
+      "Vierte el caldo, la pasta de tomate y el worcestershire; revuelve.",
+      "Cocina a fuego bajo 8 horas hasta que la carne esté tierna; agrega las arvejas al final."
+    ],
+    "ingredients": [
+      {
+        "id": "beef_stew",
+        "qty": 2
+      },
+      {
+        "id": "potato_russet",
+        "qty": 3,
+        "note": "in large chunks",
+        "note_es": "en trozos grandes"
+      },
+      {
+        "id": "carrot",
+        "qty": 4,
+        "note": "in chunks",
+        "note_es": "en trozos"
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "in chunks",
+        "note_es": "en trozos"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "beef_broth",
+        "qty": 4,
+        "note": "carton, 4 cups",
+        "note_es": "caja, 4 tazas"
+      },
+      {
+        "id": "tomato_paste",
+        "qty": 2
+      },
+      {
+        "id": "worcestershire",
+        "qty": 2
+      },
+      {
+        "id": "peas_frozen",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.5
+      }
+    ],
+    "equipment": [
+      "slow_cooker"
+    ],
+    "active_minutes": 20,
+    "photo_url": "https://images.unsplash.com/photo-1627366422957-3efa9c6df0fc",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/soup-with-meat-in-white-ceramic-bowl-eI_Uk6uGCOQ"
+    }
+  },
+  {
+    "slug": "slow-cooker-salsa-chicken",
+    "name": "Slow Cooker Salsa Chicken",
+    "meal_type": "dinner",
+    "name_es": "Pollo a la salsa en olla lenta",
+    "diet_tags": [
+      "gluten_free",
+      "dairy_free",
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 300,
+    "batch_friendly": true,
+    "description": "Two-ingredient shredded chicken for tacos, bowls and burritos all week.",
+    "description_es": "Pollo deshebrado de dos ingredientes para tacos, bowls y burritos toda la semana.",
+    "steps": [
+      "Place the chicken in the slow cooker and pour the salsa over it.",
+      "Cook on low 5 hours.",
+      "Shred it in the pot and stir it into the sauce.",
+      "Serve in tacos, over rice or in bowls."
+    ],
+    "steps_es": [
+      "Coloca el pollo en la olla lenta y vierte la salsa por encima.",
+      "Cocina a fuego bajo 5 horas.",
+      "Desmébralo en la olla y mézclalo con la salsa.",
+      "Sirve en tacos, sobre arroz o en bowls."
+    ],
+    "ingredients": [
+      {
+        "id": "chicken_thigh",
+        "qty": 2
+      },
+      {
+        "id": "salsa",
+        "qty": 1.5
+      },
+      {
+        "id": "cumin",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      }
+    ],
+    "equipment": [
+      "slow_cooker"
+    ],
+    "active_minutes": 10,
+    "tip": "This is the best batch-cook in the book — it seasons tacos, salads and quesadillas all week.",
+    "tip_es": "Es el mejor cocinado en tanda del libro: sirve para tacos, ensaladas y quesadillas toda la semana.",
+    "photo_url": "https://images.unsplash.com/photo-1545093149-618ce3bcf49d",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/taco-with-vegetables-s6SOj6uYjXI"
+    }
+  },
+  {
+    "slug": "slow-cooker-pot-roast",
+    "name": "Slow Cooker Pot Roast",
+    "meal_type": "dinner",
+    "name_es": "Asado en olla lenta",
+    "diet_tags": [
+      "gluten_free",
+      "dairy_free",
+      "high_protein"
+    ],
+    "servings": 6,
+    "prep_minutes": 480,
+    "batch_friendly": true,
+    "description": "Fall-apart pot roast with vegetables and rich gravy.",
+    "description_es": "Asado que se deshace con verduras y una salsa rica.",
+    "steps": [
+      "Season the roast with salt and pepper and place it in the slow cooker.",
+      "Arrange the potatoes, carrots and onion around it.",
+      "Pour in the broth and worcestershire.",
+      "Cook on low 8 hours until the roast shreds; serve with the vegetables and juices."
+    ],
+    "steps_es": [
+      "Sazona el asado con sal y pimienta y colócalo en la olla lenta.",
+      "Acomoda las papas, zanahorias y cebolla alrededor.",
+      "Vierte el caldo y el worcestershire.",
+      "Cocina a fuego bajo 8 horas hasta que el asado se desmenuce; sirve con las verduras y sus jugos."
+    ],
+    "ingredients": [
+      {
+        "id": "beef_stew",
+        "qty": 2.5,
+        "note": "a whole chuck roast if available",
+        "note_es": "un corte entero para asado si hay"
+      },
+      {
+        "id": "potato_russet",
+        "qty": 3,
+        "note": "in large chunks",
+        "note_es": "en trozos grandes"
+      },
+      {
+        "id": "carrot",
+        "qty": 4,
+        "note": "in chunks",
+        "note_es": "en trozos"
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "in wedges",
+        "note_es": "en gajos"
+      },
+      {
+        "id": "beef_broth",
+        "qty": 2,
+        "note": "carton, 4 cups",
+        "note_es": "caja, 4 tazas"
+      },
+      {
+        "id": "worcestershire",
+        "qty": 3
+      },
+      {
+        "id": "thyme",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.5
+      }
+    ],
+    "equipment": [
+      "slow_cooker"
+    ],
+    "active_minutes": 15,
+    "photo_url": "https://images.unsplash.com/photo-1509402308-817902776267",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/roast-meat-top-with-slice-limes-a2scGjpiI5E"
+    }
+  },
+  {
+    "slug": "slow-cooker-lentil-soup",
+    "name": "Slow Cooker Lentil Soup",
+    "meal_type": "dinner",
+    "name_es": "Sopa de lentejas en olla lenta",
+    "diet_tags": [
+      "vegetarian",
+      "vegan",
+      "gluten_free",
+      "dairy_free"
+    ],
+    "servings": 6,
+    "prep_minutes": 360,
+    "batch_friendly": true,
+    "description": "Hands-off lentil soup with carrots, tomatoes and cumin — cheap and filling.",
+    "description_es": "Sopa de lentejas sin supervisión con zanahorias, tomate y comino: barata y abundante.",
+    "steps": [
+      "Place the lentils, carrot, onion, celery, garlic, tomatoes and cumin in the slow cooker.",
+      "Pour in the broth and stir once to combine.",
+      "Cook on low 6 hours until the lentils are completely tender.",
+      "Stir in the vinegar and salt, taste and serve."
+    ],
+    "steps_es": [
+      "Coloca las lentejas, la zanahoria, la cebolla, el apio, el ajo, el tomate y el comino en la olla lenta.",
+      "Vierte el caldo y revuelve una vez para combinar.",
+      "Cocina a fuego bajo 6 horas hasta que las lentejas estén completamente tiernas.",
+      "Agrega el vinagre y la sal, prueba y sirve."
+    ],
+    "ingredients": [
+      {
+        "id": "lentils",
+        "qty": 2
+      },
+      {
+        "id": "carrot",
+        "qty": 3,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "celery",
+        "qty": 2,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "diced_tomatoes",
+        "qty": 1
+      },
+      {
+        "id": "cumin",
+        "qty": 1
+      },
+      {
+        "id": "vegetable_broth",
+        "qty": 6,
+        "note": "cartons, 8 cups",
+        "note_es": "cajas, 8 tazas"
+      },
+      {
+        "id": "vinegar_cider",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      }
+    ],
+    "equipment": [
+      "slow_cooker"
+    ],
+    "active_minutes": 15,
+    "photo_url": "https://images.unsplash.com/photo-1608500219063-e5164085cd6f",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/white-ceramic-bowl-with-food-JXYdIWqA5IM"
+    }
+  },
+  {
+    "slug": "air-fryer-chicken-thighs",
+    "name": "Air Fryer Crispy Chicken Thighs",
+    "meal_type": "dinner",
+    "name_es": "Muslos de pollo crocantes en air fryer",
+    "diet_tags": [
+      "gluten_free",
+      "dairy_free",
+      "high_protein",
+      "low_carb",
+      "keto"
+    ],
+    "servings": 4,
+    "prep_minutes": 30,
+    "batch_friendly": false,
+    "description": "Crackly-skinned chicken thighs in 20 minutes, no oven needed.",
+    "description_es": "Muslos de piel crujiente en 20 minutos, sin horno.",
+    "steps": [
+      "Pat the chicken dry and season all over with salt, garlic powder and paprika.",
+      "Arrange skin-side down in the air fryer basket.",
+      "Cook at {380F} 18 to 22 minutes, flipping once, until the skin is crisp and the inside reaches 165F.",
+      "Rest 5 minutes and serve."
+    ],
+    "steps_es": [
+      "Seca bien el pollo y sazónalo por todos lados con sal, ajo en polvo y pimentón.",
+      "Acomódalo con la piel hacia abajo en la canasta del air fryer.",
+      "Cocina a {380F} de 18 a 22 minutos, dándolo vuelta una vez, hasta que la piel esté crocante y el interior marque 165F.",
+      "Deja reposar 5 minutos y sirve."
+    ],
+    "ingredients": [
+      {
+        "id": "chicken_thigh",
+        "qty": 2,
+        "note": "bone-in, skin-on",
+        "note_es": "con hueso y piel"
+      },
+      {
+        "id": "garlic_powder",
+        "qty": 1
+      },
+      {
+        "id": "paprika",
+        "qty": 1
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.5
+      }
+    ],
+    "equipment": [
+      "air_fryer"
+    ],
+    "active_minutes": 10,
+    "tip": "Dry skin is the whole trick — pat it really well before seasoning.",
+    "tip_es": "La piel seca es todo el truco: sécala muy bien antes de sazonar.",
+    "photo_url": "https://images.unsplash.com/photo-1781737857663-f1f14a60ba46",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/golden-brown-pieces-of-food-baking-inside-an-oven-LgrRc0D02Mw"
+    }
+  },
+  {
+    "slug": "air-fryer-salmon",
+    "name": "Air Fryer Salmon",
+    "meal_type": "dinner",
+    "name_es": "Salmón en air fryer",
+    "diet_tags": [
+      "pescatarian",
+      "gluten_free",
+      "dairy_free",
+      "high_protein",
+      "low_carb",
+      "keto"
+    ],
+    "servings": 4,
+    "prep_minutes": 15,
+    "batch_friendly": false,
+    "description": "Perfectly flaky salmon in 8 minutes with a lemon-garlic rub.",
+    "description_es": "Salmón perfectamente jugoso en 8 minutos con adobo de limón y ajo.",
+    "steps": [
+      "Rub the salmon with the olive oil, garlic powder, paprika and salt.",
+      "Arrange in the air fryer basket without overlapping.",
+      "Cook at {400F} 7 to 9 minutes until it flakes at the thickest part.",
+      "Serve with lemon."
+    ],
+    "steps_es": [
+      "Unta el salmón con el aceite de oliva, ajo en polvo, pimentón y sal.",
+      "Acomódalo en la canasta del air fryer sin superponerlo.",
+      "Cocina a {400F} de 7 a 9 minutos hasta que se deshoje en la parte más gruesa.",
+      "Sirve con limón."
+    ],
+    "ingredients": [
+      {
+        "id": "salmon",
+        "qty": 1.25,
+        "note": "in 4 fillets",
+        "note_es": "en 4 filetes"
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "note": "in wedges",
+        "note_es": "en gajos"
+      },
+      {
+        "id": "garlic_powder",
+        "qty": 0.5
+      },
+      {
+        "id": "smoked_paprika",
+        "qty": 0.5
+      },
+      {
+        "id": "olive_oil",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      }
+    ],
+    "equipment": [
+      "air_fryer"
+    ],
+    "active_minutes": 8,
+    "photo_url": "https://images.unsplash.com/photo-1745846664210-756817e1b19c",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/tomatoes-and-kitchen-appliances-on-a-counter-GX__Pduezt4"
+    }
+  },
+  {
+    "slug": "air-fryer-chicken-tenders",
+    "name": "Air Fryer Chicken Tenders",
+    "meal_type": "dinner",
+    "name_es": "Tiras de pollo en air fryer",
+    "diet_tags": [
+      "dairy_free",
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 25,
+    "batch_friendly": false,
+    "description": "Crunchy breaded chicken tenders without the deep fryer.",
+    "description_es": "Tiras de pollo empanadas crocantes sin freidora.",
+    "steps": [
+      "Season the chicken with salt; dip each piece in beaten egg, then seasoned breadcrumbs.",
+      "Arrange in the air fryer basket without touching; spray or brush lightly with oil.",
+      "Cook at {400F} 10 to 12 minutes, flipping once, until golden and cooked through.",
+      "Serve with your favorite dipping sauce."
+    ],
+    "steps_es": [
+      "Sazona el pollo con sal; pasa cada pieza por huevo batido y luego por pan rallado sazonado.",
+      "Acomódalo en la canasta del air fryer sin que se toque; rocía o pinta apenas con aceite.",
+      "Cocina a {400F} de 10 a 12 minutos, dándolo vuelta una vez, hasta que esté dorado y listo.",
+      "Sirve con tu salsa favorita."
+    ],
+    "ingredients": [
+      {
+        "id": "chicken_breast",
+        "qty": 1.5,
+        "note": "cut into strips",
+        "note_es": "en tiras"
+      },
+      {
+        "id": "eggs",
+        "qty": 2,
+        "note": "beaten",
+        "note_es": "batidos"
+      },
+      {
+        "id": "breadcrumbs",
+        "qty": 1.5
+      },
+      {
+        "id": "garlic_powder",
+        "qty": 0.5
+      },
+      {
+        "id": "paprika",
+        "qty": 0.5
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 2
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      }
+    ],
+    "equipment": [
+      "air_fryer"
+    ],
+    "active_minutes": 15,
+    "photo_url": "https://images.unsplash.com/photo-1755752915482-8c1325e4b838",
+    "photo_credit": {
+      "name": "Adhitya Sibikumar",
+      "url": "https://unsplash.com/photos/He08DL1OU48"
+    }
+  },
+  {
+    "slug": "air-fryer-crispy-tofu",
+    "name": "Air Fryer Crispy Tofu",
+    "meal_type": "dinner",
+    "name_es": "Tofu crocante en air fryer",
+    "diet_tags": [
+      "vegetarian",
+      "vegan",
+      "dairy_free"
+    ],
+    "servings": 4,
+    "prep_minutes": 25,
+    "batch_friendly": false,
+    "description": "Cornstarch-crisped tofu cubes — the best tofu texture, guaranteed.",
+    "description_es": "Cubos de tofu con maicena: la mejor textura de tofu, garantizado.",
+    "steps": [
+      "Press the tofu 10 minutes, then cube it and toss with the cornstarch and salt.",
+      "Arrange in the air fryer basket in a single layer.",
+      "Cook at {400F} 12 to 15 minutes, shaking halfway, until golden and crisp.",
+      "Toss with the soy sauce and sesame oil and serve over rice."
+    ],
+    "steps_es": [
+      "Prensa el tofu 10 minutos, córtalo en cubos y mézclalo con la maicena y la sal.",
+      "Acomódalo en la canasta del air fryer en una sola capa.",
+      "Cocina a {400F} de 12 a 15 minutos, agitando a la mitad, hasta que esté dorado y crocante.",
+      "Mézclalo con la soja y el aceite de sésamo y sirve sobre arroz."
+    ],
+    "ingredients": [
+      {
+        "id": "tofu",
+        "qty": 2,
+        "note": "pressed and cubed",
+        "note_es": "escurrido y en cubos"
+      },
+      {
+        "id": "cornstarch",
+        "qty": 3
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 3
+      },
+      {
+        "id": "sesame_oil",
+        "qty": 1
+      },
+      {
+        "id": "rice_white",
+        "qty": 1.5
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      }
+    ],
+    "equipment": [
+      "air_fryer",
+      "stovetop"
+    ],
+    "active_minutes": 15,
+    "photo_url": "https://images.unsplash.com/photo-1700406901630-be74b14dbb5e",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/a-basket-of-french-fries-sitting-on-top-of-a-white-plate-Q0RGghaYexY"
+    }
+  },
+  {
+    "slug": "air-fryer-pork-chops",
+    "name": "Air Fryer Pork Chops",
+    "meal_type": "dinner",
+    "name_es": "Chuletas de cerdo en air fryer",
+    "diet_tags": [
+      "gluten_free",
+      "dairy_free",
+      "high_protein",
+      "low_carb"
+    ],
+    "servings": 4,
+    "prep_minutes": 20,
+    "batch_friendly": false,
+    "description": "Juicy pork chops with a sweet-smoky rub, done in 12 minutes.",
+    "description_es": "Chuletas jugosas con adobo dulce y ahumado, listas en 12 minutos.",
+    "steps": [
+      "Rub the chops with the brown sugar, paprika, garlic powder and salt.",
+      "Arrange in the air fryer basket without overlapping.",
+      "Cook at {400F} 10 to 12 minutes, flipping once, until the inside reaches 145F.",
+      "Rest 5 minutes and serve."
+    ],
+    "steps_es": [
+      "Unta las chuletas con el azúcar morena, el pimentón, el ajo en polvo y la sal.",
+      "Acomódalas en la canasta del air fryer sin superponerlas.",
+      "Cocina a {400F} de 10 a 12 minutos, dándolas vuelta una vez, hasta que el interior marque 145F.",
+      "Deja reposar 5 minutos y sirve."
+    ],
+    "ingredients": [
+      {
+        "id": "pork_chop",
+        "qty": 1.5,
+        "note": "about 4 chops",
+        "note_es": "unas 4 chuletas"
+      },
+      {
+        "id": "brown_sugar",
+        "qty": 0.13
+      },
+      {
+        "id": "smoked_paprika",
+        "qty": 1
+      },
+      {
+        "id": "garlic_powder",
+        "qty": 1
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.5
+      }
+    ],
+    "equipment": [
+      "air_fryer"
+    ],
+    "active_minutes": 12,
+    "photo_url": "https://images.unsplash.com/photo-1698327097684-5726266fc2d4",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/a-close-up-of-a-bowl-of-food-with-chopsticks-8SqEafsALao"
+    }
+  },
+  {
+    "slug": "air-fryer-roasted-vegetables",
+    "name": "Air Fryer Roasted Vegetables",
+    "meal_type": "dinner",
+    "name_es": "Verduras asadas en air fryer",
+    "diet_tags": [
+      "vegetarian",
+      "vegan",
+      "gluten_free",
+      "dairy_free",
+      "low_carb"
+    ],
+    "servings": 4,
+    "prep_minutes": 20,
+    "batch_friendly": false,
+    "description": "Crispy-edge vegetables in 15 minutes — broccoli, peppers and onion.",
+    "description_es": "Verduras de bordes crocantes en 15 minutos: brócoli, morrón y cebolla.",
+    "steps": [
+      "Toss the vegetables with the olive oil, garlic powder, salt and pepper.",
+      "Arrange in the air fryer basket — a little overlap is fine.",
+      "Cook at {390F} 12 to 15 minutes, shaking twice, until charred at the edges and tender.",
+      "Serve as a side or over rice with a fried egg."
+    ],
+    "steps_es": [
+      "Mezcla las verduras con el aceite de oliva, ajo en polvo, sal y pimienta.",
+      "Acomódalas en la canasta del air fryer; un poco de superposición está bien.",
+      "Cocina a {390F} de 12 a 15 minutos, agitando dos veces, hasta que tengan bordes tostados.",
+      "Sirve como guarnición o sobre arroz con un huevo frito."
+    ],
+    "ingredients": [
+      {
+        "id": "broccoli_frozen",
+        "qty": 2,
+        "note": "thawed",
+        "note_es": "descongelado"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 2,
+        "note": "in chunks",
+        "note_es": "en trozos"
+      },
+      {
+        "id": "onion_red",
+        "qty": 1,
+        "note": "in wedges",
+        "note_es": "en gajos"
+      },
+      {
+        "id": "garlic_powder",
+        "qty": 1
+      },
+      {
+        "id": "olive_oil",
+        "qty": 3
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      },
+      {
+        "id": "black_pepper",
+        "qty": 0.5
+      }
+    ],
+    "equipment": [
+      "air_fryer"
+    ],
+    "active_minutes": 15,
+    "photo_url": "https://images.unsplash.com/photo-1606791422814-b32c705e3e2f",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/cooked-food-on-black-frying-pan-gUU4MF87Ipw"
+    }
+  },
+  {
+    "slug": "pressure-cooker-pot-roast",
+    "name": "Pressure Cooker Pot Roast",
+    "meal_type": "dinner",
+    "name_es": "Asado en olla a presión",
+    "diet_tags": [
+      "gluten_free",
+      "dairy_free",
+      "high_protein"
+    ],
+    "servings": 6,
+    "prep_minutes": 90,
+    "batch_friendly": true,
+    "description": "Sunday pot roast in 90 minutes instead of all afternoon.",
+    "description_es": "El asado de domingo en 90 minutos en vez de toda la tarde.",
+    "steps": [
+      "Season the beef with salt and sear it in the cooker on sauté mode, 4 minutes per side; set aside.",
+      "Sauté the onion and garlic 3 minutes, pour in the broth and scrape up the browned bits.",
+      "Return the beef, seal and cook on high pressure 60 minutes; natural release 10.",
+      "Add the potatoes and carrots, cook 5 more minutes on pressure.",
+      "Serve the beef shredded with the vegetables and juices."
+    ],
+    "steps_es": [
+      "Sazona la carne con sal y séllala en la olla en modo salteado, 4 minutos por lado; reserva.",
+      "Saltea la cebolla y el ajo 3 minutos, vierte el caldo y raspa los trocitos dorados del fondo.",
+      "Vuelve a poner la carne, sella y cocina a presión alta 60 minutos; libera natural 10.",
+      "Agrega las papas y las zanahorias, cocina 5 minutos más a presión.",
+      "Sirve la carne desmenuzada con las verduras y sus jugos."
+    ],
+    "ingredients": [
+      {
+        "id": "beef_stew",
+        "qty": 2.5,
+        "note": "a whole chuck roast if available",
+        "note_es": "un corte entero para asado si hay"
+      },
+      {
+        "id": "potato_russet",
+        "qty": 3,
+        "note": "in large chunks",
+        "note_es": "en trozos grandes"
+      },
+      {
+        "id": "carrot",
+        "qty": 4,
+        "note": "in chunks",
+        "note_es": "en trozos"
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "in wedges",
+        "note_es": "en gajos"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "beef_broth",
+        "qty": 2,
+        "note": "carton, 4 cups",
+        "note_es": "caja, 4 tazas"
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 2
+      },
+      {
+        "id": "salt",
+        "qty": 1
+      }
+    ],
+    "equipment": [
+      "pressure_cooker"
+    ],
+    "active_minutes": 25,
+    "photo_url": "https://images.unsplash.com/photo-1586195833898-170cabf110c5",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/sliced-meat-on-brown-wooden-chopping-board-y4YOJda6OIo"
+    }
+  },
+  {
+    "slug": "pressure-cooker-risotto",
+    "name": "Pressure Cooker Risotto",
+    "meal_type": "dinner",
+    "name_es": "Risotto en olla a presión",
+    "diet_tags": [
+      "vegetarian",
+      "gluten_free"
+    ],
+    "servings": 4,
+    "prep_minutes": 30,
+    "batch_friendly": false,
+    "description": "Creamy risotto with no stirring — pressure does the work.",
+    "description_es": "Risotto cremoso sin revolver: la presión hace el trabajo.",
+    "steps": [
+      "Sauté the onion in butter 3 minutes on sauté mode, add the rice and toast 1 minute.",
+      "Pour in the broth, seal and cook on high pressure 6 minutes; quick release.",
+      "Stir in the parmesan and season with salt; it finishes creamy as you stir.",
+      "Serve right away."
+    ],
+    "steps_es": [
+      "Saltea la cebolla en manteca 3 minutos en modo salteado, agrega el arroz y tuéstalo 1 minuto.",
+      "Vierte el caldo, sella y cocina a presión alta 6 minutos; libera rápido.",
+      "Agrega el parmesano y sazona con sal; queda cremoso al revolver.",
+      "Sirve enseguida."
+    ],
+    "ingredients": [
+      {
+        "id": "rice_white",
+        "qty": 1.5,
+        "note": "or arborio if you have it",
+        "note_es": "o arborio si tienes"
+      },
+      {
+        "id": "vegetable_broth",
+        "qty": 4,
+        "note": "about 3.5 cups, partial carton",
+        "note_es": "unas 3.5 tazas"
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "finely diced",
+        "note_es": "en cubitos chicos"
+      },
+      {
+        "id": "butter",
+        "qty": 3
+      },
+      {
+        "id": "parmesan",
+        "qty": 0.75,
+        "note": "grated",
+        "note_es": "rallado"
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      }
+    ],
+    "equipment": [
+      "pressure_cooker"
+    ],
+    "active_minutes": 15,
+    "photo_url": "https://images.unsplash.com/photo-1767065584562-0127cdec486d",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/gourmet-dish-with-melted-cheese-and-herbs-inpfP2cgUXU"
+    }
+  },
+  {
+    "slug": "pressure-cooker-chicken-rice",
+    "name": "Pressure Cooker Chicken and Rice",
+    "meal_type": "dinner",
+    "name_es": "Pollo con arroz en olla a presión",
+    "diet_tags": [
+      "gluten_free",
+      "dairy_free",
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 35,
+    "batch_friendly": true,
+    "description": "Seasoned chicken thighs and fluffy rice in 12 minutes of pressure.",
+    "description_es": "Muslos de pollo sazonados y arroz suelto en 12 minutos de presión.",
+    "steps": [
+      "Season the chicken with salt and paprika; sear on sauté mode 3 minutes per side and set aside.",
+      "Sauté the onion and garlic 3 minutes, add the rice and coat it.",
+      "Pour in the broth, place the chicken on top, seal and cook 10 minutes on high pressure.",
+      "Natural release 10 minutes, fluff the rice and serve."
+    ],
+    "steps_es": [
+      "Sazona el pollo con sal y pimentón; séllalo en modo salteado 3 minutos por lado y reserva.",
+      "Saltea la cebolla y el ajo 3 minutos, agrega el arroz y cúbrelo.",
+      "Vierte el caldo, coloca el pollo encima, sella y cocina 10 minutos a presión alta.",
+      "Libera natural 10 minutos, suelta el arroz con un tenedor y sirve."
+    ],
+    "ingredients": [
+      {
+        "id": "chicken_thigh",
+        "qty": 1.5
+      },
+      {
+        "id": "rice_white",
+        "qty": 1.5
+      },
+      {
+        "id": "chicken_broth",
+        "qty": 2,
+        "note": "about 2.5 cups, partial carton",
+        "note_es": "unas 2.5 tazas"
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "smoked_paprika",
+        "qty": 1
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 2
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      }
+    ],
+    "equipment": [
+      "pressure_cooker"
+    ],
+    "active_minutes": 15,
+    "photo_url": "https://images.unsplash.com/photo-1708782344490-9026aaa5eec7",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/a-bowl-of-chicken-curry-next-to-a-bowl-of-rice-tsQhEvzU6MQ"
+    }
+  },
+  {
+    "slug": "pressure-cooker-beans",
+    "name": "Pressure Cooker Beans and Rice",
+    "meal_type": "dinner",
+    "name_es": "Porotos con arroz en olla a presión",
+    "diet_tags": [
+      "vegetarian",
+      "vegan",
+      "gluten_free",
+      "dairy_free"
+    ],
+    "servings": 4,
+    "prep_minutes": 45,
+    "batch_friendly": true,
+    "description": "Smoky beans in 30 minutes — no overnight soak, no canned taste.",
+    "description_es": "Porotos ahumados en 30 minutos: sin remojo ni gusto a lata.",
+    "steps": [
+      "Sauté the onion, pepper and garlic 4 minutes on sauté mode with the cumin and oregano.",
+      "Add the beans, broth and bay-free seasonings with a pinch of salt.",
+      "Seal and cook on high pressure 25 minutes; natural release 10.",
+      "Mash a few beans to thicken and serve over rice."
+    ],
+    "steps_es": [
+      "Saltea la cebolla, el morrón y el ajo 4 minutos en modo salteado con el comino y el orégano.",
+      "Agrega los porotos, el caldo y una pizca de sal.",
+      "Sella y cocina a presión alta 25 minutos; libera natural 10.",
+      "Machaca algunos porotos para espesar y sirve sobre arroz."
+    ],
+    "ingredients": [
+      {
+        "id": "pinto_beans",
+        "qty": 3,
+        "note": "cans work fine here",
+        "note_es": "de lata funciona igual"
+      },
+      {
+        "id": "rice_white",
+        "qty": 1.5
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 1,
+        "note": "diced",
+        "note_es": "en cubitos"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "cumin",
+        "qty": 1
+      },
+      {
+        "id": "oregano",
+        "qty": 1
+      },
+      {
+        "id": "vegetable_broth",
+        "qty": 3,
+        "note": "carton, 4 cups",
+        "note_es": "caja, 4 tazas"
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 1
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      }
+    ],
+    "equipment": [
+      "pressure_cooker",
+      "stovetop"
+    ],
+    "active_minutes": 15,
+    "photo_url": "https://images.unsplash.com/photo-1770164678239-89706708a496",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/a-bowl-of-food-with-meat-eggs-and-onions-OzyzMJc1bVk"
+    }
+  },
+  {
+    "slug": "microwave-baked-potatoes",
+    "name": "Microwave Loaded Baked Potatoes",
+    "meal_type": "dinner",
+    "name_es": "Papas asadas rellenas al microondas",
+    "diet_tags": [
+      "vegetarian",
+      "gluten_free"
+    ],
+    "servings": 4,
+    "prep_minutes": 20,
+    "batch_friendly": false,
+    "description": "Fluffy baked potatoes in 12 minutes, loaded with cheese, broccoli and sour cream.",
+    "description_es": "Papas asadas esponjosas en 12 minutos con queso, brócoli y crema agria.",
+    "steps": [
+      "Pierce the potatoes all over with a fork and microwave 10 to 12 minutes, turning halfway, until a knife slides in easily.",
+      "Split them open and fluff the insides with a fork.",
+      "Top with the butter, cheddar and warmed broccoli; microwave 1 minute more to melt.",
+      "Finish with sour cream, green onion and salt."
+    ],
+    "steps_es": [
+      "Pincha las papas por todos lados con un tenedor y cocínalas en el microondas de 10 a 12 minutos, dándolas vuelta a la mitad, hasta que el cuchillo entre fácil.",
+      "Ábrelas por la mitad y suelta el interior con un tenedor.",
+      "Cubre con la manteca, el cheddar y el brócoli tibio; cocina 1 minuto más para derretir.",
+      "Termina con crema agria, cebolla de verdeo y sal."
+    ],
+    "ingredients": [
+      {
+        "id": "potato_russet",
+        "qty": 4,
+        "note": "scrubbed",
+        "note_es": "bien lavadas"
+      },
+      {
+        "id": "broccoli_frozen",
+        "qty": 2,
+        "note": "warmed",
+        "note_es": "tibio"
+      },
+      {
+        "id": "cheddar",
+        "qty": 1.5,
+        "note": "shredded",
+        "note_es": "rallado"
+      },
+      {
+        "id": "butter",
+        "qty": 3
+      },
+      {
+        "id": "sour_cream",
+        "qty": 0.5
+      },
+      {
+        "id": "green_onion",
+        "qty": 3,
+        "note": "sliced",
+        "note_es": "en rodajas"
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      }
+    ],
+    "equipment": [
+      "microwave"
+    ],
+    "active_minutes": 8,
+    "photo_url": "https://images.unsplash.com/photo-1761315414483-54b8e53fa44d",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/roasted-potatoes-with-herbs-and-skewers-eW-d8O6a-DM"
+    }
+  },
+  {
+    "slug": "microwave-mug-meals",
+    "name": "Microwave Egg Fried Rice Mug",
+    "meal_type": "dinner",
+    "name_es": "Tazón de arroz frito con huevo al microondas",
+    "diet_tags": [
+      "dairy_free"
+    ],
+    "servings": 4,
+    "prep_minutes": 15,
+    "batch_friendly": false,
+    "description": "Leftover rice turned into a hot lunch with an egg and frozen veg — all microwave.",
+    "description_es": "Arroz de ayer convertido en almuerzo caliente con huevo y verduras: todo microondas.",
+    "steps": [
+      "Microwave the frozen vegetables 2 minutes in a large bowl.",
+      "Add the rice, soy sauce and sesame oil; stir and microwave 2 more minutes.",
+      "Push the rice to the sides, crack the eggs into the center and stir them in.",
+      "Microwave 1 to 2 minutes more until the egg sets; serve with green onion."
+    ],
+    "steps_es": [
+      "Cocina las verduras congeladas 2 minutos en el microondas en un bowl grande.",
+      "Agrega el arroz, la soja y el aceite de sésamo; revuelve y cocina 2 minutos más.",
+      "Corre el arroz a los bordes, casca los huevos en el centro y mézclalos.",
+      "Cocina 1 a 2 minutos más hasta que el huevo cuaje; sirve con cebolla de verdeo."
+    ],
+    "ingredients": [
+      {
+        "id": "rice_white",
+        "qty": 2,
+        "note": "cooked and chilled",
+        "note_es": "cocido y frío"
+      },
+      {
+        "id": "mixed_veg_frozen",
+        "qty": 2
+      },
+      {
+        "id": "eggs",
+        "qty": 4
+      },
+      {
+        "id": "soy_sauce",
+        "qty": 3
+      },
+      {
+        "id": "sesame_oil",
+        "qty": 1
+      },
+      {
+        "id": "green_onion",
+        "qty": 3,
+        "note": "sliced",
+        "note_es": "en rodajas"
+      }
+    ],
+    "equipment": [
+      "microwave"
+    ],
+    "active_minutes": 8,
+    "photo_url": "https://images.unsplash.com/photo-1723691802798-fa6efc67b2c9",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/a-plate-of-rice-and-peas-on-a-stove-42UmsPkOETM"
+    }
+  },
+  {
+    "slug": "blender-tomato-soup",
+    "name": "Blender Tomato Soup",
+    "meal_type": "dinner",
+    "name_es": "Sopa de tomate en licuadora",
+    "diet_tags": [
+      "vegetarian",
+      "gluten_free"
+    ],
+    "servings": 4,
+    "prep_minutes": 20,
+    "batch_friendly": true,
+    "description": "Silky tomato soup made entirely in the blender, with grilled-cheese-ready speed.",
+    "description_es": "Sopa de tomate sedosa hecha toda en la licuadora, lista para acompañar sándwich de queso.",
+    "steps": [
+      "Sauté the onion and garlic in butter 4 minutes until soft.",
+      "Add everything to the blender with the tomatoes and cream; blend until completely smooth.",
+      "Pour into a pot and simmer 5 minutes; season with salt.",
+      "Serve hot, drizzled with more cream if you like."
+    ],
+    "steps_es": [
+      "Saltea la cebolla y el ajo en manteca 4 minutos hasta que estén blandos.",
+      "Pasa todo a la licuadora con el tomate y la crema; licúa hasta que esté completamente liso.",
+      "Vierte en una olla y cocina a fuego suave 5 minutos; sazona con sal.",
+      "Sirve caliente, con más crema por encima si quieres."
+    ],
+    "ingredients": [
+      {
+        "id": "crushed_tomatoes",
+        "qty": 2
+      },
+      {
+        "id": "onion_yellow",
+        "qty": 1,
+        "note": "in chunks",
+        "note_es": "en trozos"
+      },
+      {
+        "id": "garlic",
+        "qty": 2
+      },
+      {
+        "id": "butter",
+        "qty": 2
+      },
+      {
+        "id": "heavy_cream",
+        "qty": 0.5
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      }
+    ],
+    "equipment": [
+      "stovetop",
+      "blender"
+    ],
+    "active_minutes": 15,
+    "photo_url": "https://images.unsplash.com/photo-1781567502827-3c671d8cae63",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/delicious-caprese-salad-with-fresh-mozzarella-tomatoes-and-basil-mEH2fejA3J0"
+    }
+  },
+  {
+    "slug": "blender-romesco-chicken",
+    "name": "Chicken with Romesco-Style Sauce",
+    "meal_type": "dinner",
+    "name_es": "Pollo con salsa romesco",
+    "diet_tags": [
+      "gluten_free",
+      "dairy_free",
+      "high_protein",
+      "low_carb"
+    ],
+    "servings": 4,
+    "prep_minutes": 30,
+    "batch_friendly": false,
+    "description": "Seared chicken over a roasted-pepper almond sauce made in the blender.",
+    "description_es": "Pollo sellado sobre salsa de morrón asado y almendras hecha en licuadora.",
+    "steps": [
+      "Blend the peppers, almonds, tomato paste, garlic, vinegar and 3 tablespoons of olive oil into a smooth romesco sauce; season with salt.",
+      "Season the chicken with salt and let it come to room temperature while you heat the pan.",
+      "Sear the chicken in hot oil 4 minutes per side until cooked through.",
+      "Slice the chicken and serve it over a pool of the sauce."
+    ],
+    "steps_es": [
+      "Licúa los morrones, las almendras, la pasta de tomate, el ajo, el vinagre y 3 cucharadas de aceite de oliva hasta tener una salsa romesco lisa; sazona con sal.",
+      "Sazona el pollo con sal y déjalo a temperatura ambiente mientras calientas la sartén.",
+      "Sella el pollo en aceite caliente 4 minutos por lado hasta que esté listo.",
+      "Corta el pollo en tajadas y sírvelo sobre un charco de la salsa."
+    ],
+    "ingredients": [
+      {
+        "id": "chicken_breast",
+        "qty": 1.5
+      },
+      {
+        "id": "bell_pepper",
+        "qty": 3,
+        "note": "roasted and peeled, or jarred",
+        "note_es": "asados y pelados, o de frasco"
+      },
+      {
+        "id": "almonds",
+        "qty": 0.5
+      },
+      {
+        "id": "tomato_paste",
+        "qty": 1
+      },
+      {
+        "id": "garlic",
+        "qty": 2
+      },
+      {
+        "id": "vinegar_cider",
+        "qty": 2
+      },
+      {
+        "id": "olive_oil",
+        "qty": 5
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      }
+    ],
+    "equipment": [
+      "stovetop",
+      "blender"
+    ],
+    "active_minutes": 15,
+    "photo_url": "https://images.unsplash.com/photo-1781941622549-1a54f4364845",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/savory-meat-rolls-in-red-sauce-garnished-with-herbs-BagkbDPxy2c"
+    }
+  },
+  {
+    "slug": "air-fryer-falafel-patties",
+    "name": "Air Fryer Chickpea Patties",
+    "meal_type": "dinner",
+    "name_es": "Tortitas de garbanzo en air fryer",
+    "diet_tags": [
+      "vegetarian",
+      "vegan",
+      "dairy_free"
+    ],
+    "servings": 4,
+    "prep_minutes": 25,
+    "batch_friendly": true,
+    "description": "Crispy falafel-style patties with no frying oil.",
+    "description_es": "Tortitas de garbanzo estilo falafel crocantes sin aceite de fritura.",
+    "steps": [
+      "Mash the chickpeas with the garlic, cumin, flour and salt into a chunky paste; form 8 patties.",
+      "Arrange in the air fryer basket with space between them; brush or spray lightly with oil.",
+      "Cook at {380F} 12 to 14 minutes, flipping once, until deep golden and crisp.",
+      "Serve in pitas or over salad."
+    ],
+    "steps_es": [
+      "Machaca los garbanzos con el ajo, el comino, la harina y la sal hasta formar una pasta rústica; arma 8 tortitas.",
+      "Acomódalas en la canasta del air fryer con espacio; pinta o rocía apenas con aceite.",
+      "Cocina a {380F} de 12 a 14 minutos, dándolas vuelta una vez, hasta que estén bien doradas y crocantes.",
+      "Sirve en pitas o sobre ensalada."
+    ],
+    "ingredients": [
+      {
+        "id": "chickpeas",
+        "qty": 3,
+        "note": "cans, drained",
+        "note_es": "latas, escurridos"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "cumin",
+        "qty": 1
+      },
+      {
+        "id": "flour",
+        "qty": 0.19
+      },
+      {
+        "id": "pita",
+        "qty": 4,
+        "note": "for serving",
+        "note_es": "para servir"
+      },
+      {
+        "id": "vegetable_oil",
+        "qty": 2
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      }
+    ],
+    "equipment": [
+      "air_fryer"
+    ],
+    "active_minutes": 15,
+    "photo_url": "https://images.unsplash.com/photo-1695089028114-ce28248f0ab9",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/a-close-up-of-a-black-blender-on-a-table-tdUOpMLDPGo"
+    }
+  },
+  {
+    "slug": "slow-cooker-turkey-tacos",
+    "name": "Slow Cooker Turkey Taco Meat",
+    "meal_type": "dinner",
+    "name_es": "Pavo para tacos en olla lenta",
+    "diet_tags": [
+      "gluten_free",
+      "dairy_free",
+      "high_protein"
+    ],
+    "servings": 6,
+    "prep_minutes": 300,
+    "batch_friendly": true,
+    "description": "A big batch of saucy taco turkey for the week's tacos, bowls and burritos.",
+    "description_es": "Una tanda grande de pavo en salsa para tacos, bowls y burritos de la semana.",
+    "steps": [
+      "Place the turkey in the slow cooker.",
+      "Pour the salsa, taco seasoning and green chiles over it and stir to coat.",
+      "Cook on low 5 hours, breaking it up once halfway.",
+      "Stir well and serve in tacos or bowls."
+    ],
+    "steps_es": [
+      "Coloca el pavo en la olla lenta.",
+      "Vierte la salsa, el sazonador para tacos y los chiles verdes por encima y revuelve para cubrir.",
+      "Cocina a fuego bajo 5 horas, desmenuzándolo una vez a la mitad.",
+      "Mezcla bien y sirve en tacos o bowls."
+    ],
+    "ingredients": [
+      {
+        "id": "ground_turkey",
+        "qty": 2.5
+      },
+      {
+        "id": "salsa",
+        "qty": 1.5
+      },
+      {
+        "id": "taco_seasoning",
+        "qty": 3
+      },
+      {
+        "id": "green_chiles",
+        "qty": 1,
+        "note": "can",
+        "note_es": "lata"
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      }
+    ],
+    "equipment": [
+      "slow_cooker"
+    ],
+    "active_minutes": 10,
+    "photo_url": "https://images.unsplash.com/photo-1767354063743-a296165b0685",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/a-large-metal-bowl-filled-with-a-spicy-meat-dish-m4vcvVjIlVQ"
+    }
+  },
+  {
+    "slug": "pressure-cooker-pasta-marinara",
+    "name": "Pressure Cooker Pasta Marinara",
+    "meal_type": "dinner",
+    "name_es": "Pasta marinara en olla a presión",
+    "diet_tags": [
+      "vegetarian",
+      "vegan",
+      "dairy_free"
+    ],
+    "servings": 4,
+    "prep_minutes": 20,
+    "batch_friendly": false,
+    "description": "One-pot pasta where the sauce cooks itself — no straining.",
+    "description_es": "Pasta en una sola olla donde la salsa se cocina sola: sin colar nada.",
+    "steps": [
+      "Place the pasta, marinara and 2.5 cups of water in the cooker with a pinch of salt; stir well.",
+      "Seal and cook on high pressure 5 minutes; quick release carefully.",
+      "Stir everything — the starchy liquid becomes the sauce.",
+      "Rest 3 minutes to thicken and serve with olive oil."
+    ],
+    "steps_es": [
+      "Coloca la pasta, la marinara y 2.5 tazas de agua en la olla con una pizca de sal; revuelve bien.",
+      "Sella y cocina a presión alta 5 minutos; libera rápido con cuidado.",
+      "Mezcla todo: el líquido con almidón se convierte en la salsa.",
+      "Deja reposar 3 minutos para que espese y sirve con aceite de oliva."
+    ],
+    "ingredients": [
+      {
+        "id": "pasta_penne",
+        "qty": 16
+      },
+      {
+        "id": "marinara",
+        "qty": 2,
+        "note": "plus 2.5 cups water",
+        "note_es": "más 2.5 tazas de agua"
+      },
+      {
+        "id": "garlic",
+        "qty": 3,
+        "note": "minced",
+        "note_es": "picado"
+      },
+      {
+        "id": "olive_oil",
+        "qty": 2
+      },
+      {
+        "id": "salt",
+        "qty": 0.5
+      }
+    ],
+    "equipment": [
+      "pressure_cooker"
+    ],
+    "active_minutes": 8,
+    "tip": "Don't stir the sauce into the pasta before sealing — layering prevents the burn warning.",
+    "tip_es": "No mezcles la salsa con la pasta antes de sellar: por capas evita el aviso de quemado.",
+    "photo_url": "https://images.unsplash.com/photo-1750396628434-ba9a3e1a265c",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/delicious-pasta-with-tomato-sauce-is-ready-tL0CPgvRPy8"
+    }
+  },
+  {
+    "slug": "microwave-salmon-cups",
+    "name": "Microwave Lemon Rice with Salmon",
+    "meal_type": "dinner",
+    "name_es": "Arroz al limón con salmón al microondas",
+    "diet_tags": [
+      "pescatarian",
+      "gluten_free",
+      "dairy_free",
+      "high_protein"
+    ],
+    "servings": 4,
+    "prep_minutes": 20,
+    "batch_friendly": false,
+    "description": "Steamed salmon over lemon rice — the whole meal cooks in the microwave.",
+    "description_es": "Salmón al vapor sobre arroz al limón: toda la comida en el microondas.",
+    "steps": [
+      "Microwave the rice with 2.5 cups of water and a pinch of salt, covered, 12 minutes until tender; rest 5.",
+      "Season the salmon with salt, garlic powder and lemon slices on top; place it over the rice.",
+      "Cover and microwave 4 to 5 minutes until the salmon flakes.",
+      "Fluff the rice with the lemon juice and serve the salmon on top."
+    ],
+    "steps_es": [
+      "Cocina el arroz en el microondas con 2.5 tazas de agua y una pizca de sal, tapado, 12 minutos hasta que esté tierno; deja reposar 5.",
+      "Sazona el salmón con sal, ajo en polvo y rodajas de limón encima; colócalo sobre el arroz.",
+      "Tapa y cocina de 4 a 5 minutos hasta que el salmón se deshoje.",
+      "Suelta el arroz con el jugo de limón y sirve el salmón encima."
+    ],
+    "ingredients": [
+      {
+        "id": "salmon",
+        "qty": 1.25,
+        "note": "in 4 fillets",
+        "note_es": "en 4 filetes"
+      },
+      {
+        "id": "rice_white",
+        "qty": 1.5,
+        "note": "with 2.5 cups water",
+        "note_es": "con 2.5 tazas de agua"
+      },
+      {
+        "id": "lemon",
+        "qty": 1,
+        "note": "half sliced, half juiced",
+        "note_es": "mitad en rodajas, mitad el jugo"
+      },
+      {
+        "id": "garlic_powder",
+        "qty": 0.5
+      },
+      {
+        "id": "salt",
+        "qty": 0.75
+      }
+    ],
+    "equipment": [
+      "microwave"
+    ],
+    "active_minutes": 18,
+    "photo_url": "https://images.unsplash.com/photo-1591814468924-caf88d1232e1",
+    "photo_credit": {
+      "name": "Unsplash contributor",
+      "url": "https://unsplash.com/photos/white-ceramic-bowl-with-rice-and-sliced-lemon-GXhmQt6MFX8"
+    }
   }
- },
- {
-  "slug": "slow-cooker-chicken-chili",
-  "name": "Slow Cooker Chicken Chili",
-  "meal_type": "dinner",
-  "name_es": "Chili de pollo en olla lenta",
-  "diet_tags": [
-   "gluten_free",
-   "dairy_free",
-   "high_protein"
-  ],
-  "servings": 6,
-  "prep_minutes": 360,
-  "batch_friendly": true,
-  "description": "White-bean chicken chili that cooks itself — dump and walk away.",
-  "description_es": "Chili de pollo con porotos blancos que se cocina solo: todo adentro y listo.",
-  "steps": [
-   "Place the chicken, beans, chiles, tomatoes, onion, garlic and spices in the slow cooker with a pinch of salt.",
-   "Cook on low 6 hours.",
-   "Shred the chicken right in the pot with two forks and stir everything together.",
-   "Serve with your favorite toppings."
-  ],
-  "steps_es": [
-   "Coloca el pollo, los porotos, los chiles, el tomate, la cebolla, el ajo y las especias en la olla lenta con una pizca de sal.",
-   "Cocina a fuego bajo 6 horas.",
-   "Deshebra el pollo dentro de la olla con dos tenedores y mezcla todo.",
-   "Sirve con tus toppings favoritos."
-  ],
-  "ingredients": [
-   {
-    "id": "chicken_breast",
-    "qty": 2
-   },
-   {
-    "id": "white_beans",
-    "qty": 3,
-    "note": "cans, drained",
-    "note_es": "latas, escurridos"
-   },
-   {
-    "id": "green_chiles",
-    "qty": 2,
-    "note": "cans",
-    "note_es": "latas"
-   },
-   {
-    "id": "diced_tomatoes",
-    "qty": 1
-   },
-   {
-    "id": "onion_yellow",
-    "qty": 1,
-    "note": "diced",
-    "note_es": "en cubitos"
-   },
-   {
-    "id": "garlic",
-    "qty": 3,
-    "note": "minced",
-    "note_es": "picado"
-   },
-   {
-    "id": "cumin",
-    "qty": 2
-   },
-   {
-    "id": "oregano",
-    "qty": 1
-   },
-   {
-    "id": "chili_powder",
-    "qty": 1
-   },
-   {
-    "id": "salt",
-    "qty": 1
-   }
-  ],
-  "equipment": [
-   "slow_cooker"
-  ],
-  "active_minutes": 10,
-  "photo_url": "https://images.unsplash.com/photo-1764314108477-f026172e32a9",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/hearty-stew-with-chunks-of-meat-and-red-chili-peppers-a-p0M2ZTlj0"
-  }
- },
- {
-  "slug": "slow-cooker-beef-stew",
-  "name": "Slow Cooker Beef Stew",
-  "meal_type": "dinner",
-  "name_es": "Estofado de res en olla lenta",
-  "diet_tags": [
-   "gluten_free",
-   "dairy_free",
-   "high_protein"
-  ],
-  "servings": 6,
-  "prep_minutes": 480,
-  "batch_friendly": true,
-  "description": "Classic beef stew with potatoes and carrots, ready when you walk in the door.",
-  "description_es": "Estofado clásico de res con papas y zanahorias, listo cuando llegas a casa.",
-  "steps": [
-   "Season the beef with the salt and pepper.",
-   "Place the beef, potatoes, carrots, onion and garlic in the slow cooker.",
-   "Pour in the broth, tomato paste and worcestershire; stir.",
-   "Cook on low 8 hours until the beef is fork-tender; stir in the peas at the end."
-  ],
-  "steps_es": [
-   "Sazona la carne con la sal y la pimienta.",
-   "Coloca la carne, las papas, las zanahorias, la cebolla y el ajo en la olla lenta.",
-   "Vierte el caldo, la pasta de tomate y el worcestershire; revuelve.",
-   "Cocina a fuego bajo 8 horas hasta que la carne esté tierna; agrega las arvejas al final."
-  ],
-  "ingredients": [
-   {
-    "id": "beef_stew",
-    "qty": 2
-   },
-   {
-    "id": "potato_russet",
-    "qty": 3,
-    "note": "in large chunks",
-    "note_es": "en trozos grandes"
-   },
-   {
-    "id": "carrot",
-    "qty": 4,
-    "note": "in chunks",
-    "note_es": "en trozos"
-   },
-   {
-    "id": "onion_yellow",
-    "qty": 1,
-    "note": "in chunks",
-    "note_es": "en trozos"
-   },
-   {
-    "id": "garlic",
-    "qty": 3,
-    "note": "minced",
-    "note_es": "picado"
-   },
-   {
-    "id": "beef_broth",
-    "qty": 4,
-    "note": "carton, 4 cups",
-    "note_es": "caja, 4 tazas"
-   },
-   {
-    "id": "tomato_paste",
-    "qty": 2
-   },
-   {
-    "id": "worcestershire",
-    "qty": 2
-   },
-   {
-    "id": "peas_frozen",
-    "qty": 1
-   },
-   {
-    "id": "salt",
-    "qty": 1
-   },
-   {
-    "id": "black_pepper",
-    "qty": 0.5
-   }
-  ],
-  "equipment": [
-   "slow_cooker"
-  ],
-  "active_minutes": 20,
-  "photo_url": "https://images.unsplash.com/photo-1627366422957-3efa9c6df0fc",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/soup-with-meat-in-white-ceramic-bowl-eI_Uk6uGCOQ"
-  }
- },
- {
-  "slug": "slow-cooker-salsa-chicken",
-  "name": "Slow Cooker Salsa Chicken",
-  "meal_type": "dinner",
-  "name_es": "Pollo a la salsa en olla lenta",
-  "diet_tags": [
-   "gluten_free",
-   "dairy_free",
-   "high_protein"
-  ],
-  "servings": 4,
-  "prep_minutes": 300,
-  "batch_friendly": true,
-  "description": "Two-ingredient shredded chicken for tacos, bowls and burritos all week.",
-  "description_es": "Pollo deshebrado de dos ingredientes para tacos, bowls y burritos toda la semana.",
-  "steps": [
-   "Place the chicken in the slow cooker and pour the salsa over it.",
-   "Cook on low 5 hours.",
-   "Shred it in the pot and stir it into the sauce.",
-   "Serve in tacos, over rice or in bowls."
-  ],
-  "steps_es": [
-   "Coloca el pollo en la olla lenta y vierte la salsa por encima.",
-   "Cocina a fuego bajo 5 horas.",
-   "Desmébralo en la olla y mézclalo con la salsa.",
-   "Sirve en tacos, sobre arroz o en bowls."
-  ],
-  "ingredients": [
-   {
-    "id": "chicken_thigh",
-    "qty": 2
-   },
-   {
-    "id": "salsa",
-    "qty": 1.5
-   },
-   {
-    "id": "cumin",
-    "qty": 1
-   },
-   {
-    "id": "salt",
-    "qty": 0.5
-   }
-  ],
-  "equipment": [
-   "slow_cooker"
-  ],
-  "active_minutes": 10,
-  "tip": "This is the best batch-cook in the book — it seasons tacos, salads and quesadillas all week.",
-  "tip_es": "Es el mejor cocinado en tanda del libro: sirve para tacos, ensaladas y quesadillas toda la semana.",
-  "photo_url": "https://images.unsplash.com/photo-1545093149-618ce3bcf49d",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/taco-with-vegetables-s6SOj6uYjXI"
-  }
- },
- {
-  "slug": "slow-cooker-pot-roast",
-  "name": "Slow Cooker Pot Roast",
-  "meal_type": "dinner",
-  "name_es": "Asado en olla lenta",
-  "diet_tags": [
-   "gluten_free",
-   "dairy_free",
-   "high_protein"
-  ],
-  "servings": 6,
-  "prep_minutes": 480,
-  "batch_friendly": true,
-  "description": "Fall-apart pot roast with vegetables and rich gravy.",
-  "description_es": "Asado que se deshace con verduras y una salsa rica.",
-  "steps": [
-   "Season the roast with salt and pepper and place it in the slow cooker.",
-   "Arrange the potatoes, carrots and onion around it.",
-   "Pour in the broth and worcestershire.",
-   "Cook on low 8 hours until the roast shreds; serve with the vegetables and juices."
-  ],
-  "steps_es": [
-   "Sazona el asado con sal y pimienta y colócalo en la olla lenta.",
-   "Acomoda las papas, zanahorias y cebolla alrededor.",
-   "Vierte el caldo y el worcestershire.",
-   "Cocina a fuego bajo 8 horas hasta que el asado se desmenuce; sirve con las verduras y sus jugos."
-  ],
-  "ingredients": [
-   {
-    "id": "beef_stew",
-    "qty": 2.5,
-    "note": "a whole chuck roast if available",
-    "note_es": "un corte entero para asado si hay"
-   },
-   {
-    "id": "potato_russet",
-    "qty": 3,
-    "note": "in large chunks",
-    "note_es": "en trozos grandes"
-   },
-   {
-    "id": "carrot",
-    "qty": 4,
-    "note": "in chunks",
-    "note_es": "en trozos"
-   },
-   {
-    "id": "onion_yellow",
-    "qty": 1,
-    "note": "in wedges",
-    "note_es": "en gajos"
-   },
-   {
-    "id": "beef_broth",
-    "qty": 2,
-    "note": "carton, 4 cups",
-    "note_es": "caja, 4 tazas"
-   },
-   {
-    "id": "worcestershire",
-    "qty": 3
-   },
-   {
-    "id": "thyme",
-    "qty": 1
-   },
-   {
-    "id": "salt",
-    "qty": 1
-   },
-   {
-    "id": "black_pepper",
-    "qty": 0.5
-   }
-  ],
-  "equipment": [
-   "slow_cooker"
-  ],
-  "active_minutes": 15,
-  "photo_url": "https://images.unsplash.com/photo-1509402308-817902776267",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/roast-meat-top-with-slice-limes-a2scGjpiI5E"
-  }
- },
- {
-  "slug": "slow-cooker-lentil-soup",
-  "name": "Slow Cooker Lentil Soup",
-  "meal_type": "dinner",
-  "name_es": "Sopa de lentejas en olla lenta",
-  "diet_tags": [
-   "vegetarian",
-   "vegan",
-   "gluten_free",
-   "dairy_free"
-  ],
-  "servings": 6,
-  "prep_minutes": 360,
-  "batch_friendly": true,
-  "description": "Hands-off lentil soup with carrots, tomatoes and cumin — cheap and filling.",
-  "description_es": "Sopa de lentejas sin supervisión con zanahorias, tomate y comino: barata y abundante.",
-  "steps": [
-   "Place the lentils, carrot, onion, celery, garlic, tomatoes and cumin in the slow cooker.",
-   "Pour in the broth and stir once to combine.",
-   "Cook on low 6 hours until the lentils are completely tender.",
-   "Stir in the vinegar and salt, taste and serve."
-  ],
-  "steps_es": [
-   "Coloca las lentejas, la zanahoria, la cebolla, el apio, el ajo, el tomate y el comino en la olla lenta.",
-   "Vierte el caldo y revuelve una vez para combinar.",
-   "Cocina a fuego bajo 6 horas hasta que las lentejas estén completamente tiernas.",
-   "Agrega el vinagre y la sal, prueba y sirve."
-  ],
-  "ingredients": [
-   {
-    "id": "lentils",
-    "qty": 2
-   },
-   {
-    "id": "carrot",
-    "qty": 3,
-    "note": "diced",
-    "note_es": "en cubitos"
-   },
-   {
-    "id": "onion_yellow",
-    "qty": 1,
-    "note": "diced",
-    "note_es": "en cubitos"
-   },
-   {
-    "id": "celery",
-    "qty": 2,
-    "note": "diced",
-    "note_es": "en cubitos"
-   },
-   {
-    "id": "garlic",
-    "qty": 3,
-    "note": "minced",
-    "note_es": "picado"
-   },
-   {
-    "id": "diced_tomatoes",
-    "qty": 1
-   },
-   {
-    "id": "cumin",
-    "qty": 1
-   },
-   {
-    "id": "vegetable_broth",
-    "qty": 6,
-    "note": "cartons, 8 cups",
-    "note_es": "cajas, 8 tazas"
-   },
-   {
-    "id": "vinegar_cider",
-    "qty": 1
-   },
-   {
-    "id": "salt",
-    "qty": 1
-   }
-  ],
-  "equipment": [
-   "slow_cooker"
-  ],
-  "active_minutes": 15,
-  "photo_url": "https://images.unsplash.com/photo-1608500219063-e5164085cd6f",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/white-ceramic-bowl-with-food-JXYdIWqA5IM"
-  }
- },
- {
-  "slug": "air-fryer-chicken-thighs",
-  "name": "Air Fryer Crispy Chicken Thighs",
-  "meal_type": "dinner",
-  "name_es": "Muslos de pollo crocantes en air fryer",
-  "diet_tags": [
-   "gluten_free",
-   "dairy_free",
-   "high_protein",
-   "low_carb",
-   "keto"
-  ],
-  "servings": 4,
-  "prep_minutes": 30,
-  "batch_friendly": false,
-  "description": "Crackly-skinned chicken thighs in 20 minutes, no oven needed.",
-  "description_es": "Muslos de piel crujiente en 20 minutos, sin horno.",
-  "steps": [
-   "Pat the chicken dry and season all over with salt, garlic powder and paprika.",
-   "Arrange skin-side down in the air fryer basket.",
-   "Cook at {380F} 18 to 22 minutes, flipping once, until the skin is crisp and the inside reaches 165F.",
-   "Rest 5 minutes and serve."
-  ],
-  "steps_es": [
-   "Seca bien el pollo y sazónalo por todos lados con sal, ajo en polvo y pimentón.",
-   "Acomódalo con la piel hacia abajo en la canasta del air fryer.",
-   "Cocina a {380F} de 18 a 22 minutos, dándolo vuelta una vez, hasta que la piel esté crocante y el interior marque 165F.",
-   "Deja reposar 5 minutos y sirve."
-  ],
-  "ingredients": [
-   {
-    "id": "chicken_thigh",
-    "qty": 2,
-    "note": "bone-in, skin-on",
-    "note_es": "con hueso y piel"
-   },
-   {
-    "id": "garlic_powder",
-    "qty": 1
-   },
-   {
-    "id": "paprika",
-    "qty": 1
-   },
-   {
-    "id": "vegetable_oil",
-    "qty": 1
-   },
-   {
-    "id": "salt",
-    "qty": 1
-   },
-   {
-    "id": "black_pepper",
-    "qty": 0.5
-   }
-  ],
-  "equipment": [
-   "air_fryer"
-  ],
-  "active_minutes": 10,
-  "tip": "Dry skin is the whole trick — pat it really well before seasoning.",
-  "tip_es": "La piel seca es todo el truco: sécala muy bien antes de sazonar.",
-  "photo_url": "https://images.unsplash.com/photo-1781737857663-f1f14a60ba46",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/golden-brown-pieces-of-food-baking-inside-an-oven-LgrRc0D02Mw"
-  }
- },
- {
-  "slug": "air-fryer-salmon",
-  "name": "Air Fryer Salmon",
-  "meal_type": "dinner",
-  "name_es": "Salmón en air fryer",
-  "diet_tags": [
-   "pescatarian",
-   "gluten_free",
-   "dairy_free",
-   "high_protein",
-   "low_carb",
-   "keto"
-  ],
-  "servings": 4,
-  "prep_minutes": 15,
-  "batch_friendly": false,
-  "description": "Perfectly flaky salmon in 8 minutes with a lemon-garlic rub.",
-  "description_es": "Salmón perfectamente jugoso en 8 minutos con adobo de limón y ajo.",
-  "steps": [
-   "Rub the salmon with the olive oil, garlic powder, paprika and salt.",
-   "Arrange in the air fryer basket without overlapping.",
-   "Cook at {400F} 7 to 9 minutes until it flakes at the thickest part.",
-   "Serve with lemon."
-  ],
-  "steps_es": [
-   "Unta el salmón con el aceite de oliva, ajo en polvo, pimentón y sal.",
-   "Acomódalo en la canasta del air fryer sin superponerlo.",
-   "Cocina a {400F} de 7 a 9 minutos hasta que se deshoje en la parte más gruesa.",
-   "Sirve con limón."
-  ],
-  "ingredients": [
-   {
-    "id": "salmon",
-    "qty": 1.25,
-    "note": "in 4 fillets",
-    "note_es": "en 4 filetes"
-   },
-   {
-    "id": "lemon",
-    "qty": 1,
-    "note": "in wedges",
-    "note_es": "en gajos"
-   },
-   {
-    "id": "garlic_powder",
-    "qty": 0.5
-   },
-   {
-    "id": "smoked_paprika",
-    "qty": 0.5
-   },
-   {
-    "id": "olive_oil",
-    "qty": 1
-   },
-   {
-    "id": "salt",
-    "qty": 0.75
-   }
-  ],
-  "equipment": [
-   "air_fryer"
-  ],
-  "active_minutes": 8,
-  "photo_url": "https://images.unsplash.com/photo-1745846664210-756817e1b19c",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/tomatoes-and-kitchen-appliances-on-a-counter-GX__Pduezt4"
-  }
- },
- {
-  "slug": "air-fryer-chicken-tenders",
-  "name": "Air Fryer Chicken Tenders",
-  "meal_type": "dinner",
-  "name_es": "Tiras de pollo en air fryer",
-  "diet_tags": [
-   "dairy_free",
-   "high_protein"
-  ],
-  "servings": 4,
-  "prep_minutes": 25,
-  "batch_friendly": false,
-  "description": "Crunchy breaded chicken tenders without the deep fryer.",
-  "description_es": "Tiras de pollo empanadas crocantes sin freidora.",
-  "steps": [
-   "Season the chicken with salt; dip each piece in beaten egg, then seasoned breadcrumbs.",
-   "Arrange in the air fryer basket without touching; spray or brush lightly with oil.",
-   "Cook at {400F} 10 to 12 minutes, flipping once, until golden and cooked through.",
-   "Serve with your favorite dipping sauce."
-  ],
-  "steps_es": [
-   "Sazona el pollo con sal; pasa cada pieza por huevo batido y luego por pan rallado sazonado.",
-   "Acomódalo en la canasta del air fryer sin que se toque; rocía o pinta apenas con aceite.",
-   "Cocina a {400F} de 10 a 12 minutos, dándolo vuelta una vez, hasta que esté dorado y listo.",
-   "Sirve con tu salsa favorita."
-  ],
-  "ingredients": [
-   {
-    "id": "chicken_breast",
-    "qty": 1.5,
-    "note": "cut into strips",
-    "note_es": "en tiras"
-   },
-   {
-    "id": "eggs",
-    "qty": 2,
-    "note": "beaten",
-    "note_es": "batidos"
-   },
-   {
-    "id": "breadcrumbs",
-    "qty": 1.5
-   },
-   {
-    "id": "garlic_powder",
-    "qty": 0.5
-   },
-   {
-    "id": "paprika",
-    "qty": 0.5
-   },
-   {
-    "id": "vegetable_oil",
-    "qty": 2
-   },
-   {
-    "id": "salt",
-    "qty": 0.75
-   }
-  ],
-  "equipment": [
-   "air_fryer"
-  ],
-  "active_minutes": 15,
-  "photo_url": "https://images.unsplash.com/photo-1703575571101-e15c42139544",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/a-couple-of-sandwiches-sitting-on-top-of-a-plate-B338sxfM240"
-  }
- },
- {
-  "slug": "air-fryer-crispy-tofu",
-  "name": "Air Fryer Crispy Tofu",
-  "meal_type": "dinner",
-  "name_es": "Tofu crocante en air fryer",
-  "diet_tags": [
-   "vegetarian",
-   "vegan",
-   "dairy_free"
-  ],
-  "servings": 4,
-  "prep_minutes": 25,
-  "batch_friendly": false,
-  "description": "Cornstarch-crisped tofu cubes — the best tofu texture, guaranteed.",
-  "description_es": "Cubos de tofu con maicena: la mejor textura de tofu, garantizado.",
-  "steps": [
-   "Press the tofu 10 minutes, then cube it and toss with the cornstarch and salt.",
-   "Arrange in the air fryer basket in a single layer.",
-   "Cook at {400F} 12 to 15 minutes, shaking halfway, until golden and crisp.",
-   "Toss with the soy sauce and sesame oil and serve over rice."
-  ],
-  "steps_es": [
-   "Prensa el tofu 10 minutos, córtalo en cubos y mézclalo con la maicena y la sal.",
-   "Acomódalo en la canasta del air fryer en una sola capa.",
-   "Cocina a {400F} de 12 a 15 minutos, agitando a la mitad, hasta que esté dorado y crocante.",
-   "Mézclalo con la soja y el aceite de sésamo y sirve sobre arroz."
-  ],
-  "ingredients": [
-   {
-    "id": "tofu",
-    "qty": 2,
-    "note": "pressed and cubed",
-    "note_es": "escurrido y en cubos"
-   },
-   {
-    "id": "cornstarch",
-    "qty": 3
-   },
-   {
-    "id": "soy_sauce",
-    "qty": 3
-   },
-   {
-    "id": "sesame_oil",
-    "qty": 1
-   },
-   {
-    "id": "rice_white",
-    "qty": 1.5
-   },
-   {
-    "id": "vegetable_oil",
-    "qty": 1
-   },
-   {
-    "id": "salt",
-    "qty": 0.5
-   }
-  ],
-  "equipment": [
-   "air_fryer",
-   "stovetop"
-  ],
-  "active_minutes": 15,
-  "photo_url": "https://images.unsplash.com/photo-1700406901630-be74b14dbb5e",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/a-basket-of-french-fries-sitting-on-top-of-a-white-plate-Q0RGghaYexY"
-  }
- },
- {
-  "slug": "air-fryer-pork-chops",
-  "name": "Air Fryer Pork Chops",
-  "meal_type": "dinner",
-  "name_es": "Chuletas de cerdo en air fryer",
-  "diet_tags": [
-   "gluten_free",
-   "dairy_free",
-   "high_protein",
-   "low_carb"
-  ],
-  "servings": 4,
-  "prep_minutes": 20,
-  "batch_friendly": false,
-  "description": "Juicy pork chops with a sweet-smoky rub, done in 12 minutes.",
-  "description_es": "Chuletas jugosas con adobo dulce y ahumado, listas en 12 minutos.",
-  "steps": [
-   "Rub the chops with the brown sugar, paprika, garlic powder and salt.",
-   "Arrange in the air fryer basket without overlapping.",
-   "Cook at {400F} 10 to 12 minutes, flipping once, until the inside reaches 145F.",
-   "Rest 5 minutes and serve."
-  ],
-  "steps_es": [
-   "Unta las chuletas con el azúcar morena, el pimentón, el ajo en polvo y la sal.",
-   "Acomódalas en la canasta del air fryer sin superponerlas.",
-   "Cocina a {400F} de 10 a 12 minutos, dándolas vuelta una vez, hasta que el interior marque 145F.",
-   "Deja reposar 5 minutos y sirve."
-  ],
-  "ingredients": [
-   {
-    "id": "pork_chop",
-    "qty": 1.5,
-    "note": "about 4 chops",
-    "note_es": "unas 4 chuletas"
-   },
-   {
-    "id": "brown_sugar",
-    "qty": 0.13
-   },
-   {
-    "id": "smoked_paprika",
-    "qty": 1
-   },
-   {
-    "id": "garlic_powder",
-    "qty": 1
-   },
-   {
-    "id": "vegetable_oil",
-    "qty": 1
-   },
-   {
-    "id": "salt",
-    "qty": 0.75
-   },
-   {
-    "id": "black_pepper",
-    "qty": 0.5
-   }
-  ],
-  "equipment": [
-   "air_fryer"
-  ],
-  "active_minutes": 12,
-  "photo_url": "https://images.unsplash.com/photo-1698327097684-5726266fc2d4",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/a-close-up-of-a-bowl-of-food-with-chopsticks-8SqEafsALao"
-  }
- },
- {
-  "slug": "air-fryer-roasted-vegetables",
-  "name": "Air Fryer Roasted Vegetables",
-  "meal_type": "dinner",
-  "name_es": "Verduras asadas en air fryer",
-  "diet_tags": [
-   "vegetarian",
-   "vegan",
-   "gluten_free",
-   "dairy_free",
-   "low_carb"
-  ],
-  "servings": 4,
-  "prep_minutes": 20,
-  "batch_friendly": false,
-  "description": "Crispy-edge vegetables in 15 minutes — broccoli, peppers and onion.",
-  "description_es": "Verduras de bordes crocantes en 15 minutos: brócoli, morrón y cebolla.",
-  "steps": [
-   "Toss the vegetables with the olive oil, garlic powder, salt and pepper.",
-   "Arrange in the air fryer basket — a little overlap is fine.",
-   "Cook at {390F} 12 to 15 minutes, shaking twice, until charred at the edges and tender.",
-   "Serve as a side or over rice with a fried egg."
-  ],
-  "steps_es": [
-   "Mezcla las verduras con el aceite de oliva, ajo en polvo, sal y pimienta.",
-   "Acomódalas en la canasta del air fryer; un poco de superposición está bien.",
-   "Cocina a {390F} de 12 a 15 minutos, agitando dos veces, hasta que tengan bordes tostados.",
-   "Sirve como guarnición o sobre arroz con un huevo frito."
-  ],
-  "ingredients": [
-   {
-    "id": "broccoli_frozen",
-    "qty": 2,
-    "note": "thawed",
-    "note_es": "descongelado"
-   },
-   {
-    "id": "bell_pepper",
-    "qty": 2,
-    "note": "in chunks",
-    "note_es": "en trozos"
-   },
-   {
-    "id": "onion_red",
-    "qty": 1,
-    "note": "in wedges",
-    "note_es": "en gajos"
-   },
-   {
-    "id": "garlic_powder",
-    "qty": 1
-   },
-   {
-    "id": "olive_oil",
-    "qty": 3
-   },
-   {
-    "id": "salt",
-    "qty": 0.75
-   },
-   {
-    "id": "black_pepper",
-    "qty": 0.5
-   }
-  ],
-  "equipment": [
-   "air_fryer"
-  ],
-  "active_minutes": 15,
-  "photo_url": "https://images.unsplash.com/photo-1606791422814-b32c705e3e2f",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/cooked-food-on-black-frying-pan-gUU4MF87Ipw"
-  }
- },
- {
-  "slug": "pressure-cooker-pot-roast",
-  "name": "Pressure Cooker Pot Roast",
-  "meal_type": "dinner",
-  "name_es": "Asado en olla a presión",
-  "diet_tags": [
-   "gluten_free",
-   "dairy_free",
-   "high_protein"
-  ],
-  "servings": 6,
-  "prep_minutes": 90,
-  "batch_friendly": true,
-  "description": "Sunday pot roast in 90 minutes instead of all afternoon.",
-  "description_es": "El asado de domingo en 90 minutos en vez de toda la tarde.",
-  "steps": [
-   "Season the beef with salt and sear it in the cooker on sauté mode, 4 minutes per side; set aside.",
-   "Sauté the onion and garlic 3 minutes, pour in the broth and scrape up the browned bits.",
-   "Return the beef, seal and cook on high pressure 60 minutes; natural release 10.",
-   "Add the potatoes and carrots, cook 5 more minutes on pressure.",
-   "Serve the beef shredded with the vegetables and juices."
-  ],
-  "steps_es": [
-   "Sazona la carne con sal y séllala en la olla en modo salteado, 4 minutos por lado; reserva.",
-   "Saltea la cebolla y el ajo 3 minutos, vierte el caldo y raspa los trocitos dorados del fondo.",
-   "Vuelve a poner la carne, sella y cocina a presión alta 60 minutos; libera natural 10.",
-   "Agrega las papas y las zanahorias, cocina 5 minutos más a presión.",
-   "Sirve la carne desmenuzada con las verduras y sus jugos."
-  ],
-  "ingredients": [
-   {
-    "id": "beef_stew",
-    "qty": 2.5,
-    "note": "a whole chuck roast if available",
-    "note_es": "un corte entero para asado si hay"
-   },
-   {
-    "id": "potato_russet",
-    "qty": 3,
-    "note": "in large chunks",
-    "note_es": "en trozos grandes"
-   },
-   {
-    "id": "carrot",
-    "qty": 4,
-    "note": "in chunks",
-    "note_es": "en trozos"
-   },
-   {
-    "id": "onion_yellow",
-    "qty": 1,
-    "note": "in wedges",
-    "note_es": "en gajos"
-   },
-   {
-    "id": "garlic",
-    "qty": 3,
-    "note": "minced",
-    "note_es": "picado"
-   },
-   {
-    "id": "beef_broth",
-    "qty": 2,
-    "note": "carton, 4 cups",
-    "note_es": "caja, 4 tazas"
-   },
-   {
-    "id": "vegetable_oil",
-    "qty": 2
-   },
-   {
-    "id": "salt",
-    "qty": 1
-   }
-  ],
-  "equipment": [
-   "pressure_cooker"
-  ],
-  "active_minutes": 25,
-  "photo_url": "https://images.unsplash.com/photo-1586195833898-170cabf110c5",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/sliced-meat-on-brown-wooden-chopping-board-y4YOJda6OIo"
-  }
- },
- {
-  "slug": "pressure-cooker-risotto",
-  "name": "Pressure Cooker Risotto",
-  "meal_type": "dinner",
-  "name_es": "Risotto en olla a presión",
-  "diet_tags": [
-   "vegetarian",
-   "gluten_free"
-  ],
-  "servings": 4,
-  "prep_minutes": 30,
-  "batch_friendly": false,
-  "description": "Creamy risotto with no stirring — pressure does the work.",
-  "description_es": "Risotto cremoso sin revolver: la presión hace el trabajo.",
-  "steps": [
-   "Sauté the onion in butter 3 minutes on sauté mode, add the rice and toast 1 minute.",
-   "Pour in the broth, seal and cook on high pressure 6 minutes; quick release.",
-   "Stir in the parmesan and season with salt; it finishes creamy as you stir.",
-   "Serve right away."
-  ],
-  "steps_es": [
-   "Saltea la cebolla en manteca 3 minutos en modo salteado, agrega el arroz y tuéstalo 1 minuto.",
-   "Vierte el caldo, sella y cocina a presión alta 6 minutos; libera rápido.",
-   "Agrega el parmesano y sazona con sal; queda cremoso al revolver.",
-   "Sirve enseguida."
-  ],
-  "ingredients": [
-   {
-    "id": "rice_white",
-    "qty": 1.5,
-    "note": "or arborio if you have it",
-    "note_es": "o arborio si tienes"
-   },
-   {
-    "id": "vegetable_broth",
-    "qty": 4,
-    "note": "about 3.5 cups, partial carton",
-    "note_es": "unas 3.5 tazas"
-   },
-   {
-    "id": "onion_yellow",
-    "qty": 1,
-    "note": "finely diced",
-    "note_es": "en cubitos chicos"
-   },
-   {
-    "id": "butter",
-    "qty": 3
-   },
-   {
-    "id": "parmesan",
-    "qty": 0.75,
-    "note": "grated",
-    "note_es": "rallado"
-   },
-   {
-    "id": "salt",
-    "qty": 0.5
-   }
-  ],
-  "equipment": [
-   "pressure_cooker"
-  ],
-  "active_minutes": 15,
-  "photo_url": "https://images.unsplash.com/photo-1767065584562-0127cdec486d",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/gourmet-dish-with-melted-cheese-and-herbs-inpfP2cgUXU"
-  }
- },
- {
-  "slug": "pressure-cooker-chicken-rice",
-  "name": "Pressure Cooker Chicken and Rice",
-  "meal_type": "dinner",
-  "name_es": "Pollo con arroz en olla a presión",
-  "diet_tags": [
-   "gluten_free",
-   "dairy_free",
-   "high_protein"
-  ],
-  "servings": 4,
-  "prep_minutes": 35,
-  "batch_friendly": true,
-  "description": "Seasoned chicken thighs and fluffy rice in 12 minutes of pressure.",
-  "description_es": "Muslos de pollo sazonados y arroz suelto en 12 minutos de presión.",
-  "steps": [
-   "Season the chicken with salt and paprika; sear on sauté mode 3 minutes per side and set aside.",
-   "Sauté the onion and garlic 3 minutes, add the rice and coat it.",
-   "Pour in the broth, place the chicken on top, seal and cook 10 minutes on high pressure.",
-   "Natural release 10 minutes, fluff the rice and serve."
-  ],
-  "steps_es": [
-   "Sazona el pollo con sal y pimentón; séllalo en modo salteado 3 minutos por lado y reserva.",
-   "Saltea la cebolla y el ajo 3 minutos, agrega el arroz y cúbrelo.",
-   "Vierte el caldo, coloca el pollo encima, sella y cocina 10 minutos a presión alta.",
-   "Libera natural 10 minutos, suelta el arroz con un tenedor y sirve."
-  ],
-  "ingredients": [
-   {
-    "id": "chicken_thigh",
-    "qty": 1.5
-   },
-   {
-    "id": "rice_white",
-    "qty": 1.5
-   },
-   {
-    "id": "chicken_broth",
-    "qty": 2,
-    "note": "about 2.5 cups, partial carton",
-    "note_es": "unas 2.5 tazas"
-   },
-   {
-    "id": "onion_yellow",
-    "qty": 1,
-    "note": "diced",
-    "note_es": "en cubitos"
-   },
-   {
-    "id": "garlic",
-    "qty": 3,
-    "note": "minced",
-    "note_es": "picado"
-   },
-   {
-    "id": "smoked_paprika",
-    "qty": 1
-   },
-   {
-    "id": "vegetable_oil",
-    "qty": 2
-   },
-   {
-    "id": "salt",
-    "qty": 0.75
-   }
-  ],
-  "equipment": [
-   "pressure_cooker"
-  ],
-  "active_minutes": 15,
-  "photo_url": "https://images.unsplash.com/photo-1708782344490-9026aaa5eec7",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/a-bowl-of-chicken-curry-next-to-a-bowl-of-rice-tsQhEvzU6MQ"
-  }
- },
- {
-  "slug": "pressure-cooker-beans",
-  "name": "Pressure Cooker Beans and Rice",
-  "meal_type": "dinner",
-  "name_es": "Porotos con arroz en olla a presión",
-  "diet_tags": [
-   "vegetarian",
-   "vegan",
-   "gluten_free",
-   "dairy_free"
-  ],
-  "servings": 4,
-  "prep_minutes": 45,
-  "batch_friendly": true,
-  "description": "Smoky beans in 30 minutes — no overnight soak, no canned taste.",
-  "description_es": "Porotos ahumados en 30 minutos: sin remojo ni gusto a lata.",
-  "steps": [
-   "Sauté the onion, pepper and garlic 4 minutes on sauté mode with the cumin and oregano.",
-   "Add the beans, broth and bay-free seasonings with a pinch of salt.",
-   "Seal and cook on high pressure 25 minutes; natural release 10.",
-   "Mash a few beans to thicken and serve over rice."
-  ],
-  "steps_es": [
-   "Saltea la cebolla, el morrón y el ajo 4 minutos en modo salteado con el comino y el orégano.",
-   "Agrega los porotos, el caldo y una pizca de sal.",
-   "Sella y cocina a presión alta 25 minutos; libera natural 10.",
-   "Machaca algunos porotos para espesar y sirve sobre arroz."
-  ],
-  "ingredients": [
-   {
-    "id": "pinto_beans",
-    "qty": 3,
-    "note": "cans work fine here",
-    "note_es": "de lata funciona igual"
-   },
-   {
-    "id": "rice_white",
-    "qty": 1.5
-   },
-   {
-    "id": "onion_yellow",
-    "qty": 1,
-    "note": "diced",
-    "note_es": "en cubitos"
-   },
-   {
-    "id": "bell_pepper",
-    "qty": 1,
-    "note": "diced",
-    "note_es": "en cubitos"
-   },
-   {
-    "id": "garlic",
-    "qty": 3,
-    "note": "minced",
-    "note_es": "picado"
-   },
-   {
-    "id": "cumin",
-    "qty": 1
-   },
-   {
-    "id": "oregano",
-    "qty": 1
-   },
-   {
-    "id": "vegetable_broth",
-    "qty": 3,
-    "note": "carton, 4 cups",
-    "note_es": "caja, 4 tazas"
-   },
-   {
-    "id": "vegetable_oil",
-    "qty": 1
-   },
-   {
-    "id": "salt",
-    "qty": 0.75
-   }
-  ],
-  "equipment": [
-   "pressure_cooker",
-   "stovetop"
-  ],
-  "active_minutes": 15,
-  "photo_url": "https://images.unsplash.com/photo-1770164678239-89706708a496",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/a-bowl-of-food-with-meat-eggs-and-onions-OzyzMJc1bVk"
-  }
- },
- {
-  "slug": "microwave-baked-potatoes",
-  "name": "Microwave Loaded Baked Potatoes",
-  "meal_type": "dinner",
-  "name_es": "Papas asadas rellenas al microondas",
-  "diet_tags": [
-   "vegetarian",
-   "gluten_free"
-  ],
-  "servings": 4,
-  "prep_minutes": 20,
-  "batch_friendly": false,
-  "description": "Fluffy baked potatoes in 12 minutes, loaded with cheese, broccoli and sour cream.",
-  "description_es": "Papas asadas esponjosas en 12 minutos con queso, brócoli y crema agria.",
-  "steps": [
-   "Pierce the potatoes all over with a fork and microwave 10 to 12 minutes, turning halfway, until a knife slides in easily.",
-   "Split them open and fluff the insides with a fork.",
-   "Top with the butter, cheddar and warmed broccoli; microwave 1 minute more to melt.",
-   "Finish with sour cream, green onion and salt."
-  ],
-  "steps_es": [
-   "Pincha las papas por todos lados con un tenedor y cocínalas en el microondas de 10 a 12 minutos, dándolas vuelta a la mitad, hasta que el cuchillo entre fácil.",
-   "Ábrelas por la mitad y suelta el interior con un tenedor.",
-   "Cubre con la manteca, el cheddar y el brócoli tibio; cocina 1 minuto más para derretir.",
-   "Termina con crema agria, cebolla de verdeo y sal."
-  ],
-  "ingredients": [
-   {
-    "id": "potato_russet",
-    "qty": 4,
-    "note": "scrubbed",
-    "note_es": "bien lavadas"
-   },
-   {
-    "id": "broccoli_frozen",
-    "qty": 2,
-    "note": "warmed",
-    "note_es": "tibio"
-   },
-   {
-    "id": "cheddar",
-    "qty": 1.5,
-    "note": "shredded",
-    "note_es": "rallado"
-   },
-   {
-    "id": "butter",
-    "qty": 3
-   },
-   {
-    "id": "sour_cream",
-    "qty": 0.5
-   },
-   {
-    "id": "green_onion",
-    "qty": 3,
-    "note": "sliced",
-    "note_es": "en rodajas"
-   },
-   {
-    "id": "salt",
-    "qty": 0.5
-   }
-  ],
-  "equipment": [
-   "microwave"
-  ],
-  "active_minutes": 8,
-  "photo_url": "https://images.unsplash.com/photo-1761315414483-54b8e53fa44d",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/roasted-potatoes-with-herbs-and-skewers-eW-d8O6a-DM"
-  }
- },
- {
-  "slug": "microwave-mug-meals",
-  "name": "Microwave Egg Fried Rice Mug",
-  "meal_type": "dinner",
-  "name_es": "Tazón de arroz frito con huevo al microondas",
-  "diet_tags": [
-   "dairy_free"
-  ],
-  "servings": 4,
-  "prep_minutes": 15,
-  "batch_friendly": false,
-  "description": "Leftover rice turned into a hot lunch with an egg and frozen veg — all microwave.",
-  "description_es": "Arroz de ayer convertido en almuerzo caliente con huevo y verduras: todo microondas.",
-  "steps": [
-   "Microwave the frozen vegetables 2 minutes in a large bowl.",
-   "Add the rice, soy sauce and sesame oil; stir and microwave 2 more minutes.",
-   "Push the rice to the sides, crack the eggs into the center and stir them in.",
-   "Microwave 1 to 2 minutes more until the egg sets; serve with green onion."
-  ],
-  "steps_es": [
-   "Cocina las verduras congeladas 2 minutos en el microondas en un bowl grande.",
-   "Agrega el arroz, la soja y el aceite de sésamo; revuelve y cocina 2 minutos más.",
-   "Corre el arroz a los bordes, casca los huevos en el centro y mézclalos.",
-   "Cocina 1 a 2 minutos más hasta que el huevo cuaje; sirve con cebolla de verdeo."
-  ],
-  "ingredients": [
-   {
-    "id": "rice_white",
-    "qty": 2,
-    "note": "cooked and chilled",
-    "note_es": "cocido y frío"
-   },
-   {
-    "id": "mixed_veg_frozen",
-    "qty": 2
-   },
-   {
-    "id": "eggs",
-    "qty": 4
-   },
-   {
-    "id": "soy_sauce",
-    "qty": 3
-   },
-   {
-    "id": "sesame_oil",
-    "qty": 1
-   },
-   {
-    "id": "green_onion",
-    "qty": 3,
-    "note": "sliced",
-    "note_es": "en rodajas"
-   }
-  ],
-  "equipment": [
-   "microwave"
-  ],
-  "active_minutes": 8,
-  "photo_url": "https://images.unsplash.com/photo-1723691802798-fa6efc67b2c9",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/a-plate-of-rice-and-peas-on-a-stove-42UmsPkOETM"
-  }
- },
- {
-  "slug": "blender-tomato-soup",
-  "name": "Blender Tomato Soup",
-  "meal_type": "dinner",
-  "name_es": "Sopa de tomate en licuadora",
-  "diet_tags": [
-   "vegetarian",
-   "gluten_free"
-  ],
-  "servings": 4,
-  "prep_minutes": 20,
-  "batch_friendly": true,
-  "description": "Silky tomato soup made entirely in the blender, with grilled-cheese-ready speed.",
-  "description_es": "Sopa de tomate sedosa hecha toda en la licuadora, lista para acompañar sándwich de queso.",
-  "steps": [
-   "Sauté the onion and garlic in butter 4 minutes until soft.",
-   "Add everything to the blender with the tomatoes and cream; blend until completely smooth.",
-   "Pour into a pot and simmer 5 minutes; season with salt.",
-   "Serve hot, drizzled with more cream if you like."
-  ],
-  "steps_es": [
-   "Saltea la cebolla y el ajo en manteca 4 minutos hasta que estén blandos.",
-   "Pasa todo a la licuadora con el tomate y la crema; licúa hasta que esté completamente liso.",
-   "Vierte en una olla y cocina a fuego suave 5 minutos; sazona con sal.",
-   "Sirve caliente, con más crema por encima si quieres."
-  ],
-  "ingredients": [
-   {
-    "id": "crushed_tomatoes",
-    "qty": 2
-   },
-   {
-    "id": "onion_yellow",
-    "qty": 1,
-    "note": "in chunks",
-    "note_es": "en trozos"
-   },
-   {
-    "id": "garlic",
-    "qty": 2
-   },
-   {
-    "id": "butter",
-    "qty": 2
-   },
-   {
-    "id": "heavy_cream",
-    "qty": 0.5
-   },
-   {
-    "id": "salt",
-    "qty": 0.5
-   }
-  ],
-  "equipment": [
-   "stovetop",
-   "blender"
-  ],
-  "active_minutes": 15,
-  "photo_url": "https://images.unsplash.com/photo-1781567502827-3c671d8cae63",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/delicious-caprese-salad-with-fresh-mozzarella-tomatoes-and-basil-mEH2fejA3J0"
-  }
- },
- {
-  "slug": "blender-romesco-chicken",
-  "name": "Chicken with Romesco-Style Sauce",
-  "meal_type": "dinner",
-  "name_es": "Pollo con salsa romesco",
-  "diet_tags": [
-   "gluten_free",
-   "dairy_free",
-   "high_protein",
-   "low_carb"
-  ],
-  "servings": 4,
-  "prep_minutes": 30,
-  "batch_friendly": false,
-  "description": "Seared chicken over a roasted-pepper almond sauce made in the blender.",
-  "description_es": "Pollo sellado sobre salsa de morrón asado y almendras hecha en licuadora.",
-  "steps": [
-   "Blend the peppers, almonds, tomato paste, garlic, vinegar and 3 tablespoons of olive oil into a smooth romesco sauce; season with salt.",
-   "Season the chicken with salt and let it come to room temperature while you heat the pan.",
-   "Sear the chicken in hot oil 4 minutes per side until cooked through.",
-   "Slice the chicken and serve it over a pool of the sauce."
-  ],
-  "steps_es": [
-   "Licúa los morrones, las almendras, la pasta de tomate, el ajo, el vinagre y 3 cucharadas de aceite de oliva hasta tener una salsa romesco lisa; sazona con sal.",
-   "Sazona el pollo con sal y déjalo a temperatura ambiente mientras calientas la sartén.",
-   "Sella el pollo en aceite caliente 4 minutos por lado hasta que esté listo.",
-   "Corta el pollo en tajadas y sírvelo sobre un charco de la salsa."
-  ],
-  "ingredients": [
-   {
-    "id": "chicken_breast",
-    "qty": 1.5
-   },
-   {
-    "id": "bell_pepper",
-    "qty": 3,
-    "note": "roasted and peeled, or jarred",
-    "note_es": "asados y pelados, o de frasco"
-   },
-   {
-    "id": "almonds",
-    "qty": 0.5
-   },
-   {
-    "id": "tomato_paste",
-    "qty": 1
-   },
-   {
-    "id": "garlic",
-    "qty": 2
-   },
-   {
-    "id": "vinegar_cider",
-    "qty": 2
-   },
-   {
-    "id": "olive_oil",
-    "qty": 5
-   },
-   {
-    "id": "salt",
-    "qty": 0.75
-   }
-  ],
-  "equipment": [
-   "stovetop",
-   "blender"
-  ],
-  "active_minutes": 15,
-  "photo_url": "https://images.unsplash.com/photo-1781941622549-1a54f4364845",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/savory-meat-rolls-in-red-sauce-garnished-with-herbs-BagkbDPxy2c"
-  }
- },
- {
-  "slug": "air-fryer-falafel-patties",
-  "name": "Air Fryer Chickpea Patties",
-  "meal_type": "dinner",
-  "name_es": "Tortitas de garbanzo en air fryer",
-  "diet_tags": [
-   "vegetarian",
-   "vegan",
-   "dairy_free"
-  ],
-  "servings": 4,
-  "prep_minutes": 25,
-  "batch_friendly": true,
-  "description": "Crispy falafel-style patties with no frying oil.",
-  "description_es": "Tortitas de garbanzo estilo falafel crocantes sin aceite de fritura.",
-  "steps": [
-   "Mash the chickpeas with the garlic, cumin, flour and salt into a chunky paste; form 8 patties.",
-   "Arrange in the air fryer basket with space between them; brush or spray lightly with oil.",
-   "Cook at {380F} 12 to 14 minutes, flipping once, until deep golden and crisp.",
-   "Serve in pitas or over salad."
-  ],
-  "steps_es": [
-   "Machaca los garbanzos con el ajo, el comino, la harina y la sal hasta formar una pasta rústica; arma 8 tortitas.",
-   "Acomódalas en la canasta del air fryer con espacio; pinta o rocía apenas con aceite.",
-   "Cocina a {380F} de 12 a 14 minutos, dándolas vuelta una vez, hasta que estén bien doradas y crocantes.",
-   "Sirve en pitas o sobre ensalada."
-  ],
-  "ingredients": [
-   {
-    "id": "chickpeas",
-    "qty": 3,
-    "note": "cans, drained",
-    "note_es": "latas, escurridos"
-   },
-   {
-    "id": "garlic",
-    "qty": 3,
-    "note": "minced",
-    "note_es": "picado"
-   },
-   {
-    "id": "cumin",
-    "qty": 1
-   },
-   {
-    "id": "flour",
-    "qty": 0.19
-   },
-   {
-    "id": "pita",
-    "qty": 4,
-    "note": "for serving",
-    "note_es": "para servir"
-   },
-   {
-    "id": "vegetable_oil",
-    "qty": 2
-   },
-   {
-    "id": "salt",
-    "qty": 0.75
-   }
-  ],
-  "equipment": [
-   "air_fryer"
-  ],
-  "active_minutes": 15,
-  "photo_url": "https://images.unsplash.com/photo-1695089028114-ce28248f0ab9",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/a-close-up-of-a-black-blender-on-a-table-tdUOpMLDPGo"
-  }
- },
- {
-  "slug": "slow-cooker-turkey-tacos",
-  "name": "Slow Cooker Turkey Taco Meat",
-  "meal_type": "dinner",
-  "name_es": "Pavo para tacos en olla lenta",
-  "diet_tags": [
-   "gluten_free",
-   "dairy_free",
-   "high_protein"
-  ],
-  "servings": 6,
-  "prep_minutes": 300,
-  "batch_friendly": true,
-  "description": "A big batch of saucy taco turkey for the week's tacos, bowls and burritos.",
-  "description_es": "Una tanda grande de pavo en salsa para tacos, bowls y burritos de la semana.",
-  "steps": [
-   "Place the turkey in the slow cooker.",
-   "Pour the salsa, taco seasoning and green chiles over it and stir to coat.",
-   "Cook on low 5 hours, breaking it up once halfway.",
-   "Stir well and serve in tacos or bowls."
-  ],
-  "steps_es": [
-   "Coloca el pavo en la olla lenta.",
-   "Vierte la salsa, el sazonador para tacos y los chiles verdes por encima y revuelve para cubrir.",
-   "Cocina a fuego bajo 5 horas, desmenuzándolo una vez a la mitad.",
-   "Mezcla bien y sirve en tacos o bowls."
-  ],
-  "ingredients": [
-   {
-    "id": "ground_turkey",
-    "qty": 2.5
-   },
-   {
-    "id": "salsa",
-    "qty": 1.5
-   },
-   {
-    "id": "taco_seasoning",
-    "qty": 3
-   },
-   {
-    "id": "green_chiles",
-    "qty": 1,
-    "note": "can",
-    "note_es": "lata"
-   },
-   {
-    "id": "salt",
-    "qty": 0.5
-   }
-  ],
-  "equipment": [
-   "slow_cooker"
-  ],
-  "active_minutes": 10,
-  "photo_url": "https://images.unsplash.com/photo-1767354063743-a296165b0685",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/a-large-metal-bowl-filled-with-a-spicy-meat-dish-m4vcvVjIlVQ"
-  }
- },
- {
-  "slug": "pressure-cooker-pasta-marinara",
-  "name": "Pressure Cooker Pasta Marinara",
-  "meal_type": "dinner",
-  "name_es": "Pasta marinara en olla a presión",
-  "diet_tags": [
-   "vegetarian",
-   "vegan",
-   "dairy_free"
-  ],
-  "servings": 4,
-  "prep_minutes": 20,
-  "batch_friendly": false,
-  "description": "One-pot pasta where the sauce cooks itself — no straining.",
-  "description_es": "Pasta en una sola olla donde la salsa se cocina sola: sin colar nada.",
-  "steps": [
-   "Place the pasta, marinara and 2.5 cups of water in the cooker with a pinch of salt; stir well.",
-   "Seal and cook on high pressure 5 minutes; quick release carefully.",
-   "Stir everything — the starchy liquid becomes the sauce.",
-   "Rest 3 minutes to thicken and serve with olive oil."
-  ],
-  "steps_es": [
-   "Coloca la pasta, la marinara y 2.5 tazas de agua en la olla con una pizca de sal; revuelve bien.",
-   "Sella y cocina a presión alta 5 minutos; libera rápido con cuidado.",
-   "Mezcla todo: el líquido con almidón se convierte en la salsa.",
-   "Deja reposar 3 minutos para que espese y sirve con aceite de oliva."
-  ],
-  "ingredients": [
-   {
-    "id": "pasta_penne",
-    "qty": 16
-   },
-   {
-    "id": "marinara",
-    "qty": 2,
-    "note": "plus 2.5 cups water",
-    "note_es": "más 2.5 tazas de agua"
-   },
-   {
-    "id": "garlic",
-    "qty": 3,
-    "note": "minced",
-    "note_es": "picado"
-   },
-   {
-    "id": "olive_oil",
-    "qty": 2
-   },
-   {
-    "id": "salt",
-    "qty": 0.5
-   }
-  ],
-  "equipment": [
-   "pressure_cooker"
-  ],
-  "active_minutes": 8,
-  "tip": "Don't stir the sauce into the pasta before sealing — layering prevents the burn warning.",
-  "tip_es": "No mezcles la salsa con la pasta antes de sellar: por capas evita el aviso de quemado.",
-  "photo_url": "https://images.unsplash.com/photo-1750396628434-ba9a3e1a265c",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/delicious-pasta-with-tomato-sauce-is-ready-tL0CPgvRPy8"
-  }
- },
- {
-  "slug": "microwave-salmon-cups",
-  "name": "Microwave Lemon Rice with Salmon",
-  "meal_type": "dinner",
-  "name_es": "Arroz al limón con salmón al microondas",
-  "diet_tags": [
-   "pescatarian",
-   "gluten_free",
-   "dairy_free",
-   "high_protein"
-  ],
-  "servings": 4,
-  "prep_minutes": 20,
-  "batch_friendly": false,
-  "description": "Steamed salmon over lemon rice — the whole meal cooks in the microwave.",
-  "description_es": "Salmón al vapor sobre arroz al limón: toda la comida en el microondas.",
-  "steps": [
-   "Microwave the rice with 2.5 cups of water and a pinch of salt, covered, 12 minutes until tender; rest 5.",
-   "Season the salmon with salt, garlic powder and lemon slices on top; place it over the rice.",
-   "Cover and microwave 4 to 5 minutes until the salmon flakes.",
-   "Fluff the rice with the lemon juice and serve the salmon on top."
-  ],
-  "steps_es": [
-   "Cocina el arroz en el microondas con 2.5 tazas de agua y una pizca de sal, tapado, 12 minutos hasta que esté tierno; deja reposar 5.",
-   "Sazona el salmón con sal, ajo en polvo y rodajas de limón encima; colócalo sobre el arroz.",
-   "Tapa y cocina de 4 a 5 minutos hasta que el salmón se deshoje.",
-   "Suelta el arroz con el jugo de limón y sirve el salmón encima."
-  ],
-  "ingredients": [
-   {
-    "id": "salmon",
-    "qty": 1.25,
-    "note": "in 4 fillets",
-    "note_es": "en 4 filetes"
-   },
-   {
-    "id": "rice_white",
-    "qty": 1.5,
-    "note": "with 2.5 cups water",
-    "note_es": "con 2.5 tazas de agua"
-   },
-   {
-    "id": "lemon",
-    "qty": 1,
-    "note": "half sliced, half juiced",
-    "note_es": "mitad en rodajas, mitad el jugo"
-   },
-   {
-    "id": "garlic_powder",
-    "qty": 0.5
-   },
-   {
-    "id": "salt",
-    "qty": 0.75
-   }
-  ],
-  "equipment": [
-   "microwave"
-  ],
-  "active_minutes": 18,
-  "photo_url": "https://images.unsplash.com/photo-1591814468924-caf88d1232e1",
-  "photo_credit": {
-   "name": "Unsplash contributor",
-   "url": "https://unsplash.com/photos/white-ceramic-bowl-with-rice-and-sliced-lemon-GXhmQt6MFX8"
-  }
- }
 ]
