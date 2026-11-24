@@ -75,7 +75,7 @@ export function Landing({ locale }: { locale: Locale }) {
           <div className="rise relative mx-auto w-full max-w-sm lg:max-w-lg">
             <div className="grid grid-cols-2">
               <Phone src="/landing/plan.png" alt={t.inside.shots[0].alt} priority className="relative z-10 -rotate-3 self-start" />
-              <div aria-hidden="true" className="relative z-0 -ml-[40%] mt-14 rotate-[4deg]">
+              <div aria-hidden="true" className="relative z-0 -ml-[40%] mt-14 w-full rotate-[4deg]">
                 <Phone src="/landing/list.png" alt="" />
               </div>
             </div>
