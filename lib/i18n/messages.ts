@@ -296,7 +296,7 @@ const en = {
     appearance: {
       title: "Appearance",
       theme: "Theme",
-      themes: { dark: "Dark", light: "Light", auto: "Automatic" },
+      themes: { dark: "Dark", light: "Light", auto: "System" },
       accent: "Accent color",
       accents: { lime: "Lime", verde: "Green", celeste: "Sky", violeta: "Violet" },
       note: "Looks are kept on this device.",
@@ -763,7 +763,7 @@ const es: Messages = {
     appearance: {
       title: "Apariencia",
       theme: "Tema",
-      themes: { dark: "Oscuro", light: "Claro", auto: "Automático" },
+      themes: { dark: "Oscuro", light: "Claro", auto: "Sistema" },
       accent: "Color de acento",
       accents: { lime: "Lima", verde: "Verde", celeste: "Celeste", violeta: "Violeta" },
       note: "La apariencia se guarda en este dispositivo.",
