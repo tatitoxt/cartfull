@@ -1,0 +1,34 @@
+# Cartfull
+
+> Cartfull is a web app that plans a week of dinners around a fixed grocery budget and turns the plan into a priced shopping list. Users set a weekly budget in dollars; Cartfull picks recipes whose real package prices fit that budget, sorts the list by store aisle, and tracks how much was saved versus typical spending.
+
+## Key facts
+
+- Product type: web application / progressive web app (no install needed, works offline in the store)
+- URL: https://cartfull.click
+- Languages: English (https://cartfull.click) and Spanish (https://cartfull.click/es)
+- Price: free 7-day trial with no card required, then $9.99 USD per month or $49.99 USD per year; cancel any time
+- Recipe catalog: 300+ recipes priced per package at typical US discount-grocer prices
+- Diets supported: no preference, vegetarian, vegan, pescatarian, keto, high-protein, low-carb, dairy-free, gluten-free; allergen and disliked-food exclusions
+- Household sizing: plans scale to the number of people in the household
+- Regional support: country selection with local units (metric or US) and appliance availability (oven, air fryer, microwave, slow cooker)
+
+## What it does
+
+1. The user enters their weekly grocery budget, household size, country and diet preferences.
+2. Cartfull generates a week of dinners (optionally lunches and breakfasts) whose ingredients fit the budget, reusing packages across recipes so nothing bought goes unused.
+3. The user receives one grocery list sorted by aisle, priced item by item, shareable live with family members.
+4. After shopping, the user enters what they really spent; Cartfull tracks savings week over week against their usual spend.
+
+## Differentiators
+
+- Prices reflect whole packages, not fractional ingredient math: if a recipe needs half a bag of rice, the cart charges the whole bag once and reuses the rest.
+- Per-serving nutrition (calories, protein, carbs, fat) based on USDA data.
+- Cook mode: step-by-step full-screen cooking view with timers matched to each step.
+- The grocery list works offline once loaded.
+
+## Legal and contact
+
+- Terms: https://cartfull.click/terms
+- Privacy: https://cartfull.click/privacy
+- Prices in the app are estimates, not live store quotes; Cartfull does not provide medical or nutrition advice.
