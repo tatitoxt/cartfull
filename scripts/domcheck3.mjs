@@ -1,0 +1,11 @@
+import { chromium } from 'playwright';
+const browser = await chromium.connectOverCDP('http://localhost:29229');
+const ctx = browser.contexts()[0];
+const page = await ctx.newPage();
+await page.goto('https://vercel.com/domains/search?q=cartfull&sort=price&filter=available', { waitUntil: 'domcontentloaded', timeout: 40000 });
+await page.waitForTimeout(9000);
+await page.mouse.wheel(0, 1500);
+await page.waitForTimeout(3000);
+await page.screenshot({ path: '/tmp/vercel-dom.png', fullPage: false });
+console.log('shot');
+await browser.close();

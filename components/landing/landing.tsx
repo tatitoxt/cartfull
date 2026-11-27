@@ -7,6 +7,7 @@ import { moneyExact, moneyRound } from "@/lib/format";
 import { LANDING, fill, type Locale } from "@/lib/i18n/landing";
 import { plannedWeekByHousehold, sampleWeek } from "@/lib/landing/sample";
 import { Calculator } from "./calculator";
+import { JsonLd } from "./json-ld";
 import { Reveal } from "./reveal";
 
 /** A real app screenshot dressed as a phone. */
@@ -32,6 +33,7 @@ export function Landing({ locale }: { locale: Locale }) {
 
   return (
     <div lang={locale}>
+      <JsonLd locale={locale} />
       <header className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-5 py-4">
         <Link href={locale === "es" ? "/es" : "/"} aria-label="Cartfull">
           <Logo />

@@ -1,0 +1,17 @@
+import { chromium } from 'playwright';
+const browser = await chromium.connectOverCDP('http://localhost:29229');
+const ctx = await browser.newContext({ viewport: { width: 1440, height: 960 }, deviceScaleFactor: 2 });
+await ctx.addInitScript(() => localStorage.setItem('cartfull:consent', 'all'));
+const p = await ctx.newPage();
+const cdp = await ctx.newCDPSession(p);
+await cdp.send('Network.setCacheDisabled', { cacheDisabled: true });
+await p.goto('http://localhost:3100/', { waitUntil: 'networkidle' });
+await p.addStyleTag({ content: 'nextjs-portal{display:none!important}' });
+await p.waitForTimeout(1000);
+await p.screenshot({ path: '/tmp/final-hero.png' });
+await p.evaluate(() => { const el = document.getElementById('sample-title'); el?.scrollIntoView({ block: 'start' }); });
+await p.waitForTimeout(1400);
+await p.screenshot({ path: '/tmp/final-sample.png' });
+await ctx.close();
+await browser.close();
+console.log('done');
