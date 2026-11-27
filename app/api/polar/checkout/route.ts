@@ -55,7 +55,7 @@ export async function POST(request: NextRequest) {
     ...(usedBefore ? { allow_trial: false } : { trial_interval: "day" as const, trial_interval_count: TRIAL_DAYS }),
     ...(introDiscount ? { discount_id: introDiscount, allow_discount_codes: false } : { allow_discount_codes: true }),
     success_url: `${siteUrl}/app/welcome?checkout_id={CHECKOUT_ID}`,
-    return_url: `${siteUrl}/app/upgrade`,
+    return_url: `${siteUrl}/app/upgrade?canceled=1`,
   });
   if (!checkout.url) return NextResponse.redirect(`${siteUrl}/app/upgrade?error=billing`, 303);
   return NextResponse.redirect(checkout.url, 303);
