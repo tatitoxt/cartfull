@@ -1,24 +1,24 @@
 import "server-only";
-import type Stripe from "stripe";
+import type { models } from "@polar-sh/sdk/2026-10";
 import type { SupabaseClient } from "@supabase/supabase-js";
 import { replacesStored } from "./plans";
-import { intervalForPrice } from "./stripe";
+import { intervalForProduct } from "./polar";
 
-const iso = (seconds: number | null | undefined) => (seconds ? new Date(seconds * 1000).toISOString() : null);
+const INTERVALS: Record<string, string> = { month: "monthly", year: "annual" };
 
 /**
- * Mirrors a Stripe subscription into the subscriptions table. This row is the
+ * Mirrors a Polar subscription into the subscriptions table. This row is the
  * only thing access checks ever read.
  */
-export async function syncSubscription(admin: SupabaseClient, subscription: Stripe.Subscription): Promise<void> {
-  const customerId = typeof subscription.customer === "string" ? subscription.customer : subscription.customer.id;
+export async function syncSubscription(admin: SupabaseClient, subscription: models.Subscription): Promise<void> {
+  const customerId = subscription.customer_id;
 
-  let userId = subscription.metadata?.user_id ?? null;
+  let userId = (subscription.metadata?.user_id as string | undefined) ?? subscription.customer?.external_id ?? null;
   if (!userId) {
     const { data } = await admin
       .from("subscriptions")
       .select("user_id")
-      .eq("stripe_customer_id", customerId)
+      .eq("billing_customer_id", customerId)
       .maybeSingle();
     userId = data?.user_id ?? null;
   }
@@ -26,23 +26,21 @@ export async function syncSubscription(admin: SupabaseClient, subscription: Stri
 
   const { data: stored } = await admin
     .from("subscriptions")
-    .select("stripe_subscription_id")
+    .select("billing_subscription_id")
     .eq("user_id", userId)
     .maybeSingle();
-  if (!replacesStored(stored?.stripe_subscription_id, subscription)) return;
+  if (!replacesStored(stored?.billing_subscription_id, subscription)) return;
 
-  const item = subscription.items.data[0];
-  const price = item?.price.id ?? null;
   const { error } = await admin.from("subscriptions").upsert(
     {
       user_id: userId,
-      stripe_customer_id: customerId,
-      stripe_subscription_id: subscription.id,
+      billing_customer_id: customerId,
+      billing_subscription_id: subscription.id,
       status: subscription.status,
-      price_id: price,
-      billing_interval: intervalForPrice(price) ?? item?.price.recurring?.interval ?? null,
-      trial_end: iso(subscription.trial_end),
-      current_period_end: iso(item?.current_period_end),
+      price_id: subscription.product_id,
+      billing_interval: intervalForProduct(subscription.product_id) ?? INTERVALS[subscription.recurring_interval] ?? null,
+      trial_end: subscription.trial_end,
+      current_period_end: subscription.current_period_end,
       cancel_at_period_end: subscription.cancel_at_period_end,
       updated_at: new Date().toISOString(),
     },

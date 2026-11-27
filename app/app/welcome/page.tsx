@@ -10,7 +10,7 @@ export async function generateMetadata() {
   return { title: MESSAGES[profile.lang].metadata.welcome };
 }
 
-/** Stripe sends shoppers here after Checkout. Access is granted by the webhook, not by this page. */
+/** Polar sends shoppers here after Checkout. Access is granted by the webhook, not by this page. */
 export default async function WelcomePage() {
   const session = await requireSession("/app/welcome");
   const [entitlement, profile] = await Promise.all([getEntitlement(session), getProfile(session)]);

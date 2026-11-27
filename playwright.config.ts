@@ -11,15 +11,15 @@ const baseURL = `http://localhost:${PORT}`;
 
 /**
  * End-to-end tests run against a production build, local Supabase
- * (`npx supabase start`) and a local stand-in for Stripe.
+ * (`npx supabase start`) and a local stand-in for Polar.
  */
 const env = {
   NEXT_PUBLIC_SITE_URL: baseURL,
-  STRIPE_SECRET_KEY: "sk_test_local",
-  STRIPE_WEBHOOK_SECRET: "whsec_local_e2e",
-  STRIPE_PRICE_MONTHLY: "price_monthly_test",
-  STRIPE_PRICE_ANNUAL: "price_annual_test",
-  STRIPE_API_BASE: "http://localhost:12111",
+  POLAR_ACCESS_TOKEN: "polar_test_local",
+  POLAR_WEBHOOK_SECRET: "whsec_bG9jYWxfZTJlX3NlY3JldF9rZXlfaGVyZQ==",
+  POLAR_PRODUCT_MONTHLY: "product_monthly_test",
+  POLAR_PRODUCT_ANNUAL: "product_annual_test",
+  POLAR_API_BASE: "http://localhost:12111",
 };
 
 export default defineConfig({
@@ -45,7 +45,7 @@ export default defineConfig({
     { name: "desktop", use: { ...devices["Desktop Chrome"] }, testMatch: /landing\.spec\.ts/ },
   ],
   webServer: [
-    { command: "node tests/e2e/fake-stripe.mjs", url: "http://localhost:12111/health", env, reuseExistingServer: !process.env.CI },
+    { command: "node tests/e2e/fake-polar.mjs", url: "http://localhost:12111/health", env, reuseExistingServer: !process.env.CI },
     {
       command: `npm run build && npm run start -- -p ${PORT}`,
       url: baseURL,

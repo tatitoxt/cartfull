@@ -23,7 +23,7 @@ export async function createClient() {
 
 /**
  * Service-role client. Bypasses row level security, so it is only for trusted
- * server code: the Stripe webhook and billing routes.
+ * server code: the billing webhook and routes.
  */
 export function createAdminClient() {
   const key = process.env.SUPABASE_SERVICE_ROLE_KEY;

@@ -20,7 +20,7 @@ export function hasAccess(status: string | null | undefined): boolean {
   return ACCESS_STATUSES.includes(status as (typeof ACCESS_STATUSES)[number]);
 }
 
-/** Statuses Stripe will never bring back. Anything else may still be collected on. */
+/** Statuses the billing provider will never bring back. Anything else may still be collected on. */
 const ENDED_STATUSES = ["canceled", "incomplete_expired"];
 
 export function hasEnded(status: string | null | undefined): boolean {
@@ -28,7 +28,7 @@ export function hasEnded(status: string | null | undefined): boolean {
 }
 
 /**
- * Whether a subscription reported by Stripe should replace the stored one.
+ * Whether a subscription reported by the billing provider should replace the stored one.
  * A late event about an old, ended subscription must not overwrite the one
  * the household is on now.
  */

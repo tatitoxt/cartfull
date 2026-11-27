@@ -21,20 +21,20 @@ test.describe("access rules", () => {
   });
 
   test("billing endpoints refuse anonymous and unsigned requests", async ({ request }) => {
-    const checkout = await request.post("/api/stripe/checkout", { form: { interval: "annual" }, maxRedirects: 0 });
+    const checkout = await request.post("/api/polar/checkout", { form: { interval: "annual" }, maxRedirects: 0 });
     expect(checkout.status()).toBe(303);
     expect(checkout.headers().location).toContain("/login");
 
-    const portal = await request.post("/api/stripe/portal", { maxRedirects: 0 });
+    const portal = await request.post("/api/polar/portal", { maxRedirects: 0 });
     expect(portal.headers().location).toContain("/login");
 
-    const unsigned = await request.post("/api/stripe/webhook", { data: { type: "customer.subscription.updated" } });
-    expect(unsigned.status()).toBe(400);
-    const forged = await request.post("/api/stripe/webhook", {
-      data: { type: "customer.subscription.updated" },
-      headers: { "stripe-signature": "t=1,v1=deadbeef" },
+    const unsigned = await request.post("/api/polar/webhook", { data: { type: "subscription.updated" } });
+    expect(unsigned.status()).toBe(403);
+    const forged = await request.post("/api/polar/webhook", {
+      data: { type: "subscription.updated" },
+      headers: { "webhook-id": "evt_1", "webhook-timestamp": "1", "webhook-signature": "v1,deadbeef" },
     });
-    expect(forged.status()).toBe(400);
+    expect(forged.status()).toBe(403);
   });
 
   test("a budget below the cheapest week is refused with the amount that works", async ({ page }) => {
@@ -69,7 +69,7 @@ test.describe("access rules", () => {
     await onboard(page, email, { budget: 120 });
     await page.goto("/app/upgrade");
     await page.getByTestId("checkout-button").click();
-    await expect(page.getByTestId("checkout-summary")).toContainText("price_annual_test");
+    await expect(page.getByTestId("checkout-summary")).toContainText("product_annual_test");
     await page.getByTestId("fake-cancel").click();
     await expect(page).toHaveURL(/\/app\/upgrade\?canceled=1/);
     await expect(page.getByTestId("checkout-button")).toBeVisible();
