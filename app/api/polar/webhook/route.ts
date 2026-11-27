@@ -54,7 +54,10 @@ export async function POST(request: NextRequest) {
       const subscription = await getPolar().subscriptions.get(subscriptionId);
       const metaUserId = subscription.metadata?.user_id as string | undefined;
       if (metaUserId) {
-        const { data: profile } = await admin.from("profiles").select("id").eq("id", metaUserId).maybeSingle();
+        const { data: profile, error: profileError } = await admin.from("profiles").select("id").eq("id", metaUserId).maybeSingle();
+        // A failed lookup must not be read as a deleted account: throw so the
+        // 500 below makes Polar retry instead of revoking a live subscription.
+        if (profileError) throw new Error(`Profile lookup failed: ${profileError.message}`);
         if (!profile) {
           // The account was deleted after this checkout opened, so the payment
           // can never grant access. Polar has no expire-checkout API, but revoking
