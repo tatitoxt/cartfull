@@ -52,6 +52,20 @@ export async function POST(request: NextRequest) {
       // Events can arrive out of order, so always store Polar's current state rather
       // than the snapshot inside the event.
       const subscription = await getPolar().subscriptions.get(subscriptionId);
+      const metaUserId = subscription.metadata?.user_id as string | undefined;
+      if (metaUserId) {
+        const { data: profile } = await admin.from("profiles").select("id").eq("id", metaUserId).maybeSingle();
+        if (!profile) {
+          // The account was deleted after this checkout opened, so the payment
+          // can never grant access. Polar has no expire-checkout API, but revoking
+          // stops the trial before the first charge and any further renewal.
+          if (!["canceled", "incomplete_expired"].includes(subscription.status)) {
+            await getPolar().subscriptions.revoke(subscription.id);
+          }
+          if (deliveryId) await admin.from("billing_events").upsert({ id: deliveryId, type: event.type });
+          return NextResponse.json({ received: true, revoked: true });
+        }
+      }
       await syncSubscription(admin, subscription);
     } catch (error) {
       console.error("Polar webhook failed", event.type, error);
