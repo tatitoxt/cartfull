@@ -11,7 +11,7 @@ import type { Lang } from "@/lib/catalog/localize";
 
 /**
  * Monthly / yearly toggle with one price in focus. On the landing page the
- * button starts onboarding; inside the app it posts to Stripe Checkout.
+ * button starts onboarding; inside the app it posts to Polar Checkout.
  */
 export function PricingChoice({
   mode,
@@ -83,7 +83,7 @@ export function PricingChoice({
       </p>
 
       {mode === "checkout" ? (
-        <form action="/api/stripe/checkout" method="post" className="mt-6" onSubmit={() => track("checkout_started", { interval })}>
+        <form action="/api/polar/checkout" method="post" className="mt-6" onSubmit={() => track("checkout_started", { interval })}>
           <input type="hidden" name="interval" value={interval} />
           <button type="submit" className="btn btn-cta w-full sm:w-auto" data-testid="checkout-button">
             {trial ? m.billing.trialButton.replace("{days}", String(TRIAL_DAYS)) : m.billing.subscribe}

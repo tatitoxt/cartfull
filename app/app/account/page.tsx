@@ -88,7 +88,7 @@ export default async function AccountPage({ searchParams }: { searchParams: Prom
             </Link>
           )}
           {entitlement.hasCustomer && (
-            <form action="/api/stripe/portal" method="post">
+            <form action="/api/polar/portal" method="post">
               <button type="submit" className="btn btn-quiet" data-testid="portal-button">
                 {m.account.manageBilling}
               </button>

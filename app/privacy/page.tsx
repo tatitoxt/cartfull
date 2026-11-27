@@ -26,7 +26,7 @@ export default function PrivacyPage() {
           without an account, until the link expires or is removed. Nothing else on your account is shared.
         </li>
         <li>
-          <strong>Billing:</strong> your subscription status and Stripe customer ID. Card details go to Stripe and never
+          <strong>Billing:</strong> your subscription status and billing customer ID. Card details go to Polar, our payment processor, and never
           reach our servers.
         </li>
         <li>
@@ -49,7 +49,7 @@ export default function PrivacyPage() {
       <h2>Who processes it for us</h2>
       <ul>
         <li>Supabase: database and sign-in.</li>
-        <li>Stripe: payments.</li>
+        <li>Polar (polar.sh): payments, acting as merchant of record.</li>
         <li>Vercel: hosting.</li>
         <li>PostHog: product analytics.</li>
         <li>Our email provider: sign-in emails.</li>

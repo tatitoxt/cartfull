@@ -28,7 +28,7 @@ import { getLocale } from "../i18n/server";
 import { siteUrl } from "../env";
 import { createAdminClient } from "../supabase/server";
 import { hasEnded } from "../billing/plans";
-import { getStripe } from "../billing/stripe";
+import { getPolar } from "../billing/polar";
 import type { Lang } from "../catalog/localize";
 
 export type ActionResult =
@@ -672,26 +672,15 @@ export async function deleteAccount(): Promise<ActionResult> {
   const m = MESSAGES[locale.lang];
   try {
     const admin = createAdminClient();
-    // Stop Stripe first: once the account is gone it can no longer cancel itself.
+    // Stop billing first: once the account is gone it can no longer cancel itself.
     const { data: sub } = await admin
       .from("subscriptions")
-      .select("stripe_customer_id, stripe_subscription_id, status")
+      .select("billing_customer_id, billing_subscription_id, status")
       .eq("user_id", session.userId)
       .maybeSingle();
-    if (sub?.stripe_subscription_id && !hasEnded(sub.status)) {
+    if (sub?.billing_subscription_id && !hasEnded(sub.status)) {
       try {
-        await getStripe().subscriptions.cancel(sub.stripe_subscription_id);
-      } catch {
-        return fail("failed", m.account.deleteError);
-      }
-    }
-    // A Checkout tab left open would still be payable after deletion and could
-    // start billing an account that no longer exists.
-    if (sub?.stripe_customer_id) {
-      try {
-        const stripe = getStripe();
-        const open = await stripe.checkout.sessions.list({ customer: sub.stripe_customer_id, status: "open", limit: 10 });
-        for (const openSession of open.data) await stripe.checkout.sessions.expire(openSession.id);
+        await getPolar().subscriptions.revoke(sub.billing_subscription_id);
       } catch {
         return fail("failed", m.account.deleteError);
       }
@@ -699,7 +688,7 @@ export async function deleteAccount(): Promise<ActionResult> {
     // Remember the email so a re-registration doesn't earn a second free trial.
     // Only people who actually reached a subscription count: someone who never
     // subscribed hasn't used a trial and gets their first one like anyone else.
-    if (session.email && sub?.stripe_subscription_id) {
+    if (session.email && sub?.billing_subscription_id) {
       const { error: markError } = await admin
         .from("deleted_accounts")
         .upsert({ email: session.email.toLowerCase() });

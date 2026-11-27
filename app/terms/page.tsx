@@ -64,7 +64,7 @@ export default function TermsPage() {
           You can cancel at any time from Account &rarr; Manage billing. If you cancel during the trial you are not charged.
           If you cancel later you keep access until the end of the period you paid for.
         </li>
-        <li>Payments are handled by Stripe. We do not store your card number.</li>
+        <li>Payments are handled by Polar, our merchant of record. We do not store your card number.</li>
         <li>
           Introductory or promotional prices may be offered from time to time; the price that applies to you is the one
           shown at checkout, and renewals after a promotion are at the regular plan price.

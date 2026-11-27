@@ -97,7 +97,7 @@ async function userIdOf(email: string): Promise<string> {
   return userId;
 }
 
-/** Stands in for a Stripe status change, such as a renewal that failed. */
+/** Stands in for a billing status change, such as a renewal that failed. */
 export async function setSubscriptionStatus(email: string, status: string) {
   const userId = await userIdOf(email);
   await admin(`/rest/v1/subscriptions?user_id=eq.${userId}`, { method: "PATCH", body: JSON.stringify({ status }) });

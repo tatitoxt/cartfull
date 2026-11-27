@@ -134,9 +134,9 @@ test.describe("budget to plan to list to savings to subscription", () => {
     await expect(page.getByTestId("price")).toHaveText("$9.99");
     await page.getByTestId("checkout-button").click();
 
-    // Hosted checkout (the local stand-in for Stripe).
+    // Hosted checkout (the local stand-in for Polar).
     await expect(page.getByTestId("checkout-summary")).toContainText("7-day free trial");
-    await expect(page.getByTestId("checkout-summary")).toContainText("price_monthly_test");
+    await expect(page.getByTestId("checkout-summary")).toContainText("product_monthly_test");
     await page.getByTestId("fake-pay").click();
 
     await expect(page).toHaveURL(/\/app\/welcome/);
@@ -160,7 +160,7 @@ test.describe("budget to plan to list to savings to subscription", () => {
 
   test("a failed renewal leads to the billing portal, not to a second subscription", async ({ page }) => {
     await setSubscriptionStatus(email, "past_due");
-    const checkout = await page.request.post("/api/stripe/checkout", { form: { interval: "annual" }, maxRedirects: 0 });
+    const checkout = await page.request.post("/api/polar/checkout", { form: { interval: "annual" }, maxRedirects: 0 });
     expect(checkout.status()).toBe(303);
     expect(checkout.headers().location).toContain("/portal");
     await setSubscriptionStatus(email, "trialing");

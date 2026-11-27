@@ -53,7 +53,7 @@ export async function getFeedback({ supabase, userId }: Session): Promise<Feedba
 }
 
 export interface Entitlement {
-  /** True only while Stripe says the subscription is trialing or active. */
+  /** True only while the billing provider says the subscription is trialing or active. */
   active: boolean;
   status: string;
   interval: string | null;
@@ -74,8 +74,8 @@ export async function getEntitlement({ supabase, userId }: Session): Promise<Ent
     trialEnd: data?.trial_end ?? null,
     periodEnd: data?.current_period_end ?? null,
     cancelAtPeriodEnd: data?.cancel_at_period_end ?? false,
-    hasCustomer: Boolean(data?.stripe_customer_id),
-    hadSubscription: Boolean(data?.stripe_subscription_id),
+    hasCustomer: Boolean(data?.billing_customer_id),
+    hadSubscription: Boolean(data?.billing_subscription_id),
   };
 }
 
